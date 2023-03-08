@@ -1,4 +1,5 @@
 *
 !*.lua
+!.gitignore
 !/**/
 /Bazar/Liveries/*.lua
