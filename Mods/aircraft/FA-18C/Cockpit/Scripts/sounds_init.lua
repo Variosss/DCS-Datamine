@@ -1,0 +1,29 @@
+dofile(LockOn_Options.script_path.."sounds.lua")
+
+sounds = {}
+sounds[SOUND_SW1]	= {"Aircrafts/FA-18/Cockpit/Sw01"}
+sounds[SOUND_SW1_OFF]	= {"Aircrafts/FA-18/Cockpit/Sw01_Off"}
+sounds[SOUND_SW2]	= {"Aircrafts/FA-18/Cockpit/Sw02"}
+sounds[SOUND_SW3_OPEN]	= {"Aircrafts/FA-18/Cockpit/Sw03_Open"}
+sounds[SOUND_SW3_CLOSE]	= {"Aircrafts/FA-18/Cockpit/Sw03_Close"}
+sounds[SOUND_SW4_1]	= {"Aircrafts/FA-18/Cockpit/Sw04_1"}
+sounds[SOUND_SW4_2]     = {"Aircrafts/FA-18/Cockpit/Sw04_2"}
+sounds[SOUND_SW5_ON]	= {"Aircrafts/FA-18/Cockpit/Sw05_On"}
+sounds[SOUND_SW5_OFF]	= {"Aircrafts/FA-18/Cockpit/Sw05_Off"}
+sounds[SOUND_SW6_ON]	= {"Aircrafts/FA-18/Cockpit/Sw06_On"}
+sounds[SOUND_SW6_OFF]	= {"Aircrafts/FA-18/Cockpit/Sw06_Off"}
+sounds[SOUND_SW7_UP]	= {"Aircrafts/FA-18/Cockpit/Sw07_Up"}
+sounds[SOUND_SW7_DOWN]	= {"Aircrafts/FA-18/Cockpit/Sw07_Down"}
+sounds[SOUND_SW8_UP]	= {"Aircrafts/FA-18/Cockpit/Sw08_Up"}
+sounds[SOUND_SW8_DOWN]	= {"Aircrafts/FA-18/Cockpit/Sw08_Down"}
+sounds[SOUND_SW9]	= {"Aircrafts/FA-18/Cockpit/Sw09"}
+sounds[SOUND_SW10]	= {"Aircrafts/FA-18/Cockpit/Sw10"}
+sounds[SOUND_SW11_ON]	= {"Aircrafts/FA-18/Cockpit/Sw11_On"}
+sounds[SOUND_SW11_OFF]	= {"Aircrafts/FA-18/Cockpit/Sw11_Off"}
+sounds[SOUND_SW12]	= {"Aircrafts/FA-18/Cockpit/Sw12"}
+sounds[SOUND_SW13_UP]	= {"Aircrafts/FA-18/Cockpit/Sw13_Up"}
+sounds[SOUND_SW13_DOWN]	= {"Aircrafts/FA-18/Cockpit/Sw13_Down"}
+sounds[SOUND_SW14_UP]	= {"Aircrafts/FA-18/Cockpit/Sw14_Up"}
+sounds[SOUND_SW14_DOWN]	= {"Aircrafts/FA-18/Cockpit/Sw14_Down"}
+sounds[SOUND_SW15_UP]	= {"Aircrafts/FA-18/Cockpit/Sw15_Up"}
+sounds[SOUND_SW15_DOWN]	= {"Aircrafts/FA-18/Cockpit/Sw15_Down"}

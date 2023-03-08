@@ -1,0 +1,23 @@
+FFXPreset = 
+{
+	FXFile = [[airExplosion_01]],
+	ParticlesPerCluster = 1,
+	Lifetime = 9.0,
+	SmokeColor = {0.805882,0.794118,0.735294},
+	GlowColor = {0.000000,0.0,0.0},
+	GlowColorCold = {0.000000,0.0,0.0},
+	GlowTemperatureMin = 0.000000,
+	GlowBrightness = 35,
+	GlowAdditiveness = 1.0,
+	ClusterRadius = 1.500000,
+	AngularSpeedFactor = 1.200000,
+	ParticleSize = 12.000000,
+	OpacityFactor = 0.800000,
+	Translucency = 0.300000,
+	DetailParams = {0.200000,0.200000,1.000000,1.000000},
+	DrawPuff = 1,
+	LightDecay = 0.900000,
+	ShadowParticleOpacity = 0.420000,
+	ShadowParticleScale = 0.410000,
+	bOriented = 0,
+}

@@ -1,0 +1,1 @@
+return _('Training wait for user')

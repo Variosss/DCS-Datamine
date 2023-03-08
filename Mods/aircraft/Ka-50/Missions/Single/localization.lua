@@ -1,0 +1,17 @@
+LocalizationTbl = {
+["Air show.miz"] = _("Air show"),
+["Altitude.miz"] = _("Altitude"),
+["Battle.miz"] = _("Battle"),
+["Clear Tkvarcheli.miz"] = _("Clear Tkvarcheli"),
+["Convoy Hunt.miz"] = _("Convoy Hunt"),
+["Courier.miz"] = _("Courier"),
+["Death Valley.miz"] = _("Death Valley"),
+["Gauntlet.miz"] = _("Gauntlet"),
+["Hard Day.miz"] = _("Hard Day"),
+["Night Patrol.miz"] = _("Night Patrol"),
+["Patrol.miz"] = _("Patrol"),
+["Relocation.miz"] = _("Relocation"),
+["Shooting Range.miz"] = _("Shooting Range"),
+["South Ossetia Pirates.miz"] = _("South Ossetia Pirates"),
+["Helicopters Ops.miz"] = _("Helicopters Operations"),
+}

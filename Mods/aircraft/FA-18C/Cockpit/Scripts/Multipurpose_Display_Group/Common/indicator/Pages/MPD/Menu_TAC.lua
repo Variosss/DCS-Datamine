@@ -1,0 +1,20 @@
+dofile(LockOn_Options.script_path.."Multipurpose_Display_Group/Common/indicator/Pages/MPD/MPD_page_defs.lua")
+dofile(LockOn_Options.script_path.."Multipurpose_Display_Group/Common/indicator/display_formats_IDs.lua")
+
+add_PB_label(1,  {"AZ/EL", nil, {{"MPD_MENU_FormatLabelShow", MDG_DISPL_FMT_LEV1.AZ_EL}}})
+add_PB_label(3,  {"HUD", nil, {{"MPD_MENU_FormatLabelShow", MDG_DISPL_FMT_LEV1.HUD}}})
+local RDR_ATTK_labelController = {{"MPD_MENU_FormatLabelShow", MDG_DISPL_FMT_LEV1.RDR}}
+add_PB_label(4,  {"RDR", nil, RDR_ATTK_labelController}, {"ATTK", nil, RDR_ATTK_labelController})
+add_PB_label(5,  {"STORES", nil, {{"MPD_MENU_FormatLabelShow", MDG_DISPL_FMT_LEV1.STORES}}})
+add_PB_label(6,  {"FLIR", nil, {{"MPD_MENU_FormatLabelShow", MDG_DISPL_FMT_LEV1.FLIR}}})
+add_PB_label(8,  {"DL13", nil, {{"MPD_MENU_FormatLabelShow", MDG_DISPL_FMT_LEV1.DATALINK}}}, {"DSPY", nil, {{"MPD_MENU_FormatLabelShow", MDG_DISPL_FMT_LEV1.DATALINK}}})
+add_PB_label(9,  {"HARM", nil, {{"MPD_MENU_FormatLabelShow", MDG_DISPL_FMT_LEV1.HARM}}}, {"DSPLY", nil, {{"MPD_MENU_FormatLabelShow", MDG_DISPL_FMT_LEV1.HARM}}})
+add_PB_label(10, {"IMAV", nil, {{"MPD_MENU_FormatLabelShow", MDG_DISPL_FMT_LEV1.MAV}, {"IMAV_MAV", 0}}}, {"DSPLY", nil, {{"MPD_MENU_FormatLabelShow", MDG_DISPL_FMT_LEV1.MAV}, {"IMAV_MAV", 0}}})
+add_PB_label(10, {"MAV", nil, {{"MPD_MENU_FormatLabelShow", MDG_DISPL_FMT_LEV1.MAV}, {"IMAV_MAV", 1}}}, {"DSPLY", nil, {{"MPD_MENU_FormatLabelShow", MDG_DISPL_FMT_LEV1.MAV}, {"IMAV_MAV", 1}}})
+add_PB_label(11, {"JDAM", nil, {{"MPD_MENU_FormatLabelShow", MDG_DISPL_FMT_LEV1.JDAM}, {"JDAM_JSOW", 0}}}, {"DSPLY", nil, {{"MPD_MENU_FormatLabelShow", MDG_DISPL_FMT_LEV1.JDAM}, {"JDAM_JSOW", 0}}})
+add_PB_label(12, {"JSOW", nil, {{"MPD_MENU_FormatLabelShow", MDG_DISPL_FMT_LEV1.JDAM}, {"JDAM_JSOW", 1}}}, {"DSPLY", nil, {{"MPD_MENU_FormatLabelShow", MDG_DISPL_FMT_LEV1.JDAM}, {"JDAM_JSOW", 1}}})
+add_PB_label(13, {"SA", nil, {{"MPD_MENU_FormatLabelShow", MDG_DISPL_FMT_LEV1.SA}}})
+add_PB_label(17, {"EW", nil, {{"MPD_MENU_FormatLabelShow", MDG_DISPL_FMT_LEV1.EW}}})
+add_PB_label(20, {"DATA", nil, {{"MPD_MENU_FormatLabelShow", MDG_DISPL_FMT_LEV1.TGT_DATA}}}, {"TGT", nil})
+
+addMenuLabel("TAC", rootName, nil, true)

@@ -1,0 +1,15 @@
+troops = {
+    troop('299 OShAP Saki', _('299 OShAP Saki'), '299-OShAP-Saki.png'),
+    troop('Ukraine Air Force', _('Ukraine Air Force'), 'Ukraine-Airforce.png'),
+    troop('Ukrainian Falcons', _('Ukrainian Falcons'), 'Ukrainian-Falcons.png'),
+    troop('16 Army Aviation Brigade', _('16 Army Aviation Brigade'), '16_OBRAA.png'),
+	troop('18 Army Aviation Brigade', _('18 Army Aviation Brigade'), '18_OBRAA.png'),
+    troop('7 Army Aviation Regiment', _('7 Army Aviation Regiment'), '7_OPAA.png'),
+    troop('11 Army Aviation Brigade', _('11 Army Aviation Brigade'), '11_OBRAA.png'),
+    troop('Army Aviation', _('Army Aviation_ukr'), 'AA.png'),
+	troop('40 Tactical Aviation Brigade', _('40 Tactical Aviation Brigade'), '40_BRTA.png'),
+	troop('114 Tactical Aviation Brigade', _('114 Tactical Aviation Brigade'), '114_BRTA.png'),
+	troop('203 Aviation Training Brigade', _('203 Aviation Training Brigade'), '203_NABR.png'),
+	troop('204 Tactical Aviation Brigade', _('204 Tactical Aviation Brigade'), '204_BRTA.png'),
+	troop('831 Tactical Aviation Brigade', _('831 Tactical Aviation Brigade'), '831_BRTA.png'),
+};

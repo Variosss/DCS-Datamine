@@ -1,0 +1,13 @@
+LocalizationTbl = {
+["C-SUPERCARRIER-HORNET-16-POPULATION TEMPLATE.miz"] = _("Population Template"),
+["C-SUPERCARRIER-HORNET-CASE I RECOVERY.miz"] = _("Case I Recovery"),
+["C-SUPERCARRIER-HORNET-CASE II RECOVERY.miz"] = _("Case II Recovery"),
+["C-SUPERCARRIER-HORNET-CASE III RECOVERY.miz"] = _("Case III Recovery"),
+["C-SUPERCARRIER-HORNET-COLD START.miz"] = _("Cold Start"),
+["C-SUPERCARRIER-HORNET-LAUNCH.miz"] = _("Launch"),
+["PG-SUPERCARRIER-HORNET-CASE I RECOVERY.miz"] = _("Case I Recovery"),
+["PG-SUPERCARRIER-HORNET-CASE II RECOVERY.miz"] = _("Case II Recovery"),
+["PG-SUPERCARRIER-HORNET-CASE III RECOVERY.miz"] = _("Case III Recovery"),
+["PG-SUPERCARRIER-HORNET-COLD START.miz"] = _("Cold Start"),
+["PG-SUPERCARRIER-HORNET-LAUNCH.miz"] = _("Launch"),
+}

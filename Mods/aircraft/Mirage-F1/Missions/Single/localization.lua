@@ -1,0 +1,27 @@
+LocalizationTbl = {
+-- Mirage F1CE
+["Mirage_F1CE-Caucasus-ramp.miz"] = _("Mirage F1CE ramp start"),
+["Mirage_F1CE-Caucasus-runway.miz"] = _("Mirage F1CE runway start"),
+["Mirage_F1CE-Caucasus-intercept.miz"] = _("Mirage F1CE interception flight"),
+["Mirage_F1CE-Caucasus-ground_attack_practice.miz"] = _("Mirage F1CE ground attack practice"),
+["Mirage_F1CE_Marianas_runway.miz"] = _("Mirage F1CE runway start"),
+["Mirage_F1CE_Marianas_land.miz"] = _("Mirage F1CE landing"),
+["Mirage_F1CE_Nevada_runway.miz"] = _("Mirage F1CE runway start"),
+["Mirage_F1CE_Nevada_land.miz"] = _("Mirage F1CE landing"),
+["Mirage_F1CE_Normandy_runway.miz"] = _("Mirage F1CE runway start"),
+["Mirage_F1CE_Persian_Gulf_runway.miz"] = _("Mirage F1CE runway start"),
+["Mirage_F1CE_The_Channel_ramp.miz"] = _("Mirage F1CE ramp start"),
+["Mirage_F1CE_The_Channel_runway.miz"] = _("Mirage F1CE runway start"),
+["Mirage_F1CE_The_Channel_land.miz"] = _("Mirage F1CE landing"),
+["Mirage_F1CE_Syria_ramp.miz"] = _("Mirage F1CE ramp start"),
+["Mirage_F1CE_Syria_runway.miz"] = _("Mirage F1CE runway start"),
+["Mirage_F1CE_Syria_land.miz"] = _("Mirage F1CE landing"),
+["Mirage_F1CE_South_Atlantic_runway.miz"] = _("Mirage F1CE runway start"),
+-- Mirage F1EE
+["Mirage_F1EE-Caucasus-runway.miz"] = _("Mirage F1EE runway start"),
+["Mirage_F1EE-Marianas-runway.miz"] = _("Mirage F1EE runway start"),
+["Mirage_F1EE-Syria-runway.miz"] = _("Mirage F1EE runway start"),
+["Mirage_F1EE_South_Atlantic_runway.miz"] = _("Mirage F1EE runway start"),
+["Mirage_F1EE_Persian_Gulf_runway.miz"] = _("Mirage F1EE runway start"),
+["Mirage_F1EE_Nevada_runway.miz"] = _("Mirage F1EE runway start"),
+}

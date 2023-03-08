@@ -1,0 +1,25 @@
+livery = {
+	{"KA-50-lamp", 0, "KA-50-PAINT2", false},
+	{"KA-50-PAINT1", 0, "KA-50-PAINT1", false},
+	{"KA-50-PAINT1_M", 0, "KA-50-PAINT1", false},
+	{"KA-50-PAINT2", 0, "KA-50-PAINT2", false},
+	{"KA-50-PAINT3", 0, "greek_ka-50-cockpit", true},
+	{"KA-50-PAINT4", 0, "grnavy_KA-50-PAINT4", true},
+	{"KA-50-PAINT5", 0, "grnavy_KA-50-PAINT5", true},
+	{"KA-50-PAINT6", 0, "KA-50-PAINT6", false},
+	{"KA-50-Vtulka_met", 0, "KA-50-PAINT2", false},
+	{"SOPLA_KA-50-PAINT3", 0, "greek_ka-50-cockpit", true},
+	{"KA-50-gear-rubber", 0, "grnavy_KA-50-PAINT5", true},
+	{"KA-50_ST-rm_paint1", 0, "grnavy_Ka-50_St_Paint1.dds", true},
+	{"KA-50_Lifting_rotor_mast", 0, "grnavy_KA-50-LRM", true},
+	{"KA-50_LRM_Part", 0, "grnavy_KA-50-LRMpart.dds", true},
+	{"KA-50_LRM-CENTRE", 0, "grnavy_KA-50-LRM_centre.dds", true},
+	{"KA-50-LRM_B", 0, "grnavy_KA-50-LRM_B.dds", true},
+	{"KA-50_BORT_NUMBERs", 0, "empty", true},
+	{"KA-50_Turkey_Numbers", 0, "empty",true},
+	{"KA-50_Signs",0,"empty",true},
+	{"KA-50_RUS-PILOT",0,"greek-pilot_ka-50",true},
+	{"KA-50-RUS-HELMET",0,"grnavy_helmet_ka-50.dds",true},
+}
+name = "Hellenic Navy Aviation 2 (Fictional)"
+countries = {"GRC"}

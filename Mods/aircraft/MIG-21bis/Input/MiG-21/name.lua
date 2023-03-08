@@ -1,0 +1,1 @@
+return _('MiG-21bis') --/N/ just text

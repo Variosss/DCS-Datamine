@@ -1,0 +1,1 @@
+return _('Inside Room Camera')

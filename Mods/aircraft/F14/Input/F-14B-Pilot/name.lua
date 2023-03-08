@@ -1,0 +1,1 @@
+return _('F-14 Pilot') -- just text

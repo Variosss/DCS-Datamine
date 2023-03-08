@@ -1,0 +1,14 @@
+Surf_Specific_Types = {}
+Surf_Specific_Types[1]	= {"SA-N1",   "N1"}
+Surf_Specific_Types[2]	= {"SAM",     "MS"}
+Surf_Specific_Types[3]	= {"SA-N3",   "N3"}
+Surf_Specific_Types[4]	= {"SA-N4",   "N4"}
+Surf_Specific_Types[5]	= {"SA-N5",   "N5"}
+Surf_Specific_Types[6]	= {"SA-N6",   "N6"}
+Surf_Specific_Types[7]	= {"SA-N7",   "N7"}
+Surf_Specific_Types[8]	= {"SA-N8",   "N8"}
+Surf_Specific_Types[9]	= {"SA-N9",   "N9"}
+Surf_Specific_Types[10]	= {"SA-N10",  "N10"}
+Surf_Specific_Types[11]	= {"SA-N11",  "N11"}
+Surf_Specific_Types[12]	= {"SA-N12",  "N12"}
+Surf_Specific_Types[13]	= {"SHIP",    "M"}

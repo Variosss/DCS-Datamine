@@ -1,0 +1,1 @@
+return _('Mirage F1M (C.14 52-73)')
