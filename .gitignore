@@ -1,0 +1,4 @@
+*
+!*.lua
+!/**/
+/Bazar/Liveries/*.lua
