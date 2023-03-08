@@ -9,4 +9,4 @@ git init
 git remote add origin https://github.com/Variosss/DCS-Datamine
 git pull origin main
 ``` 
-After this just commit the changes.
+After this just commit the files.
