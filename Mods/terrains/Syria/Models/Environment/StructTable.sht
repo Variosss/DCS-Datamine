@@ -1,0 +1,994 @@
+TerrainModelDeclaration =
+{
+	default =
+	{
+		load =
+		{
+			false;
+			false;
+		};
+		drawonmap = true;
+		vis = 1;
+		visShadows = 1;
+		life = 500;
+		fire =
+		{
+		  0;
+		  1;
+		};
+		classname = "lStandartStructure";
+		positioning = "ONLYHEIGTH"; 
+		DestructAnimatttion = "NO"; 
+	};
+	{
+		file = "airfield_flood_light_on";
+		life = 20;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "pole_crash";
+	};
+
+	{
+		file = "blue_barrel";
+		life = 5;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "board_crash";
+	};
+
+	{
+		file = "deflector_concrete";
+		life = -1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "deflector_concrete";
+	};
+
+	{
+		file = "deflector1";
+		life = 10;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "board_crash";
+	};
+
+	{
+		file = "Disel_generator";
+		life = 5;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "diesel_generator_crash";
+	};
+
+	{
+		file = "dsisign";
+		life = -1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "dsisign";
+	};
+
+	{
+		file = "fanar";
+		life = 5;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "small_crash";
+	};
+
+	{
+		file = "flag_CY";
+		life = 1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "";
+	};
+
+	{
+		file = "flag_IL";
+		life = 1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "";
+	};
+
+	{
+		file = "flag_IQ";
+		life = 1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "";
+	};
+
+	{
+		file = "flag_JO";
+		life = 1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "";
+	};
+
+	{
+		file = "flag_LB";
+		life = 1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "";
+	};
+
+	{
+		file = "flag_RU";
+		life = 1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "";
+	};
+
+	{
+		file = "flag_SY";
+		life = 1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "";
+	};
+
+	{
+		file = "flag_TR";
+		life = 1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "";
+	};
+
+	{
+		file = "flag_TRNC";
+		life = 1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "";
+	};
+
+	{
+		file = "flag_UK";
+		life = 1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "";
+	};
+
+	{
+		file = "flag_UN";
+		life = 1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "";
+	};
+
+	{
+		file = "flag_US";
+		life = 1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "";
+	};
+
+	{
+		file = "flagpole_CY";
+		life = 1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "sockpole_crash";
+	};
+
+	{
+		file = "flagpole_IL";
+		life = 1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "sockpole_crash";
+	};
+
+	{
+		file = "flagpole_IQ";
+		life = 1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "sockpole_crash";
+	};
+
+	{
+		file = "flagpole_JO";
+		life = 1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "sockpole_crash";
+	};
+
+	{
+		file = "flagpole_LB";
+		life = 1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "sockpole_crash";
+	};
+
+	{
+		file = "flagpole_RU";
+		life = 1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "sockpole_crash";
+	};
+
+	{
+		file = "flagpole_SY";
+		life = 1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "sockpole_crash";
+	};
+
+	{
+		file = "flagpole_TR";
+		life = 1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "sockpole_crash";
+	};
+
+	{
+		file = "flagpole_TRNC";
+		life = 1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "sockpole_crash";
+	};
+
+	{
+		file = "flagpole_UK";
+		life = 1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "sockpole_crash";
+	};
+
+	{
+		file = "flagpole_UN";
+		life = 1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "sockpole_crash";
+	};
+
+	{
+		file = "flagpole_US";
+		life = 1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "sockpole_crash";
+	};
+
+	{
+		file = "football_gate";
+		life = 1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "";
+	};
+
+	{
+		file = "garbage1";
+		life = 1;
+		fire =
+		{
+			0;
+			0;
+		};
+		maxSlope = 2;
+		desrt = "";
+	};
+
+	{
+		file = "garbage2";
+		life = 1;
+		fire =
+		{
+			0;
+			0;
+		};
+		maxSlope = 2;
+		desrt = "";
+	};
+
+	{
+		file = "garbage3";
+		life = 1;
+		fire =
+		{
+			0;
+			0;
+		};
+		maxSlope = 2;
+		desrt = "";
+	};
+
+	{
+		file = "hangar_box_01";
+		life = 1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "small_crash";
+	};
+
+	{
+		file = "hangar_box_02";
+		life = 1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "small_crash";
+	};
+
+	{
+		file = "hay";
+		life = 5;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "";
+	};
+
+	{
+		file = "hazrat_light";
+		life = 20;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "board_crash";
+	};
+
+	{
+		file = "irongate";
+		life = 5;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "fence_wall_crash";
+	};
+
+	{
+		file = "KDP";
+		life = 300;
+		fire =
+		{
+			30;
+			3;
+		};
+		maxSlope = 10;
+		desrt = "KDP_crash";
+	};
+
+	{
+		file = "ladder_01";
+		life = 5;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "small_crash";
+	};
+
+	{
+		file = "ladder_03";
+		life = 5;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "small_crash";
+	};
+
+	{
+		file = "ladder_05";
+		life = 5;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "small_crash";
+	};
+
+	{
+		file = "light_tower";
+		life = 50;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "road_sign_crash";
+	};
+
+	{
+		file = "light_tower2";
+		life = 50;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "road_sign_crash";
+	};
+
+	{
+		file = "longchair";
+		life = 1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "longchair_crash";
+	};
+
+	{
+		file = "luggage_car";
+		life = 5;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "diesel_generator_crash";
+	};
+
+	{
+		file = "luggage_cart";
+		life = 5;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "diesel_generator_crash";
+	};
+
+	{
+		file = "Nuclear_bomb";
+		life = 5;
+		fire =
+		{
+			20;
+			10;
+		};
+		desrt = "";
+	};
+
+	{
+		file = "Open_Hangar_big";
+		life = 400;
+		fire =
+		{
+			20;
+			2;
+		};
+		maxSlope = 10;
+		desrt = "Open_Hangar_big_crash";
+	};
+
+	{
+		file = "Open_Hangar_small";
+		life = 350;
+		fire =
+		{
+			20;
+			2;
+		};
+		maxSlope = 10;
+		desrt = "Open_Hangar_small_crash";
+	};
+
+	{
+		file = "pole";
+		life = 1;
+		fire =
+		{
+			0;
+			0;
+		};
+		maxSlope = 30;
+		desrt = "pole_crash";
+	};
+
+	{
+		file = "polegate";
+		life = 5;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "small_crash";
+	};
+
+	{
+		file = "pool";
+		life = 10;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "small_crash";
+	};
+
+	{
+		file = "pool2";
+		life = 10;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "small_crash";
+	};
+
+	{
+		file = "pool4";
+		life = 10;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "small_crash";
+	};
+
+	{
+		file = "pool5";
+		life = 10;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "small_crash";
+	};
+
+	{
+		file = "pool6";
+		life = 10;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "small_crash";
+	};
+
+	{
+		file = "pool7";
+		life = 10;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "small_crash";
+	};
+
+	{
+		file = "port_wooden";
+		life = 20;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "small_crash";
+	};
+
+	{
+		file = "Power_generator_01";
+		life = 5;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "diesel_generator_crash";
+	};
+
+	{
+		file = "power_pole_wooden";
+		life = 10;
+		fire =
+		{
+			0;
+			0;
+		};
+		maxSlope = 30;
+		desrt = "pole_crash";
+	};
+
+	{
+		file = "power_trans_line_big";
+		life = 100;
+		fire =
+		{
+			0;
+			0;
+		};
+		maxSlope = 20;
+		desrt = "power_trans_line_big_crash";
+	};
+
+	{
+		file = "scaffold";
+		life = 5;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "small_crash";
+	};
+
+	{
+		file = "sock";
+		life = 1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "";
+	};
+
+	{
+		file = "sock_military";
+		life = 1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "";
+	};
+
+	{
+		file = "sockpole";
+		life = 1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "sockpole_crash";
+	};
+
+	{
+		file = "sockpole_2";
+		life = 1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "sockpole_crash";
+	};
+
+	{
+		file = "solar_panel_large";
+		life = 200;
+		fire =
+		{
+			0;
+			0;
+		};
+		maxSlope = 20;
+		desrt = "road_ramp_crash";
+	};
+
+	{
+		file = "solar_panel_small";
+		life = 150;
+		fire =
+		{
+			0;
+			0;
+		};
+		maxSlope = 20;
+		desrt = "road_ramp_crash";
+	};
+
+	{
+		file = "tennis_court";
+		life = 150;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "";
+	};
+
+	{
+		file = "tool_box_01";
+		life = 2;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "small_crash";
+	};
+
+	{
+		file = "Trap_noname";
+		life = 5;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "board_crash";
+	};
+
+	{
+		file = "turkey_triangle_flag";
+		life = 1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "";
+	};
+
+	{
+		file = "umbrella";
+		life = 1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "umbrella_crash";
+	};
+
+	{
+		file = "umbrella2";
+		life = 1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "umbrella_crash";
+	};
+
+	{
+		file = "un_tower";
+		life = 50;
+		fire =
+		{
+			0;
+			0;
+		};
+		maxSlope = 10;
+		desrt = "road_sign_crash";
+	};
+
+	{
+		file = "us_afb_stuff_box";
+		life = 1;
+		fire =
+		{
+			0;
+			0;
+		};
+		maxSlope = 2;
+		desrt = "small_crash";
+	};
+
+	{
+		file = "vodilo";
+		life = 1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "small_crash";
+	};
+
+	{
+		file = "water_tower";
+		life = 50;
+		fire =
+		{
+			0;
+			0;
+		};
+		maxSlope = 20;
+		desrt = "road_sign_crash";
+	};
+
+	{
+		file = "windgen";
+		life = -1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "windgen";
+	};
+
+	{
+		file = "windgen_blades";
+		life = -1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "windgen_blades";
+	};
+
+	{
+		file = "windgen_blades_off";
+		life = -1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "windgen_blades_off";
+	};
+
+	{
+		file = "windgen_off";
+		life = -1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "windgen_off";
+	};
+
+	{
+		file = "wood_box_01";
+		life = 1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "small_crash";
+	};
+
+	{
+		file = "wood_box_02";
+		life = 1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "small_crash";
+	};
+
+};

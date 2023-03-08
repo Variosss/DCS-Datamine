@@ -1,0 +1,293 @@
+TerrainModelDeclaration =
+{
+	default =
+	{
+		load =
+		{
+			false;
+			false;
+		};
+		drawonmap = true;
+		vis = 1;
+		visShadows = 1;
+		life = 500;
+		fire =
+		{
+		  0;
+		  1;
+		};
+		classname = "lStandartStructure";
+		positioning = "ONLYHEIGTH"; 
+		DestructAnimatttion = "NO"; 
+	};
+	{
+		file = "Aleppo_Citadel_building";
+		life = -1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "Aleppo_Citadel_building";
+	};
+
+	{
+		file = "Aleppo_Tower_building";
+		life = -1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "Aleppo_Tower_building";
+	};
+
+	{
+		file = "amphitheatre";
+		life = -1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "amphitheatre";
+	};
+
+	{
+		file = "arc1";
+		life = -1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "arc1";
+	};
+
+	{
+		file = "BaalShamin_Temple";
+		life = -1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "BaalShamin_Temple";
+	};
+
+	{
+		file = "Funerary_Temple";
+		life = -1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "Funerary_Temple";
+	};
+
+	{
+		file = "Krak_de_Chevaliers";
+		life = -1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "Krak_de_Chevaliers";
+	};
+
+	{
+		file = "noria1";
+		life = -1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "noria1";
+	};
+
+	{
+		file = "noria2";
+		life = -1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "noria2";
+	};
+
+	{
+		file = "Palmira_Tetrapylon";
+		life = -1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "Palmira_Tetrapylon";
+	};
+
+	{
+		file = "Palmyra_Amphitheatre_building";
+		life = -1;
+		desrt = "Palmyra_Amphitheatre_building";
+	};
+
+	{
+		file = "Palmyra_Castle_building";
+		life = -1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "Palmyra_Castle_building";
+	};
+
+	{
+		file = "Ruined_Column_Temple";
+		life = -1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "Ruined_Column_Temple";
+	};
+
+	{
+		file = "ruines1";
+		life = -1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "ruines1";
+	};
+
+	{
+		file = "ruines2";
+		life = -1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "ruines2";
+	};
+
+	{
+		file = "ruines3";
+		life = -1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "ruines3";
+	};
+
+	{
+		file = "ruines4";
+		life = -1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "ruines4";
+	};
+
+	{
+		file = "ruins_walls_01";
+		life = -1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "ruins_walls_01";
+	};
+
+	{
+		file = "ruins_walls_02";
+		life = -1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "ruins_walls_02";
+	};
+
+	{
+		file = "ruins_walls_03";
+		life = -1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "ruins_walls_03";
+	};
+
+	{
+		file = "ruins_walls_04";
+		life = -1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "ruins_walls_04";
+	};
+
+	{
+		file = "ruins_walls_05";
+		life = -1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "ruins_walls_05";
+	};
+
+	{
+		file = "ruins_walls_06";
+		life = -1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "ruins_walls_06";
+	};
+
+	{
+		file = "ruins_walls_07";
+		life = -1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "ruins_walls_07";
+	};
+
+	{
+		file = "ruins_walls_arka";
+		life = -1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "ruins_walls_arka";
+	};
+
+};

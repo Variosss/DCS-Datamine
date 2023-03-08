@@ -1,0 +1,114 @@
+TerrainModelDeclaration =
+{
+	default =
+	{
+		load =
+		{
+			false;
+			false;
+		};
+		drawonmap = true;
+		vis = 1;
+		visShadows = 1;
+		life = 500;
+		fire =
+		{
+			0;
+			1;
+		};
+		classname = "lStandartStructure";
+		positioning = "ONLYHEIGTH";
+		DestructAnimatttion = "NO";
+	};
+
+	{
+		file = "Antenna_01";
+		life = 5;
+		fire =
+		{
+			0;
+			0;
+		};
+	};
+
+	{
+		file = "Antenna_02";
+		life = 5;
+	};
+
+	{
+		file = "barrel";
+		life = 5;
+	};
+
+	{
+		file = "Brick_tube";
+		life = 5;
+	};
+
+	{
+		file = "Conditioner";
+		life = 5;
+	};
+
+	{
+		file = "Conditioner_02";
+		life = 5;
+	};
+
+	{
+		file = "Conditioner_03";
+		life = 5;
+	};
+
+	{
+		file = "Conditioner_04";
+		life = 5;
+	};
+
+	{
+		file = "House_lamp";
+		life = 5;
+	};
+
+	{
+		file = "House_lamp_02";
+		life = 5;
+	};
+
+	{
+		file = "ladder_house";
+		life = 5;
+	};
+
+	{
+		file = "tarelka";
+		life = 5;
+	};
+
+	{
+		file = "Ventilation_04";
+		life = 5;
+	};
+
+	{
+		file = "Ventilation_05";
+		life = 5;
+	};
+
+	{
+		file = "Ventilation_06";
+		life = 5;
+	};
+
+	{
+		file = "wood_box_01";
+		life = 5;
+	};
+
+	{
+		file = "wood_box_02";
+		life = 5;
+	};
+
+};

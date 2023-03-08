@@ -1,0 +1,176 @@
+-- ...
+ShipTable =
+{
+    default =
+    {
+        vis   = 1;
+        load  = { false, false};
+        fire  = { 0, 1};
+        username = "";
+        classname = "lLandShip";
+        positioning = "BYNORMAL";
+    },
+
+-- kuznecow
+    {
+        file  = "kuznecow";
+        life  = 5402;
+--      load  = { false, false};
+        fire  = { 300, 5};
+        username = "TAKR Kuznetsov";
+        index = 1;
+    },
+-- vinson
+    {
+        file  = "vinson";
+        life  = 5402;
+--      load  = { false, false};
+        fire  = { 300, 5};
+        username = "CVN-70 Vinson";
+        index = 2;
+    },
+-- moscow
+    {
+        file  = "moscow";
+        life  = 4512;
+--      load  = { false, false};
+        fire  = { 300, 5};
+        username = "Moscow";
+        index = 3;
+    },
+-- elnya
+    {
+        file  = "elnya";
+        life  = 500;
+--      load  = { false, false};
+        fire  = { 300, 5};
+        username = "Elnya tanker";
+        index = 5;
+    },
+-- kater
+    {
+        file  = "Patrol_Boat";
+        life  = 100;
+--      load  = { false, false};
+        fire  = { 300, 5};
+        username = "speedboat";
+        index = 6;
+    },
+-- albatros
+    {
+        file  = "albatros";
+        life  = 600;
+--      load  = { false, false};
+        fire  = { 300, 5};
+        username = "Albatros (Grisha-5)";
+        index = 11;
+    },
+-- rezky
+    {
+        file  = "rezky";
+        life  = 1460;
+--      load  = { false, false};
+        fire  = { 300, 5};
+        username = "Rezky (Krivak-2)";
+        index = 14;
+    },
+-- molniya
+    {
+        file  = "molniya";
+        life  = 450;
+--      load  = { false, false};
+        fire  = { 300, 5};
+        username = "Molniya (Tarantul-3)";
+        index = 15;
+    },
+-- perry
+    {
+        file  = "perry";
+        life  = 1640;
+--      load  = { false, false};
+        fire  = { 300, 5};
+        username = "FFG-7 Oliver H. Perry class";
+        index = 17;
+    },
+-- Piotr_Velikiy.lom
+    {
+        file  = "Piotr_Velikiy";
+        life  = 4000;
+--      load  = { false, false};
+        fire  = { 300, 5};
+        username = "Piotr Velikiy";
+        index = 19;
+    },
+-- ticonderoga
+    {
+        file  = "ticonderoga";
+        life  = 3836;
+--      load  = { false, false};
+        fire  = { 300, 5};
+        username = "SG-47 Ticonderoga class";
+        index = 21;
+    },
+-- kilo
+    {
+        file  = "kilo";
+        life  = 1230;
+--      load  = { false, false};
+        fire  = { 300, 5};
+        username = "Kilo";
+        index = 23;
+    },
+-- som
+    {
+        file  = "som";
+        life  = 1520;
+--      load  = { false, false};
+        fire  = { 300, 5};
+        username = "Som (tango)";
+        index = 24;
+    },
+-- zwezdny
+    {
+        file  = "zwezdny";
+        life  = 180;
+--      load  = { false, false};
+        fire  = { 300, 5};
+        username = "Zwezdny";
+        index = 26;
+    },
+-- yastrebow
+    {
+        file  = "yastrebow";
+        life  = 4800;
+--      load  = { false, false};
+        fire  = { 300, 5};
+        username = "Yastrebov";
+        index = 27;
+    },
+-- neustrash
+    {
+        file  = "neustrash";
+        life  = 1640;
+--      load  = { false, false};
+        fire  = { 300, 5};
+        username = "Neustrashimy";
+        index = 28;
+    },
+-- barge with sand
+    {
+        file  = "barge-1";
+        life  = 500;
+--      load  = { false, false};
+        fire  = { 300, 5};
+        username = "Ivanov";
+        index = 29;
+    },
+-- barge without sand
+    {
+        file  = "barge-2";
+        life  = 500;
+--      load  = { false, false};
+        fire  = { 300, 5};
+        username = "Yakushev";
+        index = 30;
+    },
+}

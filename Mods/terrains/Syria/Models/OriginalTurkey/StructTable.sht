@@ -1,0 +1,288 @@
+TerrainModelDeclaration =
+{
+	default =
+	{
+		load =
+		{
+			false;
+			false;
+		};
+		drawonmap = true;
+		vis = 1;
+		visShadows = 1;
+		life = 500;
+		fire =
+		{
+		  0;
+		  1;
+		};
+		classname = "lStandartStructure";
+		positioning = "ONLYHEIGTH"; 
+		DestructAnimatttion = "NO"; 
+	};
+	{
+		file = "Adana_01burda_1";
+		life = -1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "Adana_01burda_1";
+	};
+
+	{
+		file = "Adana_01burda_2";
+		life = -1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "Adana_01burda_2";
+	};
+
+	{
+		file = "Adana_CityEducation_and_ResearchHospital_1";
+		life = -1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "Adana_CityEducation_and_ResearchHospital_1";
+	};
+
+	{
+		file = "Adana_CityEducation_and_ResearchHospital_2";
+		life = -1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "Adana_CityEducation_and_ResearchHospital_2";
+	};
+
+	{
+		file = "Adana_CityEducation_and_ResearchHospital_3";
+		life = -1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "Adana_CityEducation_and_ResearchHospital_3";
+	};
+
+	{
+		file = "Adana_CityEducation_and_ResearchHospital_4";
+		life = -1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "Adana_CityEducation_and_ResearchHospital_4";
+	};
+
+	{
+		file = "Adana_Galleria";
+		life = -1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "Adana_Galleria";
+	};
+
+	{
+		file = "Adana_Hilton_SA";
+		life = -1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "Adana_Hilton_SA";
+	};
+
+	{
+		file = "Adana_Optimum";
+		life = -1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "Adana_Optimum";
+	};
+
+	{
+		file = "Adana_Park_AVM";
+		life = -1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "Adana_Park_AVM";
+	};
+
+	{
+		file = "Adana_Yuregir_Hospital";
+		life = -1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "Adana_Yuregir_Hospital";
+	};
+
+	{
+		file = "airfields_hangar_01";
+		life = 400;
+		fire =
+		{
+			10;
+			2;
+		};
+		desrt = "airfields_hangar_01_crash";
+	};
+
+	{
+		file = "airfields_hangar_01_sign";
+		life = 400;
+		fire =
+		{
+			10;
+			2;
+		};
+		desrt = "airfields_hangar_01_crash";
+	};
+
+	{
+		file = "ataturka_pipes";
+		life = -1;
+		desrt = "ataturka_pipes";
+	};
+
+	{
+		file = "firetraining";
+		life = -1;
+		fire =
+		{
+			10;
+			5;
+		};
+		desrt = "firetraining";
+	};
+
+	{
+		file = "gaziantep_castle";
+		life = -1;
+		desrt = "gaziantep_castle";
+	};
+
+	{
+		file = "Gaziantep_Terminal";
+		life = -1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "Gaziantep_Terminal";
+	};
+
+	{
+		file = "Hangar_02";
+		life = -1;
+		fire =
+		{
+			30;
+			3;
+		};
+		desrt = "Hangar_02";
+	};
+
+	{
+		file = "Hangar_03";
+		life = -1;
+		fire =
+		{
+			50;
+			10;
+		};
+		desrt = "Hangar_03";
+	};
+
+	{
+		file = "hangar_millitary1";
+		life = 800;
+		fire =
+		{
+			30;
+			2;
+		};
+		desrt = "hangar_millitary1_crash";
+	};
+
+	{
+		file = "hangar_millitary2";
+		life = 800;
+		fire =
+		{
+			30;
+			2;
+		};
+		desrt = "hangar_millitary2_crash";
+	};
+
+	{
+		file = "hangar_millitary2_close";
+		life = 800;
+		fire =
+		{
+			30;
+			2;
+		};
+		desrt = "hangar_millitary2_crash";
+	};
+
+	{
+		file = "sabanchi";
+		life = -1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "sabanchi";
+	};
+
+	{
+		file = "Sheraton_Adana_Hotel";
+		life = -1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "Sheraton_Adana_Hotel";
+	};
+
+	{
+		file = "star";
+		life = -1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "star";
+	};
+
+};

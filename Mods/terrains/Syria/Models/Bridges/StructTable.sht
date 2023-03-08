@@ -1,0 +1,156 @@
+TerrainModelDeclaration =
+{
+	default =
+	{
+		load =
+		{
+			false;
+			false;
+		};
+		drawonmap = true;
+		vis = 1;
+		visShadows = 1;
+		life = 500;
+		fire =
+		{
+		  0;
+		  1;
+		};
+		classname = "lStandartStructure";
+		positioning = "ONLYHEIGTH"; 
+		DestructAnimatttion = "NO"; 
+	};
+	{
+		file = "adana_bridge";
+		life = -1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "adana_bridge";
+	};
+
+	{
+		file = "car_bridge_2line";
+		life = 150;
+		fire =
+		{
+			10;
+			1;
+		};
+		desrt = "car_bridge_2line_crash";
+	};
+
+	{
+		file = "car_bridge_2line_town";
+		life = 450;
+		desrt = "car_bridge_2line_crash";
+	};
+
+	{
+		file = "car_bridge_4line";
+		life = 200;
+		fire =
+		{
+			10;
+			1;
+		};
+		desrt = "car_bridge_4line_crash";
+	};
+
+	{
+		file = "car_bridge_4line_town";
+		life = 500;
+		desrt = "car_bridge_4line_crash";
+	};
+
+	{
+		file = "rw_bridge_1line";
+		life = 250;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "rw_bridge_1line_crash";
+	};
+
+	{
+		file = "rw_bridge_2line";
+		life = 250;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "rw_bridge_2line_crash";
+	};
+
+	{
+		file = "stone_support";
+		life = -1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "stone_support";
+	};
+
+	{
+		file = "stone_support_wide";
+		life = -1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "stone_support_wide";
+	};
+
+	{
+		file = "Viaduct_column_huge";
+		life = 30;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "Viaduct_column_huge_crash";
+	};
+
+	{
+		file = "Viaduct_column_small";
+		life = 30;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "Viaduct_column_small_crash";
+	};
+
+	{
+		file = "Wooden_bridge_2line";
+		life = 50;
+		fire =
+		{
+			20;
+			3;
+		};
+		desrt = "Wooden_bridge_2line_crash";
+	};
+
+	{
+		file = "Wooden_support";
+		life = -1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "Wooden_support";
+	};
+
+};

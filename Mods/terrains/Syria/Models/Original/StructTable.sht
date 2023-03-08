@@ -1,0 +1,515 @@
+TerrainModelDeclaration =
+{
+	default =
+	{
+		load =
+		{
+			false;
+			false;
+		};
+		drawonmap = true;
+		vis = 1;
+		visShadows = 1;
+		life = 500;
+		fire =
+		{
+		  0;
+		  1;
+		};
+		classname = "lStandartStructure";
+		positioning = "ONLYHEIGTH"; 
+		DestructAnimatttion = "NO"; 
+	};
+	{
+		file = "airport_building1";
+		life = -1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "airport_building1";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "airport_building1_tower";
+		life = -1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "airport_building1_tower";
+	};
+
+	{
+		file = "Al_Assad_Library";
+		life = -1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "Al_Assad_Library";
+	};
+
+	{
+		file = "AlAlbaytUniversity";
+		life = -1;
+		fire =
+		{
+			30;
+			3;
+		};
+		desrt = "AlAlbaytUniversity";
+	};
+
+	{
+		file = "Aleppo_city_hall";
+		life = -1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "Aleppo_city_hall";
+	};
+
+	{
+		file = "Aleppo_Electrostation";
+		life = -1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "Aleppo_Electrostation";
+	};
+
+	{
+		file = "Aleppo_Electrostation_element1";
+		life = -1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "Aleppo_Electrostation_element1";
+	};
+
+	{
+		file = "Aleppo_Electrostation_element2";
+		life = -1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "Aleppo_Electrostation_element2";
+	};
+
+	{
+		file = "Aleppo_Terminal";
+		life = -1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "Aleppo_Terminal";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "asad_building";
+		life = -1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "asad_building";
+	};
+
+	{
+		file = "bank";
+		life = -1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "bank";
+	};
+
+	{
+		file = "Dam_Tishrin";
+		life = -1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "Dam_Tishrin";
+	};
+
+	{
+		file = "Damascus_Convention_Center1";
+		life = -1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "Damascus_Convention_Center1";
+	};
+
+	{
+		file = "Damascus_Convention_Center2";
+		life = -1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "Damascus_Convention_Center2";
+	};
+
+	{
+		file = "Damascus_Convention_Center3";
+		life = -1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "Damascus_Convention_Center3";
+	};
+
+	{
+		file = "Damascus_Convention_Center4";
+		life = -1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "Damascus_Convention_Center4";
+	};
+
+	{
+		file = "Damascus_Convention_Center5";
+		life = -1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "Damascus_Convention_Center5";
+	};
+
+	{
+		file = "Damascus_Convention_Center6";
+		life = -1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "Damascus_Convention_Center6";
+	};
+
+	{
+		file = "Damascus_Future_Hotel";
+		life = -1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "Damascus_Future_Hotel";
+	};
+
+	{
+		file = "Damascus_Glasshouse";
+		life = -1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "Damascus_Glasshouse";
+	};
+
+	{
+		file = "Damascus_Massar_Centre";
+		life = -1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "Damascus_Massar_Centre";
+	};
+
+	{
+		file = "Damascus_Ministry_Defense";
+		life = -1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "Damascus_Ministry_Defense";
+	};
+
+	{
+		file = "Damascus_Opera_House";
+		life = -1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "Damascus_Opera_House";
+	};
+
+	{
+		file = "Damascus_Radio_TV";
+		life = -1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "Damascus_Radio_TV";
+	};
+
+	{
+		file = "Damascus_Sheraton_Hotel";
+		life = -1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "Damascus_Sheraton_Hotel";
+	};
+
+	{
+		file = "Damascus_Terminal";
+		life = -1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "Damascus_Terminal";
+	};
+
+	{
+		file = "Damascus_Terminal_Tower";
+		life = -1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "Damascus_Terminal_Tower";
+	};
+
+	{
+		file = "Damascus_Tower";
+		life = -1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "Damascus_Tower";
+	};
+
+	{
+		file = "Damascus_Unknown_Soldier";
+		life = -1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "Damascus_Unknown_Soldier";
+	};
+
+	{
+		file = "fountain";
+		life = -1;
+		desrt = "fountain";
+	};
+
+	{
+		file = "Hotel_FourSeasons";
+		life = -1;
+		desrt = "Hotel_FourSeasons";
+	};
+
+	{
+		file = "KingHusseinGate";
+		life = -1;
+		fire =
+		{
+			20;
+			2;
+		};
+		maxSlope = 10;
+		desrt = "KingHusseinGate";
+	};
+
+	{
+		file = "Lafarge_cement_factory0";
+		life = -1;
+		maxSlope = 10;
+		desrt = "Lafarge_cement_factory0";
+	};
+
+	{
+		file = "Lafarge_cement_factory1";
+		life = -1;
+		desrt = "Lafarge_cement_factory1";
+	};
+
+	{
+		file = "Lafarge_cement_factory2";
+		life = -1;
+		desrt = "Lafarge_cement_factory2";
+	};
+
+	{
+		file = "Lafarge_cement_factory3";
+		life = -1;
+		desrt = "Lafarge_cement_factory3";
+	};
+
+	{
+		file = "Lafarge_cement_factory4";
+		life = -1;
+		desrt = "Lafarge_cement_factory4";
+	};
+
+	{
+		file = "Lafarge_cement_factory5";
+		life = -1;
+		desrt = "Lafarge_cement_factory5";
+	};
+
+	{
+		file = "Lafarge_cement_factory6";
+		life = -1;
+		desrt = "Lafarge_cement_factory6";
+	};
+
+	{
+		file = "Lafarge_cement_factory7";
+		life = -1;
+		desrt = "Lafarge_cement_factory7";
+	};
+
+	{
+		file = "Lafarge_cement_factory8";
+		life = -1;
+		desrt = "Lafarge_cement_factory8";
+	};
+
+	{
+		file = "Lafarge_cement_factory9";
+		life = -1;
+		desrt = "Lafarge_cement_factory9";
+	};
+
+	{
+		file = "Latakia_airfield_mosque";
+		life = -1;
+		desrt = "Latakia_airfield_mosque";
+	};
+
+	{
+		file = "Latakia_Hangar_03";
+		life = -1;
+		fire =
+		{
+			30;
+			2;
+		};
+		desrt = "Latakia_Hangar_03";
+	};
+
+	{
+		file = "Ministry";
+		life = -1;
+		desrt = "Ministry";
+	};
+
+	{
+		file = "Omejadov";
+		life = -1;
+		desrt = "Omejadov";
+	};
+
+	{
+		file = "Pumping_station_1";
+		life = -1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "Pumping_station_1";
+	};
+
+	{
+		file = "Pumping_station_2";
+		life = -1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "Pumping_station_2";
+	};
+
+	{
+		file = "Pumping_station_3";
+		life = -1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "Pumping_station_3";
+	};
+
+	{
+		file = "St_Marys_Cathedral";
+		life = -1;
+		desrt = "St_Marys_Cathedral";
+	};
+
+	{
+		file = "sword";
+		life = -1;
+		desrt = "sword";
+	};
+
+	{
+		file = "UniversityHouse";
+		life = -1;
+		fire =
+		{
+			20;
+			2;
+		};
+		maxSlope = 10;
+		desrt = "UniversityHouse";
+	};
+
+};

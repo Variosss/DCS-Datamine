@@ -1,5 +1,7 @@
 *
 !*.lua
+!*.fx
+!*.hlsl
+!*.sht
 !.gitignore
 !/**/
-/Bazar/Liveries/*.lua

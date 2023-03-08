@@ -1,0 +1,230 @@
+TerrainModelDeclaration =
+{
+	default =
+	{
+		load =
+		{
+			false;
+			false;
+		};
+		drawonmap = true;
+		vis = 1;
+		visShadows = 1;
+		life = 500;
+		fire =
+		{
+		  0;
+		  1;
+		};
+		classname = "lStandartStructure";
+		positioning = "ONLYHEIGTH"; 
+		DestructAnimatttion = "NO"; 
+	};
+	{
+		file = "airfields_building_1_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "airfields_building_13_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "airfields_building_14_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "airfields_building_19_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "airfields_building_21_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "airfields_building_23_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "airfields_building_25_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "airfields_building_27_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "airfields_building_33_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "airfields_building_5_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "airfields_building_6_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "airfields_hangar_01_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "airfields_hangar_03_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "ATC_Control_Tower_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "bunkerhill_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "Hangar_Akrotiri_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "hangar_cover_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "hangar_double_crash";
+		maxSlope = 10;
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "hangar_millitary1_crash";
+		maxSlope = 10;
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "hangar_millitary2_crash";
+		maxSlope = 10;
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "hangarcovered_crash";
+		maxSlope = 10;
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "hangarcovered_gates_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "hangarcovered_green_crash";
+		maxSlope = 10;
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "hangarcovered2_crash";
+		maxSlope = 10;
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "hangarcovered2_green_crash";
+		maxSlope = 10;
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "hangarcovered3_crash";
+		maxSlope = 10;
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "hangarcovered3_green_crash";
+		maxSlope = 10;
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "hangarlong_ground_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "hangarlong1_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "Open_Hangar_big_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "Open_Hangar_small_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "tankcover_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "tankcover2_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+};

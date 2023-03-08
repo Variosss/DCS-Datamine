@@ -1,0 +1,360 @@
+-- ...
+TreesTable =
+{
+    default =
+    {
+        vis   = 1;
+        load  = { false, false};
+        fire  = { 0, 1};
+        username = "";
+        classname = "lObject";
+        positioning = "BY_XZ";
+        collidable = false;
+    },   
+-- alleya_1top
+    {
+        file  = "alleya_1top";
+        fire  = { 0, 2};
+        positioning = "NO";
+    },
+-- alleya_2top
+    {
+        file  = "alleya_2top";
+        fire  = { 0, 2};
+        positioning = "NO";
+    },
+-- alleya_3kip
+    {
+        file  = "alleya_3kip";
+        fire  = { 0, 2};
+        positioning = "NO";
+    },
+-- alleya_4kip
+    {
+        file  = "alleya_4kip";
+        fire  = { 0, 2};
+        positioning = "NO";
+    },
+-- alleya_5big
+    {
+        file  = "alleya_5big";
+        fire  = { 0, 2};
+        positioning = "NO";
+    },
+-- alleya_6big
+    {
+        file  = "alleya_6big";
+        fire  = { 0, 2};
+        positioning = "NO";
+    },
+-- alleya_7
+    {
+        file  = "alleya_7";
+        fire  = { 0, 2};
+        positioning = "NO";
+    },
+-- alleya_8
+    {
+        file  = "alleya_8";
+        fire  = { 0, 2};
+        positioning = "NO";
+    },
+-- alleya_9
+    {
+        file  = "alleya_9";
+        fire  = { 0, 2};
+        positioning = "NO";
+    },
+-- alleya_10
+    {
+        file  = "alleya_10";
+        fire  = { 0, 2};
+        positioning = "NO";
+    },
+-- alleya_11
+    {
+        file  = "alleya_11";
+        fire  = { 0, 2};
+        positioning = "NO";
+    },
+-- alleya_12
+    {
+        file  = "alleya_12";
+        fire  = { 0, 2};
+        positioning = "NO";
+    },
+-- alleya_13
+    {
+        file  = "alleya_13";
+        fire  = { 0, 2};
+        positioning = "NO";
+    },
+-- alleya_14
+    {
+        file  = "alleya_14";
+        fire  = { 0, 2};
+        positioning = "NO";
+    },
+-- alleya_15
+    {
+        file  = "alleya_15";
+        fire  = { 0, 2};
+        positioning = "NO";
+    },   
+-- trees
+    {
+        file  = "trees";
+        life  = 5;
+        fire  = { 0, 2};
+    },
+-- trees_1
+    {
+        file  = "trees_1";
+        fire  = { 0, 2};
+    },
+-- trees_2
+    {
+        file  = "trees_2";
+        fire  = { 0, 2};
+    },
+-- trees_3
+    {
+        file  = "trees_3";
+        fire  = { 0, 2};
+    },
+-- trees_4
+    {
+        file  = "trees_4";
+        fire  = { 0, 2};
+    },
+-- trees_5
+    {
+        file  = "trees_5";
+        fire  = { 0, 2};
+    },
+-- trees_6
+    {
+        file  = "trees_6";
+        fire  = { 0, 2};
+    },
+-- trees_7
+    {
+        file  = "trees_7";
+        fire  = { 0, 2};
+    },
+-- trees_8
+    {
+        file  = "trees_8";
+        fire  = { 0, 2};
+    },
+-- trees_9
+    {
+        file  = "trees_9";
+        fire  = { 0, 2};
+    },
+-- trees_10
+    {
+        file  = "trees_10";
+        fire  = { 0, 2};
+    },
+-- trees_11
+    {
+        file  = "trees_11";
+        fire  = { 0, 2};
+    },
+-- trees_12
+    {
+        file  = "trees_12";
+        fire  = { 0, 2};
+    },
+-- trees_13
+    {
+        file  = "trees_13";
+        fire  = { 0, 2};
+    },
+-- trees_14
+    {
+        file  = "trees_14";
+        fire  = { 0, 2};
+    },
+-- trees_15
+    {
+        file  = "trees_15";
+        fire  = { 0, 2};
+    },
+-- trees_16
+    {
+        file  = "trees_16";
+        fire  = { 0, 2};
+    },
+-- trees_17
+    {
+        file  = "trees_17";
+        fire  = { 0, 2};
+    },
+-- trees_18
+    {
+        file  = "trees_18";
+        fire  = { 0, 2};
+    },
+-- trees_19
+    {
+        file  = "trees_19";
+        fire  = { 0, 2};
+    },
+-- trees_20
+    {
+        file  = "trees_20";
+        fire  = { 0, 2};
+    },
+-- pp1
+    {
+        file  = "pp1";
+        fire  = { 0, 2};
+        positioning = "ONLYHEIGTH";
+    },
+-- pp10
+    {
+        file  = "pp10";
+        fire  = { 0, 2};
+        positioning = "ONLYHEIGTH";
+    },
+-- pp11
+    {
+        file  = "pp11";
+        fire  = { 0, 2};
+        positioning = "ONLYHEIGTH";
+    },
+-- pp12
+    {
+        file  = "pp12";
+        fire  = { 0, 2};
+        positioning = "ONLYHEIGTH";
+    },
+-- pp13
+    {
+        file  = "pp13";
+        fire  = { 0, 2};
+        positioning = "ONLYHEIGTH";
+    },
+-- pp15
+    {
+        file  = "pp15";
+        fire  = { 0, 2};
+        positioning = "ONLYHEIGTH";
+    },
+-- pp16
+    {
+        file  = "pp16";
+        fire  = { 0, 2};
+        positioning = "ONLYHEIGTH";
+    },
+-- pp2
+    {
+        file  = "pp2";
+        fire  = { 0, 2};
+        positioning = "ONLYHEIGTH";
+    },
+-- pp3
+    {
+        file  = "pp3";
+        fire  = { 0, 2};
+        positioning = "ONLYHEIGTH";
+    },
+-- pp4
+    {
+        file  = "pp4";
+        fire  = { 0, 2};
+        positioning = "ONLYHEIGTH";
+    },
+-- pp5
+    {
+        file  = "pp5";
+        fire  = { 0, 2};
+        positioning = "ONLYHEIGTH";
+    },
+-- pp8
+    {
+        file  = "pp8";
+        fire  = { 0, 2};
+        positioning = "ONLYHEIGTH";
+    },
+-- p_s
+    {
+        file  = "p_s";
+        fire  = { 0, 2};
+        positioning = "ONLYHEIGTH";
+    },
+-- p_s2
+    {
+        file  = "p_s2";
+        fire  = { 0, 2};
+        positioning = "ONLYHEIGTH";
+    },
+-- p_s3
+    {
+        file  = "p_s3";
+        fire  = { 0, 2};
+        positioning = "ONLYHEIGTH";
+    },
+-- p_s4
+    {
+        file  = "p_s4";
+        fire  = { 0, 2};
+        positioning = "ONLYHEIGTH";
+    },
+-- kl1
+    {
+        file  = "kl1";
+        fire  = { 0, 2};
+        positioning = "ONLYHEIGTH";
+    },
+-- kl2
+    {
+        file  = "kl2";
+        fire  = { 0, 2};
+        positioning = "ONLYHEIGTH";
+    },
+-- kladb3
+    {
+        file  = "kladb3";
+        fire  = { 0, 2};
+        positioning = "ONLYHEIGTH";
+    },
+-- kl_br
+    {
+        file  = "kl_br";
+        fire  = { 0, 2};
+        positioning = "ONLYHEIGTH";
+    },
+-- malahov_park
+    {
+        file  = "malahov_park";
+        fire  = { 0, 2};
+        positioning = "ONLYHEIGTH";
+    },
+-- park_nab01
+    {
+        file  = "park_nab01";
+        fire  = { 0, 2};
+        positioning = "ONLYHEIGTH";
+    },
+-- park_pan
+    {
+        file  = "park_pan";
+        fire  = { 0, 2};
+        positioning = "ONLYHEIGTH";
+    },
+-- park_s4
+    {
+        file  = "park_s4";
+        fire  = { 0, 2};
+        positioning = "ONLYHEIGTH";
+    },
+-- park35
+    {
+        file  = "park35";
+        fire  = { 0, 2};
+        positioning = "ONLYHEIGTH";
+    },
+}

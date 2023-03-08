@@ -1,0 +1,258 @@
+TerrainModelDeclaration =
+{
+	default =
+	{
+		load =
+		{
+			false;
+			false;
+		};
+		drawonmap = true;
+		vis = 1;
+		visShadows = 1;
+		life = 500;
+		fire =
+		{
+			0;
+			1;
+		};
+		classname = "lStandartStructure";
+		positioning = "ONLYHEIGTH";
+		DestructAnimatttion = "NO";
+	};
+
+	{
+		file = "bashnja-sea";
+		castshadows = false;
+		life = 150;
+		fire =
+		{
+			150;
+			2;
+		};
+		username = "house";
+		desrt = "small_crash";
+	};
+
+	{
+		file = "Canopy_beach";
+		life = 20;
+		fire =
+		{
+			0;
+			1;
+		};
+	};
+
+	{
+		file = "football";
+		castshadows = false;
+	};
+
+	{
+		file = "him_bak_c";
+		castshadows = false;
+		life = 5;
+		fire =
+		{
+			60;
+			5;
+		};
+		classname = "lOilTank";
+	};
+
+	{
+		file = "kaponir";
+		castshadows = false;
+		fire =
+		{
+			150;
+			2;
+		};
+		username = "depository";
+	};
+
+	{
+		file = "komplex_big";
+		castshadows = false;
+		life = 500;
+		fire =
+		{
+			60;
+			2;
+		};
+		username = "civil building";
+		desrt = "komplex_big_crush";
+	};
+
+	{
+		file = "komplex_big_crush";
+		castshadows = false;
+		iscrashmodel = true;
+	};
+
+	{
+		file = "komplex_crush";
+		castshadows = false;
+		fire =
+		{
+			0;
+			2;
+		};
+		iscrashmodel = true;
+	};
+
+	{
+		file = "majak-1";
+		castshadows = false;
+		life = 800;
+		fire =
+		{
+			120;
+			2;
+		};
+		username = "lighthouse";
+		classname = "lLighthouse";
+		desrt = "majak-1_crash";
+	};
+
+	{
+		file = "majak-1_crash";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "morvok";
+		castshadows = false;
+		life = 1600;
+		fire =
+		{
+			120;
+			2;
+		};
+		username = "port arrival building";
+		desrt = "morvok_crash";
+	};
+
+	{
+		file = "morvok_crash";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "observ";
+		castshadows = false;
+		life = 1000;
+		fire =
+		{
+			60;
+			2;
+		};
+		username = "observatory";
+		desrt = "observ_crush";
+	};
+
+	{
+		file = "section_main";
+		castshadows = false;
+		life = 600;
+		fire =
+		{
+			60;
+			2;
+		};
+		desrt = "section_main_crash";
+	};
+
+	{
+		file = "section_main_crash";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "stolb-ferma-big";
+		castshadows = false;
+		life = 100;
+		fire =
+		{
+			0;
+			2;
+		};
+		desrt = "Stolb-ferma-big_crush";
+	};
+
+	{
+		file = "stolb-ferma-big_crush";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "stolb-ferma-small";
+		castshadows = false;
+		life = 50;
+		fire =
+		{
+			0;
+			2;
+		};
+		desrt = "Stolb-ferma-small_crush";
+	};
+
+	{
+		file = "stolb-ferma-small_crush";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "truboprovod_b";
+		castshadows = false;
+		life = 40;
+		fire =
+		{
+			60;
+			2;
+		};
+		desrt = "truboprovod_b_crush";
+	};
+
+	{
+		file = "volnorez_big";
+		castshadows = false;
+		fire =
+		{
+			0;
+			2;
+		};
+	};
+
+	{
+		file = "zont";
+		life = 2;
+		fire =
+		{
+			0;
+			2;
+		};
+	};
+
+	{
+		file = "zont_blue";
+		castshadows = false;
+	};
+
+	{
+		file = "zont_red";
+		castshadows = false;
+	};
+
+	{
+		file = "zont_white";
+		castshadows = false;
+	};
+
+	{
+		file = "zont_yellow";
+		castshadows = false;
+	};
+
+};

@@ -1,0 +1,60 @@
+TerrainModelDeclaration =
+{
+	default =
+	{
+		load =
+		{
+			false;
+			false;
+		};
+		drawonmap = true;
+		vis = 1;
+		visShadows = 1;
+		life = 500;
+		fire =
+		{
+			0;
+			1;
+		};
+		classname = "lStandartStructure";
+		positioning = "ONLYHEIGTH";
+		DestructAnimatttion = "NO";
+	};
+
+	{
+		file = "batumi_pole_light_gr_halloween";
+	};
+
+	{
+		file = "car_light_halloween";
+	};
+
+	{
+		file = "Constr_crane_ghost";
+	};
+
+	{
+		file = "Constr_crane_ghost_2";
+	};
+
+	{
+		file = "kran_bash_halloween";
+	};
+
+	{
+		file = "kran_port_halloween";
+	};
+
+	{
+		file = "pumpkin";
+	};
+
+	{
+		file = "taxiway_light_blue_halloween";
+	};
+
+	{
+		file = "UHF_descent_beacon_01_halloween";
+	};
+
+};

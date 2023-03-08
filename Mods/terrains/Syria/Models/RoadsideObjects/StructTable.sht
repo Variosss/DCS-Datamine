@@ -1,0 +1,104 @@
+TerrainModelDeclaration =
+{
+	default =
+	{
+		load =
+		{
+			false;
+			false;
+		};
+		drawonmap = true;
+		vis = 1;
+		visShadows = 1;
+		life = 500;
+		fire =
+		{
+		  0;
+		  1;
+		};
+		classname = "lStandartStructure";
+		positioning = "ONLYHEIGTH"; 
+		DestructAnimatttion = "NO"; 
+	};
+	{
+		file = "big_board";
+		life = 10;
+		fire =
+		{
+			0;
+			0;
+		};
+		maxSlope = 10;
+		desrt = "road_sign_crash";
+	};
+
+	{
+		file = "big_board_2";
+		life = 10;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "road_sign_crash";
+	};
+
+	{
+		file = "big_board_3";
+		life = 10;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "road_sign_crash";
+	};
+
+	{
+		file = "road_signs_ramp";
+		life = 10;
+		fire =
+		{
+			0;
+			0;
+		};
+		maxSlope = 10;
+		desrt = "road_ramp_crash";
+	};
+
+	{
+		file = "road_signs_ramp2";
+		life = 10;
+		fire =
+		{
+			0;
+			0;
+		};
+		maxSlope = 10;
+		desrt = "road_sign_crash";
+	};
+
+	{
+		file = "Traffic_light";
+		life = 5;
+		fire =
+		{
+			0;
+			0;
+		};
+		maxSlope = 10;
+		desrt = "small_crash";
+	};
+
+	{
+		file = "tunnel_rail_2line";
+		life = -1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "tunnel_rail_2line";
+	};
+
+};

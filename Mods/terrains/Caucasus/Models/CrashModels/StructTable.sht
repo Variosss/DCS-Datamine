@@ -1,0 +1,34 @@
+TerrainModelDeclaration =
+{
+	default =
+	{
+		load =
+		{
+			false;
+			false;
+		};
+		drawonmap = true;
+		vis = 1;
+		visShadows = 1;
+		life = 500;
+		fire =
+		{
+			0;
+			1;
+		};
+		classname = "lStandartStructure";
+		positioning = "ONLYHEIGTH";
+		DestructAnimatttion = "NO";
+	};
+
+	{
+		file = "RokiTunnelEntrance_crash";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "tunnel_entrance_cauc_01_crash";
+		iscrashmodel = true;
+	};
+
+};

@@ -1,0 +1,107 @@
+TerrainModelDeclaration =
+{
+	default =
+	{
+		load =
+		{
+			false;
+			false;
+		};
+		drawonmap = true;
+		vis = 1;
+		visShadows = 1;
+		life = 500;
+		fire =
+		{
+		  0;
+		  1;
+		};
+		classname = "lStandartStructure";
+		positioning = "ONLYHEIGTH"; 
+		DestructAnimatttion = "NO"; 
+	};
+	{
+		file = "bengal_industrial_object_05_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "bengal_industrial_object_06_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "bengal_industrial_object_07_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "bengal_industrial_object_09_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "cg_building07_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "greenhouse1_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "greenhouse2_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "hungar_016_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "hungar_032_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "liq_tank_big_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "oilgas_refinery_crash_01";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "oilrig_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "power_plant_01_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "pumpstation_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+};

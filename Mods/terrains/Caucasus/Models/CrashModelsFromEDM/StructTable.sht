@@ -1,0 +1,834 @@
+TerrainModelDeclaration =
+{
+	default =
+	{
+		load =
+		{
+			false;
+			false;
+		};
+		drawonmap = true;
+		vis = 1;
+		visShadows = 1;
+		life = 500;
+		fire =
+		{
+			0;
+			1;
+		};
+		classname = "lStandartStructure";
+		positioning = "ONLYHEIGTH";
+		DestructAnimatttion = "NO";
+	};
+
+	{
+		file = "airbase_airport_kdp_tbilisi_crash";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "airbase_airport_tbilisi_01_crash";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "airbase_airport_tbilisi_03_02_crush";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "airbase_airport_tbilisi_03_crash";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "airbase_airport_tbilisi_big_crush";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "Airbase_airport_Tbilisi_Block_01_crash";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "airbase_airport_tbilisi_checkpoint_01_crash";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "Airbase_airport_Tbilisi_Hangar_01_crash";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "Airbase_airport_Tbilisi_Vishka_01_crash";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "airbase_airportold_tbilisi_crash";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "airbase_barrels_01_crush";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "airbase_barrels_02_crush";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "airbase_kdp_tbilisi_crash";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "airbase_kdp2_tbilisi_crash";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "airbase_meteo_tbilisi_01_crush";
+		fire =
+		{
+			0;
+			2;
+		};
+		iscrashmodel = true;
+	};
+
+	{
+		file = "airbase_meteo_tbilisi_02_crush";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "airbase_tbilisi_tank_01_crash";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "airbase_tbilisi_tank_02_crash";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "airbase_tbilisi_tent_crash";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "airbase_vor_crash";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "airfild_hangar_crush";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "airport_babushara_new_crash";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "airport_babushara_old_crush";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "airport_crush";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "angar_a_crash";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "angar_b_crash";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "atz-60_new_crash";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "aviashtab_new_crash";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "bak_new_crush";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "bashnja-stena_crush";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "batumi_fonar_crash";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "batumi_hangar_med_crash";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "batumi_hangar_small_crash";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "batumi_KDP_crash";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "batumi_terminal_crash";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "beslan_vladikavkaz_crash";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "box_new_crash";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "bufet_crush";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "cafe_crush";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "ceh_a_crush";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "ceh_ang_a_crash";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "ceh_ang_b_crush";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "ceh_ang_c_crush";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "ceh_b_crush";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "ceh_b1_crush";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "ceh_c_crush";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "ceh_d_crush";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "Cinema_a_crash";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "cinema_b_crush";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "civil_traffic_crash";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "d_sad_a_crush";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "dansing_crush";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "dom2c_new_crash";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "domik1_crash";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "elektrowoz_new_crash";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "ferma_a_crash";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "ferma_b_new_crush";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "garage_a_crash";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "gaz-66_crash";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "gradir_crush";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "him_bak_b_crush";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "him_bak_big_crush";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "home1_crash";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "home16_bash_crush";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "home16_twin_crush";
+		fire =
+		{
+			1000;
+			1;
+		};
+		iscrashmodel = true;
+	};
+
+	{
+		file = "home1ug_crush";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "home1ugR_crush";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "home2_crush";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "home3_a_crash";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "home3_c_crash";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "home3_e_crash";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "home5_crush";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "home52_st_crash";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "home53_hr_crash";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "home53_st_crash";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "hotel_a_crush";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "hotel_c_crush";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "hozdomik_crash";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "hozdomik1_new_crash";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "ikarus_new_crash";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "il76_Ru_crash";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "inz_big_crush";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "inz_crush";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "kazarma1_crash";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "KAZARMA2_CRASH_new";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "klub_crush";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "korpus_a_crush";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "korpus_a1_crush";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "korpus_c_crush";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "korpus_crush";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "korpus_d_crush";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "kotelnaya_a_crash";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "kotelnaya_b_crush";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "kran_bash_crush";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "kran_port_crush";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "kran-stroi_crush";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "lap-house_crush";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "lokator_crash";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "maz-6303_new_crash";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "mechet_crush";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "meteoburo_crush";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "most(road)big-crush";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "most(road)small-a-crush";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "most(road)small-crush";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "most-ferma-a-crush";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "most-ferma-crush";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "mostik-crush";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "mst(road)small-crush";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "mstik-crush";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "neftevyshka_new_crush";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "observ_crush";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "ohr-vyshka_crush";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "par_apparatnaya_crash";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "pavilyon1_crush";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "platforma_crush";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "polyklinika_a_crush";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "r_vok_sb_crush";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "r_vok_sd_new_crash";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "radar_crush";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "restoran1_crash";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "rsp_crash_new";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "s1_crash";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "s2_crash";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "s3_crash";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "s4_crash";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "saray_crash";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "school_a_crush";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "sklad_new_crush";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "small_crash";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "stadion_crash";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "stancija3_crush";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "stolovaya_crash";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "stolovaya1_crash";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "TEC_a_crash";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "tech_crash";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "tele_bash_m_new_crash";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "tele_bash_new_crash";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "teplowoz_new_crash";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "terminal_1_crush";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "tr_budka_crash";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "truboprovod_b_crush";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "truck_crash_01";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "truck_crash_02";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "uniwersam_a_new_crash";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "vaz_crash";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "vok_sim_a_crush";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "vok_sim_b_crush";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "vok_sim_c_crush";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "vok_sim_d_crush";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "vok_sim_e_crush";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "vokz_a_crush";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "vokz_big_crush";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "vyshka_airport_crash";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "wagon_gruz_new_crash";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "wagon-cisterna_crash";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "wagon-pass_new_crash";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "warehouse_babushara_01_crush";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "wodokachka_a_new_crash";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "wodokachka_b_crush";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "wodokachka_c_crush";
+		iscrashmodel = true;
+	};
+
+};

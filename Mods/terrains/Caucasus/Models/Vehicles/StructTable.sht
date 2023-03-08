@@ -1,0 +1,151 @@
+TerrainModelDeclaration =
+{
+	default =
+	{
+		load =
+		{
+			false;
+			false;
+		};
+		drawonmap = true;
+		vis = 1;
+		visShadows = 1;
+		life = 500;
+		fire =
+		{
+			0;
+			1;
+		};
+		classname = "lStandartStructure";
+		positioning = "ONLYHEIGTH";
+		DestructAnimatttion = "NO";
+	};
+
+	{
+		file = "btr-80_new";
+		life = 200;
+		fire =
+		{
+			10;
+			2;
+		};
+		desrt = "btr-80_new_crash";
+	};
+
+	{
+		file = "btr-80_new_crash";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "elektrowoz_new";
+		life = 100;
+		fire =
+		{
+			10;
+			1;
+		};
+		maxSlope = 8;
+		desrt = "elektrowoz_new_crash";
+	};
+
+	{
+		file = "gaz_66_new";
+		life = 100;
+		fire =
+		{
+			10;
+			1;
+		};
+		desrt = "gaz-66_crash";
+	};
+
+	{
+		file = "il76_Ru";
+		life = 200;
+		fire =
+		{
+			15;
+			1;
+		};
+		maxSlope = 10;
+		desrt = "il76_ru_crash";
+	};
+
+	{
+		file = "kamaz-fire_new";
+		life = 100;
+		fire =
+		{
+			10;
+			1;
+		};
+		maxSlope = 10;
+		desrt = "truck_crash_02";
+	};
+
+	{
+		file = "Kamaz-tent_new";
+		life = 100;
+		fire =
+		{
+			10;
+			1;
+		};
+		maxSlope = 10;
+		desrt = "truck_crash_02";
+	};
+
+	{
+		file = "teplowoz_new";
+		castshadows = false;
+		life = 200;
+		fire =
+		{
+			15;
+			2;
+		};
+		username = "locomotive";
+		maxSlope = 8;
+		desrt = "teplowoz_new_crash";
+	};
+
+	{
+		file = "vaz-2109";
+		life = 50;
+		fire =
+		{
+			10;
+			1;
+		};
+		maxSlope = 10;
+		desrt = "vaz_crash";
+	};
+
+	{
+		file = "wagon-gruz_new";
+		castshadows = false;
+		life = 200;
+		fire =
+		{
+			20;
+			2;
+		};
+		username = "coach cargo";
+		desrt = "wagon_gruz_new_crash";
+	};
+
+	{
+		file = "wagon-pass_new";
+		castshadows = false;
+		life = 200;
+		fire =
+		{
+			20;
+			2;
+		};
+		username = "coach a passenger";
+		desrt = "wagon-pass_new_crash";
+	};
+
+};

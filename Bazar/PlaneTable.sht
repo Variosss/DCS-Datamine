@@ -1,0 +1,1099 @@
+-- ...
+PlaneTable =
+{
+    default =
+    {
+        vis   = 1;
+		load  = { false, false};
+        fire  = { 0, 1};
+        username = "";
+        classname = "lLandPlane";
+        positioning = "BYNORMAL";
+        drawonmap = true;
+    },
+
+-- mig-23
+    {
+        file  = "mig-23";
+        life  = 16;
+        vis   = 3;
+        desrt = "mig-23-oblomok";       
+        fire  = { 300, 2};
+        username = "mig-23ml";
+        index = 1;
+    },
+-- mig-29
+    {
+        file  = "mig-29";
+        life  = 16;
+        vis   = 3;
+        desrt = "mig-29-oblomok";
+        fire  = { 300, 2};
+        username = "mig-29";
+        index = 2;
+    },
+-- su-27
+    {
+        file  = "su-27";
+        life  = 20;
+        vis   = 3;
+        desrt = "su-27-oblomok";
+        fire  = { 300, 2};
+        username = "su-27";
+        index = 3;
+    },
+-- su-33
+    {
+        file  = "su-33";
+        life  = 20;
+        vis   = 3;
+        desrt = "su-33-oblomok";
+        fire  = { 300, 2};
+        username = "su-33";
+        index = 4;
+    },
+-- f-14a
+    {
+        file  = "f-14a";
+        life  = 20;
+        vis   = 3;
+        desrt = "f-14a-oblomok";
+        fire  = { 300, 2};
+        username = "f-14a";
+        index = 5;
+    },
+-- f-15
+    {
+        file  = "f-15";
+        life  = 20;
+        vis   = 3;
+        desrt = "f-15-oblomok";
+        fire  = { 300, 2};
+        username = "F-15C";
+        index = 6;
+    },
+-- f-16
+    {
+        file  = "f-16";
+        life  = 14;
+        vis   = 3;
+        desrt = "f-16-oblomok";
+        fire  = { 300, 2};
+        username = "F-16c";
+        index = 7;
+    },
+-- f-16A
+    {
+        file  = "f-16A";
+        life  = 14;
+        vis   = 3;
+        desrt = "f-16-oblomok";
+        fire  = { 300, 2};
+        username = "F-16A";
+        index = 52;
+    },
+-- mig-25
+    {
+        file  = "mig-25";
+        life  = 24;
+        vis   = 3;
+        desrt = "mig-25-oblomok";
+        fire  = { 300, 2};
+        username = "mig-25rbv";
+        index = 8;
+    },
+-- mig-31
+    {
+        file  = "mig-31";
+        life  = 24;
+        vis   = 3;
+        desrt = "mig-31-oblomok";
+        fire  = { 300, 2};
+        username = "mig-31";
+        index = 9;
+    },
+-- tornado
+    {
+        file  = "tornado";
+        life  = 20;
+        vis   = 3;
+        desrt = "Fighter-1-crush";
+        fire  = { 300, 2};
+        username = "Tornado GR4";
+        index = 10;
+    },
+-- tornado ids
+-- mig-27
+    {
+        file  = "mig-27";
+        life  = 18;
+        vis   = 3;
+        desrt = "mig-27-oblomok";
+        fire  = { 300, 2};
+        username = "mig-27";
+        index = 11;
+    },
+-- su-24
+    {
+        file  = "su-24";
+        life  = 20;
+        vis   = 3;
+        desrt = "su-24-oblomok";
+        fire  = { 300, 2};
+        username = "su-24m";
+        index = 12;
+    },
+-- su-30
+    {
+        file  = "su-30";
+        life  = 20;
+        vis   = 3;
+        desrt = "su-33-oblomok";
+        fire  = { 300, 2};
+        username = "su-30";
+        index = 13;
+    },
+-- f-18a
+    {
+        file  = "f-18a";
+        life  = 20;
+        vis   = 3;
+        desrt = "f-18a-oblomok";
+        fire  = { 300, 2};
+        username = "f-18a";
+        index = 14;
+    },
+-- f-111
+    {
+        file  = "f-111";
+        life  = 20;
+        vis   = 3;
+        desrt = "f-111-oblomok";
+        fire  = { 300, 2};
+        username = "f-111e";
+        index = 15;
+    },
+-- su-25
+    {
+        file  = "su-25";
+        life  = 32;
+        vis   = 3;
+        desrt = "su-25-oblomok";
+        fire  = { 300, 2};
+        username = "su-25";
+        index = 16;
+    },
+	-- Moved to CoreMods
+--[[
+-- a-10a
+	{
+        file  = "a-10a";
+        life  = 32;
+        vis   = 3;
+        desrt = "A-10_DAM";
+        fire  = { 300, 2};
+        username = "a-10a";
+        index = 17;
+    },
+	-- a-10c
+    {
+        file  = "a-10";
+        life  = 32;
+        vis   = 3;
+        desrt = "A-10_DAM";
+        fire  = { 300, 2};
+        username = "A-10C";
+        index = 58;
+    },
+--]]
+-- tu-160
+    {
+        file  = "tu-160";
+        life  = 60;
+        vis   = 3;
+        desrt = "tu-160-oblomok";
+        fire  = { 300, 2};
+        username = "tu-160";
+        index = 18;
+    },
+-- b-1b
+    {
+        file  = "b-1b";
+        life  = 60;
+        vis   = 3;
+        desrt = "b-1b-oblomok";
+        fire  = { 300, 2};
+        username = "b-1b";
+        index = 19;
+    },
+-- tu-95ms
+    {
+        file  = "tu-95ms";
+        life  = 60;
+        vis   = 3;
+        desrt = "tu-95ms-oblomok";
+        fire  = { 300, 2};
+        username = "tu-95mc";
+        index = 21;
+    },
+-- tu-142
+    {
+        file  = "tu-142";
+        life  = 60;
+        vis   = 3;
+        desrt = "tu-142-oblomok";
+        fire  = { 300, 2};
+        username = "tu-142";
+        index = 22;
+    },
+-- b-52
+    {
+        file  = "b-52";
+        life  = 60;
+        vis   = 3;
+        desrt = "b-52-oblomok";
+        fire  = { 300, 2};
+        username = "b-52h";
+        index = 23;
+    },
+-- mig-25p
+    {
+        file  = "mig-25p";
+        life  = 24;
+        vis   = 3;
+        desrt = "mig-25-oblomok";
+        fire  = { 300, 2};
+        username = "mig-25p";
+        index = 24;
+    },
+-- tu-22
+    {
+        file  = "tu-22";
+        life  = 45;
+        vis   = 3;
+        desrt = "tu-22-oblomok";
+        fire  = { 300, 2};
+        username = "tu-22m3";
+        index = 25;
+    },
+-- a50
+    {
+        file  = "a50";
+        life  = 60;
+        vis   = 3;
+        desrt = "a50-oblomok";
+        fire  = { 300, 2};
+        username = "a-50";
+        index = 26;
+    },
+-- e-3
+    {
+        file  = "e-3";
+        life  = 60;
+        vis   = 3;
+        desrt = "e-3-oblomok";
+        fire  = { 300, 2};
+        username = "e-3a";
+        index = 27;
+    },
+-- il-78m
+    {
+        file  = "il-78m";
+        life  = 60;
+        vis   = 3;
+        desrt = "il-78m-oblomok";
+        fire  = { 300, 2};
+        username = "il-78m";
+        index = 28;
+    },
+--[[
+-- kc-10a
+    {
+        file  = "kc-10a";
+        life  = 60;
+        vis   = 3;
+        desrt = "kc-10a-oblomok";
+        fire  = { 300, 2};
+        username = "kc-10a";
+        index = 29;
+    },
+--]]
+-- kc-135
+    {
+        file  = "kc-135";
+        life  = 60;
+        vis   = 3;
+        desrt = "kc-135-oblomok";
+        fire  = { 300, 2};
+        username = "kc-135";
+        index = 60;
+    },
+-- il-76md
+    {
+        file  = "il-76md";
+        life  = 60;
+        vis   = 3;
+        desrt = "il-76md-oblomok";
+        fire  = { 300, 2};
+        username = "il-76md";
+        index = 30;
+    },
+-- c-130
+    {
+        file  = "c-130";
+        life  = 45;
+        vis   = 3;
+        desrt = "c-130-oblomok";
+        fire  = { 300, 2};
+        username = "c-130j";
+        index = 31;
+    },
+-- mig-29k
+    {
+        file  = "mig-29k";
+        life  = 16;
+        vis   = 3;
+        desrt = "mig-29k-oblomok";
+        fire  = { 300, 2};
+        username = "mig-29k";
+        index = 32;
+    },
+-- s-3r
+    {
+        file  = "s-3r";
+        life  = 25;
+        vis   = 3;
+        desrt = "Fighter-1-crush";
+        fire  = { 300, 2};
+        username = "s-3a viking";
+        index = 33;
+    },
+-- m2000
+    {
+        file  = "m2000";
+        life  = 16;
+        vis   = 3;
+        desrt = "Fighter-1-crush";
+        fire  = { 300, 2};
+        username = "mirage 2000c";
+        index = 34;
+    },
+-- f-117
+    {
+        file  = "f-117";
+        life  = 20;
+        vis   = 3;
+        desrt = "f-117-oblomok";
+        fire  = { 300, 2};
+        username = "f-117";
+        index = 37;
+    },
+
+-- su-39
+    {
+        file  = "su-39";
+        life  = 32;
+        vis   = 3;
+        desrt = "su-39-oblomok";
+        fire  = { 300, 2};
+        username = "su-39";
+        index = 38;
+    },
+-- Yak-40
+    {
+        file  = "yak-40";
+        life  = 45;
+        vis   = 3;
+        desrt = "Bomber-crush";
+        fire  = { 300, 2};
+        username = "yak-40";
+        index = 57;
+    },
+-- an-26b
+    {
+        file  = "an-26b";
+        life  = 45;
+        vis   = 3;
+        desrt = "Bomber-crush";
+        fire  = { 300, 2};
+        username = "an-26b";
+        index = 39;
+    },
+-- an-30m
+    {
+        file  = "an-30m";
+        life  = 45;
+        vis   = 3;
+        desrt = "Bomber-crush";
+        fire  = { 300, 2};
+        username = "an-30m";
+        index = 40;
+    },
+-- e-2c
+    {
+        file  = "e-2c";
+        life  = 25;
+        vis   = 3;
+        desrt = "Fighter-1-crush";
+        fire  = { 300, 2};
+        username = "e-2c hawkeye";
+        index = 41;
+    },
+-- s-3a
+    {
+        file  = "s-3a";
+        life  = 25;
+        vis   = 3;
+        desrt = "Fighter-1-crush";
+        fire  = { 300, 2};
+        username = "s-3a viking";
+        index = 42;
+    },
+-- av-8b
+    {
+        file  = "Harrier";
+        life  = 16;
+        vis   = 3;
+        desrt = "Fighter-1-crush";
+        fire  = { 300, 2};
+        username = "BAE Harrier";
+        index = 43;
+    },
+-- ea-6b
+    {
+        file  = "ea-6b";
+        life  = 25;
+        vis   = 3;
+        desrt = "Fighter-1-crush";
+        fire  = { 300, 2};
+        username = "ea-6b prowler";
+        index = 44;
+    },
+-- f-4e
+    {
+        file  = "f-4e";
+        life  = 20;
+        vis   = 3;
+        desrt = "Fighter-2-crush";
+        fire  = { 300, 2};
+        username = "f-4e phantom ii";
+        index = 45;
+    },
+-- c-17a
+    {
+        file  = "c-17a";
+        life  = 45;
+        vis   = 3;
+        desrt = "Bomber-crush";
+        fire  = { 300, 2};
+        username = "c-17";
+        index = 47;
+    },
+-- su-17
+    {
+        file  = "su-17";
+        life  = 20;
+        vis   = 3;
+        desrt = "Fighter-2-crush";
+        fire  = { 300, 2};
+        username = "su-17m4";
+        index = 48;
+    },
+-- mig-29g
+    {
+        file  = "mig-29g";
+        life  = 16;
+        vis   = 3;
+        desrt = "mig-29-oblomok";
+        fire  = { 300, 2};
+        username = "mig-29g";
+        index = 49;
+    },
+-- mig-29C
+    {
+        file  = "mig-29c";
+        life  = 16;
+        vis   = 3;
+        desrt = "mig-29-oblomok";
+        fire  = { 300, 2};
+        username = "mig-29c";
+        index = 50;
+    },
+-- su-24mr
+    {
+        file  = "su-24mr";
+        life  = 20;
+        vis   = 3;
+        desrt = "Fighter-1-crush";
+        fire  = { 300, 2};
+        username = "su-24mr";
+        index = 51;
+    },
+-- f-18c
+    {
+        file  = "f-18c";
+        life  = 20;
+        vis   = 3;
+        desrt = "f-18c-oblomok";
+        fire  = { 300, 2};
+        username = "f-18c";
+        index = 53;
+    },   
+
+-- su-25T
+    {
+        file  = "su-25T";
+        life  = 32;
+        vis   = 3;
+        desrt = "su-25T-oblomok";
+        fire  = { 300, 2};
+        username = "su-25T";
+        index = 54;
+    },
+-- RQ-1A Predator
+    {
+        file  = "Predator";
+        life  = 5;
+        vis   = 3;
+        desrt = "Fighter-1-crush";
+        fire  = { 300, 2};
+        username = "RQ-1A Predator";
+        index = 55;
+    },
+
+--  f-15e
+    {
+        file  = "f-15e";
+        life  = 20;
+        vis   = 3;
+        desrt = "f-15-oblomok";
+        fire  = { 300, 2};
+        username = "F-15E";
+        index = 59;
+    },
+-- mig-23-oblomok
+    {
+        file  = "mig-23-oblomok";
+        fire  = { 0, 1};
+    },
+-- mig-29-oblomok
+    {
+        file  = "mig-29-oblomok";
+        fire  = { 0, 1};
+    },
+-- su-27-oblomok
+    {
+        file  = "su-27-oblomok";
+        fire  = { 0, 1};
+    },
+-- su-33-oblomok
+    {
+        file  = "su-33-oblomok";
+        fire  = { 0, 1};
+    },
+-- f-14a-oblomok
+    {
+        file  = "f-14a-oblomok";
+        fire  = { 0, 1};
+    },
+-- f-15-oblomok
+    {
+        file  = "f-15-oblomok";
+        fire  = { 0, 1};
+    },
+-- f-16-oblomok
+    {
+        file  = "f-16-oblomok";
+        fire  = { 0, 1};
+    },
+-- mig-25-oblomok
+    {
+        file  = "mig-25-oblomok";
+        fire  = { 0, 1};
+    },
+-- mig-31-oblomok
+    {
+        file  = "mig-31-oblomok";
+        fire  = { 0, 1};
+    },
+-- mig-27-oblomok
+    {
+        file  = "mig-27-oblomok";
+        fire  = { 0, 1};
+    },
+-- su-24-oblomok
+    {
+        file  = "su-24-oblomok";
+        fire  = { 0, 1};
+    },
+-- su-30-oblomok
+    {
+        file  = "su-30-oblomok";
+        fire  = { 0, 1};
+    },
+-- f-18c-oblomok
+    {
+        file  = "f-18c-oblomok";
+        fire  = { 0, 1};
+    },
+-- f-18a-oblomok
+    {
+        file  = "f-18a-oblomok";
+        fire  = { 0, 1};
+    },
+-- f-111-oblomok
+    {
+        file  = "f-111-oblomok";
+        fire  = { 0, 1};
+    },
+-- su-25-oblomok
+    {
+        file  = "su-25-oblomok";
+        fire  = { 0, 1};
+    },
+	-- Moved to CoreMods
+--[[
+-- A-10_DAM
+    {
+        file  = "A-10_DAM";
+        fire  = { 0, 1};
+    },
+--]]
+-- tu-160-oblomok
+    {
+        file  = "tu-160-oblomok";
+        fire  = { 0, 1};
+    },
+-- b-1b-oblomok
+    {
+        file  = "b-1b-oblomok";
+        fire  = { 0, 1};
+    },
+-- tu-95ms-oblomok
+    {
+        file  = "tu-95ms-oblomok";
+        fire  = { 0, 1};
+    },
+-- tu-142-oblomok
+    {
+        file  = "tu-142-oblomok";
+        fire  = { 0, 1};
+    },
+-- b-52-oblomok
+    {
+        file  = "b-52-oblomok";
+        fire  = { 0, 1};
+    },
+-- tu-22-oblomok
+    {
+        file  = "tu-22-oblomok";
+        fire  = { 0, 1};
+    },
+-- a50-oblomok
+    {
+        file  = "a50-oblomok";
+        fire  = { 0, 1};
+    },
+-- e-3-oblomok
+    {
+        file  = "e-3-oblomok";
+        fire  = { 0, 1};
+    },
+-- il-78m-oblomok
+    {
+        file  = "il-78m-oblomok";
+        fire  = { 0, 1};
+    },
+--[[
+-- kc-10a-oblomok
+    {
+        file  = "kc-10a-oblomok";
+        fire  = { 0, 1};
+    },
+--]]
+-- kc-135-oblomok
+    {
+        file  = "kc-135-oblomok";
+        fire  = { 0, 1};
+    },
+-- il-76md-oblomok
+    {
+        file  = "il-76md-oblomok";
+        fire  = { 0, 1};
+    },
+-- c-130-oblomok
+    {
+        file  = "c-130-oblomok";
+        fire  = { 0, 1};
+    },
+-- mig-29k-oblomok
+    {
+        file  = "mig-29k-oblomok";
+        fire  = { 0, 1};
+    },
+-- tu-143-oblomok
+    {
+        file  = "tu-143-oblomok";
+        fire  = { 0, 1};
+    },
+-- f-117-oblomok
+    {
+        file  = "f-117-oblomok";
+        fire  = { 0, 1};
+    },
+
+-- su-25T-oblomok
+    {
+        file  = "su-25T-oblomok";
+        fire  = { 0, 1};
+    },
+
+-- su-39-oblomok
+    {
+        file  = "su-39-oblomok";
+        fire  = { 0, 1};
+    },
+
+-- fighter-1-crush
+    {
+        file  = "fighter-1-crush";
+        desrt = "self";
+        fire  = { 300, 1};
+    },
+-- fighter-2-crush
+    {
+        file  = "fighter-2-crush";
+        desrt = "self";
+        fire  = { 300, 1};
+    },
+-- bomber-crush
+    {
+        file  = "bomber-crush";
+        desrt = "self";
+        fire  = { 300, 1};
+    },
+    {
+        file  = "tornado_ids";
+        life  = 20;
+        vis   = 3;
+        desrt = "Fighter-1-crush";
+        fire  = { 300, 2};
+        username = "Tornado IDS";
+        index = 56;
+    },
+	
+--[[
+	helicopters
+--]]
+-- mi-8mt
+    {
+        file  = "mi-8mt";
+        life  = 18;
+        vis   = 3;
+        desrt = "MI-8-OBLOMOK"; 
+        fire  = { 300, 2};
+        username = "mi-8mt";
+        index = 151;
+    },
+-- mi-24V
+    {
+        file  = "mi-24w";
+        life  = 16;
+        vis   = 3;
+        desrt = "MI-24W-OBLOMOK";
+        fire  = { 300, 2};
+        username = "mi_24w";
+        index = 152;
+    },
+-- mi-26
+    {
+        file  = "mi-26";
+        life  = 30;
+        vis   = 3;
+        desrt = "MI-26-OBLOMOK";
+        fire  = { 300, 2};
+        username = "mi-26";
+        index = 153;
+    },
+-- ka-27
+    {
+        file  = "ka-27";
+        life  = 14;
+        vis   = 3;
+        desrt = "KA-27-OBLOMOK";
+        fire  = { 300, 2};
+        username = "ka-27";
+        index = 154;
+    },
+-- ka-27_water
+    {
+        name  = "ka-27_water";
+        file  = "ka-27";
+        life  = 14;
+        vis   = 3;
+        desrt = "KA-27-OBLOMOK";
+        fire  = { 300, 2};
+        username = "ka-27";
+        positioning = "NO";
+    },
+--[[
+-- ka-50
+    {
+        file  = "ka-50";
+        life  = 15;
+        vis   = 3;
+        desrt = "KA-50-OBLOMOK";
+        fire  = { 300, 2};
+        username = "ka-50";
+        index = 155;
+    },
+--]]
+-- ka-52
+    {
+        file  = "ka-52";
+        life  = 15;
+        vis   = 3;
+        desrt = "KA-52-OBLOMOK";
+        fire  = { 300, 2};
+        username = "ka-52";
+        index = 156;
+    },
+-- ah-64a
+    {
+        file  = "ah-64a";
+        life  = 14;
+        vis   = 3;
+        desrt = "AH-64-OBLOMOK";
+        fire  = { 300, 2};
+        username = "ah-64a apache";
+        index = 157;
+    },
+-- ah-64d
+    {
+        file  = "ah-64d";
+        life  = 14;
+        vis   = 3;
+        desrt = "AH-64-OBLOMOK";
+        fire  = { 300, 2};
+        username = "ah-64d apache longbow";
+        index = 158;
+    },
+-- ch-47d
+    {
+        file  = "ch-47d";
+        life  = 20;
+        vis   = 3;
+        desrt = "CH-47D-OBLOMOK";
+        fire  = { 300, 2};
+        username = "ch-47d chinook";
+        index = 159;
+    },
+-- ch-53e
+    {
+        file  = "ch-53e";
+        life  = 20;
+        vis   = 3;
+        desrt = "CH-53E-OBLOMOK";
+        fire  = { 300, 2};
+        username = "ch-53e super stallion";
+        index = 160;
+    },
+-- sh-60b
+    {
+        file  = "sh-60b";
+        life  = 14;
+        vis   = 3;
+        desrt = "SH-60-OBLOMOK";
+        fire  = { 300, 2};
+        username = "sh-60b sea hawk";
+        index = 161;
+    },
+-- uh-60a
+    {
+        file  = "uh-60a";
+        life  = 14;
+        vis   = 3;
+        desrt = "UH-60-OBLOMOK";
+        fire  = { 300, 2};
+        username = "uh-60a night hawk";
+        index = 162;
+    },
+-- ah-1w
+    {
+        file  = "ah-1w";
+        life  = 14;
+        vis   = 3;
+        desrt = "AH-1W-OBLOMOK";
+        fire  = { 300, 2};
+        username = "ah-1w  super cobra";
+        index = 163;
+    },
+-- sh-3
+    {
+        file  = "sh-3";
+        life  = 17;
+        vis   = 3;
+        desrt = "SH-3-OBLOMOK";
+        fire  = { 300, 2};
+        username = "sh-3h  sea king";
+        index = 164;
+    },
+-- sealynx
+    {
+        file  = "sealynx";
+        life  = 17;
+        vis   = 3;
+        fire  = { 300, 2};
+        username = "sea lynx mk88";
+        index = 165;
+    },
+-- ab-212
+    {
+        file  = "ab-212";
+        life  = 12;
+        vis   = 3;
+        desrt = "AB-212-OBLOMOK";
+        fire  = { 300, 2};
+        username = "UH-1H";
+        index = 166;
+    },
+    {
+        file  = "Mi-28";
+        life  = 15;
+        vis   = 3;
+        desrt = "Mi-28-OBLOMOK";
+        fire  = { 300, 2};
+        username = "Mi-28N";
+        index = 167;
+    },
+    {
+        file  = "OH-58d";
+        life  = 12;
+        vis   = 3;
+        desrt = "OH-58D_oblomok";
+        fire  = { 300, 2};
+        username = "OH-58D";
+        index = 168;
+    },
+-- h-1-crush
+    {
+        name  = "h-1-crush_1";
+        file  = "h-1-crush";
+        fire  = { 300, 1};
+    },
+-- h-1-crush
+    {
+        name  = "h-1-crush_2";
+        file  = "h-1-crush";
+        desrt = "Mi-8mt";
+        fire  = { 300, 1};
+
+    },
+-- MI-8-OBLOMOK
+    {
+        file  = "MI-8-OBLOMOK";
+        fire  = { 0, 1};
+    },
+
+-- MI-24W-OBLOMOK
+    {
+        file  = "MI-24W-OBLOMOK";
+        fire  = { 0, 1};
+    },
+
+-- MI-26-OBLOMOK
+    {
+        file  = "MI-26-OBLOMOK";
+        fire  = { 0, 1};
+   },
+    
+--Mi-28-OBLOMOK
+    {
+        file  = "Mi-28-OBLOMOK";
+        fire  = { 0, 1};
+
+    },   
+--OH-58D_oblomok
+    {
+        file  = "OH-58D_oblomok";
+        fire  = { 0, 1};
+    },
+    
+-- KA-27-OBLOMOK
+    {
+        file  = "KA-27-OBLOMOK";
+        fire  = { 0, 1};
+
+    },
+--[[
+-- KA-50-OBLOMOK
+    {
+        file  = "KA-50-OBLOMOK";
+        fire  = { 0, 1};
+
+    },
+--]]
+-- KA-52-OBLOMOK
+    {
+        file  = "KA-52-OBLOMOK";
+        fire  = { 0, 1};
+
+    },
+
+-- AH-64-OBLOMOK
+    {
+        file  = "AH-64-OBLOMOK";
+        fire  = { 0, 1};
+
+    },
+
+-- CH-47D-OBLOMOK
+    {
+        file  = "CH-47D-OBLOMOK";
+        fire  = { 0, 1};
+
+    },
+
+-- CH-53E-OBLOMOK
+    {
+        file  = "CH-53E-OBLOMOK";
+        fire  = { 0, 1};
+
+    },
+
+-- SH-60-OBLOMOK
+    {
+        file  = "SH-60-OBLOMOK";
+        fire  = { 0, 1};
+
+    },
+
+-- UH-60-OBLOMOK
+    {
+        file  = "UH-60-OBLOMOK";
+        fire  = { 0, 1};
+
+    },
+
+-- AH-1W-OBLOMOK
+    {
+        file  = "AH-1W-OBLOMOK";
+        fire  = { 0, 1};
+
+    },
+
+-- SH-3-OBLOMOK
+    {
+        file  = "SH-3-OBLOMOK";
+        fire  = { 0, 1};
+
+    },
+
+-- AB-212-OBLOMOK
+    {
+        file  = "AB-212-OBLOMOK";
+        fire  = { 0, 1};
+
+    },
+
+}

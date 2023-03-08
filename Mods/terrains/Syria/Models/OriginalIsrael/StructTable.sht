@@ -1,0 +1,293 @@
+TerrainModelDeclaration =
+{
+	default =
+	{
+		load =
+		{
+			false;
+			false;
+		};
+		drawonmap = true;
+		vis = 1;
+		visShadows = 1;
+		life = 500;
+		fire =
+		{
+		  0;
+		  1;
+		};
+		classname = "lStandartStructure";
+		positioning = "ONLYHEIGTH"; 
+		DestructAnimatttion = "NO"; 
+	};
+	{
+		file = "Acre_Old_Town";
+		life = -1;
+		fire =
+		{
+			10;
+			5;
+		};
+		desrt = "Acre_Old_Town";
+	};
+
+	{
+		file = "Acre_Old_Town_Wall1";
+		life = -1;
+		fire =
+		{
+			10;
+			5;
+		};
+		desrt = "Acre_Old_Town_Wall1";
+	};
+
+	{
+		file = "Acre_Old_Town_Wall2";
+		life = -1;
+		fire =
+		{
+			10;
+			5;
+		};
+		desrt = "Acre_Old_Town_Wall2";
+	};
+
+	{
+		file = "dagon";
+		life = -1;
+		fire =
+		{
+			10;
+			5;
+		};
+		desrt = "dagon";
+	};
+
+	{
+		file = "Haifa_Bahai_Archive";
+		life = -1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "Haifa_Bahai_Archive";
+	};
+
+	{
+		file = "Haifa_Bahai_Mausoleum";
+		life = -1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "Haifa_Bahai_Mausoleum";
+	};
+
+	{
+		file = "Haifa_Bahai_TrainingCenter";
+		life = -1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "Haifa_Bahai_TrainingCenter";
+	};
+
+	{
+		file = "Haifa_Bahai_UniversalHouseofJustice";
+		life = -1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "Haifa_Bahai_UniversalHouseofJustice";
+	};
+
+	{
+		file = "Haifa_bus_station";
+		life = -1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "Haifa_bus_station";
+	};
+
+	{
+		file = "Haifa_Carmel_Medical_Center";
+		life = -1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "Haifa_Carmel_Medical_Center";
+	};
+
+	{
+		file = "Haifa_CoolingTowers";
+		life = -1;
+		desrt = "Haifa_CoolingTowers";
+	};
+
+	{
+		file = "Haifa_Tower_Panorama";
+		life = -1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "Haifa_Tower_Panorama";
+	};
+
+	{
+		file = "Haifa_Tower_Sail";
+		life = -1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "Haifa_Tower_Sail";
+	};
+
+	{
+		file = "Haifa_University_Departments";
+		life = -1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "Haifa_University_Departments";
+	};
+
+	{
+		file = "Haifa_University_JacobsBuilding";
+		life = -1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "Haifa_University_JacobsBuilding";
+	};
+
+	{
+		file = "Haifa_University_MainBuilding";
+		life = -1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "Haifa_University_MainBuilding";
+	};
+
+	{
+		file = "Haifa_University_Parking";
+		life = -1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "Haifa_University_Parking";
+	};
+
+	{
+		file = "hangar_double";
+		life = 800;
+		fire =
+		{
+			30;
+			2;
+		};
+		desrt = "hangar_double_crash";
+	};
+
+	{
+		file = "hangarlong_ground";
+		life = 800;
+		fire =
+		{
+			5;
+			1;
+		};
+		desrt = "hangarlong_ground_crash";
+	};
+
+	{
+		file = "hangarlong1";
+		life = 800;
+		fire =
+		{
+			5;
+			1;
+		};
+		desrt = "hangarlong1_crash";
+	};
+
+	{
+		file = "rambam_health_care";
+		life = -1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "rambam_health_care";
+	};
+
+	{
+		file = "Vic_Arena1";
+		life = -1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "Vic_Arena1";
+	};
+
+	{
+		file = "Vic_Arena2";
+		life = -1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "Vic_Arena2";
+	};
+
+	{
+		file = "Vic_Arena3";
+		life = -1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "Vic_Arena3";
+	};
+
+	{
+		file = "Vic_Arena4";
+		life = -1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "Vic_Arena4";
+	};
+
+};

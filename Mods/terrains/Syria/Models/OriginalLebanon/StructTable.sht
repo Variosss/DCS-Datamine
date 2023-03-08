@@ -1,0 +1,276 @@
+TerrainModelDeclaration =
+{
+	default =
+	{
+		load =
+		{
+			false;
+			false;
+		};
+		drawonmap = true;
+		vis = 1;
+		visShadows = 1;
+		life = 500;
+		fire =
+		{
+		  0;
+		  1;
+		};
+		classname = "lStandartStructure";
+		positioning = "ONLYHEIGTH"; 
+		DestructAnimatttion = "NO"; 
+	};
+	{
+		file = "armenian";
+		life = -1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "armenian";
+	};
+
+	{
+		file = "Beirut_Choueifat_Mall";
+		life = -1;
+		fire =
+		{
+			30;
+			3;
+		};
+		desrt = "Beirut_Choueifat_Mall";
+	};
+
+	{
+		file = "Beirut_ClockTower";
+		life = -1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "Beirut_ClockTower";
+	};
+
+	{
+		file = "Beirut_Deir_el_Salib";
+		life = -1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "Beirut_Deir_el_Salib";
+	};
+
+	{
+		file = "Beirut_SkyGate";
+		life = -1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "Beirut_SkyGate";
+	};
+
+	{
+		file = "Beirut_Terminal_1";
+		life = -1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "Beirut_Terminal_1";
+	};
+
+	{
+		file = "Beirut_Terminal_2";
+		life = -1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "Beirut_Terminal_2";
+	};
+
+	{
+		file = "Beirut_Terminal_3";
+		life = -1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "Beirut_Terminal_3";
+	};
+
+	{
+		file = "Beirut_Terminal_4";
+		life = -1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "Beirut_Terminal_4";
+	};
+
+	{
+		file = "Beirut_Terminal_5";
+		life = -1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "Beirut_Terminal_5";
+	};
+
+	{
+		file = "FortyFourTowerLebanon";
+		life = -1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "FortyFourTowerLebanon";
+	};
+
+	{
+		file = "mohammad";
+		life = -1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "mohammad";
+	};
+
+	{
+		file = "Our_Lady_of_Lebanon";
+		life = -1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "Our_Lady_of_Lebanon";
+	};
+
+	{
+		file = "platinumtowerbeirut";
+		life = -1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "platinumtowerbeirut";
+	};
+
+	{
+		file = "Saint_Georges";
+		life = -1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "Saint_Georges";
+	};
+
+	{
+		file = "Saint_Paul_Basilica";
+		life = -1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "Saint_Paul_Basilica";
+	};
+
+	{
+		file = "Saint_Vic_Hospital_University_Medical_Center";
+		life = -1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "Saint_Vic_Hospital_University_Medical_Center";
+	};
+
+	{
+		file = "sama_beirut";
+		life = -1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "sama_beirut";
+	};
+
+	{
+		file = "Sanctuaire_Notre_Dame_du_Liban";
+		life = -1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "Sanctuaire_Notre_Dame_du_Liban";
+	};
+
+	{
+		file = "Templeofbacchus";
+		life = -1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "Templeofbacchus";
+	};
+
+	{
+		file = "Tripoly_Citadel_1";
+		life = -1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "Tripoly_Citadel_1";
+	};
+
+	{
+		file = "Tripoly_Citadel_2";
+		life = -1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "Tripoly_Citadel_2";
+	};
+
+	{
+		file = "Tripoly_Citadel_3";
+		life = -1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "Tripoly_Citadel_3";
+	};
+
+};

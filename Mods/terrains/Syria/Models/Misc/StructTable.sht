@@ -1,0 +1,621 @@
+TerrainModelDeclaration =
+{
+	default =
+	{
+		load =
+		{
+			false;
+			false;
+		};
+		drawonmap = true;
+		vis = 1;
+		visShadows = 1;
+		life = 500;
+		fire =
+		{
+		  0;
+		  1;
+		};
+		classname = "lStandartStructure";
+		positioning = "ONLYHEIGTH"; 
+		DestructAnimatttion = "NO"; 
+	};
+	{
+		file = "airfield_pole_light_gr";
+		desrt = "";
+	};
+
+	{
+		file = "airfield_pole_light_gr_small";
+		desrt = "";
+	};
+
+	{
+		file = "aqua1";
+		life = -1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "aqua1";
+	};
+
+	{
+		file = "aqua2";
+		life = -1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "aqua2";
+	};
+
+	{
+		file = "aqua3";
+		life = -1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "aqua3";
+	};
+
+	{
+		file = "Ayia_Napa_booster";
+		life = -1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "Ayia_Napa_booster";
+	};
+
+	{
+		file = "Ayia_Napa_Carousel";
+		life = -1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "Ayia_Napa_Carousel";
+	};
+
+	{
+		file = "Ayia_Napa_Giant_Wheel";
+		life = -1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "Ayia_Napa_Giant_Wheel";
+	};
+
+	{
+		file = "Ayia_Napa_loopingstar";
+		life = -1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "Ayia_Napa_loopingstar";
+	};
+
+	{
+		file = "Ayia_Napa_Sling_Shot";
+		life = -1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "Ayia_Napa_Sling_Shot";
+	};
+
+	{
+		file = "Ayia_Napa_Waterslides";
+		life = -1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "Ayia_Napa_Waterslides";
+	};
+
+	{
+		file = "bengal_comercial_building_01";
+		life = 150;
+		fire =
+		{
+			20;
+			2;
+		};
+		maxSlope = 15;
+		desrt = "board_crash";
+	};
+
+	{
+		file = "bengal_comercial_building_02";
+		life = 150;
+		fire =
+		{
+			20;
+			2;
+		};
+		maxSlope = 15;
+		desrt = "board_crash";
+	};
+
+	{
+		file = "bengal_comercial_building_03";
+		life = 150;
+		fire =
+		{
+			20;
+			2;
+		};
+		maxSlope = 12;
+		desrt = "Cottage_03_crash";
+	};
+
+	{
+		file = "car_light";
+		desrt = "";
+	};
+
+	{
+		file = "car_light_spot";
+		desrt = "";
+	};
+
+	{
+		file = "cementfactory_building";
+		life = -1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "cementfactory_building";
+	};
+
+	{
+		file = "dam1";
+		life = -1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "dam1";
+	};
+
+	{
+		file = "Elevator_building01";
+		life = -1;
+		fire =
+		{
+			10;
+			5;
+		};
+		desrt = "Elevator_building01";
+	};
+
+	{
+		file = "Elevator_building02";
+		life = -1;
+		fire =
+		{
+			10;
+			5;
+		};
+		desrt = "Elevator_building02";
+	};
+
+	{
+		file = "Elevator_House01_building";
+		life = -1;
+		fire =
+		{
+			10;
+			5;
+		};
+		desrt = "Elevator_House01_building";
+	};
+
+	{
+		file = "Elevator_House02_building";
+		life = -1;
+		fire =
+		{
+			10;
+			5;
+		};
+		desrt = "Elevator_House02_building";
+	};
+
+	{
+		file = "head_light";
+		desrt = "";
+	};
+
+	{
+		file = "heat_plane";
+		desrt = "";
+	};
+
+	{
+		file = "heat_plane1";
+		desrt = "";
+	};
+
+	{
+		file = "hotel_01";
+		life = -1;
+		fire =
+		{
+			10;
+			2;
+		};
+		maxSlope = 10;
+		desrt = "hotel_01";
+	};
+
+	{
+		file = "hotel_02";
+		life = -1;
+		fire =
+		{
+			10;
+			2;
+		};
+		maxSlope = 10;
+		desrt = "hotel_02";
+	};
+
+	{
+		file = "hotel_03";
+		life = -1;
+		fire =
+		{
+			10;
+			2;
+		};
+		maxSlope = 10;
+		desrt = "hotel_03";
+	};
+
+	{
+		file = "hotel_04";
+		life = -1;
+		fire =
+		{
+			10;
+			2;
+		};
+		maxSlope = 10;
+		desrt = "hotel_04";
+	};
+
+	{
+		file = "hotel_05";
+		life = -1;
+		fire =
+		{
+			10;
+			2;
+		};
+		maxSlope = 10;
+		desrt = "hotel_05";
+	};
+
+	{
+		file = "hotel_06";
+		life = -1;
+		fire =
+		{
+			10;
+			2;
+		};
+		maxSlope = 10;
+		desrt = "hotel_06";
+	};
+
+	{
+		file = "Hotel_base_01";
+		life = -1;
+		fire =
+		{
+			30;
+			3;
+		};
+		maxSlope = 8;
+		desrt = "Hotel_base_01";
+	};
+
+	{
+		file = "Hotel_base_02";
+		life = 400;
+		fire =
+		{
+			30;
+			2;
+		};
+		maxSlope = 8;
+		desrt = "hungar_011_crash";
+	};
+
+	{
+		file = "Hotel_base_04";
+		life = -1;
+		fire =
+		{
+			30;
+			2;
+		};
+		maxSlope = 8;
+		desrt = "Hotel_base_04";
+	};
+
+	{
+		file = "light_source";
+		desrt = "";
+	};
+
+	{
+		file = "light_source_spot";
+		desrt = "";
+	};
+
+	{
+		file = "light_source_spot_small_red";
+		desrt = "";
+	};
+
+	{
+		file = "light1";
+		life = 150;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "board_crash";
+	};
+
+	{
+		file = "Lighthouse";
+		life = 200;
+		fire =
+		{
+			0;
+			0;
+		};
+		maxSlope = 20;
+		desrt = "board_crash";
+	};
+
+	{
+		file = "mark_light_red";
+		desrt = "";
+	};
+
+	{
+		file = "Orthodox_Church_01";
+		life = -1;
+		fire =
+		{
+			20;
+			2;
+		};
+		maxSlope = 10;
+		desrt = "Orthodox_Church_01";
+	};
+
+	{
+		file = "Orthodox_Church_03";
+		life = -1;
+		fire =
+		{
+			20;
+			2;
+		};
+		maxSlope = 10;
+		desrt = "Orthodox_Church_03";
+	};
+
+	{
+		file = "pole_light_gr";
+		desrt = "";
+	};
+
+	{
+		file = "pole_light_gr_big";
+		desrt = "";
+	};
+
+	{
+		file = "pole_light_gr_small";
+		desrt = "";
+	};
+
+	{
+		file = "portcrane01";
+		life = -1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "portcrane01";
+	};
+
+	{
+		file = "portcrane02";
+		life = -1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "portcrane02";
+	};
+
+	{
+		file = "portcrane03";
+		life = -1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "portcrane03";
+	};
+
+	{
+		file = "railstation";
+		life = -1;
+		fire =
+		{
+			20;
+			2;
+		};
+		maxSlope = 15;
+		desrt = "railstation";
+	};
+
+	{
+		file = "scoreboard";
+		life = -1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "scoreboard";
+	};
+
+	{
+		file = "side_light";
+		desrt = "";
+	};
+
+	{
+		file = "stadium_round";
+		life = 400;
+		fire =
+		{
+			10;
+			2;
+		};
+		desrt = "stadium_round_crash";
+	};
+
+	{
+		file = "Stadium_Square";
+		life = -1;
+		fire =
+		{
+			20;
+			2;
+		};
+		desrt = "Stadium_Square";
+	};
+
+	{
+		file = "stadium_straight";
+		life = 400;
+		fire =
+		{
+			10;
+			2;
+		};
+		desrt = "stadium_straight_crash";
+	};
+
+	{
+		file = "stadiumelement";
+		life = -1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "stadiumelement";
+	};
+
+	{
+		file = "tankerbase";
+		life = -1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "tankerbase";
+	};
+
+	{
+		file = "tankerbase2";
+		life = -1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "tankerbase2";
+	};
+
+	{
+		file = "tankerline";
+		life = -1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "tankerline";
+	};
+
+	{
+		file = "tankerline2";
+		life = -1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "tankerline2";
+	};
+
+	{
+		file = "vegas_parking_01";
+		life = -1;
+		fire =
+		{
+			30;
+			3;
+		};
+		maxSlope = 8;
+		desrt = "vegas_parking_01";
+	};
+
+	{
+		file = "wire";
+		life = 1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "";
+	};
+
+};

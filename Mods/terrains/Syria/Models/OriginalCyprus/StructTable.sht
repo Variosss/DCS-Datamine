@@ -1,0 +1,365 @@
+TerrainModelDeclaration =
+{
+	default =
+	{
+		load =
+		{
+			false;
+			false;
+		};
+		drawonmap = true;
+		vis = 1;
+		visShadows = 1;
+		life = 500;
+		fire =
+		{
+		  0;
+		  1;
+		};
+		classname = "lStandartStructure";
+		positioning = "ONLYHEIGTH"; 
+		DestructAnimatttion = "NO"; 
+	};
+	{
+		file = "airfields_hangar_01_GB";
+		life = 400;
+		fire =
+		{
+			10;
+			2;
+		};
+		desrt = "airfields_hangar_01_crash";
+	};
+
+	{
+		file = "Akrotiri_Entrance";
+		life = -1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "Akrotiri_Entrance";
+	};
+
+	{
+		file = "Bank_of_Cyprus";
+		life = -1;
+		fire =
+		{
+			10;
+			5;
+		};
+		desrt = "Bank_of_Cyprus";
+	};
+
+	{
+		file = "Cyprus_Karaoglanoglu_cemetry";
+		life = -1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "Cyprus_Karaoglanoglu_cemetry";
+	};
+
+	{
+		file = "Cyprus_Ministry_of_Finance";
+		life = -1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "Cyprus_Ministry_of_Finance";
+	};
+
+	{
+		file = "Cyprus_Skyscraper";
+		life = -1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "Cyprus_Skyscraper";
+	};
+
+	{
+		file = "Cyprus_Telecommunications_Authority";
+		life = -1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "Cyprus_Telecommunications_Authority";
+	};
+
+	{
+		file = "Famagusta_Castle";
+		life = -1;
+		fire =
+		{
+			10;
+			5;
+		};
+		desrt = "Famagusta_Castle";
+	};
+
+	{
+		file = "Kyrenia_Mercure_Hotel_Casino";
+		life = -1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "Kyrenia_Mercure_Hotel_Casino";
+	};
+
+	{
+		file = "Kyrenias_Cyrene_Castle";
+		life = -1;
+		fire =
+		{
+			10;
+			5;
+		};
+		desrt = "Kyrenias_Cyrene_Castle";
+	};
+
+	{
+		file = "Kyrenias_Saint_Hilarion_Castle";
+		life = -1;
+		fire =
+		{
+			10;
+			5;
+		};
+		desrt = "Kyrenias_Saint_Hilarion_Castle";
+	};
+
+	{
+		file = "Larnaca_General_Hospital";
+		life = -1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "Larnaca_General_Hospital";
+	};
+
+	{
+		file = "Larnaca_Radisson_Blu_hotel";
+		life = -1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "Larnaca_Radisson_Blu_hotel";
+	};
+
+	{
+		file = "Larnaca_Terminal";
+		life = -1;
+		fire =
+		{
+			50;
+			5;
+		};
+		desrt = "Larnaca_Terminal";
+	};
+
+	{
+		file = "Limasol_KEAN_Factory";
+		life = -1;
+		fire =
+		{
+			50;
+			5;
+		};
+		desrt = "Limasol_KEAN_Factory";
+	};
+
+	{
+		file = "Limasol_MyMall";
+		life = -1;
+		fire =
+		{
+			50;
+			5;
+		};
+		desrt = "Limasol_MyMall";
+	};
+
+	{
+		file = "Limasol_New_Port_Terminal";
+		life = -1;
+		fire =
+		{
+			50;
+			5;
+		};
+		desrt = "Limasol_New_Port_Terminal";
+	};
+
+	{
+		file = "Limassol_General_Hospital";
+		life = -1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "Limassol_General_Hospital";
+	};
+
+	{
+		file = "limassol_olympic_residence";
+		life = -1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "limassol_olympic_residence";
+	};
+
+	{
+		file = "Mall_of_Cyprus&IKEA";
+		life = -1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "Mall_of_Cyprus&IKEA";
+	};
+
+	{
+		file = "Nicosia_General_Hospital";
+		life = -1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "Nicosia_General_Hospital";
+	};
+
+	{
+		file = "Nicosia_Kykkos_Monastery";
+		life = -1;
+		fire =
+		{
+			50;
+			5;
+		};
+		desrt = "Nicosia_Kykkos_Monastery";
+	};
+
+	{
+		file = "Nicosia_Presidential_Palace";
+		life = -1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "Nicosia_Presidential_Palace";
+	};
+
+	{
+		file = "Nicosia_Selimiye_II_Mosque";
+		life = -1;
+		fire =
+		{
+			50;
+			5;
+		};
+		desrt = "Nicosia_Selimiye_II_Mosque";
+	};
+
+	{
+		file = "Nicosia_StSophia_Church";
+		life = -1;
+		fire =
+		{
+			50;
+			5;
+		};
+		desrt = "Nicosia_StSophia_Church";
+	};
+
+	{
+		file = "Nicosia_Terminal";
+		life = -1;
+		fire =
+		{
+			50;
+			5;
+		};
+		desrt = "Nicosia_Terminal";
+	};
+
+	{
+		file = "Oval";
+		life = -1;
+		fire =
+		{
+			50;
+			5;
+		};
+		desrt = "Oval";
+	};
+
+	{
+		file = "Paphos_Amathus_Beach_Hotel";
+		life = -1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "Paphos_Amathus_Beach_Hotel";
+	};
+
+	{
+		file = "Paphos_General_Hospital";
+		life = -1;
+		fire =
+		{
+			50;
+			5;
+		};
+		desrt = "Paphos_General_Hospital";
+	};
+
+	{
+		file = "Paphos_Kings_Avenue_Mall";
+		life = -1;
+		fire =
+		{
+			50;
+			5;
+		};
+		desrt = "Paphos_Kings_Avenue_Mall";
+	};
+
+	{
+		file = "Paphos_Terminal";
+		life = -1;
+		fire =
+		{
+			50;
+			5;
+		};
+		desrt = "Paphos_Terminal";
+		iscrashmodel = true;
+	};
+
+};

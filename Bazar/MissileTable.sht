@@ -1,0 +1,1157 @@
+-- ...
+MissileTable =
+{
+    default =
+    {
+        vis   = 1;
+        load  = { false, false};
+        fire  = { 0, 1};
+        username = "";
+        classname = "lObject";
+        positioning = "BYNORMAL";
+    },
+
+-- mica-t
+    {
+        file  = "mica-t";
+        life  = 1;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "MICA-IR";
+        index = 2;
+    },
+-- mica-r
+    {
+        file  = "mica-r";
+        life  = 1;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "MICA-RF";
+        index = 3;
+    },
+-- r-40r
+    {
+        file  = "r-40r";
+        life  = 1;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "R-40R (AA-6)";
+        index = 7;
+    },
+    -- r-24r
+    {
+        file  = "r-24r";
+        life  = 1;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "R-24R (AA-7)";
+        index = 9;
+    },
+-- r-60
+    {
+        file  = "r-60";
+        life  = 1;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "R-60M (AA-8)";
+        index = 10;
+    },
+-- r-33
+    {
+        file  = "r-33";
+        life  = 1;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "R-33 (AA-9)";
+        index = 11;
+    },
+-- r-27r
+    {
+        name  = "r-27er_3";
+        file  = "r-27er";
+        life  = 1;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "R-27AE (AA-10C)";
+        index = 12;
+    },
+-- r-27r
+    {
+        file  = "r-27r";
+        life  = 1;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "R-27R (AA-10A)";
+        index = 13;
+    },
+-- r-27er
+    {
+        name  = "r-27er_1";
+        file  = "r-27er";
+        life  = 1;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "R-27ER (AA-10C)";
+        index = 14;
+    },
+-- r-27t
+    {
+        file  = "r-27t";
+        life  = 1;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "R-27T (AA-10B)";
+        index = 15;
+    },
+-- r-27et
+    {
+        file  = "r-27et";
+        life  = 1;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "R-27ET (AA-10D) ";
+        index = 16;
+    },
+-- r-27em
+    {
+        name  = "r-27er_2";
+        file  = "r-27er";
+        life  = 1;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "R-27EM (AA-10C) ";
+        index = 17;
+    },
+-- r-73
+    {
+        file  = "r-73";
+        life  = 1;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "R-73 (AA-11)";
+        index = 18;
+    },
+-- r-77
+    {
+        file  = "r-77";
+        life  = 1;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "R-77 (AA-12)";
+        index = 19;
+    },
+-- r-37
+    {
+        file  = "r-37";
+        life  = 1;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "R-37";
+        index = 20;
+    },
+	
+-- aim-54
+    {
+        file  = "aim-54";
+        life  = 1;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "AIM-54C";
+        index = 23;
+    },
+    -- r-24t
+    {
+        file  = "r-24t";
+        life  = 1;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "R-24T (AA-7)";
+        index = 26;
+    },
+-- r-40t
+    {
+        file  = "r-40t";
+        life  = 1;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "R-40T (AA-6)";
+        index = 27;
+    },
+-- Sea Sparrow
+    {   name  = "aim_7_2";
+        file  = "aim-7";
+        life  = 1;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "RIM-7 Sea Sparrow";
+        index = 28;
+    },
+-- c-5
+    {
+        file  = "c-5";
+        life  = 1;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "S-5";
+        index = 31;
+    },
+-- c-8cm
+    {
+        name  = "c-8_0";
+        file  = "s-8_sm";
+        life  = 1;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "S-8TsM";
+        index = 30;
+    },
+-- c-8
+    {
+        name  = "c-8_1";
+        file  = "s-8_kom";
+        life  = 1;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "S-8KOM";
+        index = 32;
+    },
+-- c-8fp2
+	{
+		file  = "s-8_ofp2";
+        life  = 1;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "S-8FP2";
+        index = 155;
+	},
+-- c-8om
+	{
+		file  = "s-8_om";
+        life  = 1;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "S-8OM";
+        index = 158;
+	},
+-- c-13
+    {
+        name  = "c-13";
+        file  = "c-13";
+        life  = 1;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "S-13";
+        index = 33;
+    },
+-- c-24
+    {
+        name  = "c-24_2";
+        file  = "c-24";
+        life  = 1;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "S-24";
+        index = 34;
+    },
+-- c-25
+    {
+        file  = "c-25";
+        life  = 1;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "S-25";
+        index = 35;
+    },
+--2.75' rocket MK151 HE Hydra 
+    {
+        name  = "hydra_m151he";
+        file  = "hydra_m151he";
+        life  = 1;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "2.75' rocket MK151 HE Hydra";
+        index = 36;
+    },
+-- zuni-127
+    {
+        name  = "zuni-127";
+        file  = "Zuni";
+        life  = 1;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "ZUNI-127";
+        index = 37;
+    },
+-- zuni-127cm
+    {
+        name  = "zuni-127cm";
+        file  = "Zuni";
+        life  = 1;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "ZUNI-127CM";
+        index = 38;
+    },
+-- agm-114k
+    {
+        name  = "agm-114-1";
+        file  = "AGM-114K";
+        life  = 1;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "AGM-114K Hellfire";
+        index = 39;
+    },
+-- agm-119
+    {
+        file  = "penquin";
+        life  = 1;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "AGM-119 Penguin";
+        index = 40;
+    },
+-- x-22
+    {
+        file  = "x-22";
+        life  = 6;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "Kh-22 (AS-4 Kitchen)";
+        index = 41;
+    },
+-- x-29te
+    {
+        name  = "x-29t-1";
+        file  = "x-29t";
+        life  = 1;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "Kh-29T (AS-14 Kedge)";
+        index = 42;
+    },
+-- x-23
+    {
+        file  = "x-23";
+        life  = 1;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "Kh-23 (AS-7 Kerry)";
+        index = 43;
+    },
+-- x-28
+    {
+        file  = "x-28";
+        life  = 3;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "Kh-28 (AS-9 Kyle)";
+        index = 44;
+    },
+-- x-25ml
+    {
+        file  = "x-25ml";
+        life  = 1;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "Kh-25ML (AS-10 Karen)";
+        index = 45;
+    },
+-- x-58
+    {
+        file  = "x-58";
+        life  = 3;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "Kh-58 (AS-11 Kilter)";
+        index = 46;
+    },
+-- x-25mp
+    {
+        file  = "x-25mp";
+        life  = 1;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "Kh-25MPU (AS-12 Kegler)";
+        index = 47;
+    },
+-- x-29l
+    {
+        file  = "x-29l";
+        life  = 1;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "Kh-29L (AS-14)";
+        index = 49;
+    },
+-- x-55
+    {
+        file  = "x-55";
+        life  = 3;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "Kh-55 (AS-15 Kent)";
+        index = 50;
+    },
+-- x-65
+    {
+        file  = "x-65";
+        life  = 3;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "kh-65 (AS-15B Kent)";
+        index = 51;
+    },
+-- x-15
+    {
+        file  = "x-15";
+        life  = 3;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "Kh-15C (AS-16 Kickback)";
+        index = 52;
+    },
+-- x-31
+    {
+        name  = "x-31_2";
+        file  = "x-31";
+        life  = 3;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "Kh-31A (AS-17 Krypton)";
+        index = 53;
+    },
+
+-- x-35
+    {
+        file  = "x-35";
+        life  = 1;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "Kh-35 (AS-20 Kayak)";
+        index = 55;
+    },
+-- x-41
+    {
+        file  = "x-41";
+        life  = 2;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "Kh-41 Moskit (SS-N-22 Sunburn)";
+        index = 56;
+    },
+-- vichr
+    {
+        name  = "vichr_1";
+        file  = "vichr";
+        life  = 1;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "9A4172";
+        index = 57;
+    },
+-- vichr
+    {
+        name  = "vichr_2";
+        file  = "vichr";
+        life  = 1;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "9A4172";
+        index = 58;
+    },
+-- agm-114
+    {
+        name  = "agm-114-2";
+        file  = "AGM-114L";
+        life  = 1;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "AGM-114L Hellfire";
+        index = 59;
+    },
+-- agm-45
+    {
+        file  = "agm-45";
+        life  = 1;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "AGM-45 Shrike";
+        index = 60;
+    },
+-- agm-65K
+    {
+        file  = "AGM-65K";
+        life  = 1;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "AGM-65K Maverick";
+        index = 61;
+    },
+--///////////////////////////////
+    {
+        file  = "TGM_65G";
+        life  = 1;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "TGM-65G Maverick";
+        index = 140;
+    },
+    {
+        file  = "TGM_65D";
+        life  = 1;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "TGM-65D Maverick";
+        index = 141;
+    },
+    {
+        file  = "AGM-65H";
+        life  = 1;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "AGM-65H Maverick";
+        index = 138;
+    },
+    {
+        file  = "AGM-65G";
+        life  = 1;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "AGM-65G Maverick";
+        index = 139;
+    },
+    {
+        file  = "CATM-65K";
+        life  = 1;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "CATM-65K Maverick";
+        index = 142;
+    },
+    {
+        file  = "TGM-65H";
+        life  = 1;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "TGM-65H Maverick";
+        index = 154;
+    },
+--///////////////////////////////
+-- agm-84
+    {
+        file  = "agm-84";
+        life  = 1;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "AGM-84A Harpoon";
+        index = 62;
+    },
+-- agm-84e
+    {
+        file  = "agm-84e";
+        life  = 1;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "AGM-84E SLAM";
+        index = 63;
+    },
+-- agm-86
+    {
+        file  = "agm-86";
+        life  = 2;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "AGM-86 ALCM";
+        index = 64;
+    },
+-- agm-88
+    {
+        file  = "agm-88";
+        life  = 1;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "AGM-88 HARM";
+        index = 65;
+    },
+-- t-sea-eagle
+    {
+        file  = "t-sea-eagle";
+        life  = 1;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "Sea Eagle";
+        index = 66;
+    },
+-- v-611
+    {
+        file  = "v-611";
+        life  = 2;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "V-611 Shtorm";
+        index = 67;
+    },
+-- agm-122
+    {
+        file  = "agm-122";
+        life  = 1;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "AGM-122 Sidearm";
+        index = 68;
+    },
+-- agm-123
+    {
+        file  = "agm-123";
+        life  = 1;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "AGM-123 Skipper II";
+        index = 69;
+    },
+-- agm-65e
+    {
+        file  = "agm-65e";
+        life  = 1;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "AGM-65E Maverick";
+        index = 70;
+    },
+-- agm-130
+    {
+        file  = "agm-130";
+        life  = 1;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "AGM-130";
+        index = 71;
+    },
+-- t-alarm
+    {
+        file  = "t-alarm";
+        life  = 1;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "ALARM";
+        index = 72;
+    },
+-- x-23l
+    {
+        file  = "x-23l";
+        life  = 1;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "Kh-23L (as-7)";
+        index = 73;
+    },
+-- x-25mr
+    {
+        file  = "x-25mr";
+        life  = 1;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "Kh-25MR (AS-12C Kegler)";
+        index = 74;
+    },
+-- x-29t
+    {
+        name  = "x-29t-2";
+        file  = "x-29t";
+        life  = 1;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "Kh-29T (AS-14 Kedge)";
+        index = 75;
+    },
+-- x-31
+    {
+        name  = "x-31_1";
+        file  = "x-31";
+        life  = 1;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "Kh-31P (AS-17 Krypton)";
+        index = 76;
+    },
+-- agm-65d
+    {
+        file  = "AGM-65D";
+        life  = 1;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "AGM-65D Maverick";
+        index = 77;
+    },
+-- t-kormoran
+    {
+        file  = "t-kormoran";
+        life  = 1;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "KORMORAN AS.34";
+        index = 78;
+    },
+-- agm-78
+    {
+        file  = "agm-78";
+        life  = 1;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "RIM-66 Standard";
+        index = 79;
+    },
+-- 5b55
+    {
+        file  = "5b55";
+        life  = 1;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "5V55R (SA-10 Grumble)";
+        index = 80;
+    },
+-- 48h6e2
+    {
+        file  = "48h6e2";
+        life  = 1;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "48N6E2 (SA-10 Grumble)";
+        index = 81;
+    },
+-- 9m82
+    {
+        file  = "9m82";
+        life  = 1;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "9M82(SA-12B GIANT)";
+        index = 82;
+    },
+-- 9m83
+    {
+        file  = "9m83";
+        life  = 1;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "9M83 (SA-12B GIANT)";
+        index = 83;
+    },
+-- 3m9m
+    {
+        file  = "3m9m";
+        life  = 1;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "3M9M Kub (SA-6 Gainfull)";
+        index = 84;
+    },
+-- 9m33
+    {
+        file  = "9m33";
+        life  = 1;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "9M33 Osa (SA-8 Gecko)";
+        index = 85;
+    },
+-- 9m31
+    {
+        file  = "9m31";
+        life  = 1;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "9M31 Strela-1 (SA-9 Gaskin)";
+        index = 86;
+    },
+-- 9m38m1
+    {
+        file  = "9m38m1";
+        life  = 1;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "9M38M1 Buk-M1 (SA-11 Gadfly)";
+        index = 87;
+    },
+-- 9m333
+    {
+        file  = "9M37";
+        life  = 1;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "9M333 Strela-10M (SA-13 Gopher)";
+        index = 88;
+    },
+-- 9m330
+    {
+        file  = "9m330";
+        life  = 1;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "9M330 Tor (SA-15 Gauntlet)";
+        index = 89;
+    },
+-- 9m311
+    {
+        file  = "9m311";
+        life  = 1;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "9M311 2S6 Tunguska (SA-19 GRISSOM)";
+        index = 90;
+    },
+-- Igla
+    {
+        name  = "Igla";
+        file  = "9M39";
+        life  = 1;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "9M39 Igla (SA-18 Gimlet)";
+        index = 91;
+    },
+-- mim-104
+    {
+        file  = "mim-104";
+        life  = 1;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "MIM-104 Patriot PAK2";
+        index = 92;
+    },
+
+
+-- FIM-92C Stinger
+    {
+        name  = "FIM-92C";
+        file  = "FIM-92";
+        life  = 1;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "FIM-92C Stinger";
+        index = 93;
+    },
+-- 9M22U Grad
+    {
+        name  = "9M22U";
+        file  = "9M22U";
+        life  = 1;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "9M22U Grad";
+        index = 94;
+    },
+-- 9M27F Uragan
+	{
+		name = "9M27F";
+		file  = "9M27F";
+        life  = 1;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "9M27F Uragan";
+        index = 179;
+	},
+-- 9M55 Smerch RSZO
+    {
+        file  = "9M55";
+        life  = 1;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "9M55K Smerch";
+        index = 95;
+    },
+-- uragan-raketa
+    {
+        file  = "R-17";
+        life  = 1;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "Scud";
+        index = 96;
+    },
+-- 5v27
+    {
+        file  = "5v27";
+        life  = 1;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "5V27 S-125 (SA-3 Goa)";
+        index = 97;
+    },
+-- hawk-r
+    {
+        file  = "hawk-r";
+        life  = 1;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "MIM-23B Hawk";
+        index = 98;
+    },
+-- roland-raketa
+    {
+        file  = "roland-raketa";
+        life  = 1;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "MIM-115";
+        index = 99;
+    },
+-- box
+    {
+        file  = "box";
+        life  = 1;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        index = 100;
+    },
+-- p-35
+    {
+        file  = "p-35";
+        life  = 2;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "P-35 (SS-N-3B)";
+        index = 118;
+    },
+-- bazalt
+    {
+        file  = "bazalt";
+        life  = 3;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "P-500 Bazalt (SS-N-12)";
+        index = 119;
+    },
+-- granit
+    {
+        file  = "granit";
+        life  = 4;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "P-700 Granit (SS-N-19)";
+        index = 120;
+    },
+-- p-15m
+    {
+        file  = "p-15m";
+        life  = 2;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "P-15 Termit (SS-N-2b)";
+        index = 121;
+    },
+-- malahit
+    {
+        file  = "malahit";
+        life  = 2;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "P-120 Malakhit (SS-N-9)";
+        index = 122;
+    },
+-- vodopad
+    {
+        file  = "vodopad";
+        life  = 2;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "85-r (SS-N-14)";
+        index = 123;
+    },
+-- rastrub
+    {
+        file  = "rastrub";
+        life  = 2;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "85-ru (SS-N-14)";
+        index = 124;
+    },
+-- tomahawk
+    {
+        file  = "tomahawk";
+        life  = 2;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "BGM-109B Tomahawk";
+        index = 125;
+    },
+-- agm-84s
+    {
+        file  = "agm-84s";
+        life  = 1;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "RGM-84D Harpoon";
+        index = 126;
+    },
+-- malutka
+    {
+        file  = "malutka";
+        life  = 1;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "9K14 Malutka (AT-3 Sagger)";
+        index = 127;
+    },
+-- konkurs
+    {
+        file  = "9m113";
+        life  = 1;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "9M113 Konkurs (AT-5 Spandrel)";
+        index = 128;
+    },
+-- 9m117
+    {
+        file  = "9m117";
+        life  = 1;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "9M117 Bastion (AT-10 Stabber)";
+        index = 129;
+    },
+-- BGM-71D Tow
+    {
+        file  = "BGM-71D";
+        life  = 1;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "BGM-71D TOW";
+        index = 130;
+    },
+-- m26
+    {
+        file  = "m26";
+        life  = 1;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "M26";
+        index = 131;
+    },
+-- agm-154
+    {
+        file  = "agm-154C";
+        life  = 1;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "AGM-154 JSOW";
+        index = 132;
+    },
+-- c-25L
+    {
+        file  = "S-25L";
+        life  = 1;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "S-25L";
+        index = 133;
+    },
+
+-- MIM-72G
+    {
+        file  = "MIM-72";
+        life  = 1;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "MIM-72G";
+        index = 137;
+    },
+-- 9M133 Kornet
+    {
+        file  = "9M133";
+        life  = 1;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "9M133";
+        index = 153;
+    },
+-- 9M119 Reflex
+    {
+        file  = "9M119";
+        life  = 1;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "9M119";
+        index = 156;
+    },
+-- 9M119 Svir
+    {
+        file  = "9M119_Svir";
+        life  = 1;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "9M119";
+        index = 157;
+    },
+--2.75' rocket HYDRA 70 Mk1 
+    {
+        name  = "Hydra_Mk1";
+		file  = "hydra_m151he";
+        life  = 1;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "2.75' rocket Hydra 70 Mk1";
+        index = 144;
+    },
+--2.75' rocket HYDRA 70 Mk5 
+    {
+        name  = "Hydra_Mk5";
+		file  = "hydra_m151he";
+        life  = 1;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "2.75' rocket Hydra 70 Mk5";
+        index = 145;
+    },
+--2.75' rocket HYDRA 70 Mk61 
+    {
+        name  = "Hydra_Mk61";
+		file  = "hydra_m156";
+        life  = 1;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "2.75' rocket Hydra 70 Mk61";
+        index = 146;
+    },
+--2.75' rocket HYDRA 70 TWU1B
+    {
+        name  = "Hydra_TWU1B";
+		file  = "hydra_m156";
+        life  = 1;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "2.75' rocket Hydra 70 TWU1B";
+        index = 149;
+    },
+--2.75' rocket HYDRA 70 M278
+    {
+        name  = "Hydra_M278";
+		file  = "Hydra_M278";
+        life  = 1;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "2.75' rocket Hydra 70 M278";
+        index = 152;
+    },
+--HVAR
+    {
+        file  = "HVAR_rocket";
+        life  = 1;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "HVAR";
+        index = 159;
+    },
+-- Tow2 ground
+    {
+        file  = "BGM-71E";
+        life  = 1;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "BGM-71E TOW-2A";
+        index = 160;
+    },
+}

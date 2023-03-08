@@ -1,0 +1,540 @@
+-- ...
+Table0 =
+{
+    default =
+    {
+        vis   = 1;
+		load  = { false, false};
+        fire  = { 0, 1};
+        username = "";
+        classname = "lObject";
+        positioning = "BYNORMAL";
+    },
+
+-- voronka
+    {
+        file  = "voronka";
+        desrt = "self";
+        fire  = { 0, 1};
+        index = 1;
+        classname = "lCrater";
+    },
+-- voronka-beton
+    {
+        file  = "voronka-beton";
+        desrt = "self";
+        fire  = { 0, 1};
+        index = 2;
+        classname = "lCrater";
+    },
+-- sun01
+    {
+        file  = "sun01";
+        life  = 0;
+        fire  = { 0, 1};
+        index = 37;
+    },
+-- sun02
+    {
+        file  = "sun02";
+        life  = 0;
+        fire  = { 0, 1};
+        index = 38;
+    },
+-- burst01
+    {
+        file  = "burst01";
+        life  = 0;
+        fire  = { 0, 1};
+        index = 39;
+    },
+-- explode_wave
+    {
+        file  = "explode_wave";
+        life  = 0;
+        fire  = { 0, 1};
+        index = 40;
+    },
+-- mig-23-oblomok-wing-l
+    {
+        file  = "mig-23-oblomok-wing-l";
+        fire  = { 0, 1};
+        index = 59;
+    },
+-- mig-23-oblomok-wing-r
+    {
+        file  = "mig-23-oblomok-wing-r";
+        fire  = { 0, 1};
+        index = 60;
+    },
+-- mig-29-oblomok-wing-l
+    {
+        file  = "mig-29-oblomok-wing-l";
+        fire  = { 0, 1};
+        index = 62;
+    },
+-- mig-29-oblomok-wing-r
+    {
+        file  = "mig-29-oblomok-wing-r";
+        fire  = { 0, 1};
+        index = 63;
+    },
+-- su-27-oblomok-wing-l
+    {
+        file  = "su-27-oblomok-wing-l";
+        fire  = { 0, 1};
+        index = 65;
+    },
+-- su-27-oblomok-wing-r
+    {
+        file  = "su-27-oblomok-wing-r";
+        fire  = { 0, 1};
+        index = 66;
+    },
+-- su-33-oblomok-wing-l
+    {
+        file  = "su-33-oblomok-wing-l";
+        fire  = { 0, 1};
+        index = 68;
+    },
+-- su-33-oblomok-wing-r
+    {
+        file  = "su-33-oblomok-wing-r";
+        fire  = { 0, 1};
+        index = 69;
+    },
+-- f-14a-oblomok-wing-l
+    {
+        file  = "f-14a-oblomok-wing-l";
+        fire  = { 0, 1};
+        index = 71;
+    },
+-- f-14a-oblomok-wing-r
+    {
+        file  = "f-14a-oblomok-wing-r";
+        fire  = { 0, 1};
+        index = 72;
+    },
+-- f-15-oblomok-wing-l
+    {
+        file  = "f-15-oblomok-wing-l";
+        fire  = { 0, 1};
+        index = 74;
+    },
+-- f-15-oblomok-wing-r
+    {
+        file  = "f-15-oblomok-wing-r";
+        fire  = { 0, 1};
+        index = 75;
+    },
+-- f-16-oblomok-wing-l
+    {
+        file  = "f-16-oblomok-wing-l";
+        fire  = { 0, 1};
+        index = 77;
+    },
+-- f-16-oblomok-wing-r
+    {
+        file  = "f-16-oblomok-wing-r";
+        fire  = { 0, 1};
+        index = 78;
+    },
+-- mig-25-oblomok-wing-l
+    {
+        file  = "mig-25-oblomok-wing-l";
+        fire  = { 0, 1};
+        index = 80;
+    },
+-- mig-25-oblomok-wing-r
+    {
+        file  = "mig-25-oblomok-wing-r";
+        fire  = { 0, 1};
+        index = 81;
+    },
+-- mig-31-oblomok-wing-l
+    {
+        file  = "mig-31-oblomok-wing-l";
+        fire  = { 0, 1};
+        index = 83;
+    },
+-- mig-31-oblomok-wing-r
+    {
+        file  = "mig-31-oblomok-wing-r";
+        fire  = { 0, 1};
+        index = 84;
+    },
+-- mig-27-oblomok-wing-l
+    {
+        file  = "mig-27-oblomok-wing-l";
+        fire  = { 0, 1};
+        index = 89;
+    },
+-- mig-27-oblomok-wing-r
+    {
+        file  = "mig-27-oblomok-wing-r";
+        fire  = { 0, 1};
+        index = 90;
+    },
+-- su-24-oblomok-wing-l
+    {
+        file  = "su-24-oblomok-wing-l";
+        fire  = { 0, 1};
+        index = 92;
+    },
+-- su-24-oblomok-wing-r
+    {
+        file  = "su-24-oblomok-wing-r";
+        fire  = { 0, 1};
+        index = 93;
+    },
+-- su-30-oblomok-wing-l
+    {
+        file  = "su-30-oblomok-wing-l";
+        fire  = { 0, 1};
+        index = 95;
+    },
+-- su-30-oblomok-wing-r
+    {
+        file  = "su-30-oblomok-wing-r";
+        fire  = { 0, 1};
+        index = 96;
+    },
+-- f-18c-oblomok-wing-l
+    {
+        file  = "f-18c-oblomok-wing-l";
+        fire  = { 0, 1};
+        index = 98;
+    },
+-- f-18c-oblomok-wing-r
+    {
+        file  = "f-18c-oblomok-wing-r";
+        fire  = { 0, 1};
+        index = 99;
+    },
+-- f-111-oblomok-wing-l
+    {
+        file  = "f-111-oblomok-wing-l";
+        fire  = { 0, 1};
+        index = 101;
+    },
+-- f-111-oblomok-wing-r
+    {
+        file  = "f-111-oblomok-wing-r";
+        fire  = { 0, 1};
+        index = 102;
+    },
+-- su-25-oblomok-wing-l
+    {
+        file  = "su-25-oblomok-wing-l";
+        fire  = { 0, 1};
+        index = 104;
+    },
+-- su-25-oblomok-wing-r
+    {
+        file  = "su-25-oblomok-wing-r";
+        fire  = { 0, 1};
+        index = 105;
+    },
+-- a-10-oblomok-wing-l
+    {
+        file  = "a-10-oblomok-wing-l";
+        fire  = { 0, 1};
+        index = 107;
+    },
+-- a-10-oblomok-wing-r
+    {
+        file  = "a-10-oblomok-wing-r";
+        fire  = { 0, 1};
+        index = 108;
+    },
+-- tu-160-oblomok-wing-l
+    {
+        file  = "tu-160-oblomok-wing-l";
+        fire  = { 0, 1};
+        index = 110;
+    },
+-- tu-160-oblomok-wing-r
+    {
+        file  = "tu-160-oblomok-wing-r";
+        fire  = { 0, 1};
+        index = 111;
+    },
+-- b-1b-oblomok-wing-l
+    {
+        file  = "b-1b-oblomok-wing-l";
+        fire  = { 0, 1};
+        index = 113;
+    },
+-- b-1b-oblomok-wing-r
+    {
+        file  = "b-1b-oblomok-wing-r";
+        fire  = { 0, 1};
+        index = 114;
+    },
+-- tu-95ms-oblomok-wing-l
+    {
+        file  = "tu-95ms-oblomok-wing-l";
+        fire  = { 0, 1};
+        index = 119;
+    },
+-- tu-95ms-oblomok-wing-r
+    {
+        file  = "tu-95ms-oblomok-wing-r";
+        fire  = { 0, 1};
+        index = 120;
+    },
+-- tu-142-oblomok-wing-l
+    {
+        file  = "tu-142-oblomok-wing-l";
+        fire  = { 0, 1};
+        index = 122;
+    },
+-- tu-142-oblomok-wing-r
+    {
+        file  = "tu-142-oblomok-wing-r";
+        fire  = { 0, 1};
+        index = 123;
+    },
+-- b-52-oblomok-wing-l
+    {
+        file  = "b-52-oblomok-wing-l";
+        fire  = { 0, 1};
+        index = 125;
+    },
+-- b-52-oblomok-wing-r
+    {
+        file  = "b-52-oblomok-wing-r";
+        fire  = { 0, 1};
+        index = 126;
+    },
+-- tu-22-oblomok-wing-l
+    {
+        file  = "tu-22-oblomok-wing-l";
+        fire  = { 0, 1};
+        index = 131;
+    },
+-- tu-22-oblomok-wing-r
+    {
+        file  = "tu-22-oblomok-wing-r";
+        fire  = { 0, 1};
+        index = 132;
+    },
+-- a50-oblomok-wing-l
+    {
+        file  = "a50-oblomok-wing-l";
+        fire  = { 0, 1};
+        index = 134;
+    },
+-- a50-oblomok-wing-r
+    {
+        file  = "a50-oblomok-wing-r";
+        fire  = { 0, 1};
+        index = 135;
+    },
+-- e-3-oblomok-wing-l
+    {
+        file  = "e-3-oblomok-wing-l";
+        fire  = { 0, 1};
+        index = 137;
+    },
+-- e-3-oblomok-wing-r
+    {
+        file  = "e-3-oblomok-wing-r";
+        fire  = { 0, 1};
+        index = 138;
+    },
+-- il-78m-oblomok-wing-l
+    {
+        file  = "il-78m-oblomok-wing-l";
+        fire  = { 0, 1};
+        index = 140;
+    },
+-- il-78m-oblomok-wing-r
+    {
+        file  = "il-78m-oblomok-wing-r";
+        fire  = { 0, 1};
+        index = 141;
+    },
+--[[
+-- kc-10a-oblomok-wing-l
+    {
+        file  = "kc-10a-oblomok-wing-l";
+        fire  = { 0, 1};
+        index = 143;
+    },
+-- kc-10a-oblomok-wing-r
+    {
+        file  = "kc-10a-oblomok-wing-r";
+        fire  = { 0, 1};
+        index = 144;
+    },
+--]]
+-- il-76md-oblomok-wing-l
+    {
+        file  = "il-76md-oblomok-wing-l";
+        life  = 1;
+        fire  = { 0, 1};
+        index = 146;
+    },
+-- il-76md-oblomok-wing-r
+    {
+        file  = "il-76md-oblomok-wing-r";
+        life  = 1;
+        fire  = { 0, 1};
+        index = 147;
+    },
+-- c-130-oblomok-wing-l
+    {
+        file  = "c-130-oblomok-wing-l";
+        fire  = { 0, 1};
+        index = 149;
+    },
+-- c-130-oblomok-wing-r
+    {
+        file  = "c-130-oblomok-wing-r";
+        fire  = { 0, 1};
+        index = 150;
+    },
+-- mig-29k-oblomok-wing-l
+    {
+        file  = "mig-29k-oblomok-wing-l";
+        fire  = { 0, 1};
+        index = 152;
+    },
+-- mig-29k-oblomok-wing-r
+    {
+        file  = "mig-29k-oblomok-wing-r";
+        fire  = { 0, 1};
+        index = 153;
+    },
+-- f-117-oblomok-wing-l
+    {
+        file  = "f-117-oblomok-wing-l";
+        fire  = { 0, 1};
+        index = 167;
+    },
+-- f-117-oblomok-wing-r
+    {
+        file  = "f-117-oblomok-wing-r";
+        fire  = { 0, 1};
+        index = 168;
+    },
+-- su-39-oblomok-wing-l
+    {
+        file  = "su-39-oblomok-wing-l";
+        fire  = { 0, 1};
+        index = 170;
+    },
+-- su-39-oblomok-wing-r
+    {
+        file  = "su-39-oblomok-wing-r";
+        fire  = { 0, 1};
+        index = 171;
+    },
+-- oblomok-obshiwki-1
+    {
+        file  = "oblomok-obshiwki-1";
+        fire  = { 0, 1};
+        index = 172;
+    },
+-- oblomok-obshiwki-2
+    {
+        file  = "oblomok-obshiwki-2";
+        fire  = { 0, 1};
+        index = 173;
+    },
+-- oblomok-1
+    {
+        file  = "oblomok-1";
+        fire  = { 0, 1};
+        index = 174;
+    },
+--  sled
+    {
+        file  = "sled";
+        desrt = "self";
+        fire  = { 0, 1};
+        index = 187;
+    },
+-- oskolok1
+    {
+        file  = "oskolok1";
+        fire  = { 0, 1};
+        index = 195;
+         },  
+
+-- oskolok2
+    {
+        file  = "oskolok2";
+        fire  = { 0, 1};
+        index = 196;
+         },  
+-- oskolok3
+    {
+        file  = "oskolok3";
+        fire  = { 0, 1};
+        index = 197;
+         }, 
+-- oskolok4
+    {
+        file  = "oskolok4";
+        fire  = { 0, 1};
+        index = 198;
+         }, 
+-- oskolok5
+    {
+        file  = "oskolok5";
+        fire  = { 0, 1};
+        index = 199;
+         }, 
+-- oskolok6
+    {
+        file  = "oskolok6";
+        fire  = { 0, 1};
+        index = 200;
+         }, 
+-- oskolok7
+    {
+        file  = "oskolok7";
+        fire  = { 0, 1};
+        index = 201;
+         }, 
+-- oskolok8
+    {
+        file  = "oskolok8";
+        fire  = { 0, 1};
+        index = 202;
+    }, 
+-- voronka_invis
+    {
+        file  = "voronka_invis";
+        desrt = "self";
+        fire  = { 0, 1};
+        index = 203;
+        classname = "lCrater";
+    },
+-- su-25T-oblomok-wing-l
+    {
+        file  = "su-25T-oblomok-wing-l";
+        fire  = { 0, 1};
+        index = 204;
+    },
+-- su-25T-oblomok-wing-r
+    {
+        file  = "su-25T-oblomok-wing-r";
+        fire  = { 0, 1};
+        index = 205;
+    },
+--kc-135-oblomok-wing-l
+    {
+        file  = "kc-135-oblomok-wing-l";
+        fire  = { 0, 1};
+        index = 206;
+    },
+--kc-135-oblomok-wing-r
+    {
+        file  = "kc-135-oblomok-wing-r";
+        fire  = { 0, 1};
+        index = 207;
+    },
+}

@@ -1,0 +1,1822 @@
+TerrainModelDeclaration =
+{
+	default =
+	{
+		load =
+		{
+			false;
+			false;
+		};
+		drawonmap = true;
+		vis = 1;
+		visShadows = 1;
+		life = 500;
+		fire =
+		{
+			0;
+			1;
+		};
+		classname = "lStandartStructure";
+		positioning = "ONLYHEIGTH";
+		DestructAnimatttion = "NO";
+	};
+
+	{
+		file = "airbase_airport_kdp_tbilisi";
+		castshadows = false;
+		life = 1000;
+		fire =
+		{
+			60;
+			2;
+		};
+		username = "civil building";
+		maxSlope = 15;
+		desrt = "airbase_airport_kdp_tbilisi_crash";
+	};
+
+	{
+		file = "airbase_airport_tbilisi_01";
+		castshadows = false;
+		life = 1000;
+		fire =
+		{
+			60;
+			2;
+		};
+		username = "civil building";
+		maxSlope = 7;
+		desrt = "airbase_airport_tbilisi_01_crash";
+	};
+
+	{
+		file = "Airbase_airport_Tbilisi_03";
+		castshadows = false;
+		life = 1000;
+		fire =
+		{
+			60;
+			2;
+		};
+		username = "civil building";
+		maxSlope = 7;
+		desrt = "airbase_airport_tbilisi_03_crash";
+	};
+
+	{
+		file = "Airbase_airport_Tbilisi_03_02";
+		castshadows = false;
+		life = 1000;
+		fire =
+		{
+			60;
+			2;
+		};
+		username = "civil building";
+		maxSlope = 8;
+		desrt = "airbase_airport_tbilisi_03_02_crush";
+	};
+
+	{
+		file = "Airbase_airport_Tbilisi_big";
+		castshadows = false;
+		life = 1000;
+		fire =
+		{
+			60;
+			2;
+		};
+		username = "civil building";
+		maxSlope = 8;
+		desrt = "airbase_airport_tbilisi_big_crush";
+	};
+
+	{
+		file = "Airbase_airport_Tbilisi_Block_01";
+		castshadows = false;
+		life = 1000;
+		fire =
+		{
+			120;
+			2;
+		};
+		username = "civil building";
+		maxSlope = 10;
+		desrt = "airbase_airport_tbilisi_block_01_crash";
+	};
+
+	{
+		file = "Airbase_airport_Tbilisi_checkpoint_01";
+		castshadows = false;
+		life = 500;
+		fire =
+		{
+			120;
+			2;
+		};
+		username = "civil building";
+		maxSlope = 8;
+		desrt = "airbase_airport_tbilisi_checkpoint_01_crash";
+	};
+
+	{
+		file = "airbase_airport_tbilisi_hangar_01";
+		castshadows = false;
+		life = 1000;
+		fire =
+		{
+			120;
+			2;
+		};
+		username = "civil building";
+		maxSlope = 7;
+		desrt = "airbase_airport_tbilisi_hangar_01_crash";
+	};
+
+	{
+		file = "Airbase_airport_Tbilisi_Vishka_01";
+		castshadows = false;
+		life = 1000;
+		fire =
+		{
+			120;
+			2;
+		};
+		username = "civil building";
+		maxSlope = 30;
+		desrt = "airbase_airport_tbilisi_vishka_01_crash";
+	};
+
+	{
+		file = "airbase_airportold_tbilisi";
+		castshadows = false;
+		life = 1000;
+		fire =
+		{
+			60;
+			2;
+		};
+		username = "civil building";
+		maxSlope = 8;
+		desrt = "airbase_airportold_tbilisi_crash";
+	};
+
+	{
+		file = "airbase_barrels_01";
+		castshadows = false;
+		life = 400;
+		fire =
+		{
+			120;
+			2;
+		};
+		username = "civil building";
+		maxSlope = 15;
+		desrt = "airbase_barrels_01_crush";
+	};
+
+	{
+		file = "airbase_barrels_02";
+		castshadows = false;
+		life = 400;
+		fire =
+		{
+			120;
+			2;
+		};
+		username = "civil building";
+		maxSlope = 15;
+		desrt = "airbase_barrels_02_crush";
+	};
+
+	{
+		file = "airbase_hungar";
+		castshadows = false;
+		life = 500;
+		fire =
+		{
+			60;
+			2;
+		};
+		username = "civil building";
+		classname = "lShelter";
+		maxSlope = 8;
+		desrt = "airfild_hangar_crush";
+	};
+
+	{
+		file = "airbase_kdp_tbilisi";
+		castshadows = false;
+		life = 500;
+		fire =
+		{
+			60;
+			2;
+		};
+		username = "civil building";
+		maxSlope = 8;
+		desrt = "airbase_kdp_tbilisi_crash";
+	};
+
+	{
+		file = "airbase_kdp2_tbilisi";
+		castshadows = false;
+		life = 1000;
+		fire =
+		{
+			120;
+			2;
+		};
+		username = "civil building";
+		maxSlope = 8;
+		desrt = "airbase_kdp2_tbilisi_crash";
+	};
+
+	{
+		file = "airbase_meteo_tbilisi_01";
+		castshadows = false;
+		life = 1000;
+		fire =
+		{
+			120;
+			2;
+		};
+		username = "civil building";
+		maxSlope = 20;
+		desrt = "airbase_meteo_tbilisi_01_crush";
+	};
+
+	{
+		file = "airbase_meteo_tbilisi_02";
+		castshadows = false;
+		life = 1000;
+		fire =
+		{
+			120;
+			2;
+		};
+		username = "civil building";
+		maxSlope = 10;
+		desrt = "airbase_meteo_tbilisi_02_crush";
+	};
+
+	{
+		file = "airbase_tbilisi_tank_01";
+		castshadows = false;
+		life = 5;
+		fire =
+		{
+			120;
+			2;
+		};
+		username = "Fuel Tank";
+		classname = "lOilTank";
+		maxSlope = 15;
+		desrt = "airbase_tbilisi_tank_01_crash";
+	};
+
+	{
+		file = "airbase_tbilisi_tank_02";
+		castshadows = false;
+		life = 5;
+		fire =
+		{
+			120;
+			2;
+		};
+		username = "Fuel Tank";
+		classname = "lOilTank";
+		maxSlope = 15;
+		desrt = "airbase_tbilisi_tank_02_crash";
+	};
+
+	{
+		file = "airbase_tbilisi_tent";
+		castshadows = false;
+		life = 20;
+		fire =
+		{
+			120;
+			2;
+		};
+		username = "civil building";
+		maxSlope = 10;
+		desrt = "airbase_tbilisi_tent_crash";
+	};
+
+	{
+		file = "airbase_vor";
+		castshadows = false;
+		life = 3;
+		fire =
+		{
+			0;
+			2;
+		};
+		username = "civil building";
+		classname = "lSiteElementBuilding";
+		maxSlope = 15;
+		desrt = "airbase_vor_crash";
+	};
+
+	{
+		file = "airport";
+		castshadows = false;
+		life = 2400;
+		fire =
+		{
+			60;
+			2;
+		};
+		username = "civil building";
+		maxSlope = 8;
+		desrt = "airport_crush";
+	};
+
+	{
+		file = "airport_babushara_new";
+		castshadows = false;
+		life = 1000;
+		fire =
+		{
+			120;
+			2;
+		};
+		username = "civil building";
+		maxSlope = 8;
+		desrt = "airport_babushara_new_crash";
+	};
+
+	{
+		file = "airport_babushara_old";
+		castshadows = false;
+		life = 1000;
+		fire =
+		{
+			120;
+			2;
+		};
+		username = "civil building";
+		maxSlope = 8;
+		desrt = "airport_babushara_old_crush";
+	};
+
+	{
+		file = "an-2m";
+		castshadows = false;
+		life = 20;
+		fire =
+		{
+			120;
+			2;
+		};
+		username = "monument";
+		maxSlope = 15;
+	};
+
+	{
+		file = "atz-60_new";
+		castshadows = false;
+		life = 1;
+		fire =
+		{
+			300;
+			2;
+		};
+		maxSlope = 5;
+		desrt = "atz-60_new_crash";
+	};
+
+	{
+		file = "bascetball";
+		castshadows = false;
+		fire =
+		{
+			0;
+			2;
+		};
+		maxSlope = 8;
+	};
+
+	{
+		file = "batumi_fonar";
+		castshadows = false;
+		life = 150;
+		fire =
+		{
+			0;
+			0;
+		};
+		username = "civil building";
+		maxSlope = 30;
+		desrt = "batumi_fonar_crash";
+	};
+
+	{
+		file = "batumi_hangar_med";
+		castshadows = false;
+		life = 1000;
+		fire =
+		{
+			120;
+			2;
+		};
+		username = "civil building";
+		maxSlope = 15;
+		desrt = "batumi_hangar_med_crash";
+	};
+
+	{
+		file = "batumi_hangar_small";
+		castshadows = false;
+		life = 1000;
+		fire =
+		{
+			120;
+			2;
+		};
+		username = "civil building";
+		maxSlope = 10;
+		desrt = "batumi_hangar_small_crash";
+	};
+
+	{
+		file = "batumi_KDP";
+		castshadows = false;
+		life = 1000;
+		fire =
+		{
+			120;
+			2;
+		};
+		username = "civil building";
+		maxSlope = 15;
+		desrt = "batumi_kdp_crash";
+	};
+
+	{
+		file = "batumi_terminal";
+		castshadows = false;
+		life = 1000;
+		fire =
+		{
+			120;
+			2;
+		};
+		username = "civil building";
+		maxSlope = 8;
+		desrt = "batumi_terminal_crash";
+	};
+
+	{
+		file = "beslan_vladikavkaz";
+		castshadows = false;
+		life = 1000;
+		fire =
+		{
+			120;
+			2;
+		};
+		username = "civil building";
+		maxSlope = 8;
+		desrt = "beslan_vladikavkaz_crash";
+	};
+
+	{
+		file = "boat-1";
+		castshadows = false;
+		life = 150;
+		fire =
+		{
+			60;
+			2;
+		};
+		username = "boat";
+		classname = "lLandShip";
+	};
+
+	{
+		file = "boat-1b";
+		castshadows = false;
+		life = 80;
+		fire =
+		{
+			60;
+			2;
+		};
+		username = "boat";
+		classname = "lLandShip";
+	};
+
+	{
+		file = "boat-2";
+		castshadows = false;
+		life = 150;
+		fire =
+		{
+			60;
+			2;
+		};
+		username = "boat";
+		classname = "lLandShip";
+	};
+
+	{
+		file = "boat-2a";
+		castshadows = false;
+		life = 80;
+		fire =
+		{
+			60;
+			2;
+		};
+		username = "boat";
+		classname = "lLandShip";
+	};
+
+	{
+		file = "boat-3";
+		castshadows = false;
+		life = 80;
+		fire =
+		{
+			60;
+			2;
+		};
+		username = "boat";
+		classname = "lLandShip";
+	};
+
+	{
+		file = "box_new";
+		castshadows = false;
+		life = 8;
+		fire =
+		{
+			150;
+			2;
+		};
+		username = "house";
+		classname = "lOilTank";
+		maxSlope = 15;
+		desrt = "box_new_crash";
+	};
+
+	{
+		file = "ceh_b1";
+		castshadows = false;
+		life = 4800;
+		fire =
+		{
+			300;
+			2;
+		};
+		username = "workshop";
+		maxSlope = 7;
+		desrt = "ceh_b1_crush";
+	};
+
+	{
+		file = "ceh_d";
+		castshadows = false;
+		life = 2500;
+		fire =
+		{
+			300;
+			2;
+		};
+		username = "workshop";
+		maxSlope = 7;
+		desrt = "ceh_d_crush";
+	};
+
+	{
+		file = "elnya_new";
+		castshadows = false;
+		life = 600;
+		fire =
+		{
+			20;
+			2;
+		};
+	};
+
+	{
+		file = "f_home3_c";
+		castshadows = false;
+		life = 300;
+		fire =
+		{
+			120;
+			2;
+		};
+		username = "civil building";
+		maxSlope = 8;
+		desrt = "korpus_crush";
+	};
+
+	{
+		file = "f_korpus_b";
+		castshadows = false;
+		life = 1000;
+		fire =
+		{
+			180;
+			2;
+		};
+		username = "civil building";
+		maxSlope = 10;
+		desrt = "korpus_a_crush";
+	};
+
+	{
+		file = "f_sklad";
+		castshadows = false;
+		life = 400;
+		fire =
+		{
+			180;
+			2;
+		};
+		username = "depot";
+		maxSlope = 8;
+		desrt = "sklad_new_crush";
+	};
+
+	{
+		file = "ferma_b_new";
+		castshadows = false;
+		life = 400;
+		fire =
+		{
+			60;
+			2;
+		};
+		username = "Farm B";
+		maxSlope = 7;
+		desrt = "ferma_b_new_crush";
+	};
+
+	{
+		file = "gaz-3307_new";
+		castshadows = false;
+		life = 1;
+		fire =
+		{
+			300;
+			2;
+		};
+		username = "GAZ-3307";
+		maxSlope = 8;
+		desrt = "truck_crash_01";
+	};
+
+	{
+		file = "GAZ-3307_open";
+		castshadows = false;
+		life = 1;
+		fire =
+		{
+			300;
+			2;
+		};
+		username = "zil-4334";
+		maxSlope = 10;
+		desrt = "truck_crash_01";
+	};
+
+	{
+		file = "gaz-3308_new";
+		castshadows = false;
+		life = 1;
+		fire =
+		{
+			300;
+			2;
+		};
+		username = "GAZ-3308";
+		maxSlope = 8;
+		desrt = "truck_crash_01";
+	};
+
+	{
+		file = "ikarus_new";
+		castshadows = false;
+		life = 1;
+		fire =
+		{
+			300;
+			2;
+		};
+		username = "ikarus bus";
+		maxSlope = 5;
+		desrt = "ikarus_new_crash";
+	};
+
+	{
+		file = "inz";
+		castshadows = false;
+		life = 150;
+		fire =
+		{
+			60;
+			2;
+		};
+		username = "airfield building";
+		maxSlope = 10;
+		desrt = "inz_crush";
+	};
+
+	{
+		file = "inz_big";
+		castshadows = false;
+		life = 400;
+		fire =
+		{
+			120;
+			2;
+		};
+		username = "airfield building";
+		maxSlope = 10;
+		desrt = "inz_big_crush";
+	};
+
+	{
+		file = "kdp";
+		castshadows = false;
+		life = 500;
+		fire =
+		{
+			60;
+			2;
+		};
+		username = "control point";
+		maxSlope = 10;
+		desrt = "inz_crush";
+	};
+
+	{
+		file = "kdp_big";
+		castshadows = false;
+		life = 1000;
+		fire =
+		{
+			120;
+			2;
+		};
+		username = "control point";
+		maxSlope = 10;
+		desrt = "klub_crush";
+	};
+
+	{
+		file = "komplex";
+		castshadows = false;
+		life = 400;
+		fire =
+		{
+			60;
+			2;
+		};
+		username = "civil building";
+		maxSlope = 8;
+		desrt = "komplex_crush";
+	};
+
+	{
+		file = "konteiner_brown_new";
+		castshadows = false;
+		life = 20;
+		fire =
+		{
+			60;
+			2;
+		};
+		username = "Container brown";
+		maxSlope = 12;
+	};
+
+	{
+		file = "konteiner_red1_new";
+		castshadows = false;
+		life = 20;
+		fire =
+		{
+			60;
+			2;
+		};
+		username = "Container red 1";
+		maxSlope = 12;
+	};
+
+	{
+		file = "konteiner_red2_new";
+		castshadows = false;
+		life = 20;
+		fire =
+		{
+			60;
+			2;
+		};
+		username = "Container red 2";
+		maxSlope = 12;
+	};
+
+	{
+		file = "konteiner_white_new";
+		castshadows = false;
+		life = 20;
+		fire =
+		{
+			60;
+			2;
+		};
+		username = "Container white";
+		maxSlope = 12;
+	};
+
+	{
+		file = "konteiners_brown";
+		castshadows = false;
+		life = 100;
+		fire =
+		{
+			60;
+			2;
+		};
+		maxSlope = 12;
+	};
+
+	{
+		file = "konteiners_red";
+		castshadows = false;
+		life = 100;
+		fire =
+		{
+			60;
+			2;
+		};
+		maxSlope = 12;
+	};
+
+	{
+		file = "konteiners_white";
+		castshadows = false;
+		life = 100;
+		fire =
+		{
+			60;
+			2;
+		};
+		maxSlope = 12;
+	};
+
+	{
+		file = "korpus_atom";
+		castshadows = false;
+		life = 500;
+		fire =
+		{
+			60;
+			2;
+		};
+		username = "civil building";
+		maxSlope = 7;
+		desrt = "korpus_atom_crash";
+	};
+
+	{
+		file = "korpus_atom_crash";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "kran_bash";
+		castshadows = false;
+		life = 200;
+		fire =
+		{
+			0;
+			2;
+		};
+		classname = "lTowerCrane";
+		maxSlope = 20;
+		desrt = "kran_bash_crush";
+	};
+
+	{
+		file = "kran_port";
+		castshadows = false;
+		life = 1000;
+		fire =
+		{
+			0;
+			2;
+		};
+		classname = "lPortCrane";
+		maxSlope = 15;
+		desrt = "kran_port_crush";
+	};
+
+	{
+		file = "kran-stroi";
+		castshadows = false;
+		life = 240;
+		fire =
+		{
+			200;
+			2;
+		};
+		username = "kran";
+		maxSlope = 15;
+		desrt = "kran-stroi_crush";
+	};
+
+	{
+		file = "laz-695_new";
+		castshadows = false;
+		life = 1;
+		fire =
+		{
+			300;
+			2;
+		};
+		username = "laz bus";
+		maxSlope = 8;
+		desrt = "civil_traffic_crash";
+	};
+
+	{
+		file = "liaz-677_new";
+		castshadows = false;
+		life = 2;
+		fire =
+		{
+			300;
+			2;
+		};
+		username = "LIAZ bus";
+		maxSlope = 8;
+		desrt = "civil_traffic_crash";
+	};
+
+	{
+		file = "lokator";
+		castshadows = false;
+		life = 10;
+		fire =
+		{
+			120;
+			2;
+		};
+		username = "civil building";
+		maxSlope = 12;
+		desrt = "lokator_crash";
+	};
+
+	{
+		file = "majak";
+		castshadows = false;
+		life = 800;
+		fire =
+		{
+			120;
+			2;
+		};
+		username = "lighthouse";
+		classname = "lLighthouse";
+		maxSlope = 15;
+		desrt = "majak-1_crash";
+	};
+
+	{
+		file = "maz-6303_new";
+		castshadows = false;
+		life = 1;
+		fire =
+		{
+			300;
+			2;
+		};
+		username = "MAZ-6303";
+		maxSlope = 8;
+		desrt = "maz-6303_new_crash";
+	};
+
+	{
+		file = "mi-8";
+		castshadows = false;
+		life = 20;
+		fire =
+		{
+			120;
+			2;
+		};
+		username = "monument";
+		maxSlope = 8;
+		desrt = "small_crash";
+	};
+
+	{
+		file = "mig19-monument";
+		castshadows = false;
+		life = 80;
+		fire =
+		{
+			120;
+			2;
+		};
+		username = "monument";
+		maxSlope = 15;
+		desrt = "mig19-monument_crash";
+	};
+
+	{
+		file = "mig19-monument_crash";
+		maxSlope = 15;
+		iscrashmodel = true;
+	};
+
+	{
+		file = "ohr-vyshka";
+		castshadows = false;
+		life = 3;
+		fire =
+		{
+			60;
+			0;
+		};
+		username = "Watchtower";
+		maxSlope = 20;
+		desrt = "ohr-vyshka_crush";
+	};
+
+	{
+		file = "par_agregatnaya";
+		castshadows = false;
+		life = 20;
+		fire =
+		{
+			30;
+			1;
+		};
+		classname = "lSiteElementBuilding";
+		maxSlope = 15;
+		desrt = "saray_crash";
+	};
+
+	{
+		file = "par_anten_mrk";
+		castshadows = false;
+		life = 5;
+		fire =
+		{
+			0;
+			0;
+		};
+		classname = "lSiteElementBuilding";
+	};
+
+	{
+		file = "par_anten20_l";
+		castshadows = false;
+		life = 5;
+		fire =
+		{
+			0;
+			0;
+		};
+		classname = "lSiteElementBuilding";
+	};
+
+	{
+		file = "par_anten20_r_provod";
+		castshadows = false;
+		life = 5;
+		fire =
+		{
+			0;
+			0;
+		};
+		classname = "lSiteElementBuilding";
+	};
+
+	{
+		file = "par_anten7_l";
+		castshadows = false;
+		life = 5;
+		fire =
+		{
+			0;
+			0;
+		};
+		classname = "lSiteElementBuilding";
+	};
+
+	{
+		file = "par_anten7_r_provod";
+		castshadows = false;
+		life = 5;
+		fire =
+		{
+			0;
+			0;
+		};
+		classname = "lSiteElementBuilding";
+	};
+
+	{
+		file = "par_apparatnaya";
+		castshadows = false;
+		life = 40;
+		fire =
+		{
+			20;
+			1;
+		};
+		classname = "lHomerBuilding";
+		maxSlope = 8;
+		desrt = "par_apparatnaya_crash";
+	};
+
+	{
+		file = "par_apparatnaya_20";
+		castshadows = false;
+		life = 40;
+		fire =
+		{
+			20;
+			1;
+		};
+		classname = "lSiteElementBuilding";
+		maxSlope = 8;
+		desrt = "par_apparatnaya_crash";
+	};
+
+	{
+		file = "par_gsm";
+		castshadows = false;
+		life = 90;
+		fire =
+		{
+			5;
+			2;
+		};
+		maxSlope = 10;
+	};
+
+	{
+		file = "par_ograd";
+		castshadows = false;
+	};
+
+	{
+		file = "pavilyon";
+		castshadows = false;
+		life = 200;
+		fire =
+		{
+			60;
+			2;
+		};
+		username = "civil building";
+		maxSlope = 20;
+		desrt = "Dansing_crush";
+	};
+
+	{
+		file = "pavilyon1_new";
+		castshadows = false;
+		life = 200;
+		fire =
+		{
+			60;
+			2;
+		};
+		username = "civil building";
+		desrt = "pavilyon1_crush";
+	};
+
+	{
+		file = "perehod";
+		castshadows = false;
+		fire =
+		{
+			0;
+			2;
+		};
+		maxSlope = 8;
+	};
+
+	{
+		file = "platforma_akacya";
+		castshadows = false;
+		life = 300;
+		fire =
+		{
+			60;
+			2;
+		};
+		username = "platform with \"akacyas\"";
+		maxSlope = 8;
+		desrt = "platforma_crush";
+	};
+
+	{
+		file = "platforma_btr";
+		castshadows = false;
+		life = 200;
+		fire =
+		{
+			60;
+			2;
+		};
+		username = "platform with \"btrs\"";
+		maxSlope = 8;
+		desrt = "platforma_crush";
+	};
+
+	{
+		file = "platforma_ikarus";
+		castshadows = false;
+		life = 100;
+		fire =
+		{
+			60;
+			2;
+		};
+		username = "platform with bus";
+		desrt = "platforma_crush";
+	};
+
+	{
+		file = "platforma_msta";
+		castshadows = false;
+		life = 300;
+		fire =
+		{
+			60;
+			2;
+		};
+		username = "platform with \"mstas\"";
+		maxSlope = 8;
+		desrt = "platforma_crush";
+	};
+
+	{
+		file = "platforma_tank";
+		castshadows = false;
+		life = 300;
+		fire =
+		{
+			60;
+			2;
+		};
+		username = "platform with tanks";
+		maxSlope = 8;
+		desrt = "platforma_crush";
+	};
+
+	{
+		file = "platforma_track";
+		castshadows = false;
+		life = 300;
+		fire =
+		{
+			60;
+			2;
+		};
+		username = "platform with trucks";
+		maxSlope = 8;
+		desrt = "platforma_crush";
+	};
+
+	{
+		file = "platforma_tunguska";
+		castshadows = false;
+		life = 300;
+		fire =
+		{
+			60;
+			2;
+		};
+		username = "platform with \"tunguskas\"";
+		maxSlope = 8;
+		desrt = "platforma_crush";
+	};
+
+	{
+		file = "prichal";
+		castshadows = false;
+		fire =
+		{
+			0;
+			2;
+		};
+		maxSlope = 8;
+	};
+
+	{
+		file = "prw-11_new";
+		castshadows = false;
+		life = 1;
+		fire =
+		{
+			300;
+			2;
+		};
+		username = "rls prw-11";
+		desrt = "rsp_crash_new";
+	};
+
+	{
+		file = "r_vok_sb_new";
+		castshadows = false;
+		life = 2400;
+		fire =
+		{
+			120;
+			2;
+		};
+		username = "railroad station building";
+		maxSlope = 7;
+		desrt = "r_vok_sb_crush";
+	};
+
+	{
+		file = "r_vok_sd_new";
+		castshadows = false;
+		life = 1600;
+		fire =
+		{
+			120;
+			2;
+		};
+		username = "Railway station";
+		desrt = "r_vok_sd_new_crash";
+	};
+
+	{
+		file = "radar";
+		castshadows = false;
+		life = 10;
+		fire =
+		{
+			120;
+			2;
+		};
+		username = "civil building";
+		maxSlope = 10;
+		desrt = "radar_crush";
+	};
+
+	{
+		file = "rls-37_new";
+		castshadows = false;
+		life = 1;
+		fire =
+		{
+			300;
+			2;
+		};
+		username = "rls 37";
+		classname = "lRadarRLS37";
+		desrt = "small_crash";
+	};
+
+	{
+		file = "rsbn_hill";
+		castshadows = false;
+		fire =
+		{
+			60;
+			0;
+		};
+		maxSlope = 10;
+	};
+
+	{
+		file = "rsp_drl-7_new";
+		castshadows = false;
+		life = 10;
+		fire =
+		{
+			120;
+			2;
+		};
+		username = "civil building";
+		desrt = "rsp_crash_new";
+	};
+
+	{
+		file = "rsp_esd-20_new";
+		castshadows = false;
+		life = 10;
+		fire =
+		{
+			120;
+			2;
+		};
+		username = "civil building";
+		desrt = "rsp_crash_new";
+	};
+
+	{
+		file = "rsp_peleng_new";
+		castshadows = false;
+		life = 10;
+		fire =
+		{
+			120;
+			2;
+		};
+		username = "civil building";
+	};
+
+	{
+		file = "rsp_radio_new";
+		castshadows = false;
+		life = 5;
+		fire =
+		{
+			120;
+			2;
+		};
+		username = "civil building";
+	};
+
+	{
+		file = "rsp-7_new";
+		castshadows = false;
+		life = 1;
+		fire =
+		{
+			300;
+			2;
+		};
+		username = "rls rsp-7";
+		classname = "lRadarRSP7";
+		desrt = "truck_crash_01";
+	};
+
+	{
+		file = "saray-d_new";
+		castshadows = false;
+		life = 75;
+		fire =
+		{
+			0;
+			2;
+		};
+		username = "Subsidiary structure D";
+		maxSlope = 10;
+		desrt = "small_crash";
+	};
+
+	{
+		file = "saray-f_new";
+		castshadows = false;
+		life = 20;
+		fire =
+		{
+			0;
+			2;
+		};
+		username = "Subsidiary structure F";
+		maxSlope = 15;
+		desrt = "saray_crash";
+	};
+
+	{
+		file = "skladik";
+		castshadows = false;
+		life = 40;
+		fire =
+		{
+			150;
+			2;
+		};
+		username = "depository";
+		maxSlope = 15;
+	};
+
+	{
+		file = "stancija3";
+		castshadows = false;
+		life = 400;
+		fire =
+		{
+			60;
+			2;
+		};
+		username = "civil building";
+		maxSlope = 10;
+		desrt = "stancija3_crush";
+	};
+
+	{
+		file = "tacan_A";
+		castshadows = false;
+		life = 5;
+		fire =
+		{
+			0;
+			0;
+		};
+		username = "civil building";
+		classname = "lSiteElementBuilding";
+		maxSlope = 15;
+	};
+
+	{
+		file = "tele_bash_m_new";
+		castshadows = false;
+		life = 200;
+		fire =
+		{
+			0;
+			2;
+		};
+		username = "Comms tower M";
+		classname = "lSiteElementBuilding";
+		maxSlope = 15;
+		desrt = "tele_bash_m_new_crash";
+	};
+
+	{
+		file = "tele_bash_new";
+		castshadows = false;
+		life = 150;
+		fire =
+		{
+			120;
+			2;
+		};
+		username = "TV tower";
+		maxSlope = 15;
+		desrt = "tele_bash_new_crash";
+	};
+
+	{
+		file = "terminal_1";
+		castshadows = false;
+		life = 1000;
+		fire =
+		{
+			120;
+			2;
+		};
+		username = "civil building";
+		maxSlope = 7;
+		desrt = "terminal_1_crush";
+	};
+
+	{
+		file = "toplivo-bak_new";
+		castshadows = false;
+		life = 5;
+		fire =
+		{
+			150;
+			2;
+		};
+		username = "tank";
+		classname = "lOilTank";
+		maxSlope = 10;
+		desrt = "small_crash";
+	};
+
+	{
+		file = "trolebus_new";
+		castshadows = false;
+		life = 2;
+		fire =
+		{
+			300;
+			2;
+		};
+		username = "trolley bus";
+		maxSlope = 8;
+		desrt = "civil_traffic_crash";
+	};
+
+	{
+		file = "ukrytie_b_new";
+		castshadows = false;
+		life = 1200;
+		fire =
+		{
+			60;
+			4;
+		};
+		username = "Shelter B";
+		maxSlope = 10;
+		desrt = "small_crash";
+	};
+
+	{
+		file = "vaz_new";
+		castshadows = false;
+		life = 5;
+		fire =
+		{
+			60;
+			2;
+		};
+		username = "car";
+		maxSlope = 10;
+		desrt = "vaz_crash";
+	};
+
+	{
+		file = "vok_sim_a";
+		castshadows = false;
+		life = 1000;
+		fire =
+		{
+			180;
+			2;
+		};
+		username = "railroad station building";
+		maxSlope = 10;
+		desrt = "vok_sim_a_crush";
+	};
+
+	{
+		file = "vok_sim_b";
+		castshadows = false;
+		life = 2800;
+		fire =
+		{
+			180;
+			2;
+		};
+		username = "railroad station building";
+		maxSlope = 8;
+		desrt = "vok_sim_b_crush";
+	};
+
+	{
+		file = "vok_sim_c";
+		castshadows = false;
+		life = 1000;
+		fire =
+		{
+			180;
+			2;
+		};
+		username = "railroad station building";
+		maxSlope = 10;
+		desrt = "vok_sim_c_crush";
+	};
+
+	{
+		file = "vok_sim_d";
+		castshadows = false;
+		life = 1000;
+		fire =
+		{
+			180;
+			2;
+		};
+		username = "railroad station building";
+		maxSlope = 15;
+		desrt = "vok_sim_d_crush";
+	};
+
+	{
+		file = "vok_sim_e";
+		castshadows = false;
+		life = 800;
+		fire =
+		{
+			120;
+			2;
+		};
+		username = "railroad station building";
+		maxSlope = 8;
+		desrt = "vok_sim_e_crush";
+	};
+
+	{
+		file = "vokz_a";
+		castshadows = false;
+		life = 2400;
+		fire =
+		{
+			60;
+			2;
+		};
+		username = "railroad station building";
+		maxSlope = 15;
+		desrt = "vokz_a_crush";
+	};
+
+	{
+		file = "vokz_big";
+		castshadows = false;
+		life = 4000;
+		fire =
+		{
+			120;
+			2;
+		};
+		username = "railroad station building";
+		maxSlope = 10;
+		desrt = "vokz_big_crush";
+	};
+
+	{
+		file = "volnorez";
+		castshadows = false;
+		fire =
+		{
+			0;
+			2;
+		};
+		maxSlope = 8;
+	};
+
+	{
+		file = "vyshka_airport";
+		castshadows = false;
+		life = 1000;
+		fire =
+		{
+			0;
+			0;
+		};
+		username = "civil building";
+		maxSlope = 20;
+		desrt = "vyshka_airport_crash";
+	};
+
+	{
+		file = "wagon-cisterna";
+		life = 300;
+		fire =
+		{
+			10;
+			2;
+		};
+		maxSlope = 10;
+		desrt = "wagon-cisterna_crash";
+	};
+
+	{
+		file = "warehouse_babushara_01";
+		castshadows = false;
+		life = 1000;
+		fire =
+		{
+			120;
+			2;
+		};
+		username = "civil building";
+		maxSlope = 10;
+		desrt = "warehouse_babushara_01_crush";
+	};
+
+	{
+		file = "wc_new";
+		castshadows = false;
+		life = 150;
+		fire =
+		{
+			0;
+			2;
+		};
+		username = "WC";
+		maxSlope = 10;
+		desrt = "small_crash";
+	};
+
+	{
+		file = "wodokachka_a_new";
+		castshadows = false;
+		life = 150;
+		fire =
+		{
+			0;
+			2;
+		};
+		username = "Water tower A";
+		maxSlope = 20;
+		desrt = "wodokachka_a_new_crash";
+	};
+
+	{
+		file = "wodokachka_b";
+		castshadows = false;
+		life = 80;
+		fire =
+		{
+			0;
+			2;
+		};
+		username = "civil building";
+		maxSlope = 20;
+		desrt = "wodokachka_b_crush";
+	};
+
+};

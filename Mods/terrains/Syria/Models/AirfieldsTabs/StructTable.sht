@@ -1,0 +1,345 @@
+TerrainModelDeclaration =
+{
+	default =
+	{
+		load =
+		{
+			false;
+			false;
+		};
+		drawonmap = true;
+		vis = 1;
+		visShadows = 1;
+		life = 500;
+		fire =
+		{
+		  0;
+		  1;
+		};
+		classname = "lStandartStructure";
+		positioning = "ONLYHEIGTH"; 
+		DestructAnimatttion = "NO"; 
+	};
+	{
+		file = "A_black";
+		username = "";
+		classname = "";
+		desrt = "";
+	};
+
+	{
+		file = "Arrow_F";
+		desrt = "";
+	};
+
+	{
+		file = "Arrow_L";
+		desrt = "";
+	};
+
+	{
+		file = "Arrow_LF";
+		desrt = "";
+	};
+
+	{
+		file = "Arrow_R";
+		desrt = "";
+	};
+
+	{
+		file = "Arrow_RF";
+		desrt = "";
+	};
+
+	{
+		file = "B_black";
+		desrt = "";
+	};
+
+	{
+		file = "C_black";
+		desrt = "";
+	};
+
+	{
+		file = "course_0";
+		desrt = "";
+	};
+
+	{
+		file = "course_1";
+		desrt = "";
+	};
+
+	{
+		file = "course_2";
+		desrt = "";
+	};
+
+	{
+		file = "course_3";
+		desrt = "";
+	};
+
+	{
+		file = "course_4";
+		desrt = "";
+	};
+
+	{
+		file = "course_5";
+		desrt = "";
+	};
+
+	{
+		file = "course_6";
+		desrt = "";
+	};
+
+	{
+		file = "course_7";
+		desrt = "";
+	};
+
+	{
+		file = "course_8";
+		desrt = "";
+	};
+
+	{
+		file = "course_9";
+		desrt = "";
+	};
+
+	{
+		file = "course_dash";
+		desrt = "";
+	};
+
+	{
+		file = "course_L";
+		desrt = "";
+	};
+
+	{
+		file = "course_R";
+		desrt = "";
+	};
+
+	{
+		file = "D_black";
+		desrt = "";
+	};
+
+	{
+		file = "E_black";
+		desrt = "";
+	};
+
+	{
+		file = "F_black";
+		desrt = "";
+	};
+
+	{
+		file = "G_black";
+		desrt = "";
+	};
+
+	{
+		file = "H_black";
+		desrt = "";
+	};
+
+	{
+		file = "I_black";
+		desrt = "";
+	};
+
+	{
+		file = "J_black";
+		desrt = "";
+	};
+
+	{
+		file = "K_black";
+		desrt = "";
+	};
+
+	{
+		file = "L_black";
+		desrt = "";
+	};
+
+	{
+		file = "M_black";
+		desrt = "";
+	};
+
+	{
+		file = "N_black";
+		desrt = "";
+	};
+
+	{
+		file = "O_black";
+		desrt = "";
+	};
+
+	{
+		file = "P_black";
+		desrt = "";
+	};
+
+	{
+		file = "Q_black";
+		desrt = "";
+	};
+
+	{
+		file = "R_black";
+		desrt = "";
+	};
+
+	{
+		file = "S_black";
+		desrt = "";
+	};
+
+	{
+		file = "T_black";
+		desrt = "";
+	};
+
+	{
+		file = "U_black";
+		desrt = "";
+	};
+
+	{
+		file = "yellow_1";
+		desrt = "";
+	};
+
+	{
+		file = "yellow_2";
+		desrt = "";
+	};
+
+	{
+		file = "yellow_A";
+		desrt = "";
+	};
+
+	{
+		file = "yellow_B";
+		desrt = "";
+	};
+
+	{
+		file = "yellow_C";
+		desrt = "";
+	};
+
+	{
+		file = "yellow_D";
+		desrt = "";
+	};
+
+	{
+		file = "yellow_E";
+		desrt = "";
+	};
+
+	{
+		file = "yellow_F";
+		desrt = "";
+	};
+
+	{
+		file = "yellow_G";
+		desrt = "";
+	};
+
+	{
+		file = "yellow_H";
+		desrt = "";
+	};
+
+	{
+		file = "yellow_I";
+		desrt = "";
+	};
+
+	{
+		file = "yellow_J";
+		desrt = "";
+	};
+
+	{
+		file = "yellow_K";
+		desrt = "";
+	};
+
+	{
+		file = "yellow_L";
+		desrt = "";
+	};
+
+	{
+		file = "yellow_M";
+		desrt = "";
+	};
+
+	{
+		file = "yellow_N";
+		desrt = "";
+	};
+
+	{
+		file = "yellow_O";
+		desrt = "";
+	};
+
+	{
+		file = "yellow_P";
+		desrt = "";
+	};
+
+	{
+		file = "yellow_Q";
+		desrt = "";
+	};
+
+	{
+		file = "yellow_R";
+		desrt = "";
+	};
+
+	{
+		file = "yellow_S";
+		desrt = "";
+	};
+
+	{
+		file = "yellow_T";
+		desrt = "";
+	};
+
+	{
+		file = "yellow_U";
+		desrt = "";
+	};
+
+	{
+		file = "yellow_Y";
+		desrt = "";
+	};
+
+	{
+		file = "yellow_Z";
+		desrt = "";
+	};
+
+};

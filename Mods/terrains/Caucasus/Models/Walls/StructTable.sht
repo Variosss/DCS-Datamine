@@ -1,0 +1,68 @@
+TerrainModelDeclaration =
+{
+	default =
+	{
+		load =
+		{
+			false;
+			false;
+		};
+		drawonmap = true;
+		vis = 1;
+		visShadows = 1;
+		life = 500;
+		fire =
+		{
+			0;
+			1;
+		};
+		classname = "lStandartStructure";
+		positioning = "ONLYHEIGTH";
+		DestructAnimatttion = "NO";
+	};
+
+	{
+		file = "Barbedfance";
+		life = 1;
+		fire =
+		{
+			0;
+			0;
+		};
+		maxSlope = 30;
+	};
+
+	{
+		file = "Concrete_wall_01";
+		life = 3;
+		fire =
+		{
+			0;
+			0;
+		};
+		maxSlope = 30;
+	};
+
+	{
+		file = "tros";
+		life = 2;
+		fire =
+		{
+			0;
+			0;
+		};
+		maxSlope = 30;
+	};
+
+	{
+		file = "vorota_01";
+		life = 2;
+		fire =
+		{
+			0;
+			0;
+		};
+		maxSlope = 15;
+	};
+
+};

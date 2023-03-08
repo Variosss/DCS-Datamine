@@ -1,0 +1,211 @@
+TerrainModelDeclaration =
+{
+	default =
+	{
+		load =
+		{
+			false;
+			false;
+		};
+		drawonmap = true;
+		vis = 1;
+		visShadows = 1;
+		life = 500;
+		fire =
+		{
+		  0;
+		  1;
+		};
+		classname = "lStandartStructure";
+		positioning = "ONLYHEIGTH"; 
+		DestructAnimatttion = "NO"; 
+	};
+	{
+		file = "a4skyhawk";
+		life = -1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "a4skyhawk";
+	};
+
+	{
+		file = "airbus_A300";
+		life = 400;
+		fire =
+		{
+			10;
+			1;
+		};
+		maxSlope = 10;
+		desrt = "airbus_A300_crash";
+	};
+
+	{
+		file = "airbus_A300_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "an_26_civil";
+		life = 10;
+		fire =
+		{
+			10;
+			1;
+		};
+		maxSlope = 10;
+		desrt = "small_crash";
+	};
+
+	{
+		file = "Hawker_Siddeley_HS121";
+		life = -1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "Hawker_Siddeley_HS121";
+	};
+
+	{
+		file = "il76_silkway";
+		life = 10;
+		fire =
+		{
+			10;
+			1;
+		};
+		maxSlope = 10;
+		desrt = "airbus_A300_crash";
+	};
+
+	{
+		file = "L_39C_AlbatrosSyria";
+		life = 300;
+		desrt = "L_39C_AlbatrosSyria_crash";
+	};
+
+	{
+		file = "L_39C_AlbatrosSyria_02";
+		life = 300;
+		desrt = "L_39C_AlbatrosSyria_crash";
+	};
+
+	{
+		file = "L_39C_AlbatrosSyria_crash";
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "learjet_85";
+		life = 10;
+		fire =
+		{
+			10;
+			1;
+		};
+		maxSlope = 10;
+		desrt = "small_crash";
+	};
+
+	{
+		file = "md500";
+		life = -1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "md500";
+	};
+
+	{
+		file = "meteor";
+		life = -1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "meteor";
+	};
+
+	{
+		file = "Mig15";
+		life = 300;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "Mig15_crash";
+	};
+
+	{
+		file = "Mig15_01";
+		life = 300;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "Mig15_crash";
+	};
+
+	{
+		file = "Mig15_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "mystereIV";
+		life = -1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "mystereIV";
+	};
+
+	{
+		file = "Su17";
+		life = 300;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "Su17_crash";
+	};
+
+	{
+		file = "Su17_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "vautour";
+		life = -1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "vautour";
+	};
+
+};

@@ -1,0 +1,101 @@
+TerrainModelDeclaration =
+{
+	default =
+	{
+		load =
+		{
+			false;
+			false;
+		};
+		drawonmap = true;
+		vis = 1;
+		visShadows = 1;
+		life = 500;
+		fire =
+		{
+		  0;
+		  1;
+		};
+		classname = "lStandartStructure";
+		positioning = "ONLYHEIGTH"; 
+		DestructAnimatttion = "NO"; 
+	};
+	{
+		file = "beams_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "beams_crash_02";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "big_metal_slug";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "concreteslab";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "concreteslab_big";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "concretewall";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "concretewall_L";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "crashBrickwall";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "crashcolumm";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "crashcolumm_Y";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "crashheap_01";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "crashwoodbeam";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "metal_slug";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+};

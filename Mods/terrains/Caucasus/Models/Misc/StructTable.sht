@@ -1,0 +1,212 @@
+TerrainModelDeclaration =
+{
+	default =
+	{
+		load =
+		{
+			false;
+			false;
+		};
+		drawonmap = true;
+		vis = 1;
+		visShadows = 1;
+		life = 500;
+		fire =
+		{
+			0;
+			1;
+		};
+		classname = "lStandartStructure";
+		positioning = "ONLYHEIGTH";
+		DestructAnimatttion = "NO";
+	};
+
+	{
+		file = "AFB_omni_blue";
+	};
+
+	{
+		file = "AFB_omni_green";
+	};
+
+	{
+		file = "AFB_omni_green_for_vpp";
+	};
+
+	{
+		file = "AFB_omni_red";
+	};
+
+	{
+		file = "AFB_omni_white";
+	};
+
+	{
+		file = "AFB_omni_yellow";
+	};
+
+	{
+		file = "AFB_spot_flashing";
+	};
+
+	{
+		file = "AFB_spot_green";
+	};
+
+	{
+		file = "AFB_spot_PAPI_01";
+	};
+
+	{
+		file = "AFB_spot_PAPI_02";
+	};
+
+	{
+		file = "AFB_spot_PAPI_03";
+	};
+
+	{
+		file = "AFB_spot_PAPI_04";
+	};
+
+	{
+		file = "AFB_spot_red";
+	};
+
+	{
+		file = "AFB_spot_white";
+	};
+
+	{
+		file = "airfield_pole_light_gr";
+	};
+
+	{
+		file = "batumi_pole_light_gr";
+	};
+
+	{
+		file = "big_stone";
+	};
+
+	{
+		file = "blk_light_pole";
+		life = 3;
+		fire =
+		{
+			0;
+			0;
+		};
+		maxSlope = 30;
+	};
+
+	{
+		file = "car_light";
+	};
+
+	{
+		file = "gannet";
+	};
+
+	{
+		file = "heat_plane";
+	};
+
+	{
+		file = "helipad_flod_light_gr";
+	};
+
+	{
+		file = "light_source";
+	};
+
+	{
+		file = "light_source_small";
+	};
+
+	{
+		file = "light_source_spot";
+	};
+
+	{
+		file = "light_source_spot_green";
+	};
+
+	{
+		file = "light_source_spot_red";
+	};
+
+	{
+		file = "mark_light_blue";
+	};
+
+	{
+		file = "mark_light_red";
+	};
+
+	{
+		file = "mark_light_yellow";
+	};
+
+	{
+		file = "medium_stone";
+	};
+
+	{
+		file = "pole_light_gr";
+	};
+
+	{
+		file = "pole_light_small_gr";
+	};
+
+	{
+		file = "runway_centerline_light_gr";
+	};
+
+	{
+		file = "runway_green_light_gr";
+	};
+
+	{
+		file = "runway_light_gr";
+	};
+
+	{
+		file = "runway_red_light_gr";
+	};
+
+	{
+		file = "spot_green_gr";
+	};
+
+	{
+		file = "spot_white_gr";
+	};
+
+	{
+		file = "stone";
+	};
+
+	{
+		file = "stop_light_gr";
+	};
+
+	{
+		file = "table_red_gr";
+	};
+
+	{
+		file = "table_yellow_gr";
+	};
+
+	{
+		file = "taxiway_light_gr";
+	};
+
+	{
+		file = "wire";
+		castshadows = false;
+	};
+
+};

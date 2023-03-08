@@ -1,0 +1,230 @@
+TerrainModelDeclaration =
+{
+	default =
+	{
+		load =
+		{
+			false;
+			false;
+		};
+		drawonmap = true;
+		vis = 1;
+		visShadows = 1;
+		life = 500;
+		fire =
+		{
+		  0;
+		  1;
+		};
+		classname = "lStandartStructure";
+		positioning = "ONLYHEIGTH"; 
+		DestructAnimatttion = "NO"; 
+	};
+	{
+		file = "airbase_antenna_01_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "Barn_Big_02_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "Barn_Big_03_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "Barn_Big_04_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "belaz_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "car_bridge_2line_crash";
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "car_bridge_4line_crash";
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "house_14_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "house_17_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "house_27_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "house_28_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "house_29_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "house_36_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "KDP_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "mobile_generator_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "NDB_high_tower_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "pole_crash";
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "power_trans_line_big_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "rw_bridge_1line_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "rw_bridge_2line_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "schopf_f300_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "sockpole_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "tacan_A_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "tld_jst25_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "UHF_descent_beacon_01_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "VHF_localizer_01_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "Viaduct_column_huge_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "Viaduct_column_small_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "village_house_01_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "Vor_DME_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "vortac_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "Wooden_bridge_2line_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+};

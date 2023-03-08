@@ -1,0 +1,312 @@
+TerrainModelDeclaration =
+{
+	default =
+	{
+		load =
+		{
+			false;
+			false;
+		};
+		drawonmap = true;
+		vis = 1;
+		visShadows = 1;
+		life = 500;
+		fire =
+		{
+		  0;
+		  1;
+		};
+		classname = "lStandartStructure";
+		positioning = "ONLYHEIGTH"; 
+		DestructAnimatttion = "NO"; 
+	};
+	{
+		file = "belaz";
+		life = 10;
+		fire =
+		{
+			10;
+			1;
+		};
+		username = "";
+		classname = "";
+		maxSlope = 7;
+		desrt = "belaz_crash";
+	};
+
+	{
+		file = "bmw";
+		life = 10;
+		fire =
+		{
+			5;
+			1;
+		};
+		maxSlope = 2;
+		desrt = "car_crash_01";
+	};
+
+	{
+		file = "BTR-152";
+		life = -1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "BTR-152";
+	};
+
+	{
+		file = "bus_nan";
+		life = 3;
+		fire =
+		{
+			10;
+			1;
+		};
+		desrt = "";
+	};
+
+	{
+		file = "ford";
+		life = 10;
+		fire =
+		{
+			5;
+			1;
+		};
+		maxSlope = 2;
+		desrt = "car_crash_01";
+	};
+
+	{
+		file = "ford_bbc";
+		life = 10;
+		fire =
+		{
+			5;
+			1;
+		};
+		maxSlope = 2;
+		desrt = "car_crash_01";
+	};
+
+	{
+		file = "ford_transit";
+		life = 10;
+		fire =
+		{
+			5;
+			1;
+		};
+		maxSlope = 2;
+		desrt = "car_crash_01";
+	};
+
+	{
+		file = "kamaz";
+		life = 10;
+		fire =
+		{
+			8;
+			1;
+		};
+		maxSlope = 2;
+		desrt = "truck_crash_02";
+	};
+
+	{
+		file = "kovatch_r11";
+		life = 10;
+		fire =
+		{
+			10;
+			2;
+		};
+		maxSlope = 2;
+		desrt = "truck_crash_01";
+	};
+
+	{
+		file = "kovatch_r11_dark";
+		life = 10;
+		fire =
+		{
+			10;
+			2;
+		};
+		maxSlope = 2;
+		desrt = "truck_crash_01";
+	};
+
+	{
+		file = "kovatch_r11_dark_open";
+		life = 10;
+		fire =
+		{
+			10;
+			2;
+		};
+		maxSlope = 2;
+		desrt = "truck_crash_01";
+	};
+
+	{
+		file = "kovatch_r11_open";
+		life = 10;
+		fire =
+		{
+			10;
+			2;
+		};
+		maxSlope = 2;
+		desrt = "truck_crash_01";
+	};
+
+	{
+		file = "mobile_generator";
+		life = 10;
+		fire =
+		{
+			15;
+			1;
+		};
+		username = "";
+		classname = "";
+		maxSlope = 10;
+		desrt = "mobile_generator_crash";
+	};
+
+	{
+		file = "rangerover";
+		life = 10;
+		fire =
+		{
+			5;
+			1;
+		};
+		maxSlope = 2;
+		desrt = "car_crash_01";
+	};
+
+	{
+		file = "rangerover_blue";
+		life = 10;
+		fire =
+		{
+			5;
+			1;
+		};
+		maxSlope = 2;
+		desrt = "car_crash_01";
+	};
+
+	{
+		file = "rover";
+		life = 10;
+		fire =
+		{
+			5;
+			1;
+		};
+		maxSlope = 2;
+		desrt = "car_crash_01";
+	};
+
+	{
+		file = "schopf_f300";
+		life = 10;
+		fire =
+		{
+			10;
+			1;
+		};
+		maxSlope = 7;
+		desrt = "schopf_f300_crash";
+	};
+
+	{
+		file = "Tank_T-34";
+		life = -1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "Tank_T-34";
+	};
+
+	{
+		file = "tld_jst25";
+		life = 10;
+		fire =
+		{
+			10;
+			1;
+		};
+		maxSlope = 10;
+		desrt = "tld_jst25_crash";
+	};
+
+	{
+		file = "Toyota";
+		life = 10;
+		fire =
+		{
+			5;
+			1;
+		};
+		maxSlope = 2;
+		desrt = "car_crash_01";
+	};
+
+	{
+		file = "Toyota_BBC";
+		life = 10;
+		fire =
+		{
+			5;
+			1;
+		};
+		maxSlope = 2;
+		desrt = "car_crash_01";
+	};
+
+	{
+		file = "toyota_sedan";
+		life = 10;
+		fire =
+		{
+			5;
+			1;
+		};
+		maxSlope = 2;
+		desrt = "car_crash_01";
+	};
+
+	{
+		file = "ural_air";
+		life = 10;
+		fire =
+		{
+			10;
+			2;
+		};
+		maxSlope = 2;
+		desrt = "truck_crash_01";
+	};
+
+	{
+		file = "ural_fuel";
+		life = 10;
+		fire =
+		{
+			10;
+			2;
+		};
+		maxSlope = 2;
+		desrt = "truck_crash_01";
+	};
+
+};

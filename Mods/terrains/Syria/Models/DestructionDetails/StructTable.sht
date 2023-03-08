@@ -1,0 +1,113 @@
+TerrainModelDeclaration =
+{
+	default =
+	{
+		load =
+		{
+			false;
+			false;
+		};
+		drawonmap = true;
+		vis = 1;
+		visShadows = 1;
+		life = 500;
+		fire =
+		{
+		  0;
+		  1;
+		};
+		classname = "lStandartStructure";
+		positioning = "ONLYHEIGTH"; 
+		DestructAnimatttion = "NO"; 
+	};
+	{
+		file = "debris_brick_01";
+		desrt = "";
+	};
+
+	{
+		file = "debris_concrete_01";
+		desrt = "";
+	};
+
+	{
+		file = "debris_wood";
+		desrt = "";
+	};
+
+	{
+		file = "ruined_column";
+		desrt = "";
+	};
+
+	{
+		file = "ruined_doorway";
+		desrt = "";
+	};
+
+	{
+		file = "ruined_floor_slab";
+		desrt = "";
+	};
+
+	{
+		file = "ruined_floor_slab_02";
+		desrt = "";
+	};
+
+	{
+		file = "ruined_framework_detail_01";
+		desrt = "";
+	};
+
+	{
+		file = "ruined_framework_detail_03";
+		desrt = "";
+	};
+
+	{
+		file = "ruined_framework_detail_04";
+		desrt = "";
+	};
+
+	{
+		file = "ruined_framework_detail_05";
+		desrt = "";
+	};
+
+	{
+		file = "ruined_lathing";
+		desrt = "";
+	};
+
+	{
+		file = "wall_concrete_ruined_01";
+		desrt = "";
+	};
+
+	{
+		file = "wall_concrete_ruined_02";
+		desrt = "";
+	};
+
+	{
+		file = "wall_concrete_ruined_03";
+		desrt = "";
+	};
+
+	{
+		file = "wall_concrete_ruined_c01";
+		desrt = "";
+	};
+
+	{
+		file = "wall_concrete_ruined_c02";
+		desrt = "";
+	};
+
+	{
+		file = "wall_concrete_ruined_c03";
+		desrt = "";
+	};
+
+};

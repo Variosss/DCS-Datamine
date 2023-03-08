@@ -1,0 +1,2491 @@
+-- ...
+TechnicsTable =
+{
+    default =
+    {
+        vis   = 1;
+        load  = { false, false};
+        fire  = { 0, 1};
+        username = "";
+        classname = "lLandVehicle";
+        positioning = "BYNORMAL";
+        drawonmap = true;
+    },
+    {
+        file  = "2-c19";
+        life  = 4;
+        desrt = "2-c19_p_1";
+        fire  = { 300, 2};
+        username = "sau msta";
+        index = 1;
+    },
+    {
+        file  = "2-c3";
+        life  = 4;
+        desrt = "2-c3_p_1";
+        fire  = { 300, 2};
+        username = "sau akatsia";
+        index = 2;
+    },
+    {
+        file  = "2-c9";
+        life  = 4;
+        desrt = "2-c9_p_1";
+        fire  = { 300, 2};
+        username = "sau 2-c9";
+        index = 3;
+    },
+    {
+        file  = "Ural_ATMZ-5";
+        life  = 1.15;
+        vis = 10;
+        desrt = "Ural_ATZ_P1";
+        fire  = { 300, 2};
+        username = "ATMZ-5";
+        index = 4;
+		expMass = 1
+    },
+    {
+        file  = "Ural_ATZ-10";
+        life  = 1.15;
+        vis = 10;
+        desrt = "Ural_ATZ_P1";
+        fire  = { 300, 2};
+        username = "ATZ-10";
+        index = 5;
+		expMass = 1
+    },
+    {
+        file  = "ural-apa";
+        life  = 1.15;
+        desrt = "Ural_ATZ_P1";
+        fire  = { 300, 2};
+        username = "apa";
+        index = 6;
+		expMass = 1
+    },
+    {
+        file  = "bmd-1";
+        life  = 3;
+        desrt = "Bmd-1_p_1";
+        fire  = { 300, 2};
+        username = "bmd-1";
+        index = 7;
+    },
+    {
+        file  = "bmp-1";
+        life  = 4;
+        desrt = "Bmp-1_p_1";
+        fire  = { 300, 2};
+        username = "bmp-1";
+        index = 8;
+    },
+    {
+        file  = "bmp-2";
+        life  = 4;
+        desrt = "Bmp-2_p_1";
+        fire  = { 300, 2};
+        username = "bmp-2";
+        index = 9;
+    },
+    {
+        file  = "brdm-2";
+        life  = 2.3;
+        desrt = "Brdm-2_p_1";
+        fire  = { 300, 2};
+        username = "brdm-2";
+        index = 10;
+		expMass = 1
+    },
+    {
+        file  = "bm-21-40";
+        life  = 0.8;
+        desrt = "BM-21-40_P_1";
+        fire  = { 300, 2};
+        username = "grad-ural";
+        index = 12;
+    },
+    {
+        file  = "m-818";
+        life  = 1.15;
+        desrt = "M-818_p_1";
+        fire  = { 300, 2};
+        username = "patriot tractor M-939";
+        index = 13;
+		expMass = 1
+    },
+    {
+        file  = "HMMWV_M1025";
+        life  = 1.575;
+        desrt = "HMMWV_M1025_P_1";
+        fire  = { 300, 2};
+        username = "M1025 HMMWV";
+        index = 14;
+		expMass = 1
+    },
+    {
+        file  = "lav-25";
+        life  = 5;
+        desrt = "Lav-25_p1";
+        fire  = { 300, 2};
+        username = "LAV-25";
+        index = 15;
+    },
+    {
+        file  = "leopard-2";
+        life  = 32;
+        desrt = "Leopard-2_p_1";
+        fire  = { 300, 2};
+        username = "leopard-2";
+        index = 16;
+    },
+    {
+        file  = "AAV-7";
+        life  = 5;
+        desrt = "AAV-7_p_1";
+        fire  = { 300, 2};
+        username = "AAV-7";
+        index = 17;
+    },
+    {
+        file  = "m-109";
+        life  = 4;
+        desrt = "M-109_p_1";
+        fire  = { 300, 2};
+        username = "m-109";
+        index = 18;
+    },
+    {
+        file  = "m-113";
+        life  = 2.3;
+        desrt = "M-113_p_1";
+        fire  = { 300, 2};
+        username = "m-113";
+        index = 19;
+		expMass = 1
+    },
+    {
+        file  = "m-113g";
+        life  = 2.3;
+        desrt = "M-113_p_1";
+        fire  = { 300, 2};
+        username = "m-113g";
+        index = 20;
+		expMass = 1
+    },
+    {
+        file  = "m-1";
+        life  = 32;
+        desrt = "M-1_p_1";
+        fire  = { 300, 2};
+        username = "m-1 abrams";
+        index = 21;
+    },
+    {
+        file  = "marder";
+        life  = 4;
+        desrt = "Marder_p_1";
+        fire  = { 300, 2};
+        username = "marder";
+        index = 22;
+    },
+    {
+        file  = "br-136";
+        life  = 1;
+        desrt = "Br-136_p_1";
+        fire  = { 300, 2};
+        username = "rls bereg";
+        index = 24;
+		expMass = 1
+    },
+    {
+        file  = "maz-energia";
+        life  = 1;
+        desrt = "Br-136_p_1";
+        fire  = { 300, 2};
+        username = "maz power station";
+        index = 25;
+		expMass = 1
+    },
+    {
+        file  = "maz-karaul";
+        life  = 1;
+        desrt = "Br-136_p_1";
+        fire  = { 300, 2};
+        username = "maz guardhouse";
+        index = 26;
+		expMass = 1
+    },
+    {
+        file  = "maz-obshaga";
+        life  = 1;
+        desrt = "Br-136_p_1";
+        fire  = { 300, 2};
+        username = "maz home";
+        index = 27;
+		expMass = 1
+    },
+    {
+        file  = "maz-stol";
+        life  = 1;
+        desrt = "Br-136_p_1";
+        fire  = { 300, 2};
+        username = "maz mess";
+        index = 28;
+		expMass = 1
+    },
+    {
+        file  = "smerch";
+        life  = 2;
+        desrt = "Smerch_p_1";
+        fire  = { 300, 2};
+        username = "smerch";
+        index = 29;
+    },
+    {
+        file  = "atz-60";
+        life  = 3.5;
+        vis = 20;
+        desrt = "Atz-60_p_1";
+        fire  = { 300, 2};
+        index = 30;
+		expMass = 3
+    },
+    {
+        file  = "prw-11";
+        life  = 1.15;
+        vis = 20;
+        desrt = "prw-11_p_1";
+        fire  = { 300, 2};
+        username = "rls prw-11";
+        index = 31;
+		expMass = 1
+    },
+    {
+        file  = "rsp-7";
+        life  = 1.15;
+        vis = 10;
+        desrt = "Ural-375_p_1";
+        fire  = { 300, 2};
+        username = "rls rsp-7";
+        classname = "lRadarRSP7";
+        index = 32;
+		expMass = 1
+    },
+    {
+        file  = "reis";
+        life  = 0.8;
+        desrt = "Reis_p_1";
+        fire  = { 300, 2};
+        username = "reis launcher";
+        index = 33;
+    },
+    {
+        file  = "RLS-37";
+        life  = 1.15;
+        vis = 20;
+        desrt = "RLS-37_d";
+        fire  = { 300, 2};
+        username = "rls 37";
+        classname = "lRadarRLS37";
+        index = 34;
+		expMass = 1
+    },
+    {
+        file  = "t-80ud";
+        life  = 28;
+        desrt = "T-80ud_p_1";
+        fire  = { 300, 2};
+        username = "t-80ud";
+        index = 35;
+    },
+    {
+        file  = "tag";
+        life  = 1.5;
+        desrt = "Auto-crush";
+        fire  = { 300, 2};
+        username = "tractor";
+        index = 36;
+		expMass = 1
+    },
+    {
+        file  = "tpz";
+        life  = 2;
+        desrt = "Tpz_p_1";
+        fire  = { 300, 2};
+        username = "btr tpz";
+        index = 37;
+		expMass = 1
+    },
+    {
+        file  = "uaz-469";
+        life  = 1;
+        vis = 10;
+        desrt = "Uaz-469_p_1";
+        fire  = { 300, 2};
+        username = "uaz-469";
+        index = 38;
+		expMass = 1
+    },
+    {
+        file  = "uragan";
+        life  = 1.5;
+        desrt = "Uragan_p_1";
+        fire  = { 300, 2};
+        username = "uragan";
+        index = 39;
+    },
+    {
+        file  = "Ural_4320_B";
+        life  = 1.15;
+        desrt = "Ural_4320_B_P1";
+        fire  = { 300, 2};
+        username = "Ural-375";
+        index = 40;
+		expMass = 1
+    },
+    {
+        file  = "Ural_4320_K";
+        life  = 1.15;
+        vis = 10;
+        desrt = "Zil_KUNG_P1";
+        fire  = { 300, 2};
+        username = "Ural-375 PBU";
+        index = 41;
+		expMass = 1
+    },
+    {
+        file  = "zapros";
+        life  = 1.15;
+        vis = 10;
+        desrt = "Prw-11_p_1";
+        fire  = { 300, 2};
+        username = "rls zapros";
+        classname = "lRadarQuery";
+        index = 43;
+		expMass = 1
+    },
+    {
+        file  = "zil-135";
+        life  = 3.5;
+        vis = 10;
+        desrt = "Zil-135_p_1";
+        fire  = { 300, 2};
+        username = "zil-135";
+        index = 44;
+		expMass = 1
+    },
+    {
+        file  = "elektrowoz";
+        life  = 20;
+        vis = 10;
+        desrt = "Elektrowoz_p_1";
+        fire  = { 300, 2};
+        username = "electric locomotive";
+        index = 45;
+		expMass = 1
+    },
+    {
+        file  = "ikarus";
+        life  = 1.15;
+        desrt = "Auto-crush";
+        fire  = { 300, 2};
+        username = "ikarus bus";
+        positioning = "BYNORMAL";
+        index = 46;
+		expMass = 1
+    },
+    {
+        file  = "vaz";
+        life  = 0.45;
+        vis = 10;
+        desrt = "Auto-crush";
+        fire  = { 300, 2};
+        username = "vaz car";
+        positioning = "BYNORMAL";
+        index = 47;
+		expMass = 1
+    },
+    {
+        file  = "teplowoz";
+        life  = 20;
+        vis = 10;
+        desrt = "Teplowoz_p_1";
+        fire  = { 300, 2};
+        username = "locomotive";
+        index = 48;
+		expMass = 1
+    },
+    {
+        file  = "trolebus";
+        life  = 1;
+        vis = 10;
+        desrt = "Auto-crush";
+        fire  = { 300, 2};
+        username = "trolley bus";
+        positioning = "BYNORMAL";
+        index = 49;
+		expMass = 1
+    },
+    {
+        file  = "wagon-cisterna_blue";
+        life  = 3;
+        vis = 10;
+        desrt = "Wagon-cisterna_p_1";
+        fire  = { 300, 2};
+        username = "Coach a tank blue";
+        index = 50;
+		expMass = 1
+    },
+    {
+        file  = "wagon-cisterna_yellow";
+        life  = 3;
+        vis = 10;
+        desrt = "Wagon-cisterna_p_1";
+        fire  = { 300, 2};
+        username = "Coach a tank yellow";
+        index = 98;
+		expMass = 1
+    },
+
+    {
+        file  = "wagon-gruz";
+        life  = 3;
+        vis = 10;
+        desrt = "Wagon-gruz_p_1";
+        fire  = { 300, 2};
+        username = "coach cargo";
+        index = 51;
+    },
+    {
+        file  = "wagon-gruz-otkr";
+        life  = 3;
+        vis = 10;
+        desrt = "wagon-gruz-otkr_p_1";
+        fire  = { 300, 2};
+        username = "coach cargo open";
+        index = 52;
+    },
+    {
+        file  = "wagon-platforma";
+        life  = 3;
+        vis = 10;
+        desrt = "wagon-platforma_p_1";
+        fire  = { 300, 2};
+        username = "coach a platform";
+        index = 53;
+    },
+    {
+        file  = "wagon-pass";
+        life  = 3;
+        vis = 10;
+        desrt = "wagon-pass_p_1";
+        fire  = { 300, 2};
+        username = "coach a passenger";
+        index = 54;
+    },
+    {
+        file  = "radio-st";
+        life  = 1;
+        fire  = { 0, 2};
+        username = "krm";
+        index = 55;
+		expMass = 1
+    },
+    {
+        file  = "kamaz-fire";
+        life  = 1.15;
+        vis = 10;
+        desrt = "Kamaz-fire-p";
+        fire  = { 300, 2};
+        username = "kamaz fire truck";
+        index = 56;
+		expMass = 1
+    },
+    {
+        file  = "KAMAZ-TENT";
+        life  = 1.15;
+        desrt = "KAMAZ-TENT-P_1";
+        fire  = { 300, 2};
+        username = "KAMAZ-43114";
+        index = 57;
+		expMass = 1
+    },
+    {
+        file  = "laz-695";
+        life  = 1.15;
+        desrt = "Laz-695-p";
+        fire  = { 300, 2};
+        username = "laz bus";
+        positioning = "BYNORMAL";
+        index = 58;
+		expMass = 1
+    },
+    {
+        file  = "2c1";
+        life  = 4;
+        desrt = "2c1-d";
+        fire  = { 300, 2};
+        username = "2s1";
+        index = 59;
+    },
+    {
+        file  = "BMP-3";
+        life  = 4;
+        desrt = "BMP-3_P_1";
+        fire  = { 300, 2};
+        username = "BMP-3";
+        index = 60;
+    },
+    {
+        file  = "m-2";
+        life  = 5;
+        desrt = "M-2_P1";
+        fire  = { 300, 2};
+        username = "M2A2 Bradley";
+        index = 61;
+		expMass = 1
+    },
+    {
+        file  = "mcv-80";
+        life  = 3;
+        desrt = "Mt-lb_p_1";
+        fire  = { 300, 2};
+        username = "mcv-80";
+        index = 62;
+    },
+    {
+        file  = "MLRS";
+        life  = 2;
+        desrt = "MLRS_P_1";
+        fire  = { 300, 2};
+        username = "MLRS";
+        index = 63;
+    },
+    {
+        file  = "m-60";
+        life  = 18;
+        desrt = "Mt-lb_p_1";
+        fire  = { 300, 2};
+        username = "m-60";
+        index = 64;
+    },
+    {
+        file  = "m-48";
+        life  = 18;
+        desrt = "Mt-lb_p_1";
+        fire  = { 300, 2};
+        username = "m-48";
+        index = 65;
+    },
+    {
+        file  = "btr-d";
+        life  = 3;
+        desrt = "BTR-D_P_1";
+        fire  = { 300, 2};
+        username = "BTR-D";
+        index = 66;
+		expMass = 1
+    },
+    {
+        file  = "Gaz-66";
+        life  = 0.9;
+        vis = 10;
+        desrt = "Gaz-66_p_1";
+        fire  = { 300, 2};
+        username = "Gaz-66";
+        index = 67;
+		expMass = 1
+    },
+    {
+        file  = "GAZ-3307";
+        life  = 0.9;
+        vis = 10;
+        desrt = "Ural_ATZ_P1";
+        fire  = { 300, 2};
+        username = "GAZ-3307";
+        index = 68;
+		expMass = 1
+    },
+    {
+        file  = "GAZ-3308";
+        life  = 0.9;
+        vis = 10;
+        desrt = "Ural_ATZ_P1";
+        fire  = { 300, 2};
+        username = "GAZ-3308";
+        index = 69;
+		expMass = 1
+    },
+    {
+        file  = "MAZ-6303";
+        life  = 1;
+        vis = 10;
+        desrt = "kamaz-fire-p_1";
+        fire  = { 300, 2};
+        username = "MAZ-6303";
+        index = 70;
+		expMass = 1
+    },
+    {
+        file  = "zil-4334";
+        life  = 1;
+        vis = 10;
+        desrt = "Ural_ATZ_P1";
+        fire  = { 300, 2};
+        username = "zil-4334";
+        index = 71;
+		expMass = 1
+    },
+    {
+        file  = "ZIL_SKP-11";
+        life  = 1.15;
+        desrt = "ZIL_SKP-11_P1";
+        fire  = { 300, 2};
+        username = "ZIL SKP-11";
+        index = 74;
+		expMass = 1
+    },
+    {
+        file  = "Ural_4320_T";
+        life  = 1.15;
+        desrt = "Ural_4320_T_P1";
+        fire  = { 300, 2};
+        username = "Ural-4320T";
+        index = 75;
+		expMass = 1
+    },
+    {
+        file  = "Ural_4320-31";
+        life  = 1.15;
+        desrt = "Ural_4320_T_P1";
+        fire  = { 300, 2};
+        username = "Ural-4320-31";
+        index = 76;
+		expMass = 1
+    },
+    {
+        file  = "Ural_ACP6";
+        life  = 1.15;
+        desrt = "Ural_ACP6_P1";
+        fire  = { 300, 2};
+        username = "URAL ATsP-6";
+        index = 77;
+		expMass = 1
+    },
+    {
+        file  = "Zil_APA-80";
+        life  = 1.15;
+        desrt = "Zil_APA-80_P1";
+        fire  = { 300, 2};
+        username = "ZIL APA-80";
+        index = 78;
+		expMass = 1
+    },
+    {
+        file  = "ZIL_KUNG";
+        life  = 1.15;
+        desrt = "Zil_KUNG_P1";
+        fire  = { 300, 2};
+        username = "ZIL-131 KUNG";
+        index = 79;
+		expMass = 1
+    },
+    {
+        file  = "M1126";
+        life  = 4;
+        desrt = "M1126_P1";
+        fire  = { 300, 2};
+        username = "M1126 Stryker ICV";
+        index = 80;
+    },
+    {
+        file  = "M1128";
+        life  = 4;
+        desrt = "M1128_P1";
+        fire  = { 300, 2};
+        username = "M1128 Stryker MGS";
+        index = 81;
+    },
+    {
+        file  = "M1134";
+        life  = 4;
+        desrt = "M1134_P1";
+        fire  = { 300, 2};
+        username = "M1134 Stryker ATGM";
+        index = 82;
+    },
+    {
+        file  = "MTLB";
+        life  = 2.3;
+        desrt = "MTLB_P_1";
+        fire  = { 300, 2};
+        username = "MTLB";
+        index = 83;
+		expMass = 1
+    },
+    {
+        file  = "BTR-80";
+        life  = 2.8;
+        desrt = "BTR-80_p_1";
+        fire  = { 300, 2};
+        username = "BTR-80";
+        index = 84;
+		expMass = 1
+    },
+    {
+        file  = "t-72";
+        life  = 26;
+        desrt = "T-72_p_1";
+        fire  = { 300, 2};
+        username = "T-72B";
+        index = 85;
+    },
+    {
+        file  = "T-55";
+        life  = 22;
+        desrt = "T-55_p_1";
+        fire  = { 300, 2};
+        username = "T-55";
+        index = 86;
+    },
+    {
+        file  = "HMMWV_M1043";
+        life  = 1.7;
+        desrt = "HMMWV_M1043_P_1";
+        fire  = { 300, 2};
+        username = "M1043 HMMWV";
+        index = 87;
+		expMass = 1
+    },
+    {
+        file  = "HMMWV_M1045";
+        life  = 1.7;
+        desrt = "HMMWV_M1045_P_1";
+        fire  = { 300, 2};
+        username = "M1045 HMMWV TOW";
+        index = 88;
+    },
+    {
+        file  = "Leclerc";
+        life  = 28;
+        desrt = "Leclerc_p_1";
+        fire  = { 300, 2};
+        username = "Leclerc";
+        index = 89;
+    },
+    {
+        file  = "Infantry_typeD_RPG-16";
+        life  = 0.03;
+        desrt = "Infantry_typeD_P_1";
+        fire  = { 300, 2};
+        username = "Infantry_typeD_RPG-16";
+        index = 90;
+    },
+    {
+        file  = "Infantry_typeD_AKS-74";
+        life  = 0.03;
+        desrt = "Infantry_AKS74_P_1";
+        fire  = { 300, 2};
+        username = "Infantry_typeD_AKS-74";
+        index = 91;
+    },
+    {
+        file  = "HEMTT";
+        life  = 1.15;
+        desrt = "HEMTT_P1";
+        fire  = { 300, 2};
+        username = "M978 HEMTT Tanker";
+        index = 92;
+		expMass = 1
+    },
+    {
+        file  = "RSBN";
+        life  = 1;
+        vis = 10;
+        desrt = "RSBN_P1";
+        fire  = { 20, 1};
+        classname = "lSiteElementTech";
+    },
+    {
+        file  = "RSBN_GENER";
+        life  = 1;
+        vis = 10;
+        desrt = "RSBN_GENER_P1";
+        fire  = { 40, 1};
+        classname = "lSiteElementTech";
+    },
+    {
+        file  = "Soldier_AK";
+        life  = 1;
+        vis = 10;
+        desrt = "Soldier_AK_D";
+        fire  = { 40, 1};
+    },
+    {
+        file  = "Soldier_AK_D";
+        desrt = "self";
+        fire  = { 0, 2};
+    },
+    {
+        file  = "Soldier_RPG";
+        life  = 1;
+        vis = 10;
+        desrt = "Soldier_RPG_D";
+        fire  = { 40, 1};
+    },
+    {
+        file  = "Soldier_RPG_D";
+        desrt = "self";
+        fire  = { 0, 2};
+    },
+    {
+        file  = "Soldier_M4";
+        life  = 1;
+        vis = 10;
+        desrt = "Soldier_M4_P_1";
+        fire  = { 40, 1};
+    },
+    {
+        file  = "Soldier_M4_P_1";
+        desrt = "self";
+        fire  = { 0, 2};
+    },
+    {
+        file  = "Soldier_M249";
+        life  = 1;
+        vis = 10;
+        desrt = "Soldier_M249_P_1";
+        fire  = { 40, 1};
+    },
+    {
+        file  = "Soldier_M249_P_1";
+        desrt = "self";
+        fire  = { 0, 2};
+    },
+	{
+        file  = "soldier_russian";
+        life  = 1;
+        vis = 10;
+        desrt = "soldier_russian_d";
+        fire  = { 40, 1};
+    },
+    {
+        file  = "soldier_russian_d";
+        desrt = "self";
+        fire  = { 0, 2};
+    },
+    {
+        file  = "RSBN_GSM";
+        life  = 0.8;
+        vis = 10;
+        desrt = "RSBN_GSM_P1";
+        fire  = { 60, 2};
+        classname = "lSiteElementTech";
+    },
+    {
+        file  = "PAR_10_MA";
+        life  = 0.8;
+        vis = 10;
+        desrt = "Ural_ATZ_P1";
+        fire  = { 300, 2};
+        classname = "lSiteElementTech";
+    },
+    {
+        file  = "LEOPARD-1A3";
+        life  = 18;
+        desrt = "LEOPARD-1A3_P_1";
+        fire  = { 300, 2};
+        username = "MBT Leopard1A3";
+    },
+    {
+        file  = "LEOPARD-1A3_P_1";
+        desrt = "self";
+        fire  = { 0, 2};
+    },
+    {
+        file  = "CHALLENGER-2";
+        life  = 32;
+        desrt = "CHALLENGER-2_P_1";
+        fire  = { 300, 2};
+        username = "MBT Challenger II";
+    },
+    {
+        file  = "CHALLENGER-2_P_1";
+        desrt = "self";
+        fire  = { 0, 2};
+    },
+    {
+        file  = "T-72_p_1";
+        desrt = "self";
+        fire  = { 0, 2};
+    },
+    {
+        file  = "T-55_P_1";
+        desrt = "self";
+        fire  = { 0, 2};
+    },
+    {
+        file  = "m-818_p_1";
+        desrt = "self";
+        fire  = { 0, 2};
+    },
+    {
+        file  = "prw-11_p_1";
+        desrt = "self";
+        fire  = { 0, 2};
+    },
+    {
+        file  = "PRW-11_d";
+        vis   = 10;
+        desrt = "self";
+        fire  = { 0, 2};
+    },
+    {
+        file  = "RLS-37_d";
+        vis   = 10;
+        desrt = "self";
+        fire  = { 0, 2};
+    },
+
+    {
+        file  = "ural-375_p_1";
+        desrt = "self";
+        fire  = { 0, 2};
+    },
+    {
+        file  = "2-c19_p_1";
+        desrt = "self";
+        fire  = { 0, 2};
+    },
+    {
+        file  = "2-c3_p_1";
+        desrt = "self";
+        fire  = { 0, 2};
+    },
+    {
+        file  = "2-c9_p_1";
+        desrt = "self";
+        fire  = { 0, 2};
+    },
+    {
+        file  = "atmz-5_p_1";
+        desrt = "self";
+        fire  = { 0, 2};
+    },
+    {
+        file  = "bmd-1_p_1";
+        desrt = "self";
+        fire  = { 0, 2};
+    },
+    {
+        file  = "bmp-1_p_1";
+        desrt = "self";
+        fire  = { 0, 2};
+    },
+    {
+        file  = "bmp-2_p_1";
+        desrt = "self";
+        fire  = { 0, 2};
+    },
+
+    {
+        file  = "brdm-2_p_1";
+        desrt = "self";
+        fire  = { 0, 2};
+    },
+    {
+        file  = "hummer_p_1";
+        desrt = "self";
+        fire  = { 0, 2};
+    },
+    {
+        file  = "lav-25_p1";
+        desrt = "self";
+        fire  = { 0, 2};
+    },
+    {
+        file  = "leopard-2_p_1";
+        desrt = "self";
+        fire  = { 0, 2};
+    },
+    {
+        file  = "AAV-7_p_1";
+        desrt = "self";
+        fire  = { 0, 2};
+    },
+    {
+        file  = "m-109_p_1";
+        desrt = "self";
+        fire  = { 0, 2};
+    },
+    {
+        file  = "m-113_p_1";
+        desrt = "self";
+        fire  = { 0, 2};
+    },
+    {
+        file  = "m-1_p_1";
+        desrt = "self";
+        fire  = { 0, 2};
+    },
+    {
+        file  = "marder_p_1";
+        desrt = "self";
+        fire  = { 0, 2};
+    },
+    {
+        file  = "br-136_p_1";
+        desrt = "self";
+        fire  = { 0, 2};
+    },
+    {
+        file  = "smerch_p_1";
+        desrt = "self";
+        fire  = { 0, 2};
+    },
+    {
+        file  = "atz-60_p_1";
+        desrt = "self";
+        fire  = { 0, 2};
+    },
+    {
+        file  = "reis_p_1";
+        desrt = "self";
+        fire  = { 0, 2};
+    },
+    {
+        file  = "t-80ud_p_1";
+        desrt = "self";
+        fire  = { 0, 2};
+    },
+    {
+        file  = "auto-crush";
+        desrt = "self";
+        fire  = { 0, 2};
+    },
+    {
+        file  = "tpz_p_1";
+        desrt = "self";
+        fire  = { 0, 2};
+    },
+    {
+        file  = "uaz-469_p_1";
+        desrt = "self";
+        fire  = { 0, 2};
+    },
+    {
+        file  = "uragan_p_1";
+        desrt = "self";
+        fire  = { 0, 2};
+    },
+    {
+        file  = "zil-135_p_1";
+        desrt = "self";
+        fire  = { 0, 2};
+    },
+    {
+        file  = "elektrowoz_p_1";
+        desrt = "self";
+        fire  = { 0, 2};
+    },
+    {
+        file  = "teplowoz_p_1";
+        desrt = "self";
+        fire  = { 0, 2};
+    },
+    {
+        file  = "wagon-cisterna_p_1";
+        desrt = "self";
+        fire  = { 0, 2};
+    },
+    {
+        file  = "wagon-platforma_p_1";
+        desrt = "self";
+        fire  = { 0, 2};
+    },
+    {
+        file  = "wagon-pass_p_1";
+        desrt = "self";
+        fire  = { 0, 2};
+    },
+    {
+        file  = "wagon-gruz_p_1";
+        desrt = "self";
+        fire  = { 0, 2};
+    },
+    {
+        file  = "wagon-gruz-otkr_p_1";
+        desrt = "self";
+        fire  = { 0, 2};
+    },
+    {
+        file  = "kamaz-fire-p";
+        desrt = "self";
+        fire  = { 0, 2};
+    },
+    {
+        file  = "KAMAZ-TENT-P_1";
+        desrt = "self";
+        fire  = { 0, 2};
+    },
+    {
+        file  = "laz-695-p";
+        desrt = "self";
+        fire  = { 0, 2};
+    },
+    {
+        file  = "mt-lb_p_1";
+        desrt = "self";
+        fire  = { 0, 2};
+    },
+    {
+        file  = "2c1-d";
+        desrt = "self";
+        fire  = { 0, 2};
+    },
+    {
+        file  = "Ural_ATZ_P1";
+        desrt = "self";
+        fire  = { 0, 2};
+    },
+    {
+        file  = "Ural_4320_B_P1";
+        desrt = "self";
+        fire  = { 0, 2};
+    },
+    {
+        file  = "Zil_KUNG_P1";
+        desrt = "self";
+        fire  = { 0, 2};
+    },
+    {
+        file  = "ZIL_SKP-11_P1";
+        desrt = "self";
+        fire  = { 0, 2};
+    },
+    {
+        file  = "Ural_4320_T_P1";
+        desrt = "self";
+        fire  = { 0, 2};
+    },
+    {
+        file  = "Ural_ACP6_P1";
+        desrt = "self";
+        fire  = { 0, 2};
+    },
+    {
+        file  = "Zil_APA-80_P1";
+        desrt = "self";
+        fire  = { 0, 2};
+    },
+    {
+        file  = "MLRS_P_1";
+        desrt = "self";
+        fire  = { 0, 2};
+    },
+    {
+        file  = "BTR-80_P_1";
+        desrt = "self";
+        fire  = { 0, 2};
+    },
+    {
+        file  = "BTR-D_P_1";
+        desrt = "self";
+        fire  = { 0, 2};
+    },
+    {
+        file  = "HMMWV_M1025_P_1";
+        desrt = "self";
+        fire  = { 0, 2};
+    },
+    {
+        file  = "HMMWV_M1043_P_1";
+        desrt = "self";
+        fire  = { 0, 2};
+    },
+    {
+        file  = "HMMWV_M1045_P_1";
+        desrt = "self";
+        fire  = { 0, 2};
+    },
+    {
+        file  = "Infantry_typeD_P_1";
+        desrt = "self";
+        fire  = { 0, 2};
+    },
+    {
+        file  = "Leclerc_p_1";
+        desrt = "self";
+        fire  = { 0, 2};
+    },
+    {
+        file  = "BMP-3_P_1";
+        desrt = "self";
+        fire  = { 0, 2};
+    },
+    {
+        file  = "Infantry_AKS74_P_1";
+        desrt = "self";
+        fire  = { 0, 2};
+    },
+    {
+        file  = "HEMTT_P1";
+        desrt = "self";
+        fire  = { 0, 2};
+    },
+    {
+        file  = "LIAZ-677";
+        life  = 2;
+        vis = 10;
+        fire  = { 300, 2};
+        username = "LIAZ bus";
+        positioning = "BYNORMAL";
+    },
+    {
+        file  = "GAZ-66_searchlight";
+        life  = 0.8;
+        vis = 10;
+        fire  = { 300, 2};
+        desrt = "GAZ-66_searchlight_crush";
+        username = "GAZ-66_searchlight";		
+        classname = "lObjWithLights";
+    },
+    {
+        file  = "GAZ-66_searchlight_crush";
+        desrt = "self";
+        fire  = { 0, 2};
+    },
+    {
+        file  = "GCS";
+        life  = 0.7;
+        desrt = "GCS_P_1";
+        fire  = { 300, 2};
+        username = "Predator GCS";
+        index = 72;
+    },
+    {
+        file  = "TrojanSpirit";
+        life  = 0.8;
+        desrt = "TrojanSpirit_P_1";
+        fire  = { 300, 2};
+        username = "Predator TrojanSpirit";
+        index = 73;
+    },
+    {
+        file  = "GCS_P_1";
+        desrt = "self";
+        fire  = { 0, 2};
+    },
+    {
+        file  = "TrojanSpirit_P_1";
+        desrt = "self";
+        fire  = { 0, 2};
+    },
+    {
+        file  = "BM-21-40_P_1";
+        desrt = "self";
+        fire  = { 0, 2};
+    },
+    {
+        file  = "M1126_P1";
+        desrt = "self";
+        fire  = { 0, 2};
+    },
+    {
+        file  = "M1128_P1";
+        desrt = "self";
+        fire  = { 0, 2};
+    },
+    {
+        file  = "M1134_P1";
+        desrt = "self";
+        fire  = { 0, 2};
+    },
+    {
+        file  = "M-2_P1";
+        desrt = "self";
+        fire  = { 0, 2};
+    },
+    {
+        file  = "MTLB_P_1";
+        desrt = "self";
+        fire  = { 0, 2};
+    },
+    {
+        file  = "RSBN_P1";
+        desrt = "self";
+        fire  = { 0, 2};
+    },   
+    {
+        file  = "RSBN_GENER_P1";
+        desrt = "self";
+        fire  = { 0, 2};
+    },
+    {
+        file  = "RSBN_GSM_P1";
+        desrt = "self";
+        fire  = { 0, 2};
+    },       
+    {
+        file  = "boman";
+        life  = 4;
+        fire  = { 300, 2};
+        desrt = "MTLB_P_1";
+        fire  = { 0, 2};
+        index = 95;
+    },
+-- RSP_DRL-7
+  {
+    file  = "RSP_DRL-7";
+    life  = 10;
+    vis   = 5;
+    desrt = "RSP_DRL-7_P_1";
+    fire  = { 120, 2};
+    username = "civil building";
+  },
+-- RSP_DRL-7_P_1
+  {
+    file  = "RSP_DRL-7_P_1";
+    desrt = "self";
+    fire  = { 0, 2};
+  },
+-- RSP_ESD-20
+  {
+    file  = "RSP_ESD-20";
+    life  = 10;
+    vis   = 5;
+    desrt = "RSP_ESD-20_P_1";
+    fire  = { 120, 2};
+    username = "civil building";
+  },
+-- RSP_ESD-20_P_1
+  {
+    file  = "RSP_ESD-20_P_1";
+    desrt = "self";
+    fire  = { 0, 2};
+  },
+-- RSP_Peleng
+  {
+    file  = "RSP_Peleng";
+    life  = 10;
+    vis   = 5;
+    desrt = "RSP_Peleng_P_1";
+    fire  = { 120, 2};
+    username = "civil building";
+  },
+-- RSP_Peleng_P_1
+  {
+    file  = "RSP_Peleng_P_1";
+    desrt = "self";
+    fire  = { 0, 2};
+  },
+-- RSP_Radio
+  {
+    file  = "RSP_Radio";
+    life  = 5;
+    vis   = 5;
+    desrt = "RSP_Radio_P_1";
+    fire  = { 120, 2};
+    username = "civil building";
+  },
+-- RSP_Radio_P_1
+  {
+    file  = "RSP_Radio_P_1";
+    desrt = "self";
+    fire  = { 0, 2};
+  },
+  {
+	file  = "gaz-66_p_1";
+	desrt = "self";
+	fire  = { 0, 2};
+  },
+  {
+	file  = "kamaz-fire-p_1";
+	desrt = "self";
+	fire  = { 0, 2};
+  },
+}
+
+-- ...
+SAM_AND_AAGTable =
+{
+    default =
+    {
+        vis   = 1;
+        load  = { false, false};
+        fire  = { 0, 1};
+        username = "";
+        classname = "lLandVehicle";
+        positioning = "BYNORMAL";
+        drawonmap = true;
+    },
+    {
+        file  = "1l13";
+        life  = 3;
+        desrt = "Ural-375_p_1";
+        fire  = { 300, 2};
+        username = "1l13 ewr station";
+        index = 1;
+    },
+    {
+        file  = "55g6";
+        life  = 3;
+        desrt = "Ural-375_p_1";
+        fire  = { 300, 2};
+        username = "55g6 ewr station";
+        index = 2;
+    },
+    {
+        file  = "54k6";
+        life  = 3;
+        desrt = "54k6_p_1";
+        fire  = { 300, 2};
+        username = "s-300ps 54k6 cp";
+        index = 3;
+    },
+    {
+        file  = "40b6m";
+        life  = 2;
+        desrt = "Auto-crush";
+        fire  = { 300, 2};
+        username = "s-300ps 40b6m tr";
+        index = 4;
+    },
+    {
+        file  = "40b6md";
+        life  = 3;
+        desrt = "Auto-crush";
+        fire  = { 300, 2};
+        username = "s-300ps 40b6md sr";
+        index = 5;
+    },
+    {
+        file  = "5h63c";
+        life  = 3;
+        desrt = "54k6_p_1";
+        fire  = { 300, 2};
+        username = "s-300ps 5h63c tr";
+        index = 6;
+    },
+    {
+        file  = "64h6e";
+        life  = 3;
+        desrt = "64h6e_p_1";
+        fire  = { 300, 2};
+        username = "s-300ps 64h6e sr";
+        index = 7;
+    },
+    {
+        file  = "5p85c";
+        life  = 3;
+        desrt = "5p85c_p_1";
+        fire  = { 300, 2};
+        username = "s-300ps 5p85c ln";
+        index = 8;
+    },
+    {
+        file  = "5p85d";
+        life  = 3;
+        desrt = "5p85d_p_1";
+        fire  = { 300, 2};
+        username = "s-300ps 5p85d ln";
+        index = 9;
+    },
+    {
+        file  = "9c32-1";
+        life  = 4;
+        desrt = "9c32-1_p_1";
+        fire  = { 300, 2};
+        username = "s-300v 9s32 tr";
+        index = 10;
+    },
+    {
+        file  = "9c15mt";
+        life  = 4;
+        desrt = "9c32-1_p_1";
+        fire  = { 300, 2};
+        username = "s-300v 9s15mt sr";
+        index = 11;
+    },
+    {
+        file  = "9c19m2";
+        life  = 4;
+        desrt = "9c32-1_p_1";
+        fire  = { 300, 2};
+        username = "s-300v 9s19m2 sector scr";
+        index = 12;
+    },
+    {
+        file  = "9a82";
+        life  = 3;
+        desrt = "9c32-1_p_1";
+        fire  = { 300, 2};
+        username = "s-300v 9a82 ln";
+        index = 13;
+    },
+    {
+        file  = "9a83";
+        life  = 3;
+        desrt = "9c32-1_p_1";
+        fire  = { 300, 2};
+        username = "s-300v 9a83 ln";
+        index = 14;
+    },
+    {
+        file  = "9a84";
+        life  = 3;
+        desrt = "9c32-1_p_1";
+        fire  = { 300, 2};
+        username = "s-300v 9a84 ln";
+        index = 15;
+    },
+    {
+        file  = "9a85";
+        life  = 3;
+        desrt = "9c32-1_p_1";
+        fire  = { 300, 2};
+        username = "s-300v 9a85 ln";
+        index = 16;
+    },
+    {
+        file  = "9c470m1";
+        life  = 3;
+        desrt = "9a310m1_p_1";
+        fire  = { 300, 2};
+        username = "buk 9s470m1 cp";
+        index = 17;
+    },
+    {
+        file  = "8c18m1";
+        life  = 2.5;
+        desrt = "9a310m1_p_1";
+        fire  = { 300, 2};
+        username = "buk 9s18m1 sr";
+        index = 18;
+    },
+    {
+        file  = "9a310m1";
+        life  = 2;
+        desrt = "9a310m1_p_1";
+        fire  = { 300, 2};
+        username = "buk 9a310m1 ln";
+        index = 19;
+    },
+    {
+        file  = "9a39m1";
+        life  = 2;
+        desrt = "9a310m1_p_1";
+        fire  = { 300, 2};
+        username = "buk 9a39m1 ld/ln";
+        index = 20;
+    },
+    {
+        file  = "1s91";
+        life  = 2;
+        desrt = "1s91_p_1";
+        fire  = { 300, 2};
+        username = "kub 1s91 str";
+        index = 21;
+    },
+    {
+        file  = "2p25";
+        life  = 2;
+        desrt = "2p25_p_1";
+        fire  = { 300, 2};
+        username = "kub 2p25 ln";
+        index = 22;
+    },
+    {
+        file  = "9a33";
+        life  = 3;
+        desrt = "9t217_p_1";
+        fire  = { 300, 2};
+        username = "osa 9a33 ln";
+        index = 23;
+    },
+    {
+        file  = "9t217";
+        life  = 3;
+        desrt = "9t217_p_1";
+        fire  = { 300, 2};
+        username = "osa 9t217 ld";
+        index = 24;
+    },
+    {
+        file  = "9p31";
+        life  = 1;
+        desrt = "9P31_P_1";
+        fire  = { 300, 2};
+        username = "strela-1 9p31";
+        index = 25;
+    },
+    {
+        file  = "9a35";
+        life  = 2;
+        desrt = "9a35_p_1";
+        fire  = { 300, 2};
+        username = "strela-10 9a35";
+        index = 26;
+    },
+    {
+        file  = "mt-lb";
+        life  = 2;
+        desrt = "Mt-lb_p_1";
+        fire  = { 300, 2};
+        username = "Dog Ear Radar";
+        index = 27;
+    },
+    {
+        file  = "9a331";
+        life  = 2;
+        desrt = "9a331_p_1";
+        fire  = { 300, 2};
+        username = "tor 9a331";
+        index = 28;
+    },
+    {
+        file  = "2c6m";
+        life  = 3;
+        desrt = "2c6m_p_1";
+        fire  = { 300, 2};
+        username = "tunguska 2c6m";
+        index = 29;
+    },
+    {
+        file  = "zsu-23-4";
+        life  = 4;
+        desrt = "Zsu-23-4_p_1";
+        fire  = { 300, 2};
+        username = "shilka zsu-23-4";
+        index = 30;
+    },
+    {
+        file  = "roland";
+        life  = 5;
+        desrt = "Marder_p_1";
+        fire  = { 300, 2};
+        username = "roland ads";
+        index = 31;
+    },
+    {
+        file  = "roland-rls";
+        life  = 5;
+        desrt = "Marder_p_1";
+        fire  = { 300, 2};
+        username = "roland radar";
+        index = 32;
+    },
+    {
+        file  = "HMMWV_M973";
+        life  = 1.5;
+        desrt = "HMMWV_M973_P_1";
+        fire  = { 300, 2};
+        username = "M973 Avenger";
+        index = 33;
+    },
+    {
+        file  = "patriot-rls";
+        life  = 0.9;
+        desrt = "Patriot-rls_p_1";
+        fire  = { 300, 2};
+        username = "patriot str";
+        index = 34;
+    },
+    {
+        file  = "patriot-kp";
+        life  = 0.9;
+        desrt = "Patriot-kp_p_1";
+        fire  = { 300, 2};
+        username = "patriot cp";
+        index = 36;
+    },
+    {
+        file  = "patriot-pu";
+        life  = 0.9;
+        desrt = "Patriot-rls_p_1";
+        fire  = { 300, 2};
+        username = "patriot ln";
+        index = 37;
+    },
+    {
+        file  = "gepard";
+        life  = 5;
+        desrt = "Gepard_p_1";
+        fire  = { 300, 2};
+        username = "gepard";
+        index = 38;
+    },
+    {
+        file  = "hawk-rls";
+        life  = 0.8;
+        desrt = "Auto-crush";
+        fire  = { 300, 2};
+        username = "hawk sr";
+        index = 39;
+    },
+    {
+        file  = "hawk-upr";
+        life  = 0.8;
+        desrt = "Auto-crush";
+        fire  = { 300, 2};
+        username = "hawk tr";
+        index = 40;
+    },
+    {
+        file  = "hawk-pu";
+        life  = 0.8;
+        desrt = "Auto-crush";
+        fire  = { 300, 2};
+        username = "hawk ln";
+        index = 41;
+    },
+    {
+        file  = "9c457";
+        life  = 3;
+        desrt = "9c32-1_p_1";
+        fire  = { 300, 2};
+        username = "s-300v 9s457-1 cp";
+        index = 45;
+    },
+    {
+        file  = "VULCAN";
+        life  = 4;
+        desrt = "VULCAN_P_1";
+        fire  = { 300, 2};
+        username = "M163 Vulcan";
+        index = 46;
+    },
+    {
+        file  = "ZU-23_S";
+        life  = 0.1;
+        desrt = "ZU-23_S_P1";
+        fire  = { 300, 2};
+        username = "ZU-23 Emplacement";
+        index = 47;
+    },
+    {
+        file  = "ZU-23";
+        life  = 1;
+        desrt = "ZU-23_P1";
+        fire  = { 300, 2};
+        username = "ZU-23 Emplacement Closed";
+        index = 48;
+    },
+    {
+        file  = "Ural_ZU-23";
+        life  = 0.8;
+        desrt = "Ural_ZU-23_P1";
+        fire  = { 300, 2};
+        username = "Ural-375 ZU-23";
+        index = 49;
+    },
+    {
+        file  = "M48";
+        life  = 4;
+        desrt = "M48_P1";
+        fire  = { 300, 2};
+        username = "M48 Chaparral";
+        index = 50;
+    },
+    {
+        file  = "M6";
+        life  = 4;
+        desrt = "M6_P1";
+        fire  = { 300, 2};
+        username = "M6 Linebacker";
+        index = 51;
+    },
+    {
+        file  = "SA18_manpad1";
+        life  = 0.8;
+        username = "SAM SA-18 Igla-S manpad";
+    },
+    {
+        file  = "SA18_com1";
+        life  = 0.8;
+        username = "SAM SA-18 Igla-S comm";
+    },
+    {
+        file  = "SA18_manpad2";
+        life  = 0.8;
+        username = "SAM SA-18 Igla manpad";
+    },
+    {
+        file  = "SA18_com2";
+        life  = 0.8;
+        username = "SAM SA-18 Igla comm";
+    },
+    {
+        file  = "Stinger_manpad";
+        life  = 0.8;
+        username = "SAM Stinger manpad";
+    },
+    {
+        file  = "Stinger_com";
+        life  = 0.8;
+        username = "SAM Stinger comm";
+    },
+    {
+        file  = "Stinger_manpad2";
+        life  = 0.8;
+        username = "SAM Stinger manpad dsr";
+    },
+    {
+        file  = "Stinger_com2";
+        life  = 0.8;
+        username = "SAM Stinger comm dsr";
+    },
+    {
+        file  = "ZU-23_S_CHECH";
+        life  = 0.1;
+        desrt = "ZU-23_S_P1";
+        fire  = { 300, 2};
+        username = "AAA ZU-23 Insurgent";
+    },
+    {
+        file  = "ZU-23_CHECH";
+        life  = 1;
+        desrt = "ZU-23_P1";
+        fire  = { 300, 2};
+        username = "AAA ZU-23 Insurgent Closed";
+    },
+    {
+        file  = "Ural_ZU-23_CHECH";
+        life  = 0.8;
+        desrt = "Ural_ZU-23_P1";
+        fire  = { 300, 2};
+        username = "AAA ZU-23 Insurgent on Ural-375";
+    },
+    {
+        file  = "M6_P1";
+        desrt = "self";
+        fire  = { 0, 2};
+    },
+    {
+        file  = "ural-375_p_1";
+        desrt = "self";
+        fire  = { 0, 2};
+    },
+    {
+        file  = "54k6_p_1";
+        desrt = "self";
+        fire  = { 0, 2};
+    },
+    {
+        file  = "auto-crush";
+        desrt = "self";
+        fire  = { 0, 2};
+    },
+    {
+        file  = "64h6e_p_1";
+        desrt = "self";
+        fire  = { 0, 2};
+    },
+    {
+        file  = "5p85c_p_1";
+        desrt = "self";
+        fire  = { 0, 2};
+    },
+    {
+        file  = "5p85d_p_1";
+        desrt = "self";
+        fire  = { 0, 2};
+    },
+    {
+        file  = "9c32-1_p_1";
+        desrt = "self";
+        fire  = { 0, 2};
+    },
+    {
+        file  = "9a310m1_p_1";
+        desrt = "self";
+        fire  = { 0, 2};
+    },
+    {
+        file  = "1s91_p_1";
+        desrt = "self";
+        fire  = { 0, 2};
+    },
+    {
+        file  = "2p25_p_1";
+        desrt = "self";
+        fire  = { 0, 2};
+    },
+    {
+        file  = "9t217_p_1";
+        desrt = "self";
+        fire  = { 0, 2};
+    },
+    {
+        file  = "brdm-2_p_1";
+        desrt = "self";
+        fire  = { 0, 2};
+    },
+    {
+        file  = "9a35_p_1";
+        desrt = "self";
+        fire  = { 0, 2};
+    },
+    {
+        file  = "mt-lb_p_1";
+        desrt = "self";
+        fire  = { 0, 2};
+    },
+    {
+        file  = "9a331_p_1";
+        desrt = "self";
+        fire  = { 0, 2};
+    },
+    {
+        file  = "2c6m_p_1";
+        desrt = "self";
+        fire  = { 0, 2};
+    },
+    {
+        file  = "zsu-23-4_p_1";
+        desrt = "self";
+        fire  = { 0, 2};
+    },
+    {
+        file  = "marder_p_1";
+        desrt = "self";
+        fire  = { 0, 2};
+    },
+    {
+        file  = "hummer_p_1";
+        desrt = "self";
+        fire  = { 0, 2};
+    },
+    {
+        file  = "patriot-rls_p_1";
+        desrt = "self";
+        fire  = { 0, 2};
+    },
+    {
+        file  = "patriot-kp_p_1";
+        desrt = "self";
+        fire  = { 0, 2};
+    },
+    {
+        file  = "gepard_p_1";
+        desrt = "self";
+        fire  = { 0, 2};
+    },
+    {
+        file  = "m-113_p_1";
+        desrt = "self";
+        fire  = { 0, 2};
+    },
+    {
+        file  = "M48_P1";
+        desrt = "self";
+        fire  = { 0, 2};
+    },
+    {
+        file  = "ZU-23_S_P1";
+        desrt = "self";
+        fire  = { 0, 2};
+    },
+    {
+        file  = "ZU-23_P1";
+        desrt = "self";
+        fire  = { 0, 2};
+    },
+    {
+        file  = "Ural_ZU-23_P1";
+        desrt = "self";
+        fire  = { 0, 2};
+    },
+    {
+        file  = "VULCAN_P_1";
+        desrt = "self";
+        fire  = { 0, 2};
+    },
+    {
+        file  = "HMMWV_M973_P_1";
+        desrt = "self";
+        fire  = { 0, 2};
+    },
+    {
+        file  = "9P31_P_1";
+        desrt = "self";
+        fire  = { 0, 2};
+    },
+}
+
+-- ...
+ParachuteTable =
+{
+    default =
+    {
+        vis   = 1;
+        load  = { false, false};
+        fire  = { 0, 1};
+        username = "";
+        classname = "lObject";
+        positioning = "BYNORMAL";
+    },
+
+-- b-52-par-gr
+    {
+        file  = "b-52-par-gr";
+        life  = 60;
+        fire  = { 0, 1};
+        index = 1;
+    },
+-- f-117-par-gr
+    {
+        file  = "f-117-par-gr";
+        life  = 60;
+        fire  = { 0, 1};
+        index = 2;
+    },
+-- torm-1-par-gr
+    {
+        file  = "torm-1-par-gr";
+        life  = 60;
+        fire  = { 0, 1};
+        index = 3;
+    },
+-- torm-par-gr
+    {
+        file  = "torm-par-gr";
+        life  = 60;
+        fire  = { 0, 1};
+        index = 4;
+    },
+}
+
+-- ...
+PartsTable =
+{
+    default =
+    {
+        vis   = 1;
+        load  = { false, false};
+        fire  = { 0, 1};
+        username = "";
+        classname = "lObject";
+        positioning = "BYNORMAL";
+    },
+
+-- oblomok-1
+    {
+        file  = "oblomok-1";
+        life  = 60;
+        fire  = { 0, 1};
+        index = 1;
+    },
+-- oblomok-2
+    {
+        file  = "oblomok-2";
+        life  = 60;
+        fire  = { 0, 1};
+        index = 2;
+    },
+-- oblomok-3
+    {
+        file  = "oblomok-3";
+        life  = 60;
+        fire  = { 0, 1};
+        index = 3;
+    },
+-- oblomok-4
+    {
+        file  = "oblomok-4";
+        life  = 60;
+        fire  = { 0, 1};
+        index = 4;
+    },
+-- oblomok-5
+    {
+        file  = "oblomok-5";
+        life  = 60;
+        fire  = { 0, 1};
+        index = 5;
+    },
+-- oblomok-6
+    {
+        file  = "oblomok-6";
+        life  = 60;
+        fire  = { 0, 1};
+        index = 6;
+    },
+-- oblomok-obshiwki-1
+    {
+        file  = "oblomok-obshiwki-1";
+        life  = 60;
+        fire  = { 0, 1};
+        index = 7;
+    },
+-- oblomok-obshiwki-2
+    {
+        file  = "oblomok-obshiwki-2";
+        life  = 60;
+        fire  = { 0, 1};
+        index = 8;
+    },
+-- pilot+k36
+    {
+        file  = "pilot_su27_seat";
+        life  = 60;
+        fire  = { 0, 1};
+        index = 9;
+    },
+-- pilot+k37
+    {
+        file  = "pilot+k37";
+        life  = 60;
+        fire  = { 0, 1};
+        index = 10;
+    },
+
+-- pilot_parashut
+    {
+        file  = "pilot_su27";
+        life  = 60;
+        fire  = { 0, 1};
+        index = 11;
+        username = "Pilot";
+    },
+-- fonar-otk
+    {
+        file  = "fonar-otk";
+        life  = 60;
+        fire  = { 0, 1};
+        index = 12;
+    },
+-- chaff
+    {
+        file  = "chaff";
+        life  = 60;
+        vis   = 6;
+        fire  = { 0, 1};
+        index = 13;
+    },
+-- flare
+    {
+        file  = "flare";
+        life  = 60;
+        vis   = 6;
+        fire  = { 0, 1};
+        index = 14;
+    },
+-- trail1
+    {
+        file  = "trail1";
+        life  = 60;
+        fire  = { 0, 1};
+        index = 15;
+    },
+-- bomba-kaset
+    {
+        file  = "bomba-kaset";
+        life  = 60;
+        fire  = { 0, 1};
+        index = 16;
+    },
+-- pilot+aces
+    {
+        file  = "pilot+aces";
+        life  = 60;
+        fire  = { 0, 1};
+        index = 17;
+    },
+-- pilot+f14-seat
+    {
+        file  = "pilot+f14-seat";
+        life  = 60;
+        fire  = { 0, 1};
+        index = 18;
+    },
+-- pilot_parashut-us
+    {
+        file  = "pilot_f15_00";
+        life  = 60;
+        fire  = { 0, 1};
+        index = 19;
+        username = "Pilot";
+    },
+-- a-10-fonar
+    {
+        file  = "a-10-fonar";
+        life  = 60;
+        fire  = { 0, 1};
+        index = 20;
+    },
+-- f-14a-fonar
+    {
+        file  = "f-14a-fonar";
+        life  = 60;
+        fire  = { 0, 1};
+        index = 21;
+    },
+-- f-15-fonar
+    {
+        file  = "f-15-fonar";
+        life  = 60;
+        fire  = { 0, 1};
+        index = 22;
+    },
+-- f-16-fonar
+    {
+        file  = "f-16-fonar";
+        life  = 60;
+        fire  = { 0, 1};
+        index = 23;
+    },
+-- f-18c-fonar
+    {
+        file  = "fa18-cockp-frame";
+        life  = 60;
+        fire  = { 0, 1};
+        index = 24;
+    },
+-- mig-23-fonar
+    {
+        file  = "mig-23-fonar";
+        life  = 60;
+        fire  = { 0, 1};
+        index = 25;
+    },
+-- mig-25-fonar
+    {
+        file  = "mig-25-fonar";
+        life  = 60;
+        fire  = { 0, 1};
+        index = 26;
+    },
+-- mig-27-fonar
+    {
+        file  = "mig-27-fonar";
+        life  = 60;
+        fire  = { 0, 1};
+        index = 27;
+    },
+-- mig-29-fonar
+    {
+        file  = "mig-29-fonar-9-12";
+        life  = 60;
+        fire  = { 0, 1};
+        index = 28;
+    },
+-- mig-29k-fonar
+    {
+        file  = "mig-29k-fonar";
+        life  = 60;
+        fire  = { 0, 1};
+        index = 29;
+    },
+-- mig-31-fonar-p
+    {
+        file  = "mig-31-fonar-p";
+        life  = 60;
+        fire  = { 0, 1};
+        index = 30;
+    },
+-- mig-31-fonar-z
+    {
+        file  = "mig-31-fonar-z";
+        life  = 60;
+        fire  = { 0, 1};
+        index = 31;
+    },
+-- su-24-fonar-l
+    {
+        file  = "su-24-fonar-l";
+        life  = 60;
+        fire  = { 0, 1};
+        index = 32;
+    },
+-- su-24-fonar-r
+    {
+        file  = "su-24-fonar-r";
+        life  = 60;
+        fire  = { 0, 1};
+        index = 33;
+    },
+-- su-25-fonar
+    {
+        file  = "su-25-fonar";
+        life  = 60;
+        fire  = { 0, 1};
+        index = 34;
+    },
+-- su-27-fonar
+    {
+        name  = "su-27-fonar_1";
+        file  = "su-27-fonar";
+        life  = 60;
+        fire  = { 0, 1};
+        index = 35;
+    },
+-- su-30-fonar
+    {
+        file  = "su-30-fonar";
+        life  = 60;
+        fire  = { 0, 1};
+        index = 36;
+    },
+-- su-33-fonar
+    {
+        file  = "su-33-fonar";
+        life  = 60;
+        fire  = { 0, 1};
+        index = 37;
+    },
+
+-- su-39-fonar
+    {
+        file  = "su-39-fonar";
+        life  = 60;
+        fire  = { 0, 1};
+        index = 38;
+    },
+-- tornado-fonar
+    {
+        file  = "tornado-fonar";
+        life  = 60;
+        fire  = { 0, 1};
+        index = 39;
+    },
+-- m2000-fon
+    {
+        file  = "m2000-fon";
+        life  = 60;
+        fire  = { 0, 1};
+        index = 40;
+    },
+-- su-27-fonar
+    {
+        name  = "su-27-fonar_2";
+        file  = "su-27-fonar";
+        life  = 60;
+        fire  = { 0, 1};
+        index = 41;
+    },
+-- su-27-fonar
+    {
+        name  = "su-27-fonar_3";
+        file  = "su-27-fonar";
+        life  = 60;
+        fire  = { 0, 1};
+        index = 42;
+    },
+-- f5-fon
+    {
+        file  = "f-5e_fonar";
+        life  = 60;
+        fire  = { 0, 1};
+        index = 43;
+    },
+-- su-17-fonar
+    {
+        file  = "su-17-fonar";
+        life  = 60;
+        fire  = { 0, 1};
+        index = 44;
+    },
+-- mig-29c-fonar
+    {
+        file  = "mig-29-fonar-9-13";
+        life  = 60;
+        fire  = { 0, 1};
+        index = 47;
+    },
+-- mig-29g-fonar
+    {
+        file  = "mig-29-fonar-g";
+        life  = 60;
+        fire  = { 0, 1};
+        index = 48;
+    },
+
+-- su-25T-fonar
+    {
+        file  = "su-25T-fonar";
+        life  = 60;
+        fire  = { 0, 1};
+        index = 49;
+    },
+  
+    {
+        file  = "flare_GREEN";
+        life  = 60;
+        vis   = 6;
+        fire  = { 0, 1};
+        index = 50;
+    },
+  
+    {
+        file  = "flare_RED";
+        life  = 60;
+        vis   = 6;
+        fire  = { 0, 1};
+        index = 51;
+    },
+  
+    {
+        file  = "flare_WHITE";
+        life  = 60;
+        vis   = 6;
+        fire  = { 0, 1};
+        index = 52;
+    },
+  
+    {
+        file  = "flare_YELLOW";
+        life  = 60;
+        vis   = 6;
+        fire  = { 0, 1};
+        index = 53;
+    },
+  
+-- trup 
+    {
+        file  = "cadaver";
+        life  = -1;
+        fire  = { 0, 1};
+        index = 54;
+    },
+
+-- Parachute-pilot
+    {
+        file  = "parash";
+        life  = -1;
+        fire  = { 0, 1};
+        index = 55;
+    },
+	-- pilot P-51D
+    {
+        file  = "pilot_p51";
+        life  = -1;
+        fire  = { 0, 1};
+        index = 56;
+    },
+	-- p-51D-fonar
+    {
+        file  = "p-51D-fonar";
+        life  = 60;
+        fire  = { 0, 1};
+        index = 57;
+    },
+	
+--  pilot F-15C with seat
+    {
+        file  = "pilot_f15_00_seat";
+        life  = -1;
+        fire  = { 0, 1};
+        index = 58;
+    },
+--  F-15E-fonar
+    {
+        file  = "F-15E-FONAR";
+        life  = -1;
+        fire  = { 0, 1};
+        index = 59;
+    },
+}
+
+-- ...

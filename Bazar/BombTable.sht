@@ -1,0 +1,657 @@
+-- ...
+BombTable =
+{
+    default =
+    {
+        vis   = 1;
+        load  = { false, false};
+        fire  = { 0, 1};
+        username = "";
+        classname = "lObject";
+        positioning = "BYNORMAL";
+    },
+
+-- betab-250
+    {
+        file  = "betab-250";
+        life  = 2;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "BETAB-250";
+        index = 2;
+    },
+-- betab-500
+    {
+        file  = "betab-500";
+        life  = 2;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "BETAB-500";
+        index = 3;
+    },
+-- betab-500sp
+    {
+        file  = "betab-500sp";
+        life  = 2;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "BETAB-500SHP";
+        index = 4;
+    },
+-- fab-100
+    {
+        file  = "fab-100";
+        life  = 2;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "FAB-100";
+        index = 5;
+    },
+-- fab-250-n1
+    {
+        name  = "fab-250-n1_1";
+        file  = "fab-250-n1";
+        life  = 2;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "FAB-250";
+        index = 6;
+    },
+-- fab-500-n3
+    {
+        name  = "fab-500-n3_3";
+        file  = "fab-500-n3";
+        life  = 2;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "FAB-500";
+        index = 7;
+    },
+-- fab-1500
+    {
+        file  = "fab-1500";
+        life  = 2;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "FAB-1500";
+        index = 9;
+    },
+-- kab-500
+    {
+        file  = "kab-500";
+        life  = 2;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "KAB-500";
+        index = 11;
+    },
+-- kab-500t
+    {
+        name  = "kab-500t1";
+        file  = "kab-500t";
+        life  = 2;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "KAB-500Kr";
+        index = 12;
+    },
+-- kab-500t
+    {
+        name  = "kab-500t2";
+        file  = "kab-500t";
+        life  = 2;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "KAB-500Kr-OD";
+        index = 13;
+    },
+-- kab-1500
+    {
+        file  = "kab-1500";
+        life  = 2;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "KAB-1500";
+        index = 14;
+    },
+-- kmgu-2
+    {
+        name  = "kmgu-2_1";
+        file  = "kmgu-2";
+        life  = 2;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "KMGU-2f";
+        index = 15;
+    },
+-- odab
+    {
+        file  = "odab";
+        life  = 2;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "ODAB-500PM";
+        index = 16;
+    },
+-- rbk-250
+    {
+        name  = "rbk-250";
+        file  = "RBK_250_PTAB_25M_cassette";
+        life  = 2;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "RBK-250";
+        index = 18;
+    },
+-- rbk-250soab
+    {
+        name  = "rbk-250soab2";
+        file  = "rbk-250";
+        life  = 2;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "RBK-250SHOAB";
+        index = 19;
+    },
+-- rbk-500ao
+    {
+        file  = "RBK_500_255_PTAB_10_5_cassette";
+        life  = 2;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "RBK-500AO";
+        index = 20;
+    },
+-- rbk-500soab
+    {
+        file  = "RBK_500_SHOAB_cassette";
+        life  = 2;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "RBK-500SHOAB";
+        index = 21;
+    },
+-- t-mk-18
+    {
+        file  = "t-mk-18";
+        life  = 2;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "Puma";
+        index = 22;
+    },
+-- t-bl-755
+    {
+        file  = "t-bl-755";
+        life  = 2;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "BL-755";
+        index = 23;
+    },
+-- gl-bomba
+    {
+        file  = "gl-bomba";
+        life  = 2;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "depth-bomb";
+        index = 24;
+    },
+-- rn-n2
+    {
+        file  = "rn-n2";
+        life  = 2;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "nb-2";
+        index = 26;
+    },
+-- torpeda
+    {
+        file  = "torpeda";
+        life  = 2;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "torpedo";
+        index = 27;
+    },
+-- xzab-500
+    {
+        file  = "zab-500";
+        life  = 2;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "ZAB-500";
+        index = 29;
+    },
+-- mk-81
+    {
+        name  = "mk-81";
+        file  = "mk-81";
+        life  = 2;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "Mk-81";
+        index = 30;
+    },
+-- mk-82
+    {
+        name  = "mk-82";
+        file  = "mk-82";
+        life  = 2;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "Mk-82";
+        index = 31;
+    },
+-- BDU-50LD
+    {
+        name  = "BDU-50LD";
+        file  = "BDU-50LD";
+        life  = 2;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "BDU-50LD";
+        index = 70;
+    },
+-- BDU-50HD
+    {
+        name  = "BDU-50HD";
+        file  = "BDU-50HD";
+        life  = 2;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "BDU-50HD";
+        index = 71;
+    },
+-- BDU-33
+    {
+        name  = "BDU-33";
+        file  = "BDU-33";
+        life  = 2;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "BDU-33";
+        index = 69;
+    },
+-- mk-82AIR
+    {
+        name  = "mk-82AIR";
+        file  = "mk-82AIR";
+        life  = 2;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "Mk-82AIR";
+        index = 75;
+    },
+-- mk-82 Snakeye
+    {
+        name  = "mk-82SNAKEYE";
+        file  = "mk-82_Snakeye";
+        life  = 2;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "Mk-82 SnakeEye";
+        index = 79;
+    },
+-- mk-83
+    {
+        name  = "mk-83";
+        file  = "mk-83";
+        life  = 2;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "Mk-83";
+        index = 32;
+    },
+-- mk-84
+    {
+        name  = "mk-84";
+        file  = "mk-84";
+        life  = 2;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "Mk-84";
+        index = 33;
+    },
+-- m117
+    {
+        file  = "m117";
+        life  = 2;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "M117";
+        index = 34;
+    },
+-- cbu-97
+    {
+        file  = "cbu-97";
+        life  = 2;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "CBU-97";
+        index = 35;
+    },
+	-- cbu-103
+    {	name  = "cbu-103";
+        file  = "cbu-97";
+        life  = 2;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "CBU-103";
+        index = 88;
+    },
+	
+-- cbu-105
+    {	name  = "cbu-105";
+        file  = "cbu-97";
+        life  = 2;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "CBU-105";
+        index = 87;
+    },
+	
+-- cbu-87
+    {
+        name  = "cbu-87";
+		file  = "cbu-97";
+        life  = 2;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "CBU-87";
+        index = 77;
+    },
+
+-- gbu-10
+    {
+        file  = "gbu-10";
+        life  = 2;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "GBU-10";
+        index = 36;
+    },
+-- gbu-12
+    {
+        file  = "gbu-12";
+        life  = 2;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "GBU-12";
+        index = 38;
+    },
+-- bdu-50lgb
+    {
+        file  = "bdu-50lgb";
+        life  = 2;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "LGB-50LGB";
+        index = 72;
+    },
+-- gbu-16
+    {
+        file  = "gbu-16";
+        life  = 2;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "GBU-16";
+        index = 39;
+    },
+-- gbu-24
+    {
+        file  = "gbu-24";
+        life  = 2;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "GBU-24";
+        index = 41;
+    },
+-- gbu-15
+    {
+        file  = "gbu-15";
+        life  = 2;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "GBU-15";
+        index = 42;
+    },
+-- gbu-27
+    {
+        file  = "gbu-27";
+        life  = 2;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "GBU-27";
+        index = 43;
+    },
+-- gbu-22
+    {
+        file  = "gbu-22";
+        life  = 2;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "GBU-22";
+        index = 44;
+    },
+-- rockeye
+    {
+        file  = "rockeye";
+        life  = 2;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "Mk20 Rockeye";
+        index = 45;
+    },
+-- agm-62
+    {
+        file  = "agm-62";
+        life  = 2;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "AGM-62";
+        index = 47;
+    },
+-- gbu-28
+    {
+        file  = "gbu-28";
+        life  = 2;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "GBU-28";
+        index = 48;
+    },
+-- fab-250-n1
+    {
+        name  = "fab-250-n1_2";
+        file  = "fab-250-n1";
+        life  = 2;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "FAB-250P";
+        index = 54;
+    },
+-- fab-500-n3
+    {
+        name  = "fab-500-n3_1";
+        file  = "fab-500-n3";
+        life  = 2;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "FAB-500P";
+        index = 55;
+    },
+-- fab-500-n3
+    {
+        name  = "fab-500-n3_2";
+        file  = "fab-500-n3";
+        life  = 2;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "FAB-500-3";
+        index = 56;
+    },
+-- t-dsp
+    {
+        file  = "t-dsp";
+        life  = 2;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "mw-1 dispenser";
+        index = 57;
+    },
+-- pb-250
+    {
+        file  = "pb-250";
+        life  = 2;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "PB-250";
+        index = 58;
+    },
+-- z-bak-n3
+    {
+        file  = "z-bak-n3";
+        life  = 2;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "z_bak_3";
+        index = 59;
+    },
+-- kmgu-2
+    {
+        name  = "kmgu-2_2";
+        file  = "kmgu-2";
+        life  = 2;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "KMGU-2b";
+        index = 60;
+    },
+-- Mk_50_Torpedo
+    {
+        name  = "Mk_50_Torpedo";
+        file  = "torpeda-mk50";
+        life  = 2;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "Torpedo Mk-50";
+        index = 61;
+    },
+-- SAB-100
+    {
+        name  = "fab-250-n3_3";
+        file  = "SAB-100";
+        life  = 2;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "SAB-100";
+        index = 63;
+    },
+-- LUU_2
+    {
+        name  = "luu_2_0";
+        file  = "luu-2";
+        life  = 2;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "LUU-2";
+        index = 64;
+    },
+-- AO-2.5RT
+    {
+        name  = "AO-2_5RT";
+        file  = "AO-2_5RT";
+        life  = 2;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "AO-2.5RT";
+        index = 65;
+    },
+-- PTAB-2.5KO
+    {
+        name  = "PTAB-2_5KO";
+        file  = "PTAB-2_5KO";
+        life  = 2;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "PTAB-2.5KO";
+        index = 66;
+    },
+-- AO-2.5RT
+    {
+        name  = "AO-2_5RT_void";
+        file  = "void";
+        life  = 2;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "AO-2.5RT";
+        index = 67;
+    },
+-- PTAB-2.5KO
+    {
+        name  = "PTAB-2_5KO_void";
+        file  = "void";
+        life  = 2;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "PTAB-2.5KO";
+        index = 68;
+    },
+-- GBU-31
+    {
+		file  = "GBU-31";
+        life  = 2;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "GBU-31";
+        index = 85;
+    },
+-- GBU-38
+    {
+        file  = "GBU-38";
+        life  = 2;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "GBU-38";
+        index = 86;
+    },
+--AN-M64
+    {
+        file  = "an-m64";
+        life  = 1;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "AN-M64";
+        index = 90;
+    },
+--RBK_500U
+    {
+        file  = "RBK_500_PTAB_1M_cassette";
+        life  = 1;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "RBK-500U";
+        index = 91;
+    },
+	--GBU31_V_3B_BLU109
+    {
+        file  = "GBU31_V_3B_BLU109";
+        life  = 1;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "GBU-31V3B";
+        index = 92;
+    },
+	-- SUU-30H
+    {
+        file  = "cbu-24b";
+        life  = 2;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "SUU-30H";
+        index = 93;
+    }
+}

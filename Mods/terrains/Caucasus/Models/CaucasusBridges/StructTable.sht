@@ -1,0 +1,230 @@
+TerrainModelDeclaration =
+{
+	default =
+	{
+		load =
+		{
+			false;
+			false;
+		};
+		drawonmap = true;
+		vis = 1;
+		visShadows = 1;
+		life = 500;
+		fire =
+		{
+			0;
+			1;
+		};
+		classname = "lStandartStructure";
+		positioning = "ONLYHEIGTH";
+		DestructAnimatttion = "NO";
+	};
+
+	{
+		file = "MOST(road)big";
+		castshadows = false;
+		life = 500;
+		fire =
+		{
+			0;
+			0;
+		};
+		username = "bridge";
+		classname = "lbridge";
+		desrt = "most(road)big-crush";
+	};
+
+	{
+		file = "MOST(road)big_end";
+		castshadows = false;
+		life = 500;
+		fire =
+		{
+			0;
+			0;
+		};
+	};
+
+	{
+		file = "MOST(road)small";
+		castshadows = false;
+		life = 500;
+		fire =
+		{
+			0;
+			0;
+		};
+		username = "bridge";
+		classname = "lbridge";
+		desrt = "most(road)small-crush";
+	};
+
+	{
+		file = "most(road)small-a";
+		castshadows = false;
+		life = 500;
+		fire =
+		{
+			0;
+			0;
+		};
+		username = "bridge";
+		classname = "lbridge";
+		desrt = "most(road)small-a-crush";
+	};
+
+	{
+		file = "most-big02";
+		castshadows = false;
+		life = 500;
+		fire =
+		{
+			0;
+			2;
+		};
+		username = "bridge";
+		classname = "lbridge";
+	};
+
+	{
+		file = "most-big02a";
+		castshadows = false;
+		life = 800;
+		fire =
+		{
+			0;
+			2;
+		};
+	};
+
+	{
+		file = "MOST-FERMA";
+		castshadows = false;
+		life = 500;
+		fire =
+		{
+			0;
+			0;
+		};
+		username = "railway bridge";
+		classname = "lbridge";
+		desrt = "most-ferma-crush";
+	};
+
+	{
+		file = "MOST-FERMA-a";
+		castshadows = false;
+		life = 500;
+		fire =
+		{
+			0;
+			0;
+		};
+		username = "railway bridge";
+		classname = "lbridge";
+		desrt = "most-ferma-a-crush";
+	};
+
+	{
+		file = "mostik";
+		castshadows = false;
+		life = 500;
+		fire =
+		{
+			0;
+			0;
+		};
+		username = "bridge";
+		classname = "lbridge";
+		desrt = "mostik-crush";
+	};
+
+	{
+		file = "mostik-a";
+		castshadows = false;
+		life = 500;
+		fire =
+		{
+			0;
+			0;
+		};
+		username = "bridge";
+		classname = "lbridge";
+	};
+
+	{
+		file = "mostik-k";
+		castshadows = false;
+		life = 500;
+		fire =
+		{
+			0;
+			0;
+		};
+		username = "bridge";
+		classname = "lbridge";
+	};
+
+	{
+		file = "mst(road)small";
+		castshadows = false;
+		life = 500;
+		fire =
+		{
+			0;
+			2;
+		};
+		username = "bridge";
+		classname = "lbridge";
+	};
+
+	{
+		file = "mst-ferma";
+		castshadows = false;
+		life = 500;
+		fire =
+		{
+			0;
+			2;
+		};
+		username = "railway bridge";
+		classname = "lbridge";
+		desrt = "most-ferma-crush";
+	};
+
+	{
+		file = "mstik";
+		castshadows = false;
+		life = 500;
+		fire =
+		{
+			0;
+			2;
+		};
+		username = "bridge";
+		classname = "lbridge";
+		desrt = "mstik-crush";
+	};
+
+	{
+		file = "One_Piece_Bridge";
+	};
+
+	{
+		file = "One_Piece_Bridge02";
+	};
+
+	{
+		file = "RokiTunnelEntrance01";
+		life = 200;
+		desrt = "rokitunnelentrance_crash";
+	};
+
+	{
+		file = "tunnel_entrance_cauc_01";
+		life = 600;
+		desrt = "tunnel_entrance_cauc_01_crash";
+	};
+
+};

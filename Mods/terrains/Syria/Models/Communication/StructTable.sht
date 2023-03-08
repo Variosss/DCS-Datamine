@@ -1,0 +1,106 @@
+TerrainModelDeclaration =
+{
+	default =
+	{
+		load =
+		{
+			false;
+			false;
+		};
+		drawonmap = true;
+		vis = 1;
+		visShadows = 1;
+		life = 500;
+		fire =
+		{
+		  0;
+		  1;
+		};
+		classname = "lStandartStructure";
+		positioning = "ONLYHEIGTH"; 
+		DestructAnimatttion = "NO"; 
+	};
+	{
+		file = "Incirlik_RADAR_antenna";
+		life = -1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "Incirlik_RADAR_antenna";
+	};
+
+	{
+		file = "NDB_high_tower";
+		life = 200;
+		fire =
+		{
+			0;
+			0;
+		};
+		maxSlope = 20;
+		desrt = "NDB_high_tower_crash";
+	};
+
+	{
+		file = "RadarStationSphere";
+		life = -1;
+		fire =
+		{
+			0;
+			0;
+		};
+		maxSlope = 20;
+		desrt = "RadarStationSphere";
+	};
+
+	{
+		file = "tacan_A";
+		life = 150;
+		fire =
+		{
+			10;
+			1;
+		};
+		maxSlope = 15;
+		desrt = "tacan_A_crash";
+	};
+
+	{
+		file = "UHF_descent_beacon_01";
+		life = 150;
+		fire =
+		{
+			20;
+			2;
+		};
+		maxSlope = 20;
+		desrt = "UHF_descent_beacon_01_crash";
+	};
+
+	{
+		file = "VHF_localizer_01";
+		life = 50;
+		fire =
+		{
+			0;
+			0;
+		};
+		maxSlope = 10;
+		desrt = "VHF_localizer_01_crash";
+	};
+
+	{
+		file = "Vor_DME";
+		life = 100;
+		fire =
+		{
+			0;
+			0;
+		};
+		maxSlope = 10;
+		desrt = "Vor_DME_crash";
+	};
+
+};

@@ -1,0 +1,1111 @@
+-- ...
+StructureTable =
+{
+  default =
+  {
+    vis   				= 10;
+    load  				= { false, false};
+    fire  				= { 0, 1};
+    username 			= "";
+    classname 			= "lStandartStructure";
+    positioning 		= "ONLYHEIGTH";
+    DestructAnimation 	= "NO";
+    drawonmap			= true;
+  },
+-- angar_a
+  {
+    file  = "angar_a";
+    life  = 50;
+    vis   = 10; 
+    desrt = "Angar_a_crush";
+    fire  = { 150, 2};
+    username = "Hangar A";
+    index = 3;
+  },
+-- angar_a_crush
+  {
+    file  = "angar_a_crush";
+    desrt = "self";
+    fire  = { 0, 2};
+    index = 139;
+  },
+-- angar_b
+  {
+    file  = "angar_b";
+    life  = 40;
+    vis   = 10; 
+    desrt = "angar_b_crush";
+    fire  = { 150, 2};
+    username = "Hangar B";
+  },
+-- angar_b_crush
+  {
+    file  = "angar_b_crush";
+    desrt = "self";
+    fire  = { 0, 2};    
+  },
+-- ceh_ang_a
+  {
+    file  = "ceh_ang_a";
+    vis   = 0.8;
+    life  = 500;
+    desrt = "Ceh_ang_a_crush";
+    fire  = { 300, 2};
+    username = "Tech hangar A";
+    index = 10;
+  },
+-- ceh_ang_a_crush
+  {
+    file  = "ceh_ang_a_crush";
+    desrt = "self";
+    fire  = { 0, 2};    
+  },
+  {
+    file  = "farps";
+    classname = "lHeliport";
+    desrt = "self";
+    vis   = 10;
+    life  = 10000000;
+    fire  = { 60, 0};
+    index = 507;
+    positioning = "NO";
+  },
+  -- Concrete hardened command centre 
+  {
+    file  = "ComCenter";
+    desrt = "ComCdestr";
+    vis   = 10;
+    life  = 4000;
+    classname = "lStandartStructure";
+    fire  = { 60, 0};
+    username = "Command post";
+    positioning = "BY_XZ";
+    index = 505;
+  },
+  {
+    file  = "ComCdestr";
+    desrt = "self";
+  },
+-- tele_bash_m
+  {
+    file  = "tele_bash_m";
+    life  = 200;
+    vis   = 10;
+    desrt = "Tele_bash_m_crush";
+    fire  = { 0, 2};
+    username = "Comms tower M";
+    classname = "lSiteElementBuilding";
+    DestructAnimation = "NO";
+    index = 84;
+  },
+-- tele_bash_m_crush
+  {
+    file  = "tele_bash_m_crush";
+    desrt = "self";
+    fire  = { 0, 2};
+    index = 200;
+  },
+--kazarma2
+  {
+    file  = "kazarma2";
+    life  = 800;
+    vis = 15;
+    desrt = "kazarma2_crash";
+    fire  = { 60, 2};
+    username = "Barracks 2";
+  },
+-- kazarma2_crash
+  {
+    file  = "kazarma2_crash";
+    desrt = "self";
+    fire  = { 0, 2};
+  },
+-- neftevyshka
+  {
+    file  = "neftevyshka";
+    life  = 300;
+    vis   = 10; 
+    desrt = "neftevyshka_crush";
+    fire  = { 60, 2};
+    username = "Oil derrick";
+    index = 478;
+  }, 
+-- neftevyshka_crush
+  {
+    file  = "neftevyshka_crush";
+    desrt = "self";
+    fire  = { 0, 2};
+    index = 471;      
+  }, 
+-- palatka_b
+  {
+    file  = "PalatkaB";
+    life  = 2;
+    desrt = "PalatkaB_P_1";
+    fire  = { 60, 2};
+    username = "Palatka B";
+    index = 701;
+  },
+
+-- PalatkaB_P_1
+  {
+    file  = "PalatkaB_P_1";
+    desrt = "self";
+    index = 702;
+  },
+-- GSM_Rus
+  {
+    file  = "GSM Rus";
+    life  = 10;
+    vis   = 10;
+    desrt = "GSM Rus_P_1";
+    fire  = { 60, 2};
+    username = "GSM Rus";
+    index = 707;
+  },
+-- GSM Rus_P_1
+  {
+    file  = "GSM Rus_P_1";
+    desrt = "self";
+    index = 708;
+  },
+-- wodokachka_a
+  {
+    file  = "wodokachka_a";
+    life  = 150;
+    desrt = "Wodokachka_a_crush";
+    fire  = { 0, 2};
+    username = "Water tower A";
+    index = 91;
+  },
+-- wodokachka_a_crush
+  {
+    file  = "wodokachka_a_crush";   
+    desrt = "self";
+    fire  = { 0, 2};
+    index = 198;
+  },
+-- garage_a
+  {
+    file  = "garage_a";
+    life  = 400;
+    vis = 10;
+    desrt = "Garage_a_crush";
+    fire  = { 60, 2};
+    username = "Garage A";
+    index = 24;
+  }, 
+-- garage_a_crush
+  {
+    file  = "garage_a_crush";
+    desrt = "self";
+    fire  = { 0, 2};
+    index = 152;
+  },
+-- garage_b
+  {
+    file  = "garage_b";
+    life  = 200;
+    vis   = 10; 
+    fire  = { 60, 2};
+    username = "Garage B";
+    index = 464;
+  },
+-- garagh-small-a
+  {
+    file  = "garagh-small-a";
+    life  = 20;
+    fire  = { 60, 2};
+    username = "Garage small A";
+    index = 465;
+  },
+-- garagh-small-b
+  {
+    file  = "garagh-small-b";
+    life  = 100;
+    fire  = { 60, 2};
+    username = "Garage small B";
+    index = 466;
+  },
+-- generatorF
+  {
+    file  = "GeneratorF";
+    life  = 10;
+    desrt = "GeneratorF_P_1";
+    fire  = { 60, 2};
+    username = "GeneratorF";
+    index = 705;
+  },
+-- GeneratorF_P_1
+  {
+    file  = "GeneratorF_P_1";
+    desrt = "self";
+    index = 706;
+  },
+-- domik1a
+  {
+    file  = "domik1a";
+    vis   = 10;
+    life  = 50;
+    desrt = "domik1_crush";
+    fire  = { 0, 2};
+    username = "Small house 1A";
+    index = 406;
+  },
+-- domik1_crush
+  {
+    file  = "domik1_crush";
+    desrt = "self";
+    fire  = { 0, 2};    
+  },
+-- domik1a-all
+  {
+    file  = "domik1a-all";
+    vis   = 10;
+    life  = 50;
+    desrt = "domik1_crush";
+    fire  = { 0, 2};
+    username = "Small house 1A area";
+    index = 405;
+  },
+-- domik1b-all
+  {
+    file  = "domik1b-all";
+    vis   = 10;
+    life  = 50;
+    desrt = "domik1_crush";
+    fire  = { 0, 2};
+    username = "Small house 1B area";
+    index = 407;
+  },
+-- domik1b
+  {
+    file  = "domik1b";
+    vis   = 15;
+    life  = 50;
+    desrt = "domik1_crush";
+    fire  = { 0, 2};
+    username = "Small house 1B";
+    index = 408;
+  },
+-- dom2c-all
+  {
+    file  = "dom2c-all";
+    vis   = 10;
+    life  = 150;
+    desrt = "home1_crush";
+    fire  = { 0, 2};
+    index = 423;
+  },
+-- dom2c
+  {
+    file  = "dom2c";
+    vis   = 10;
+    life  = 150;
+    desrt = "home1_crush";
+    fire  = { 0, 2};
+    username = "Small house 2C";
+    index = 424;
+  }, 
+-- home1_crush
+  {
+    file  = "home1_crush";
+    desrt = "self";
+    fire  = { 0, 2};
+    index = 153;
+  },
+-- pereezd_big
+  {
+    file  = "pereezd_big";
+    life  = 150;
+    desrt = "Pereezd_big_crush";
+    fire  = { 60, 2};
+    classname = "Railway crossing A";
+    index = 132;
+  },
+-- pereezd_big_crush
+  {
+    file  = "pereezd_big_crush";
+    desrt = "self";
+    fire  = { 0, 2};
+    index = 183;
+  },
+-- pereezd_small
+  {
+    file  = "pereezd_small";
+    life  = 150;
+    desrt = "Pereezd_small_crush";
+    fire  = { 60, 2};
+    classname = "Railway crossing B";
+    index = 133;
+  },
+-- pereezd_small_crush
+  {
+    file  = "pereezd_small_crush";
+    desrt = "self";
+    fire  = { 0, 2};
+    index = 184;
+  },
+-- r_vok_sd
+  {
+    file  = "r_vok_sd";
+    life  = 1600;
+    vis   = 10;
+    desrt = "R_vok_sd_crush";
+    fire  = { 120, 2};
+    username = "Railway station";
+    index = 113;
+  },
+-- r_vok_sd_crush
+  {
+    file  = "r_vok_sd_crush";
+    desrt = "self";
+    fire  = { 0, 2};
+    index = 357;
+  },
+  {
+    file  = "Crowd1";
+    life  = 10;
+    desrt = "self";
+    fire  = { 60, 2};
+    username = "Crowd1";
+  },  
+-- stolovaya
+  {
+    file  = "stolovaya";
+    life  = 500;
+    desrt = "Stolovaya_crush";
+    fire  = { 60, 2};
+    username = "Cafe";
+    index = 85;
+  },
+-- stolovaya_crush
+  {
+    file  = "stolovaya_crush";
+    desrt = "self";
+    fire  = { 0, 2};
+    index = 193;
+  },
+-- nasos
+  {
+    file  = "nasos";
+    life  = 150;
+    desrt = "nasos_crush";
+    fire  = { 60, 2};
+    username = "Pump station";
+    index = 477;
+  }, 
+-- nasos_crush
+  {
+    file  = "nasos_crush";
+    desrt = "self";
+    fire  = { 0, 2};
+    index = 470;      
+  },
+-- konteiner_white
+  {
+    file  = "konteiner_white";
+    life  = 20;
+    desrt = "konteiner2_crush";
+    fire  = { 60, 2};
+    username = "Container white";
+    index = 485;
+  },
+-- konteiner_brown
+  {
+    file  = "konteiner_brown";
+    life  = 20;
+    desrt = "konteiner2_crush";
+    fire  = { 60, 2};
+    username = "Container brown";
+    index = 486;
+  },
+-- konteiner2_crush
+  {
+    file  = "konteiner2_crush";
+    desrt = "self";
+    fire  = { 0, 2};    
+  },
+-- konteiner_red1
+  {   
+    file  = "konteiner_red1";
+    life  = 20;
+    desrt = "konteiner1_crush";
+    fire  = { 60, 2};
+    username = "Container red 1";
+    index = 482;
+  }, 
+-- konteiner_red2
+  {   
+    file  = "konteiner_red2";
+    life  = 20;
+    desrt = "konteiner1_crush";
+    fire  = { 60, 2};
+    username = "Container red 2";
+    index = 483;    
+  },
+-- konteiner_red3
+  {
+    file  = "konteiner_red3";
+    life  = 20;
+    desrt = "konteiner1_crush";
+    fire  = { 60, 2};
+    username = "Container red 3";
+    index = 484;
+  },
+-- konteiner1_crush
+  {
+    file  = "konteiner1_crush";
+    desrt = "self";
+    fire  = { 0, 2};    
+  },
+  {
+    file  	  = "Comp_cone";
+    life  	  = 10;
+    desrt 	  = "self";
+    fire  	  = { 60, 2};
+    username  = "Comp_cone";
+	classname = "lCompetitionAirGateCone";
+  },
+-- kotelnaya_a
+  {
+    file  = "kotelnaya_a";
+    vis   = 10;
+    life  = 150;
+    desrt = "kotelnaya_a_crush";
+    fire  = { 60, 2};
+    username = "Boiler-house A";    
+    index = 72;
+  },
+-- kotelnaya_a_crush
+  {
+    file  = "kotelnaya_a_crush";
+    desrt = "self";
+    fire  = { 0, 2};    
+    index = 734;
+  },
+-- magazin
+  {
+    file  = "magazin";
+    vis   = 10;
+    life  = 400;
+    desrt = "small_crush";
+    fire  = { 0, 2};
+    username = "Shop";
+    index = 428;
+  },
+-- small_crush
+  {
+    file  = "small_crush";
+    desrt = "self";
+    fire  = { 0, 2};
+    index = 1;
+  },
+-- landmine
+  {
+    file 		= "landmine";
+    life 		= 1;
+    expMass 	= 6.5;
+    desrt 		= "self";
+    username 	= "landmine";
+    classname 	= "lMine";
+  },
+-- wc
+  {
+    file  = "wc";
+    life  = 150;
+    desrt = "small_crush";
+    fire  = { 0, 2};
+    username = "WC";
+    index = 205;
+  },
+-- tech
+  {
+    file  = "tech";
+    life  = 500;
+    vis   = 10;
+    desrt = "Tech_crush";
+    fire  = { 300, 2};
+    username = "Repair workshop";
+    index = 106;
+	classname = "lShelter";
+  }, 
+-- tech_crush
+  {
+    file  = "tech_crush";
+    desrt = "self";
+    fire  = { 0, 2};
+    index = 195;
+  },
+-- restoran1
+  {
+    file  = "restoran1";
+    life  = 640;
+    desrt = "Restoran1_crush";
+    fire  = { 120, 2};
+    username = "Restaurant 1";
+    index = 80;
+  },
+-- restoran1_crush
+  {
+    file  = "restoran1_crush";
+    desrt = "self";
+    fire  = { 0, 2};
+    index = 186;
+  },
+-- s1
+  {
+    file  = "s1";
+    life  = 80;
+    desrt = "s1_crush";
+    fire  = { 60, 2};
+    username = "Small werehouse 1";
+    index = 458;
+  },
+-- s2
+  {
+    file  = "s2";
+    life  = 80;
+    desrt = "s2_crush";
+    fire  = { 60, 2};
+    username = "Small werehouse 2";
+    index = 459;
+  },
+-- s3
+  {
+    file  = "s3";
+    life  = 80;
+    desrt = "s3_crush";
+    fire  = { 60, 2};
+    username = "Small werehouse 3";
+    index = 460;
+  },
+-- s4
+  {
+    file  = "s4";
+    life  = 80;
+    desrt = "s4_crush";
+    fire  = { 60, 2};
+    username = "Small werehouse 4";
+    index = 461;
+  },
+-- s1_crush
+  {
+    file  = "s1_crush";
+    desrt = "self";
+    fire  = { 0, 2};    
+  },
+-- s2_crush
+  {
+    file  = "s2_crush";
+    desrt = "self";
+    fire  = { 0, 2};    
+  },
+-- s3_crush
+  {
+    file  = "s3_crush";
+    desrt = "self";
+    fire  = { 0, 2};    
+  },
+
+-- s4_crush
+  {
+    file  = "s4_crush";
+    desrt = "self";
+    fire  = { 0, 2};    
+  },
+--hozdomik1
+  {
+    name  = "hozdomik1";
+    file  = "hozdomik1";
+    life  = 100;
+    desrt = "hozdomik_crush";
+    fire  = { 150, 2};
+    username = "Subsidiary structure 1";
+  },
+-- hozdomik_crush
+  {
+    file  = "hozdomik_crush";
+    vis   = 10;    
+    desrt = "self";
+    fire  = { 0, 2};    
+  },
+--hozdomik2
+  {
+    name  = "hozdomik2";
+    file  = "hozdomik2";
+    life  = 80;
+    desrt = "hozdomik_crush";
+    fire  = { 150, 2};
+    username = "Subsidiary structure 2";
+  },
+--hozdomik3
+  {
+    name  = "hozdomik3";
+    file  = "hozdomik3";
+    life  = 20;
+    desrt = "box_crush";
+    fire  = { 150, 2};
+    username = "Subsidiary structure 3";
+  },
+-- box_crush
+  {
+    file  = "box_crush";
+    desrt = "self";
+    fire  = { 0, 2};    
+  },
+-- saray-a
+  {
+    file  = "saray-a";
+    vis   = 10;
+    life  = 10;
+    desrt = "saray_crush";
+    fire  = { 0, 2};
+    username = "Subsidiary structure A";    
+  },
+-- saray-b
+  {
+    file  = "saray-b";
+    vis   = 10;
+    life  = 10;
+    desrt = "saray_crush";
+    fire  = { 0, 2};
+    username = "Subsidiary structure B";      
+  },
+-- saray-c
+  {
+    file  = "saray-c";
+    vis   = 10;
+    life  = 15;
+    desrt = "saray_crush";
+    fire  = { 0, 2};
+    username = "Subsidiary structure C";      
+  },
+-- saray-d
+  {
+    file  = "saray-d";
+    vis   = 10;
+    life  = 75;
+    desrt = "saray_crush";
+    fire  = { 0, 2};
+    username = "Subsidiary structure D";      
+  },
+-- saray-e
+  {
+    file  = "saray-e";
+    vis   = 10;
+    life  = 75;
+    desrt = "saray_crush";
+    fire  = { 0, 2};
+    username = "Subsidiary structure E";      
+  },
+-- saray-f
+  {
+    file  = "saray-f";
+    vis   = 10;
+    life  = 20;
+    desrt = "saray_crush";
+    fire  = { 0, 2};  
+    username = "Subsidiary structure F";    
+  },
+-- saray-g
+  {
+    file  = "saray-g";
+    vis   = 10;
+    life  = 70;
+    desrt = "saray_crush";
+    fire  = { 0, 2};
+    username = "Subsidiary structure G";      
+  },
+-- saray_crush
+  {
+    file  = "saray_crush";
+    vis   = 0.4;    
+    desrt = "self";
+    fire  = { 0, 2};    
+  },
+-- uniwersam_a
+  {
+    file  = "uniwersam_a";
+    vis   = 1.4;
+    life  = 800;
+    desrt = "Cinema_a_crush";
+    fire  = { 120, 2};
+    username = "Supermarket A";
+    index = 89;
+  },
+-- cinema_a_crush
+  {
+    file  = "cinema_a_crush";
+    desrt = "self";
+    fire  = { 0, 2};
+    index = 146;
+  },
+-- tele_bash
+  {
+    file  = "tele_bash";
+    life  = 150;
+    vis   = 10;
+    desrt = "Tele_bash_crush";
+    fire  = { 120, 2};
+    DestructAnimation = "NO";
+    username = "TV tower";
+    index = 92;
+  },
+-- tele_bash_crush
+  {
+    file  = "tele_bash_crush";
+    desrt = "self";
+    fire  = { 0, 0};
+    DestructAnimation = "INCLINE";
+    index = 199;
+  },
+-- kombinat
+  {
+    file  = "kombinat";
+    life  = 1000;
+    vis   = 10; 
+    desrt = "kombinat_crush";
+    fire  = { 60, 2};
+    username = "Tech combine";
+    index = 436;
+  },
+-- kombinat_crush
+  {
+    file  = "kombinat_crush";
+    desrt = "self";
+    fire  = { 0, 2};    
+  },
+--toplivo-bak
+  {
+    file  = "toplivo-bak";
+    life  = 5;
+    vis   = 15;
+    desrt = "Small_crush";
+    expMass = 0.1;
+    fire  = { 150, 2};
+    classname = "lOilTank";
+    username = "tank";
+  },
+-- tr_budka
+  {
+    file  = "tr_budka";
+    vis   = 10;
+    life  = 150;
+    desrt = "tr_budka_crush";
+    fire  = { 0, 2};
+    username = "Electric power box";
+    index = 88;
+  },
+-- tr_budka_crush
+  {
+    file  = "tr_budka_crush";
+    desrt = "self";
+    fire  = { 0, 2};    
+  },
+-- ukrytie (aircraft concrete hardened shelter)
+  {
+    file  = "ukrytie";
+    life  = 8000;
+    vis   = 100;
+    desrt = "Ukrytie_crush";
+    fire  = { 60, 2};
+    username = "airplane's shelter";
+    classname = "lShelter";
+    index = 105;
+  },
+-- ukrytie_crush
+  {
+    file  = "ukrytie_crush";
+    desrt = "self";
+    fire  = { 0, 2};
+    index = 196;
+  },
+--ukrytie_b
+  {
+    file  = "ukrytie_b";
+    life  = 1200;
+    vis   = 10;
+    desrt = "ukrytie_b_crush";
+    expMass = 0.2;
+    fire  = { 60, 4};
+    username = "Shelter B";
+  }, 
+-- ukrytie_b_crush
+  {
+    file  = "ukrytie_b_crush";
+    desrt = "self";
+    fire  = { 0, 2};    
+  },
+-- ferma_a
+  {
+    file  = "ferma_a";
+    life  = 400;
+    desrt = "Ferma_a_crush";
+    fire  = { 60, 2};
+    username = "Farm A";
+    index = 21;
+  },
+-- ferma_b
+  {
+    file  = "ferma_b";
+    life  = 400;
+    desrt = "Ferma_b_crush";
+    fire  = { 60, 2};
+    username = "Farm B";
+    index = 22;
+  },
+-- ferma_a_crush
+  {
+    file  = "ferma_a_crush";
+    desrt = "self";
+    fire  = { 0, 2};
+    index = 150;
+  },
+-- ferma_b_crush
+  {
+    file  = "ferma_b_crush";
+    desrt = "self";
+    fire  = { 0, 2};
+    index = 151;
+  },
+-- him_bak_a
+  {
+    name  = "him_bak_a";
+    file  = "him_bak_a";
+    life  = 5;
+    vis   = 10; 
+    desrt = "bak_crush";
+    fire  = { 60, 10};
+    classname = "Chemical tank A";
+    username = "tank";
+    index = 439;
+  },
+-- tec_a
+  {
+    file  = "tec_a";
+    life  = 1600;
+    vis   = 10;
+    desrt = "Tec_a_crush";
+    fire  = { 300, 2};
+    username = "Workshop A";
+    classname = "Lsmoker";
+    index = 86;
+  },
+-- tec_a_crush
+  {
+    file  = "tec_a_crush";
+    desrt = "self";
+    fire  = { 0, 2};
+    index = 194;
+  },
+--aviashtab
+  {
+    file  = "aviashtab";
+    life  = 1200;
+    vis = 15;
+    desrt = "aviashtab_crash";
+    fire  = { 60, 2};
+    username = "Military staff";
+  },
+-- setka_kp
+  {
+    file  = "SetkaKP";
+    life  = 5;
+    desrt = "SetkaKP_P_1";
+    fire  = { 60, 2};
+    username = "Setka KP";
+    index = 700;
+  },
+-- SetkaKP_P_1
+  {
+    file  = "SetkaKP_P_1";
+    desrt = "self";
+    index = 709;
+  },
+
+-- kp_ug
+  {
+    file  = "kp_ug";
+    life  = 400;
+    vis   = 10;
+    desrt = "kp_ug_P_1";
+    fire  = { 60, 2};
+    username = "KP UG";
+    index = 703;
+  },
+-- KP_UG_P_1
+  {
+    file  = "kp_ug_P_1";
+    desrt = "self";
+    index = 704;
+  },
+
+
+
+  -- Warehouse and their Crash models
+  -- Concrete hardened ammo depot 
+  {
+    file  = "SkladC";
+    desrt = "SkladCdestr";
+    vis   = 10;
+    life  = 10000;
+    classname = "lArmsStorage";
+    fire  = { 60, 0};
+    username = "Ammunition depot";
+    positioning = "BY_XZ";
+    index = 506;
+  },
+  {
+    file  = "SkladCdestr";
+    classname = "lArmsStorage";
+    desrt = "self";
+  },
+-- bak
+  {
+    name  = "bak";
+    file  = "bak";
+    life  = 5;
+    vis   = 10;
+    desrt = "Bak_crush";
+    expMass = 0.2;
+    fire  = { 300, 10};               
+    username = "Tank";
+    classname = "lOilTank";
+    index = 4;
+  },
+-- bak_crush
+  {
+    file  = "bak_crush";
+    desrt = "self";
+    fire  = { 0, 2};
+    index = 140;
+  },
+  -- sklad
+  {
+    file  = "sklad";
+    life  = 400;
+    vis   = 10;
+    desrt = "Sklad_crush";
+    fire  = { 180, 2};
+    username = "Warehouse";
+	classname = "lArmsStorage";
+    index = 83;
+  },
+-- sklad_crush
+  {
+    file  = "sklad_crush";
+    desrt = "self";
+    fire  = { 0, 2};
+    index = 189;
+  },
+-- Red Flag
+  {
+    file  = "H-flag_R";
+    life  = 3;
+	destr = "self";
+	vis = 10;
+    fire  = {0, 2};
+	classname = "lWindmill";
+	positioning = "ONLYHEIGTH";
+  },
+-- White Flag
+  {
+    file  = "H-flag_W";
+    life  = 3;
+	destr = "self";
+	vis = 10;
+    fire  = {0, 2};
+	classname = "lWindmill";
+ 	positioning = "ONLYHEIGTH";
+ },
+-- Black Tyre
+  {
+    file  = "H-tyre_B";
+    life  = 3;
+	destr = "self";
+	vis = 10;
+    fire  = {0, 2};
+ 	positioning = "ONLYHEIGTH";
+ },
+-- White Tyre
+  {
+    file  = "H-tyre_W";
+    life  = 3;
+	destr = "self";
+	vis = 10;
+    fire  = {0, 2};
+ 	positioning = "ONLYHEIGTH";
+ },
+-- Black Tyre with Red Flag
+  {
+    file  = "H-tyre_B_RF";
+    life  = 3;
+	destr = "self";
+	vis = 10;
+    fire  = {0, 2};
+	classname = "lWindmill";
+	positioning = "ONLYHEIGTH";
+  },
+-- Black Tyre with White Flag
+  {
+    file  = "H-tyre_B_WF";
+    life  = 3;
+	destr = "self";
+	vis = 10;
+    fire  = {0, 2};
+	classname = "lWindmill";
+	positioning = "ONLYHEIGTH";
+  },
+  -- Windsock
+  {
+    file  = "H-Windsock_RW";
+    life  = 3;
+	destr = "self";
+	vis = 10;
+    fire  = {0, 2};
+	classname = "lWindmill";
+	positioning = "ONLYHEIGTH";
+  },
+  {
+    file  	  	= "farp";
+    classname 	= "lHeliport";
+    desrt 		= "self";
+    vis   		= 10;
+    life  		= 10000000;
+    fire  		= { 60, 0};
+    positioning = "NO";
+  },
+  --plavbaza
+  {
+    name  = "plavbaza";   
+    file  = "plavbaza";
+    life  = 500;
+    vis   = 10;
+    desrt = "plavbaza_crush";
+    fire  = { 400, 4};
+    username = "Oil platform";
+	positioning = "NO";
+  },
+  -- plavbaza_crush
+  {
+    file  = "plavbaza_crush";
+    desrt = "self";
+    fire  = { 0, 2};    
+  },
+  -- Vaziani shelter air_closedguardhouse_03a
+  {
+    file  = "air_closedguardhouse_03a";
+    life  = 8000;
+    vis   = 10;
+    desrt = "self";
+    fire  = { 60, 2};
+    username = "airplane's cover";
+    classname = "lShelter";
+  },
+  {
+    file  = "aviashtab_crash";
+    desrt = "self";
+    fire  = { 0, 2};    
+  },
+}

@@ -1,0 +1,103 @@
+TerrainModelDeclaration =
+{
+	default =
+	{
+		load =
+		{
+			false;
+			false;
+		};
+		drawonmap = true;
+		vis = 1;
+		visShadows = 1;
+		life = 500;
+		fire =
+		{
+		  0;
+		  1;
+		};
+		classname = "lStandartStructure";
+		positioning = "ONLYHEIGTH"; 
+		DestructAnimatttion = "NO"; 
+	};
+	{
+		file = "big_stone";
+		desrt = "";
+	};
+
+	{
+		file = "brown_stone";
+		desrt = "";
+	};
+
+	{
+		file = "coaststone_a";
+		desrt = "";
+	};
+
+	{
+		file = "coaststone_c";
+		desrt = "";
+	};
+
+	{
+		file = "coaststone_d";
+		desrt = "";
+	};
+
+	{
+		file = "coaststone_g";
+		desrt = "";
+	};
+
+	{
+		file = "gray_stone";
+		desrt = "";
+	};
+
+	{
+		file = "hillstone_a";
+		desrt = "";
+	};
+
+	{
+		file = "hillstone_c";
+		desrt = "";
+	};
+
+	{
+		file = "hillstone_d";
+		desrt = "";
+	};
+
+	{
+		file = "hillstone_g";
+		desrt = "";
+	};
+
+	{
+		file = "underwaterstone_a";
+		desrt = "";
+	};
+
+	{
+		file = "underwaterstone_b";
+		desrt = "";
+	};
+
+	{
+		file = "underwaterstone_c";
+		desrt = "";
+	};
+
+	{
+		file = "underwaterstone_d";
+		desrt = "";
+	};
+
+	{
+		file = "underwaterstone_g";
+		desrt = "";
+	};
+
+};

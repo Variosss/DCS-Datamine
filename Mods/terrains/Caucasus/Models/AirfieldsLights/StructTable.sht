@@ -1,0 +1,356 @@
+TerrainModelDeclaration =
+{
+	default =
+	{
+		load =
+		{
+			false;
+			false;
+		};
+		drawonmap = true;
+		vis = 1;
+		visShadows = 1;
+		life = 500;
+		fire =
+		{
+			0;
+			1;
+		};
+		classname = "lStandartStructure";
+		positioning = "ONLYHEIGTH";
+		DestructAnimatttion = "NO";
+	};
+
+	{
+		file = "A_block";
+	};
+
+	{
+		file = "A_frwd";
+	};
+
+	{
+		file = "A_left";
+	};
+
+	{
+		file = "A_right";
+	};
+
+	{
+		file = "B_block";
+	};
+
+	{
+		file = "B_frwd";
+	};
+
+	{
+		file = "B_left";
+	};
+
+	{
+		file = "B_right";
+	};
+
+	{
+		file = "C_block";
+	};
+
+	{
+		file = "C_frwd";
+	};
+
+	{
+		file = "C_left";
+	};
+
+	{
+		file = "C_right";
+	};
+
+	{
+		file = "course_10";
+	};
+
+	{
+		file = "course_12";
+	};
+
+	{
+		file = "course_13";
+	};
+
+	{
+		file = "course_14";
+	};
+
+	{
+		file = "course_24";
+	};
+
+	{
+		file = "course_27_09";
+	};
+
+	{
+		file = "course_28";
+	};
+
+	{
+		file = "course_30";
+	};
+
+	{
+		file = "course_30_12";
+	};
+
+	{
+		file = "course_31";
+	};
+
+	{
+		file = "course_31_13";
+	};
+
+	{
+		file = "course_31L";
+	};
+
+	{
+		file = "course_31L_13R";
+	};
+
+	{
+		file = "course_32";
+	};
+
+	{
+		file = "D_block";
+	};
+
+	{
+		file = "D_frwd";
+	};
+
+	{
+		file = "D_left";
+	};
+
+	{
+		file = "D_right";
+	};
+
+	{
+		file = "direct_green_Lamp";
+	};
+
+	{
+		file = "direct_light_green_red";
+	};
+
+	{
+		file = "direct_light_white_white";
+	};
+
+	{
+		file = "direct_red_Lamp";
+	};
+
+	{
+		file = "directional_approach_elevated_green";
+	};
+
+	{
+		file = "directional_approach_elevated_red";
+	};
+
+	{
+		file = "directional_approach_elevated_white";
+	};
+
+	{
+		file = "directional_approach_lights";
+	};
+
+	{
+		file = "directional_approach_lights_ALSF";
+	};
+
+	{
+		file = "directional_approach_lights_glissade";
+	};
+
+	{
+		file = "directional_approach_lights_green";
+	};
+
+	{
+		file = "directional_approach_lights_group";
+	};
+
+	{
+		file = "directional_approach_lights_red";
+	};
+
+	{
+		file = "directional_approach_lights_yellow";
+	};
+
+	{
+		file = "distance_1";
+	};
+
+	{
+		file = "distance_2";
+	};
+
+	{
+		file = "distance_3";
+	};
+
+	{
+		file = "distance_4";
+	};
+
+	{
+		file = "distance_5";
+	};
+
+	{
+		file = "distance_6";
+	};
+
+	{
+		file = "distance_7";
+	};
+
+	{
+		file = "distance_8";
+	};
+
+	{
+		file = "distance_9";
+	};
+
+	{
+		file = "E_block";
+	};
+
+	{
+		file = "E_frwd";
+	};
+
+	{
+		file = "E_left";
+	};
+
+	{
+		file = "E_right";
+	};
+
+	{
+		file = "F_block";
+	};
+
+	{
+		file = "F_frwd";
+	};
+
+	{
+		file = "F_left";
+	};
+
+	{
+		file = "F_right";
+	};
+
+	{
+		file = "G_block";
+	};
+
+	{
+		file = "G_frwd";
+	};
+
+	{
+		file = "G_left";
+	};
+
+	{
+		file = "G_right";
+	};
+
+	{
+		file = "H_block";
+	};
+
+	{
+		file = "H_frwd";
+	};
+
+	{
+		file = "H_left";
+	};
+
+	{
+		file = "H_right";
+	};
+
+	{
+		file = "in_pavement_bi_derectional_white_orange";
+	};
+
+	{
+		file = "in_pavement_bi_derectional_white_white";
+	};
+
+	{
+		file = "J_block";
+	};
+
+	{
+		file = "PAPIsystem_1";
+	};
+
+	{
+		file = "PAPIsystem_2";
+	};
+
+	{
+		file = "PAPIsystem_3";
+	};
+
+	{
+		file = "PAPIsystem_4";
+	};
+
+	{
+		file = "pulsating_approach_lights";
+	};
+
+	{
+		file = "STOP_DONT_ENTER";
+	};
+
+	{
+		file = "stop_light_red";
+	};
+
+	{
+		file = "stop_light_yellow";
+	};
+
+	{
+		file = "tacanCH90";
+	};
+
+	{
+		file = "taxiway_green_centerline";
+	};
+
+	{
+		file = "taxiway_light_blue";
+	};
+
+};

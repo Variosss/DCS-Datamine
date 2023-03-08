@@ -1,0 +1,419 @@
+TerrainModelDeclaration =
+{
+	default =
+	{
+		load =
+		{
+			false;
+			false;
+		};
+		drawonmap = true;
+		vis = 1;
+		visShadows = 1;
+		life = 500;
+		fire =
+		{
+		  0;
+		  1;
+		};
+		classname = "lStandartStructure";
+		positioning = "ONLYHEIGTH"; 
+		DestructAnimatttion = "NO"; 
+	};
+	{
+		file = "Arabian_block_building_20";
+		life = 150;
+		fire =
+		{
+			20;
+			2;
+		};
+		maxSlope = 20;
+		desrt = "Barn_Big_04_crash";
+	};
+
+	{
+		file = "Arabian_block_building_21";
+		life = 150;
+		fire =
+		{
+			20;
+			2;
+		};
+		maxSlope = 20;
+		desrt = "house_17_crash";
+	};
+
+	{
+		file = "beirut_building";
+		life = 300;
+		fire =
+		{
+			30;
+			3;
+		};
+		maxSlope = 10;
+		desrt = "red_roof_house2_crash";
+	};
+
+	{
+		file = "bengal_city_house_07";
+		life = 250;
+		fire =
+		{
+			20;
+			2;
+		};
+		maxSlope = 20;
+		desrt = "bengal_city_house_10_crash";
+	};
+
+	{
+		file = "House_village_11";
+		life = 200;
+		fire =
+		{
+			20;
+			2;
+		};
+		maxSlope = 5;
+		desrt = "house_17_crash";
+	};
+
+	{
+		file = "israel_block_building_03";
+		life = 350;
+		fire =
+		{
+			30;
+			3;
+		};
+		maxSlope = 20;
+		desrt = "house_36_crash";
+	};
+
+	{
+		file = "israel_block_building_05";
+		life = 200;
+		fire =
+		{
+			20;
+			2;
+		};
+		maxSlope = 20;
+		desrt = "house_17_crash";
+	};
+
+	{
+		file = "israel_block_building_09";
+		life = 200;
+		fire =
+		{
+			20;
+			2;
+		};
+		maxSlope = 20;
+		desrt = "Arabian_block_building_09_crash";
+	};
+
+	{
+		file = "israel_city_house_03";
+		life = 200;
+		fire =
+		{
+			20;
+			2;
+		};
+		maxSlope = 20;
+		desrt = "bengal_city_house_10_crash";
+	};
+
+	{
+		file = "israel_city_house_05";
+		life = 150;
+		fire =
+		{
+			20;
+			2;
+		};
+		maxSlope = 20;
+		desrt = "Arabian_block_building_01_crash";
+	};
+
+	{
+		file = "israel_house_02";
+		life = 150;
+		fire =
+		{
+			20;
+			2;
+		};
+		maxSlope = 15;
+		desrt = "Cottage_03_crash";
+	};
+
+	{
+		file = "israel_house_03";
+		life = 150;
+		fire =
+		{
+			20;
+			2;
+		};
+		maxSlope = 20;
+		desrt = "Cottage_03_crash";
+	};
+
+	{
+		file = "israel_House_10";
+		life = 200;
+		fire =
+		{
+			20;
+			2;
+		};
+		maxSlope = 10;
+		desrt = "house_17_crash";
+	};
+
+	{
+		file = "israel_House_12";
+		life = 200;
+		fire =
+		{
+			20;
+			2;
+		};
+		maxSlope = 10;
+		desrt = "house_17_crash";
+	};
+
+	{
+		file = "israel_Town_House_01";
+		life = 200;
+		fire =
+		{
+			20;
+			2;
+		};
+		maxSlope = 10;
+		desrt = "house_29_crash";
+	};
+
+	{
+		file = "Nevada_Vegas_House_11";
+		life = 200;
+		fire =
+		{
+			20;
+			2;
+		};
+		maxSlope = 10;
+		desrt = "house_17_crash";
+	};
+
+	{
+		file = "red_roof_house1b";
+		life = 350;
+		fire =
+		{
+			30;
+			3;
+		};
+		maxSlope = 15;
+		desrt = "red_roof_house1_crash";
+	};
+
+	{
+		file = "red_roof_house2c";
+		life = 300;
+		fire =
+		{
+			20;
+			2;
+		};
+		maxSlope = 15;
+		desrt = "red_roof_house2_crash";
+	};
+
+	{
+		file = "red_roof_house3";
+		life = 350;
+		fire =
+		{
+			30;
+			3;
+		};
+		maxSlope = 15;
+		desrt = "bengal_city_house_08_crash";
+	};
+
+	{
+		file = "red_roof_house3c";
+		life = 300;
+		fire =
+		{
+			30;
+			3;
+		};
+		maxSlope = 15;
+		desrt = "bengal_city_house_08_crash";
+	};
+
+	{
+		file = "red_roof_house4";
+		life = 350;
+		fire =
+		{
+			30;
+			3;
+		};
+		maxSlope = 15;
+		desrt = "Barn_Big_03_crash";
+	};
+
+	{
+		file = "red_roof_house4c";
+		life = 300;
+		fire =
+		{
+			20;
+			2;
+		};
+		maxSlope = 15;
+		desrt = "Barn_Big_03_crash";
+	};
+
+	{
+		file = "triangle";
+		life = -1;
+		fire =
+		{
+			30;
+			3;
+		};
+		maxSlope = 30;
+		desrt = "triangle";
+	};
+
+	{
+		file = "triangle1";
+		life = -1;
+		fire =
+		{
+			30;
+			3;
+		};
+		maxSlope = 30;
+		desrt = "triangle1";
+	};
+
+	{
+		file = "turkey_block_building_09";
+		life = 200;
+		fire =
+		{
+			20;
+			2;
+		};
+		maxSlope = 20;
+		desrt = "Arabian_block_building_09_crash";
+	};
+
+	{
+		file = "turkey_block_building_10";
+		life = 200;
+		fire =
+		{
+			20;
+			2;
+		};
+		maxSlope = 20;
+		desrt = "Arabian_block_building_01_crash";
+	};
+
+	{
+		file = "turkey_block_building_11";
+		life = 250;
+		fire =
+		{
+			20;
+			2;
+		};
+		maxSlope = 20;
+		desrt = "Arabian_block_building_01_crash";
+	};
+
+	{
+		file = "turkey_block_building_18";
+		life = 250;
+		fire =
+		{
+			20;
+			2;
+		};
+		maxSlope = 20;
+		desrt = "Arabian_block_building_01_crash";
+	};
+
+	{
+		file = "turkey_city_house_02";
+		life = 250;
+		fire =
+		{
+			20;
+			2;
+		};
+		maxSlope = 20;
+		desrt = "red_roof_house1_crash";
+	};
+
+	{
+		file = "turkey_city_house_04";
+		life = 250;
+		fire =
+		{
+			20;
+			2;
+		};
+		maxSlope = 15;
+		desrt = "bengal_city_house_04_crash";
+	};
+
+	{
+		file = "turkey_city_house_09";
+		life = 300;
+		fire =
+		{
+			20;
+			2;
+		};
+		maxSlope = 20;
+		desrt = "Arabian_block_building_01_crash";
+	};
+
+	{
+		file = "turkey_city_house_10";
+		life = 300;
+		fire =
+		{
+			20;
+			2;
+		};
+		maxSlope = 20;
+		desrt = "bengal_city_house_10_crash";
+	};
+
+	{
+		file = "Village_house_02";
+		life = 200;
+		fire =
+		{
+			20;
+			2;
+		};
+		maxSlope = 10;
+		desrt = "house_17_crash";
+	};
+
+};

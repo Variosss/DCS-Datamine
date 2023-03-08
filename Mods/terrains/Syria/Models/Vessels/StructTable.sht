@@ -1,0 +1,104 @@
+TerrainModelDeclaration =
+{
+	default =
+	{
+		load =
+		{
+			false;
+			false;
+		};
+		drawonmap = true;
+		vis = 1;
+		visShadows = 1;
+		life = 500;
+		fire =
+		{
+		  0;
+		  1;
+		};
+		classname = "lStandartStructure";
+		positioning = "ONLYHEIGTH"; 
+		DestructAnimatttion = "NO"; 
+	};
+	{
+		file = "Bermuda_sail";
+		desrt = "";
+	};
+
+	{
+		file = "fishingboat_01";
+		life = 50;
+		fire =
+		{
+			5;
+			1;
+		};
+		desrt = "";
+	};
+
+	{
+		file = "MBY_lifebuoy";
+		desrt = "";
+	};
+
+	{
+		file = "motorboat_01";
+		life = 200;
+		fire =
+		{
+			10;
+			2;
+		};
+		desrt = "";
+	};
+
+	{
+		file = "sailingboat_01";
+		life = 200;
+		fire =
+		{
+			10;
+			2;
+		};
+		desrt = "";
+	};
+
+	{
+		file = "sailingboat_02";
+		life = 200;
+		fire =
+		{
+			10;
+			2;
+		};
+		desrt = "";
+	};
+
+	{
+		file = "stagsegel";
+		desrt = "";
+	};
+
+	{
+		file = "tanker_01";
+		life = 800;
+		fire =
+		{
+			30;
+			5;
+		};
+		desrt = "";
+	};
+
+	{
+		file = "tanker_big";
+		life = 1000;
+		fire =
+		{
+			20;
+			5;
+		};
+		desrt = "";
+	};
+
+};

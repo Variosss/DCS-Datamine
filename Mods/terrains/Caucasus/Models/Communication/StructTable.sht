@@ -1,0 +1,212 @@
+TerrainModelDeclaration =
+{
+	default =
+	{
+		load =
+		{
+			false;
+			false;
+		};
+		drawonmap = true;
+		vis = 1;
+		visShadows = 1;
+		life = 500;
+		fire =
+		{
+			0;
+			1;
+		};
+		classname = "lStandartStructure";
+		positioning = "ONLYHEIGTH";
+		DestructAnimatttion = "NO";
+	};
+
+	{
+		file = "flag";
+		life = -1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "flag";
+	};
+
+	{
+		file = "flag_abkhazia";
+		life = -1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "flag_abkhazia";
+	};
+
+	{
+		file = "flag_georgia";
+		life = -1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "flag_georgia";
+	};
+
+	{
+		file = "flag_osetia";
+		life = -1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "flag_osetia";
+	};
+
+	{
+		file = "flag_russia";
+		life = -1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "flag_russia";
+	};
+
+	{
+		file = "flagpole";
+		life = -1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "flagpole";
+	};
+
+	{
+		file = "flagpole_abkhazia";
+		life = -1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "flagpole_abkhazia";
+	};
+
+	{
+		file = "flagpole_georgia";
+		life = -1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "flagpole_georgia";
+	};
+
+	{
+		file = "flagpole_osetia";
+		life = -1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "flagpole_osetia";
+	};
+
+	{
+		file = "flagpole_russia";
+		life = -1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "flagpole_russia";
+	};
+
+	{
+		file = "Mast_antenna_01";
+		life = -1;
+		fire =
+		{
+			0;
+			0;
+		};
+		maxSlope = 20;
+		desrt = "Mast_antenna_01";
+	};
+
+	{
+		file = "PowerTransPole_Rail_01";
+		life = 100;
+		fire =
+		{
+			0;
+			1;
+		};
+	};
+
+	{
+		file = "PowerTransPole_Road_01";
+		life = 100;
+		fire =
+		{
+			0;
+			1;
+		};
+	};
+
+	{
+		file = "sock";
+		life = -1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "sock";
+	};
+
+	{
+		file = "sockpole";
+		life = -1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "sockpole";
+	};
+
+	{
+		file = "UHF_descent_beacon_01";
+		life = -1;
+		fire =
+		{
+			0;
+			0;
+		};
+		maxSlope = 20;
+		desrt = "UHF_descent_beacon_01";
+	};
+
+	{
+		file = "VHF_localizer_01";
+		life = -1;
+		fire =
+		{
+			0;
+			1;
+		};
+		maxSlope = 10;
+		desrt = "VHF_localizer_01";
+	};
+
+};

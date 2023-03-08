@@ -1,0 +1,78 @@
+TerrainModelDeclaration =
+{
+	default =
+	{
+		load =
+		{
+			false;
+			false;
+		};
+		drawonmap = true;
+		vis = 1;
+		visShadows = 1;
+		life = 500;
+		fire =
+		{
+			0;
+			1;
+		};
+		classname = "lStandartStructure";
+		positioning = "ONLYHEIGTH";
+		DestructAnimatttion = "NO";
+	};
+
+	{
+		file = "Air_closedGuardhouse_03_mound";
+	};
+
+	{
+		file = "lap-house";
+		castshadows = false;
+		life = 150;
+		fire =
+		{
+			60;
+			2;
+		};
+		username = "electical substation";
+		classname = "lETL_Substation";
+		maxSlope = 15;
+		desrt = "lap-house_crush";
+	};
+
+	{
+		file = "neftevyshka_new";
+		castshadows = false;
+		life = 300;
+		fire =
+		{
+			60;
+			2;
+		};
+		username = "Oil derrick";
+		desrt = "neftevyshka_new_crush";
+	};
+
+	{
+		file = "ukrytie_mound";
+	};
+
+	{
+		file = "vyshka";
+		castshadows = false;
+		life = 250;
+		fire =
+		{
+			0;
+			0;
+		};
+		classname = "lETL_Farm";
+		desrt = "vyshka_crash";
+	};
+
+	{
+		file = "vyshka_crash";
+		iscrashmodel = true;
+	};
+
+};

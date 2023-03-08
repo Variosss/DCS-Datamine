@@ -1,0 +1,503 @@
+TerrainModelDeclaration =
+{
+	default =
+	{
+		load =
+		{
+			false;
+			false;
+		};
+		drawonmap = true;
+		vis = 1;
+		visShadows = 1;
+		life = 500;
+		fire =
+		{
+		  0;
+		  1;
+		};
+		classname = "lStandartStructure";
+		positioning = "ONLYHEIGTH"; 
+		DestructAnimatttion = "NO"; 
+	};
+	{
+		file = "air_system";
+		life = 1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "";
+	};
+
+	{
+		file = "airbase_antenna_01";
+		life = 3;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "airbase_antenna_01_crash";
+	};
+
+	{
+		file = "Antenna_02";
+		life = 1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "";
+	};
+
+	{
+		file = "Antenna_08";
+		life = 2;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "";
+	};
+
+	{
+		file = "barrel";
+		life = 1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "";
+	};
+
+	{
+		file = "barrel_water";
+		life = 1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "";
+	};
+
+	{
+		file = "chair";
+		life = 1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "";
+	};
+
+	{
+		file = "chimney_01";
+		life = 1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "";
+	};
+
+	{
+		file = "chimney_02";
+		life = 1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "";
+	};
+
+	{
+		file = "concrete_tomb";
+		life = 1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "";
+	};
+
+	{
+		file = "Conditioner_03";
+		life = 1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "";
+	};
+
+	{
+		file = "decor_slab";
+		life = 1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "";
+	};
+
+	{
+		file = "electric_box";
+		life = 1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "";
+	};
+
+	{
+		file = "fire_extinguisher_01_red";
+		life = 1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "";
+	};
+
+	{
+		file = "fire_extinguisher_red";
+		life = 1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "";
+	};
+
+	{
+		file = "GSM_sattelite";
+		life = 1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "";
+	};
+
+	{
+		file = "helipadprojector";
+		life = 5;
+		desrt = "";
+	};
+
+	{
+		file = "House_lamp";
+		life = 1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "";
+	};
+
+	{
+		file = "House_lamp_02";
+		life = 1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "";
+	};
+
+	{
+		file = "inclosure";
+		life = 1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "";
+	};
+
+	{
+		file = "ladder_house_metal";
+		life = 1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "";
+	};
+
+	{
+		file = "lamp_red";
+		life = 1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "";
+	};
+
+	{
+		file = "lighting_01";
+		life = 1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "";
+	};
+
+	{
+		file = "lighting_04";
+		life = 1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "";
+	};
+
+	{
+		file = "lighting_06";
+		life = 1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "";
+	};
+
+	{
+		file = "lighting_09_glow";
+		life = 1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "";
+	};
+
+	{
+		file = "projector";
+		life = 1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "";
+	};
+
+	{
+		file = "roof_air_system_01";
+		life = 1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "";
+	};
+
+	{
+		file = "roof_air_system_02";
+		life = 1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "";
+	};
+
+	{
+		file = "roof_air_system_03";
+		life = 1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "";
+	};
+
+	{
+		file = "roof_air_system_04";
+		life = 1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "";
+	};
+
+	{
+		file = "solar_panel";
+		life = 1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "";
+	};
+
+	{
+		file = "solar_panel_big";
+		life = 1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "";
+	};
+
+	{
+		file = "stairs";
+		life = 1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "";
+	};
+
+	{
+		file = "tank";
+		life = 1;
+		fire =
+		{
+			0;
+			0;
+		};
+		maxSlope = 2;
+		desrt = "";
+	};
+
+	{
+		file = "tarelka_01";
+		life = 1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "";
+	};
+
+	{
+		file = "tarelka_02";
+		life = 1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "";
+	};
+
+	{
+		file = "vent_03";
+		life = 1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "";
+	};
+
+	{
+		file = "vent_10";
+		life = 1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "";
+	};
+
+	{
+		file = "Ventilation_04";
+		life = 1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "";
+	};
+
+	{
+		file = "Ventilation_big";
+		life = 1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "";
+	};
+
+	{
+		file = "ventilation_roof";
+		life = 1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "";
+	};
+
+	{
+		file = "vortac_antenne";
+		life = 1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "";
+	};
+
+	{
+		file = "water_barrel";
+		life = 1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "";
+	};
+
+};

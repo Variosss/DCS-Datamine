@@ -1,0 +1,699 @@
+TerrainModelDeclaration =
+{
+	default =
+	{
+		load =
+		{
+			false;
+			false;
+		};
+		drawonmap = true;
+		vis = 1;
+		visShadows = 1;
+		life = 500;
+		fire =
+		{
+		  0;
+		  1;
+		};
+		classname = "lStandartStructure";
+		positioning = "ONLYHEIGTH"; 
+		DestructAnimatttion = "NO"; 
+	};
+	{
+		file = "Airbase_airport_Tbilisi_Hangar_01";
+		life = 200;
+		fire =
+		{
+			30;
+			3;
+		};
+		maxSlope = 8;
+		desrt = "hungar_011_crash";
+	};
+
+	{
+		file = "Airbase_tbilisi_Tank_01";
+		life = 150;
+		fire =
+		{
+			40;
+			4;
+		};
+		maxSlope = 8;
+		desrt = "azal_oil_tank_crash";
+	};
+
+	{
+		file = "Airbase_tbilisi_Tank_02";
+		life = 150;
+		fire =
+		{
+			40;
+			4;
+		};
+		maxSlope = 8;
+		desrt = "azal_oil_tank_crash";
+	};
+
+	{
+		file = "Airbase_warehouse_01";
+		life = 100;
+		fire =
+		{
+			10;
+			1;
+		};
+		maxSlope = 20;
+		desrt = "board_crash";
+	};
+
+	{
+		file = "bagram_industrial_01";
+		life = 250;
+		fire =
+		{
+			20;
+			2;
+		};
+		maxSlope = 8;
+		desrt = "road_ramp_crash";
+	};
+
+	{
+		file = "bengal_industrial_object_04";
+		life = 150;
+		fire =
+		{
+			20;
+			2;
+		};
+		maxSlope = 20;
+		desrt = "hungar_05_crash";
+	};
+
+	{
+		file = "bengal_industrial_object_05";
+		life = 200;
+		fire =
+		{
+			20;
+			2;
+		};
+		maxSlope = 10;
+		desrt = "bengal_industrial_object_05_crash";
+	};
+
+	{
+		file = "bengal_industrial_object_06";
+		life = 200;
+		fire =
+		{
+			20;
+			2;
+		};
+		maxSlope = 8;
+		desrt = "bengal_industrial_object_06_crash";
+	};
+
+	{
+		file = "bengal_industrial_object_07";
+		life = 200;
+		fire =
+		{
+			20;
+			2;
+		};
+		maxSlope = 8;
+		desrt = "bengal_industrial_object_07_crash";
+	};
+
+	{
+		file = "bengal_industrial_object_08";
+		life = 150;
+		fire =
+		{
+			20;
+			2;
+		};
+		maxSlope = 10;
+		desrt = "Barn_Big_02_crash";
+	};
+
+	{
+		file = "bengal_industrial_object_09";
+		life = 200;
+		fire =
+		{
+			20;
+			2;
+		};
+		maxSlope = 8;
+		desrt = "bengal_industrial_object_09_crash";
+	};
+
+	{
+		file = "bengal_power_hub";
+		life = 100;
+		fire =
+		{
+			10;
+			1;
+		};
+		maxSlope = 20;
+		desrt = "container_crash";
+	};
+
+	{
+		file = "cg_building07";
+		life = 250;
+		fire =
+		{
+			20;
+			2;
+		};
+		maxSlope = 8;
+		desrt = "cg_building07_crash";
+	};
+
+	{
+		file = "concord_facil_02";
+		life = 200;
+		fire =
+		{
+			20;
+			2;
+		};
+		maxSlope = 10;
+		desrt = "house_17_crash";
+	};
+
+	{
+		file = "concreet_blocks";
+		life = 1;
+		fire =
+		{
+			0;
+			0;
+		};
+		maxSlope = 20;
+		desrt = "board_crash";
+	};
+
+	{
+		file = "Concreet_can";
+		life = 5;
+		fire =
+		{
+			10;
+			1;
+		};
+		maxSlope = 15;
+		desrt = "Concreet_can_crash";
+	};
+
+	{
+		file = "construction";
+		life = 200;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "construction_crash";
+	};
+
+	{
+		file = "construction2";
+		life = 400;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "construction2_crash";
+	};
+
+	{
+		file = "crane1";
+		life = -1;
+		desrt = "crane1";
+	};
+
+	{
+		file = "crane2";
+		life = -1;
+		desrt = "crane2";
+	};
+
+	{
+		file = "fuel_storage_tanks";
+		life = 200;
+		fire =
+		{
+			30;
+			4;
+		};
+		maxSlope = 10;
+		desrt = "fuel_storage_tanks_crash";
+	};
+
+	{
+		file = "gasoilpipehandler";
+		life = -1;
+		desrt = "gasoilpipehandler";
+	};
+
+	{
+		file = "greenhouse1";
+		life = 100;
+		fire =
+		{
+			10;
+			1;
+		};
+		maxSlope = 5;
+		desrt = "greenhouse1_crash";
+	};
+
+	{
+		file = "greenhouse2";
+		life = 100;
+		fire =
+		{
+			10;
+			1;
+		};
+		maxSlope = 5;
+		desrt = "greenhouse2_crash";
+	};
+
+	{
+		file = "hungar_016";
+		life = 200;
+		fire =
+		{
+			20;
+			2;
+		};
+		maxSlope = 12;
+		desrt = "hungar_016_crash";
+	};
+
+	{
+		file = "hungar_023";
+		life = 250;
+		fire =
+		{
+			30;
+			3;
+		};
+		maxSlope = 8;
+		desrt = "hungar_023_crash";
+	};
+
+	{
+		file = "hungar_031";
+		life = 250;
+		fire =
+		{
+			20;
+			2;
+		};
+		maxSlope = 10;
+		desrt = "Nevada_hungar_crash";
+	};
+
+	{
+		file = "hungar_032";
+		life = 350;
+		fire =
+		{
+			30;
+			3;
+		};
+		maxSlope = 8;
+		desrt = "hungar_032_crash";
+	};
+
+	{
+		file = "hungar_036";
+		life = 300;
+		fire =
+		{
+			30;
+			2;
+		};
+		maxSlope = 10;
+		desrt = "hungar_036_crash";
+	};
+
+	{
+		file = "hungar_041";
+		life = 300;
+		fire =
+		{
+			30;
+			3;
+		};
+		maxSlope = 10;
+		desrt = "Nevada_hungar_R_crash";
+	};
+
+	{
+		file = "hungar_042";
+		life = 250;
+		fire =
+		{
+			20;
+			2;
+		};
+		maxSlope = 12;
+		desrt = "hungar_11_crash";
+	};
+
+	{
+		file = "Industrial_container_01";
+		life = 20;
+		fire =
+		{
+			2;
+			1;
+		};
+		maxSlope = 5;
+		desrt = "Cottage_03_crash";
+	};
+
+	{
+		file = "Industrial_container_02";
+		life = 20;
+		fire =
+		{
+			2;
+			1;
+		};
+		maxSlope = 5;
+		desrt = "Cottage_03_crash";
+	};
+
+	{
+		file = "Industrial_hangar_02";
+		life = 150;
+		fire =
+		{
+			20;
+			2;
+		};
+		maxSlope = 10;
+		desrt = "hungar_11_crash";
+	};
+
+	{
+		file = "industrial_un";
+		life = 150;
+		fire =
+		{
+			20;
+			2;
+		};
+		maxSlope = 10;
+		desrt = "Cottage_04_crash";
+	};
+
+	{
+		file = "liq_tank";
+		life = 150;
+		fire =
+		{
+			20;
+			2;
+		};
+		maxSlope = 10;
+		desrt = "azal_oil_tank_crash";
+	};
+
+	{
+		file = "liq_tank_big";
+		life = 150;
+		fire =
+		{
+			30;
+			3;
+		};
+		maxSlope = 10;
+		desrt = "liq_tank_big_crash";
+	};
+
+	{
+		file = "MBY_container_01";
+		life = 5;
+		fire =
+		{
+			0;
+			0;
+		};
+		maxSlope = 1;
+		desrt = "board_crash";
+	};
+
+	{
+		file = "MBY_tank_01";
+		life = 2;
+		fire =
+		{
+			0;
+			0;
+		};
+		maxSlope = 2;
+		desrt = "board_crash";
+	};
+
+	{
+		file = "MBY_tank_02";
+		life = 2;
+		fire =
+		{
+			0;
+			0;
+		};
+		maxSlope = 2;
+		desrt = "board_crash";
+	};
+
+	{
+		file = "MBY_tank_03";
+		life = 2;
+		fire =
+		{
+			0;
+			0;
+		};
+		maxSlope = 2;
+		desrt = "board_crash";
+	};
+
+	{
+		file = "MBY_tank_04";
+		life = 3;
+		fire =
+		{
+			0;
+			0;
+		};
+		maxSlope = 2;
+		desrt = "board_crash";
+	};
+
+	{
+		file = "MBY_tank_06";
+		life = 2;
+		fire =
+		{
+			0;
+			0;
+		};
+		maxSlope = 2;
+		desrt = "board_crash";
+	};
+
+	{
+		file = "Nevad_Vegas_industrial_03";
+		life = 200;
+		fire =
+		{
+			20;
+			2;
+		};
+		maxSlope = 10;
+		desrt = "hungar_011_crash";
+	};
+
+	{
+		file = "Nevad_Vegas_industrial_04";
+		life = 200;
+		fire =
+		{
+			20;
+			2;
+		};
+		maxSlope = 10;
+		desrt = "Nevada_hungar_crash";
+	};
+
+	{
+		file = "oilgas_refinery_01";
+		life = 100;
+		fire =
+		{
+			120;
+			8;
+		};
+		maxSlope = 10;
+		desrt = "oilgas_refinery_crash_01";
+	};
+
+	{
+		file = "oilgas_refinery_02";
+		life = 100;
+		fire =
+		{
+			120;
+			8;
+		};
+		maxSlope = 10;
+		desrt = "oilgas_refinery_crash_01";
+	};
+
+	{
+		file = "oilgas_refinery_03";
+		life = 100;
+		fire =
+		{
+			60;
+			5;
+		};
+		maxSlope = 15;
+		desrt = "oilgas_refinery_crash_01";
+	};
+
+	{
+		file = "oilgas_refinery_04";
+		life = 100;
+		fire =
+		{
+			120;
+			8;
+		};
+		maxSlope = 10;
+		desrt = "oilgas_refinery_crash_01";
+	};
+
+	{
+		file = "oilgas_refinery_05";
+		life = 100;
+		fire =
+		{
+			100;
+			7;
+		};
+		maxSlope = 15;
+		desrt = "oilgas_refinery_crash_01";
+	};
+
+	{
+		file = "oilrig";
+		life = 200;
+		fire =
+		{
+			50;
+			10;
+		};
+		maxSlope = 20;
+		desrt = "oilrig_crash";
+	};
+
+	{
+		file = "power_plant_01";
+		life = 400;
+		fire =
+		{
+			40;
+			4;
+		};
+		maxSlope = 8;
+		desrt = "power_plant_01_crash";
+	};
+
+	{
+		file = "power_trans_station";
+		life = 100;
+		fire =
+		{
+			10;
+			1;
+		};
+		maxSlope = 15;
+		desrt = "road_ramp_crash";
+	};
+
+	{
+		file = "pumpstation";
+		life = 200;
+		fire =
+		{
+			50;
+			10;
+		};
+		maxSlope = 20;
+		desrt = "pumpstation_crash";
+	};
+
+	{
+		file = "Tube_pile";
+		life = 2;
+		fire =
+		{
+			0;
+			0;
+		};
+		maxSlope = 20;
+		desrt = "container_crash";
+	};
+
+	{
+		file = "us_afb_liq_tank_02";
+		life = 200;
+		fire =
+		{
+			20;
+			1;
+		};
+		maxSlope = 20;
+		desrt = "azal_oil_tank_crash";
+	};
+
+	{
+		file = "warehouse";
+		life = 100;
+		fire =
+		{
+			0;
+			0;
+		};
+		maxSlope = 10;
+		desrt = "container_crash";
+	};
+
+	{
+		file = "warehouse_block";
+		life = 300;
+		fire =
+		{
+			0;
+			0;
+		};
+		maxSlope = 10;
+		desrt = "warehouse_block";
+	};
+
+};

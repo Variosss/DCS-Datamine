@@ -1,0 +1,341 @@
+TerrainModelDeclaration =
+{
+	default =
+	{
+		load =
+		{
+			false;
+			false;
+		};
+		drawonmap = true;
+		vis = 1;
+		visShadows = 1;
+		life = 500;
+		fire =
+		{
+		  0;
+		  1;
+		};
+		classname = "lStandartStructure";
+		positioning = "ONLYHEIGTH"; 
+		DestructAnimatttion = "NO"; 
+	};
+	{
+		file = "afg_city_house_02_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "afg_city_house_05_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "Arabian_block_building_01_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "Arabian_block_building_06_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "Arabian_block_building_09_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "azal_oil_tank_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "barbed_fence_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "bengal_city_house_04_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "bengal_city_house_08_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "bengal_city_house_10_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "bengal_city_house_14_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "bengal_city_house_15_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "bengal_city_house_16L_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "bengal_city_house_20L_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "board_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "borderfence_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "bordergate_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "bordertower_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "car_crash_01";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "Concreet_can_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "construction_crash";
+		desrt = "Cottage_04_crash";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "construction2_crash";
+		desrt = "shader_02_crash";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "container_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "Cottage_02_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "Cottage_03_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "Cottage_04_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "diesel_generator_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "fence_wall_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "fuel_storage_tanks_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "house_01_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "House01_building_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "hungar_011_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "hungar_023_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "hungar_036_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "hungar_05_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "hungar_11_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "longchair_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "Nevada_hungar_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "Nevada_hungar_R_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "red_roof_house1_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "red_roof_house2_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "road_ramp_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "road_sign_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "shader_02_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "small_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "stadium_round_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "stadium_straight_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "tankhangar_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "truck_crash_01";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "truck_crash_02";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "umbrella_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "wall_concr_gray_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "wall_concr_gray2_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+};

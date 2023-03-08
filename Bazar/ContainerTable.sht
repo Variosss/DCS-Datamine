@@ -1,0 +1,1097 @@
+-- ...
+ContainerTable =
+{
+    default =
+    {
+        vis   = 1;
+        load  = { false, false};
+        fire  = { 0, 1};
+        username = "";
+        classname = "lObject";
+        positioning = "BYNORMAL";
+    },
+
+-- ub-13
+    {
+        file  = "ub-13";
+        life  = 60;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "ub-13";
+        index = 1;
+    },
+-- ub-32m1
+    {
+        file  = "ub-32m1";
+        life  = 60;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "ub-32";
+        index = 2;
+    },
+-- mbd-3
+    {
+        file  = "mbd-3";
+        life  = 60;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "mbd-3";
+        index = 3;
+    },
+-- LAU-88
+    {
+        file  = "lau-88";
+        life  = 60;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "LAU-88";
+        index = 4;
+    },
+-- ptb-3000
+    {
+        file  = "ptb-3000";
+        life  = 60;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "ptb-3000";
+        index = 5;
+    },
+-- b-20
+    {   
+        name  = "b_20_1";
+        file  = "b-20";
+        life  = 60;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "b-20";
+        index = 6;
+    },
+-- index 7 is free
+-- lau-10
+    {   
+        name  = "lau-10-1";
+        file  = "lau-10";
+        life  = 60;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "lau-10";
+        index = 8;
+    },
+-- lau-61
+    {
+        file  = "lau-61";
+        life  = 60;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "lau-61";
+        index = 9;
+    },
+-- f15-ptb
+    {
+        file  = "f15-ptb";
+        life  = 60;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "fuel tank 1000 gal";
+        index = 10;
+    },
+-- fuel_tank_370gal
+    {   name  = "fuel_tank_370gal";
+        file  = "fuel_tank_370gal";
+        life  = 60;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "fuel_tank_370gal";
+        index = 11;
+    },
+-- fuel_tank_300gal
+    {
+        name  = "fuel_tank_300gal";
+        file  = "fuel_tank_300gal";
+        life  = 60;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "fuel_tank_300gal";
+        index = 12;
+    },
+-- f-18-ptb
+    {
+        file  = "f-18c-ptb";
+        life  = 60;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "fuel tank 330 gal";
+        index = 13;
+    },
+-- mig-23-ptb
+    {
+        file  = "mig-23-ptb";
+        life  = 60;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "fuel tank 800 l";
+        index = 14;
+    },
+-- mig-25-ptb
+    {
+        file  = "mig-25-ptb";
+        life  = 60;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "fuel tank mig-25";
+        index = 15;
+    },
+-- ptb-1150
+    {
+        file  = "ptb-1150";
+        life  = 60;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "fuel tank 1150 l";
+        index = 16;
+    },
+-- ptb-1500
+    {
+        file  = "ptb-1500";
+        life  = 60;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "fuel tank 1500 l";
+        index = 17;
+    },
+-- sppu-22
+    {
+        file  = "sppu-22";
+        life  = 60;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "sppu-22";
+        index = 18;
+    },
+-- kingal
+    {
+        file  = "kingal";
+        life  = 60;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "kingal";
+        index = 19;
+    },
+-- upk-23-25
+    {
+        name  = "UPK-23-250";
+        file  = "UPK-23-250";
+        life  = 60;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "UPK-23-250";
+        index = 20;
+    },
+-- mbd
+    {
+        file  = "mbd";
+        life  = 60;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        index = 21;
+    },
+-- mbd-4
+    {
+        file  = "mbd-4";
+        life  = 60;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        index = 22;
+    },
+-- tu-22m3-mbd
+    {
+        file  = "tu-22m3-mbd";
+        life  = 60;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        index = 23;
+    },
+-- c-25pu
+    {
+        file  = "c-25pu";
+        life  = 60;
+        fire  = { 0, 1};
+        username = "s-25-c";
+        index = 24;
+    },
+-- alq-131
+    {
+        file  = "alq-131";
+        life  = 60;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "alq-131";
+        index = 25;
+    },
+-- lantirn
+    {
+        file  = "lantirn";
+        life  = 60;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "lantirn";
+        index = 26;
+    },
+-- lantirn-f18
+    {
+        file  = "lantirn-f18";
+        life  = 60;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "lantirn";
+        index = 27;
+    },
+-- pavetack
+    {
+        file  = "pavetack";
+        life  = 60;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "pavetack";
+        index = 28;
+    },
+-- sorbcija
+    {
+        file  = "sorbcija_l";
+        life  = 60;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "sorbtsiya";
+        index = 29;
+    },
+-- sps-141
+    {
+        file  = "sps-141";
+        life  = 60;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "sps-141";
+        index = 30;
+    },
+-- MBD_3_LAU_61
+    {
+        file  = "mbd-3-lau-61";
+        life  = 60;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "MBD-3 & 3 LAU-61";
+        index = 33;
+    },
+-- 9m120
+    {
+        file  = "9m120";
+        life  = 60;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "9m120 vikhr (at-12)";
+        index = 34;
+    },
+-- 9m120m
+    {
+        file  = "9m120m";
+        life  = 60;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "9m120m vikhr_m (at-x-16)";
+        index = 35;
+    },
+-- f5-ptb 275 gal
+    {
+        file  = "ptb-275";
+        life  = 60;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "275 Gal Fuel Tank";
+        index = 36;
+    },
+-- Sky_Shadow
+    {
+        file  = "SKY_SHADOW";
+        life  = 60;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        index = 37;
+    },
+-- t-ptb
+    {
+        file  = "t-ptb";
+        life  = 60;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "fuel tank 1500 kg";
+        index = 38;
+    },
+-- m2000-ptb
+    {
+        file  = "m2000-ptb";
+        life  = 60;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "fuel tank 1000 kg";
+        index = 39;
+    },
+-- f4-bak-l
+    {
+        file  = "F4-bak-l";
+        life  = 60;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "fuel tank f-4 (wing)";
+        index = 41;
+    },
+-- f4-bak-c
+    {
+        file  = "F4-bak-c";
+        life  = 60;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "fuel tank f-4 (fuselage)";
+        index = 42;
+    },
+-- agm-114-pilon
+    {
+        file  = "M299";
+        life  = 60;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        index = 43;
+    },
+-- at_6_9m114
+    {
+        file  = "9m114-pilon";
+        life  = 60;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        index = 44;
+    },
+-- F4-PILON
+    {
+        file  = "f4-pilon";
+        life  = 60;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        index = 45;
+    },
+-- MER_L_P_60
+    {
+        file  = "apu-60-2_L";
+        life  = 60;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        index = 46;
+    },
+-- MER_TOW
+    {
+        file  = "tow-pilon";
+        life  = 60;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        index = 48;
+    },
+-- MER_9_B52
+    {
+        file  = "b52-mbd_mk84";
+        life  = 60;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        index = 50;
+    },
+-- MER_12_B52
+    {
+        file  = "b52-mbd_m117";
+        life  = 60;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        index = 51;
+    },
+-- MBD_6_B52
+    {
+        file  = "b52-mbd_agm86";
+        life  = 60;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        index = 52;
+    },
+-- PTB_2000
+    {
+        file  = "ptb-2000";
+        life  = 60;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        index = 53;
+    },
+-- PTB_800L_Wing для MiG-23
+    {
+        file  = "ptb-800";
+        life  = 60;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "fuel tank 800 l wing";
+        index = 54;
+    },
+-- PTB_S_3
+    {
+        file  = "s-3-ptb";
+        life  = 60;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        index = 55;
+    },
+-- f-14-ptb
+    {   name  = "f-16-ptb-n1-2";
+        file  = "f-16-ptb-n2";
+        life  = 60;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "fuel tank 370 gal";
+        index = 56;
+    },
+-- BOZ_100
+    {
+        file  = "boz-100";
+        life  = 60;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        index = 58;
+    },
+-- LANTIRN_F14
+    {
+        file  = "lantirn-f14-target";
+        life  = 60;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        index = 59;
+    },
+-- PTB_1150_29
+    {
+        file  = "ptb-1150-29";
+        life  = 60;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        index = 61;
+    },
+-- TANGAZH
+    {
+        file  = "tangazh";
+        life  = 60;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        index = 62;
+    },
+-- EPHIR
+    {
+        file  = "ether";
+        life  = 60;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        index = 63;
+    },
+-- SHPIL
+    {
+        file  = "shpil";
+        life  = 60;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        index = 64;
+    },
+-- FANTASM
+    {
+        file  = "Phantasm";
+        life  = 60;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        index = 65;
+    },
+-- Smoke Generator (red)
+    {
+        name  = "R-73U (red)";
+        file  = "R-73U";
+        life  = 60;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        index = 66;
+    },
+-- Smoke Generator AIM-9S (red)
+    {
+        name  = "AIM-9S (red)";
+        file  = "AIM-9S";
+        life  = 60;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        index = 67;
+    },
+
+-- b-20
+    {
+        name  = "b_20_2";
+        file  = "b-20";
+        life  = 60;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "B-20CM";
+        index = 68;
+    },
+-- Whiskey_Pete
+    {   
+        name  = "lau-10-2";
+        file  = "lau-61";
+        life  = 60;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "Whiskey Pete";
+        index = 69;
+    },
+-- SUU_25
+    {   
+        name  = "suu_25_0";
+        file  = "suu-25";
+        life  = 60;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "SUU-25";
+        index = 70;
+    },
+	
+-- Smoke Generator HWAR
+    {
+        name  = "HWAR smoke generator";
+        file  = "hvar_SmokeGenerator";
+        life  = 60;
+--      load  = { false, false};
+        fire  = { 0, 1};
+		username = "HWAR smoke generator";
+        index = 172;
+    },	
+	
+-- TER_SUU_25
+    {   
+        name  = "ter_3_suu_25";
+		file  = "bru-42_ls_(suu-25)";
+        life  = 60;
+        load  = { false, false};
+        fire  = { 0, 1};
+        username = "TER 3*SUU-25";
+        index = 123;
+    },
+-- mer-2
+    {
+        file  = "MER2";
+        life  = 60;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "mer-2";
+        index = 73;
+    },
+-- AN/AAS-38 FLIR
+    {
+        file  = "F-18-FLIR-POD";
+        life  = 60;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "AN/AAS-38 FLIR";
+        index = 74;
+    },
+-- APU-6 Vikhr
+    {
+        file  = "apu-6";
+        life  = 60;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "APU-6 Vikhr";
+        index = 75;
+    },
+-- MBD-2-67U
+    {
+        file  = "MBD-2-67U";
+        life  = 60;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "MBD-2-67U";
+        index = 76;
+    },
+-- index 77 is free
+-- AN/ASQ-173 LST/CAM
+    {
+        file  = "F-18-LDT-POD";
+        life  = 60;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "AN/ASQ-173 LST/CAM";
+        index = 78;
+    },
+-- LAU-118A
+    {
+        file  = "lau-118a";
+        life  = 60;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "LAU-118A";
+        index = 79;
+    },
+-- AKU-58
+    {
+        file  = "AKU-58";
+        life  = 60;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "AKU-58";
+        index = 80;
+    },
+-- KMGU-2
+    {
+        file  = "kmgu-2";
+        life  = 60;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "KMGU-2";
+        index = 81;
+    },
+-- Smoke Generator (green)
+    {
+        name  = "R-73U (green)";
+        file  = "R-73U";
+        life  = 60;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        index = 82;
+    },
+-- Smoke Generator (blue)
+    {
+        name  = "R-73U (blue)";
+        file  = "R-73U";
+        life  = 60;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        index = 83;
+    },
+-- Smoke Generator (white)
+    {
+        name  = "R-73U (white)";
+        file  = "R-73U";
+        life  = 60;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        index = 84;
+    },
+-- Smoke Generator (yellow)
+    {
+        name  = "R-73U (yellow)";
+        file  = "R-73U";
+        life  = 60;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        index = 85;
+    },
+-- Smoke Generator (orange)
+    {
+        name  = "R-73U (orange)";
+        file  = "R-73U";
+        life  = 60;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        index = 86;
+    },
+-- Smoke Generator AIM-9S (green)
+    {
+        name  = "AIM-9S (green)";
+        file  = "AIM-9S";
+        life  = 60;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        index = 87;
+    },
+-- Smoke Generator AIM-9S (blue)
+    {
+        name  = "AIM-9S (blue)";
+        file  = "AIM-9S";
+        life  = 60;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        index = 88;
+    },
+-- Smoke Generator AIM-9S (white)
+    {
+        name  = "AIM-9S (white)";
+        file  = "AIM-9S";
+        life  = 60;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        index = 89;
+    },
+-- Smoke Generator AIM-9S (yellow)
+    {
+        name  = "AIM-9S (yellow)";
+        file  = "AIM-9S";
+        life  = 60;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        index = 90;
+    },
+-- Smoke Generator AIM-9S (orange)
+    {
+        name  = "AIM-9S (orange)";
+        file  = "AIM-9S";
+        life  = 60;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        index = 91;
+    },
+-- APU-68
+    {
+        file  = "APU-68";
+        life  = 60;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "APU-68";
+        index = 92;
+    },
+-- APU-73
+    {
+        file  = "APU-73";
+        life  = 60;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "APU-73";
+        index = 93;
+    },
+-- MPS-410
+    {
+        file  = "MPS-410";
+        life  = 60;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "MPS-410";
+        index = 94;
+    },
+-- Kopyo
+    {
+        file  = "spear";
+        life  = 60;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "Kopyo";
+        index = 95;
+    },
+-- APU-170
+    {
+        file  = "APU-170";
+        life  = 60;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "APU-170";
+        index = 96;
+    },
+-- LAU-117
+    {
+        file  = "LAU-117";
+        life  = 60;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "LAU-117";
+        index = 97;
+    },
+
+-- b-20
+    {
+        name  = "B-8V20A";
+        file  = "B-8V20A";
+        life  = 60;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "B-8V20A";
+        index = 98;
+    },
+
+
+    {
+        file  = "9K114_Shturm";
+        life  = 60;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "9K114 Shturm";
+        index = 100;
+    },
+    {
+        file  = "AAQ-28 Litening";
+        life  = 60;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "AN/AAQ-28 LITENING";
+        index = 101;
+    },
+	{
+        name  = "Fuel tank FT600";
+		file  = "FT600";
+        life  = 60;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "Fuel tank FT600";
+        index = 103;
+    },	
+    {
+        name = "LAU-68";
+        file  = "lau-68";
+        index = 105;
+    },	
+    {
+        name = "MER-5E";
+        file  = "MER-5E";
+        index = 106;
+    },
+-- f5-ptb 150 gal
+    {
+        name = "PTB-150";
+        file  = "ptb-150";
+        index = 107;
+    },
+    {
+        name = "ais-pod-t50";
+        file  = "ais-pod-t50";
+        index = 108;
+    },
+    {
+        name = "LAU-131";
+        file  = "lau-131";
+        index = 114;
+    },
+    {
+        name = "BRU-42_LS_(LAU-68)";
+        file  = "BRU-42_LS_(LAU-68)";
+        index = 124 ;
+    },	
+    {
+        name = "BRU-42_LS_(LAU-131)";
+        file  = "BRU-42_LS_(LAU-131)";
+        index = 133;
+    },
+-- alq-184
+    {
+        file  = "ALQ-184";
+        life  = 60;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "ALQ-184";
+        index = 142;
+    },
+    {
+        name = "OH-58D_Gorgona";
+        file = "OH-58D_Gorgona";
+        index = 144;
+    },
+    {
+        file = "OH-58D_Browning";
+        index = 145;
+    },
+    {
+        file = "M272";
+        index = 147;
+    },
+	{
+        name  	  = "B-20-OFP2";
+        username  = "B-20-OFP2";
+        file  	  = "B-20";
+        index	  = 151;
+    },
+-- XM 158
+    {
+        name = "XM158";
+        file = "xm158";
+        index = 162;
+    }, 
+--AB-212 M134 Left
+    {
+        file  = "ab-212_m134_l";
+        life  = 60;
+        load  = { false, false};
+        fire  = { 0, 1};
+        username = "AB-212_m134_l";
+        index = 160;
+    },	
+--AB-212 M134 Right
+    {
+        file  = "ab-212_m134_r";
+        life  = 60;
+        load  = { false, false};
+        fire  = { 0, 1};
+        username = "AB-212_m134_r";
+        index = 161;
+    },
+-------------------------------------	
+--AB-212 Side M134 Left
+    {
+        file  = "ab-212_m134gunner_l";
+        life  = 60;
+        load  = { false, false};
+        fire  = { 0, 1};
+        username = "ab-212_m134gunner_l";
+        index = 174;
+    },	
+--AB-212 Side M134 Right
+    {
+        file  = "ab-212_m134gunner_r";
+        life  = 60;
+        load  = { false, false};
+        fire  = { 0, 1};
+        username = "ab-212_m134gunner_r";
+        index = 175;
+    },	
+	
+--AB-212 Side M60 Left
+    {
+        file  = "ab-212_m60gunner_l";
+        life  = 60;
+        load  = { false, false};
+        fire  = { 0, 1};
+        username = "ab-212_m60gunner_l";
+        index = 176;
+    },	
+--AB-212 Side M60 Right
+    {
+        file  = "ab-212_m60gunner_r";
+        life  = 60;
+        load  = { false, false};
+        fire  = { 0, 1};
+        username = "ab-212_m60gunner_r";
+        index = 177;
+    },	
+-----------------------------
+	
+-- GUV YakB_GSHP
+    {
+        name  = "GUV_YakB_GSHP";
+        file  = "GUV-7800_M";
+        life  = 60;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "GUV_YakB";
+        index = 170;
+    },
+	
+-- GUV VOG
+    {
+        name  = "GUV_VOG";
+        file  = "GUV-7800_G";
+        life  = 60;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "GUV_VOG";
+        index = 171;
+    }, 
+
+
+--KORD_12_7
+    {
+        file  = "mi-8_gunner";
+        life  = 60;
+        load  = { false, false};
+        fire  = { 0, 1};
+        username = "mi-8_gunner";
+        index = 183;
+    },	
+
+--PKT_7_62
+    {
+        file  = "mi-8_gunner_b";
+        life  = 60;
+        load  = { false, false};
+        fire  = { 0, 1};
+        username = "mi-8_gunner_b";
+        index = 184;
+    },		
+	
+-- MXU-648 Travel Pod
+    {
+        file  = "MXU-648";
+        life  = 60;
+        load  = { false, false};
+        fire  = { 0, 1};
+        username = "MXU-648";
+        index = 104;
+    },
+-- BRU-42_LS
+    {
+        file  = "bru-42_ls";
+        life  = 60;
+        load  = { false, false};
+        fire  = { 0, 1};
+        username = "BRU-42_LS";
+        index = 102 ;
+    },
+-- lau-105
+    {
+        file  = "LAU-105";
+        life  = 60;
+        load  = { false, false};
+        fire  = { 0, 1};
+		username = "LAU-105";
+        index = 40;
+    },
+-- drop tank 75gal
+    {
+		name  = "Drop tank 75gal";
+		file  = "Drop_tank_75gal";
+        life  = 60;
+        fire  = { 0, 1};
+        username = "Drop tank 75gal";
+        index = 152;	
+    },
+-- m261 NURS LAUNCHER M151
+    {
+        name = "M261_M151";
+        file  = "M261";
+	life  = 60;
+	fire  = { 0, 1};
+        index = 168;
+    },
+-- m261 NURS LAUNCHER M156
+    {
+        name = "M261_M156";
+        file  = "M261";
+	life  = 60;
+	fire  = { 0, 1};
+        index = 169;
+    },
+--	sorbcija
+    {
+        file  = "sorbcija_r";
+        life  = 60;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "sorbtsiya";
+        index = 173;
+    },
+	-- BRU-42 High Speed
+	 {
+		file     = "bru-42_hs";
+        username = "BRU-42_HS";
+        index    = 178;
+    },
+	-- mbd3-u6-68
+    {
+        file  = "mbd3-u6-68";
+        life  = 60;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        index = 179;
+    },
+	-- apu-60
+    {
+        file  = "apu-60-1";
+        index = 181;
+    },
+	-- lau-3
+    {
+        file  = "lau-3";
+        life  = 60;
+--      load  = { false, false};
+        fire  = { 0, 1};
+        username = "lau-3";
+        index = 182;
+    },
+
+}

@@ -1,0 +1,429 @@
+-- ...
+ForestTable =
+{
+    default =
+    {
+        vis   = 1;
+        load  = { false, false};
+        fire  = { 0, 1};
+        username = "";
+        classname = "lObject";
+        positioning = "NO";
+        collidable = false;
+    },
+
+-- forest_1
+    {
+        file  = "forest_1";
+        fire  = { 0, 2};
+        index = 22;
+    },
+-- forest_2
+    {
+        file  = "forest_2";
+        fire  = { 0, 2};
+        index = 23;
+    },
+-- forest_3
+    {
+        file  = "forest_3";
+        fire  = { 0, 2};
+        index = 24;
+    },
+-- forest_4
+    {
+        file  = "forest_4";
+        fire  = { 0, 2};
+        index = 25;
+    },
+-- forest_5
+    {
+        file  = "forest_5";
+        fire  = { 0, 2};
+        index = 26;
+    },
+-- forest_6
+    {
+        file  = "forest_6";
+        fire  = { 0, 2};
+        index = 27;
+    },
+-- forest_7
+    {
+        file  = "forest_7";
+        fire  = { 0, 2};
+        index = 28;
+    },
+-- forest_8
+    {
+        file  = "forest_8";
+        fire  = { 0, 2};
+        index = 29;
+    },
+-- forest_9
+    {
+        file  = "forest_9";
+        fire  = { 0, 2};
+        index = 30;
+    },
+-- forest_10
+    {
+        file  = "forest_10";
+        fire  = { 0, 2};
+        index = 31;
+    },
+-- forest_11
+    {
+        file  = "forest_11";
+        fire  = { 0, 2};
+        index = 32;
+    },
+-- forest_12
+    {
+        file  = "forest_12";
+        fire  = { 0, 2};
+        index = 33;
+    },
+-- forest_13
+    {
+        file  = "forest_13";
+        fire  = { 0, 2};
+        index = 34;
+    },
+-- forest_14
+    {
+        file  = "forest_14";
+        fire  = { 0, 2};
+        index = 35;
+    },
+-- forest_15
+    {
+        file  = "forest_15";
+        fire  = { 0, 2};
+        index = 36;
+    },
+-- forest_16
+    {
+        file  = "forest_16";
+        fire  = { 0, 2};
+        index = 37;
+    },
+-- forest_17
+    {
+        file  = "forest_17";
+        fire  = { 0, 2};
+        index = 38;
+    },
+-- forest_18
+    {
+        file  = "forest_18";
+        fire  = { 0, 2};
+        index = 39;
+    },
+-- forest_19
+    {
+        file  = "forest_19";
+        fire  = { 0, 2};
+        index = 40;
+    },
+-- forest_20
+    {
+        file  = "forest_20";
+        fire  = { 0, 2};
+        index = 41;
+    },
+-- trees_250_250
+    {
+        file  = "trees_250_250";
+        fire  = { 0, 2};
+        index = 42;
+    },
+-- trees_250_375
+    {
+        file  = "trees_250_375";
+        fire  = { 0, 2};
+        index = 43;
+    },
+-- trees_250_562
+    {
+        file  = "trees_250_562";
+        fire  = { 0, 2};
+        index = 44;
+    },
+-- trees_250_843
+    {
+        file  = "trees_250_843";
+        fire  = { 0, 2};
+        index = 45;
+    },
+-- trees_250_1265
+    {
+        file  = "trees_250_1265";
+        fire  = { 0, 2};
+        index = 46;
+    },
+-- trees_250_1898
+    {
+        file  = "trees_250_1898";
+        fire  = { 0, 2};
+        index = 47;
+    },
+-- trees_250_2847
+    {
+        file  = "trees_250_2847";
+        fire  = { 0, 2};
+        index = 48;
+    },
+-- trees_375_375
+    {
+        file  = "trees_375_375";
+        fire  = { 0, 2};
+        index = 49;
+    },
+-- trees_375_562
+    {
+        file  = "trees_375_562";
+        fire  = { 0, 2};
+        index = 50;
+    },
+-- trees_375_843
+    {
+        file  = "trees_375_843";
+        fire  = { 0, 2};
+        index = 51;
+    },
+-- trees_375_1265
+    {
+        file  = "trees_375_1265";
+        fire  = { 0, 2};
+        index = 52;
+    },
+-- trees_375_1898
+    {
+        file  = "trees_375_1898";
+        fire  = { 0, 2};
+        index = 53;
+    },
+-- trees_375_2847
+    {
+        file  = "trees_375_2847";
+        fire  = { 0, 2};
+        index = 54;
+    },
+-- trees_562_562
+    {
+        file  = "trees_562_562";
+        fire  = { 0, 2};
+        index = 55;
+    },
+-- trees_562_843
+    {
+        file  = "trees_562_843";
+        fire  = { 0, 2};
+        index = 56;
+    },
+-- trees_562_1265
+    {
+        file  = "trees_562_1265";
+        fire  = { 0, 2};
+        index = 57;
+    },
+-- trees_562_1898
+    {
+        file  = "trees_562_1898";
+        fire  = { 0, 2};
+        index = 58;
+    },
+-- trees_562_2847
+    {
+        file  = "trees_562_2847";
+        fire  = { 0, 2};
+        index = 59;
+    },
+-- trees_843_843
+    {
+        file  = "trees_843_843";
+        fire  = { 0, 2};
+        index = 60;
+    },
+-- trees_843_1265
+    {
+        file  = "trees_843_1265";
+        fire  = { 0, 2};
+        index = 61;
+    },
+-- trees_843_1898
+    {
+        file  = "trees_843_1898";
+        fire  = { 0, 2};
+        index = 62;
+    },
+-- trees_843_2847
+    {
+        file  = "trees_843_2847";
+        fire  = { 0, 2};
+        index = 63;
+    },
+-- trees_1265_1265
+    {
+        file  = "trees_1265_1265";
+        fire  = { 0, 2};
+        index = 64;
+    },
+-- trees_1265_1898
+    {
+        file  = "trees_1265_1898";
+        fire  = { 0, 2};
+        index = 65;
+    },
+-- trees_1265_2847
+    {
+        file  = "trees_1265_2847";
+        fire  = { 0, 2};
+        index = 66;
+    },
+-- trees_1898_1898
+    {
+        file  = "trees_1898_1898";
+        fire  = { 0, 2};
+        index = 67;
+    },
+-- trees_1898_2847
+    {
+        file  = "trees_1898_2847";
+        fire  = { 0, 2};
+        index = 68;
+    },
+-- trees_2847_2847
+    {
+        file  = "trees_2847_2847";
+        fire  = { 0, 2};
+        index = 69;
+    },
+-- trees_250
+    {
+        file  = "trees_250";
+        fire  = { 0, 2};
+        index = 70;
+    },
+-- trees_375
+    {
+        file  = "trees_375";
+        fire  = { 0, 2};
+        index = 71;
+    },
+-- trees_562
+    {
+        file  = "trees_562";
+        fire  = { 0, 2};
+        index = 72;
+    },
+-- trees_843
+    {
+        file  = "trees_843";
+        fire  = { 0, 2};
+        index = 73;
+    },
+-- trees_1265
+    {
+        file  = "trees_1265";
+        fire  = { 0, 2};
+        index = 74;
+    },
+-- trees_1898
+    {
+        file  = "trees_1898";
+        fire  = { 0, 2};
+        index = 75;
+    },
+-- trees_2847
+    {
+        file  = "trees_2847";
+        fire  = { 0, 2};
+        index = 76;
+    },
+-- trees_562_a
+    {
+        file  = "trees_562_a";
+        fire  = { 0, 2};
+        index = 86;
+    },
+-- trees_843_a
+    {
+        file  = "trees_843_a";
+        fire  = { 0, 2};
+        index = 87;
+    },
+-- trees_1265_a
+    {
+        file  = "trees_1265_a";
+        fire  = { 0, 2};
+        index = 88;
+    },
+-- trees_1898_a
+    {
+        file  = "trees_1898_a";
+        fire  = { 0, 2};
+        index = 89;
+    },
+-- trees_2847_a
+    {
+        file  = "trees_2847_a";
+        fire  = { 0, 2};
+        index = 90;
+    },
+-- trees_166_166
+    {
+        file  = "trees_166_166";
+        fire  = { 0, 2};
+        index = 77;
+    },
+-- trees_166_250
+    {
+        file  = "trees_166_250";
+        fire  = { 0, 2};
+        index = 78;
+    },
+-- trees_166_375
+    {
+        file  = "trees_166_375";
+        fire  = { 0, 2};
+        index = 79;
+    },
+-- trees_166_562
+    {
+        file  = "trees_166_562";
+        fire  = { 0, 2};
+        index = 80;
+    },
+-- trees_166_843
+    {
+        file  = "trees_166_843";
+        fire  = { 0, 2};
+        index = 81;
+    },
+-- trees_166_1265
+    {
+        file  = "trees_166_1265";
+        fire  = { 0, 2};
+        index = 82;
+    },
+-- trees_166_1898
+    {
+        file  = "trees_166_1898";
+        fire  = { 0, 2};
+        index = 83;
+    },
+-- trees_166_2847
+    {
+        file  = "trees_166_2847";
+        fire  = { 0, 2};
+        index = 84;
+    },
+-- trees_166
+    {
+        file  = "trees_166";
+        fire  = { 0, 2};
+        index = 85;
+    },
+}

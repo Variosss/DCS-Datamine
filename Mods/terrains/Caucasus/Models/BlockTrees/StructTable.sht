@@ -1,0 +1,64 @@
+TerrainModelDeclaration =
+{
+	default =
+	{
+		load =
+		{
+			false;
+			false;
+		};
+		drawonmap = true;
+		vis = 1;
+		visShadows = 1;
+		life = 500;
+		fire =
+		{
+			0;
+			1;
+		};
+		classname = "lStandartStructure";
+		positioning = "ONLYHEIGTH";
+		DestructAnimatttion = "NO";
+	};
+
+	{
+		file = "trees_010_new";
+	};
+
+	{
+		file = "trees_1_new";
+	};
+
+	{
+		file = "trees_2_new";
+	};
+
+	{
+		file = "trees_3_new";
+	};
+
+	{
+		file = "trees_4_new";
+	};
+
+	{
+		file = "trees_5_new";
+	};
+
+	{
+		file = "trees_6_new";
+	};
+
+	{
+		file = "trees_7_new";
+	};
+
+	{
+		file = "trees_8_new";
+	};
+
+	{
+		file = "trees_9_new";
+	};
+
+};

@@ -1,0 +1,144 @@
+TerrainModelDeclaration =
+{
+	default =
+	{
+		load =
+		{
+			false;
+			false;
+		};
+		drawonmap = true;
+		vis = 1;
+		visShadows = 1;
+		life = 500;
+		fire =
+		{
+		  0;
+		  1;
+		};
+		classname = "lStandartStructure";
+		positioning = "ONLYHEIGTH"; 
+		DestructAnimatttion = "NO"; 
+	};
+	{
+		file = "bombcage";
+		life = 2;
+		fire =
+		{
+			1;
+			1;
+		};
+		desrt = "small_crash";
+	};
+
+	{
+		file = "bordertower";
+		life = 200;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "bordertower_crash";
+	};
+
+	{
+		file = "brunofence";
+		life = 2;
+		fire =
+		{
+			1;
+			1;
+		};
+		desrt = "";
+	};
+
+	{
+		file = "hilltunnel1";
+		life = -1;
+		fire =
+		{
+			10;
+			1;
+		};
+		desrt = "hilltunnel1";
+	};
+
+	{
+		file = "hilltunnel2";
+		life = -1;
+		fire =
+		{
+			10;
+			1;
+		};
+		desrt = "hilltunnel2";
+	};
+
+	{
+		file = "hilltunnel3";
+		life = -1;
+		fire =
+		{
+			10;
+			1;
+		};
+		desrt = "hilltunnel3";
+	};
+
+	{
+		file = "hilltunnel4";
+		life = -1;
+		fire =
+		{
+			10;
+			1;
+		};
+		desrt = "hilltunnel4";
+	};
+
+	{
+		file = "sandbags1";
+		life = 20;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "small_crash";
+	};
+
+	{
+		file = "sandbags2";
+		life = 20;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "small_crash";
+	};
+
+	{
+		file = "sandbags3";
+		life = 20;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "small_crash";
+	};
+
+	{
+		file = "tankhangar";
+		life = 500;
+		fire =
+		{
+			5;
+			1;
+		};
+		desrt = "tankhangar_crash";
+	};
+
+};

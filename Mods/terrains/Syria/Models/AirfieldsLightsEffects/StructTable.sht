@@ -1,0 +1,138 @@
+TerrainModelDeclaration =
+{
+	default =
+	{
+		load =
+		{
+			false;
+			false;
+		};
+		drawonmap = true;
+		vis = 1;
+		visShadows = 1;
+		life = 500;
+		fire =
+		{
+		  0;
+		  1;
+		};
+		classname = "lStandartStructure";
+		positioning = "ONLYHEIGTH"; 
+		DestructAnimatttion = "NO"; 
+	};
+	{
+		file = "afb_app_spot_green_lightmap";
+		desrt = "";
+	};
+
+	{
+		file = "afb_app_spot_red_lightmap";
+		desrt = "";
+	};
+
+	{
+		file = "afb_app_spot_white_lightmap";
+		desrt = "";
+	};
+
+	{
+		file = "afb_app_spot_yellow_lightmap";
+		desrt = "";
+	};
+
+	{
+		file = "afb_omni_blue_glow";
+		desrt = "";
+	};
+
+	{
+		file = "afb_omni_white_glow";
+		desrt = "";
+	};
+
+	{
+		file = "afb_PAPIsystem_1_glow";
+		desrt = "";
+	};
+
+	{
+		file = "afb_PAPIsystem_2_glow";
+		desrt = "";
+	};
+
+	{
+		file = "afb_PAPIsystem_3_glow";
+		desrt = "";
+	};
+
+	{
+		file = "afb_PAPIsystem_4_glow";
+		desrt = "";
+	};
+
+	{
+		file = "afb_spot_flash_glow";
+		desrt = "";
+	};
+
+	{
+		file = "afb_spot_green_glow";
+		desrt = "";
+	};
+
+	{
+		file = "afb_spot_green_lightmap";
+		desrt = "";
+	};
+
+	{
+		file = "afb_spot_red_glow";
+		desrt = "";
+	};
+
+	{
+		file = "afb_spot_red_lightmap";
+		desrt = "";
+	};
+
+	{
+		file = "afb_spot_white_glow";
+		desrt = "";
+	};
+
+	{
+		file = "afb_spot_white_lightmap";
+		desrt = "";
+	};
+
+	{
+		file = "afb_spot_yellow_glow";
+		desrt = "";
+	};
+
+	{
+		file = "afb_spot_yellow_lightmap";
+		desrt = "";
+	};
+
+	{
+		file = "afb_tab_red_lightmap";
+		desrt = "";
+	};
+
+	{
+		file = "afb_tab_yellow_lightmap";
+		desrt = "";
+	};
+
+	{
+		file = "afb_taxi_omni_blue_lightmap";
+		desrt = "";
+	};
+
+	{
+		file = "afb_taxi_spot_green_lightmap";
+		desrt = "";
+	};
+
+};

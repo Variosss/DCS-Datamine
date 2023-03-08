@@ -1,0 +1,106 @@
+#include "./common/states.hlsl"
+
+#ifdef PASS_GEN_2
+#undef PASS_GEN_2
+#endif
+
+#ifdef ENABLE_GLASS_ALPHA_BLEND
+#undef ENABLE_GLASS_ALPHA_BLEND
+#endif
+
+#ifdef DISABLE_GLASS_ALPHA_BLEND
+#undef DISABLE_GLASS_ALPHA_BLEND
+#endif
+
+#ifdef PASS_GEN_CKT_2
+#undef PASS_GEN_CKT_2
+#endif
+
+#define PASS_GEN_2(ps_c, idx, blendState)		pass P##idx PASS_BODY(model_vs_c, ps_c, blendState, ENABLE_RO_DEPTH_BUFFER)
+#define PASS_GEN_CKT_2(ps_c, idx, blendState)		pass P##idx PASS_BODY(model_vs_c, ps_c, blendState, ENABLE_RO_DEPTH_BUFFER_COCKPIT)
+
+#define DISABLE_GLASS_ALPHA_BLEND  SetBlendState(disableAlphaBlend, float4(0.0f, 0.0f, 0.0f, 0.0f), 0xFFFFFFFF)
+#define ENABLE_GLASS_ALPHA_BLEND   SetBlendState(enableGlassAlphaBlend, float4(0.0f, 0.0f, 0.0f, 0.0f), 0xFFFFFFFF)
+
+TECH_NAME_GEN(normal, TECHNIQUE_POSTFIX)
+{
+	PASS_GEN_2(fwd_ps_c, 0, ENABLE_GLASS_ALPHA_BLEND)
+	PASS_GEN_2(fwd_nsm_ps_c, 1, ENABLE_GLASS_ALPHA_BLEND)
+
+	PASS_GEN_2(fwd_drp_ps_c, 2, DISABLE_GLASS_ALPHA_BLEND)
+	PASS_GEN_2(fwd_drp_nsm_ps_c, 3, DISABLE_GLASS_ALPHA_BLEND)
+
+	PASS_GEN_2(fwd_ice_ps_c, 4, DISABLE_GLASS_ALPHA_BLEND)
+	PASS_GEN_2(fwd_ice_nsm_ps_c, 5, DISABLE_GLASS_ALPHA_BLEND)
+
+	PASS_GEN_2(fwd_fog_ps_c, 6, DISABLE_GLASS_ALPHA_BLEND)
+	PASS_GEN_2(fwd_fog_nsm_ps_c, 7, DISABLE_GLASS_ALPHA_BLEND)
+}
+
+TECH_NAME_GEN(normal_cockpit, TECHNIQUE_POSTFIX)
+{
+	PASS_GEN_CKT_2(fwd_ckt_ps_c, 0, ENABLE_GLASS_ALPHA_BLEND)
+	PASS_GEN_CKT_2(fwd_ckt_nsm_ps_c, 1, ENABLE_GLASS_ALPHA_BLEND)
+
+	PASS_GEN_CKT_2(fwd_ckt_gi_ps_c, 2, ENABLE_GLASS_ALPHA_BLEND)
+	PASS_GEN_CKT_2(fwd_ckt_gi_nsm_ps_c, 3, ENABLE_GLASS_ALPHA_BLEND)
+
+	PASS_GEN_CKT_2(fwd_drp_ckt_ps_c, 4, DISABLE_GLASS_ALPHA_BLEND)
+	PASS_GEN_CKT_2(fwd_drp_ckt_nsm_ps_c, 5, DISABLE_GLASS_ALPHA_BLEND)
+	PASS_GEN_CKT_2(fwd_drp_ckt_gi_ps_c, 6, DISABLE_GLASS_ALPHA_BLEND)
+	PASS_GEN_CKT_2(fwd_drp_ckt_gi_nsm_ps_c, 7, DISABLE_GLASS_ALPHA_BLEND)
+
+	PASS_GEN_CKT_2(fwd_ice_ckt_ps_c, 8, DISABLE_GLASS_ALPHA_BLEND)
+	PASS_GEN_CKT_2(fwd_ice_ckt_nsm_ps_c, 9, DISABLE_GLASS_ALPHA_BLEND)
+	PASS_GEN_CKT_2(fwd_ice_ckt_gi_ps_c, 10, DISABLE_GLASS_ALPHA_BLEND)
+	PASS_GEN_CKT_2(fwd_ice_ckt_gi_nsm_ps_c, 11, DISABLE_GLASS_ALPHA_BLEND)
+
+	PASS_GEN_CKT_2(fwd_fog_ckt_ps_c, 12, DISABLE_GLASS_ALPHA_BLEND)
+	PASS_GEN_CKT_2(fwd_fog_ckt_nsm_ps_c, 13, DISABLE_GLASS_ALPHA_BLEND)
+	PASS_GEN_CKT_2(fwd_fog_ckt_gi_ps_c, 14, DISABLE_GLASS_ALPHA_BLEND)
+	PASS_GEN_CKT_2(fwd_fog_ckt_gi_nsm_ps_c, 15, DISABLE_GLASS_ALPHA_BLEND)
+}
+
+TECH_NAME_GEN(normal_map, TECHNIQUE_POSTFIX)
+{
+	pass P0
+	{
+		SET_RASTER_STATE;
+		DISABLE_ALPHA_BLEND;
+		DISABLE_DEPTH_BUFFER;
+		COMPILED_VERTEX_SHADER(model_vs_c)
+		COMPILED_PIXEL_SHADER(diffuse_sun_ps_map_c)
+		GEOMETRY_SHADER_PLUG
+	}
+}
+
+TECH_NAME_GEN(normal_sat, TECHNIQUE_POSTFIX)
+{
+	pass P0
+	{
+		SET_RASTER_STATE;
+		DISABLE_ALPHA_BLEND;
+		ENABLE_DEPTH_BUFFER;
+		COMPILED_VERTEX_SHADER(model_vs_c)
+		COMPILED_PIXEL_SHADER(diffuse_sun_ps_sat_c)
+		GEOMETRY_SHADER_PLUG
+	}
+}
+
+TECH_NAME_GEN(normal_ir, TECHNIQUE_POSTFIX)
+{
+	pass P0
+	{
+		SET_RASTER_STATE;
+		DISABLE_ALPHA_BLEND;
+		ENABLE_DEPTH_BUFFER;
+		COMPILED_VERTEX_SHADER(model_vs_c)
+		COMPILED_PIXEL_SHADER(glassFLIR_ps_c)
+		GEOMETRY_SHADER_PLUG
+	}
+}
+
+#undef PASS_GEN_2
+#undef ENABLE_GLASS_ALPHA_BLEND
+#undef DISABLE_GLASS_ALPHA_BLEND
+#undef PASS_GEN_CKT_2
