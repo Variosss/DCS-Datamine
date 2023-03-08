@@ -1,2 +1,4 @@
 *
-!**.lua
+!.gitgnore
+!*.lua
+!/**/
