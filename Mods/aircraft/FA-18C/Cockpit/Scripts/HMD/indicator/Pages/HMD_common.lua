@@ -122,9 +122,13 @@ add_X_Over("HMD_Window3_X", 60, 36, {rightWindow3Center, 0}, "HMD_Window3_cue", 
 addStrokeText("HMD_Window4_cue", nil, STROKE_FNT_DFLT_120_WIDE, "LeftCenter", {0, -rightWindowsBlockStep_Y * 3}, rightWindowsBlock.name,
 	{{"HMD_Window4"}}, {"", "GUN %3d", "RKT %3d", "%2d PUP", "%2d REL", "%2d BURST", "%2d LASER", "%2d PUP %d", "%2d TTMR", "%2d TTI"})
 
--- HUD Window 5,6 - D/L Symbology
---addStrokeText("HMD_Window5_cue", "WINDOW 5", STROKE_FNT_DFLT_120_WIDE, "LeftCenter", {0, -rightWindowsBlockStep_Y * 4}, rightWindowsBlock.name, {{"HMD_Window5"}})
---addStrokeText("HMD_Window6_cue", "WINDOW 6", STROKE_FNT_DFLT_120_WIDE, "LeftCenter", {0, -rightWindowsBlockStep_Y * 5}, rightWindowsBlock.name, {{"HMD_Window6"}})
+-- HUD Window 5 - D/L Symbology
+addStrokeText("HMD_Window5_cue", nil, STROKE_FNT_DFLT_120_WIDE, "LeftCenter", {0, -rightWindowsBlockStep_Y * 4}, rightWindowsBlock.name, {{"HMD_Window5"}},
+	{"", "10 SEC", "TILT", "DATA", "W/O"})
+
+-- HUD Window 6 - D/L Symbology
+addStrokeText("HMD_Window6_cue", nil, STROKE_FNT_DFLT_120_WIDE, "LeftCenter", {0, -rightWindowsBlockStep_Y * 5}, rightWindowsBlock.name, {{"HMD_Window6"}},
+	{"", "CPL ASL", "CPL BNK", "CPL SEQ%d", "CPL WYPT", "CPL TCN", "CPLD HDG", "CPLD P/R", "ACL RDY"})
 
 -- HUD Window 7 - ATC/NWS cue
 addStrokeText("HMD_Window7_cue", nil, STROKE_FNT_DFLT_120_WIDE, "LeftCenter", {0, -rightWindowsBlockStep_Y * 6},  rightWindowsBlock.name,

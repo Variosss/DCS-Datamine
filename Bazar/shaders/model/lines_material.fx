@@ -25,12 +25,12 @@ GBuffer lines_ps(VS_OUTPUT input,
 	uint sv_sampleIndex: SV_SampleIndex,
 #endif
 	uniform int Flags) {
-	float2 velMap = calcVelocityMap(input.projPos, input.prevFrameProjPos);
+	float2 motion = calcMotionVector(input.projPos, input.prevFrameProjPos);
 	return BuildGBuffer(input.Position.xy,
 #if USE_SV_SAMPLEINDEX
 		sv_sampleIndex,
 #endif
-		float4(color, 1), float3(0, 1, 0), float4(0, 1, 0, 0), float4(0,0,0,1), velMap);
+		float4(color, 1), float3(0, 1, 0), float4(0, 1, 0, 0), float4(0,0,0,1), motion);
 }
 
 PS_OUTPUT lines_forward_ps(VS_OUTPUT input, uniform int Flags) {

@@ -4,8 +4,6 @@
 #include "common/samplers11.hlsl"
 #define FOG_ENABLE
 #include "common/fog2.hlsl"
-
-#define USE_VELOCITY_MAP 1
 #include "deferred/GBuffer.hlsl"
 
 // GENERATED CODE BEGIN ID: decal_uniforms
@@ -170,7 +168,7 @@ GBuffer decal_deferred_ps(GS_OUTPUT input,
 #if USE_SV_SAMPLEINDEX
 						sv_sampleIndex,
 #endif
-						baseColor, normal, aorms, 0, 0);
+						baseColor, normal, aorms, 0, 0);	// TODO: correct motion vector to use calcMotionVector()
 }
 
 PS_OUTPUT decal_ps(GS_OUTPUT input)

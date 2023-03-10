@@ -146,11 +146,27 @@ function shoulder_a2g(right, unit_name)
   end
 end
 
-function fuel_tanks(unit_name)
+function fuel_tanks(unit_name, opposite_pylon)
   if (unit_name == "F-14B" or unit_name == "F-14A-135-GR") then
     local _tanks = {
-        { CLSID = "{F14-300gal}" }, -- Fuel tank 300 gal
-        { CLSID = "{F14-300gal-empty}" }, -- empty 300gal tank
+        { CLSID = "{F14-300gal}", arg = 700, arg_value = 0.0,
+            forbidden = {
+                {station = opposite_pylon,loadout = {"{F14-300gal-empty}"}},
+                {station = opposite_pylon,loadout = {"<CLEAN>"}},
+            }
+        }, -- Fuel tank 300 gal
+        { CLSID = "{F14-300gal-empty}", arg = 700, arg_value = 0.0,
+            forbidden = {
+                {station = opposite_pylon,loadout = {"{F14-300gal}"}},
+                {station = opposite_pylon,loadout = {"<CLEAN>"}},
+            }
+        }, -- empty 300gal tank
+        { CLSID = "<CLEAN>", arg = 700, arg_value = 1.0,
+            forbidden = {
+                {station = opposite_pylon,loadout = {"{F14-300gal-empty}"}},
+                {station = opposite_pylon,loadout = {"{F14-300gal}"}},
+            }
+        }, -- clean pylon
     }
     return unpack(_tanks)
   end
@@ -873,6 +889,7 @@ F_14 = {
 		606,
 		607,
         608,
+        700, -- fuel tank pylons
         
 	-- fuel dump
         3600,
@@ -1111,7 +1128,7 @@ F_14 = {
                 use_full_connector_position = true,
             },
             {
-                fuel_tanks(rewrite_settings.Name)
+                fuel_tanks(rewrite_settings.Name, pylon_7)
             }
         ),
         pylon(pylon_3, 1, 2.749000, -0.462000, -0.520000,
@@ -1649,7 +1666,7 @@ F_14 = {
                 use_full_connector_position = true,
             },
             {
-                fuel_tanks(rewrite_settings.Name)
+                fuel_tanks(rewrite_settings.Name, pylon_2)
             }
         ),
         pylon(pylon_8B, 1, 0.900000, -0.230000, 3.125000,
@@ -2012,7 +2029,7 @@ F_14 = {
 					 {min = 108.0, max = 173.975},
 					 {min = 225.0, max = 399.975}},
             channels = {
-                [1] = { name = _("Channel 1"), default = 225.0, connect = true}, -- default
+                [1] = { name = _("Channel 1"), default = 225.0}, -- default
                 [2] = { name = _("Channel 2"), default = 258.0},
                 [3] = { name = _("Channel 3"), default = 260.0},
                 [4] = { name = _("Channel 4"), default = 270.0},

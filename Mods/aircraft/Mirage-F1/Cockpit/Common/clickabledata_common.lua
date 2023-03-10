@@ -936,8 +936,6 @@ elements["PNT-117"] = default_button_tumb(_("Inverter selector switch"), 0, devi
 ----------------------------------------------------------------
 -- Warning lights
 
--- Master failure warning light
-elements["PNT-920"] = default_button(_("Master failure warning light"), 0, devices.MAIN, devCmds.Cmd265, 920)
 -- Combat flaps light
 elements["PNT-956"] = default_button_axis(_("Combat flaps light"), 0, devices.MAIN, devCmds.Cmd266, devCmds.Cmd267, 956, 957)
 -- U/C light
@@ -948,8 +946,6 @@ elements["PNT-950"] = default_button_axis(_("Nose wheel steering light"), 0, dev
 elements["PNT-944"] = default_button_axis(_("Airbrake light"), 0, devices.MAIN, devCmds.Cmd273, devCmds.Cmd274, 944, 945)
 -- Limit warning light + Horn
 elements["PNT-932"] = default_button(_("Limit warning light + Horn"), 0, devices.MAIN, devCmds.Cmd276, 932)
--- Fire warning light (ENG/AB) + Horn
-elements["PNT-940"] = default_button(_("Fire warning light (ENG/AB) + Horn"), 0, devices.MAIN, devCmds.Cmd277, 940)
 -- A/B INJ light
 elements["PNT-1029"] = default_button(_("A/B INJ light"), 0, devices.MAIN, devCmds.Cmd278, 1029)
 -- A/B ON light
@@ -1200,6 +1196,8 @@ elements["PNT-588"] = circuit_breaker(_("Emergency regulation system and control
 
 -- Seat height adjustment control
 elements["PNT-11"] = springloaded_2pos_switch(_("Seat height adjustment control"), 0, devices.MAIN, devCmds.Cmd431, devCmds.Cmd430, 11, false, nil, sounds.sound_iff_ident_sw)
+elements["PNT-11"].updatable = true
+
 -- Face blind firing handle
 elements["PNT-13"] = default_button(_("Face blind firing handle"), 0, devices.MAIN, devCmds.Cmd432, 13)
 elements["PNT-13-R"] = default_button(_("Face blind firing handle"), 0, devices.MAIN, devCmds.Cmd433, 13)

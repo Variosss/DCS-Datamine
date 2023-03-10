@@ -25,7 +25,7 @@ agr = {
 
 GUI = {
 	range = {min = 116E6, max = 151.95E6, step = 25E3}, --Hz
-	displayName = _('VHF AM'),
+	displayName = _('VHF AM (ARC-186)'),
 	AM = true,
 	FM = false
 }

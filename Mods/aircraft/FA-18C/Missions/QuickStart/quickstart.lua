@@ -33,6 +33,22 @@ planes = {
     name = _('BVR 8v8'),
     file = 'Caucasus FA-18C BVR 8v8.miz',
     },	
+	{
+    name = _('Gauntlet'),
+    file = 'IA-Hornet-AA-Gauntlet.miz',
+    },	
+	{
+    name = _('Close Air Support'),
+    file = 'IA-Hornet-AG-Gauntlet.miz',
+    },	
+	{
+    name = _('None Shall Pass'),
+    file = 'IA-Hornet-CAP.miz',
+    },	
+	{
+    name = _('Battlefield'),
+    file = 'IA-Hornet-FoF.miz',
+    },	
 
 -- Persian Gulf
 	{

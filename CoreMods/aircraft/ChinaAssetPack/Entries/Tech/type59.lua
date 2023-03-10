@@ -77,7 +77,7 @@ GT.visual.dirt_pos = {-2.8, 0.5, -GT.chassis.Z_gear_2}
 
 -- see description in GT_t.lua
 GT.visual.IR = {
-    coeffs = {GT_t.IR_COEFFS_ENGINE_Tank, GT_t.IR_COEFFS_ROLLERS_Tank, GT_t.IR_COEFFS_100mm, IR_COEFFS_BODY, {0.29, 0.29/1400}}
+    coeffs = {GT_t.IR_COEFFS_ENGINE_Tank, GT_t.IR_COEFFS_ROLLERS_Tank, GT_t.IR_COEFFS_100mm, GT_t.IR_COEFFS_BODY, {0.29, 0.29/1400}}
 }
 
 GT.driverViewConnectorName = {"PNT_DRIVER", offset = {0.05, 0.0, 0.0}}

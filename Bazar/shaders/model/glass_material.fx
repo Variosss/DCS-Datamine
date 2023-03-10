@@ -73,7 +73,7 @@ BlendState enableGlassAlphaBlend
 	DestBlend = SRC1_COLOR;
 	BlendOp = ADD;
 
-#if BLEND_MODE == BM_TRANSPARENT
+#if BLEND_MODE == BM_TRANSPARENT || BLEND_MODE == BM_SHADOWED_TRANSPARENT
 	SrcBlendAlpha = SRC_ALPHA;
 	DestBlendAlpha = INV_SRC_ALPHA;
 	BlendOpAlpha = ADD;

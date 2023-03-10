@@ -25,12 +25,12 @@ use_mipfilter(txt_DTS_Display_underline)
 
 buttons = 
 {
-	20, 19, 18, 17, 16, 10, 8
+	20, 19, 18, 17, 16, 10, 9, 8,
 }
 
 texts = 
 {
-	"", "LOAD\nTAD", "LOAD\nDSMS", "LOAD\nTGP", "LOAD\nPAGE", "LOAD\nALL", "LOAD\nHMCS",
+	"", "LOAD\nTAD", "LOAD\nDSMS", "LOAD\nTGP", "LOAD\nPAGE", "LOAD\nALL", "LOAD\nARC-210", "LOAD\nHMCS",
 }
 
 txt_osb_symbols	 = {}
@@ -65,9 +65,10 @@ for i = 2, #buttons do
 							txt_osb_texts[i]})
 end
 
-add_dummy_boxes({1, 2, 3, 4, 5, 6, 7, 9})
+add_dummy_boxes({1, 2, 3, 4, 5, 6, 7})
 
 add_osb_static_hint(8, _("Load HMCS Settings Only"))
+add_osb_static_hint(9, _("Load ARC-210 Data"))
 add_osb_static_hint(10, _("Load All DTS Data"))
 add_osb_static_hint(16, _("Load DTS Page Assignments Only"))
 add_osb_static_hint(17, _("Load DTS TGP Defaults Only"))

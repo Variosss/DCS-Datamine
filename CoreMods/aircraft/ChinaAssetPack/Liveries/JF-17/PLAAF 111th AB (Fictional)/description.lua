@@ -1,0 +1,48 @@
+livery = {
+    {"JF-17_main01", 0, "JF-17_main01_PLA02", false},
+    {"JF-17_main01", ROUGHNESS_METALLIC ,"JF-17_main01_PLA02_roughmet.dds",false},
+    {"JF-17_main01_BN52", 0, "JF-17_main01_PLA02", false},
+    {"JF-17_main01_BN52", ROUGHNESS_METALLIC ,"JF-17_main01_PLA02_roughmet.dds",false},
+    {"JF-17_main01_BN31", 0, "JF-17_main01_PLA02", false},
+    {"JF-17_main01_BN31", ROUGHNESS_METALLIC ,"JF-17_main01_PLA02_roughmet.dds",false},
+    {"JF-17_main01_BN32", 0, "JF-17_main01_PLA02", false},
+    {"JF-17_main01_BN32", ROUGHNESS_METALLIC ,"JF-17_main01_PLA02_roughmet.dds",false},
+    {"JF-17_main01_BN52", 3, "empty", true},
+    {"JF-17_main01_BN31", 3, "empty", true},
+    {"JF-17_main01_BN32", 3, "empty", true},
+    {"JF-17_main02", 0, "JF-17_main02_PLA02", false},
+    {"JF-17_main02", ROUGHNESS_METALLIC ,"JF-17_main02_PLA02_roughmet.dds",false},
+    {"JF-17_main03", 0, "JF-17_main03_PLA02", false},
+    {"JF-17_main03", ROUGHNESS_METALLIC ,"JF-17_main03_PLA02_roughmet.dds",false},
+    {"JF-17_main04", 0, "JF-17_main04_PLA02", false},
+    {"JF-17_main04", ROUGHNESS_METALLIC ,"JF-17_main04_PLA02_roughmet.dds",false},
+    {"JF-17_main05", 0, "JF-17_main05_PLA02", false},
+    {"JF-17_main05", ROUGHNESS_METALLIC ,"JF-17_main05_PLA02_roughmet.dds",false},
+    {"JF-17_main06", 0, "JF-17_main06_PLA02", false},
+    {"JF-17_main06", ROUGHNESS_METALLIC ,"JF-17_main06_PLA02_roughmet.dds",false},
+    {"JF-17_main07", 0, "JF-17_main07_PLA02", false},
+    {"JF-17_main07", ROUGHNESS_METALLIC ,"JF-17_main07_PLA02_roughmet.dds",false},
+    {"JF-17_main08", 0, "JF-17_main08_PLA02", false},
+    {"JF-17_main08", ROUGHNESS_METALLIC ,"JF-17_main08_PLA02_roughmet.dds",false},
+    {"JF-17_main08_decol", 0, "JF-17_main08_PLA02", false},
+    {"JF-17_main08_decol", ROUGHNESS_METALLIC ,"JF-17_main08_PLA02_roughmet.dds",false},
+    {"JF-17_main08_decol", 3, "JF-17_decol02_62.dds", false},
+    {"JF-17_main08_BN52", 0, "JF-17_main08_PLA02", false},
+    {"JF-17_main08_BN52", ROUGHNESS_METALLIC ,"JF-17_main08_PLA02_roughmet.dds",false},
+    {"JF-17_main08_BN31", 0, "JF-17_main08_PLA02", false},
+    {"JF-17_main08_BN31", ROUGHNESS_METALLIC ,"JF-17_main08_PLA02_roughmet.dds",false},
+    {"JF-17_main08_BN32", 0, "JF-17_main08_PLA02", false},
+    {"JF-17_main08_BN32", ROUGHNESS_METALLIC ,"JF-17_main08_PLA02_roughmet.dds",false},
+    {"JF-17_main08_BN52", 3, "JF-17_numbers06.dds", false},
+    {"JF-17_main08_BN31", 3, "JF-17_numbers06.dds", false},
+    {"JF-17_main08_BN32", 3, "JF-17_numbers06.dds", false},
+    {"JF-17_main09", 0, "JF-17_main09_PLA02", false},
+    {"JF-17_main09", ROUGHNESS_METALLIC ,"JF-17_main09_PLA02_roughmet.dds",false},
+    {"JF-17_pilot_decol", 0, "JF-17_Pilot_PLA02_decol.tga", false},
+}
+name = "PLAAF 111th AB (Fictional)"
+name_cn = "空一一一旅（虚构）"
+
+countries = {"CHN"}
+
+order = 21

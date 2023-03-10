@@ -715,7 +715,7 @@ local F_18C =  {
 			{Transition = {"Stage", "Extend"},   Sequence = {{C = {{"ChangeDriveTo", "HydraulicGravityAssisted"}, {"VelType", 3}, {"Arg", 85, "from", 0.815, "to", 0.881, "in", 0.2}}}}},
 		},
         Crewman0Gestures = {
-            {Transition = {"Neutral", "GestureSaluteLeft"}, Sequence = { 
+            {Transition = {"Any", "GestureSaluteLeft"}, Sequence = { 
 																			{--step 1 hands and head to 0 position
 																				C = {	
 																						{"Arg", 39,  "to", 0.0, "speed", 0.50},
@@ -742,7 +742,7 @@ local F_18C =  {
 																			},
 																		},
 			},
-			{Transition = {"Neutral", "GestureSaluteRight"}, Sequence = { 
+			{Transition = {"Any", "GestureSaluteRight"}, Sequence = { 
 																			{--step 1 hands and head to 0 position
 																				C = {	
 																						{"Arg", 39,  "to", 0.0, "speed", 0.50},

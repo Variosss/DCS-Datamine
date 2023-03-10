@@ -79,17 +79,17 @@ function SetDefaultClipWithLevel(object,level)
 	object.level 		   = DEFAULT_LEVEL + level
 end
 
-function AddLowerLeftCornerOrigin()
+function AddLowerLeftCornerOriginMFCD()
 	   lower_left_corner		  = CreateElement  "ceSimple"
-	   lower_left_corner.name     = "lower_left_corner"
+	   lower_left_corner.name     = "lower_left_corner_mfcd"
 	   lower_left_corner.init_pos = {-max_pixels_count/2, -max_pixels_count/2}
 	   Add(lower_left_corner)
 end 
 
-AddLowerLeftCornerOrigin()
+AddLowerLeftCornerOriginMFCD()
 
 function SetLowerLeftCornerOrigin(object)
-	object.parent_element =  "lower_left_corner"
+	object.parent_element =  "lower_left_corner_mfcd"
 end
 
 function LowerLeft_WithOutParentness(obj,x,y)	
@@ -969,3 +969,11 @@ function add_OSB_label(osb, Val, DontUseBackground, inversed)
 	return label
 end
 
+function addOSB_LabelWSymb(osb, text, symbol, UseBackground, inversed)
+	local Text   = addOSB_Lbl(osb, text, UseBackground, inversed)
+	local Symbol = attachOSB_LabelSymbol(Text, osb, symbol, UseBackground, inversed)
+
+	addOSB_Box(osb, {Text, Symbol})
+
+	return Text, Symbol
+end

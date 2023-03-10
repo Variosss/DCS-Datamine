@@ -6,6 +6,6 @@ make_MirageF1({
 	Countries 					= {"Spain", "USA"},
 		
 	passivCounterm 				= passivCounterm,
-	-- TODO:
-	--Pylons 					= Pylons_CE_BE_EE,
+	
+	Pylons 						= Pylons_CE_BE_EE,
 })

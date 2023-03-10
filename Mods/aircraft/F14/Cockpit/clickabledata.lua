@@ -775,8 +775,9 @@ elements["PNT_1073"] = default_3_position_tumb(_("Refuel Probe"), devices.FUELSY
 
 elements["PNT_1076"] = default_springloaded_3pos_switch(_("Fuel Quantity Selector"), devices.FUELSYSTEM, device_commands.FUELSYSTEM_Fuel_Qty_Sel, device_commands.FUELSYSTEM_Fuel_Qty_Sel, -1, 0, 1, cockpit_args.FUELSYSTEM_Fuel_Qty_Sel)
 elements["PNT_1076"].crew_member_access = pilot_only
-elements["PNT_1050"] = default_axis(_("BINGO Fuel Level Knob"), devices.FUELSYSTEM, device_commands.FUELSYSTEM_Bingo_Knob, cockpit_args.FUELSYSTEM_Bingo_Knob, 1, 0.1, true, true)
+elements["PNT_1050"] = default_axis(_("BINGO Fuel Level Knob"), devices.FUELSYSTEM, device_commands.FUELSYSTEM_Bingo_Knob, cockpit_args.RIO_Adjust_Mirror, 1, 0.1, true, true)
 -- Fuel system
+
 
 -- Electrics
 elements["PNT_937"] = default_3_position_tumb(_("Left Generator Switch"),devices.ELECTRICS, device_commands.ELEC_MASTER_GEN_LeftSwitch, cockpit_args.ELEC_MASTER_GEN_LeftSwitch, false, true, pilot_only)
@@ -825,6 +826,13 @@ elements["PNT_950"].crew_member_access = pilot_only
 
 elements["PNT_940"] = default_2_position_tumb(_("Temp Auto / Man"),devices.COCKPITMECHANICS, device_commands.TempAutoMan, cockpit_args.TEMPMANAUTO, pilot_only)
 elements["PNT_938"] = default_2_position_tumb(_("Ram Air"),devices.COCKPITMECHANICS, device_commands.RamAir, cockpit_args.RAMAIR, pilot_only)
+
+--Movable Mirrors
+elements["PNT_RIO_MIRROR_MOVE"] = default_axis(_("Adjust RIO Mirror"), devices.COCKPITMECHANICS, device_commands.Adjust_RIO_Mirror, cockpit_args.RIO_Adjust_Mirror, 0, 0.1, true, false)
+
+elements["PNT_PILOT_MIRROR_MOVE_TOP"] = default_axis(_("Adjust Top Mirror"), devices.COCKPITMECHANICS, device_commands.Adjust_Pilot_Mirror_T, cockpit_args.Pilot_Adjust_Mirror_T, 0, 0.1, true, false)
+elements["PNT_PILOT_MIRROR_MOVE_LEFT"] = default_axis(_("Adjust Right Mirror"), devices.COCKPITMECHANICS, device_commands.Adjust_Pilot_Mirror_L, cockpit_args.Pilot_Adjust_Mirror_L, 0, 0.1, true, false)
+elements["PNT_PILOT_MIRROR_MOVE_RIGHT"] = default_axis(_("Adjust Left Mirror"), devices.COCKPITMECHANICS, device_commands.Adjust_Pilot_Mirror_R, cockpit_args.Pilot_Adjust_Mirror_R, 0, 0.1, true, false)
 
 
 -- BIT panel

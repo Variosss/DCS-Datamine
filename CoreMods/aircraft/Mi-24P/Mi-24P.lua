@@ -14,6 +14,20 @@ arg_ch_rng = {}
 arg_ch_rng[1] = 0.0
 arg_ch_rng[2] = 1.0
 
+
+function KORD_Mi24_side_gun()
+
+
+return gun_mount("KORD_12_7", { count = 400, reload_every = 50, reload_time = 7, reload_arg = 500 },{muzzle_pos_connector = "POINT_MGUN", 
+					ejector_pos = {-1.2, 0.0, 0.05}, 
+					ejector_dir = {3.0, 0.0, 0.0},
+				--	ejector_pos_connector = "ejector_1",
+					effects 	= {fire_effect(46,0.05),smoke_effect(),{name = "FeedBeltBox", arg_v = 46, full_load = 400}},
+					barrel_circular_error = 0.0007,
+					turret = {	name = "KORD_side_gun"}
+					})
+end
+
 declare_loadout({
 	category			= CAT_PODS,
 	CLSID				= "KORD_12_7_MI24_R",
@@ -23,7 +37,7 @@ declare_loadout({
 	Weight				= 95.0,
 	Cx_pil				= 0.001220703125,
 	attribute			= {wsType_Weapon, wsType_GContainer, wsType_Cannon_Cont, WSTYPE_PLACEHOLDER},
-	gun_mounts			= get_predefined_aircraft_gunpod("KORD_12_7"),
+	gun_mounts			= {KORD_Mi24_side_gun()},
 	kind_of_shipping	= 2,
 	Elements = {{
 		Position		= {0, 0, 0},
@@ -34,7 +48,7 @@ declare_loadout({
 		username		= "MI24Gunner",
 		index			= WSTYPE_PLACEHOLDER,
 	}},
-	
+										
 	control_container_data = {
 		  rot_x  = rot_nil,
 	  	  --rot_y  = {-40,40},
@@ -64,7 +78,7 @@ declare_loadout({
 	Weight				= 95.0,
 	Cx_pil				= 0.001220703125,
 	attribute			= {wsType_Weapon, wsType_GContainer, wsType_Cannon_Cont, WSTYPE_PLACEHOLDER},
-	gun_mounts			= get_predefined_aircraft_gunpod("KORD_12_7"),
+	gun_mounts			= {KORD_Mi24_side_gun()},
 	kind_of_shipping	= 2,
 	Elements = {{
 		Position		= {0, 0, 0},

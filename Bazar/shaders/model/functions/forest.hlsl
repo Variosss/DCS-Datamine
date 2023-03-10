@@ -65,7 +65,7 @@ GBuffer deferredDefaultPS(VS_OUTPUT input
 #if USE_SV_SAMPLEINDEX
 		sv_sampleIndex,
 #endif
-		diff, float3(0,1,0), float4(1, 0.95, 0, 1), float3(0,0,0));
+		diff, float3(0,1,0), float4(1, 0.95, 0, 1), float3(0,0,0), calcMotionVectorStatic(i.projPos));
 }
 
 GBuffer deferred_ps(VS_OUTPUT input,

@@ -8,20 +8,20 @@
 lessons = 
 {
 	{
-        ["file"] = "Su-33 - Carrier Landing.miz",
-        ["name"] = _("Su-33 - Carrier Landing"),
-        ["description"] = _("In this lesson we're going to learn how to land on the Admiral Kuznetsov aircraft carrier."),
+        ["file"] = "Su-33 - Carrier Take-Off.miz",
+        ["name"] = _("Su-33 - Carrier Take-Off"),
+        ["description"] = _("This tutorial mission shows you how to start-up, taxi and take-off from the deck of the Admiral Kuznetzov."),
     },
 	{
         ["file"] = "Su-33 - Carrier Short Take-Off.miz",
         ["name"] = _("Su-33 - Carrier Short Take-Off"),
         ["description"] = _("This tutorial mission shows you how to start-up and then take-off from the short position at the front of the Admiral Kuznetzov."),
-    }, 
-    {
-        ["file"] = "Su-33 - Carrier Take-Off.miz",
-        ["name"] = _("Su-33 - Carrier Take-Off"),
-        ["description"] = _("This tutorial mission shows you how to start-up, taxi and take-off from the deck of the Admiral Kuznetzov."),
     },
+	{
+        ["file"] = "Su-33 - Carrier Landing.miz",
+        ["name"] = _("Su-33 - Carrier Landing"),
+        ["description"] = _("In this lesson we're going to learn how to land on the Admiral Kuznetsov aircraft carrier."),
+    },      
 	{
         ["file"] = "Su-33 - Very Quick - Carrier Short Take-Off.miz",
         ["name"] = _("Su-33 - Very Quick - Carrier Short Take-Off"),

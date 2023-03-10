@@ -99,10 +99,7 @@ livery = {
 	{"miragef1_common_04_USA_second_digit_1",ROUGHNESS_METALLIC,"miragef1-common_4_IRIAF_1_RoughMet",false};		
 	{"miragef1_common_04_USA_second_digit_1", DECAL ,"empty",true};
 
-    ---------------------------------------------------------------------------------------------------Engine Nuzzle
-    {"miragef1_common_01_A", 0 ,"miragef1-common_1_IRIAF_1", false};
-  --{"miragef1_common_01_A",1,"miragef1-common_1_IRIAF_1_NM",false};		
-    {"miragef1_common_01_A",ROUGHNESS_METALLIC,"miragef1-common_1_IRIAF_1_RoughMet",false};
+ 
 	
 	------------------------------miragef1_common_03----------------------------------------------Rudder/Tail/Elevator
 	{"miragef1_common_03_1", 0 ,"miragef1-common_3_IRIAF_1",false};

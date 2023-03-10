@@ -403,7 +403,7 @@ end
 function onChange_btnOpen()
     local path = MeSettings.getListMissionsPath()
     
-    local filters = {FileDialogFilters.listMissions(), FileDialogFilters.listMissions()}
+    local filters = {FileDialogFilters.listMissions()}
     local fullFileName = FileDialog.open(path, filters, cdata.openListMissions)
 
     if fullFileName then
@@ -447,7 +447,7 @@ end
 
 function onChange_btnAdd()
     local path = MeSettings.getMissionPath()
-    local filters = {FileDialogFilters.mission(), FileDialogFilters.mission()}
+    local filters = {FileDialogFilters.mission()}
     local fullFileName = FileDialog.open(path, filters, cdata.addMission)
 
     if fullFileName then        
@@ -509,6 +509,15 @@ function show(b, a_returnScreen, a_forceMiz)
         updateIP()
         updatePlayer()
         updateStart()
+	else
+		if IntegrityCheck.isVisible() then
+			IntegrityCheck.show(false)
+		end
+		
+		if Advanced.isVisible() then
+			Advanced.show(false)
+		end
+
     end   
 
     window:setVisible(b)    

@@ -153,6 +153,9 @@ function loadMissionTheatreCache()
 
 		if f then
 			missionTheatreCache = f()
+			if missionTheatreCache == nil then
+				missionTheatreCache = {}
+			end
 		else
 			missionTheatreCache = {}
 		end		

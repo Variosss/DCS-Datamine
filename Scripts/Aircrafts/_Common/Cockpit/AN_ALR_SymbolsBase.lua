@@ -145,6 +145,7 @@ symbols_strings ={
 	['AIM_54A_Mk60'] = 'M',
 	['AIM_54A_Mk47'] = 'M',
 	['AIM_54C_Mk47'] = 'M',
+	['AIM_54C_Mk60'] = 'M',		-- F16CB50-2060: AIM-54C MK60: does not give RWR warning
 	--RAZBAM
 	['LHA_Tarawa']	 	= '40', -- same AN/SPS-40 as on Spruance
 	['M-2000C']			= 'M2',

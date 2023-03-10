@@ -42,9 +42,9 @@ local AIM_7_FM =
 local AIM_7E =
 {
 	category		= CAT_AIR_TO_AIR,
-	name			= "AIM-7E",
-	displayName		= _("AIM-7E Sparrow Semi-Active Radar"),
-	user_name		= _("AIM-7E"),
+	name			= "AIM-7E-2",
+	displayName		= _("AIM-7E-2 Sparrow Semi-Active Radar"),
+	user_name		= _("AIM-7E-2"),
 	scheme			= "aa_missile_semi_active",
 	class_name		= "wAmmunitionSelfHoming",
 	model			= "aim-7",
@@ -81,7 +81,7 @@ local AIM_7E =
 	Y_back			= -0.0,
 	Z_back			= 0.0, -- -0.1,
 	Reflection		= 0.08,
-	KillDistance	= 12.0,
+	KillDistance	= 9.0,
 	M				= 230,
 	
 	ccm_k0 = 2.0,
@@ -90,14 +90,14 @@ local AIM_7E =
 	height_error_max_vel = 150, -- пропорциональный коэффициент
 	height_error_max_h = 450, -- максимальная высота, где появляется ошибка
 	
-	warhead		= predefined_warhead("AIM_7"),
-	warhead_air = predefined_warhead("AIM_7"),
+	warhead		= predefined_warhead("AIM_7E"),
+	warhead_air = predefined_warhead("AIM_7E"),
 	
 	shape_table_data =
 	{
 		{
 			name  = "aim_7_E";
-			file  = "aim-7";
+			file  = "aim-7"; --TODO replace model
 			life  = 1;
 			fire  = { 0, 1};
 			username = "AIM-7E";
@@ -158,8 +158,8 @@ local AIM_7E =
 				},  
 				
 	controller = {
-		boost_start = 0.5,
-		march_start = 0.6,
+		boost_start = 0,
+		march_start = 0.2,
 	},
 	
 	boost = {
@@ -191,7 +191,7 @@ local AIM_7E =
 	fm = AIM_7_FM,
 	
 	proximity_fuze = {
-		radius		= 12,
+		radius		= 9,
 		arm_delay	= 1.6,
 	},
 	
@@ -210,8 +210,9 @@ local AIM_7E =
 	},
 
 	autopilot = {
-		x_channel_delay		= 0.9,
-		delay				= 1.6,
+		x_channel_delay 	= 0.6,
+		cmd_delay 			= 0.6,
+		delay				= 0,
 		op_time				= 75,
 		Kconv				= 3.0,
 		Knv					= 0.02,
@@ -361,8 +362,8 @@ local AIM_7F =
 				},
 				
 	controller = {
-		boost_start = 0.5,
-		march_start = 4.2,
+		boost_start = 0.2,
+		march_start = 3.9,
 	},
 	
 	boost = {
@@ -414,8 +415,9 @@ local AIM_7F =
 	},
 
 	autopilot = {
-		x_channel_delay		= 0.9,
-		delay				= 1.5,
+		x_channel_delay 	= 0.6,
+		cmd_delay 			= 0.6,
+		delay				= 0,
 		op_time				= 75,
 		Kconv				= 3.0,
 		Knv					= 0.02,
@@ -569,8 +571,8 @@ local AIM_7M =
 	},
 	
 	controller = {
-		boost_start = 0.5,
-		march_start = 4.2,
+		boost_start = 0.2,
+		march_start = 3.9,
 	},
 
 	boost = {
@@ -627,8 +629,9 @@ local AIM_7M =
 	},
 
 	autopilot = {
-		x_channel_delay 	= 0.9,
-		delay				= 1.5,
+		x_channel_delay 	= 0.6,
+		cmd_delay 			= 0.6,
+		delay				= 0,
 		op_time				= 75,
 		Kconv				= 4.0,
 		Knv					= 0.02,
@@ -782,8 +785,8 @@ local AIM_7H =
 				},
 	
 	controller = {
-		boost_start = 0.5,
-		march_start = 4.2,
+		boost_start = 0.2,
+		march_start = 3.9,
 	},
 	
 	boost = {
@@ -835,8 +838,9 @@ local AIM_7H =
 	},
 
 	autopilot = {
-		x_channel_delay		= 0.9,
-		delay				= 1.5,
+		x_channel_delay 	= 0.6,
+		cmd_delay 			= 0.6,
+		delay				= 0,
 		op_time				= 75,
 		Kconv				= 4.0,
 		Knv					= 0.02,
@@ -991,8 +995,8 @@ local AIM_7P =
 				},
 	
 	controller = {
-		boost_start = 0.5,
-		march_start = 4.2,
+		boost_start = 0.2,
+		march_start = 3.9,
 	},
 	
 	boost = {
@@ -1045,8 +1049,9 @@ local AIM_7P =
 	},
 
 	autopilot = {
-		x_channel_delay		= 0.9,
-		delay				= 1.5,
+		x_channel_delay 	= 0.6,
+		cmd_delay 			= 0.6,
+		delay				= 0,
 		op_time				= 75,
 		Kconv				= 4.0,
 		Knv					= 0.02,

@@ -22,8 +22,12 @@ mount_vfs_texture_path (current_mod_path.."/Textures/miragef1_pilot.zip")
 mount_vfs_texture_path (current_mod_path.."/Textures/Mirage-F1_RoughMet.zip")
 mount_vfs_texture_path (current_mod_path.."/Textures/miragef1_damaged.zip")
 
+-- Tools
+dofile(current_mod_path.."/Tools.lua")
+
 -- Weapons definitions
 dofile(current_mod_path.."/Weapons.lua")
+dofile(current_mod_path.."/Payloads.lua")
 
 -- Common aircraft definitions
 dofile(current_mod_path..'/Mirage-F1.lua')

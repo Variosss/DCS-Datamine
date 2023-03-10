@@ -1,7 +1,5 @@
 dofile(LockOn_Options.common_script_path.."elements_defs.lua")
 
-
-
 function create_and_add_elements(cross_size, compass_size, is_vr)
 --intentionally no indentation
 local cross_pos 	= {0, 	  0}
@@ -14,23 +12,23 @@ else
 	local total_aspect  = LockOn_Options.screen.aspect
 	local total_w 		= LockOn_Options.screen.width
 	local total_h 		= LockOn_Options.screen.height
-	local ULX,ULY,SZX,SZY,GUI_scale = get_UIMainView()
+	local start_x,start_y,main_w,main_h,_ = get_UIMainView()
 	
-	compass_pos = {-0.75 * total_aspect, -0.5} --relative to screen center, 1 equals screen height afaik
-	--viewports stuff	
-	local v = find_viewport("GU_MAIN_VIEWPORT", "CENTER")
-	if v ~= nil then
-		if v.width ~= total_w or v.height ~= total_h then
-			ULX = v.x
-			ULY = v.y
-			SZX = v.width
-			SZY = v.height
-			local aspect = SZX/SZY
-			cross_pos = {(ULX + SZX / 2 - total_w / 2) / total_w * total_aspect * 2, -(ULY + SZY / 2 - total_h / 2) / total_h * 2}
-			compass_pos = {cross_pos[1] + compass_pos[1] * SZX / total_w, cross_pos[2] + compass_pos[2] * SZY / total_h}
-			cross_size = cross_size * v.height / total_h
-			compass_size = compass_size * v.height / total_h
-		end
+	compass_pos = {-0.75 , -0.5}
+	--new finally working viewports stuff (this time it does)
+	--sorry dear players for a very late fix
+	--kept you waiting huh
+	if main_w ~= total_w or total_h ~= main_h or start_x ~= 0 or start_y ~= 0 then
+		local function pix2rel(pix, total) return (2*pix/total - 1) end
+		local function rel2pix(rel, total) return (1 + rel)*total/2 end
+		local function transform_rel(total, main, start, inp) return pix2rel(start + rel2pix(inp, main), total) end
+		cross_pos = {transform_rel(total_w, main_w, start_x, cross_pos[1]) * total_aspect, -transform_rel(total_h, main_h, start_y, -cross_pos[2])}
+		compass_pos = {transform_rel(total_w, main_w, start_x, compass_pos[1]) * total_aspect, -transform_rel(total_h, main_h, start_y, -compass_pos[2])}
+		cross_size = cross_size * main_h / total_h
+		compass_size = compass_size * main_h / total_h
+	else
+		cross_pos = {cross_pos[1] * total_aspect, cross_pos[2]}
+		compass_pos = {compass_pos[1] * total_aspect, compass_pos[2]}
 	end
 	--end viewports stuff
 end

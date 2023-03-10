@@ -74,7 +74,7 @@ GT.visual.min_time_agony       = 5
 GT.visual.max_time_agony       = 120
 GT.visual.agony_explosion_size = 5
 
-GT.visual.IR = { coeffs = {GT_t.IR_COEFFS_ENGINE_Tank, GT_t.IR_COEFFS_ROLLERS_Tank, GT_t.IR_COEFFS_152mm, IR_COEFFS_BODY, {0.3, 0.3/1800}}}
+GT.visual.IR = { coeffs = {GT_t.IR_COEFFS_ENGINE_Tank, GT_t.IR_COEFFS_ROLLERS_Tank, GT_t.IR_COEFFS_152mm, GT_t.IR_COEFFS_BODY, {0.3, 0.3/1800}}}
 
 GT.visual.dust_pos    = { 3.57, 0.03, -GT.chassis.Z_gear_1}
 GT.visual.dirt_pos    = {-2.90, 0.50, -GT.chassis.Z_gear_2}

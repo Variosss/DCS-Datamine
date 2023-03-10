@@ -186,7 +186,7 @@ GBuffer PS_ALPHA_TEST( MODEL_PS_INPUT i,
 #if USE_SV_SAMPLEINDEX
 		sv_sampleIndex,
 #endif
-		mp.diffuse*1.35, mp.normal, mp.aorm, mp.emissive);
+		mp.diffuse*1.35, mp.normal, mp.aorm, mp.emissive, calcMotionVectorStatic(i.projPos));	// TODO: correct motion vector to use calcMotionVector()
 }
 
 technique10 tech

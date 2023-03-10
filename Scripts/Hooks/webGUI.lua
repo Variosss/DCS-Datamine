@@ -3,20 +3,6 @@ local TableUtils = require("TableUtils")
 local S = require("Serializer")
 local U = require("me_utilities")
 
-function table.slice(tbl, first, last, step)
-    local sliced = {}
-
-    for i = first or 1, last or #tbl, step or 1 do
-        sliced[#sliced + 1] = tbl[i]
-    end
-
-    return sliced
-end
-
-function string.starts(String, Start)
-    return string.sub(String, 1, string.len(Start)) == Start
-end
-
 -- load server settings
 local defaultSettingsServer = net.get_default_server_settings()
 
@@ -168,17 +154,6 @@ function uri_actions.getServerSettings()
     local settings = loadSettingsRaw()
     local ip = DcsWeb.get_data("dcs:whatsmyip")
 
-    local result = {
-        settings = settings,
-        ip = ip
-    }
-
-    return result
-end
-
-function uri_actions.getDefaultServerSettings()
-    local settings = loadSettingsRaw()
-
     local current_missions = net.missionlist_get()
 
     -- TODO: If settings[missionList] AND no current missions in a list, do stuff
@@ -194,13 +169,13 @@ function uri_actions.getDefaultServerSettings()
         end
     end
 
+    current_missions = net.missionlist_get()
     settings["listLoop"] = current_missions["listLoop"]
     settings["listShuffle"] = current_missions["listShuffle"]
 
-    local ip = DcsWeb.get_data("dcs:whatsmyip")
-
     local result = {
         settings = settings,
+        mission_list = current_missions,
         ip = ip
     }
 
@@ -398,7 +373,7 @@ function uri_actions.moveMission(params)
 
     result = net.missionlist_move(old_id, new_id)
 
-    --TODO: save new mission list state to serverSettings.lua
+    -- Save new mission list state to serverSettings.lua
     local current_missions = net.missionlist_get()
     saveSettings({
         missionList=current_missions["missionList"],
@@ -467,6 +442,11 @@ function uri_actions.updateLog(params)
         logHistory = logHistory,
         new_last_id = logIndex
     }
+    return result
+end
+
+function uri_actions.getInstalledTheatres(params)
+    local result = net.missionlist_get_installed_theatres()
     return result
 end
 

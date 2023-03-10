@@ -868,19 +868,27 @@ BlendState waterGBufferAlphaBlend {
 	DestBlend[2] = INV_SRC_ALPHA;
 	BlendOp[2] = ADD;
 
+	BlendEnable[3] = TRUE;
+	SrcBlend[3] = SRC_ALPHA;
+	DestBlend[3] = INV_SRC_ALPHA;
+	BlendOp[3] = ADD;
+
 	RenderTargetWriteMask[0] = 0x07;
 	RenderTargetWriteMask[1] = 0x07;
 	RenderTargetWriteMask[2] = 0x07;
+	RenderTargetWriteMask[3] = 0x07;
 };
 
 BlendState waterGBufferDisableAlphaBlend {
 	BlendEnable[0] = FALSE; 
 	BlendEnable[1] = FALSE;
 	BlendEnable[2] = FALSE;
+	BlendEnable[3] = FALSE;
 
 	RenderTargetWriteMask[0] = 0x07;
+	RenderTargetWriteMask[1] = 0x07;
+	RenderTargetWriteMask[2] = 0x07;
 	RenderTargetWriteMask[3] = 0x07;
-	RenderTargetWriteMask[4] = 0x07;
 };
 
 #undef COMMON_PART

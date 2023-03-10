@@ -22,6 +22,336 @@ TerrainModelDeclaration =
 	};
 
 	{
+		file = "angar_a_new";
+		castshadows = false;
+		life = 50;
+		fire =
+		{
+			150;
+			2;
+		};
+		username = "Hangar A";
+		maxSlope = 25;
+		desrt = "angar_a_crash";
+	};
+
+	{
+		file = "angar_b_new";
+		castshadows = false;
+		life = 40;
+		fire =
+		{
+			150;
+			2;
+		};
+		username = "Hangar B";
+		maxSlope = 25;
+		desrt = "angar_b_crash";
+	};
+
+	{
+		file = "aviashtab_new";
+		castshadows = false;
+		life = 1200;
+		fire =
+		{
+			60;
+			2;
+		};
+		username = "Military staff";
+		maxSlope = 26;
+		desrt = "aviashtab_new_crash";
+	};
+
+	{
+		file = "bak_new";
+		castshadows = false;
+		life = 5;
+		fire =
+		{
+			300;
+			5;
+		};
+		username = "tank";
+		classname = "lOilTank";
+		maxSlope = 40;
+		desrt = "bak_new_crush";
+	};
+
+	{
+		file = "bashnja-stena";
+		castshadows = false;
+		life = 1600;
+		fire =
+		{
+			60;
+			2;
+		};
+		maxSlope = 45;
+		desrt = "box_new_crash";
+	};
+
+	{
+		file = "BUFET";
+		castshadows = false;
+		life = 100;
+		fire =
+		{
+			60;
+			2;
+		};
+		username = "civil building";
+		maxSlope = 25;
+		desrt = "bufet_crush";
+	};
+
+	{
+		file = "CAFE";
+		castshadows = false;
+		life = 200;
+		fire =
+		{
+			60;
+			2;
+		};
+		username = "civil building";
+		maxSlope = 25;
+		desrt = "cafe_crush";
+	};
+
+	{
+		file = "ceh_a";
+		castshadows = false;
+		life = 2500;
+		fire =
+		{
+			300;
+			2;
+		};
+		username = "workshop";
+		maxSlope = 25;
+		desrt = "ceh_a_crush";
+	};
+
+	{
+		file = "ceh_ang_a_new";
+		castshadows = false;
+		life = 500;
+		fire =
+		{
+			300;
+			2;
+		};
+		username = "Tech hangar A";
+		maxSlope = 25;
+		desrt = "ceh_ang_a_crash";
+	};
+
+	{
+		file = "ceh_ang_b";
+		castshadows = false;
+		life = 1500;
+		fire =
+		{
+			300;
+			2;
+		};
+		username = "workshop";
+		maxSlope = 20;
+		desrt = "ceh_ang_b_crush";
+	};
+
+	{
+		file = "ceh_ang_c";
+		castshadows = false;
+		life = 2500;
+		fire =
+		{
+			300;
+			2;
+		};
+		username = "workshop";
+		maxSlope = 20;
+		desrt = "ceh_ang_c_crush";
+	};
+
+	{
+		file = "ceh_b";
+		castshadows = false;
+		life = 4800;
+		fire =
+		{
+			300;
+			2;
+		};
+		username = "workshop";
+		maxSlope = 20;
+		desrt = "ceh_b_crush";
+	};
+
+	{
+		file = "ceh_c";
+		castshadows = false;
+		life = 2500;
+		fire =
+		{
+			300;
+			2;
+		};
+		username = "workshop";
+		maxSlope = 25;
+		desrt = "ceh_c_crush";
+	};
+
+	{
+		file = "cinema_a";
+		castshadows = false;
+		life = 200;
+		fire =
+		{
+			180;
+			2;
+		};
+		username = "civil building";
+		maxSlope = 25;
+		desrt = "cinema_a_crash";
+	};
+
+	{
+		file = "cinema_b";
+		castshadows = false;
+		life = 150;
+		fire =
+		{
+			120;
+			2;
+		};
+		username = "civil building";
+		maxSlope = 26;
+		desrt = "cinema_b_crush";
+	};
+
+	{
+		file = "d_sad_a";
+		castshadows = false;
+		life = 200;
+		fire =
+		{
+			120;
+			2;
+		};
+		username = "civil building";
+		maxSlope = 12;
+		desrt = "d_sad_a_crush";
+	};
+
+	{
+		file = "DANSING";
+		castshadows = false;
+		life = 150;
+		fire =
+		{
+			60;
+			2;
+		};
+		username = "civil building";
+		classname = "lDanceFloor";
+		maxSlope = 30;
+		desrt = "dansing_crush";
+	};
+
+	{
+		file = "dom2a";
+		castshadows = false;
+		life = 100;
+		fire =
+		{
+			0;
+			2;
+		};
+		maxSlope = 35;
+		desrt = "small_crash";
+	};
+
+	{
+		file = "dom2c_new";
+		life = 150;
+		fire =
+		{
+			0;
+			2;
+		};
+		maxSlope = 35;
+		desrt = "dom2c_new_crash";
+	};
+
+	{
+		file = "domik1a_new";
+		castshadows = false;
+		life = 50;
+		fire =
+		{
+			0;
+			2;
+		};
+		maxSlope = 35;
+		desrt = "small_crash";
+	};
+
+	{
+		file = "domik1b_new";
+		castshadows = false;
+		life = 50;
+		fire =
+		{
+			0;
+			2;
+		};
+		maxSlope = 35;
+		desrt = "small_crash";
+	};
+
+	{
+		file = "domik1c";
+		castshadows = false;
+		life = 50;
+		fire =
+		{
+			0;
+			2;
+		};
+		username = "Small house 1C";
+		maxSlope = 35;
+		desrt = "small_crash";
+	};
+
+	{
+		file = "domik1d";
+		castshadows = false;
+		life = 50;
+		fire =
+		{
+			0;
+			2;
+		};
+		maxSlope = 40;
+		desrt = "small_crash";
+	};
+
+	{
+		file = "ferma_a_new";
+		castshadows = false;
+		life = 400;
+		fire =
+		{
+			60;
+			2;
+		};
+		maxSlope = 7;
+		desrt = "ferma_a_crash";
+	};
+
+	{
 		file = "garage_a_new";
 		castshadows = false;
 		life = 400;
@@ -45,6 +375,990 @@ TerrainModelDeclaration =
 		};
 		maxSlope = 8;
 		desrt = "cinema_b_crush";
+	};
+
+	{
+		file = "garagh-small-a_new";
+		castshadows = false;
+		life = 20;
+		fire =
+		{
+			60;
+			2;
+		};
+		maxSlope = 25;
+		desrt = "small_crash";
+	};
+
+	{
+		file = "garagh-small-b_new";
+		castshadows = false;
+		life = 100;
+		fire =
+		{
+			60;
+			2;
+		};
+		maxSlope = 25;
+		desrt = "small_crash";
+	};
+
+	{
+		file = "gradir";
+		castshadows = false;
+		life = 1000;
+		fire =
+		{
+			60;
+			2;
+		};
+		username = "civil building";
+		classname = "Lsmoker";
+		maxSlope = 25;
+		desrt = "gradir_crush";
+	};
+
+	{
+		file = "him_bak_a_new";
+		castshadows = false;
+		life = 5;
+		fire =
+		{
+			60;
+			2;
+		};
+		username = "tank";
+		classname = "lOilTank";
+		maxSlope = 25;
+		desrt = "bak_new_crush";
+	};
+
+	{
+		file = "him_bak_b";
+		castshadows = false;
+		life = 5;
+		fire =
+		{
+			60;
+			5;
+		};
+		classname = "lOilTank";
+		maxSlope = 45;
+		desrt = "him_bak_b_crush";
+	};
+
+	{
+		file = "him_bak_big";
+		castshadows = false;
+		life = 5;
+		fire =
+		{
+			60;
+			10;
+		};
+		classname = "lOilTank";
+		maxSlope = 35;
+		desrt = "him_bak_big_crush";
+	};
+
+	{
+		file = "home1_a_new";
+		castshadows = false;
+		life = 150;
+		fire =
+		{
+			60;
+			2;
+		};
+		maxSlope = 35;
+		desrt = "home1_crash";
+	};
+
+	{
+		file = "home1_b";
+		castshadows = false;
+		life = 150;
+		fire =
+		{
+			60;
+			2;
+		};
+		username = "civil building";
+		maxSlope = 35;
+		desrt = "home1_crash";
+	};
+
+	{
+		file = "home1_c";
+		castshadows = false;
+		life = 150;
+		fire =
+		{
+			60;
+			2;
+		};
+		username = "civil building";
+		maxSlope = 35;
+		desrt = "home1_crash";
+	};
+
+	{
+		file = "home16_bash";
+		castshadows = false;
+		life = 4000;
+		fire =
+		{
+			180;
+			2;
+		};
+		username = "civil building";
+		maxSlope = 12;
+		desrt = "home16_bash_crush";
+	};
+
+	{
+		file = "home16_twin";
+		castshadows = false;
+		life = 1000;
+		fire =
+		{
+			300;
+			2;
+		};
+		username = "civil building";
+		maxSlope = 8;
+		desrt = "home16_twin_crush";
+	};
+
+	{
+		file = "home16a_bash";
+		castshadows = false;
+		life = 1000;
+		fire =
+		{
+			180;
+			2;
+		};
+		username = "civil building";
+		maxSlope = 10;
+		desrt = "home16_bash_crush";
+	};
+
+	{
+		file = "home1ug_a";
+		castshadows = false;
+		life = 150;
+		fire =
+		{
+			60;
+			2;
+		};
+		username = "civil building";
+		maxSlope = 35;
+		desrt = "home1ug_crush";
+	};
+
+	{
+		file = "home1ug_b";
+		castshadows = false;
+		life = 150;
+		fire =
+		{
+			60;
+			2;
+		};
+		username = "civil building";
+		maxSlope = 35;
+		desrt = "home1ugr_crush";
+	};
+
+	{
+		file = "home1ug_c";
+		castshadows = false;
+		life = 150;
+		fire =
+		{
+			60;
+			2;
+		};
+		username = "civil building";
+		maxSlope = 35;
+		desrt = "home1ugr_crush";
+	};
+
+	{
+		file = "home2_a";
+		castshadows = false;
+		life = 600;
+		fire =
+		{
+			60;
+			2;
+		};
+		username = "civil building";
+		maxSlope = 20;
+		desrt = "home2_crush";
+	};
+
+	{
+		file = "home2_b";
+		castshadows = false;
+		life = 600;
+		fire =
+		{
+			60;
+			2;
+		};
+		username = "civil building";
+		maxSlope = 12;
+		desrt = "home2_crush";
+	};
+
+	{
+		file = "home2_c";
+		castshadows = false;
+		life = 600;
+		fire =
+		{
+			60;
+			2;
+		};
+		username = "civil building";
+		maxSlope = 15;
+		desrt = "home2_crush";
+	};
+
+	{
+		file = "home3_a";
+		castshadows = false;
+		life = 800;
+		fire =
+		{
+			120;
+			2;
+		};
+		username = "civil building";
+		maxSlope = 8;
+		desrt = "home3_a_crash";
+	};
+
+	{
+		file = "home3_b";
+		castshadows = false;
+		life = 800;
+		fire =
+		{
+			120;
+			2;
+		};
+		username = "civil building";
+		maxSlope = 8;
+		desrt = "home3_a_crash";
+	};
+
+	{
+		file = "home3_c";
+		castshadows = false;
+		life = 800;
+		fire =
+		{
+			120;
+			2;
+		};
+		username = "civil building";
+		maxSlope = 8;
+		desrt = "home3_c_crash";
+	};
+
+	{
+		file = "home3_d";
+		castshadows = false;
+		life = 600;
+		fire =
+		{
+			60;
+			2;
+		};
+		maxSlope = 8;
+		desrt = "home3_a_crash";
+	};
+
+	{
+		file = "home3_e";
+		castshadows = false;
+		life = 600;
+		fire =
+		{
+			60;
+			2;
+		};
+		maxSlope = 8;
+		desrt = "home3_c_crash";
+	};
+
+	{
+		file = "home51_hr";
+		castshadows = false;
+		life = 2400;
+		fire =
+		{
+			120;
+			2;
+		};
+		username = "civil building";
+		maxSlope = 8;
+		desrt = "home5_crush";
+	};
+
+	{
+		file = "home51_st";
+		castshadows = false;
+		life = 2400;
+		fire =
+		{
+			180;
+			2;
+		};
+		username = "civil building";
+		maxSlope = 8;
+		desrt = "home5_crush";
+	};
+
+	{
+		file = "home52_hr";
+		castshadows = false;
+		life = 2400;
+		fire =
+		{
+			120;
+			2;
+		};
+		username = "civil building";
+		maxSlope = 8;
+		desrt = "home5_crush";
+	};
+
+	{
+		file = "home52_st";
+		castshadows = false;
+		life = 2400;
+		fire =
+		{
+			180;
+			2;
+		};
+		username = "civil building";
+		maxSlope = 8;
+		desrt = "home52_st_crash";
+	};
+
+	{
+		file = "home53_hr";
+		castshadows = false;
+		life = 2400;
+		fire =
+		{
+			120;
+			2;
+		};
+		username = "civil building";
+		maxSlope = 8;
+		desrt = "home53_hr_crash";
+	};
+
+	{
+		file = "home53_st";
+		castshadows = false;
+		life = 2400;
+		fire =
+		{
+			60;
+			2;
+		};
+		maxSlope = 8;
+		desrt = "home53_st_crash";
+	};
+
+	{
+		file = "home5m";
+		castshadows = false;
+		life = 2400;
+		fire =
+		{
+			120;
+			2;
+		};
+		username = "civil building";
+		maxSlope = 7;
+		desrt = "home5_crush";
+	};
+
+	{
+		file = "home9a";
+		castshadows = false;
+		life = 2400;
+		fire =
+		{
+			180;
+			2;
+		};
+		username = "civil building";
+		maxSlope = 7;
+		desrt = "home5_crush";
+	};
+
+	{
+		file = "hotel_a";
+		castshadows = false;
+		life = 2400;
+		fire =
+		{
+			180;
+			2;
+		};
+		username = "hotel";
+		maxSlope = 7;
+		desrt = "hotel_a_crush";
+	};
+
+	{
+		file = "hotel_b";
+		castshadows = false;
+		life = 2400;
+		fire =
+		{
+			180;
+			2;
+		};
+		username = "hotel";
+		maxSlope = 7;
+		desrt = "home5_crush";
+	};
+
+	{
+		file = "hotel_c";
+		castshadows = false;
+		life = 2400;
+		fire =
+		{
+			180;
+			2;
+		};
+		username = "hotel";
+		maxSlope = 8;
+		desrt = "hotel_c_crush";
+	};
+
+	{
+		file = "hozdomik1_new";
+		castshadows = false;
+		life = 100;
+		fire =
+		{
+			150;
+			2;
+		};
+		username = "Subsidiary structure 1";
+		maxSlope = 7;
+		desrt = "hozdomik1_new_crash";
+	};
+
+	{
+		file = "hozdomik2_new";
+		castshadows = false;
+		life = 80;
+		fire =
+		{
+			150;
+			2;
+		};
+		username = "Subsidiary structure 2";
+		maxSlope = 8;
+		desrt = "hozdomik_crash";
+	};
+
+	{
+		file = "hozdomik3_new";
+		castshadows = false;
+		life = 20;
+		fire =
+		{
+			150;
+			2;
+		};
+		username = "Subsidiary structure 3";
+		maxSlope = 35;
+		desrt = "small_crash";
+	};
+
+	{
+		file = "kam_h";
+		castshadows = false;
+		life = 60;
+		fire =
+		{
+			60;
+			2;
+		};
+		maxSlope = 35;
+		desrt = "small_crash";
+	};
+
+	{
+		file = "kazarma1_new";
+		castshadows = false;
+		life = 800;
+		fire =
+		{
+			60;
+			2;
+		};
+		maxSlope = 10;
+		desrt = "kazarma1_crash";
+	};
+
+	{
+		file = "kazarma2_new";
+		castshadows = false;
+		life = 800;
+		fire =
+		{
+			60;
+			2;
+		};
+		maxSlope = 10;
+		desrt = "kazarma2_crash_new";
+	};
+
+	{
+		file = "klub_a";
+		castshadows = false;
+		life = 400;
+		fire =
+		{
+			60;
+			2;
+		};
+		username = "civil building";
+		maxSlope = 35;
+		desrt = "klub_crush";
+	};
+
+	{
+		file = "klub_b";
+		castshadows = false;
+		life = 400;
+		fire =
+		{
+			60;
+			2;
+		};
+		username = "civil building";
+		maxSlope = 35;
+		desrt = "klub_crush";
+	};
+
+	{
+		file = "KORPUS";
+		castshadows = false;
+		life = 1000;
+		fire =
+		{
+			180;
+			2;
+		};
+		username = "civil building";
+		maxSlope = 10;
+		desrt = "korpus_crush";
+	};
+
+	{
+		file = "korpus_a";
+		castshadows = false;
+		life = 1000;
+		fire =
+		{
+			180;
+			2;
+		};
+		username = "civil building";
+		maxSlope = 7;
+		desrt = "korpus_a_crush";
+	};
+
+	{
+		file = "korpus_a1";
+		castshadows = false;
+		life = 1000;
+		fire =
+		{
+			180;
+			2;
+		};
+		username = "civil building";
+		maxSlope = 7;
+		desrt = "korpus_a1_crush";
+	};
+
+	{
+		file = "korpus_b";
+		castshadows = false;
+		life = 1000;
+		fire =
+		{
+			180;
+			2;
+		};
+		username = "civil building";
+		maxSlope = 10;
+		desrt = "korpus_a_crush";
+	};
+
+	{
+		file = "korpus_b1";
+		castshadows = false;
+		life = 1200;
+		fire =
+		{
+			180;
+			2;
+		};
+		username = "civil building";
+		maxSlope = 8;
+		desrt = "ceh_d_crush";
+	};
+
+	{
+		file = "korpus_c";
+		castshadows = false;
+		life = 800;
+		fire =
+		{
+			60;
+			2;
+		};
+		username = "civil building";
+		maxSlope = 7;
+		desrt = "korpus_c_crush";
+	};
+
+	{
+		file = "korpus_d";
+		castshadows = false;
+		life = 800;
+		fire =
+		{
+			60;
+			2;
+		};
+		username = "civil building";
+		maxSlope = 7;
+		desrt = "korpus_d_crush";
+	};
+
+	{
+		file = "kotelnaya_a_new";
+		castshadows = false;
+		life = 150;
+		fire =
+		{
+			60;
+			2;
+		};
+		username = "Boiler-house A";
+		maxSlope = 35;
+		desrt = "kotelnaya_a_crash";
+	};
+
+	{
+		file = "kotelnaya_b";
+		castshadows = false;
+		life = 400;
+		fire =
+		{
+			60;
+			2;
+		};
+		username = "civil building";
+		classname = "Lsmoker";
+		maxSlope = 35;
+		desrt = "kotelnaya_b_crush";
+	};
+
+	{
+		file = "magazin_new";
+		castshadows = false;
+		life = 400;
+		fire =
+		{
+			0;
+			2;
+		};
+		username = "Shop";
+		maxSlope = 35;
+		desrt = "small_crash";
+	};
+
+	{
+		file = "MECHET";
+		castshadows = false;
+		life = 1600;
+		fire =
+		{
+			0;
+			2;
+		};
+		username = "sudak fortress";
+		maxSlope = 35;
+		desrt = "mechet_crush";
+	};
+
+	{
+		file = "mechet_hight";
+		castshadows = false;
+		life = 800;
+		fire =
+		{
+			60;
+			2;
+		};
+		maxSlope = 45;
+		desrt = "box_new_crash";
+	};
+
+	{
+		file = "meteoburo";
+		castshadows = false;
+		life = 6000;
+		fire =
+		{
+			60;
+			2;
+		};
+		maxSlope = 10;
+		desrt = "meteoburo_crush";
+	};
+
+	{
+		file = "polyklinika_a";
+		castshadows = false;
+		life = 1000;
+		fire =
+		{
+			120;
+			2;
+		};
+		username = "civil building";
+		maxSlope = 7;
+		desrt = "polyklinika_a_crush";
+	};
+
+	{
+		file = "RESTORAN1_new";
+		castshadows = false;
+		life = 640;
+		fire =
+		{
+			120;
+			2;
+		};
+		username = "Restaurant 1";
+		maxSlope = 35;
+		desrt = "restoran1_crash";
+	};
+
+	{
+		file = "s1_new";
+		life = 80;
+		fire =
+		{
+			60;
+			2;
+		};
+		maxSlope = 35;
+		desrt = "s1_crash";
+	};
+
+	{
+		file = "s2_new";
+		castshadows = false;
+		life = 80;
+		fire =
+		{
+			60;
+			2;
+		};
+		maxSlope = 35;
+		desrt = "s2_crash";
+	};
+
+	{
+		file = "s3_new";
+		castshadows = false;
+		life = 80;
+		fire =
+		{
+			60;
+			2;
+		};
+		maxSlope = 35;
+		desrt = "s3_crash";
+	};
+
+	{
+		file = "s4_new";
+		castshadows = false;
+		life = 80;
+		fire =
+		{
+			60;
+			2;
+		};
+		maxSlope = 35;
+		desrt = "s4_crash";
+	};
+
+	{
+		file = "school_a";
+		castshadows = false;
+		life = 1000;
+		fire =
+		{
+			120;
+			2;
+		};
+		username = "civil building";
+		maxSlope = 8;
+		desrt = "school_a_crush";
+	};
+
+	{
+		file = "sklad_new";
+		life = 400;
+		fire =
+		{
+			180;
+			2;
+		};
+		maxSlope = 10;
+		desrt = "sklad_new_crush";
+	};
+
+	{
+		file = "stadion_small";
+		castshadows = false;
+		life = 800;
+		fire =
+		{
+			0;
+			2;
+		};
+		username = "civil building";
+		desrt = "stadion_crash";
+	};
+
+	{
+		file = "STOLOVAYA_new";
+		life = 500;
+		fire =
+		{
+			60;
+			2;
+		};
+		maxSlope = 35;
+		desrt = "stolovaya_crash";
+	};
+
+	{
+		file = "stolovaya1";
+		castshadows = false;
+		life = 400;
+		fire =
+		{
+			60;
+			2;
+		};
+		username = "civil building";
+		maxSlope = 8;
+		desrt = "stolovaya1_crash";
+	};
+
+	{
+		file = "TEC_a_new";
+		castshadows = false;
+		life = 1600;
+		fire =
+		{
+			300;
+			2;
+		};
+		maxSlope = 8;
+		desrt = "tec_a_crash";
+	};
+
+	{
+		file = "tech_new";
+		castshadows = false;
+		life = 500;
+		fire =
+		{
+			300;
+			2;
+		};
+		username = "Repair workshop";
+		maxSlope = 12;
+		desrt = "tech_crash";
+	};
+
+	{
+		file = "TENNIS";
+		castshadows = false;
+		fire =
+		{
+			0;
+			0;
+		};
+		maxSlope = 8;
+	};
+
+	{
+		file = "tr_budka_new";
+		castshadows = false;
+		life = 150;
+		fire =
+		{
+			0;
+			2;
+		};
+		maxSlope = 35;
+		desrt = "tr_budka_crash";
+	};
+
+	{
+		file = "uniwersam_a_new";
+		castshadows = false;
+		life = 800;
+		fire =
+		{
+			120;
+			2;
+		};
+		maxSlope = 12;
+		desrt = "uniwersam_a_new_crash";
+	};
+
+	{
+		file = "wodokachka_c";
+		castshadows = false;
+		life = 80;
+		fire =
+		{
+			0;
+			2;
+		};
+		username = "civil building";
+		maxSlope = 35;
+		desrt = "wodokachka_b_crush";
 	};
 
 };

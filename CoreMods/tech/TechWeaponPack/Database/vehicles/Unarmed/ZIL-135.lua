@@ -26,7 +26,7 @@ GT.visual.min_time_agony = 10;
 GT.visual.max_time_agony = 80;
 GT.visual.agony_explosion_size = 2;
 
-GT.visual.IR = { coeffs = {GT_t.IR_COEFFS_ENGINE_Tank, GT_t.IR_COEFFS_WHEELS_Truck, {0.0, 0.0}, IR_COEFFS_BODY, {0.29, 0.29/1600}}}
+GT.visual.IR = { coeffs = {GT_t.IR_COEFFS_ENGINE_Tank, GT_t.IR_COEFFS_WHEELS_Truck, {0.0, 0.0}, GT_t.IR_COEFFS_BODY, {0.29, 0.29/1600}}}
 
 GT.driverViewPoint = {3.42, 2.3, -0.765};
 

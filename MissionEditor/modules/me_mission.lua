@@ -7725,8 +7725,6 @@ function fixOperatingLevel(a_warehouses)
     end
 end
 
-
-
 function fixAirportCoalition(warehouses)
 	if warehouses.airports then
 		local coalitionNames = {
@@ -7968,6 +7966,9 @@ function isMissionModified()
 
 	if originalMission then
 		identical = U.compareTables(originalMission, mission, ignoredFields)
+	
+		local zonesTmp = TriggerZoneController.saveTriggerZones()
+		identical = identical and U.compareTables(originalMission.triggers.zones, zonesTmp, ignoredFields)
 		
 		if identical and originalMission.groundControl then 
 			identical = U.compareTables(originalMission.groundControl, panel_roles.getGroundControlData())
@@ -8251,6 +8252,52 @@ function createAirportEquipment()
 		end
         return tmpAirportEquipment
     end
+	
+	function mergeWarehouses(a_user, a_sys, a_resultT)
+		for k, v in pairs(a_sys) do
+			if k ~= "weapons" then
+				if base.type(v) == 'table' then
+					if a_user[k] == nil then
+						a_resultT[k] = v 
+					else
+						a_resultT[k] = {}
+						mergeWarehouses(a_user[k], v, a_resultT[k])
+					end
+				else
+					if a_user[k] ~= nil then
+						a_resultT[k] = a_user[k]
+					else
+						a_resultT[k] = v    
+					end
+				end
+			else
+				if #a_user.weapons == 0 then
+					a_resultT.weapons = v
+				else
+					a_resultT.weapons = a_resultT.weapons or {}
+					
+					for i, weapon_s in ipairs(v) do
+						local bEnaled = false
+						
+						for kk, vv in base.pairs(a_user.weapons) do
+							if weapon_s.wsType[1] == vv.wsType[1] 
+								and weapon_s.wsType[2] == vv.wsType[2] 
+								and weapon_s.wsType[3] == vv.wsType[3] 
+								and weapon_s.wsType[4] == vv.wsType[4] then
+								bEnaled = true
+								table.insert(a_resultT.weapons, {initialAmount = vv.initialAmount, wsType	= weapon_s.wsType})	
+								break
+							end	
+						end
+
+						if bEnaled == false then
+							table.insert(a_resultT.weapons, {initialAmount = 0, wsType	= weapon_s.wsType})							
+						end
+					end
+				end
+			end
+		end 
+	end
 
     local AirportsEquipment = {}
     AirportsEquipment.airports = {}
@@ -8278,7 +8325,8 @@ function createAirportEquipment()
         end
     end   
     local tmpTable = {}
-    base.U.mergeTablesToTable(mission.AirportsEquipment.airports, AirportsEquipment.airports, tmpTable)
+    mergeWarehouses(mission.AirportsEquipment.airports, AirportsEquipment.airports, tmpTable)
+
     AirportsEquipment.airports = tmpTable
  
  -- проверяем/дополняем записанные в миссии склады
@@ -8292,9 +8340,9 @@ function createAirportEquipment()
             AirportsEquipment.warehouses[key].suppliers = {}
         end
     end
- --base.U.traverseTable(mission.AirportsEquipment.airports[22], 3)   
-    local tmpTable = {}
-    base.U.mergeTablesToTable(mission.AirportsEquipment.warehouses, AirportsEquipment.warehouses, tmpTable)
+  
+    local tmpTable = {}	
+    mergeWarehouses(mission.AirportsEquipment.warehouses, AirportsEquipment.warehouses, tmpTable)	
     AirportsEquipment.warehouses = tmpTable
     mission.AirportsEquipment = AirportsEquipment
    -- base.U.traverseTable(mission.AirportsEquipment.warehouses, 3)

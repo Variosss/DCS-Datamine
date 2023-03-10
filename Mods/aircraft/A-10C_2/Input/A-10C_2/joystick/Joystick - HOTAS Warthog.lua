@@ -1,16 +1,77 @@
 local cockpit = folder.."../../../Cockpit/Scripts/"
 dofile(cockpit.."devices.lua")
 dofile(cockpit.."command_defs.lua")
+dofile(cockpit.."config.lua")
 
-return {
+local VHF_or_ARC210 = {}
 
-forceFeedback = {
-trimmer = 1.0,
-shake = 0.5,
-swapAxes = false,
-},
+--VHF AM Radio Control Panel
+if ARC_210_ENABLED then
+	VHF_or_ARC210[#VHF_or_ARC210 + 1] = {down = device_commands.Button_43, cockpit_device_id = devices.VHF_AM_RADIO, value_down = 0.0, name = _('VHF AM Master Knob: Radio off'), category = _('VHF AM Radio (ARC-210) Control Panel')}
+	VHF_or_ARC210[#VHF_or_ARC210 + 1] = {down = device_commands.Button_43, cockpit_device_id = devices.VHF_AM_RADIO, value_down = 0.1, name = _('VHF AM Master Knob: Transmit-receive mode with guard receiver'), category = _('VHF AM Radio (ARC-210) Control Panel')}
+	VHF_or_ARC210[#VHF_or_ARC210 + 1] = {down = device_commands.Button_43, cockpit_device_id = devices.VHF_AM_RADIO, value_down = 0.2, name = _('VHF AM Master Knob: Transmit-receive mode'), category = _('VHF AM Radio (ARC-210) Control Panel')}
+	VHF_or_ARC210[#VHF_or_ARC210 + 1] = {down = device_commands.Button_43, cockpit_device_id = devices.VHF_AM_RADIO, value_down = 0.4, name = _('VHF AM Radio Master Knob: Change preset mode'), category = _('VHF AM Radio (ARC-210) Control Panel')}
+	
+	VHF_or_ARC210[#VHF_or_ARC210 + 1] = {down = device_commands.Button_44, cockpit_device_id = devices.VHF_AM_RADIO, value_down = 0.2, name = _('VHF AM Secondary Knob: PRST Mode'), category = _('VHF AM Radio (ARC-210) Control Panel')}
+	VHF_or_ARC210[#VHF_or_ARC210 + 1] = {down = device_commands.Button_44, cockpit_device_id = devices.VHF_AM_RADIO, value_down = 0.3, name = _('VHF AM Secondary Knob: MAN Mode'), category = _('VHF AM Radio (ARC-210) Control Panel')}
+	VHF_or_ARC210[#VHF_or_ARC210 + 1] = {down = device_commands.Button_44, cockpit_device_id = devices.VHF_AM_RADIO, value_down = 0.5, name = _('VHF AM Secondary Knob: 243 Guard Frequency Mode'), category = _('VHF AM Radio (ARC-210) Control Panel')}
+	VHF_or_ARC210[#VHF_or_ARC210 + 1] = {down = device_commands.Button_44, cockpit_device_id = devices.VHF_AM_RADIO, value_down = 0.6, name = _('VHF AM Secondary Knob: 121.5 Guard Frequency Mode'), category = _('VHF AM Radio (ARC-210) Control Panel')}
 
-keyCommands = {
+	VHF_or_ARC210[#VHF_or_ARC210 + 1] = {down = device_commands.Button_10, up = device_commands.Button_10, cockpit_device_id = devices.VHF_AM_RADIO, value_down = 1.0, value_up = 0.0, name = _('VHF AM Menu Button'), category = _('VHF AM Radio (ARC-210) Control Panel')}
+	VHF_or_ARC210[#VHF_or_ARC210 + 1] = {down = device_commands.Button_11, up = device_commands.Button_11, cockpit_device_id = devices.VHF_AM_RADIO, value_down = 1.0, value_up = 0.0, name = _('VHF AM AM/FM select'), category = _('VHF AM Radio (ARC-210) Control Panel')}
+	VHF_or_ARC210[#VHF_or_ARC210 + 1] = {down = device_commands.Button_13, up = device_commands.Button_13, cockpit_device_id = devices.VHF_AM_RADIO, value_down = 1.0, value_up = 0.0, name = _('VHF AM Offset frequency button'), category = _('VHF AM Radio (ARC-210) Control Panel')}
+
+	VHF_or_ARC210[#VHF_or_ARC210 + 1] = {down = device_commands.Button_5, up = device_commands.Button_5, cockpit_device_id = devices.VHF_AM_RADIO, value_down = 1.0, value_up = 0.0, name = _('VHF AM FSK upper key'), category = _('VHF AM Radio (ARC-210) Control Panel')}
+	VHF_or_ARC210[#VHF_or_ARC210 + 1] = {down = device_commands.Button_6, up = device_commands.Button_6, cockpit_device_id = devices.VHF_AM_RADIO, value_down = 1.0, value_up = 0.0, name = _('VHF AM FSK middle key'), category = _('VHF AM Radio (ARC-210) Control Panel')}
+	VHF_or_ARC210[#VHF_or_ARC210 + 1] = {down = device_commands.Button_7, up = device_commands.Button_7, cockpit_device_id = devices.VHF_AM_RADIO, value_down = 1.0, value_up = 0.0, name = _('VHF AM FSK lower key'), category = _('VHF AM Radio (ARC-210) Control Panel')}	
+
+	VHF_or_ARC210[#VHF_or_ARC210 + 1] = {down = device_commands.Button_8, up = device_commands.Button_8, cockpit_device_id = devices.VHF_AM_RADIO, value_down = 1.0, value_up = 0.0, name = _('VHF AM brightness increase'), category = _('VHF AM Radio (ARC-210) Control Panel')}
+	VHF_or_ARC210[#VHF_or_ARC210 + 1] = {down = device_commands.Button_9, up = device_commands.Button_9, cockpit_device_id = devices.VHF_AM_RADIO, value_down = 1.0, value_up = 0.0, name = _('VHF AM brightness decrease'), category = _('VHF AM Radio (ARC-210) Control Panel')}	
+	
+	VHF_or_ARC210[#VHF_or_ARC210 + 1] = {down = device_commands.Button_15, cockpit_device_id = devices.VHF_AM_RADIO, value_down = 1.0, name = _('VHF AM Squelch On'), category = _('VHF AM Radio (ARC-210) Control Panel')}
+	VHF_or_ARC210[#VHF_or_ARC210 + 1] = {down = device_commands.Button_15, cockpit_device_id = devices.VHF_AM_RADIO, value_down = 0.0, name = _('VHF AM Squelch Off'), category = _('VHF AM Radio (ARC-210) Control Panel')}
+
+	VHF_or_ARC210[#VHF_or_ARC210 + 1] = {down = device_commands.Button_27, cockpit_device_id = devices.VHF_AM_RADIO, value_down = 0.1, name = _('VHF AM Next Channel'), category = _('VHF AM Radio (ARC-210) Control Panel')}
+	VHF_or_ARC210[#VHF_or_ARC210 + 1] = {down = device_commands.Button_27, cockpit_device_id = devices.VHF_AM_RADIO, value_down = -0.1, name = _('VHF AM Previous Channel'), category = _('VHF AM Radio (ARC-210) Control Panel')}
+
+	VHF_or_ARC210[#VHF_or_ARC210 + 1] = {down = device_commands.Button_45, cockpit_device_id = devices.VHF_AM_RADIO, value_down = -1,	name = _('VHF AM 100Mhz Selector Decrease'), category = _('VHF AM Radio (ARC-210) Control Panel')}
+	VHF_or_ARC210[#VHF_or_ARC210 + 1] = {down = device_commands.Button_45, cockpit_device_id = devices.VHF_AM_RADIO, value_down = 1,	name = _('VHF AM 100Mhz Selector Increase'), category = _('VHF AM Radio (ARC-210) Control Panel')}
+	VHF_or_ARC210[#VHF_or_ARC210 + 1] = {down = device_commands.Button_46, cockpit_device_id = devices.VHF_AM_RADIO, value_down = -1,	name = _('VHF AM 10Mhz Selector Decrease'), category = _('VHF AM Radio (ARC-210) Control Panel')}
+	VHF_or_ARC210[#VHF_or_ARC210 + 1] = {down = device_commands.Button_46, cockpit_device_id = devices.VHF_AM_RADIO, value_down = 1,	name = _('VHF AM 10Mhz Selector Increase'), category = _('VHF AM Radio (ARC-210) Control Panel')}
+	VHF_or_ARC210[#VHF_or_ARC210 + 1] = {down = device_commands.Button_47, cockpit_device_id = devices.VHF_AM_RADIO, value_down = -1,	name = _('VHF AM 1Mhz Selector Decrease'), category = _('VHF AM Radio (ARC-210) Control Panel')}
+	VHF_or_ARC210[#VHF_or_ARC210 + 1] = {down = device_commands.Button_47, cockpit_device_id = devices.VHF_AM_RADIO, value_down = 1,	name = _('VHF AM 1Mhz Selector Increase'), category = _('VHF AM Radio (ARC-210) Control Panel')}
+	VHF_or_ARC210[#VHF_or_ARC210 + 1] = {down = device_commands.Button_48, cockpit_device_id = devices.VHF_AM_RADIO, value_down = -1,	name = _('VHF AM 0.1Mhz Selector Decrease'), category = _('VHF AM Radio (ARC-210) Control Panel')}
+	VHF_or_ARC210[#VHF_or_ARC210 + 1] = {down = device_commands.Button_48, cockpit_device_id = devices.VHF_AM_RADIO, value_down = 1,	name = _('VHF AM 0.1Mhz Selector Increase'), category = _('VHF AM Radio (ARC-210) Control Panel')}
+	VHF_or_ARC210[#VHF_or_ARC210 + 1] = {down = device_commands.Button_49, cockpit_device_id = devices.VHF_AM_RADIO, value_down = -1,	name = _('VHF AM 0.025Mhz Selector Decrease'), category = _('VHF AM Radio (ARC-210) Control Panel')}
+	VHF_or_ARC210[#VHF_or_ARC210 + 1] = {down = device_commands.Button_49, cockpit_device_id = devices.VHF_AM_RADIO, value_down = 1,	name = _('VHF AM 0.025Mhz Selector Increase'), category = _('VHF AM Radio (ARC-210) Control Panel')}
+else
+	VHF_or_ARC210[#VHF_or_ARC210 + 1] = {pressed = iCommandPlane_VHF_AM_Volume_Dec, 			name = _('VHF AM Volume Decrease'), category = _('VHF AM Radio (ARC-186) Control Panel')}
+	VHF_or_ARC210[#VHF_or_ARC210 + 1] = {pressed = iCommandPlane_VHF_AM_Volume_Inc, 			name = _('VHF AM Volume Increase'), category = _('VHF AM Radio (ARC-186) Control Panel')}
+	VHF_or_ARC210[#VHF_or_ARC210 + 1] = {down = iCommandPlane_VHF_AM_Mode_EMERFM, 				name = _('VHF AM Mode EMER FM'), category = _('VHF AM Radio (ARC-186) Control Panel')}
+	VHF_or_ARC210[#VHF_or_ARC210 + 1] = {down = iCommandPlane_VHF_AM_Mode_EMERAM, 				name = _('VHF AM Mode EMER AM'), category = _('VHF AM Radio (ARC-186) Control Panel')}
+	VHF_or_ARC210[#VHF_or_ARC210 + 1] = {down = iCommandPlane_VHF_AM_Mode_MAN, 					name = _('VHF AM Mode MAN'), category = _('VHF AM Radio (ARC-186) Control Panel')}
+	VHF_or_ARC210[#VHF_or_ARC210 + 1] = {down = iCommandPlane_VHF_AM_Mode_PRE, 					name = _('VHF AM Mode PRE'), category = _('VHF AM Radio (ARC-186) Control Panel')}
+	VHF_or_ARC210[#VHF_or_ARC210 + 1] = {down = iCommandPlane_VHF_AM_FreqMode_OFF, 				name = _('VHF AM Frequency Mode OFF'), category = _('VHF AM Radio (ARC-186) Control Panel')}
+	VHF_or_ARC210[#VHF_or_ARC210 + 1] = {down = iCommandPlane_VHF_AM_FreqMode_TK, 				name = _('VHF AM Frequency Mode TK'), category = _('VHF AM Radio (ARC-186) Control Panel')}
+	VHF_or_ARC210[#VHF_or_ARC210 + 1] = {down = iCommandPlane_VHF_AM_FreqMode_DN, 				name = _('VHF AM Frequency Mode DN'), category = _('VHF AM Radio (ARC-186) Control Panel')}
+	VHF_or_ARC210[#VHF_or_ARC210 + 1] = {down = iCommandPlane_VHF_AM_Squelch, 				    name = _('VHF AM Squelch'), category = _('VHF AM Radio (ARC-186) Control Panel')}
+	VHF_or_ARC210[#VHF_or_ARC210 + 1] = {down = iCommandPlane_VHF_AM_Tone,up = iCommandPlane_VHF_AM_Tone, name = _('VHF AM Tone'), category = _('VHF AM Radio (ARC-186) Control Panel')}
+	VHF_or_ARC210[#VHF_or_ARC210 + 1] = {down = iCommandPlane_VHF_AM_Load,up=iCommandPlane_VHF_AM_Load, name = _('VHF AM Load'), category = _('VHF AM Radio (ARC-186) Control Panel')}
+
+	VHF_or_ARC210[#VHF_or_ARC210 + 1] = {down = device_commands.Button_17, cockpit_device_id = devices.VHF_AM_RADIO, value_down = -1.0,name = _('VHF AM Preset Channel Decrease'), category = _('VHF AM Radio (ARC-186) Control Panel')}
+	VHF_or_ARC210[#VHF_or_ARC210 + 1] = {down = device_commands.Button_17, cockpit_device_id = devices.VHF_AM_RADIO, value_down = 1.0,name = _('VHF AM Preset Channel Increase'), category = _('VHF AM Radio (ARC-186) Control Panel')}
+	VHF_or_ARC210[#VHF_or_ARC210 + 1] = {pressed = iCommandPlane_VHF_AM_10MHz_Dec, 				name = _('VHF AM 10Mhz Selector Decrease'), category = _('VHF AM Radio (ARC-186) Control Panel')}
+	VHF_or_ARC210[#VHF_or_ARC210 + 1] = {pressed = iCommandPlane_VHF_AM_10MHz_Inc, 				name = _('VHF AM 10Mhz Selector Increase'), category = _('VHF AM Radio (ARC-186) Control Panel')}
+
+	VHF_or_ARC210[#VHF_or_ARC210 + 1] = {pressed = iCommandPlane_VHF_AM_1MHz_Dec, 				name = _('VHF AM 1Mhz Selector Decrease'), category = _('VHF AM Radio (ARC-186) Control Panel')}
+	VHF_or_ARC210[#VHF_or_ARC210 + 1] = {pressed = iCommandPlane_VHF_AM_1MHz_Inc, 				name = _('VHF AM 1Mhz Selector Increase'), category = _('VHF AM Radio (ARC-186) Control Panel')}
+	VHF_or_ARC210[#VHF_or_ARC210 + 1] = {pressed = iCommandPlane_VHF_AM_01MHz_Dec, 				name = _('VHF AM 0.1Mhz Selector Decrease'), category = _('VHF AM Radio (ARC-186) Control Panel')}
+	VHF_or_ARC210[#VHF_or_ARC210 + 1] = {pressed = iCommandPlane_VHF_AM_01MHz_Inc, 				name = _('VHF AM 0.1Mhz Selector Increase'), category = _('VHF AM Radio (ARC-186) Control Panel')}
+	VHF_or_ARC210[#VHF_or_ARC210 + 1] = {pressed = iCommandPlane_VHF_AM_025MHz_Dec, 			name = _('VHF AM 0.025Mhz Selector Decrease'), category = _('VHF AM Radio (ARC-186) Control Panel')}
+	VHF_or_ARC210[#VHF_or_ARC210 + 1] = {pressed = iCommandPlane_VHF_AM_025MHz_Inc, 			name = _('VHF AM 0.025Mhz Selector Increase'), category = _('VHF AM Radio (ARC-186) Control Panel')}
+end
+
+local res = {keyCommands = {
 {down = iCommandEnginesStart, name = _('Start Procedure'), category = _('Cheat')},
 {down = iCommandEnginesStop, name = _('Stop Procedure'), category = _('Cheat')},
 
@@ -45,7 +106,7 @@ keyCommands = {
 {down = iCommandViewLocal, name = _('F2 Toggle local camera control'), category = _('View')},
 {down = iCommandViewTower, name = _('F3 Fly-By view'), category = _('View')},
 {down = iCommandViewTowerJump, name = _('F3 Fly-By jump view'), category = _('View')},
-{down = iCommandViewRear, name = _('F4 Camera mounted on airframe'), category = _('View')},
+{down = iCommandViewRear, name = _('F4 Camera mounted on object'), category = _('View')},
 {down = iCommandViewChase, name = _('F4 Chase view'), category = _('View')},
 {down = iCommandViewChaseArcade, name = _('F4 Arcade View'), category = _('View')},
 {down = iCommandViewFight, name = _('F5 nearest AC view'), category = _('View')},
@@ -575,35 +636,35 @@ keyCommands = {
 {down = iCommandPlaneFireDetectBleedAirTest, up = 	iCommandPlaneFireDetectBleedAirTest	, name = _('Fire detect bleed air leak test'), category = _('Auxiliary lighting control panel')},
 
 --UHF Radio
-{down = iCommandPlaneUHFPresetChannelSelectorDec		, name = _('UHF Preset chanel selector decrease'), category = _('UHF Radio')},
-{down = iCommandPlaneUHFPresetChannelSelectorInc		, name = _('UHF Preset chanel selector increase'), category = _('UHF Radio')},
---{down = iCommandPlaneUHF100MhzSelector1					, name = _('UHF 100Mhz selector switch 1'), category = _('UHF Radio')},
-{down = iCommandPlaneUHF100MhzSelector2					, name = _('UHF 100Mhz selector switch 2'), category = _('UHF Radio')},
-{down = iCommandPlaneUHF100MhzSelector3					, name = _('UHF 100Mhz selector switch 3'), category = _('UHF Radio')},
-{down = iCommandPlaneUHF100MhzSelectorA					, name = _('UHF 100Mhz selector switch A'), category = _('UHF Radio')},
-{down = iCommandPlaneUHF10MhzSelectorDec				, name = _('UHF 10Mhz selector decrease'), category = _('UHF Radio')},
-{down = iCommandPlaneUHF10MhzSelectorInc				, name = _('UHF 10Mhz selector increase'), category = _('UHF Radio')},
-{down= iCommandPlaneUHF1MhzSelectorDec				, name = _('UHF 1Mhz selector decrease'), category = _('UHF Radio')},
-{down = iCommandPlaneUHF1MhzSelectorInc				, name = _('UHF 1Mhz selector increase'), category = _('UHF Radio')},
-{down = iCommandPlaneUHF01MhzSelectorDec				, name = _('UHF 0.1Mhz selector decrease'), category = _('UHF Radio')},
-{down= iCommandPlaneUHF01MhzSelectorInc				, name = _('UHF 0.1Mhz selector increase'), category = _('UHF Radio')},
-{down= iCommandPlaneUHF0025MhzSelectorDec			, name = _('UHF 0.025Mhz selector decrease'), category = _('UHF Radio')},
-{down= iCommandPlaneUHF0025MhzSelectorInc			, name = _('UHF 0.025Mhz selector increase'), category = _('UHF Radio')},
-{down = iCommandPlaneUHFTestDisplay,up = iCommandPlaneUHFTestDisplay, name = _('UHF Test display'), category = _('UHF Radio')},
-{down = iCommandPlaneUHFStatus,up = iCommandPlaneUHFStatus, name = _('UHF Status'), category = _('UHF Radio')},
-{down = iCommandPlaneUHFLoad,up = iCommandPlaneUHFLoad, name = _('UHF Load'), category = _('UHF Radio')},
-{pressed = iCommandPlaneUHFVolumeDec					, name = _('UHF Volume decrease'), category = _('UHF Radio')},
-{pressed = iCommandPlaneUHFVolumeInc					, name = _('UHF Volume increase'), category = _('UHF Radio')},
-{down = iCommandPlaneUHFFunctionDialOFF					, name = _('UHF Dial OFF'), category = _('UHF Radio')},
-{down = iCommandPlaneUHFFunctionDialMAIN				, name = _('UHF Dial MAIN'), category = _('UHF Radio')},
-{down = iCommandPlaneUHFFunctionDialBOTH				, name = _('UHF Dial BOTH'), category = _('UHF Radio')},
-{down = iCommandPlaneUHFFunctionDialADF					, name = _('UHF Dial ADF'), category = _('UHF Radio')},
-{down = iCommandPlaneUHFFreqModeDialMNL					, name = _('UHF Freq mode MNL'), category = _('UHF Radio')},
-{down = iCommandPlaneUHFFreqModeDialPRESET				, name = _('UHF Freq mode PRESET'), category = _('UHF Radio')},
-{down = iCommandPlaneUHFFreqModeDialGRD					, name = _('UHF Freq mode GRD'), category = _('UHF Radio')},
-{down = iCommandPlaneUHFTTone,up = iCommandPlaneUHFTTone, name = _('UHF T-Tone'), category = _('UHF Radio')},
-{down = iCommandPlaneUHFSquelch							, name = _('UHF Squelch ON/OFF'), category = _('UHF Radio')},
-{down = iCommandPlaneUHFPanelCover						, name = _('UHF Panel cover'), category = _('UHF Radio')},
+{down = iCommandPlaneUHFPresetChannelSelectorDec		, name = _('UHF Preset chanel selector decrease'), category = _('UHF Radio (ARC-164) Control Panel')},
+{down = iCommandPlaneUHFPresetChannelSelectorInc		, name = _('UHF Preset chanel selector increase'), category = _('UHF Radio (ARC-164) Control Panel')},
+--{down = iCommandPlaneUHF100MhzSelector1					, name = _('UHF 100Mhz selector switch 1'), category = _('UHF Radio (ARC-164) Control Panel')},
+{down = iCommandPlaneUHF100MhzSelector2					, name = _('UHF 100Mhz selector switch 2'), category = _('UHF Radio (ARC-164) Control Panel')},
+{down = iCommandPlaneUHF100MhzSelector3					, name = _('UHF 100Mhz selector switch 3'), category = _('UHF Radio (ARC-164) Control Panel')},
+{down = iCommandPlaneUHF100MhzSelectorA					, name = _('UHF 100Mhz selector switch A'), category = _('UHF Radio (ARC-164) Control Panel')},
+{down = iCommandPlaneUHF10MhzSelectorDec				, name = _('UHF 10Mhz selector decrease'), category = _('UHF Radio (ARC-164) Control Panel')},
+{down = iCommandPlaneUHF10MhzSelectorInc				, name = _('UHF 10Mhz selector increase'), category = _('UHF Radio (ARC-164) Control Panel')},
+{down= iCommandPlaneUHF1MhzSelectorDec				, name = _('UHF 1Mhz selector decrease'), category = _('UHF Radio (ARC-164) Control Panel')},
+{down = iCommandPlaneUHF1MhzSelectorInc				, name = _('UHF 1Mhz selector increase'), category = _('UHF Radio (ARC-164) Control Panel')},
+{down = iCommandPlaneUHF01MhzSelectorDec				, name = _('UHF 0.1Mhz selector decrease'), category = _('UHF Radio (ARC-164) Control Panel')},
+{down= iCommandPlaneUHF01MhzSelectorInc				, name = _('UHF 0.1Mhz selector increase'), category = _('UHF Radio (ARC-164) Control Panel')},
+{down= iCommandPlaneUHF0025MhzSelectorDec			, name = _('UHF 0.025Mhz selector decrease'), category = _('UHF Radio (ARC-164) Control Panel')},
+{down= iCommandPlaneUHF0025MhzSelectorInc			, name = _('UHF 0.025Mhz selector increase'), category = _('UHF Radio (ARC-164) Control Panel')},
+{down = iCommandPlaneUHFTestDisplay,up = iCommandPlaneUHFTestDisplay, name = _('UHF Test display'), category = _('UHF Radio (ARC-164) Control Panel')},
+{down = iCommandPlaneUHFStatus,up = iCommandPlaneUHFStatus, name = _('UHF Status'), category = _('UHF Radio (ARC-164) Control Panel')},
+{down = iCommandPlaneUHFLoad,up = iCommandPlaneUHFLoad, name = _('UHF Load'), category = _('UHF Radio (ARC-164) Control Panel')},
+{pressed = iCommandPlaneUHFVolumeDec					, name = _('UHF Volume decrease'), category = _('UHF Radio (ARC-164) Control Panel')},
+{pressed = iCommandPlaneUHFVolumeInc					, name = _('UHF Volume increase'), category = _('UHF Radio (ARC-164) Control Panel')},
+{down = iCommandPlaneUHFFunctionDialOFF					, name = _('UHF Dial OFF'), category = _('UHF Radio (ARC-164) Control Panel')},
+{down = iCommandPlaneUHFFunctionDialMAIN				, name = _('UHF Dial MAIN'), category = _('UHF Radio (ARC-164) Control Panel')},
+{down = iCommandPlaneUHFFunctionDialBOTH				, name = _('UHF Dial BOTH'), category = _('UHF Radio (ARC-164) Control Panel')},
+{down = iCommandPlaneUHFFunctionDialADF					, name = _('UHF Dial ADF'), category = _('UHF Radio (ARC-164) Control Panel')},
+{down = iCommandPlaneUHFFreqModeDialMNL					, name = _('UHF Freq mode MNL'), category = _('UHF Radio (ARC-164) Control Panel')},
+{down = iCommandPlaneUHFFreqModeDialPRESET				, name = _('UHF Freq mode PRESET'), category = _('UHF Radio (ARC-164) Control Panel')},
+{down = iCommandPlaneUHFFreqModeDialGRD					, name = _('UHF Freq mode GRD'), category = _('UHF Radio (ARC-164) Control Panel')},
+{down = iCommandPlaneUHFTTone,up = iCommandPlaneUHFTTone, name = _('UHF T-Tone'), category = _('UHF Radio (ARC-164) Control Panel')},
+{down = iCommandPlaneUHFSquelch							, name = _('UHF Squelch ON/OFF'), category = _('UHF Radio (ARC-164) Control Panel')},
+{down = iCommandPlaneUHFPanelCover						, name = _('UHF Panel cover'), category = _('UHF Radio (ARC-164) Control Panel')},
 
 --CDU Panel
 {down = iCommandPlaneCDU_LSK_3L,up = iCommandPlaneCDU_LSK_3L, name = _('CDU LSK L3'), category = _('CDU panel')},
@@ -898,32 +959,33 @@ keyCommands = {
 {pressed = iCommandPlane_Peak_Vol_Increase, 			name = _('Peak volume Increase'), category = _('Stall Warning Control Panel')},
 
 --VHF FM Radio Control Panel
-{pressed = iCommandPlane_VHF_FM_Volume_Dec, 			name = _('VHF FM Volume Decrease'), category = _('VHF FM Radio Control Panel')},
-{pressed = iCommandPlane_VHF_FM_Volume_Inc, 			name = _('VHF FM Volume Increase'), category = _('VHF FM Radio Control Panel')},
-{down = iCommandPlane_VHF_FM_Mode_EMERFM, 				name = _('VHF FM Mode EMER FM'), category = _('VHF FM Radio Control Panel')},
-{down = iCommandPlane_VHF_FM_Mode_EMERAM, 				name = _('VHF FM Mode EMER AM'), category = _('VHF FM Radio Control Panel')},
-{down = iCommandPlane_VHF_FM_Mode_MAN, 					name = _('VHF FM Mode MAN'), category = _('VHF FM Radio Control Panel')},
-{down = iCommandPlane_VHF_FM_Mode_PRE, 					name = _('VHF FM Mode PRE'), category = _('VHF FM Radio Control Panel')},
-{down = iCommandPlane_VHF_FM_FreqMode_OFF, 				name = _('VHF FM Frequency Mode OFF'), category = _('VHF FM Radio Control Panel')},
-{down = iCommandPlane_VHF_FM_FreqMode_TK, 				name = _('VHF FM Frequency Mode TK'), category = _('VHF FM Radio Control Panel')},
-{down = iCommandPlane_VHF_FM_FreqMode_DN, 				name = _('VHF FM Frequency Mode DN'), category = _('VHF FM Radio Control Panel')},
-{down = iCommandPlane_VHF_FM_Squelch, 				    name = _('VHF FM Squelch'), category = _('VHF FM Radio Control Panel')},
-{down = iCommandPlane_VHF_FM_Tone,up = iCommandPlane_VHF_FM_Tone, name = _('VHF FM Tone'), category = _('VHF FM Radio Control Panel')},
-{down = iCommandPlane_VHF_FM_Load,up=iCommandPlane_VHF_FM_Load, name = _('VHF FM Load'), category = _('VHF FM Radio Control Panel')},
-{down = device_commands.Button_17, cockpit_device_id = devices.VHF_FM_RADIO, value_down = -1.0,name = _('VHF FM Preset Channel Decrease'), category = _('VHF FM Radio Control Panel')},
-{down = device_commands.Button_17, cockpit_device_id = devices.VHF_FM_RADIO, value_down = 1.0,name = _('VHF FM Preset Channel Increase'), category = _('VHF FM Radio Control Panel')},
+{pressed = iCommandPlane_VHF_FM_Volume_Dec, 			name = _('VHF FM Volume Decrease'), category = _('VHF FM Radio (ARC-186) Control Panel')},
+{pressed = iCommandPlane_VHF_FM_Volume_Inc, 			name = _('VHF FM Volume Increase'), category = _('VHF FM Radio (ARC-186) Control Panel')},
+{down = iCommandPlane_VHF_FM_Mode_EMERFM, 				name = _('VHF FM Mode EMER FM'), category = _('VHF FM Radio (ARC-186) Control Panel')},
+{down = iCommandPlane_VHF_FM_Mode_EMERAM, 				name = _('VHF FM Mode EMER AM'), category = _('VHF FM Radio (ARC-186) Control Panel')},
+{down = iCommandPlane_VHF_FM_Mode_MAN, 					name = _('VHF FM Mode MAN'), category = _('VHF FM Radio (ARC-186) Control Panel')},
+{down = iCommandPlane_VHF_FM_Mode_PRE, 					name = _('VHF FM Mode PRE'), category = _('VHF FM Radio (ARC-186) Control Panel')},
+{down = iCommandPlane_VHF_FM_FreqMode_OFF, 				name = _('VHF FM Frequency Mode OFF'), category = _('VHF FM Radio (ARC-186) Control Panel')},
+{down = iCommandPlane_VHF_FM_FreqMode_TK, 				name = _('VHF FM Frequency Mode TK'), category = _('VHF FM Radio (ARC-186) Control Panel')},
+{down = iCommandPlane_VHF_FM_FreqMode_DN, 				name = _('VHF FM Frequency Mode DN'), category = _('VHF FM Radio (ARC-186) Control Panel')},
+{down = iCommandPlane_VHF_FM_Squelch, 				    name = _('VHF FM Squelch'), category = _('VHF FM Radio (ARC-186) Control Panel')},
+{down = iCommandPlane_VHF_FM_Tone,up = iCommandPlane_VHF_FM_Tone, name = _('VHF FM Tone'), category = _('VHF FM Radio (ARC-186) Control Panel')},
+{down = iCommandPlane_VHF_FM_Load,up=iCommandPlane_VHF_FM_Load, name = _('VHF FM Load'), category = _('VHF FM Radio (ARC-186) Control Panel')},
+{down = device_commands.Button_17, cockpit_device_id = devices.VHF_FM_RADIO, value_down = -1.0,name = _('VHF FM Preset Channel Decrease'), category = _('VHF FM Radio (ARC-186) Control Panel')},
+{down = device_commands.Button_17, cockpit_device_id = devices.VHF_FM_RADIO, value_down = 1.0,name = _('VHF FM Preset Channel Increase'), category = _('VHF FM Radio (ARC-186) Control Panel')},
 
 
-{pressed = iCommandPlane_VHF_FM_10MHz_Dec, 				name = _('VHF FM 10Mhz Selector Decrease'), category = _('VHF FM Radio Control Panel')},
-{pressed = iCommandPlane_VHF_FM_10MHz_Inc, 				name = _('VHF FM 10Mhz Selector Increase'), category = _('VHF FM Radio Control Panel')},
+{pressed = iCommandPlane_VHF_FM_10MHz_Dec, 				name = _('VHF FM 10Mhz Selector Decrease'), category = _('VHF FM Radio (ARC-186) Control Panel')},
+{pressed = iCommandPlane_VHF_FM_10MHz_Inc, 				name = _('VHF FM 10Mhz Selector Increase'), category = _('VHF FM Radio (ARC-186) Control Panel')},
 
-{pressed = iCommandPlane_VHF_FM_1MHz_Dec, 				name = _('VHF FM 1Mhz Selector Decrease'), category = _('VHF FM Radio Control Panel')},
-{pressed = iCommandPlane_VHF_FM_1MHz_Inc, 				name = _('VHF FM 1Mhz Selector Increase'), category = _('VHF FM Radio Control Panel')},
-{pressed = iCommandPlane_VHF_FM_01MHz_Dec, 				name = _('VHF FM 0.1Mhz Selector Decrease'), category = _('VHF FM Radio Control Panel')},
-{pressed = iCommandPlane_VHF_FM_01MHz_Inc, 				name = _('VHF FM 0.1Mhz Selector Increase'), category = _('VHF FM Radio Control Panel')},
-{pressed = iCommandPlane_VHF_FM_025MHz_Dec, 			name = _('VHF FM 0.025Mhz Selector Decrease'), category = _('VHF FM Radio Control Panel')},
-{pressed = iCommandPlane_VHF_FM_025MHz_Inc, 			name = _('VHF FM 0.025Mhz Selector Increase'), category = _('VHF FM Radio Control Panel')},
+{pressed = iCommandPlane_VHF_FM_1MHz_Dec, 				name = _('VHF FM 1Mhz Selector Decrease'), category = _('VHF FM Radio (ARC-186) Control Panel')},
+{pressed = iCommandPlane_VHF_FM_1MHz_Inc, 				name = _('VHF FM 1Mhz Selector Increase'), category = _('VHF FM Radio (ARC-186) Control Panel')},
+{pressed = iCommandPlane_VHF_FM_01MHz_Dec, 				name = _('VHF FM 0.1Mhz Selector Decrease'), category = _('VHF FM Radio (ARC-186) Control Panel')},
+{pressed = iCommandPlane_VHF_FM_01MHz_Inc, 				name = _('VHF FM 0.1Mhz Selector Increase'), category = _('VHF FM Radio (ARC-186) Control Panel')},
+{pressed = iCommandPlane_VHF_FM_025MHz_Dec, 			name = _('VHF FM 0.025Mhz Selector Decrease'), category = _('VHF FM Radio (ARC-186) Control Panel')},
+{pressed = iCommandPlane_VHF_FM_025MHz_Inc, 			name = _('VHF FM 0.025Mhz Selector Increase'), category = _('VHF FM Radio (ARC-186) Control Panel')},
 
+--[[
 --VHF AM Radio Control Panel
 {pressed = iCommandPlane_VHF_AM_Volume_Dec, 			name = _('VHF AM Volume Decrease'), category = _('VHF AM Radio Control Panel')},
 {pressed = iCommandPlane_VHF_AM_Volume_Inc, 			name = _('VHF AM Volume Increase'), category = _('VHF AM Radio Control Panel')},
@@ -948,6 +1010,7 @@ keyCommands = {
 {pressed = iCommandPlane_VHF_AM_01MHz_Inc, 				name = _('VHF AM 0.1Mhz Selector Increase'), category = _('VHF AM Radio Control Panel')},
 {pressed = iCommandPlane_VHF_AM_025MHz_Dec, 			name = _('VHF AM 0.025Mhz Selector Decrease'), category = _('VHF AM Radio Control Panel')},
 {pressed = iCommandPlane_VHF_AM_025MHz_Inc, 			name = _('VHF AM 0.025Mhz Selector Increase'), category = _('VHF AM Radio Control Panel')},
+]]--
 
 --Environment System Panel
 {down = iCommandPlane_Oxygen_Emergency, 				name = _('Oxygen Emergency Lever Emergenvy'), category = _('Environment System Panel')},
@@ -1009,8 +1072,19 @@ keyCommands = {
 {down = iCommandPlaneShowKneeboard, up = iCommandPlaneShowKneeboard ,value_down = 1.0,value_up = -1.0, name = _('Kneeboard glance view')  , category = _('Kneeboard')},
 {down = 3003	, cockpit_device_id  = 100,value_down = 1.0, name = _('Kneeboard current position mark point')  , category = _('Kneeboard')},
 },
+}
 
+join(res.keyCommands, VHF_or_ARC210)
 
+return {
+
+forceFeedback = {
+trimmer = 1.0,
+shake = 0.5,
+swapAxes = false,
+},
+
+keyCommands = res.keyCommands,
 -------------------------------------
 axisCommands = {
 

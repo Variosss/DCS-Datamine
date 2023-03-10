@@ -2,8 +2,39 @@ dofile(LockOn_Options.script_path.."../../Mirage-F1/Mirage-F1_Common/Radar_Cyran
 
 local dspl_sz = display_side_sz
 
-local rdrRenderTex = addRadarRenderTex("rdrRenderTex", dspl_sz, dspl_sz, bake_scale / dspl_sz, {0, 0}, nil, nil, "BUFF_LEGACY_RADAR_1")
---rdrRenderTex.h_clip_relation = h_clip_relations.NULL
+local use_MT_render = true
+
+local rdrRenderTex
+
+if use_MT_render ~= true then
+	rdrRenderTex = addRadarRenderTex("rdrRenderTex", dspl_sz, dspl_sz, bake_scale / dspl_sz, {0, 0}, nil, nil, "BUFF_LEGACY_RADAR_1")
+	--rdrRenderTex.h_clip_relation = h_clip_relations.NULL
+else
+	local rdrRenderTexTest = addRadarRenderTex("rdrRenderTex", dspl_sz, dspl_sz, bake_scale / dspl_sz, {0, 0}, nil, nil, "BUFF_LEGACY_RADAR_1")
+	rdrRenderTexTest.h_clip_relation = h_clip_relations.NULL
+	rdrRenderTexTest.isvisible = false
+	
+	--rdrRenderTex = addStandardRenderTex("rdrRenderTexMT", dspl_sz, dspl_sz, bake_general_scale / dspl_sz, {0, 0}, MakeMaterial("BUFF_LEGACY_RADAR_MT", {255, 255, 255, 255}))
+	rdrRenderTex = addStandardRenderTex("rdrRenderTexMT", dspl_sz, dspl_sz, 1 / dspl_sz, {0, 0}, MakeMaterial("BUFF_LEGACY_RADAR_MT", {255, 255, 255, 255}))
+	
+	--[[
+	do
+		local half_w = dspl_sz / 2
+		local half_h = dspl_sz / 2
+
+		local verts = {{-half_w,  half_h},
+					   { half_w,  half_h},
+					   { half_w, -half_h},
+					   {-half_w, -half_h}}
+
+		drawDbgGeometry = false --true
+		
+		addDebugGeometry("rdrRenderTexBox", nil, verts)
+		
+		drawDbgGeometry = false
+	end
+	--]]
+end
 
 local rect_sz = display_area_radius / bake_scale
 --local rect_sz = display_area_radius
@@ -19,7 +50,7 @@ do
 	s_bake_test.material		 				= MakeMaterial("RadarBakedSymbology", RadarLegacy_GREEN)
 	s_bake_test.vertices		 				= makeBoxVerts(-rect_sz, rect_sz, -rect_sz, rect_sz)
 	s_bake_test.indices							= default_box_indices
-	s_bake_test.additive_alpha   				= true
+	s_bake_test.additive_alpha   				= additive_alpha
 	s_bake_test.tex_coords						= {{0, 0}, {1, 0}, {1, 1}, {0, 1}}
 	s_bake_test.h_clip_relation					= h_clip_relations.NULL --determineClipRelation(h_clip_relations.COMPARE)
 	s_bake_test.level							= INDICATOR_DEFAULT_LEVEL
@@ -40,7 +71,7 @@ local drawRect2 = 2
 
 local displayRectAll = false
 local displayRect = 1
-local displayRect2 = 2
+local displayRect2 = 3
 
 if displayR then
 	
@@ -108,7 +139,7 @@ if displayR then
 				end
 				
 				r_bake_test.indices						= default_box_indices
-				r_bake_test.additive_alpha   			= true
+				r_bake_test.additive_alpha   			= additive_alpha
 				r_bake_test.tex_coords					= {{0, 0}, {1, 0}, {1, 1}, {0, 1}}
 				r_bake_test.h_clip_relation				= h_clip_relations.NULL --determineClipRelation(h_clip_relations.COMPARE)
 				r_bake_test.level						= INDICATOR_DEFAULT_LEVEL
@@ -133,7 +164,7 @@ if displayR then
 					side = 0
 				end
 						
-				r_bake_test.controllers					= {{"radarScanDir", side}}
+				r_bake_test.controllers					= {{"radarScanDir", side}, {"bakeIsNotFrozen", i - 1}}
 				
 				Add(r_bake_test)
 				
@@ -161,7 +192,7 @@ end
 -- Aircraft + horizon symbols
 
 local acft_silhouette_origin		= addPlaceholder("acft_silhouette_origin", {0, -display_area_radius})
-	
+
 local acft_silhouette				= RdrAddLine("acft_silhouette", 1.9, 3.8, getTexParams(108, 39), {{"radarAircraftSymbolVertPos"}})
 acft_silhouette.parent_element 		= acft_silhouette_origin.name
 

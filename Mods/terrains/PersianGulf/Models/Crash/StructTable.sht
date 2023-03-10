@@ -1,0 +1,128 @@
+TerrainModelDeclaration =
+{
+	default =
+	{
+		load =
+		{
+			false;
+			false;
+		};
+		drawonmap = true;
+		vis = 1;
+		visShadows = 1;
+		life = 500;
+		fire =
+		{
+		  0;
+		  1;
+		};
+		classname = "lStandartStructure";
+		positioning = "ONLYHEIGTH"; 
+		DestructAnimatttion = "NO"; 
+	};
+	{
+		file = "!proxyCrash";
+		desrt = "";
+	};
+
+	{
+		file = "armcheir_crash";
+		desrt = "";
+	};
+
+	{
+		file = "bad_crash";
+		desrt = "";
+	};
+
+	{
+		file = "bath_crash";
+		desrt = "";
+	};
+
+	{
+		file = "beams_crash";
+		desrt = "";
+	};
+
+	{
+		file = "beams_crash_02";
+		desrt = "";
+	};
+
+	{
+		file = "big_metal_slug";
+		desrt = "";
+	};
+
+	{
+		file = "chair_crash";
+		desrt = "";
+	};
+
+	{
+		file = "concreteslab";
+		desrt = "";
+	};
+
+	{
+		file = "concreteslab_big";
+		desrt = "";
+	};
+
+	{
+		file = "concretewall";
+		desrt = "";
+	};
+
+	{
+		file = "concretewall_L";
+		desrt = "";
+	};
+
+	{
+		file = "crashBrickwall";
+		desrt = "";
+	};
+
+	{
+		file = "crashcolumm";
+		desrt = "";
+	};
+
+	{
+		file = "crashcolumm_Y";
+		desrt = "";
+	};
+
+	{
+		file = "crashheap_01";
+		desrt = "";
+	};
+
+	{
+		file = "crashstairs";
+		desrt = "";
+	};
+
+	{
+		file = "crashwoodbeam";
+		desrt = "";
+	};
+
+	{
+		file = "metal_slug";
+		desrt = "";
+	};
+
+	{
+		file = "sofa_crash";
+		desrt = "";
+	};
+
+	{
+		file = "wardrobe_crash";
+		desrt = "";
+	};
+
+};

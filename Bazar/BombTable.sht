@@ -400,15 +400,6 @@ BombTable =
         username = "GBU-16";
         index = 39;
     },
--- gbu-24
-    {
-        file  = "gbu-24";
-        life  = 2;
---      load  = { false, false};
-        fire  = { 0, 1};
-        username = "GBU-24";
-        index = 41;
-    },
 -- gbu-15
     {
         file  = "gbu-15";

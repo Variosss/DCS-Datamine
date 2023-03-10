@@ -25,6 +25,8 @@ atgm_range_120 = 6000
 
 disable_sound = false
 
+scan_rad_around_point = 2500
+
 min_angular_radius =
 {
     lowres = 0.0043,
@@ -44,7 +46,7 @@ op_head_params_vert = {isLagElement = true, valmin = -0.3, valmax = 0, T1 = 1.0}
 
 ohshi_head_coeff = 0.5
 
-
+secret_debug_mode_render_debug_info_nikto_ne_dogadayetsya = true
 
 -------------------------------------------
 need_to_be_closed = true -- lua_state  will be closed in post_initialize()

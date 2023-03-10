@@ -61,8 +61,7 @@ MainPanel = {"A10C::ccMainPanel",
 			 {"VHF_AM",devices.VHF_AM_RADIO},
 			 {"VHF_FM",devices.VHF_FM_RADIO},
 			 {"TACAN_CtrlPanel",devices.TACAN_CTRL_PANEL},
-			 {"LIGHT_SYS", devices.LIGHT_SYSTEM},
-			 {"ARC_210",devices.ARC_210}
+			 {"LIGHT_SYS", devices.LIGHT_SYSTEM}
 			},
              LockOn_Options.script_path.."main_panel_commands.lua"}
 			 
@@ -75,6 +74,8 @@ MainPanel = {"A10C::ccMainPanel",
 --						  <"INPUT_COMMANDS_SCRIPT_FILE",>
 --						  <{{"NAME_OF_INDICATOR_CLASS", "INDICATOR_SCRIPT_FILE"}, ...}>
 --						 }
+
+
 creators = {}
 creators[devices.ELEC_INTERFACE]	= {"A10Common::avElectricInterface"}
 
@@ -99,6 +100,7 @@ MFCD_Links_right ={
 	 {"CICU", devices.CICU},
 	 {"LIGHT_SYS", devices.LIGHT_SYSTEM},
 	 {"HMCS",devices.SCORPION_HMCS},
+	 {"arc210", devices.VHF_AM_RADIO},
 	}
 
 
@@ -182,7 +184,7 @@ creators[devices.AHCP]				= {"A10C::avAHCP",
 									   LockOn_Options.script_path.."AHCP/AHCP_commands.lua",
 								      }
 
-creators[devices.UFC]				= {"A10C::avUFC",
+creators[devices.UFC]				= {"A10C_2::avUFC_A10C_2",
 								       "",
 										{{"ElecInterface",devices.ELEC_INTERFACE},
 										 {"CDU",devices.CDU},
@@ -193,6 +195,7 @@ creators[devices.UFC]				= {"A10C::avUFC",
 										 {"MAV",devices.MAVERICK_INTERFACE},
 										 {"EGI",devices.EGI},
 										 {"DTSAS", devices.DTSAS},
+										 {"arc210", devices. VHF_AM_RADIO},
 										}
 								      }
 
@@ -373,6 +376,7 @@ creators[devices.HUD]				= {"A10C_2::avHUD_A10C_2",
 										{"CICU", devices.CICU},
 										{"DTSAS", devices.DTSAS},
 										{"HMCS",devices.SCORPION_HMCS},
+										{"ARC_210",	devices.VHF_AM_RADIO},
 										},
 								      }
 									  
@@ -684,7 +688,6 @@ creators[devices.UHF_RADIO]	= {	"A10C::avUHF_ARC_164",
 								LockOn_Options.script_path.."UHF_Radio/device/UHF_Radio.lua",
 								{{"elec_system", devices.ELEC_INTERFACE},
 								{"NMSP", devices.NMSP}}}
-creators[devices.VHF_AM_RADIO]	= {"A10C::avVHF_ARC_186", LockOn_Options.script_path.."VHF_radio/device/AM_Radio.lua", {{"elec_system", devices.ELEC_INTERFACE}, {"NMSP", devices.NMSP}}, LockOn_Options.script_path.."VHF_radio/device/Radio_commands.lua"} 
 creators[devices.VHF_FM_RADIO]	= {"A10C::avVHF_ARC_186", LockOn_Options.script_path.."VHF_radio/device/FM_Radio.lua", {{"elec_system", devices.ELEC_INTERFACE},
 								{"NMSP", devices.NMSP}}, LockOn_Options.script_path.."VHF_radio/device/Radio_commands.lua"}  
 
@@ -693,7 +696,7 @@ creators[devices.TISL]		= {"A10C::avTISL", "",
 								{'ElecInterface',devices.ELEC_INTERFACE}
 								}}
 
-creators[devices.INTERCOM] = {	"A10C::avIntercom", 
+creators[devices.INTERCOM] = {	"A10C::avIntercom",
 								LockOn_Options.script_path.."Intercom.lua",
 								{{"elec_system", 	devices.ELEC_INTERFACE},
 								 {"UHF_Radio",		devices.UHF_RADIO},
@@ -723,7 +726,7 @@ creators[devices.STANDBY_COMPASS] = { "avMechCompass",
 								       {}
 									}
 
-creators[devices.CICU]				= {"A10C::avCICU",
+creators[devices.CICU]				= {"A10C_2::avCICU_A10C_2",
 								       LockOn_Options.script_path.."CICU/device/CICU.lua",
 									   {{"AHCP",devices.AHCP },
 										{"HOTAS",devices.HOTAS },
@@ -733,6 +736,7 @@ creators[devices.CICU]				= {"A10C::avCICU",
 										{"HUD", devices.HUD},
 										{"SysController",devices.SYS_CONTROLLER},
 										{"ElecInterface",devices.ELEC_INTERFACE},
+										{"arc210",devices.VHF_AM_RADIO},
 										}
 								      }
 
@@ -788,12 +792,12 @@ creators[devices.SCORPION_HMCS]		  = {"A10C_2::avScorpionHMCS", nil,
 										},
 								      }
 									  
-creators[devices.ARC_210]	= {"A10C::avARC_210",
+creators[devices.VHF_AM_RADIO]	= {"A10C_2::avARC_210",
 						       LockOn_Options.script_path.."ARC_210/Device/ARC_210_param.lua",
 							   {{"ElecInterface", devices.ELEC_INTERFACE},
-							    {"EGI", devices.EGI},
+							    {"EGI", devices.EGI},}
 							   }
-							   }
+
 
 
 indicators = {}
@@ -819,7 +823,7 @@ indicators[#indicators + 1] = {"A10C::ccMFCD_Display",LockOn_Options.script_path
 indicators[#indicators + 1] = {"A10C::ccMFCD_Display",LockOn_Options.script_path.."MFCD/indicator/BAKE/right.lua",devices.MFCD_RIGHT,{{"PNT-MFCD-R-CENTER","PNT-MFCD-R-DOWN","PNT-MFCD-R-RIGHT"}}}
 
 indicators[#indicators + 1] = {"A10C_2::ccScorpionHMCS", LockOn_Options.script_path.."Scorpion_HMCS/Indicator/HMCS_init.lua",devices.SCORPION_HMCS, {{},{}}}
-indicators[#indicators + 1] = {"A10C::ccARC_210", 	LockOn_Options.script_path	.."ARC_210/indicator/ARC_210_init.lua"	,devices.ARC_210, {{},{}}}
+indicators[#indicators + 1] = {"A10C_2::ccARC_210", 	LockOn_Options.script_path	.."ARC_210/indicator/ARC_210_init.lua"	,devices.VHF_AM_RADIO, {{"VHFUHF-CENTER","VHFUHF-DOWN","VHFUHF-RIGHT"},{sx_l = -0.001, sw = -0.004}}}
 
 if LockOn_Options.flight.padlock then
 	indicators[#indicators + 1] = {"ccPadlock", LockOn_Options.common_script_path.."PADLOCK/PADLOCK_indicator.lua",devices.PADLOCK,{{},{sx_l = 1.0,sw = 0.1,sh = 0.1}}}

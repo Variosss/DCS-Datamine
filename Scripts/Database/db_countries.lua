@@ -1286,6 +1286,7 @@ local units =  country:get("RUSSIA").Units
 --Historical mode Ships Russia
 	cnt_unit( units.Ships.Ship, "HandyWind");
 	cnt_unit( units.Ships.Ship, "Seawise_Giant");
+	cnt_unit( units.Ships.Ship, "BDK-775");	
 --Historical mode Ships RUSSIA--end
 	
 	cnt_unit( units.Cars.Car, "1L13 EWR");
@@ -1484,6 +1485,7 @@ local units  = country:get("USSR").Units
 	cnt_unit( units.Ships.Ship, "REZKY");
 --	cnt_unit( units.Ships.Ship, "SOM");
 	cnt_unit( units.Ships.Ship, "ZWEZDNY");
+	cnt_unit( units.Ships.Ship, "BDK-775");	
 --Historical mode Ships USSR--end
 	
 --Historical mode GRveh USSR
@@ -1652,6 +1654,7 @@ local units  = country:get("UKRAINE").Units
 	cnt_unit( units.Ships.Ship, "Dry-cargo ship-1");
 	cnt_unit( units.Ships.Ship, "Dry-cargo ship-2");
 	cnt_unit( units.Ships.Ship, "REZKY");
+	cnt_unit( units.Ships.Ship, "BDK-775");	
 	
 	cnt_unit( units.Cars.Car, "1L13 EWR");
 	cnt_unit( units.Cars.Car, "2B11 mortar");
@@ -2151,6 +2154,9 @@ local units  = country:get("GERMANY").Units
 	cnt_unit( units.Cars.Car, "HL_DSHK");
 	cnt_unit( units.Cars.Car, "HL_B8M1");
 	cnt_unit( units.Cars.Car, "HL_ZU-23");
+	cnt_unit( units.Cars.Car, "FPS-117");
+	cnt_unit( units.Cars.Car, "FPS-117 ECS");
+	cnt_unit( units.Cars.Car, "FPS-117 Dome");
 --Historical mode GRveh GERMANY--end
 	
 	cnt_unit( units.Helicopters.Helicopter, "Mi-8MT");
@@ -2213,6 +2219,9 @@ local units  = country:get("CANADA").Units
 	cnt_unit( units.Cars.Car, "HL_DSHK");
 	cnt_unit( units.Cars.Car, "HL_B8M1");
 	cnt_unit( units.Cars.Car, "HL_ZU-23");
+	cnt_unit( units.Cars.Car, "FPS-117");
+	cnt_unit( units.Cars.Car, "FPS-117 ECS");
+	cnt_unit( units.Cars.Car, "FPS-117 Dome");
 --Historical mode GRveh CANADA--end
 	
 	cnt_unit( units.Helicopters.Helicopter, "Mi-8MT");
@@ -2601,6 +2610,9 @@ local units  = country:get("BELGIUM").Units
 	cnt_unit( units.Cars.Car, "HL_DSHK");
 	cnt_unit( units.Cars.Car, "HL_B8M1");
 	cnt_unit( units.Cars.Car, "HL_ZU-23");
+	cnt_unit( units.Cars.Car, "FPS-117");
+	cnt_unit( units.Cars.Car, "FPS-117 ECS");
+	cnt_unit( units.Cars.Car, "FPS-117 Dome");
 --Historical mode GRveh BELGIUM--end
 	
 	cnt_unit( units.Helicopters.Helicopter, "Mi-8MT");
@@ -2714,7 +2726,10 @@ local units = country:get("DENMARK").Units
 	cnt_unit( units.Cars.Car, "HL_KORD");
 	cnt_unit( units.Cars.Car, "HL_DSHK");
 	cnt_unit( units.Cars.Car, "HL_B8M1");
-	cnt_unit( units.Cars.Car, "HL_ZU-23");	
+	cnt_unit( units.Cars.Car, "HL_ZU-23");
+	cnt_unit( units.Cars.Car, "FPS-117");
+	cnt_unit( units.Cars.Car, "FPS-117 ECS");
+	cnt_unit( units.Cars.Car, "FPS-117 Dome");
 --Historical mode GRveh DENMARK--end
 	
 	cnt_unit( units.Helicopters.Helicopter, "Mi-8MT");
@@ -3298,6 +3313,9 @@ local units = country:get("AUSTRALIA").Units
 	cnt_unit( units.Cars.Car, "HL_DSHK");
 	cnt_unit( units.Cars.Car, "HL_B8M1");
 	cnt_unit( units.Cars.Car, "HL_ZU-23");
+	cnt_unit( units.Cars.Car, "FPS-117");
+	cnt_unit( units.Cars.Car, "FPS-117 ECS");
+	cnt_unit( units.Cars.Car, "FPS-117 Dome");
 --Historical mode GRveh AUSTRALIA--end
 	
 	cnt_unit( units.Helicopters.Helicopter, "CH-47D");
@@ -3923,6 +3941,9 @@ local units = country:get("CROATIA").Units
 	cnt_unit( units.Cars.Car, "HL_DSHK");
 	cnt_unit( units.Cars.Car, "HL_B8M1");
 	cnt_unit( units.Cars.Car, "HL_ZU-23");
+	cnt_unit( units.Cars.Car, "FPS-117");
+	cnt_unit( units.Cars.Car, "FPS-117 ECS");
+	cnt_unit( units.Cars.Car, "FPS-117 Dome");
 --Historical mode GRveh CROATIA--end
 
 
@@ -4037,6 +4058,9 @@ local units = country:get("EGYPT").Units
 	cnt_unit( units.Cars.Car, "HL_B8M1");
 	cnt_unit( units.Cars.Car, "HL_ZU-23");
 	cnt_unit( units.Cars.Car, "SON_9");
+	cnt_unit( units.Cars.Car, "FPS-117");
+	cnt_unit( units.Cars.Car, "FPS-117 ECS");
+	cnt_unit( units.Cars.Car, "FPS-117 Dome");
 --Historical mode GRveh EGYPT--end
 	
 --Historical mode Ships EGYPT
@@ -4182,6 +4206,9 @@ local units = country:get("HUNGARY").Units
 	cnt_unit( units.Cars.Car, "HL_B8M1");
 	cnt_unit( units.Cars.Car, "HL_ZU-23");
 	cnt_unit( units.Cars.Car, "SON_9");
+	cnt_unit( units.Cars.Car, "FPS-117");
+	cnt_unit( units.Cars.Car, "FPS-117 ECS");
+	cnt_unit( units.Cars.Car, "FPS-117 Dome");
 --Historical mode GRveh HUNGARY--end
 
 
@@ -4466,6 +4493,9 @@ local units = country:get("IRAQ").Units
 	cnt_unit( units.Cars.Car, "HL_B8M1");
 	cnt_unit( units.Cars.Car, "HL_ZU-23");
 	cnt_unit( units.Cars.Car, "SON_9");
+	cnt_unit( units.Cars.Car, "FPS-117");
+	cnt_unit( units.Cars.Car, "FPS-117 ECS");
+	cnt_unit( units.Cars.Car, "FPS-117 Dome");
 --Historical mode GRveh IRAQ--end
 
 
@@ -4896,6 +4926,9 @@ local units = country:get("PAKISTAN").Units
 	cnt_unit( units.Cars.Car, "HL_DSHK");
 	cnt_unit( units.Cars.Car, "HL_B8M1");
 	cnt_unit( units.Cars.Car, "HL_ZU-23");
+	cnt_unit( units.Cars.Car, "FPS-117");
+	cnt_unit( units.Cars.Car, "FPS-117 ECS");
+	cnt_unit( units.Cars.Car, "FPS-117 Dome");
 --Historical mode GRveh PAKISTAN--end
 	
 --Historical mode Ships PAKISTAN
@@ -5142,6 +5175,9 @@ local units = country:get("SAUDI_ARABIA").Units
 	cnt_unit( units.Cars.Car, "HL_DSHK");
 	cnt_unit( units.Cars.Car, "HL_B8M1");
 	cnt_unit( units.Cars.Car, "HL_ZU-23");
+	cnt_unit( units.Cars.Car, "FPS-117");
+	cnt_unit( units.Cars.Car, "FPS-117 ECS");
+	cnt_unit( units.Cars.Car, "FPS-117 Dome");
 --Historical mode GRveh SAUDI_ARABIA--end
 	
 	cnt_unit( units.Helicopters.Helicopter, "UH-60A");
@@ -5368,6 +5404,9 @@ local units = country:get("SOUTH_KOREA").Units
 	cnt_unit( units.Cars.Car, "HL_DSHK");
 	cnt_unit( units.Cars.Car, "HL_B8M1");
 	cnt_unit( units.Cars.Car, "HL_ZU-23");
+	cnt_unit( units.Cars.Car, "FPS-117");
+	cnt_unit( units.Cars.Car, "FPS-117 ECS");
+	cnt_unit( units.Cars.Car, "FPS-117 Dome");
 --Historical mode GRveh SOUTH_KOREA--end
 	
 --Historical mode Ships SOUTH_KOREA
@@ -5626,6 +5665,9 @@ local units = country:get("KUWAIT").Units
 	cnt_unit( units.Cars.Car, "HL_DSHK");
 	cnt_unit( units.Cars.Car, "HL_B8M1");
 	cnt_unit( units.Cars.Car, "HL_ZU-23");	
+	cnt_unit( units.Cars.Car, "FPS-117");
+	cnt_unit( units.Cars.Car, "FPS-117 ECS");
+	cnt_unit( units.Cars.Car, "FPS-117 Dome");
 --Historical mode GRveh KUWAIT--end
 
 
@@ -6136,6 +6178,7 @@ local units  = country:get("YEMEN").Units
 	
 --Historical mode Ships YEMEN
 	cnt_unit( units.Ships.Ship, "MOLNIYA");
+	cnt_unit( units.Ships.Ship, "BDK-775");	
 --Historical mode Ships YEMEN--end
 
 
@@ -6219,6 +6262,9 @@ local units = country:get("MALAYSIA").Units
 	cnt_unit( units.Cars.Car, "HL_DSHK");
 	cnt_unit( units.Cars.Car, "HL_B8M1");
 	cnt_unit( units.Cars.Car, "HL_ZU-23");
+	cnt_unit( units.Cars.Car, "FPS-117");
+	cnt_unit( units.Cars.Car, "FPS-117 ECS");
+	cnt_unit( units.Cars.Car, "FPS-117 Dome");
 --Historical mode GRveh MALAYSIA--end
 
 --Historical mode Ships MALAYSIA
@@ -6260,6 +6306,9 @@ local units = country:get("BAHRAIN").Units
 	cnt_unit( units.Cars.Car, "HL_DSHK");
 	cnt_unit( units.Cars.Car, "HL_B8M1");
 	cnt_unit( units.Cars.Car, "HL_ZU-23");
+	cnt_unit( units.Cars.Car, "FPS-117");
+	cnt_unit( units.Cars.Car, "FPS-117 ECS");
+	cnt_unit( units.Cars.Car, "FPS-117 Dome");
 --Historical mode GRveh BAHRAIN--end
 	
 --Historical mode Aircraft BAHRAIN
@@ -6314,6 +6363,9 @@ local units = country:get("BRAZIL").Units
 	cnt_unit( units.Cars.Car, "HL_DSHK");
 	cnt_unit( units.Cars.Car, "HL_B8M1");
 	cnt_unit( units.Cars.Car, "HL_ZU-23");
+	cnt_unit( units.Cars.Car, "FPS-117");
+	cnt_unit( units.Cars.Car, "FPS-117 ECS");
+	cnt_unit( units.Cars.Car, "FPS-117 Dome");
 --Historical mode GRveh BRAZIL--end
 
 --Historical mode Aircraft BRAZIL
@@ -6405,6 +6457,9 @@ local units = country:get("JORDAN").Units
 	cnt_unit( units.Cars.Car, "HL_DSHK");
 	cnt_unit( units.Cars.Car, "HL_B8M1");
 	cnt_unit( units.Cars.Car, "HL_ZU-23");
+	cnt_unit( units.Cars.Car, "FPS-117");
+	cnt_unit( units.Cars.Car, "FPS-117 ECS");
+	cnt_unit( units.Cars.Car, "FPS-117 Dome");
 --Historical mode GRveh JORDAN--end
 
 --Historical mode Aircraft JORDAN
@@ -6620,6 +6675,9 @@ local units = country:get("THAILAND").Units
 	cnt_unit( units.Cars.Car, "HL_DSHK");
 	cnt_unit( units.Cars.Car, "HL_B8M1");
 	cnt_unit( units.Cars.Car, "HL_ZU-23");
+	cnt_unit( units.Cars.Car, "FPS-117");
+	cnt_unit( units.Cars.Car, "FPS-117 ECS");
+	cnt_unit( units.Cars.Car, "FPS-117 Dome");
 --Historical mode GRveh THAILAND--end
 	
 --Historical mode Aircraft THAILAND

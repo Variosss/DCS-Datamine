@@ -12,6 +12,15 @@ function refuelEvent(percent)
 	return staticParamsEvent(Message.wMsgLeaderRequestRefueling,{fuel_mass = percent})
 end
 
+local function isAARefuelable()
+	for k, v in pairs(data.pUnit:getDesc().attributes) do
+		if k == "Refuelable" and v == true then
+			return true
+		end
+	end
+	
+	return false
+end
 
 local FormationDirection = {
 	RIGHT = 1,
@@ -71,6 +80,12 @@ menus['Go To'] = {
 		{ name = _('Route'), 							command = sendMessage.new(Message.wMsgLeaderFlyRoute) },
 	}
 }
+
+if isAARefuelable() then
+	local items = menus['Go To'].items
+	items[#items + 1] = { name = _('Fly to Tanker'), command = sendMessage.new(Message.wMsgLeaderGoRefueling) }
+end
+
 menus['Reconnaissance'] = {
 	name = _('Reconnaissance'),
 	items = {
@@ -80,6 +95,14 @@ menus['Reconnaissance'] = {
 		{ name = _('5 km'), 							command = sendMessage.new(Message.wMsgLeaderMakeRecon, 5000)},
 		{ name = _('8 km'), 							command = sendMessage.new(Message.wMsgLeaderMakeRecon, 8000)},
 		{ name = _('10 km'), 							command = sendMessage.new(Message.wMsgLeaderMakeRecon, 10000)},
+	}
+}
+
+menus['Radar'] = {
+	name = _('Radar'),
+	items = {
+		{ name = _('On'),								command = sendMessage.new(Message.wMsgLeaderRadarOn) },
+		{ name = _('Off'),								command = sendMessage.new(Message.wMsgLeaderRadarOff) },
 	}
 }
 
@@ -154,6 +177,10 @@ menus['Flight'] = {
 			name = _('Rejoin Formation'),
 			command = sendMessage.new(Message.wMsgLeaderJoinUp)
 		},
+		[8] = {
+			name = _('Radar'),
+			submenu = menus['Radar'],
+		},
 		[10] = {
 			name = _('Jettison Weapons'),
 			command = sendMessage.new(Message.wMsgLeaderJettisonWeapons)
@@ -189,6 +216,10 @@ local wingmenMenuItems = {
 	[7] = {
 		name = _('Rejoin Formation'),
 		command = sendMessage.new(Message.wMsgLeaderJoinUp)
+	},
+	[8] = {
+			name = _('Radar'),
+			submenu = menus['Radar'],
 	},
 	[10] = {
 		name = _('Jettison Weapons'),
@@ -246,6 +277,10 @@ data.rootItem = {
 			name = _('Main'),
 			items = {}
 		}
+		
+		if data.pUnit == nil or data.pUnit:isExist() == false then
+			return tbl
+		end
 		
 		if 	not data.showingOnlyPresentRecepients or
 			hasFlight() then
@@ -305,22 +340,12 @@ data.rootItem = {
 	builders = {}
 }
 
-local function isRefuelable()
-	for k, v in pairs(data.pUnit:getDesc().attributes) do
-		if k == "Refuelable" and v == true then
-			return true
-		end
-	end
-	
-	return false
-end
-
 utils.verifyChunk(utils.loadfileIn('Scripts/UI/RadioCommandDialogPanel/Config/Common/JTAC.lua', getfenv()))(4)
 utils.verifyChunk(utils.loadfileIn('Scripts/UI/RadioCommandDialogPanel/Config/Common/ATC.lua', getfenv()))(5, {['Airdrome'] = true, ['Helipad'] = true} )
 
-if isRefuelable() then
+if isAARefuelable() then
 	utils.verifyChunk(utils.loadfileIn('Scripts/UI/RadioCommandDialogPanel/Config/Common/Tanker.lua', getfenv()))(6)
 end
 
-utils.verifyChunk(utils.loadfileIn('Scripts/UI/RadioCommandDialogPanel/Config/Common/AWACS.lua', getfenv()))(7, {tanker = isRefuelable(), radar = true})
+utils.verifyChunk(utils.loadfileIn('Scripts/UI/RadioCommandDialogPanel/Config/Common/AWACS.lua', getfenv()))(7, {tanker = isAARefuelable(), radar = true})
 utils.verifyChunk(utils.loadfileIn('Scripts/UI/RadioCommandDialogPanel/Config/Common/Ground Crew.lua', getfenv()))(8)

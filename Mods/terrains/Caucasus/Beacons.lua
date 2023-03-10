@@ -20,7 +20,7 @@ beacons = {
 		position = { -1321.801758, 12.352437, 246748.500000 };
 		direction = 41.500201;
 		positionGeo = { latitude = 45.039907, longitude = 37.396435 };
-		sceneObjects = {'t:297697280'};
+		sceneObjects = {'t:297566208'};
 	};
 	{
 		display_name = _('Anapa-Vityazevo');
@@ -28,10 +28,10 @@ beacons = {
 		type = BEACON_TYPE_ILS_NEAR_HOMER;
 		callsign = 'P';
 		frequency = 215000.000000;
-		position = { -3343.976563, 40.271662, 244959.421875 };
+		position = { -3343.976562, 40.271662, 244959.421875 };
 		direction = 41.500201;
 		positionGeo = { latitude = 45.022628, longitude = 37.372401 };
-		sceneObjects = {'t:297664512'};
+		sceneObjects = {'t:297533440'};
 	};
 	{
 		display_name = _('Anapa-Vityazevo');
@@ -42,7 +42,7 @@ beacons = {
 		position = { -9500.015625, 24.885315, 239511.625000 };
 		direction = -138.499789;
 		positionGeo = { latitude = 44.969992, longitude = 37.299308 };
-		sceneObjects = {'t:294420488'};
+		sceneObjects = {'t:294289416'};
 	};
 	{
 		display_name = _('Anapa-Vityazevo');
@@ -53,7 +53,7 @@ beacons = {
 		position = { -7477.841797, 36.126909, 241300.703125 };
 		direction = -138.499789;
 		positionGeo = { latitude = 44.987288, longitude = 37.323297 };
-		sceneObjects = {'t:295927808'};
+		sceneObjects = {'t:295796736'};
 	};
 	{
 		display_name = _('Batumi');
@@ -64,7 +64,7 @@ beacons = {
 		position = { -356584.812500, 10.030140, 618472.437500 };
 		direction = -54.415131;
 		positionGeo = { latitude = 41.601731, longitude = 41.612203 };
-		sceneObjects = {'t:168395386'};
+		sceneObjects = {'t:168264314'};
 		chartOffsetX = 2519.000000;
 	};
 	{
@@ -76,7 +76,7 @@ beacons = {
 		position = { -355396.812500, 10.044037, 616600.500000 };
 		direction = -54.415131;
 		positionGeo = { latitude = 41.613985, longitude = 41.591406 };
-		sceneObjects = {'t:318309567'};
+		sceneObjects = {'t:318178495'};
 		chartOffsetX = 120.000000;
 	};
 	{
@@ -89,7 +89,7 @@ beacons = {
 		position = { -355664.406250, 10.044037, 617386.812500 };
 		direction = 0.000000;
 		positionGeo = { latitude = 41.610899, longitude = 41.600419 };
-		sceneObjects = {'t:168920280'};
+		sceneObjects = {'t:168789207'};
 	};
 	{
 		display_name = _('Batumi');
@@ -100,7 +100,7 @@ beacons = {
 		position = { -356480.125000, 10.113043, 618549.187500 };
 		direction = -60.999996;
 		positionGeo = { latitude = 41.602594, longitude = 41.613238 };
-		sceneObjects = {'t:168428658'};
+		sceneObjects = {'t:168297584'};
 	};
 	{
 		display_name = _('Beslan');
@@ -111,7 +111,7 @@ beacons = {
 		position = { -148253.156250, 542.239983, 838154.187500 };
 		direction = -86.499961;
 		positionGeo = { latitude = 43.215500, longitude = 44.539874 };
-		sceneObjects = {'t:239140869'};
+		sceneObjects = {'t:239009797'};
 	};
 	{
 		display_name = _('Beslan');
@@ -122,7 +122,7 @@ beacons = {
 		position = { -148418.000000, 524.825537, 840849.187500 };
 		direction = -86.499961;
 		positionGeo = { latitude = 43.210717, longitude = 44.572100 };
-		sceneObjects = {'t:239173633'};
+		sceneObjects = {'t:239042561'};
 	};
 	{
 		display_name = _('Beslan');
@@ -133,19 +133,19 @@ beacons = {
 		position = { -148692.109375, 529.274577, 845322.875000 };
 		direction = -86.499961;
 		positionGeo = { latitude = 43.202754, longitude = 44.625580 };
-		sceneObjects = {'t:239206458'};
+		sceneObjects = {'t:239075386'};
 		chartOffsetX = 3219.000000;
 	};
 	{
 		display_name = _('Beslan');
 		beaconId = 'airfield32_3';
 		type = BEACON_TYPE_ILS_GLIDESLOPE;
-		callsign = '';
+		callsign = 'ICH';
 		frequency = 110500000.000000;
 		position = { -148636.890625, 524.825537, 842454.000000 };
 		direction = -86.499961;
 		positionGeo = { latitude = 43.206800, longitude = 44.591083 };
-		sceneObjects = {'t:463175689'};
+		sceneObjects = {'t:463044617'};
 		chartOffsetX = 120.000000;
 	};
 	{
@@ -157,7 +157,7 @@ beacons = {
 		position = { -50752.625000, 22.009923, 298204.468750 };
 		direction = -139.999984;
 		positionGeo = { latitude = 44.569658, longitude = 38.008795 };
-		sceneObjects = {'t:279478273'};
+		sceneObjects = {'t:279347201'};
 	};
 	{
 		display_name = _('Gelendzhik');
@@ -169,7 +169,7 @@ beacons = {
 		position = { -50420.347656, 22.009923, 298457.125000 };
 		direction = 0.000000;
 		positionGeo = { latitude = 44.572498, longitude = 38.012222 };
-		sceneObjects = {'t:118526060'};
+		sceneObjects = {'t:118493293'};
 	};
 	{
 		display_name = _('Gudauta');
@@ -180,7 +180,7 @@ beacons = {
 		position = { -198344.562500, 10.015866, 517357.000000 };
 		direction = 151.003298;
 		positionGeo = { latitude = 43.099003, longitude = 40.578961 };
-		sceneObjects = {'t:222199809'};
+		sceneObjects = {'t:222035969'};
 	};
 	{
 		display_name = _('Kobuleti');
@@ -191,7 +191,7 @@ beacons = {
 		position = { -319739.031250, 10.928995, 630753.562500 };
 		direction = -109.999979;
 		positionGeo = { latitude = 41.918616, longitude = 41.802928 };
-		sceneObjects = {'t:175898624'};
+		sceneObjects = {'t:175734784'};
 	};
 	{
 		display_name = _('Kobuleti');
@@ -202,7 +202,7 @@ beacons = {
 		position = { -318815.562500, 18.272494, 633290.687500 };
 		direction = -109.999979;
 		positionGeo = { latitude = 41.924494, longitude = 41.834303 };
-		sceneObjects = {'t:176947200'};
+		sceneObjects = {'t:176783360'};
 	};
 	{
 		display_name = _('Kobuleti');
@@ -213,7 +213,7 @@ beacons = {
 		position = { -317495.750000, 18.017043, 636918.250000 };
 		direction = -109.999979;
 		positionGeo = { latitude = 41.932878, longitude = 41.879171 };
-		sceneObjects = {'t:176980890'};
+		sceneObjects = {'t:176817051'};
 		chartOffsetX = 2550.000000;
 	};
 	{
@@ -225,7 +225,7 @@ beacons = {
 		position = { -318329.625000, 18.010018, 634820.812500 };
 		direction = -109.999979;
 		positionGeo = { latitude = 41.927403, longitude = 41.853140 };
-		sceneObjects = {'t:334561284'};
+		sceneObjects = {'t:334430212'};
 		chartOffsetX = 120.000000;
 	};
 	{
@@ -238,7 +238,7 @@ beacons = {
 		position = { -317879.000000, 18.010018, 635514.812500 };
 		direction = 0.000000;
 		positionGeo = { latitude = 41.930770, longitude = 41.861970 };
-		sceneObjects = {'t:176980891'};
+		sceneObjects = {'t:176817052'};
 	};
 	{
 		display_name = _('Krasnodar-Center');
@@ -249,7 +249,7 @@ beacons = {
 		position = { 11980.968750, 31.707849, 373613.718750 };
 		direction = 87.003387;
 		positionGeo = { latitude = 45.085828, longitude = 39.012047 };
-		sceneObjects = {'t:302153728'};
+		sceneObjects = {'t:302022656'};
 	};
 	{
 		display_name = _('Krasnodar-Center');
@@ -260,7 +260,7 @@ beacons = {
 		position = { 11804.427734, 29.328925, 370241.343750 };
 		direction = 87.003387;
 		positionGeo = { latitude = 45.086491, longitude = 38.969263 };
-		sceneObjects = {'t:302120975'};
+		sceneObjects = {'t:301989903'};
 	};
 	{
 		display_name = _('Krasnodar-Center');
@@ -271,7 +271,7 @@ beacons = {
 		position = { 11410.707031, 25.576110, 362701.093750 };
 		direction = -92.996632;
 		positionGeo = { latitude = 45.087925, longitude = 38.873594 };
-		sceneObjects = {'t:302055424'};
+		sceneObjects = {'t:301924352'};
 	};
 	{
 		display_name = _('Krasnodar-Center');
@@ -279,10 +279,10 @@ beacons = {
 		type = BEACON_TYPE_ILS_NEAR_HOMER;
 		callsign = 'M';
 		frequency = 303000.000000;
-		position = { 11567.539063, 25.479861, 365697.000000 };
+		position = { 11567.539062, 25.479861, 365697.000000 };
 		direction = -92.996632;
 		positionGeo = { latitude = 45.087368, longitude = 38.911608 };
-		sceneObjects = {'t:302088209'};
+		sceneObjects = {'t:301957137'};
 	};
 	{
 		display_name = _('Krasnodar-Center');
@@ -294,7 +294,7 @@ beacons = {
 		position = { 11798.221680, 29.298262, 370113.187500 };
 		direction = -92.996632;
 		positionGeo = { latitude = 45.086520, longitude = 38.967638 };
-		sceneObjects = {'t:678953724'};
+		sceneObjects = {'t:678822652'};
 		chartOffsetX = 3410.000000;
 	};
 	{
@@ -307,7 +307,7 @@ beacons = {
 		position = { 11492.823242, 30.010032, 367052.968750 };
 		direction = -92.996632;
 		positionGeo = { latitude = 45.085808, longitude = 38.928677 };
-		sceneObjects = {'t:678953725'};
+		sceneObjects = {'t:678822653'};
 	};
 	{
 		display_name = _('Krasnodar-Center');
@@ -319,7 +319,7 @@ beacons = {
 		position = { 11195.093750, 30.866661, 367008.562500 };
 		direction = -92.996652;
 		positionGeo = { latitude = 45.083171, longitude = 38.927839 };
-		sceneObjects = {'t:678954398'};
+		sceneObjects = {'t:678823326'};
 	};
 	{
 		display_name = _('Krasnodar-Pashkovsky');
@@ -330,7 +330,7 @@ beacons = {
 		position = { 3919.232910, 29.862306, 383806.187500 };
 		direction = -132.994767;
 		positionGeo = { latitude = 45.006796, longitude = 39.133081 };
-		sceneObjects = {'t:298778624'};
+		sceneObjects = {'t:298647552'};
 	};
 	{
 		display_name = _('Krasnodar-Pashkovsky');
@@ -341,7 +341,7 @@ beacons = {
 		position = { 5760.449219, 29.579169, 385781.000000 };
 		direction = -132.994767;
 		positionGeo = { latitude = 45.021929, longitude = 39.159769 };
-		sceneObjects = {'t:300613649'};
+		sceneObjects = {'t:300482577'};
 	};
 	{
 		display_name = _('Krasnodar-Pashkovsky');
@@ -352,7 +352,7 @@ beacons = {
 		position = { 11497.123047, 34.370228, 391935.437500 };
 		direction = 47.005224;
 		positionGeo = { latitude = 45.069032, longitude = 39.243028 };
-		sceneObjects = {'t:302284800'};
+		sceneObjects = {'t:302153728'};
 	};
 	{
 		display_name = _('Krasnodar-Pashkovsky');
@@ -363,7 +363,7 @@ beacons = {
 		position = { 9655.907227, 31.752404, 389960.625000 };
 		direction = 47.005224;
 		positionGeo = { latitude = 45.053921, longitude = 39.216297 };
-		sceneObjects = {'t:302284801'};
+		sceneObjects = {'t:302153729'};
 	};
 	{
 		display_name = _('Krasnodar-Pashkovsky');
@@ -375,7 +375,7 @@ beacons = {
 		position = { 5663.363770, 30.493774, 386114.750000 };
 		direction = 0.000000;
 		positionGeo = { latitude = 45.020832, longitude = 39.163887 };
-		sceneObjects = {'t:137596182'};
+		sceneObjects = {'t:137563394'};
 	};
 	{
 		display_name = _('Krymsk');
@@ -386,7 +386,7 @@ beacons = {
 		position = { -2232.675781, 5.000005, 297972.093750 };
 		direction = 39.519802;
 		positionGeo = { latitude = 45.004894, longitude = 38.043726 };
-		sceneObjects = {'t:298090496'};
+		sceneObjects = {'t:297959424'};
 	};
 	{
 		display_name = _('Krymsk');
@@ -397,7 +397,7 @@ beacons = {
 		position = { -4801.454590, 7.267079, 295853.062500 };
 		direction = 39.519802;
 		positionGeo = { latitude = 44.983041, longitude = 38.014927 };
-		sceneObjects = {'t:296321025'};
+		sceneObjects = {'t:296189953'};
 	};
 	{
 		display_name = _('Krymsk');
@@ -408,7 +408,7 @@ beacons = {
 		position = { -10679.844727, 72.042530, 291002.593750 };
 		direction = -140.480217;
 		positionGeo = { latitude = 44.933004, longitude = 37.949089 };
-		sceneObjects = {'t:294715421'};
+		sceneObjects = {'t:294584349'};
 	};
 	{
 		display_name = _('Krymsk');
@@ -419,7 +419,7 @@ beacons = {
 		position = { -8481.339844, 32.852633, 292816.187500 };
 		direction = -140.480217;
 		positionGeo = { latitude = 44.951723, longitude = 37.973692 };
-		sceneObjects = {'t:294715422'};
+		sceneObjects = {'t:294584350'};
 	};
 	{
 		display_name = _('Krymsk');
@@ -430,7 +430,7 @@ beacons = {
 		position = { -7411.832520, 20.010304, 293592.000000 };
 		direction = -141.000009;
 		positionGeo = { latitude = 44.960886, longitude = 37.984323 };
-		sceneObjects = {'t:678953730'};
+		sceneObjects = {'t:678822658'};
 	};
 	{
 		display_name = _('Krymsk');
@@ -441,7 +441,7 @@ beacons = {
 		position = { -5648.416504, 20.010304, 295048.156250 };
 		direction = 38.999970;
 		positionGeo = { latitude = 44.975894, longitude = 38.004094 };
-		sceneObjects = {'t:678953731'};
+		sceneObjects = {'t:678822659'};
 	};
 	{
 		display_name = _('Krymsk');
@@ -453,7 +453,7 @@ beacons = {
 		position = { -8396.038086, 31.785951, 292887.187500 };
 		direction = 39.519802;
 		positionGeo = { latitude = 44.952449, longitude = 37.974655 };
-		sceneObjects = {'t:678953732'};
+		sceneObjects = {'t:678822660'};
 		chartOffsetX = 3649.000000;
 	};
 	{
@@ -466,7 +466,7 @@ beacons = {
 		position = { -4817.330078, 7.263302, 295839.312500 };
 		direction = -140.480217;
 		positionGeo = { latitude = 44.982907, longitude = 38.014740 };
-		sceneObjects = {'t:678953733'};
+		sceneObjects = {'t:678822661'};
 		chartOffsetX = 3589.000000;
 	};
 	{
@@ -479,7 +479,7 @@ beacons = {
 		position = { -6710.505371, 20.866651, 294536.875000 };
 		direction = -140.480229;
 		positionGeo = { latitude = 44.966653, longitude = 37.996805 };
-		sceneObjects = {'t:678954399'};
+		sceneObjects = {'t:678823327'};
 	};
 	{
 		display_name = _('Kutaisi');
@@ -490,7 +490,7 @@ beacons = {
 		position = { -284502.843750, 46.542794, 685199.500000 };
 		direction = -105.999085;
 		positionGeo = { latitude = 42.179695, longitude = 42.497820 };
-		sceneObjects = {'t:190480920'};
+		sceneObjects = {'t:190317080'};
 		chartOffsetX = 2650.000000;
 	};
 	{
@@ -502,7 +502,7 @@ beacons = {
 		position = { -285264.531250, 45.010047, 682978.437500 };
 		direction = -105.999085;
 		positionGeo = { latitude = 42.175142, longitude = 42.470274 };
-		sceneObjects = {'t:366314246'};
+		sceneObjects = {'t:366183174'};
 		chartOffsetX = 120.000000;
 	};
 	{
@@ -514,7 +514,7 @@ beacons = {
 		position = { -285504.687500, 44.662974, 681690.062500 };
 		direction = 74.000018;
 		positionGeo = { latitude = 42.174289, longitude = 42.454567 };
-		sceneObjects = {'t:190447634'};
+		sceneObjects = {'t:190283794'};
 	};
 	{
 		display_name = _('Kutaisi');
@@ -526,7 +526,7 @@ beacons = {
 		position = { -284814.687500, 45.299522, 683676.500000 };
 		direction = 0.000000;
 		positionGeo = { latitude = 42.178443, longitude = 42.479213 };
-		sceneObjects = {'t:190447972'};
+		sceneObjects = {'t:190284135'};
 	};
 	{
 		display_name = _('Kutaisi');
@@ -538,7 +538,7 @@ beacons = {
 		position = { -285487.031250, 44.387457, 681747.500000 };
 		direction = 0.000000;
 		positionGeo = { latitude = 42.174389, longitude = 42.455276 };
-		sceneObjects = {'t:68354887'};
+		sceneObjects = {'t:68354896'};
 	};
 	{
 		display_name = _('Tbilisi-Lochini');
@@ -549,7 +549,7 @@ beacons = {
 		position = { -312185.406250, 567.552264, 892170.187500 };
 		direction = -52.001372;
 		positionGeo = { latitude = 41.703274, longitude = 44.909623 };
-		sceneObjects = {'t:179339272'};
+		sceneObjects = {'t:179175432'};
 	};
 	{
 		display_name = _('Tbilisi-Lochini');
@@ -560,7 +560,7 @@ beacons = {
 		position = { -313847.625000, 516.680448, 894297.875000 };
 		direction = -52.001372;
 		positionGeo = { latitude = 41.685992, longitude = 44.931895 };
-		sceneObjects = {'t:179372035'};
+		sceneObjects = {'t:179208195'};
 	};
 	{
 		display_name = _('Tbilisi-Lochini');
@@ -571,7 +571,7 @@ beacons = {
 		position = { -316544.062500, 479.302481, 897748.500000 };
 		direction = -52.001372;
 		positionGeo = { latitude = 41.657953, longitude = 44.967988 };
-		sceneObjects = {'t:177897928'};
+		sceneObjects = {'t:177734088'};
 		chartOffsetX = 3117.000000;
 	};
 	{
@@ -583,7 +583,7 @@ beacons = {
 		position = { -314937.000000, 479.218985, 895496.562500 };
 		direction = -52.001372;
 		positionGeo = { latitude = 41.674907, longitude = 44.944184 };
-		sceneObjects = {'t:338363236'};
+		sceneObjects = {'t:338232167'};
 		chartOffsetX = 120.000000;
 	};
 	{
@@ -595,7 +595,7 @@ beacons = {
 		position = { -318920.968750, 459.637972, 900790.187500 };
 		direction = 127.998645;
 		positionGeo = { latitude = 41.633231, longitude = 44.999778 };
-		sceneObjects = {'t:177897476'};
+		sceneObjects = {'t:177733636'};
 	};
 	{
 		display_name = _('Tbilisi-Lochini');
@@ -606,7 +606,7 @@ beacons = {
 		position = { -317258.750000, 474.729601, 898662.500000 };
 		direction = 127.998645;
 		positionGeo = { latitude = 41.650521, longitude = 44.977543 };
-		sceneObjects = {'t:177897477'};
+		sceneObjects = {'t:177733637'};
 	};
 	{
 		display_name = _('Tbilisi-Lochini');
@@ -617,7 +617,7 @@ beacons = {
 		position = { -314562.312500, 482.002923, 895211.875000 };
 		direction = 127.998645;
 		positionGeo = { latitude = 41.678562, longitude = 44.941458 };
-		sceneObjects = {'t:179373206'};
+		sceneObjects = {'t:179209366'};
 		chartOffsetX = 3117.000000;
 	};
 	{
@@ -629,7 +629,7 @@ beacons = {
 		position = { -316169.375000, 479.694816, 897463.812500 };
 		direction = 127.998645;
 		positionGeo = { latitude = 41.661608, longitude = 44.965264 };
-		sceneObjects = {'t:337118335'};
+		sceneObjects = {'t:336987264'};
 		chartOffsetX = 120.000000;
 	};
 	{
@@ -642,7 +642,7 @@ beacons = {
 		position = { -315388.906250, 477.110096, 895795.062500 };
 		direction = 0.000000;
 		positionGeo = { latitude = 41.670555, longitude = 44.946945 };
-		sceneObjects = {'t:60394710'};
+		sceneObjects = {'t:60394699'};
 	};
 	{
 		display_name = _('Tbilisi-Lochini');
@@ -654,7 +654,7 @@ beacons = {
 		position = { -315581.718750, 484.049312, 894405.687500 };
 		direction = 0.000000;
 		positionGeo = { latitude = 41.670577, longitude = 44.930298 };
-		sceneObjects = {'t:177865979'};
+		sceneObjects = {'t:177702139'};
 	};
 	{
 		display_name = _('Maykop-Khanskaya');
@@ -665,7 +665,7 @@ beacons = {
 		position = { -22082.919922, 213.198242, 461575.468750 };
 		direction = 38.999724;
 		positionGeo = { latitude = 44.717443, longitude = 40.084181 };
-		sceneObjects = {'t:290979840'};
+		sceneObjects = {'t:290848768'};
 	};
 	{
 		display_name = _('Maykop-Khanskaya');
@@ -676,7 +676,7 @@ beacons = {
 		position = { -24414.369141, 175.805962, 459687.531250 };
 		direction = 38.999724;
 		positionGeo = { latitude = 44.698086, longitude = 40.057981 };
-		sceneObjects = {'t:290979841'};
+		sceneObjects = {'t:290848769'};
 	};
 	{
 		display_name = _('Maykop-Khanskaya');
@@ -687,7 +687,7 @@ beacons = {
 		position = { -30802.216797, 173.935217, 454513.531250 };
 		direction = -141.000295;
 		positionGeo = { latitude = 44.645015, longitude = 39.986269 };
-		sceneObjects = {'t:287866880'};
+		sceneObjects = {'t:287735808'};
 	};
 	{
 		display_name = _('Maykop-Khanskaya');
@@ -698,7 +698,7 @@ beacons = {
 		position = { -28470.767578, 174.665610, 456401.468750 };
 		direction = -141.000295;
 		positionGeo = { latitude = 44.664391, longitude = 40.012421 };
-		sceneObjects = {'t:289308672'};
+		sceneObjects = {'t:289177600'};
 	};
 	{
 		display_name = _('Maykop-Khanskaya');
@@ -710,7 +710,7 @@ beacons = {
 		position = { -24437.523438, 175.942833, 459668.125000 };
 		direction = -141.000295;
 		positionGeo = { latitude = 44.697894, longitude = 40.057712 };
-		sceneObjects = {'t:678953740'};
+		sceneObjects = {'t:678822668'};
 		chartOffsetX = 4179.000000;
 	};
 	{
@@ -723,7 +723,7 @@ beacons = {
 		position = { -27531.527344, 180.010190, 457323.531250 };
 		direction = -141.000295;
 		positionGeo = { latitude = 44.672070, longitude = 40.024984 };
-		sceneObjects = {'t:678953741'};
+		sceneObjects = {'t:678822669'};
 	};
 	{
 		display_name = _('Maykop-Khanskaya');
@@ -735,7 +735,7 @@ beacons = {
 		position = { -26605.978516, 180.866789, 458079.468750 };
 		direction = -141.000307;
 		positionGeo = { latitude = 44.679754, longitude = 40.035455 };
-		sceneObjects = {'t:678954400'};
+		sceneObjects = {'t:678823328'};
 	};
 	{
 		display_name = _('MineralnyeVody');
@@ -746,7 +746,7 @@ beacons = {
 		position = { -53842.230469, 303.327421, 711195.062500 };
 		direction = 115.300122;
 		positionGeo = { latitude = 44.198946, longitude = 43.144530 };
-		sceneObjects = {'t:279150595'};
+		sceneObjects = {'t:279019523'};
 	};
 	{
 		display_name = _('MineralnyeVody');
@@ -757,7 +757,7 @@ beacons = {
 		position = { -52688.359375, 316.610912, 708754.062500 };
 		direction = 115.300122;
 		positionGeo = { latitude = 44.211867, longitude = 43.116226 };
-		sceneObjects = {'t:280625160'};
+		sceneObjects = {'t:280494088'};
 	};
 	{
 		display_name = _('MineralnyeVody');
@@ -768,7 +768,7 @@ beacons = {
 		position = { -50326.437500, 313.023903, 703758.562500 };
 		direction = 115.300122;
 		positionGeo = { latitude = 44.238297, longitude = 43.058263 };
-		sceneObjects = {'t:280559890'};
+		sceneObjects = {'t:280428818'};
 		chartOffsetX = 4216.000000;
 	};
 	{
@@ -780,7 +780,7 @@ beacons = {
 		position = { -51889.148438, 319.947341, 707345.312500 };
 		direction = 115.300122;
 		positionGeo = { latitude = 44.220503, longitude = 43.100090 };
-		sceneObjects = {'t:543818727'};
+		sceneObjects = {'t:543687655'};
 		chartOffsetX = 120.000000;
 	};
 	{
@@ -792,7 +792,7 @@ beacons = {
 		position = { -48676.292969, 310.763250, 700268.875000 };
 		direction = -64.699902;
 		positionGeo = { latitude = 44.256747, longitude = 43.017738 };
-		sceneObjects = {'t:281935872'};
+		sceneObjects = {'t:281804800'};
 	};
 	{
 		display_name = _('MineralnyeVody');
@@ -800,10 +800,10 @@ beacons = {
 		type = BEACON_TYPE_ILS_NEAR_HOMER;
 		callsign = 'D';
 		frequency = 283000.000000;
-		position = { -49830.164063, 307.123507, 702709.875000 };
+		position = { -49830.164062, 307.123507, 702709.875000 };
 		direction = -64.699902;
 		positionGeo = { latitude = 44.243846, longitude = 43.046088 };
-		sceneObjects = {'t:280559616'};
+		sceneObjects = {'t:280428544'};
 	};
 	{
 		display_name = _('MineralnyeVody');
@@ -814,7 +814,7 @@ beacons = {
 		position = { -52192.085938, 315.340281, 707705.437500 };
 		direction = -64.699902;
 		positionGeo = { latitude = 44.217421, longitude = 43.104064 };
-		sceneObjects = {'t:280593623'};
+		sceneObjects = {'t:280462551'};
 		chartOffsetX = 4216.000000;
 	};
 	{
@@ -826,7 +826,7 @@ beacons = {
 		position = { -50629.375000, 320.010330, 704118.625000 };
 		direction = -64.699902;
 		positionGeo = { latitude = 44.235217, longitude = 43.062240 };
-		sceneObjects = {'t:546079473'};
+		sceneObjects = {'t:545948401'};
 		chartOffsetX = 120.000000;
 	};
 	{
@@ -839,7 +839,7 @@ beacons = {
 		position = { -50239.421875, 314.087991, 703415.500000 };
 		direction = 0.000000;
 		positionGeo = { latitude = 44.239445, longitude = 43.054165 };
-		sceneObjects = {'t:119900926'};
+		sceneObjects = {'t:119868151'};
 	};
 	{
 		display_name = _('Mozdok');
@@ -850,7 +850,7 @@ beacons = {
 		position = { -84144.421875, 148.005153, 829029.375000 };
 		direction = -97.236068;
 		positionGeo = { latitude = 43.792380, longitude = 44.538494 };
-		sceneObjects = {'t:266174464'};
+		sceneObjects = {'t:266043392'};
 	};
 	{
 		display_name = _('Mozdok');
@@ -858,10 +858,10 @@ beacons = {
 		type = BEACON_TYPE_ILS_NEAR_HOMER;
 		callsign = 'D';
 		frequency = 1065000.000000;
-		position = { -83892.507813, 146.142297, 831013.437500 };
+		position = { -83892.507812, 146.142297, 831013.437500 };
 		direction = -97.236068;
 		positionGeo = { latitude = 43.792126, longitude = 44.563089 };
-		sceneObjects = {'t:266174465'};
+		sceneObjects = {'t:266043393'};
 	};
 	{
 		display_name = _('Mozdok');
@@ -872,7 +872,7 @@ beacons = {
 		position = { -82791.179688, 139.140398, 839695.250000 };
 		direction = 82.763916;
 		positionGeo = { latitude = 43.790945, longitude = 44.670692 };
-		sceneObjects = {'t:266272768'};
+		sceneObjects = {'t:266141696'};
 	};
 	{
 		display_name = _('Mozdok');
@@ -883,7 +883,7 @@ beacons = {
 		position = { -83147.640625, 140.692066, 836887.812500 };
 		direction = 82.763916;
 		positionGeo = { latitude = 43.791336, longitude = 44.635898 };
-		sceneObjects = {'t:266240000'};
+		sceneObjects = {'t:266108928'};
 	};
 	{
 		display_name = _('Mozdok');
@@ -892,10 +892,10 @@ beacons = {
 		callsign = 'MZ';
 		frequency = 822000000.000000;
 		channel = 22;
-		position = { -83186.351563, 140.971363, 836579.000000 };
+		position = { -83186.351562, 140.971363, 836579.000000 };
 		direction = -97.236068;
 		positionGeo = { latitude = 43.791382, longitude = 44.632072 };
-		sceneObjects = {'t:678953746'};
+		sceneObjects = {'t:678822674'};
 		chartOffsetX = 4418.000000;
 	};
 	{
@@ -908,7 +908,7 @@ beacons = {
 		position = { -83721.843750, 154.758974, 832917.312500 };
 		direction = -97.236068;
 		positionGeo = { latitude = 43.791251, longitude = 44.586565 };
-		sceneObjects = {'t:678953747'};
+		sceneObjects = {'t:678822675'};
 	};
 	{
 		display_name = _('Mozdok');
@@ -920,7 +920,7 @@ beacons = {
 		position = { -83799.640625, 145.067482, 831748.812500 };
 		direction = 82.763916;
 		positionGeo = { latitude = 43.792027, longitude = 44.572203 };
-		sceneObjects = {'t:678953748'};
+		sceneObjects = {'t:678822676'};
 		chartOffsetX = 4179.000000;
 	};
 	{
@@ -933,7 +933,7 @@ beacons = {
 		position = { -83392.328125, 154.627688, 835512.437500 };
 		direction = 82.763916;
 		positionGeo = { latitude = 43.790905, longitude = 44.618731 };
-		sceneObjects = {'t:678953749'};
+		sceneObjects = {'t:678822677'};
 	};
 	{
 		display_name = _('Mozdok');
@@ -942,10 +942,10 @@ beacons = {
 		callsign = 'MZ';
 		frequency = 820000000.000000;
 		channel = 20;
-		position = { -83636.195313, 154.866778, 834226.937500 };
+		position = { -83636.195312, 154.866778, 834226.937500 };
 		direction = 82.763916;
 		positionGeo = { latitude = 43.790367, longitude = 44.602658 };
-		sceneObjects = {'t:678954401'};
+		sceneObjects = {'t:678823329'};
 	};
 	{
 		display_name = _('Nalchik');
@@ -953,10 +953,10 @@ beacons = {
 		type = BEACON_TYPE_ILS_FAR_HOMER;
 		callsign = 'NL';
 		frequency = 718000.000000;
-		position = { -122005.132813, 376.161387, 764682.375000 };
+		position = { -122005.132812, 376.161387, 764682.375000 };
 		direction = 55.506625;
 		positionGeo = { latitude = 43.535011, longitude = 43.692885 };
-		sceneObjects = {'t:249823232'};
+		sceneObjects = {'t:249692160'};
 	};
 	{
 		display_name = _('Nalchik');
@@ -967,7 +967,7 @@ beacons = {
 		position = { -123534.171875, 417.185293, 762457.062500 };
 		direction = 55.506625;
 		positionGeo = { latitude = 43.524039, longitude = 43.663409 };
-		sceneObjects = {'t:248381440'};
+		sceneObjects = {'t:248250368'};
 	};
 	{
 		display_name = _('Nalchik');
@@ -978,7 +978,7 @@ beacons = {
 		position = { -125664.609375, 430.357730, 759355.687500 };
 		direction = 55.506625;
 		positionGeo = { latitude = 43.508738, longitude = 43.622345 };
-		sceneObjects = {'t:248350149'};
+		sceneObjects = {'t:248219077'};
 		chartOffsetX = 2453.000000;
 	};
 	{
@@ -990,7 +990,7 @@ beacons = {
 		position = { -124349.562500, 430.010409, 761057.625000 };
 		direction = 55.506625;
 		positionGeo = { latitude = 43.518429, longitude = 43.645107 };
-		sceneObjects = {'t:477429855'};
+		sceneObjects = {'t:477298783'};
 		chartOffsetX = 120.000000;
 	};
 	{
@@ -1002,7 +1002,7 @@ beacons = {
 		position = { -281354.250000, 11.487805, 642080.000000 };
 		direction = -85.299767;
 		positionGeo = { latitude = 42.249592, longitude = 41.986317 };
-		sceneObjects = {'t:192282630'};
+		sceneObjects = {'t:192118790'};
 	};
 	{
 		display_name = _('Senaki-Kolkhi');
@@ -1013,7 +1013,7 @@ beacons = {
 		position = { -281575.500000, 23.342671, 644770.937500 };
 		direction = -85.299767;
 		positionGeo = { latitude = 42.245075, longitude = 42.018251 };
-		sceneObjects = {'t:192315394'};
+		sceneObjects = {'t:192151554'};
 	};
 	{
 		display_name = _('Senaki-Kolkhi');
@@ -1024,7 +1024,7 @@ beacons = {
 		position = { -281888.875000, 13.025524, 648576.312500 };
 		direction = -85.299767;
 		positionGeo = { latitude = 42.238667, longitude = 42.063400 };
-		sceneObjects = {'t:192349269'};
+		sceneObjects = {'t:192185428'};
 		chartOffsetX = 2530.000000;
 	};
 	{
@@ -1036,7 +1036,7 @@ beacons = {
 		position = { -281827.968750, 12.790726, 646370.875000 };
 		direction = -85.299767;
 		positionGeo = { latitude = 42.241309, longitude = 42.037080 };
-		sceneObjects = {'t:371785767'};
+		sceneObjects = {'t:371654695'};
 		chartOffsetX = 120.000000;
 	};
 	{
@@ -1049,7 +1049,7 @@ beacons = {
 		position = { -281653.687500, 13.239942, 647182.625000 };
 		direction = 0.000000;
 		positionGeo = { latitude = 42.242087, longitude = 42.047020 };
-		sceneObjects = {'t:192349270'};
+		sceneObjects = {'t:192185429'};
 	};
 	{
 		display_name = _('Sochi-Adler');
@@ -1060,7 +1060,7 @@ beacons = {
 		position = { -165720.531250, 5.664159, 459873.468750 };
 		direction = -117.994619;
 		positionGeo = { latitude = 43.435164, longitude = 39.911051 };
-		sceneObjects = {'t:233340945'};
+		sceneObjects = {'t:233209873'};
 	};
 	{
 		display_name = _('Sochi-Adler');
@@ -1071,7 +1071,7 @@ beacons = {
 		position = { -163681.031250, 23.207581, 463753.718750 };
 		direction = -117.994619;
 		positionGeo = { latitude = 43.450492, longitude = 39.960744 };
-		sceneObjects = {'t:234586966'};
+		sceneObjects = {'t:234455894'};
 		chartOffsetX = 3265.000000;
 	};
 	{
@@ -1083,7 +1083,7 @@ beacons = {
 		position = { -165170.921875, 30.010034, 461206.656250 };
 		direction = -117.994619;
 		positionGeo = { latitude = 43.439082, longitude = 39.927967 };
-		sceneObjects = {'t:453214300'};
+		sceneObjects = {'t:453083228'};
 		chartOffsetX = 120.000000;
 	};
 	{
@@ -1095,7 +1095,7 @@ beacons = {
 		position = { -223173.765625, 25.161868, 569571.375000 };
 		direction = 116.485379;
 		positionGeo = { latitude = 42.833582, longitude = 41.184697 };
-		sceneObjects = {'t:214663172'};
+		sceneObjects = {'t:214499332'};
 	};
 	{
 		display_name = _('Sukhumi-Babushara');
@@ -1106,7 +1106,7 @@ beacons = {
 		position = { -221969.656250, 16.383441, 567154.750000 };
 		direction = 116.485379;
 		positionGeo = { latitude = 42.846418, longitude = 41.156849 };
-		sceneObjects = {'t:214630400'};
+		sceneObjects = {'t:214466560'};
 	};
 	{
 		display_name = _('Vaziani');
@@ -1117,7 +1117,7 @@ beacons = {
 		position = { -320054.406250, 464.386573, 904121.937500 };
 		direction = -44.514716;
 		positionGeo = { latitude = 41.619095, longitude = 45.037014 };
-		sceneObjects = {'t:176751131'};
+		sceneObjects = {'t:176587291'};
 		chartOffsetX = 2635.000000;
 	};
 	{
@@ -1129,7 +1129,7 @@ beacons = {
 		position = { -318477.937500, 464.599830, 902403.625000 };
 		direction = -44.514716;
 		positionGeo = { latitude = 41.635125, longitude = 45.019459 };
-		sceneObjects = {'t:335675402'};
+		sceneObjects = {'t:335544330'};
 		chartOffsetX = 120.000000;
 	};
 	{
@@ -1141,7 +1141,7 @@ beacons = {
 		position = { -318069.343750, 464.975410, 902170.187500 };
 		direction = 135.485284;
 		positionGeo = { latitude = 41.639015, longitude = 45.017397 };
-		sceneObjects = {'t:177930581'};
+		sceneObjects = {'t:177766741'};
 		chartOffsetX = 2727.000000;
 	};
 	{
@@ -1153,7 +1153,7 @@ beacons = {
 		position = { -319645.906250, 464.500495, 903888.250000 };
 		direction = 135.485284;
 		positionGeo = { latitude = 41.622985, longitude = 45.034950 };
-		sceneObjects = {'t:334430229'};
+		sceneObjects = {'t:334299157'};
 		chartOffsetX = 120.000000;
 	};
 	{
@@ -1166,7 +1166,7 @@ beacons = {
 		position = { -318876.500000, 464.500465, 903131.125000 };
 		direction = 0.000000;
 		positionGeo = { latitude = 41.630707, longitude = 45.027340 };
-		sceneObjects = {'t:177930582'};
+		sceneObjects = {'t:177766742'};
 	};
 	{
 		display_name = _('Ust-Labinks');
@@ -1177,7 +1177,7 @@ beacons = {
 		position = { 31587.583984, 80.409993, 422850.937500 };
 		direction = -179.999978;
 		positionGeo = { latitude = 45.226576, longitude = 39.654150 };
-		sceneObjects = {'t:310870017'};
+		sceneObjects = {'t:310738945'};
 	};
 	{
 		display_name = _('Chervonoglinskoye');
@@ -1188,7 +1188,7 @@ beacons = {
 		position = { 96729.375000, 5.000005, -379810.531250 };
 		direction = -179.999978;
 		positionGeo = { latitude = 45.949908, longitude = 29.383333 };
-		sceneObjects = {'t:314638336'};
+		sceneObjects = {'t:314507264'};
 	};
 	{
 		display_name = _('Dmitrovka');
@@ -1199,7 +1199,7 @@ beacons = {
 		position = { 41259.871094, 31.694215, 61344.707031 };
 		direction = -179.999978;
 		positionGeo = { latitude = 45.489353, longitude = 35.058601 };
-		sceneObjects = {'t:313491456'};
+		sceneObjects = {'t:313360384'};
 	};
 	{
 		display_name = _('Agoy');
@@ -1207,10 +1207,10 @@ beacons = {
 		type = BEACON_TYPE_HOMER;
 		callsign = 'AG';
 		frequency = 381000.000000;
-		position = { -93707.710938, 138.342149, 383231.062500 };
+		position = { -93707.710938, 138.342134, 383231.062500 };
 		direction = -179.999978;
 		positionGeo = { latitude = 44.133242, longitude = 39.034429 };
-		sceneObjects = {'t:260177920'};
+		sceneObjects = {'t:260046848'};
 	};
 	{
 		display_name = _('Maykop');
@@ -1221,7 +1221,7 @@ beacons = {
 		position = { -32141.814453, 243.757660, 467470.562500 };
 		direction = -179.999978;
 		positionGeo = { latitude = 44.622965, longitude = 40.146927 };
-		sceneObjects = {'t:287997952'};
+		sceneObjects = {'t:287866880'};
 	};
 	{
 		display_name = _('Herson');
@@ -1232,7 +1232,7 @@ beacons = {
 		position = { 170119.265625, 2.524128, -137766.031250 };
 		direction = -179.999978;
 		positionGeo = { latitude = 46.666575, longitude = 32.499994 };
-		sceneObjects = {'t:314966016'};
+		sceneObjects = {'t:314834944'};
 	};
 	{
 		display_name = _('Smolenkaya');
@@ -1240,10 +1240,10 @@ beacons = {
 		type = BEACON_TYPE_HOMER;
 		callsign = 'SM';
 		frequency = 662000.000000;
-		position = { -22412.445313, 78.688853, 359018.031250 };
+		position = { -22412.445312, 78.688853, 359018.031250 };
 		direction = -179.999978;
 		positionGeo = { latitude = 44.787409, longitude = 38.796373 };
-		sceneObjects = {'t:290422784'};
+		sceneObjects = {'t:290291712'};
 	};
 	{
 		display_name = _('Kislovodsk');
@@ -1251,10 +1251,10 @@ beacons = {
 		type = BEACON_TYPE_HOMER;
 		callsign = 'KW';
 		frequency = 995000.000000;
-		position = { -87247.726563, 803.118113, 675046.687500 };
+		position = { -87247.726562, 803.118113, 675046.687500 };
 		direction = -179.999978;
 		positionGeo = { latitude = 43.941577, longitude = 42.649979 };
-		sceneObjects = {'t:263684096'};
+		sceneObjects = {'t:263553024'};
 	};
 	{
 		display_name = _('Taganrog');
@@ -1265,7 +1265,7 @@ beacons = {
 		position = { 251346.781250, 5.000005, 341832.187500 };
 		direction = -179.999978;
 		positionGeo = { latitude = 47.249909, longitude = 38.833317 };
-		sceneObjects = {'t:315555840'};
+		sceneObjects = {'t:315424768'};
 	};
 	{
 		display_name = _('Feodosiya');
@@ -1276,7 +1276,7 @@ beacons = {
 		position = { -10721.782227, 0.302752, 91145.750000 };
 		direction = -179.999978;
 		positionGeo = { latitude = 45.014353, longitude = 35.419712 };
-		sceneObjects = {'t:294354944'};
+		sceneObjects = {'t:294223872'};
 	};
 	{
 		display_name = _('Shyriaeve');
@@ -1287,7 +1287,7 @@ beacons = {
 		position = { 255448.656250, 5.000005, -304739.375000 };
 		direction = -179.999978;
 		positionGeo = { latitude = 47.403241, longitude = 30.279998 };
-		sceneObjects = {'t:315621376'};
+		sceneObjects = {'t:315490304'};
 	};
 	{
 		display_name = _('Odessa');
@@ -1298,7 +1298,7 @@ beacons = {
 		position = { 132623.734375, 2.000002, -279618.625000 };
 		direction = -179.999978;
 		positionGeo = { latitude = 46.306297, longitude = 30.661109 };
-		sceneObjects = {'t:314867712'};
+		sceneObjects = {'t:314736640'};
 	};
 	{
 		display_name = _('Yalta');
@@ -1309,7 +1309,7 @@ beacons = {
 		position = { 202840.781250, 0.000000, 230918.171875 };
 		direction = -179.999978;
 		positionGeo = { latitude = 46.879909, longitude = 37.336930 };
-		sceneObjects = {'t:315326464'};
+		sceneObjects = {'t:315195392'};
 	};
 	{
 		display_name = _('Stavropol');
@@ -1317,10 +1317,10 @@ beacons = {
 		type = BEACON_TYPE_HOMER;
 		callsign = 'KT';
 		frequency = 730000.000000;
-		position = { 39516.828125, 352.025468, 622585.000000 };
+		position = { 39516.828125, 352.025499, 622585.000000 };
 		direction = -179.999978;
 		positionGeo = { latitude = 45.121577, longitude = 42.181646 };
-		sceneObjects = {'t:313458688'};
+		sceneObjects = {'t:313327616'};
 	};
 	{
 		display_name = _('Yegorlykskaya');
@@ -1331,7 +1331,7 @@ beacons = {
 		position = { 189361.796875, 101.853572, 487761.812500 };
 		direction = -179.999978;
 		positionGeo = { latitude = 46.583243, longitude = 40.666647 };
-		sceneObjects = {'t:315097088'};
+		sceneObjects = {'t:314966016'};
 	};
 	{
 		display_name = _('Komisarivka');
@@ -1339,10 +1339,10 @@ beacons = {
 		type = BEACON_TYPE_HOMER;
 		callsign = 'KM';
 		frequency = 950000.000000;
-		position = { 127528.007813, 2.000002, 55884.429688 };
+		position = { 127528.007812, 2.000002, 55884.429688 };
 		direction = -179.999978;
 		positionGeo = { latitude = 46.266575, longitude = 35.016657 };
-		sceneObjects = {'t:314834944'};
+		sceneObjects = {'t:314703872'};
 	};
 	{
 		display_name = _('Skadovsk');
@@ -1353,7 +1353,7 @@ beacons = {
 		position = { 110740.085938, 3.859469, -105954.679688 };
 		direction = -179.999978;
 		positionGeo = { latitude = 46.133242, longitude = 32.916660 };
-		sceneObjects = {'t:314736640'};
+		sceneObjects = {'t:314605568'};
 	};
 	{
 		display_name = _('Gali');
@@ -1364,7 +1364,7 @@ beacons = {
 		position = { -244178.796875, 132.854198, 621256.250000 };
 		direction = -179.999978;
 		positionGeo = { latitude = 42.599910, longitude = 41.783315 };
-		sceneObjects = {'t:207519744'};
+		sceneObjects = {'t:207355904'};
 	};
 	{
 		display_name = _('Mukhrani');
@@ -1375,7 +1375,7 @@ beacons = {
 		position = { -292419.781250, 522.836949, 860239.062500 };
 		direction = -179.999978;
 		positionGeo = { latitude = 41.916577, longitude = 44.565533 };
-		sceneObjects = {'t:187695104'};
+		sceneObjects = {'t:187531264'};
 	};
 	{
 		display_name = _('Ladozhskaya');
@@ -1383,10 +1383,10 @@ beacons = {
 		type = BEACON_TYPE_HOMER;
 		callsign = 'RF';
 		frequency = 324000.000000;
-		position = { 39622.871094, 62.237573, 442914.437500 };
+		position = { 39622.871094, 62.237596, 442914.437500 };
 		direction = -179.999978;
 		positionGeo = { latitude = 45.283243, longitude = 39.916649 };
-		sceneObjects = {'t:313327616'};
+		sceneObjects = {'t:313196544'};
 	};
 	{
 		display_name = _('Teplorechensky');
@@ -1397,7 +1397,7 @@ beacons = {
 		position = { -54782.437500, 253.499033, 742905.812500 };
 		direction = -179.999978;
 		positionGeo = { latitude = 44.154910, longitude = 43.533311 };
-		sceneObjects = {'t:279281664'};
+		sceneObjects = {'t:279150592'};
 	};
 	{
 		display_name = _('Kalaus');
@@ -1408,7 +1408,7 @@ beacons = {
 		position = { -112412.046875, 347.660656, 889038.250000 };
 		direction = -179.999978;
 		positionGeo = { latitude = 43.466578, longitude = 45.216642 };
-		sceneObjects = {'t:253198336'};
+		sceneObjects = {'t:253067264'};
 	};
 	{
 		display_name = _('Nikolaev-Kulbakino');
@@ -1419,7 +1419,7 @@ beacons = {
 		position = { 200023.625000, 2.973928, -168025.390625 };
 		direction = -179.999978;
 		positionGeo = { latitude = 46.933241, longitude = 32.099995 };
-		sceneObjects = {'t:315260928'};
+		sceneObjects = {'t:315129856'};
 	};
 	{
 		display_name = _('Manychsky');
@@ -1430,7 +1430,7 @@ beacons = {
 		position = { 238988.843750, 93.700884, 459902.875000 };
 		direction = -179.999978;
 		positionGeo = { latitude = 47.049909, longitude = 40.366647 };
-		sceneObjects = {'t:315457536'};
+		sceneObjects = {'t:315326464'};
 	};
 	{
 		display_name = _('Kerch');
@@ -1441,7 +1441,7 @@ beacons = {
 		position = { 31183.582031, 35.950666, 166738.031250 };
 		direction = -179.999978;
 		positionGeo = { latitude = 45.366575, longitude = 36.399988 };
-		sceneObjects = {'t:309755904'};
+		sceneObjects = {'t:309624832'};
 	};
 	{
 		display_name = _('TaganrogYuzhny');
@@ -1452,7 +1452,7 @@ beacons = {
 		position = { 245887.234375, 5.000005, 343510.562500 };
 		direction = -179.999978;
 		positionGeo = { latitude = 47.199909, longitude = 38.849984 };
-		sceneObjects = {'t:315490304'};
+		sceneObjects = {'t:315359232'};
 	};
 	{
 		display_name = _('Ali');
@@ -1463,7 +1463,7 @@ beacons = {
 		position = { -282495.468750, 723.020682, 781223.500000 };
 		direction = -179.999978;
 		positionGeo = { latitude = 42.096021, longitude = 43.644701 };
-		sceneObjects = {'t:193265664'};
+		sceneObjects = {'t:193101824'};
 	};
 	{
 		display_name = _('Elista');
@@ -1474,7 +1474,7 @@ beacons = {
 		position = { 200185.218750, 88.166821, 771829.250000 };
 		direction = -179.999978;
 		positionGeo = { latitude = 46.373244, longitude = 44.333308 };
-		sceneObjects = {'t:315293696'};
+		sceneObjects = {'t:315162624'};
 	};
 	{
 		display_name = _('Ryazanskaya');
@@ -1485,7 +1485,7 @@ beacons = {
 		position = { 2140.257080, 45.922802, 418337.250000 };
 		direction = -179.999978;
 		positionGeo = { latitude = 44.966576, longitude = 39.566650 };
-		sceneObjects = {'t:298942464'};
+		sceneObjects = {'t:298811392'};
 	};
 	{
 		display_name = _('Kakhovka');
@@ -1496,7 +1496,7 @@ beacons = {
 		position = { 185859.781250, 3.237596, -61623.343750 };
 		direction = -179.999978;
 		positionGeo = { latitude = 46.808241, longitude = 33.496659 };
-		sceneObjects = {'t:315064320'};
+		sceneObjects = {'t:314933248'};
 	};
 	{
 		display_name = _('Vesely');
@@ -1507,7 +1507,7 @@ beacons = {
 		position = { 248966.796875, 7.052212, 485735.125000 };
 		direction = -179.999978;
 		positionGeo = { latitude = 47.116576, longitude = 40.716647 };
-		sceneObjects = {'t:315523072'};
+		sceneObjects = {'t:315392000'};
 	};
 	{
 		display_name = _('Odessa');
@@ -1518,7 +1518,7 @@ beacons = {
 		position = { 153563.031250, 2.412611, -274177.906250 };
 		direction = -179.999978;
 		positionGeo = { latitude = 46.496019, longitude = 30.723886 };
-		sceneObjects = {'t:314933248'};
+		sceneObjects = {'t:314802176'};
 	};
 	{
 		display_name = _('Armavir');
@@ -1529,7 +1529,7 @@ beacons = {
 		position = { 13270.845703, 232.423328, 540570.375000 };
 		direction = -179.999978;
 		positionGeo = { latitude = 44.966576, longitude = 41.116648 };
-		sceneObjects = {'t:304971776'};
+		sceneObjects = {'t:304840704'};
 	};
 	{
 		display_name = _('Grozny');
@@ -1540,7 +1540,7 @@ beacons = {
 		position = { -115728.125000, 6.828314, 929610.250000 };
 		direction = -179.999978;
 		positionGeo = { latitude = 43.383244, longitude = 45.699975 };
-		sceneObjects = {'t:251691008'};
+		sceneObjects = {'t:251559936'};
 	};
 	{
 		display_name = _('Tiraspol');
@@ -1551,7 +1551,7 @@ beacons = {
 		position = { 197836.031250, 5.000005, -358637.031250 };
 		direction = -179.999978;
 		positionGeo = { latitude = 46.866575, longitude = 29.599999 };
-		sceneObjects = {'t:315195392'};
+		sceneObjects = {'t:315064320'};
 	};
 	{
 		display_name = _('Simferopol');
@@ -1562,7 +1562,7 @@ beacons = {
 		position = { -42789.855469, 44.657801, -54661.699219 };
 		direction = -179.999978;
 		positionGeo = { latitude = 44.749908, longitude = 33.566659 };
-		sceneObjects = {'t:282361856'};
+		sceneObjects = {'t:282230784'};
 	};
 	{
 		display_name = _('Sultanskoye');
@@ -1573,7 +1573,7 @@ beacons = {
 		position = { -14871.457031, 377.109447, 667798.187500 };
 		direction = -179.999978;
 		positionGeo = { latitude = 44.591577, longitude = 42.666645 };
-		sceneObjects = {'t:294322176'};
+		sceneObjects = {'t:294191104'};
 	};
 	{
 		display_name = _('Buyalyk');
@@ -1584,7 +1584,7 @@ beacons = {
 		position = { 198494.375000, 5.000005, -274699.250000 };
 		direction = -179.999978;
 		positionGeo = { latitude = 46.899908, longitude = 30.699997 };
-		sceneObjects = {'t:315228160'};
+		sceneObjects = {'t:315097088'};
 	};
 	{
 		display_name = _('Sarmakovo');
@@ -1592,10 +1592,10 @@ beacons = {
 		type = BEACON_TYPE_HOMER;
 		callsign = 'SR';
 		frequency = 907000.000000;
-		position = { -104016.257813, 1117.211933, 715148.062500 };
+		position = { -104016.257812, 1117.211933, 715148.062500 };
 		direction = -179.999978;
 		positionGeo = { latitude = 43.749910, longitude = 43.116645 };
-		sceneObjects = {'t:255819776'};
+		sceneObjects = {'t:255688704'};
 	};
 	{
 		display_name = _('Tendrovskiy');
@@ -1606,7 +1606,7 @@ beacons = {
 		position = { 132383.515625, 1.000001, -213243.359375 };
 		direction = -179.999978;
 		positionGeo = { latitude = 46.318519, longitude = 31.522774 };
-		sceneObjects = {'t:314900480'};
+		sceneObjects = {'t:314769408'};
 	};
 	{
 		display_name = _('Sukhoy');
@@ -1617,7 +1617,7 @@ beacons = {
 		position = { 252081.109375, 13.852774, 533942.125000 };
 		direction = -179.999978;
 		positionGeo = { latitude = 47.099910, longitude = 41.349979 };
-		sceneObjects = {'t:315588608'};
+		sceneObjects = {'t:315457536'};
 	};
 	{
 		display_name = _('Dzhubga');
@@ -1625,10 +1625,10 @@ beacons = {
 		type = BEACON_TYPE_HOMER;
 		callsign = 'DV';
 		frequency = 420000.000000;
-		position = { -74816.820313, 63.208540, 355136.062500 };
+		position = { -74816.820312, 63.208540, 355136.062500 };
 		direction = -179.999978;
 		positionGeo = { latitude = 44.320464, longitude = 38.701374 };
-		sceneObjects = {'t:268500992'};
+		sceneObjects = {'t:268369920'};
 	};
 	{
 		display_name = _('Genichesk');
@@ -1636,10 +1636,10 @@ beacons = {
 		type = BEACON_TYPE_HOMER;
 		callsign = 'GE';
 		frequency = 300500.000000;
-		position = { 117802.703125, 1.887341, 40644.195313 };
+		position = { 117802.703125, 1.887341, 40644.195312 };
 		direction = -179.999978;
 		positionGeo = { latitude = 46.182408, longitude = 34.816102 };
-		sceneObjects = {'t:314769408'};
+		sceneObjects = {'t:314638336'};
 	};
 	{
 		display_name = _('Primorsko-Akhtarsk');
@@ -1650,7 +1650,7 @@ beacons = {
 		position = { 114807.015625, 8.405183, 305325.968750 };
 		direction = -179.999978;
 		positionGeo = { latitude = 46.049909, longitude = 38.233318 };
-		sceneObjects = {'t:314802176'};
+		sceneObjects = {'t:314671104'};
 	};
 	{
 		display_name = _('Yasnaya');
@@ -1661,7 +1661,7 @@ beacons = {
 		position = { 222679.156250, 98.023337, 484495.906250 };
 		direction = -179.999978;
 		positionGeo = { latitude = 46.883243, longitude = 40.666647 };
-		sceneObjects = {'t:315392000'};
+		sceneObjects = {'t:315260928'};
 	};
 	{
 		display_name = _('Alushta');
@@ -1669,10 +1669,10 @@ beacons = {
 		type = BEACON_TYPE_HOMER;
 		callsign = 'AL';
 		frequency = 384000.000000;
-		position = { -50326.164063, 5.000005, 11313.958008 };
+		position = { -50326.164062, 5.000005, 11313.958008 };
 		direction = -179.999978;
 		positionGeo = { latitude = 44.674908, longitude = 34.398325 };
-		sceneObjects = {'t:279445504'};
+		sceneObjects = {'t:279314432'};
 	};
 	{
 		display_name = _('Dobrushyn');
@@ -1683,7 +1683,7 @@ beacons = {
 		position = { 26887.388672, 50.001286, -71200.710938 };
 		direction = -179.999978;
 		positionGeo = { latitude = 45.377964, longitude = 33.361660 };
-		sceneObjects = {'t:308346880'};
+		sceneObjects = {'t:308215808'};
 	};
 	{
 		display_name = _('Bolshevik');
@@ -1694,7 +1694,7 @@ beacons = {
 		position = { 95501.281250, 65.056957, 462884.593750 };
 		direction = -179.999978;
 		positionGeo = { latitude = 45.766576, longitude = 40.233315 };
-		sceneObjects = {'t:314671104'};
+		sceneObjects = {'t:314540032'};
 	};
 	{
 		display_name = _('Peredovay');
@@ -1702,10 +1702,10 @@ beacons = {
 		type = BEACON_TYPE_HOMER;
 		callsign = 'PR';
 		frequency = 1210000.000000;
-		position = { -78315.664063, 631.934653, 578030.812500 };
+		position = { -78315.664062, 631.934653, 578030.812500 };
 		direction = -179.999978;
 		positionGeo = { latitude = 44.116576, longitude = 41.466648 };
-		sceneObjects = {'t:267354112'};
+		sceneObjects = {'t:267223040'};
 	};
 	{
 		display_name = _('Parutine');
@@ -1716,7 +1716,7 @@ beacons = {
 		position = { 173728.484375, 2.022021, -183237.750000 };
 		direction = -179.999978;
 		positionGeo = { latitude = 46.694908, longitude = 31.904995 };
-		sceneObjects = {'t:315031552'};
+		sceneObjects = {'t:314900480'};
 	};
 	{
 		display_name = _('Gori');
@@ -1727,7 +1727,7 @@ beacons = {
 		position = { -286124.312500, 604.993647, 822770.125000 };
 		direction = -179.999978;
 		positionGeo = { latitude = 42.016577, longitude = 44.132200 };
-		sceneObjects = {'t:191430656'};
+		sceneObjects = {'t:191266816'};
 	};
 	{
 		display_name = _('Liubymivka');
@@ -1738,7 +1738,7 @@ beacons = {
 		position = { 56011.175781, 50.001397, 48464.128906 };
 		direction = -179.999978;
 		positionGeo = { latitude = 45.624908, longitude = 34.898324 };
-		sceneObjects = {'t:314310656'};
+		sceneObjects = {'t:314179584'};
 	};
 	{
 		display_name = _('Mariupol');
@@ -1749,7 +1749,7 @@ beacons = {
 		position = { 225914.703125, 2.405937, 238245.421875 };
 		direction = -179.999978;
 		positionGeo = { latitude = 47.083242, longitude = 37.449986 };
-		sceneObjects = {'t:315424768'};
+		sceneObjects = {'t:315293696'};
 	};
 	{
 		display_name = _('Akhilleon');
@@ -1757,10 +1757,10 @@ beacons = {
 		type = BEACON_TYPE_HOMER;
 		callsign = 'AH';
 		frequency = 300500.000000;
-		position = { 40930.476563, 77.227120, 201825.687500 };
+		position = { 40930.476562, 77.227120, 201825.687500 };
 		direction = -179.999978;
 		positionGeo = { latitude = 45.439909, longitude = 36.853043 };
-		sceneObjects = {'t:312410112'};
+		sceneObjects = {'t:312279040'};
 	};
 	{
 		display_name = _('Nikolaev-Matveyevka');
@@ -1771,7 +1771,7 @@ beacons = {
 		position = { 217274.171875, 3.520703, -177463.687500 };
 		direction = -179.999978;
 		positionGeo = { latitude = 47.087408, longitude = 31.973051 };
-		sceneObjects = {'t:315359232'};
+		sceneObjects = {'t:315228160'};
 	};
 	{
 		display_name = _('Melitopol');
@@ -1782,7 +1782,7 @@ beacons = {
 		position = { 194790.437500, 2.729047, 75772.835938 };
 		direction = -179.999978;
 		positionGeo = { latitude = 46.866575, longitude = 35.299989 };
-		sceneObjects = {'t:315129856'};
+		sceneObjects = {'t:314998784'};
 	};
 	{
 		display_name = _('TchervonoLissya');
@@ -1793,7 +1793,7 @@ beacons = {
 		position = { -32929.128906, 419.738579, -713.123108 };
 		direction = -179.999978;
 		positionGeo = { latitude = 44.833242, longitude = 34.249992 };
-		sceneObjects = {'t:285310976'};
+		sceneObjects = {'t:285179904'};
 	};
 	{
 		display_name = _('Tikhoretsk');
@@ -1804,7 +1804,7 @@ beacons = {
 		position = { 101857.085938, 60.508731, 450564.000000 };
 		direction = -179.999978;
 		positionGeo = { latitude = 45.833243, longitude = 40.083315 };
-		sceneObjects = {'t:314703872'};
+		sceneObjects = {'t:314572800'};
 	};
 	{
 		display_name = _('Rostov-Na-Donu');
@@ -1815,7 +1815,7 @@ beacons = {
 		position = { 254315.078125, 64.840397, 412917.500000 };
 		direction = -179.999978;
 		positionGeo = { latitude = 47.224909, longitude = 39.769982 };
-		sceneObjects = {'t:315654144'};
+		sceneObjects = {'t:315523072'};
 	};
 	{
 		display_name = _('Lazarevskoye');
@@ -1826,7 +1826,7 @@ beacons = {
 		position = { -115885.585938, 55.133200, 409331.031250 };
 		direction = -179.999978;
 		positionGeo = { latitude = 43.917131, longitude = 39.337484 };
-		sceneObjects = {'t:250314755'};
+		sceneObjects = {'t:250183683'};
 	};
 	{
 		display_name = _('Berdyansk');
@@ -1837,7 +1837,7 @@ beacons = {
 		position = { 193557.578125, 2.010851, 187810.609375 };
 		direction = -179.999978;
 		positionGeo = { latitude = 46.816575, longitude = 36.766654 };
-		sceneObjects = {'t:315162624'};
+		sceneObjects = {'t:315031552'};
 	};
 	{
 		display_name = _('Kropotkin');
@@ -1848,7 +1848,7 @@ beacons = {
 		position = { 62738.718750, 125.442501, 492136.125000 };
 		direction = -179.999978;
 		positionGeo = { latitude = 45.449909, longitude = 40.566648 };
-		sceneObjects = {'t:314507264'};
+		sceneObjects = {'t:314376192'};
 	};
 	{
 		display_name = _('Lymans-Ke');
@@ -1859,7 +1859,7 @@ beacons = {
 		position = { 174369.812500, 5.000005, -329002.812500 };
 		direction = -179.999978;
 		positionGeo = { latitude = 46.666575, longitude = 29.999999 };
-		sceneObjects = {'t:314998784'};
+		sceneObjects = {'t:314867712'};
 	};
 	{
 		display_name = _('Krasny');
@@ -1870,6 +1870,6 @@ beacons = {
 		position = { 255528.015625, 5.000005, 457062.968750 };
 		direction = -179.999978;
 		positionGeo = { latitude = 47.199909, longitude = 40.349981 };
-		sceneObjects = {'t:315686912'};
+		sceneObjects = {'t:315555840'};
 	};
 }

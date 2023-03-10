@@ -389,17 +389,19 @@ join(res.keyCommands,{
 
 	
 	-- VTH
-	{category = _('HUD'), name = _('HUD Brightness UP'), 						pressed = iCommandHUDBrightnessUp,    										},
-    {category = _('HUD'), name = _('HUD Brightness DOWN'), 						pressed = iCommandHUDBrightnessDown, 										},
-    {category = _('HUD'), name = _('HUD OFF'), 									down = 3201, up = 3201, cockpit_device_id = devices.VTH, value_down = 0.0, 	},
-    {category = _('HUD'), name = _('HUD ON'), 									down = 3201, up = 3201, cockpit_device_id = devices.VTH, value_down = 0.5, 	},
-    {category = _('HUD'), name = _('HUD TEST'), 								down = 3201, up = 3201, cockpit_device_id = devices.VTH, value_down = 1.0, 	},
-	{category = _('HUD'), name = _('HUD Declutter'), 							down = 3203, up = 3203,	cockpit_device_id = devices.VTH, value_down = 1.0, 	},
-    {category = _('HUD'), name = _('HUD OFF'),  								down = 3201, up = 3201, cockpit_device_id = devices.VTH, value_down = 0.0, 	},
-    {category = _('HUD'), name = _('HUD ON'),   								down = 3201, up = 3201, cockpit_device_id = devices.VTH, value_down = 0.5, 	},
-    {category = _('HUD'), name = _('HUD TEST'), 								down = 3201, up = 3201, cockpit_device_id = devices.VTH, value_down = 1.0, 	},
-	{category = _('HUD'), name = _('Auxiliary Gunsight OFF'),					down = 3206, up = 3206, cockpit_device_id = devices.VTH, value_down = 0.0,	},
-	{category = _('HUD'), name = _('Auxiliary Gunsight ON'),					down = 3206, up = 3206, cockpit_device_id = devices.VTH, value_down = 1.0,	},
+    {category = _('HUD'), name = _('HUD Brightness UP'), 				pressed = iCommandHUDBrightnessUp,    											},
+    {category = _('HUD'), name = _('HUD Brightness DOWN'), 				pressed = iCommandHUDBrightnessDown, 											},
+    {category = _('HUD'), name = _('HUD OFF'), 							down = 3201, up = 3201,		cockpit_device_id = devices.VTH, value_down = 0.0, 	},
+    {category = _('HUD'), name = _('HUD ON'), 							down = 3201, up = 3201,		cockpit_device_id = devices.VTH, value_down = 0.5, 	},
+    {category = _('HUD'), name = _('HUD TEST'), 						down = 3201, up = 3201,		cockpit_device_id = devices.VTH, value_down = 1.0, 	},
+	{category = _('HUD'), name = _('HUD Declutter'), 					down = 3203, up = 3203,		cockpit_device_id = devices.VTH, value_down = 1.0, 	},
+	{category = _('HUD'), name = _('HUD OFF'),  						down = 3201, up = 3201,		cockpit_device_id = devices.VTH, value_down = 0.0, 	},
+    {category = _('HUD'), name = _('HUD ON'),   						down = 3201, up = 3201,		cockpit_device_id = devices.VTH, value_down = 0.5, 	},
+    {category = _('HUD'), name = _('HUD TEST'), 						down = 3201, up = 3201,		cockpit_device_id = devices.VTH, value_down = 1.0, 	},
+	{category = _('HUD'), name = _('Auxiliary Gunsight OFF'),			down = 3206, up = 3206,		cockpit_device_id = devices.VTH, value_down = 0.0,	},
+	{category = _('HUD'), name = _('Auxiliary Gunsight ON'),			down = 3206, up = 3206,		cockpit_device_id = devices.VTH, value_down = 1.0,	},
+    {category = _('HUD'), name = _('Auxiliary Gunsight Angle INC'),		down = cmds.AUX_SIGHT_INC,									 value_down = 0.2,	},
+    {category = _('HUD'), name = _('Auxiliary Gunsight Angle DEC'),		down = cmds.AUX_SIGHT_INC,									 value_down =-0.2,	},
 	
 	-- RADAR ALTIMETER
  	{category = _('HUD'), name = _('Radar Altimeter ON, else OFF'),		down = 3205, up = 3205, cockpit_device_id = devices.RS,	value_down = 0.5, value_up = 0,		},
@@ -409,8 +411,8 @@ join(res.keyCommands,{
     {category = _('HUD'), name = _('Radar Altimeter OFF'), 				down = 3205, up = 3205, cockpit_device_id = devices.RS, value_down = 0.0, 					},
     {category = _('HUD'), name = _('Radar Altimeter ON'), 				down = 3205, up = 3205, cockpit_device_id = devices.RS, value_down = 0.5, 					},
     {category = _('HUD'), name = _('Radar Altimeter TEST'), 			down = 3205, up = 3205, cockpit_device_id = devices.RS, value_down = 1.0, 					},
-    {category = _('HUD'), name = _('Minimum Altituede INC'), 			down = cmds.SELH_INC,									value_down = 0.2, 					},
-    {category = _('HUD'), name = _('Minimum Altituede DEC'), 			down = cmds.SELH_INC,									value_down =-0.2, 					},
+    {category = _('HUD'), name = _('Minimum Altitude INC'), 			down = cmds.SELH_INC,									value_down = 0.2, 					},
+    {category = _('HUD'), name = _('Minimum Altitude DEC'), 			down = cmds.SELH_INC,									value_down =-0.2, 					},
 	
 	-- VTB
     {category = _('HDD'), name = _('VTB Viewport ON/OFF'), 											down = iCommandPlaneCDU_CLR, 																},

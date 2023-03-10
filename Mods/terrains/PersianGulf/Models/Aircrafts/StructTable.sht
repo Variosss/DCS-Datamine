@@ -1,0 +1,47 @@
+TerrainModelDeclaration =
+{
+	default =
+	{
+		load =
+		{
+			false;
+			false;
+		};
+		drawonmap = true;
+		vis = 1;
+		visShadows = 1;
+		life = 500;
+		fire =
+		{
+		  0;
+		  1;
+		};
+		classname = "lStandartStructure";
+		positioning = "ONLYHEIGTH"; 
+		DestructAnimatttion = "NO"; 
+	};
+	{
+		file = "airbus_a300";
+		life = 200;
+		fire =
+		{
+			60;
+			1;
+		};
+		username = "";
+		maxSlope = 5;
+		desrt = "airbus_A300_crash";
+	};
+
+	{
+		file = "b737-800";
+		life = 200;
+		fire =
+		{
+			60;
+			1;
+		};
+		desrt = "b737-800_crash";
+	};
+
+};

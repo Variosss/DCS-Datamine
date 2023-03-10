@@ -1,0 +1,555 @@
+TerrainModelDeclaration =
+{
+	default =
+	{
+		load =
+		{
+			false;
+			false;
+		};
+		drawonmap = true;
+		vis = 1;
+		visShadows = 1;
+		life = 500;
+		fire =
+		{
+		  0;
+		  1;
+		};
+		classname = "lStandartStructure";
+		positioning = "ONLYHEIGTH"; 
+		DestructAnimatttion = "NO"; 
+	};
+	{
+		file = "!proxyVehicles";
+		desrt = "";
+	};
+
+	{
+		file = "American_truck";
+		life = 2;
+		fire =
+		{
+			120;
+			1;
+		};
+		maxSlope = 10;
+		desrt = "american_truck_crash";
+	};
+
+	{
+		file = "American_truck_head";
+		life = 2;
+		fire =
+		{
+			120;
+			1;
+		};
+		maxSlope = 10;
+		desrt = "american_truck_crash";
+	};
+
+	{
+		file = "bmwi8";
+		life = 1;
+		fire =
+		{
+			75;
+			1;
+		};
+		desrt = "bmwi8_crash";
+	};
+
+	{
+		file = "bmwi8_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "bugatti";
+		life = 1;
+		fire =
+		{
+			75;
+			1;
+		};
+		desrt = "bugatti_crash";
+	};
+
+	{
+		file = "bugatti_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "Buggy";
+		desrt = "";
+	};
+
+	{
+		file = "BuggyHuman";
+		desrt = "";
+	};
+
+	{
+		file = "car_01_fire";
+		life = 2;
+		fire =
+		{
+			60;
+			1;
+		};
+		maxSlope = 10;
+		desrt = "truck_crash_02";
+	};
+
+	{
+		file = "car_03";
+		life = 1;
+		fire =
+		{
+			60;
+			1;
+		};
+		username = "";
+		maxSlope = 10;
+		desrt = "car_crash_01";
+	};
+
+	{
+		file = "car_04";
+		life = 1;
+		fire =
+		{
+			75;
+			1;
+		};
+		username = "";
+		maxSlope = 10;
+		desrt = "car_crash_01";
+	};
+
+	{
+		file = "car_05";
+		life = 1;
+		fire =
+		{
+			80;
+			1;
+		};
+		username = "";
+		maxSlope = 10;
+		desrt = "car_crash_01";
+	};
+
+	{
+		file = "car_06";
+		life = 1;
+		fire =
+		{
+			60;
+			1;
+		};
+		username = "";
+		maxSlope = 10;
+		desrt = "car_crash_01";
+	};
+
+	{
+		file = "car_07";
+		life = 1;
+		fire =
+		{
+			60;
+			1;
+		};
+		username = "";
+		maxSlope = 10;
+		desrt = "car_crash_01";
+	};
+
+	{
+		file = "car_08";
+		life = 1;
+		fire =
+		{
+			60;
+			1;
+		};
+		username = "";
+		maxSlope = 10;
+		desrt = "car_crash_01";
+	};
+
+	{
+		file = "car_rust_1";
+		life = 1;
+		fire =
+		{
+			60;
+			1;
+		};
+		desrt = "car_rust_1_crash";
+	};
+
+	{
+		file = "car_rust_1_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "car_rust_2";
+		life = 1;
+		fire =
+		{
+			50;
+			1;
+		};
+		maxSlope = 15;
+		desrt = "car_crash_01";
+	};
+
+	{
+		file = "car_rust_3";
+		life = 1;
+		fire =
+		{
+			50;
+			1;
+		};
+		maxSlope = 15;
+		desrt = "car_crash_01";
+	};
+
+	{
+		file = "car_rust_4";
+		life = 1;
+		fire =
+		{
+			50;
+			1;
+		};
+		maxSlope = 15;
+		desrt = "car_crash_01";
+	};
+
+	{
+		file = "car_rust_5";
+		life = 1;
+		fire =
+		{
+			60;
+			1;
+		};
+		maxSlope = 10;
+		desrt = "car_crash_01";
+	};
+
+	{
+		file = "car_rust_6";
+		life = 1;
+		fire =
+		{
+			50;
+			1;
+		};
+		maxSlope = 15;
+		desrt = "car_crash_01";
+	};
+
+	{
+		file = "container_platform_crash";
+		desrt = "";
+	};
+
+	{
+		file = "container_train";
+		life = 2;
+		fire =
+		{
+			60;
+			1;
+		};
+		desrt = "container_train_crash";
+	};
+
+	{
+		file = "container_train_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "dubai_metro_coach";
+		desrt = "";
+	};
+
+	{
+		file = "dubai_metro_coach_01";
+		desrt = "";
+	};
+
+	{
+		file = "dubai_metro_head";
+		desrt = "";
+	};
+
+	{
+		file = "dump_truck_trailer";
+		desrt = "";
+	};
+
+	{
+		file = "europa_train";
+		life = 2;
+		fire =
+		{
+			60;
+			1;
+		};
+		maxSlope = 10;
+		desrt = "europa_train_crash";
+	};
+
+	{
+		file = "ford_transit";
+		life = 1;
+		fire =
+		{
+			60;
+			1;
+		};
+		maxSlope = 10;
+		desrt = "car_crash_01";
+	};
+
+	{
+		file = "loader_25k";
+		life = 2;
+		fire =
+		{
+			50;
+			1;
+		};
+		maxSlope = 10;
+		desrt = "diesel_generator_crash";
+	};
+
+	{
+		file = "luggage_car";
+		life = 1;
+		fire =
+		{
+			0;
+			0;
+		};
+		username = "";
+		maxSlope = 10;
+		desrt = "diesel_generator_crash";
+	};
+
+	{
+		file = "luggage_cart";
+		life = 1;
+		fire =
+		{
+			0;
+			0;
+		};
+		username = "";
+		maxSlope = 10;
+		desrt = "diesel_generator_crash";
+	};
+
+	{
+		file = "MBY_container_crash";
+		desrt = "";
+	};
+
+	{
+		file = "mersedes_Lseries_container_tank_truck";
+		life = 2;
+		fire =
+		{
+			60;
+			1;
+		};
+		maxSlope = 10;
+		desrt = "mersedes_container_tank_truck_crash";
+	};
+
+	{
+		file = "mersedes_Lseries_dump_truck";
+		life = 2;
+		fire =
+		{
+			60;
+			1;
+		};
+		maxSlope = 10;
+		desrt = "mersedes_Lseries_truck_crash";
+	};
+
+	{
+		file = "mersedes_Lseries_truck";
+		life = 2;
+		fire =
+		{
+			60;
+			1;
+		};
+		maxSlope = 10;
+		desrt = "mersedes_Lseries_truck_crash";
+	};
+
+	{
+		file = "mini_dozer";
+		life = 1;
+		fire =
+		{
+			40;
+			1;
+		};
+		maxSlope = 10;
+		desrt = "diesel_generator_crash";
+	};
+
+	{
+		file = "monorail_train";
+		life = 2;
+		fire =
+		{
+			60;
+			1;
+		};
+		desrt = "";
+	};
+
+	{
+		file = "monorail_train_01";
+		life = 2;
+		fire =
+		{
+			60;
+			1;
+		};
+		desrt = "";
+	};
+
+	{
+		file = "monorail_train_02";
+		life = 2;
+		fire =
+		{
+			60;
+			1;
+		};
+		desrt = "";
+	};
+
+	{
+		file = "oil_train";
+		life = 2;
+		fire =
+		{
+			60;
+			3;
+		};
+		maxSlope = 10;
+		desrt = "";
+	};
+
+	{
+		file = "oil_train_crash";
+		desrt = "";
+	};
+
+	{
+		file = "Oshkosh_refueller_azal";
+		life = 2;
+		fire =
+		{
+			60;
+			2;
+		};
+		maxSlope = 10;
+		desrt = "truck_crash_01";
+	};
+
+	{
+		file = "Oshkosh_truck_light";
+		life = 2;
+		fire =
+		{
+			60;
+			2;
+		};
+		maxSlope = 10;
+		desrt = "truck_crash_01";
+	};
+
+	{
+		file = "road_train_trailer";
+		life = 2;
+		fire =
+		{
+			50;
+			1;
+		};
+		maxSlope = 10;
+		desrt = "road_train_trailer_crash";
+	};
+
+	{
+		file = "rover";
+		life = 1;
+		fire =
+		{
+			50;
+			1;
+		};
+		maxSlope = 10;
+		desrt = "car_crash_01";
+	};
+
+	{
+		file = "tow_truck";
+		life = 2;
+		fire =
+		{
+			60;
+			1;
+		};
+		username = "";
+		maxSlope = 10;
+		desrt = "board_crash";
+	};
+
+	{
+		file = "Trap_noname";
+		life = 3;
+		fire =
+		{
+			0;
+			0;
+		};
+		maxSlope = 10;
+		desrt = "board_crash";
+	};
+
+	{
+		file = "trav_bas";
+		life = 2;
+		fire =
+		{
+			60;
+			1;
+		};
+		maxSlope = 10;
+		desrt = "trav_bas_crash";
+	};
+
+};

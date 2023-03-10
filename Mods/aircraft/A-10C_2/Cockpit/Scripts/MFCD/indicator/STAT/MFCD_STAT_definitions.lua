@@ -27,6 +27,9 @@ LRU_CDU			= 23
 LRU_EPLRS		= 24
 -- A-10C II specific
 LRU_HMCS		= 25
+LRU_DVADR		= 26
+LRU_ARC210_1	= 27
+LRU_ARC210_2	= 28
 
 STATUS_NA		= x01
 STATUS_VALID	= x02
@@ -84,6 +87,9 @@ LRU_names[LRU_CDU]			= "CDU     "
 LRU_names[LRU_EPLRS]		= "EPLRS   "
 -- A-10C II specific
 LRU_names[LRU_HMCS]			= "HMCS    "
+LRU_names[LRU_DVADR]		= "DVADR   "
+LRU_names[LRU_ARC210_1]		= "ARC210-1"
+LRU_names[LRU_ARC210_2]		= "ARC210-2"
 
 LRU_names2 = {}
 LRU_names2[LRU_ALL]			= "ALL"
@@ -112,6 +118,9 @@ LRU_names2[LRU_CDU]			= "CDU"
 LRU_names2[LRU_EPLRS]		= "EPLRS"
 -- A-10C II specific
 LRU_names2[LRU_HMCS]		= "HMCS"
+LRU_names2[LRU_DVADR]		= "DVADR"
+LRU_names2[LRU_ARC210_1]	= "ARC210-1"
+LRU_names2[LRU_ARC210_2]	= "ARC210-2"
 
 LRU_status = {}
 LRU_status[LRU_ALL]			= "-"
@@ -127,6 +136,7 @@ LRU_status[LRU_HOTAS]		= "VALID"
 LRU_status[LRU_HOTAS_STICK]	= "VALID"
 LRU_status[LRU_HOTAS_THRTL]	= "VALID"
 LRU_status[LRU_HOTAS_AHCP]	= "VALID"
+LRU_status[LRU_DVADR]		= "VALID"
 
 LRU_test = {}
 LRU_test[LRU_ALL]			= "-"
@@ -148,6 +158,9 @@ LRU_test[LRU_IFFCC]			= "-"
 LRU_test[LRU_CDU]			= "-"
 LRU_test[LRU_EPLRS]			= "-"
 LRU_test[LRU_HMCS]			= "-"
+LRU_test[LRU_DVADR]			= "-"
+LRU_test[LRU_ARC210_1]		= "-"
+LRU_test[LRU_ARC210_2]		= "-"
 
 LRU_details = {}
 LRU_details[LRU_CICU]			= "CICU OFP ID:  V 1 7 10\nCICU CHK SUM: 859068F0"

@@ -240,7 +240,7 @@ void CS_Main(uint3 groupId: SV_GroupID, uint3 dispatchThreadId : SV_DispatchThre
 
 		[branch]
 		if (validCoords) {
-			uint2 idx = globalCoords + viewport.xy;
+			uint2 idx = globalCoords;// +viewport.xy;
 			//	get zMin, zMax of first sample
 			float depth = SampleMap(Depth, idx, 0).r;
 			float4 p = mul(float4(projPosXY, depth, 1), gProjInv);

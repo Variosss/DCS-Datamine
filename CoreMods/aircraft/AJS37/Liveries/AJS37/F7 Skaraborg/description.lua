@@ -7,7 +7,7 @@ livery = {
 
         custom_args = 
         {
-            [850] = 0.1, -- turn on/off vertical tail dynamic numbers (< 0.5 is on)
+            [850] = 1.0, -- turn on/off vertical tail dynamic numbers (< 0.5 is on)
         }
 
 

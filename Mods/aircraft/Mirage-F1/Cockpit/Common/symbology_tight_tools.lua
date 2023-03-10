@@ -126,13 +126,7 @@ function setTexturedElementProperties(element, name, vertices, tex_params, contr
 	element.use_mipfilter	= use_mipfilter
 end
 
-function AddTexuredElement(name, vertices, tex_params, controllers, init_pos, init_rot, level)
-	local element			= CreateElement "ceTexPoly"
-	
-	setTexturedElementProperties(element, name, vertices, tex_params, controllers, init_pos, init_rot, level)
-	
-	Add(element)
-
+function addDebugGeometry(name, parent, vertices)
 	if drawDbgGeometry then
 		local dbg_box 			= CreateElement "ceMeshPoly"
 		dbg_box.name 			= name .. "_dbg_box"
@@ -144,7 +138,9 @@ function AddTexuredElement(name, vertices, tex_params, controllers, init_pos, in
 		dbg_box.change_opacity	= false
 		dbg_box.collimated		= collimated or false
 		
-		dbg_box.parent_element  = name
+		if parent ~= nil then
+			dbg_box.parent_element  = parent.name
+		end
 	
 		Add(dbg_box)
 		
@@ -153,6 +149,16 @@ function AddTexuredElement(name, vertices, tex_params, controllers, init_pos, in
 			dbg_marker.parent_element  = dbg_box.name
 		end
 	end
+end
+
+function AddTexuredElement(name, vertices, tex_params, controllers, init_pos, init_rot, level)
+	local element			= CreateElement "ceTexPoly"
+	
+	setTexturedElementProperties(element, name, vertices, tex_params, controllers, init_pos, init_rot, level)
+	
+	Add(element)
+	
+	addDebugGeometry(name, element, vertices)
 	
 	return element
 end

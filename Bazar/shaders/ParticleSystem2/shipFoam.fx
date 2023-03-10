@@ -21,6 +21,7 @@ float3	shipSize;	// x - length, y-width, z-nose angle cos
 float	scaleBase;
 float	speed;
 float	width;
+float	depthScale;
 
 SamplerState MirrorLinearSampler
 {
@@ -295,7 +296,7 @@ float4 PS_FOAM(PS_INPUT i) : SV_TARGET0
 	float foam = pow(f, 0.5)  * a;
 
 	float blend = pow(min(1 - nAge, nAge * 7), 0.5);
-	return foam * blend;
+	return foam * blend*depthScale;
 
 //	mask *= underwaterVisible(i.posW);
 //	return float4(clr, mask); 

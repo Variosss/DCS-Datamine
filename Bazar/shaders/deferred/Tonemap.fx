@@ -292,42 +292,27 @@ technique10 LuminanceMap {
 }
 
 
-#define COMMON_PART 		SetVertexShader(NULL);			\
-							SetGeometryShader(NULL);		\
-							SetPixelShader(NULL);			
+#define ADAPTATION_PASS(Flags)	pass P##Flags {						\
+	SetComputeShader(CompileShader(cs_5_0, CS_Adaptation(Flags)));	\
+	SetVertexShader(NULL);											\
+	SetGeometryShader(NULL);										\
+	SetPixelShader(NULL);		}
 
 technique10 Adaptation {
-	pass averageLuminanceForAllViewports {
-		SetComputeShader(CompileShader(cs_5_0, CS_Adaptation(true, false, true)));
-		COMMON_PART
-	}
-	pass useLuminanceOfProvidedViewport {
-		SetComputeShader(CompileShader(cs_5_0, CS_Adaptation(false, false, true)));
-		COMMON_PART
-	}
-	pass averageLuminanceForAllViewportsInstant {
-		SetComputeShader(CompileShader(cs_5_0, CS_Adaptation(true, true, true)));
-		COMMON_PART
-	}
-	pass useLuminanceOfProvidedViewportInstant {
-		SetComputeShader(CompileShader(cs_5_0, CS_Adaptation(false, true, true)));
-		COMMON_PART
-	}
-	pass averageLuminanceForAllViewportsFLIR {
-		SetComputeShader(CompileShader(cs_5_0, CS_Adaptation(true, false, false)));
-		COMMON_PART
-	}
-	pass useLuminanceOfProvidedViewportFLIR {
-		SetComputeShader(CompileShader(cs_5_0, CS_Adaptation(false, false, false)));
-		COMMON_PART
-	}
-	pass averageLuminanceForAllViewportsInstantFLIR {
-		SetComputeShader(CompileShader(cs_5_0, CS_Adaptation(true, true, false)));
-		COMMON_PART
-	}
-	pass useLuminanceOfProvidedViewportInstantFLIR {
-		SetComputeShader(CompileShader(cs_5_0, CS_Adaptation(false, true, false)));
-		COMMON_PART
-	}
-
+	ADAPTATION_PASS(0)
+	ADAPTATION_PASS(1)
+	ADAPTATION_PASS(2)
+	ADAPTATION_PASS(3)
+	ADAPTATION_PASS(4)
+	ADAPTATION_PASS(5)
+	ADAPTATION_PASS(6)
+	ADAPTATION_PASS(7)
+	ADAPTATION_PASS(8)
+	ADAPTATION_PASS(9)
+	ADAPTATION_PASS(10)
+	ADAPTATION_PASS(11)
+	ADAPTATION_PASS(12)
+	ADAPTATION_PASS(13)
+	ADAPTATION_PASS(14)
+	ADAPTATION_PASS(15)
 }

@@ -206,7 +206,7 @@ BlendState BlendStateCylinder {
 							SetDomainShader(NULL);			\
 							SetGeometryShader(NULL);		\
 							SetComputeShader(NULL);			\
-							SetRasterizerState(cullFront);	
+							SetRasterizerState(cullBack);	
 
 technique10 Tech {
 	pass p0 {

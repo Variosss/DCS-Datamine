@@ -18,7 +18,7 @@ GBuffer deferredDefaultPS(VS_OUTPUT input,
 	MaterialParams mp = calcMaterialParams(input, MP_ALL);
 	mp.diffuse.rgb = modifyAlbedo(mp.diffuse.rgb, albedoLevel, albedoContrast, mp.aorms.x);
 
-	float2 velMap = calcVelocityMap(input.projPos, input.prevFrameProjPos);
+	float2 motion = calcMotionVector(input.projPos, input.prevFrameProjPos);
 
 	float3 normal = normalDithering(input.Normal, mp.normal);
 
@@ -34,13 +34,13 @@ GBuffer deferredDefaultPS(VS_OUTPUT input,
 #if USE_SV_SAMPLEINDEX
 						sv_sampleIndex,
 #endif
-						mp.diffuse, normal, mp.aorms.xyzw, mp.emissive, velMap);
+						mp.diffuse, normal, mp.aorms.xyzw, mp.emissive, motion);
 		case SHADING_EMISSIVE:
 			return BuildGBuffer(input.Position.xy,
 #if USE_SV_SAMPLEINDEX
 						sv_sampleIndex,
 #endif
-						mp.diffuse, normal, mp.aorms.xyzw, mp.emissive * mp.diffuse.a, velMap);
+						mp.diffuse, normal, mp.aorms.xyzw, mp.emissive * mp.diffuse.a, motion);
 	}
 	return BuildGBuffer(input.Position.xy,
 #if USE_SV_SAMPLEINDEX

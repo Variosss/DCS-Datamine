@@ -29,6 +29,7 @@ local function loadFromResource(self)
 		heatBlur				= _("HEAT BLUR"),
 		LensEffects				= _("LENS EFFECTS"),
 		shadows					= _("SHADOWS"),
+		BlurFlatShadows			= _("Blur Flat Shadows"),
 		SecondaryShadows		= _("Secondary Shadows"),
 		resolution				= _("RESOLUTION").." *",
 		cockpitShadows			= _("COCKPIT SHADOWS"),
@@ -57,6 +58,7 @@ local function loadFromResource(self)
 		VR						= _("VR"),
 		SSAO					= _("SSAO"),
 		motionBlur				= _("MOTION BLUR"),
+		motionBlurAmount		= _("Motion Blur Amount"),
 		chimneySmokeDensity		= _("CHIMNEY SMOKES DENSITY"),
 		outputGamma				= _("GAMMA"),
 		Default_FOV   			= _("External field of view"),
@@ -92,6 +94,7 @@ local function loadFromResource(self)
 		DOF_tooltip				=_('tip_DoF'),
 		LensEffects_tooltip		=_('tip_LensEffects'),
 		motionBlur_tooltip		=_('tip_MotionBlur'),
+		motionBlurAmount_tooltip=_('tip_MotionBlurAmount'),
 		clouds_tooltip			=_('tip_Clouds'),
 		SSAA_tooltip			=_('tip_SSAA'),
 		SSLR_tooltip			=_('tip_SSLR'),
@@ -115,6 +118,7 @@ local function loadFromResource(self)
 		Vsync_tooltip			=_('tip_Vsync')..resetTooltip,
 		fullscreen_tooltip		=_('tip_FullScreen')..resetTooltip,
 		box_mouse_cur_tooltip	=_('tip_CursorSnappedToWindow'),
+		blurFlatShadows_tooltip = _('tip_blurFlatShadows'),
 		secondaryShadows_tooltip = _('tip_secondaryShadows'),
 		ScreenshotFormat_tooltip = _("tip_ScreenshotFormat"),
 	}
@@ -498,6 +502,25 @@ local function bindControls(self, a_style, a_w, a_h)
 	container.box_mouse_cursorCheckbox.callbackUpdate = function(self)
 		if  not HMD.isActive() then
 			visualizer.boxMouseCursor(self:getState())
+		end
+	end
+	
+	container.motionBlurComboList.callbackUpdate = function(self)
+		local value = self:getSelectedItem().value
+		if value == 0 then
+			container.motionBlurAmountSlider:setEnabled(false)
+		else
+			container.motionBlurAmountSlider:setEnabled(true)
+		end
+		container:updateWidgetsBounds()
+	end
+	
+	container.shadowsComboList.callbackUpdate = function(self)
+		local value = self:getSelectedItem().value
+		if value == 0 then
+			container.BlurFlatShadowsComboList:setEnabled(false)
+		else
+			container.BlurFlatShadowsComboList:setEnabled(true)
 		end
 	end
 end

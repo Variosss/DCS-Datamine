@@ -65,7 +65,7 @@ GT.visual.min_time_agony       = 5
 GT.visual.max_time_agony       = 120
 GT.visual.agony_explosion_size = 5
 
-GT.visual.IR = { coeffs = {GT_t.IR_COEFFS_ENGINE_APC, GT_t.IR_COEFFS_WHEELS_Car, GT_t.IR_COEFFS_ENGINE_Radar, IR_COEFFS_BODY, {0.2, 0.2/1200}}}
+GT.visual.IR = { coeffs = {GT_t.IR_COEFFS_ENGINE_APC, GT_t.IR_COEFFS_WHEELS_Car, GT_t.IR_COEFFS_ENGINE_Radar, GT_t.IR_COEFFS_BODY, {0.2, 0.2/1200}}}
 
 
 --[[GT.DM = {

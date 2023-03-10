@@ -2212,6 +2212,9 @@ local AIRCRAFT = {
                     },
                 },
             },
+            failures = {
+                {"ELEC_PORT_LIGHT_DAMAGED", 0.05},
+            },
         },
         ["WING_L_05"] = {
             args = {60}, damage_boundary = 0.111,
@@ -2372,6 +2375,9 @@ local AIRCRAFT = {
                     failures = {
                     },
                 },
+            },
+            failures = {
+                {"ELEC_STBD_LIGHT_DAMAGED", 0.05},
             },
         },
         ["WING_R_05"] = {
@@ -2691,6 +2697,8 @@ local AIRCRAFT = {
         --{ id = "ELEC_BOMBABWGERAT_RELEASE_MALFUNCTION", label = _("Ordnance arming panel malfunction"),                 },
         --{ id = "ELEC_BOMBABWGERAT_RELEASE_FAILURE",     label = _("Ordnance arming panel power circuit severed"),       },
 
+        { id = "ELEC_PORT_LIGHT_DAMAGED",               label = _("Port landing light damaged"),                        },
+        { id = "ELEC_STBD_LIGHT_DAMAGED",               label = _("Starboard landing light damaged"),                   },
         --{ id = "ELEC_UC_LAMP_FAILURE",                  label = _("Undercarriage control lamp broken"),                 },
         --{ id = "ELEC_GOVERNOR_BOX_DAMAGED",             label = _("Governor control box damaged"),                      },
         --{ id = "ELEC_MSB_CB_BUSTED",                    label = _("Main switch box breakers panel busted"),             },

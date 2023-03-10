@@ -1,10 +1,18 @@
 #include "common/samplers11.hlsl"
 #include "common/states11.hlsl"
 
-Texture2D SourceMap, ColorBand;
-float4	viewport;
+#ifdef MSAA
+	Texture2DMS<float3, MSAA> SourceMap;
+#else
+	Texture2D<float3> SourceMap;
+#endif
+
+Texture2D ColorBand;
+
+float4 viewport;
 float3 lightDir;
 float4 params;
+uint2 dims;
 
 struct VS_OUTPUT {
 	float4 pos:			SV_POSITION;
@@ -30,7 +38,17 @@ static const float3 color_band[8] = {
 float2 prePS(const VS_OUTPUT i) {
 	uint2 idx = i.pos.xy;
 	float2 uv = float2(i.projPos.x*0.5 + 0.5, -i.projPos.y*0.5 + 0.5)*viewport.zw + viewport.xy;
+
+#ifdef MSAA
+	int2 px = uv*dims;
+	float3 src = 0;
+	[unroll]
+	for(uint i=0; i<MSAA; ++i)
+		src += SourceMap.Load(px, i).xyz;
+	src /= MSAA;
+#else
 	float3 src = SourceMap.Sample(gTrilinearClampSampler, uv).xyz;
+#endif
 
 	float3 n;
 	n.xz = (src.yz - 0.5) * 2;

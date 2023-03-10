@@ -19,7 +19,7 @@ GT.visual.dirt_pos = {-3.9, 0.54, -GT.chassis.Z_gear_2}
 
 --IR.coefs[1..4] ={heat collect coef, heat loose coef}
 --IR.coefs[5] = {0.3 - initial value for FLIR param C0 for dead model, 0.3/1800 - param C0 decrease speed (0.3 in 1800 secs)}
-GT.visual.IR = { coeffs = {GT_t.IR_COEFFS_ENGINE_Tank, GT_t.IR_COEFFS_ROLLERS_Tank, GT_t.IR_COEFFS_120mm, IR_COEFFS_BODY, {0.3, 0.3/1750}}}
+GT.visual.IR = { coeffs = {GT_t.IR_COEFFS_ENGINE_Tank, GT_t.IR_COEFFS_ROLLERS_Tank, GT_t.IR_COEFFS_120mm, GT_t.IR_COEFFS_BODY, {0.3, 0.3/1750}}}
 
 GT.driverViewConnectorName = {"DRIVER_POINT", offset = {0.05, 0.0, 0.0}}
 GT.driverCockpit = "DriverCockpit/DriverCockpitWithIR"

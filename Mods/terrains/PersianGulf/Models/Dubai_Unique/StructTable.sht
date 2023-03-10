@@ -1,0 +1,67 @@
+TerrainModelDeclaration =
+{
+	default =
+	{
+		load =
+		{
+			false;
+			false;
+		};
+		drawonmap = true;
+		vis = 1;
+		visShadows = 1;
+		life = 500;
+		fire =
+		{
+		  0;
+		  1;
+		};
+		classname = "lStandartStructure";
+		positioning = "ONLYHEIGTH"; 
+		DestructAnimatttion = "NO"; 
+	};
+	{
+		file = "Cayan_tower";
+		life = 4000;
+		fire =
+		{
+			60;
+			2;
+		};
+		desrt = "Nevad_Vegas_industrial_06_crash";
+	};
+
+	{
+		file = "DIFC_Gate";
+		life = 3000;
+		fire =
+		{
+			50;
+			3;
+		};
+		desrt = "Dubai_round_crash";
+	};
+
+	{
+		file = "Dubai_Frame";
+		life = 3000;
+		fire =
+		{
+			50;
+			2;
+		};
+		desrt = "Dubai_round_crash";
+	};
+
+	{
+		file = "Jumeirah";
+		life = 3000;
+		fire =
+		{
+			40;
+			2;
+		};
+		desrt = "Jumeirah_crash";
+	};
+
+};

@@ -1,0 +1,786 @@
+TerrainModelDeclaration =
+{
+	default =
+	{
+		load =
+		{
+			false;
+			false;
+		};
+		drawonmap = true;
+		vis = 1;
+		visShadows = 1;
+		life = 500;
+		fire =
+		{
+		  0;
+		  1;
+		};
+		classname = "lStandartStructure";
+		positioning = "ONLYHEIGTH"; 
+		DestructAnimatttion = "NO"; 
+	};
+	{
+		file = "!proxyCrashModels";
+		desrt = "";
+	};
+
+	{
+		file = "Abu_Dhabi_International_Airport_Terminal_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "AD_Int_Airport_Term_01_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "AD_Int_Airport_Term_02_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "AD_Int_Airport_Term_03_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "AD_Int_Airport_Term_04_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "AD_Int_Airport_Term_05_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "AD_Int_Airport_Term_06_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "AD_Int_Airport_Term_07_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "afg_city_house_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "afghan_house_01_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "afghan_house_02_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "afghan_house_03_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "afghan_house_04_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "afghan_house_05_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "afghan_house_08_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "airbase_checkpoint_01_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "airbus_A300_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "airfield_barrier_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "Al_Kazim_towers_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "Aldar_HQ_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "american_truck_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "Apex_concreate_02_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "Apex_concreate_03_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "Apex_concreate_04_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "Apex_concreate_05_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "Apex_concreate_06_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "Arabian_block_building_07_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "Arabian_block_building_13_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "Arabian_block_building_15_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "Arabian_block_building_20_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "Arabian_block_building_21_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "arabian_block_building_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "Atlantis_Palm_Hotel_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "Azad_university_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "azal_oil_tank_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "b737-800_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "bagram_apartment_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "bagram_industrial_27_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "baku_bb_isiq_residential_complex_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "baku_bb_residential_building_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "baku_chirag_plaza_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "baku_kempinsky_2_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "board_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "boat_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "building_04_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "building_06_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "building_08_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "Burj_Al_Arab_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "Capital_Gate_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "car_crash_01";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "Commercial_crash_02";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "concrete_wall_01_crash";
+		life = 0;
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "concrete_wall_02_crash";
+		life = 0;
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "Constr_build_01_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "Constr_build_02_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "container_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "Cottage_01_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "Cottage_01_r_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "cottage_08_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "crash_model_03";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "diesel_generator_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "dormitory_R_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "Dubai_Inter_Term_02_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "Dubai_Inter_Term_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "Dubai_Internat_Airport_KDP_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "Dubai_round_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "DWC_airport_terminal_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "Emirates_towers_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "europa_train_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "F1_Ferrari_World_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "farmbarn_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "farmbigbarn_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "fence_wall_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "fuel_storage_tanks_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "house_01_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "hungar_01_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "hungar_01_R_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "hungar_011_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "hungar_022_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "hungar_023_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "hungar_023_R_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "hungar_027_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "hungar_03_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "hungar_036_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "hungar_037_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "hungar_037_R_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "hungar_04_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "hungar_04_R_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "Industrial_hangar_02_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "Jumeirah_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "marriot_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "mersedes_container_tank_truck_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "mersedes_Lseries_truck_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "Monarch_Hotel_Dubai_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "Monorail_Parking_Building_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "Motel_02_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "motorboat_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "Movenpick_IBN_Battuta_Gate_Hotel_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "National_Exhibition_Center_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "Nevad_Vegas_industrial_06_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "Nevada_cottage_07_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "Nevada_hungar_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "Nevada_hungar_R_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "Nevada_Vegas_House_07_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "Nevada_Vegas_House_11_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "overhead_crossing_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "pole_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "power_plant_01_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "road_border_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "road_ramp_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "road_sign_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "road_train_trailer_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "sailingboat_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "shader_02_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "shader_03_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "shader_big_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "Sharjah_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "Sheikh_Zayed_Grand_Mosque_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "small_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "tire_shop_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "trav_bas_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "truck_crash_01";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "truck_crash_02";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "Ubora_towers_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "warehouse_01_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "Yas_Viceroy_Hotel_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+};

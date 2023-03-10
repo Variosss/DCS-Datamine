@@ -23,7 +23,7 @@ dofile(current_mod_path .. '/Entries/Loadouts/mils_c701.lua')
 dofile(current_mod_path .. '/Entries/Loadouts/mils_c802ak.lua')
 dofile(current_mod_path .. '/Entries/Loadouts/mils_cm802akg.lua')
 dofile(current_mod_path .. '/Entries/Loadouts/mils_ld10.lua')
-dofile(current_mod_path .. '/Entries/Loadouts/mils_pl5eii.lua')
+dofile(current_mod_path .. '/Entries/Loadouts/mils_pl5.lua')
 dofile(current_mod_path .. '/Entries/Loadouts/mils_sd10.lua')
 dofile(current_mod_path .. '/Entries/Loadouts/mils_pl8.lua')
 dofile(current_mod_path .. '/Entries/Loadouts/mils_akd.lua')
@@ -38,8 +38,7 @@ dofile(current_mod_path .. '/Entries/Loadouts/pod_wmd7.lua')
 dofile(current_mod_path .. '/Entries/Loadouts/pod_misc.lua')
 
 -- fuel
-dofile(current_mod_path .. '/Entries/Loadouts/fuel_800.lua')
-dofile(current_mod_path .. '/Entries/Loadouts/fuel_1100.lua')
+dofile(current_mod_path .. '/Entries/Loadouts/fuel_tank.lua')
 
 -- jdam
 dofile(current_mod_path .. '/Entries/Loadouts/jdam_ls6.lua')

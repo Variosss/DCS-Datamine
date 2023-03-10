@@ -117,8 +117,14 @@ local function placeVersionStatic(client_w, client_h)
 	local staticVersion = window.staticVersion
 	local w, h = staticVersion:getSize()	
 	
-	staticVersion:setText(_('Version: ') .. base.START_PARAMS.version);
-	staticVersion:setPosition(client_w - 124, client_h - 23) 
+	if base.ED_MULTI_THREAD  then 
+		staticVersion:setText('MULTI THREAD PREVIEW: '.. base.START_PARAMS.version);
+		staticVersion:setSize(512,h);
+		staticVersion:setPosition(client_w - 450, client_h - 23) 
+	else
+		staticVersion:setText(_('Version: ') .. base.START_PARAMS.version);
+		staticVersion:setPosition(client_w - 124, client_h - 23) 
+	end
 end
 
 local function placeDisclaimer(client_w, client_h)

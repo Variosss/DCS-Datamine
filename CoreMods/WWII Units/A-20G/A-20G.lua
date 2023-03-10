@@ -94,6 +94,9 @@ A_20G = {
 	Rate 				= 20, -- RewardPoint in Multiplayer
 	Shape 				= a20g_name,
     XRayShape           = "a-20g_x-ray",
+	propellorShapeType  = "3ARG_PROC_BLUR",
+    propellorShapeName  = "a-20g_blade.fbx",
+    debrisGeneration    = 1,
 	------------------------------------
 	shape_table_data 	= 
 	{
@@ -1192,8 +1195,115 @@ A_20G = {
 	Failures 		= {},--TODO ADD
 
     lights_data = {
-        typename = "collection",
+        typename = "Collection",
         lights = {
+            [WOLALIGHT_NAVLIGHTS] = {
+                typename = "Collection",
+                lights = {
+                    { -- 0 -- LH Position Light (RED)
+                        typename = "Spot", connector = "BANO_2", argument = 190,
+                        proto = lamp_prototypes.BANO_7M_red,
+                    },
+                    { -- 1 -- RH Position Light (GREEN)
+                        typename = "Spot", connector = "BANO_1", argument = 191,
+                        proto = lamp_prototypes.BANO_7M_green,
+                    },
+                    { -- 2 -- Tail Position Light (WHITE)
+                        typename = "Spot", connector = "BANO_0", argument = 192,
+                        proto = lamp_prototypes.ANO_3_Bl,
+                    },
+                },
+            },
+            [WOLALIGHT_LANDING_LIGHTS] = {
+                typename = "Collection",
+                lights = {
+                    { -- 0 -- LH Spot Light
+                        typename = "Collection",
+                        lights = {
+                            {
+                                typename = "Spot", connector = "MAIN_SPOT_PTR", argument = 208,
+                                proto = lamp_prototypes.LFS_P_27_600,
+                                movable = true,
+                            },
+                            {
+                                typename = "Spot", connector = "MAIN_SPOT_PTR",
+                                proto = lamp_prototypes.LFS_P_27_600, range = 24.0, angle_max = math.rad(136.0), angle_min = math.rad(116.0), angle_change_rate = math.rad(-52.0),
+                                movable = true,
+                            },
+                            {
+                                typename = "Omni", connector = "MAIN_SPOT_PTR", pos_correction = {0.2, 0.0, 0.0},
+                                proto = lamp_prototypes.LFS_P_27_600, range = 6.0,
+                                movable = true,
+                            },
+                        },
+                    },
+                    { -- 1 -- RH Spot Light
+                        typename = "Collection",
+                        lights = {
+                            {
+                                typename = "Spot", connector = "RESERV_SPOT_PTR", argument = 209,
+                                proto = lamp_prototypes.LFS_P_27_600,
+                                movable = true,
+                            },
+                            {
+                                typename = "Spot", connector = "RESERV_SPOT_PTR",
+                                proto = lamp_prototypes.LFS_P_27_600, range = 24.0, angle_max = math.rad(136.0), angle_min = math.rad(116.0), angle_change_rate = math.rad(-52.0),
+                                movable = true,
+                            },
+                            {
+                                typename = "Omni", connector = "RESERV_SPOT_PTR", pos_correction = {0.2, 0.0, 0.0},
+                                proto = lamp_prototypes.LFS_P_27_600, range = 6.0,
+                                movable = true,
+                            },
+                        },
+                    },
+                },
+            },
+            [WOLALIGHT_TAXI_LIGHTS] = {
+                typename = "Collection",
+                lights = {
+                    { -- 0 -- LH Spot Light
+                        typename = "Collection",
+                        lights = {
+                            {
+                                typename = "Spot", connector = "MAIN_SPOT_PTR", argument = 208,
+                                proto = lamp_prototypes.LFS_P_27_600,
+                                movable = true,
+                            },
+                            {
+                                typename = "Spot", connector = "MAIN_SPOT_PTR",
+                                proto = lamp_prototypes.LFS_P_27_600, range = 24.0, angle_max = math.rad(136.0), angle_min = math.rad(116.0), angle_change_rate = math.rad(-52.0),
+                                movable = true,
+                            },
+                            {
+                                typename = "Omni", connector = "MAIN_SPOT_PTR", pos_correction = {0.2, 0.0, 0.0},
+                                proto = lamp_prototypes.LFS_P_27_600, range = 6.0,
+                                movable = true,
+                            },
+                        },
+                    },
+                    { -- 1 -- RH Spot Light
+                        typename = "Collection",
+                        lights = {
+                            {
+                                typename = "Spot", connector = "RESERV_SPOT_PTR", argument = 209,
+                                proto = lamp_prototypes.LFS_P_27_600,
+                                movable = true,
+                            },
+                            {
+                                typename = "Spot", connector = "RESERV_SPOT_PTR",
+                                proto = lamp_prototypes.LFS_P_27_600, range = 24.0, angle_max = math.rad(136.0), angle_min = math.rad(116.0), angle_change_rate = math.rad(-52.0),
+                                movable = true,
+                            },
+                            {
+                                typename = "Omni", connector = "RESERV_SPOT_PTR", pos_correction = {0.2, 0.0, 0.0},
+                                proto = lamp_prototypes.LFS_P_27_600, range = 6.0,
+                                movable = true,
+                            },
+                        },
+                    },
+                },
+            },
         },
     },
 }

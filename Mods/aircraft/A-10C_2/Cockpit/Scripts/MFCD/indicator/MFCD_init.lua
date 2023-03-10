@@ -80,6 +80,8 @@ MFCD_TEST_HOTAS 	 = 14
 
 MFCD_CICU_INIT		 = 15
 
+MFCD_COMM			 = 17
+
 --submodes TGP
 MFCD_TGP_STBY = 1
 MFCD_TGP_AA	  = 2
@@ -102,6 +104,14 @@ MFCD_STAT_PAGE2 = 1
 -- STAT HMCS
 MFCD_STAT_HMCS_PAGE1 = 2
 MFCD_STAT_HMCS_PAGE2 = 3
+--A10C2 specific STAT page
+MFCD_STAT_PAGE3 = 4
+
+--submodes COMM
+MFCD_COMM_PAGE1             = 1
+MFCD_COMM_PAGE2             = 2
+MFCD_COMM_PAGE3             = 3
+MFCD_COMM_PAGE4             = 4
 
 -- submodes MSG
 MFCD_MSG_NO_PAGE   = 0
@@ -190,6 +200,14 @@ id_Page =
 	PAGE_MFCD_STAT_HMCS_PAGE2			= 66,
 	
 	PAGE_MFCD_DSMS_INVENTORY_GBU54		= 67,
+	
+	PAGE_MFCD_COMM						= 68,
+	PAGE_MFCD_COMM_PAGE_1				= 69,
+	PAGE_MFCD_COMM_PAGE_2				= 70,
+	PAGE_MFCD_COMM_PAGE_3				= 71,
+	PAGE_MFCD_COMM_PAGE_4				= 72,
+	
+	PAGE_MFCD_STAT_PAGE3				= 73,
 }
 
 id_pagesubset =
@@ -294,6 +312,14 @@ id_pagesubset =
 	MFCD_STAT_HMCS_PAGE2		= 88,
 	
 	MFCD_DSMS_INVENTORY_GBU54	= 89,
+	
+	MFCD_COMM_MAIN				= 90,
+	MFCD_COMM_PAGE_1			= 91,
+	MFCD_COMM_PAGE_2			= 92,
+	MFCD_COMM_PAGE_3			= 93,
+	MFCD_COMM_PAGE_4			= 94,
+	
+	MFCD_STAT_PAGE3				= 95,
 }
 
 page_subsets = {}
@@ -368,6 +394,7 @@ page_subsets[id_pagesubset.MFCD_TAD_PROFILE_SELECT_OSB_02_05] = LockOn_Options.s
 page_subsets[id_pagesubset.MFCD_STAT_COMMON]			= LockOn_Options.script_path.."MFCD/indicator/STAT/MFCD_page_STAT_common.lua"
 page_subsets[id_pagesubset.MFCD_STAT_PAGE1] 			= LockOn_Options.script_path.."MFCD/indicator/STAT/MFCD_page_STAT_Page1.lua"
 page_subsets[id_pagesubset.MFCD_STAT_PAGE2]				= LockOn_Options.script_path.."MFCD/indicator/STAT/MFCD_page_STAT_Page2.lua"
+page_subsets[id_pagesubset.MFCD_STAT_PAGE3]				= LockOn_Options.script_path.."MFCD/indicator/STAT/MFCD_page_STAT_Page3.lua"
 page_subsets[id_pagesubset.MFCD_STAT_HMCS_PAGE1] 		= LockOn_Options.script_path.."MFCD/indicator/STAT/MFCD_page_STAT_HMCS_Page1.lua"
 page_subsets[id_pagesubset.MFCD_STAT_HMCS_PAGE2]		= LockOn_Options.script_path.."MFCD/indicator/STAT/MFCD_page_STAT_HMCS_Page2.lua"
 	
@@ -392,6 +419,12 @@ page_subsets[id_pagesubset.MFCD_MSG_MA]   				= LockOn_Options.script_path.."MFC
 page_subsets[id_pagesubset.MFCD_TAD_MA_TABLE]			= LockOn_Options.script_path.."MFCD/indicator/TAD/MFCD_page_TAD_MA_TABLE.lua"
 page_subsets[id_pagesubset.MFCD_TAD_TDL]    			= LockOn_Options.script_path.."MFCD/indicator/TAD/MFCD_page_TAD_TDL.lua"
 page_subsets[id_pagesubset.MFCD_TAD_SADL]    			= LockOn_Options.script_path.."MFCD/indicator/TAD/MFCD_page_TAD_SADL.lua"
+
+page_subsets[id_pagesubset.MFCD_COMM_MAIN]    			= LockOn_Options.script_path.."MFCD/indicator/COMM/MFCD_page_COMM.lua"
+page_subsets[id_pagesubset.MFCD_COMM_PAGE_1]    		= LockOn_Options.script_path.."MFCD/indicator/COMM/MFCD_page_COMM_PAGE_1.lua"
+page_subsets[id_pagesubset.MFCD_COMM_PAGE_2]    		= LockOn_Options.script_path.."MFCD/indicator/COMM/MFCD_page_COMM_PAGE_2.lua"
+page_subsets[id_pagesubset.MFCD_COMM_PAGE_3]    		= LockOn_Options.script_path.."MFCD/indicator/COMM/MFCD_page_COMM_PAGE_3.lua"
+page_subsets[id_pagesubset.MFCD_COMM_PAGE_4]    		= LockOn_Options.script_path.."MFCD/indicator/COMM/MFCD_page_COMM_PAGE_4.lua"
 
 ----------------------
 pages = {}
@@ -509,12 +542,21 @@ pages[id_Page.PAGE_MFCD_TGP_AG_CONTROL]					= {id_pagesubset.MFCD_BACKGROUND,
 														   id_pagesubset.MFCD_TGP_MAIN,
 														   id_pagesubset.MFCD_TGP_AG_CONTROL_PAGE,
 														   id_pagesubset.MFCD_OSB_11_15}
+														   
+														   
+pages[id_Page.PAGE_MFCD_COMM]				= {id_pagesubset.MFCD_BACKGROUND, id_pagesubset.MFCD_COMM_MAIN,   id_pagesubset.MFCD_OSB_11_15}
+pages[id_Page.PAGE_MFCD_COMM_PAGE_1]		= {id_pagesubset.MFCD_BACKGROUND, id_pagesubset.MFCD_COMM_PAGE_1, id_pagesubset.MFCD_OSB_11_15}
+pages[id_Page.PAGE_MFCD_COMM_PAGE_2]		= {id_pagesubset.MFCD_BACKGROUND, id_pagesubset.MFCD_COMM_PAGE_2, id_pagesubset.MFCD_OSB_11_15}
+pages[id_Page.PAGE_MFCD_COMM_PAGE_3]		= {id_pagesubset.MFCD_BACKGROUND, id_pagesubset.MFCD_COMM_PAGE_3, id_pagesubset.MFCD_OSB_11_15}
+pages[id_Page.PAGE_MFCD_COMM_PAGE_4]		= {id_pagesubset.MFCD_BACKGROUND, id_pagesubset.MFCD_COMM_PAGE_4, id_pagesubset.MFCD_OSB_11_15}
+
 
 -- special page to draw TGP video on HMCS
 pages[id_Page.PAGE_MFCD_TGP_VIDEO_OUT] 					= {id_pagesubset.MFCD_TGP_RENDER_VIDEO, id_pagesubset.MFCD_TGP_RENDER_SYMBOLOGY}
 
 pages[id_Page.PAGE_MFCD_STAT_PAGE1]						= {id_pagesubset.MFCD_BACKGROUND, id_pagesubset.MFCD_STAT_COMMON, id_pagesubset.MFCD_STAT_PAGE1, id_pagesubset.MFCD_OSB_11_15}
 pages[id_Page.PAGE_MFCD_STAT_PAGE2]						= {id_pagesubset.MFCD_BACKGROUND, id_pagesubset.MFCD_STAT_COMMON, id_pagesubset.MFCD_STAT_PAGE2, id_pagesubset.MFCD_OSB_11_15}
+pages[id_Page.PAGE_MFCD_STAT_PAGE3]						= {id_pagesubset.MFCD_BACKGROUND, id_pagesubset.MFCD_STAT_COMMON, id_pagesubset.MFCD_STAT_PAGE3, id_pagesubset.MFCD_OSB_11_15}
 pages[id_Page.PAGE_MFCD_STAT_HMCS_PAGE1]				= {id_pagesubset.MFCD_BACKGROUND, id_pagesubset.MFCD_STAT_HMCS_PAGE1, id_pagesubset.MFCD_OSB_11_15}
 pages[id_Page.PAGE_MFCD_STAT_HMCS_PAGE2]				= {id_pagesubset.MFCD_BACKGROUND, id_pagesubset.MFCD_STAT_HMCS_PAGE2, id_pagesubset.MFCD_OSB_11_15}
 
@@ -534,7 +576,7 @@ function get_page_by_mode(master, L2, L3, L4)
 end
 
 pages_by_mode = {}
-clear_mode_table(pages_by_mode, 15, 10, 29)
+clear_mode_table(pages_by_mode, 17, 10, 29)
 
 pages_by_mode[MFCD_NONE]			[0][0][0]   = id_Page.PAGE_MFCD_NONE
 pages_by_mode[MFCD_DTS_UPLOAD]		[0][0][0]   = id_Page.PAGE_MFCD_DTS_UPLOAD
@@ -597,6 +639,7 @@ pages_by_mode[MFCD_TGP][MFCD_TGP_AG][MFCD_TGP_AG_CONTROL][0]	= id_Page.PAGE_MFCD
 
 pages_by_mode[MFCD_STAT][MFCD_STAT_PAGE1][0][0]   				= id_Page.PAGE_MFCD_STAT_PAGE1
 pages_by_mode[MFCD_STAT][MFCD_STAT_PAGE2][0][0]   				= id_Page.PAGE_MFCD_STAT_PAGE2
+pages_by_mode[MFCD_STAT][MFCD_STAT_PAGE3][0][0]   				= id_Page.PAGE_MFCD_STAT_PAGE3
 -- STAT HMCS
 pages_by_mode[MFCD_STAT][MFCD_STAT_HMCS_PAGE1][0][0]   			= id_Page.PAGE_MFCD_STAT_HMCS_PAGE1
 pages_by_mode[MFCD_STAT][MFCD_STAT_HMCS_PAGE2][0][0]   			= id_Page.PAGE_MFCD_STAT_HMCS_PAGE2
@@ -612,6 +655,14 @@ pages_by_mode[MFCD_MSG][MFCD_MSG_CAS_PAGE][0][0]  = id_Page.PAGE_MFCD_MSG_CAS
 pages_by_mode[MFCD_MSG][MFCD_MSG_MA_PAGE][0][0]   = id_Page.PAGE_MFCD_MSG_MA
 
 pages_by_mode[MFCD_VIDEO_OUT][0][0][0]   		  = id_Page.PAGE_MFCD_TGP_VIDEO_OUT
+
+pages_by_mode[MFCD_COMM][0][0][0]								= id_Page.PAGE_MFCD_COMM
+pages_by_mode[MFCD_COMM][MFCD_COMM_PAGE1][0][0]                 = id_Page.PAGE_MFCD_COMM_PAGE_1
+pages_by_mode[MFCD_COMM][MFCD_COMM_PAGE2][0][0]                 = id_Page.PAGE_MFCD_COMM_PAGE_2
+pages_by_mode[MFCD_COMM][MFCD_COMM_PAGE3][0][0]                 = id_Page.PAGE_MFCD_COMM_PAGE_3
+pages_by_mode[MFCD_COMM][MFCD_COMM_PAGE4][0][0]                 = id_Page.PAGE_MFCD_COMM_PAGE_4
+
+
 
 dofile (LockOn_Options.script_path.."MFCD/indicator/MFCD_CDU_repeater_init.lua")
 

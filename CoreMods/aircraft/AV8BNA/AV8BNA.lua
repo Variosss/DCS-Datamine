@@ -84,10 +84,8 @@ local Pylon_1_Bomb_Restrictions = {
 
 local Pylon_1_GBU12_Restrictions = {
 	{station = 2, loadout = {"{BRU-42A_2*GBU-12_SIDE_LEFT}"}},
-	{station = 2, loadout = {"{BRU-42A_3*GBU-12}"}},
-	{station = 7, loadout = {"{BRU-42A_3*GBU-12}"}},
 	
-	{station = 2, loadout = {"{BRU-70_3*GBU-38}"}},
+	{station = 2, loadout = {"{BRU-70A_3*GBU-38}"}},
 	{station = 2, loadout = {"{BRU-70A_2*GBU-38_SIDE_LEFT}"}},
 	
 	{station = 2, loadout = {"{BRU-70A_3*GBU-54}"}},
@@ -698,12 +696,10 @@ local Pylon_8_AIM9_Restrictions = {
 }
 
 local Pylon_8_GBU12_Restrictions = {
-	{station = 2, loadout = {"{BRU-42A_3*GBU-12}"}},
-	{station = 7, loadout = {"{BRU-42A_3*GBU-12}"}},
-	---
+		---
 	{station = 7, loadout = {"{BRU-42A_2*GBU-12_SIDE_RIGHT}"}},
 	
-	{station = 7, loadout = {"{BRU-70_3*GBU-38}"}},
+	{station = 7, loadout = {"{BRU-70A_3*GBU-38}"}},
 	{station = 7, loadout = {"{BRU-70A_2*GBU-38_SIDE_RIGHT}"}},
 	
 	{station = 7, loadout = {"{BRU-70A_3*GBU-54}"}},
@@ -1900,7 +1896,6 @@ AV8BNA =  {
 				
 				-- Bombs x 2 (Multiple Units)--
 				{ CLSID	= "{BRU-42_2*Mk-82_LEFT}",			forbidden = Pylon_2_ITERx2_Restrictions },	-- MK-82 x 2
-				{ CLSID	= "{BRU-42_2*Mk-83_LEFT}", 			forbidden = Pylon_2_ITERx2_Restrictions }, 	-- MK-83 x 2
 				{ CLSID	= "{BRU-42_2*MK-20_LEFT}",			forbidden = Pylon_2_ITERx2_Restrictions },	-- MK-20 x 2
 				{ CLSID	= "{BRU-70_2*CBU-99_LEFT}",			forbidden = Pylon_2_ITERx2_Restrictions },	-- CBU-99 x 2
 				{ CLSID	= "{BRU-42A_2*GBU-12_SIDE_LEFT}",	forbidden = Pylon_2_ITERx2_Restrictions },	-- GBU-12 x 2
@@ -2101,6 +2096,7 @@ AV8BNA =  {
 				-- Bombs (Multiple Units)--
 				{ CLSID	= "{BRU-42_2*Mk-81LD_RIGHT}" },				-- MK-81 x 3
 				{ CLSID	= "{BRU-42_2*Mk-82_RIGHT}" },			-- MK-82 x 2
+				{ CLSID	= "{BRU-42_2*Mk-83_RIGHT}" }, 			-- MK-83 x 2
 				{ CLSID	= "{BRU-42_2*MK-20_RIGHT}" },			-- MK-20 x 2
 				{ CLSID	= "{BRU-70_2*CBU-99_RIGHT}" },			-- CBU-99 x 2
 				{ CLSID = "{BRU-42_2*Mk-82AIR_RIGHT}" },		-- MK-82 AIR x 2
@@ -2179,7 +2175,6 @@ AV8BNA =  {
 				
 				-- Bombs x 2 (Multiple Units)--
 				{ CLSID	= "{BRU-42_2*Mk-82_RIGHT}",			forbidden = Pylon_7_ITERx2_Restrictions },	-- MK-82 x 2
-				{ CLSID	= "{BRU-42_2*Mk-83_RIGHT}",			forbidden = Pylon_7_ITERx2_Restrictions }, 	-- MK-83 x 2
 				{ CLSID	= "{BRU-42_2*MK-20_RIGHT}",			forbidden = Pylon_7_ITERx2_Restrictions },	-- MK-20 x 2
 				{ CLSID	= "{BRU-70_2*CBU-99_RIGHT}",		forbidden = Pylon_7_ITERx2_Restrictions },	-- CBU-99 x 2
 				{ CLSID	= "{BRU-42A_2*GBU-12_SIDE_RIGHT}",	forbidden = Pylon_7_ITERx2_Restrictions },	-- GBU-12 x 2
@@ -2189,7 +2184,6 @@ AV8BNA =  {
 				{ CLSID = "{BRU-70A_2*GBU-54_SIDE_RIGHT}",	forbidden = Pylon_7_ITERx2_Restrictions },	-- GBU-54 x 2
 				
 				{ CLSID	= "{BRU-42_2*Mk-82_LEFT}" },		-- MK-82 x 2
-				{ CLSID	= "{BRU-42_2*Mk-83_LEFT}" }, 		-- MK-83 x 2
 				{ CLSID	= "{BRU-42_2*MK-20_LEFT}" },		-- MK-20 x 2
 				{ CLSID	= "{BRU-70_2*CBU-99_LEFT}" },		-- CBU-99 x 2
 				{ CLSID = "{BRU-42_2*Mk-82AIR_LEFT}" },		-- MK-82 AIR x 2

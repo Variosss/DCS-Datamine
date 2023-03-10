@@ -136,6 +136,7 @@ local function resizeEQPPanel_(panelHeight)
     
     gridHeight = panelButtonY - gridY
     grid:setSize(gridWidth, gridHeight)
+	cont_Eqp.eSearch:setSize(gridWidth, 22)
 end
 
 local function resizePanels_(w, h)
@@ -155,6 +156,7 @@ local function showTabs_()
     cont_LA:setVisible(b_LA:getState())
     cont_Fuel:setVisible(b_Fuel:getState())
     cont_Eqp:setVisible(b_Eqp:getState())
+	
 end
 
 local function setTabsCallbacks_()
@@ -234,6 +236,9 @@ local function setCallbacks_()
     sp_OperatingLevel_Eqp.onChange = onChangeOperatingLevel_Eqp
     sp_OperatingLevel_Air.onChange = onChangeOperatingLevel_Air
     b_resetIAmountEqp.onChange = onChangeResetIAmountEqp
+	
+	cont_Eqp.eSearch.onChange = onChange_eSearch
+	b_addAmountEqp.onChange = onChange_addAmountEqp
 end
 
 local function create_()    
@@ -294,6 +299,10 @@ local function create_()
 	
 	sbResetLA	= cont_LA.panelButtonLA.sbResetLA
 	sbResetEqp 	= cont_Eqp.panelButtonEqp.sbResetEqp
+	
+	cbWeaponEqp 	= cont_Eqp.panelButtonEqp.cbWeaponEqp	
+	sbWeaponEqp		= cont_Eqp.panelButtonEqp.sbWeaponEqp
+	b_addAmountEqp  = cont_Eqp.panelButtonEqp.b_addAmountEqp
 
     copyPanelWidgetsIntoModule_(cont_LA)
     copyPanelWidgetsIntoModule_(cont_Fuel)
@@ -535,6 +544,7 @@ end
 --
 function fillEqp()    
     g_gridEqp:clear()
+	cbWeaponEqp:clear()
     
     local airdrome = getAirdrome()
 
@@ -569,12 +579,14 @@ function fillEqp()
     end
    
     local tmpTableData = {}
+	local tmpWeapon = {}
     
     --оружие
     for k, v in pairs(airdrome.weapons) do   
         if (verifyParam(v.wsType)) then
             local tmpTable = {}
             tmpTable.key = k
+		--	local nm = "("..v.wsType[1].."."..v.wsType[2].."."..v.wsType[3].."."..v.wsType[4]..")  "..base.get_weapon_display_name_by_wstype(v.wsType)
 			local nm = base.get_weapon_display_name_by_wstype(v.wsType)
             if not nm or nm == '' then
                 base.print("no name =",v.wsType[1],v.wsType[2],v.wsType[3],v.wsType[4])
@@ -582,10 +594,36 @@ function fillEqp()
 
             tmpTable[1] = nm
 			tmpTable[2] = v.initialAmount
-
-            table.insert(tmpTableData, tmpTable)
+			
+			table.insert(tmpWeapon, {name = nm or "no name", key = k})
+			
+			local findText = eSearch:getText()
+			
+			if findText == nil or findText == "" or  nil ~= textutil.Utf8FindNoCase(nm, findText) then
+				table.insert(tmpTableData, tmpTable)
+			end           
         end
     end
+	
+	local function compWeapon(a_tab1, a_tab2)
+		return textutil.Utf8Compare(a_tab1.name, a_tab2.name)    
+	end
+	
+	table.sort(tmpWeapon, compWeapon)
+	
+	for k,v in base.ipairs(tmpWeapon) do
+		local item = ListBoxItem.new(v.name)
+		item.key = v.key
+		cbWeaponEqp:insertItem(item)		
+	end
+	
+	local item = cbWeaponEqp:getItem(0)
+	if item then
+		cbWeaponEqp:selectItem(item)
+		b_addAmountEqp:setEnabled(true)
+	else
+		b_addAmountEqp:setEnabled(false)
+	end
 
     g_gridEqp:setData(tmpTableData) 
 
@@ -960,7 +998,9 @@ end
 function onChangeAAmissiles(self)
     vdata.paramEqp[2] = {base.wsType_Missile}
     vdata.paramEqp[3] = {base.wsType_AA_Missile,
-						 base.wsType_AA_TRAIN_Missile }
+						 base.wsType_AA_TRAIN_Missile,
+						 base.wsType_SA_Missile
+						 }
 	
     fillEqp()
 end
@@ -1099,4 +1139,22 @@ function setCurId(a_id, a_styleAirports)
     end
     
     init()
-end    
+end   
+
+function onChange_eSearch()
+	fillEqp() 
+end
+
+function onChange_addAmountEqp()
+	local item = cbWeaponEqp:getSelectedItem()
+	local tmpTable = getAirdrome().weapons[item.key]
+    tmpTable.initialAmount  = tmpTable.initialAmount + sbWeaponEqp:getValue()
+	if tmpTable.initialAmount < 0 then
+		tmpTable.initialAmount = 0
+	end
+	if tmpTable.initialAmount > 1000000 then
+		tmpTable.initialAmount = 1000000
+	end
+	
+	fillEqp() 
+end

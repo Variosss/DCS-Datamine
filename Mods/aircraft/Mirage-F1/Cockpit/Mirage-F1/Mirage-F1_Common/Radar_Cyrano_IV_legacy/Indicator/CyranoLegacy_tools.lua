@@ -5,7 +5,9 @@ dofile(LockOn_Options.script_path.."../../Mirage-F1/Mirage-F1_Common/Radar_Cyran
 SetScale(METERS)
 SetCustomScale(GetScale() * 0.01) -- centimeters
 
-boresightPos = addPlaceholder__Raw("Boresight_Pos", {0, 0}, false)
+additive_alpha				= false
+
+boresightPos = addPlaceholder__Raw("Boresight_Pos", {0, 0}, nil, false)
 
 dofile(LockOn_Options.script_path.."../../Common/symbology_tight_tools.lua")
 
@@ -64,7 +66,7 @@ function addStandardRenderTex(name, w, h, scale, pos, material, parent, controll
 	end
 	
 	element.material = material
-	element.additive_alpha = true
+	element.additive_alpha = additive_alpha
 
 	return element
 end
@@ -82,11 +84,13 @@ function addRadarRenderTex(name, w, h, scale, pos, rot, level, material, parent,
 	end
 	
 	element.material = material
-	element.additive_alpha = true
-
+	element.additive_alpha = additive_alpha
+	
 	return element
 end
 
+-- "CopiedTex" class. Not used now.
+--[[
 function addBuffTex(name, w, h, scale, pos, rot, level, material, parent, controllers)
 	
 	local verts, tex_params = getRenderVertsAndTexParams(w, h, scale)
@@ -100,10 +104,11 @@ function addBuffTex(name, w, h, scale, pos, rot, level, material, parent, contro
 	end
 	
 	element.material = material
-	element.additive_alpha = true
+	element.additive_alpha = additive_alpha
 
 	return element
 end
+--]]
 
 function makeRangeMarksVerts(w)
 		

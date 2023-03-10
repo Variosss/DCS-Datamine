@@ -6,15 +6,27 @@ float			quadDrawing = -1;
 float			texturePresented;
 float 			textureArrayPresented;
 float4			fontBlurColor;
-float4			quadsBounds[100];
-float4			quadsTexCoors[100];
-float			quadsTexIndices[100];
 float2			position;
 float			colorCount;
 float4			colors[9];
 float			opacity;//		= 1;
 float			gamma;//		= 1;
 float			intensity;//	= 1;
+float4			params;
+
+cbuffer cbQuads
+{
+float4			quadsBounds[100];
+float4			quadsTexCoors[100];
+uint4			quadsTexIndices[100/8+1]; // indices are packed as uint16 => 8 values per row
+};
+
+cbuffer cbQuadsShort
+{
+float4			quadsBoundsShort[16];
+float4			quadsTexCoorsShort[16];
+uint4			quadsTexIndicesShort[16/8+1]; // indices are packed as uint16 => 8 values per row
+};
 
 SamplerState texSampler
 {
@@ -66,49 +78,45 @@ struct VS_OUT
 	float3	TexCoord	: TEXCOORD0;
 };
 
+#define bounds			quadsBounds
+#define texCoords		quadsTexCoors
+#define texIndices		quadsTexIndices
+#include "guiQuads.hlsl"
+#undef bounds
+#undef texCoords
+#undef texIndices
+
+
+#define bounds			quadsBoundsShort
+#define texCoords		quadsTexCoorsShort
+#define texIndices		quadsTexIndicesShort
+#define getTextureIndex getTextureIndexShort
+#define getQuadVertex	getQuadVertexShort
+#include "guiQuads.hlsl"
+#undef bounds
+#undef texCoords
+#undef texIndices
+#undef getQuadVertex
+#undef getTextureIndex
+
 VS_OUT vs_main( VS_INPUT IN )
 {
-	VS_OUT OUT;
+	VS_OUT OUT = (VS_OUT)0;
 
-	if(quadDrawing > 0)
-	{
-		float quadIndex		= IN.Position.z;
-		float4 quadBounds	= quadsBounds[quadIndex];
-
-		IN.Position.xy = quadBounds.xy + IN.Position.xy * quadBounds.zw + position.xy;
-		IN.Position.z	= 0;
-		
-		OUT.TexCoord.x	= 0;
-		OUT.TexCoord.y	= 0;
-		
-		if(textureArrayPresented > 0)
-		{
-			OUT.TexCoord.z = quadsTexIndices[quadIndex];
-		}
-
-		if(texturePresented > 0 || textureArrayPresented > 0)
-		{
-			float4 quadTexCoors = quadsTexCoors[quadIndex];
-			OUT.TexCoord.xy = IN.TexCoord.xy > 0 ? quadTexCoors.zw : quadTexCoors.xy;
-		}
-		
-		int colorIndex = ceil(fmod(quadIndex, colorCount));
-		
-		OUT.Color = colors[colorIndex];
-		
-		OUT.Position = mul(float4(IN.Position.x, IN.Position.y, 0, 1), WVP);
-	}
-	else
+	if(quadDrawing <= 0)
 	{
 		IN.Position.xy = IN.Position.xy + position.xy;
-
 		OUT.Position = mul(IN.Position, WVP);
 		OUT.TexCoord.xy = IN.TexCoord.xy;
 		OUT.TexCoord.z = 0;
 		OUT.Color = IN.Color;
 	}
+	else if(quadDrawing<=1)	//short path
+		OUT = getQuadVertexShort(IN);
+	else	// full power
+		OUT = getQuadVertex(IN);
 
-	OUT.Color.a = OUT.Color.a * opacity;
+	OUT.Color.a *= opacity;
 
 	return OUT;	
 }
@@ -118,11 +126,21 @@ VS_OUT vs_main( VS_INPUT IN )
 #define USE_TEXTURE_ARRAY	2
 #define USE_TEXTURE_FONT	3
 
+float3 correctGammaAndBrightness(float3 color)
+{
+	return pow(abs(color), gamma) * intensity;
+}
+
+float4 correctGammaAndBrightness(float4 color)
+{
+	return float4(correctGammaAndBrightness(color.rgb), color.a);
+}
+
 float4 ps_main2(VS_OUT IN, uniform int textureType, uniform SamplerState sm) : SV_TARGET0
 {
 	if(textureType > NO_TEXTURE)
 	{
-		float4 diffuse;// = float4(1, 1, 0, 1);
+		float4 diffuse;
 		
 		if(textureType == USE_TEXTURE_ARRAY)
 		{
@@ -132,9 +150,7 @@ float4 ps_main2(VS_OUT IN, uniform int textureType, uniform SamplerState sm) : S
 			{
 				float3 color = lerp(fontBlurColor.rgb, IN.Color.rgb, diffuse.a);
 
-				color = pow(color, gamma) * intensity;
-
-				return float4(color, saturate(diffuse.r * IN.Color.a * 1.5));
+				return float4(correctGammaAndBrightness(color), saturate(diffuse.r * IN.Color.a * 1.5));
 			}
 		}
 		else
@@ -147,9 +163,7 @@ float4 ps_main2(VS_OUT IN, uniform int textureType, uniform SamplerState sm) : S
 				{
 					float3 color = lerp(fontBlurColor.rgb, IN.Color.rgb, diffuse.a);
 
-					color = pow(color, gamma) * intensity;
-
-					return float4(color, saturate(diffuse.r * IN.Color.a * 1.5));
+					return float4(correctGammaAndBrightness(color), saturate(diffuse.r * IN.Color.a * 1.5));
 				}
 			}
 			else
@@ -157,20 +171,14 @@ float4 ps_main2(VS_OUT IN, uniform int textureType, uniform SamplerState sm) : S
 				diffuse = mapTex.Sample(sm, IN.TexCoord.xy);
 			}
 		}
-
-		float4 color = diffuse * IN.Color;
-
-		color.rgb = pow(color.rgb, gamma) * intensity;
 		
-		return color;
+		return correctGammaAndBrightness(diffuse * IN.Color);
 	}
 
-	float4 color = IN.Color;
-
-	color.rgb = pow(color.rgb, gamma) * intensity;
-
-	return color;
+	return correctGammaAndBrightness(IN.Color);
 }
+
+#include "guiPrimitives.hlsl"
 
 RasterizerState cullNone
 {
@@ -247,31 +255,46 @@ BlendState blendStateOne
 	RenderTargetWriteMask[0] = 0x0f; //RED | GREEN | BLUE | ALPHA
 };
 
-VertexShader	vsSimple				= CompileShader(vs_4_0, vs_main());
+void vs_dummy() {}
 
-PixelShader		psSimple				= CompileShader(ps_4_0, ps_main2(NO_TEXTURE			, texSampler));
-PixelShader		psTex					= CompileShader(ps_4_0, ps_main2(USE_TEXTURE		, texSampler));
-PixelShader		psTexUser				= CompileShader(ps_4_0, ps_main2(USE_TEXTURE		, userTexSampler));
-PixelShader		psTexArray				= CompileShader(ps_4_0, ps_main2(USE_TEXTURE_ARRAY	, texSampler));
-PixelShader		psTexArrayUser			= CompileShader(ps_4_0, ps_main2(USE_TEXTURE_ARRAY	, userTexSampler));
-PixelShader		psTexUserAnisotropic	= CompileShader(ps_4_0, ps_main2(USE_TEXTURE		, userTexSamplerAnisotropic));
-PixelShader		psTexFont				= CompileShader(ps_4_0, ps_main2(USE_TEXTURE_FONT	, texSampler));
+VertexShader	vsDummy					= CompileShader(vs_5_0, vs_dummy());
+VertexShader	vsSimple				= CompileShader(vs_5_0, vs_main());
 
-#define SET_SHADERS(vs,ps)  SetVertexShader(vs); SetGeometryShader(NULL); SetPixelShader(ps)
+GeometryShader	gsCircle				= CompileShader(gs_5_0, gs_cicle());
+GeometryShader	gsLifeBar				= CompileShader(gs_5_0, gs_lifeBar());
+
+PixelShader		psSimple				= CompileShader(ps_5_0, ps_main2(NO_TEXTURE			, texSampler));
+PixelShader		psTex					= CompileShader(ps_5_0, ps_main2(USE_TEXTURE		, texSampler));
+PixelShader		psTexUser				= CompileShader(ps_5_0, ps_main2(USE_TEXTURE		, userTexSampler));
+PixelShader		psTexArray				= CompileShader(ps_5_0, ps_main2(USE_TEXTURE_ARRAY	, texSampler));
+PixelShader		psTexArrayUser			= CompileShader(ps_5_0, ps_main2(USE_TEXTURE_ARRAY	, userTexSampler));
+PixelShader		psTexUserAnisotropic	= CompileShader(ps_5_0, ps_main2(USE_TEXTURE		, userTexSamplerAnisotropic));
+PixelShader		psTexFont				= CompileShader(ps_5_0, ps_main2(USE_TEXTURE_FONT	, texSampler));
+
+PixelShader		psPrimitive				= CompileShader(ps_5_0, ps_primitive());
+PixelShader		psLifeBar				= CompileShader(ps_5_0, ps_lifeBar());
+
+#define SET_SHADERS(vs,ps)  			SetVertexShader(vs); SetGeometryShader(NULL); SetPixelShader(ps)
+#define SET_SHADERS_G(vs,gs,ps)			SetVertexShader(vs); SetGeometryShader(gs); SetPixelShader(ps)
 
 // для нормального пасса
 #define SET_PASS(name, vs, ps, dsState, blState)  pass name { SET_SHADERS(vs,ps); SetDepthStencilState(dsState, 1); \
 		SetBlendState(blState, float4(0.0f, 0.0f, 0.0f, 0.0f), 0xFFFFFFFF); SetRasterizerState(cullNone); }
 
+#define SET_PASS_G(name, vs, gs, ps, dsState, blState)  pass name { SET_SHADERS_G(vs,gs,ps); SetDepthStencilState(dsState, 1); \
+		SetBlendState(blState, float4(0.0f, 0.0f, 0.0f, 0.0f), 0xFFFFFFFF); SetRasterizerState(cullNone); }
+
 technique10 Standart
 {	
-	SET_PASS(simple					, vsSimple	, psSimple				, depthState			, blendState	)
-	SET_PASS(tex					, vsSimple	, psTex					, depthState			, blendState	)
-	SET_PASS(texUser				, vsSimple	, psTexUser				, depthState			, blendState	)
-	SET_PASS(array					, vsSimple	, psTexArray			, depthState			, blendState	)
-	SET_PASS(arrayUser				, vsSimple	, psTexArrayUser		, depthState			, blendState	)
-	SET_PASS(texUserAnisotropic		, vsSimple	, psTexUserAnisotropic	, depthState			, blendState	)
-	SET_PASS(texFont				, vsSimple	, psTexFont				, depthState			, blendState	)
+	SET_PASS(simple					, vsSimple	, psSimple				, depthState			, blendState)
+	SET_PASS(tex					, vsSimple	, psTex					, depthState			, blendState)
+	SET_PASS(texUser				, vsSimple	, psTexUser				, depthState			, blendState)
+	SET_PASS(array					, vsSimple	, psTexArray			, depthState			, blendState)
+	SET_PASS(arrayUser				, vsSimple	, psTexArrayUser		, depthState			, blendState)
+	SET_PASS(texUserAnisotropic		, vsSimple	, psTexUserAnisotropic	, depthState			, blendState)
+	SET_PASS(texFont				, vsSimple	, psTexFont				, depthState			, blendState)
+	SET_PASS_G(simpleCircle			, vsDummy, gsCircle, psPrimitive	, depthState			, blendState)
+	SET_PASS_G(simpleLifeBar		, vsDummy, gsLifeBar, psLifeBar		, depthState			, blendState)
 }
 
 technique10 StencilWrite
@@ -283,6 +306,8 @@ technique10 StencilWrite
 	SET_PASS(arrayUser				, vsSimple	, psTexArrayUser		, depthStencilState		, blendState)
 	SET_PASS(texUserAnisotropic		, vsSimple	, psTexUserAnisotropic	, depthStencilState		, blendState)
 	SET_PASS(texFont				, vsSimple	, psTexFont				, depthStencilState		, blendState)
+	SET_PASS_G(simpleCircle			, vsDummy, gsCircle, psPrimitive	, depthStencilState		, blendState)
+	SET_PASS_G(simpleLifeBar		, vsDummy, gsLifeBar, psLifeBar		, depthStencilState		, blendState)
 }
 
 technique10 StencilWriteTarget
@@ -294,6 +319,8 @@ technique10 StencilWriteTarget
 	SET_PASS(arrayUser				, vsSimple	, psTexArrayUser		, depthStencilState		, blendStateOne)
 	SET_PASS(texUserAnisotropic		, vsSimple	, psTexUserAnisotropic	, depthStencilState		, blendStateOne)
 	SET_PASS(texFont				, vsSimple	, psTexFont				, depthStencilState		, blendStateOne)
+	SET_PASS_G(simpleCircle			, vsDummy, gsCircle, psPrimitive	, depthStencilState		, blendStateOne)
+	SET_PASS_G(simpleLifeBar		, vsDummy, gsLifeBar, psLifeBar		, depthStencilState		, blendStateOne)
 }
 
 technique10 Target
@@ -305,6 +332,8 @@ technique10 Target
 	SET_PASS(arrayUser				, vsSimple	, psTexArrayUser		, depthStencilStateTest	, blendStateOne)
 	SET_PASS(texUserAnisotropic		, vsSimple	, psTexUserAnisotropic	, depthStencilStateTest	, blendStateOne)
 	SET_PASS(texFont				, vsSimple	, psTexFont				, depthStencilStateTest	, blendStateOne)
+	SET_PASS_G(simpleCircle			, vsDummy, gsCircle, psPrimitive	, depthStencilStateTest	, blendStateOne)
+	SET_PASS_G(simpleLifeBar		, vsDummy, gsLifeBar, psLifeBar		, depthStencilStateTest	, blendStateOne)
 }
 
 technique10 TargetVR
@@ -316,4 +345,6 @@ technique10 TargetVR
 	SET_PASS(arrayUser				, vsSimple	, psTexArrayUser		, depthState	, blendStateOne)
 	SET_PASS(texUserAnisotropic		, vsSimple	, psTexUserAnisotropic	, depthState	, blendStateOne)
 	SET_PASS(texFont				, vsSimple	, psTexFont				, depthState	, blendStateOne)
+	SET_PASS_G(simpleCircle			, vsDummy, gsCircle	, psPrimitive	, depthState	, blendStateOne)
+	SET_PASS_G(simpleLifeBar		, vsDummy, gsLifeBar, psLifeBar		, depthState	, blendStateOne)
 }

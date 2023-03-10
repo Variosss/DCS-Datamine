@@ -440,26 +440,6 @@ MissileTable =
         username = "Kh-41 Moskit (SS-N-22 Sunburn)";
         index = 56;
     },
--- vichr
-    {
-        name  = "vichr_1";
-        file  = "vichr";
-        life  = 1;
---      load  = { false, false};
-        fire  = { 0, 1};
-        username = "9A4172";
-        index = 57;
-    },
--- vichr
-    {
-        name  = "vichr_2";
-        file  = "vichr";
-        life  = 1;
---      load  = { false, false};
-        fire  = { 0, 1};
-        username = "9A4172";
-        index = 58;
-    },
 -- agm-114
     {
         name  = "agm-114-2";

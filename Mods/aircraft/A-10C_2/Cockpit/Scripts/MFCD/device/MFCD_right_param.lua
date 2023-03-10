@@ -16,7 +16,7 @@ DPP_OSB_labels =
 	"",-- OSB_03
 	"",-- OSB_04
 	"",-- OSB_05
-	"",-- OSB_06
+	"COMM",-- OSB_06
 	"STAT",-- OSB_07
 	"LOAD",-- OSB_08
 	"MAV",-- OSB_09

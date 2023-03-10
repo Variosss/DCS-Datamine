@@ -57,7 +57,7 @@ creators[devices.HELMET_DEVICE]	= {"avNightVisionGoggles"}
 
 indicators = {}
 
- indicators[#indicators + 1] = {"AJS37::RadarIndicator" ,LockOn_Options.script_path.."Radar/Indicator/init.lua"  ,nil,{{"PTR-CIcentr", "PTR-CIlower", "PTR-CIright"},
+ indicators[#indicators + 1] = {"AJS37::RadarIndicator" ,LockOn_Options.script_path.."Radar/Indicator/init.lua"  ,devices.RADAR,{{"PTR-CIcentr", "PTR-CIlower", "PTR-CIright"},
 {sx_l =  -0.0005,  -- center position correction in meters (forward , backward)
 sy_l =  0,  -- center position correction in meters (up , down)
 sz_l =  0,  -- center position correction in meters (left , right)

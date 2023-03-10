@@ -5,7 +5,7 @@
 #define RP_RBM 0
 #define RP_DBS 1
 
-Texture2D<float2>	src;
+Texture2D	src;
 Texture2D<float>	srcDepth;
 Texture2DArray<float>	shadowmap;
 
@@ -235,7 +235,7 @@ float exp_saturate(float x, float k) {
 }
 
 float4 PS_FINAL(VS_OUTPUT i, uniform bool useQuantization) : SV_TARGET0 {
-	float2 val = src.SampleLevel(gTrilinearClampSampler, i.uv, 0).xy;
+	float3 val = src.SampleLevel(gTrilinearClampSampler, i.uv, 0).xyz;
 
 	val.x = exp_saturate(val.x, 1);
 
@@ -245,7 +245,7 @@ float4 PS_FINAL(VS_OUTPUT i, uniform bool useQuantization) : SV_TARGET0 {
 	if(useQuantization)
 		val.x = quantize(val.x, quant-1);
 
-	return color * (val.x + val.y);
+	return float4(color.xyz * (val.x + val.y), val.z);
 }
 
 float4 PS_SCAN(VS_OUTPUT i, uniform bool useRotate) : SV_TARGET0 {
@@ -278,8 +278,18 @@ float4 PS_SCAN(VS_OUTPUT i, uniform bool useRotate) : SV_TARGET0 {
 	float footprint = val.y * params2.y * saturate(d1*0.5+0.5);	// bright scanline
 //	float footprint = val.y * params2.y * smoothstep(params2.x, 1, d1);	
 #endif	
-	return float4(val.x, footprint, 0, 1);
+	return float4(val.x, footprint, 1, 1);
 }
+
+float4 PS_CLEAR_B() : SV_TARGET0{
+	return 0;
+}
+
+BlendState clearB {
+	BlendEnable[0] = FALSE;
+	RenderTargetWriteMask[0] = 0x4;
+};
+
 
 #define END_PASS 		SetComputeShader(NULL); \
 						SetGeometryShader(NULL); \
@@ -334,6 +344,15 @@ technique10 Radar {
 		SetVertexShader(vs);
 		SetPixelShader(CompileShader(ps_5_0, PS_FINAL(true)));
 		END_PASS
+	}
+	pass P9_CLEAR_B {
+		SetVertexShader(vs);
+		SetPixelShader(CompileShader(ps_5_0, PS_CLEAR_B()));
+		SetComputeShader(NULL); 
+		SetGeometryShader(NULL);
+		SetBlendState(clearB, float4(0.0f, 0.0f, 0.0f, 0.0f), 0xFFFFFFFF);
+		SetDepthStencilState(disableDepthBuffer, 0);
+		SetRasterizerState(cullNone);
 	}
 }
 

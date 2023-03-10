@@ -56,6 +56,7 @@ elements["PNT-663"] = default_button(_("INS 0 pushbutton"), 0, devices.MAIN, dev
 -- INS CLR pushbutton
 elements["PNT-664"] = default_button(_("INS CLR pushbutton"), 0, devices.MAIN, devCmds.Cmd694, 664)
 
+
 for i,o in pairs(elements) do
 	if  o.class[1] == class_type.TUMB or 
 	   (o.class[2]  and o.class[2] == class_type.TUMB) or

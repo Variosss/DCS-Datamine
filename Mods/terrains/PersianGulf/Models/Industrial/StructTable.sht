@@ -1,0 +1,479 @@
+TerrainModelDeclaration =
+{
+	default =
+	{
+		load =
+		{
+			false;
+			false;
+		};
+		drawonmap = true;
+		vis = 1;
+		visShadows = 1;
+		life = 500;
+		fire =
+		{
+		  0;
+		  1;
+		};
+		classname = "lStandartStructure";
+		positioning = "ONLYHEIGTH"; 
+		DestructAnimatttion = "NO"; 
+	};
+	{
+		file = "!proxyIndustrial";
+		desrt = "";
+	};
+
+	{
+		file = "Airbase_airport_Tbilisi_Block_01";
+		life = 400;
+		fire =
+		{
+			60;
+			1;
+		};
+		maxSlope = 15;
+		desrt = "container_crash";
+	};
+
+	{
+		file = "Airbase_airport_Tbilisi_Hangar_01";
+		life = 1000;
+		fire =
+		{
+			120;
+			2;
+		};
+		maxSlope = 5;
+		desrt = "hungar_011_crash";
+	};
+
+	{
+		file = "Airbase_hangar_01_small";
+		life = 2000;
+		fire =
+		{
+			120;
+			2;
+		};
+		maxSlope = 10;
+		desrt = "hungar_04_R_crash";
+	};
+
+	{
+		file = "Airbase_tbilisi_Tank_01";
+		life = 5;
+		fire =
+		{
+			120;
+			2;
+		};
+		maxSlope = 15;
+		desrt = "azal_oil_tank_crash";
+	};
+
+	{
+		file = "Airbase_tbilisi_Tank_02";
+		life = 5;
+		fire =
+		{
+			120;
+			2;
+		};
+		maxSlope = 15;
+		desrt = "azal_oil_tank_crash";
+	};
+
+	{
+		file = "Airbase_warehouse_01";
+		life = 150;
+		fire =
+		{
+			60;
+			2;
+		};
+		maxSlope = 15;
+		desrt = "container_crash";
+	};
+
+	{
+		file = "Alieva_building_03";
+		life = 1000;
+		fire =
+		{
+			120;
+			2;
+		};
+		maxSlope = 10;
+		desrt = "hungar_01_crash";
+	};
+
+	{
+		file = "Baku_port_crane";
+		life = 1000;
+		fire =
+		{
+			20;
+			2;
+		};
+		maxSlope = 15;
+		desrt = "road_ramp_crash";
+	};
+
+	{
+		file = "concord_facil_02";
+		life = 800;
+		fire =
+		{
+			120;
+			2;
+		};
+		maxSlope = 10;
+		desrt = "tire_shop_crash";
+	};
+
+	{
+		file = "concord_facil_03";
+		life = 800;
+		fire =
+		{
+			120;
+			2;
+		};
+		maxSlope = 5;
+		desrt = "hungar_04_crash";
+	};
+
+	{
+		file = "concreet_blocks";
+		life = 5;
+		maxSlope = 15;
+		desrt = "container_crash";
+	};
+
+	{
+		file = "Concreet_can";
+		life = 15;
+		fire =
+		{
+			10;
+			3;
+		};
+		maxSlope = 10;
+		desrt = "road_sign_crash";
+	};
+
+	{
+		file = "Concreet_tank";
+		life = 10;
+		fire =
+		{
+			10;
+			2;
+		};
+		maxSlope = 15;
+		desrt = "container_crash";
+	};
+
+	{
+		file = "Constr_build_01";
+		life = 2500;
+		fire =
+		{
+			120;
+			2;
+		};
+		maxSlope = 5;
+		desrt = "Constr_build_01_crash";
+	};
+
+	{
+		file = "constr_build_02";
+		life = 2000;
+		fire =
+		{
+			120;
+			2;
+		};
+		maxSlope = 10;
+		desrt = "Constr_build_02_crash";
+	};
+
+	{
+		file = "Constr_crane";
+		life = 200;
+		fire =
+		{
+			0;
+			2;
+		};
+		maxSlope = 20;
+		desrt = "farmbigbarn_crash";
+	};
+
+	{
+		file = "Constr_crane_slab";
+		life = 200;
+		fire =
+		{
+			0;
+			2;
+		};
+		maxSlope = 15;
+		desrt = "container_crash";
+	};
+
+	{
+		file = "Constr_crane_slab_02";
+		life = 240;
+		fire =
+		{
+			120;
+			2;
+		};
+		maxSlope = 15;
+		desrt = "container_crash";
+	};
+
+	{
+		file = "helicopter_crane";
+		life = 240;
+		fire =
+		{
+			100;
+			2;
+		};
+		maxSlope = 10;
+		desrt = "road_ramp_crash";
+	};
+
+	{
+		file = "hungar_041";
+		life = 1000;
+		fire =
+		{
+			120;
+			2;
+		};
+		maxSlope = 5;
+		desrt = "hungar_023_R_crash";
+	};
+
+	{
+		file = "hungar_042";
+		life = 1000;
+		fire =
+		{
+			120;
+			2;
+		};
+		maxSlope = 10;
+		desrt = "hungar_04_crash";
+	};
+
+	{
+		file = "Industrial_container_01";
+		life = 20;
+		fire =
+		{
+			60;
+			2;
+		};
+		maxSlope = 10;
+		desrt = "container_crash";
+	};
+
+	{
+		file = "Industrial_container_02";
+		life = 20;
+		fire =
+		{
+			60;
+			2;
+		};
+		maxSlope = 10;
+		desrt = "container_crash";
+	};
+
+	{
+		file = "Industrial_container_pack";
+		life = 100;
+		fire =
+		{
+			60;
+			2;
+		};
+		maxSlope = 10;
+		desrt = "airfield_barrier_crash";
+	};
+
+	{
+		file = "Industrial_hangar_02";
+		life = 1000;
+		fire =
+		{
+			60;
+			2;
+		};
+		maxSlope = 5;
+		desrt = "Industrial_hangar_02_crash";
+	};
+
+	{
+		file = "industrial_shed_01";
+		life = 10;
+		fire =
+		{
+			30;
+			2;
+		};
+		maxSlope = 15;
+		desrt = "container_crash";
+	};
+
+	{
+		file = "liq_tank";
+		life = 100;
+		fire =
+		{
+			50;
+			2;
+		};
+		maxSlope = 10;
+		desrt = "azal_oil_tank_crash";
+	};
+
+	{
+		file = "Nevad_Vegas_industrial_01";
+		life = 1000;
+		fire =
+		{
+			120;
+			2;
+		};
+		maxSlope = 10;
+		desrt = "hungar_04_R_crash";
+	};
+
+	{
+		file = "Nevad_Vegas_industrial_03";
+		life = 1000;
+		fire =
+		{
+			120;
+			2;
+		};
+		maxSlope = 5;
+		desrt = "hungar_011_crash";
+	};
+
+	{
+		file = "Nevad_Vegas_industrial_04";
+		life = 1500;
+		fire =
+		{
+			120;
+			2;
+		};
+		maxSlope = 5;
+		desrt = "Nevada_hungar_crash";
+	};
+
+	{
+		file = "Nevad_Vegas_industrial_05";
+		life = 2000;
+		fire =
+		{
+			120;
+			2;
+		};
+		desrt = "Nevada_hungar_crash";
+	};
+
+	{
+		file = "Nevad_Vegas_industrial_08";
+		life = 1000;
+		fire =
+		{
+			120;
+			2;
+		};
+		maxSlope = 10;
+		desrt = "Cottage_01_crash";
+	};
+
+	{
+		file = "power_trans_line_03";
+		life = 5;
+		maxSlope = 20;
+		desrt = "road_ramp_crash";
+	};
+
+	{
+		file = "power_trans_station";
+		life = 5;
+		fire =
+		{
+			60;
+			3;
+		};
+		maxSlope = 20;
+		desrt = "road_ramp_crash";
+	};
+
+	{
+		file = "Solar_power_plant_01";
+		life = 10;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "board_crash";
+	};
+
+	{
+		file = "Tube_pile";
+		life = 5;
+		maxSlope = 10;
+		desrt = "container_crash";
+	};
+
+	{
+		file = "us_afb_hungar_05";
+		life = 500;
+		fire =
+		{
+			60;
+			2;
+		};
+		maxSlope = 10;
+		desrt = "Cottage_01_crash";
+	};
+
+	{
+		file = "us_afb_hungar_09";
+		life = 500;
+		fire =
+		{
+			60;
+			2;
+		};
+		maxSlope = 10;
+		desrt = "hungar_03_crash";
+	};
+
+	{
+		file = "us_afb_liq_tank_02";
+		life = 10;
+		fire =
+		{
+			60;
+			3;
+		};
+		maxSlope = 15;
+		desrt = "azal_oil_tank_crash";
+	};
+
+};

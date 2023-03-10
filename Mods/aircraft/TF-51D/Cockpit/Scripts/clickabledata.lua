@@ -604,7 +604,7 @@ elements["pnt_113"] = default_axis(_("Tail Warning Radar Light Control"),devices
 -------------
 elements["pnt_79"] = default_animated_lever(_("Hydraulic Release Knob"),devices.HYDRAULIC_SYSTEM, device_commands.Button_1,79,5.0)
 
-elements["pnt_94"] = multiposition_switch_limited(_("Flaps Control Handle"),devices.CONTROL_SYSTEM, device_commands.Button_2, 94, 6, 0.2)
+elements["pnt_94"] = multiposition_switch_limited(_("Flaps Control Handle"),devices.CONTROL_SYSTEM, device_commands.Button_1, 94, 6, 0.2)
 								
 elements["pnt_150"] = default_2_position_tumb(_("Landing Gear Control Handle"),devices.CONTROL_SYSTEM, device_commands.Button_3,150 )
 elements["pnt_151"] = default_2_position_tumb(_("Landing Gear Control Handle"),devices.CONTROL_SYSTEM, device_commands.Button_3,150 )

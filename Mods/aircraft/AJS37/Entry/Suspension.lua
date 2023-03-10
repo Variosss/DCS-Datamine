@@ -108,7 +108,7 @@ suspension = {
 
 		arg_post				= 5,
 		arg_amortizer			= 6,
-		arg_wheel_rotation		= 77,
+		arg_wheel_rotation		= 102,
 		arg_wheel_yaw			= -1,
 		collision_shell_name	= "WHEEL_LFront"
 	},
@@ -152,7 +152,7 @@ suspension = {
 
 		arg_post				= 3,
 		arg_amortizer			= 4,
-		arg_wheel_rotation		= 78,
+		arg_wheel_rotation		= 101,
 		arg_wheel_yaw			= -1,
 		collision_shell_name	= "WHEEL_RFront"
 	}

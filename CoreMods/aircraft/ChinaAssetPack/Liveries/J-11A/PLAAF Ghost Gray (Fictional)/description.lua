@@ -5,7 +5,7 @@ livery = {
     {"j11a_tex01", 3, "J11a_GG_decol", false};
     {"j11a_tex05", 3, "J11a_GG_decol", false};
     {"j11a_tex04", 3, "J11a_GG_decol", false};
-    {"j11a_detail_compos", 3, "J11a_GG_decol", false};	
+    {"j11a_detail_compos", 3, "J11a_GG_decol", false};    
     {"j11a_tex03_compos", 3, "J11a_GG_decol", false};
     {"j11a_tex06_BN52", 3, "J11a_numbers_G", false};
     {"j11a_tex06_BN31", 3, "J11a_numbers_G", false};
@@ -23,8 +23,8 @@ livery = {
     {"j11a_tex06_BN31", 0, "J11a_tex06_05", true};
     {"j11a_tex06_BN32", 0, "J11a_tex06_05", true};
     {"j11a_tex07", 0, "J11a_tex07_05", true};
-	{"j11a_RKL609L", 0, "J11a_RKL609L_05", true};
-	{"j11a_RKL609R", 0, "J11a_RKL609R_05", true};
+    {"j11a_RKL609L", 0, "J11a_RKL609L_05", true};
+    {"j11a_RKL609R", 0, "J11a_RKL609R_05", true};
 
     {"j11a_detail", 0, "J11a_detail_05", true};
     {"j11a_detail_compos", 0, "J11a_detail_05", true};

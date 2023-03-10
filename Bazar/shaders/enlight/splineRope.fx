@@ -203,7 +203,7 @@ GBuffer PS(PS_INPUT i
 #if USE_SV_SAMPLEINDEX
 		sv_sampleIndex, 
 #endif
-		float4(t * t * 0.5, 1), i.normal, float4(1, 1-(t.r*t.r*t.r), t.r, 1), float3(0, 0, 0));
+		float4(t * t * 0.5, 1), i.normal, float4(1, 1-(t.r*t.r*t.r), t.r, 1), float3(0, 0, 0), calcMotionVectorStatic(i.projPos));	// TODO: correct motion vector to use calcMotionVector()
 }
 
 float4 PS_LINE(PS_INPUT i): SV_TARGET0 {

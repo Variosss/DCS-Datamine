@@ -4,7 +4,7 @@ end
 
 theatre =
 {
-	['developerName']   =   "Eagle Dynamics";
+	['developerName']   =   "";
 	['state']	= "installed";
 	['type']	= "terrain";
 	['version']	= "";

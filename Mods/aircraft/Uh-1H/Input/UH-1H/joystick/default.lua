@@ -639,10 +639,10 @@ keyCommands = {
 
 {down = iCommandPlaneEject, name = _('Leave Helicopter (3 times)'), category = _('Systems')},
 
-{down = device_commands.Button_1, cockpit_device_id = devices.HEAD_WRAPPER, value_down = 0.0, name = _('Set Pilot Seat'), category = _('View Cockpit')},
-{down = device_commands.Button_2, cockpit_device_id = devices.HEAD_WRAPPER, value_down = 0.0, name = _('Set Operator Seat'), category = _('View Cockpit')},
-{down = device_commands.Button_3, cockpit_device_id = devices.HEAD_WRAPPER, value_down = 0.0, name = _('Set Right Gunner Seat'), category = _('View Cockpit')},
-{down = device_commands.Button_4, cockpit_device_id = devices.HEAD_WRAPPER, value_down = 0.0, name = _('Set Left Gunner Seat'), category = _('View Cockpit')},
+{down = iCommandViewCockpitChangeSeat, value_down = 1, name = _('Set Pilot Seat'), category = _('View Cockpit')},
+{down = iCommandViewCockpitChangeSeat, value_down = 2, name = _('Set Operator Seat'), category = _('View Cockpit')},
+{down = iCommandViewCockpitChangeSeat, value_down = 3, name = _('Set Left Gunner Seat'), category = _('View Cockpit')},
+{down = iCommandViewCockpitChangeSeat, value_down = 4, name = _('Set Right Gunner Seat'), category = _('View Cockpit')},
 
 {down = device_commands.Button_27, cockpit_device_id = devices.WEAPON_SYS, value_down = 1.0, name = _('Toggle Weapon Hints'), category = _('Cheat')},
 

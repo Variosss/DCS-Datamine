@@ -19,7 +19,7 @@ GT.visual.fire_pos[2] = 1.8 -- center of burn shift at vertical shift(meters)
 GT.visual.fire_pos[3] = 0 -- center of burn at transverse axis shift(meters)
 GT.visual.fire_time = 120 --burning time (seconds)
 
-GT.visual.IR = { coeffs = {GT_t.IR_COEFFS_ENGINE_APC, GT_t.IR_COEFFS_WHEELS_Truck, {0.0, 0.0}, IR_COEFFS_BODY, {0.27, 0.27/1550}}}
+GT.visual.IR = { coeffs = {GT_t.IR_COEFFS_ENGINE_APC, GT_t.IR_COEFFS_WHEELS_Truck, {0.0, 0.0}, GT_t.IR_COEFFS_BODY, {0.27, 0.27/1550}}}
 
 GT.Name = "generator_5i57"
 GT.DisplayName = _("Diesel Power Station 5I57A")

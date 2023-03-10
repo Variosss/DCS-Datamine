@@ -63,8 +63,13 @@ Eagle_II =  {
 			control = "checkbox",
 			label = _("Solo Flight"),
 			defValue = false,
-			weightWhenOn = -85
+			weightWhenOn = -85.0,
+			
+			arg = 472, --/N/ for ME, to properly draw number of pilots in the pit
+			argTbl = {[true] = 0.5, [false] = 0},
 		},
+		
+
 --[[	{
             id = "PropellorType",
             control = "comboList",
@@ -105,12 +110,13 @@ Eagle_II =  {
 
 
 	
-	--Postoji "buba" u proracunu min mase. Ako se postavi prazan avion sa jednim pilotom, i pozove "refuel" vidi se da je min. masa 648 umesto 563 (563 je ispravno prikazano u ME). Izgleda da simulator ne oduzima tezinu pilota od M_empty.
+	--Postoji "buba" u proracunu min mase. Ako se postavi prazan avion sa jednim pilotom, vidi se da je min. masa 648 umesto 563 (563 je ispravno prikazano u ME). Simulator ne oduzima tezinu jednog pilota od M_empty.
 	
 	M_empty								     =	648,                         -- 478 is empty, BUT->	(2 pilots 170 kg! - 2 pilots are accounted in empty mass by default!)
 	M_nominal								 =	687,                         -- kg	(2 pilots 170 kg, 39kg fuel)
 	M_max									 =	726,                         -- kg	(2 pilots 170 kg, 71kg fuel, 7 kg smoke oil) 
 	M_fuel_max							     =	 71,                         -- kg
+	defFuelRatio							 =	0.5493,					     -- топливо по умолчанию в долях от полного
 	
 	H_max                                    = 6000,                         -- m
 	average_fuel_consumption                 =	  0.01,                      -- kg/s
@@ -205,15 +211,14 @@ Eagle_II =  {
 			ejection_seat_name	 = 0,
 			pilot_name		     = "CE2_Pilot_01",
 			drop_parachute_name =  "CE2_Pilot_01_Parachute",
-			--pos					 = {-1.50, -0.20, 0.00}, --Ilona"s {-1.50, -0.20, 0.08},  --{-1.10, -0.08, 0.00},  --fabricki podatak
-			pos					 = {-1.10, -0.08, 0.00},  --fabricki podatak
+			pos					 = {-1.10 + 0.10, -0.08, 0.00},  -- {-1.10, -0.08, 0.00} fabricki podatak
 			can_be_playable  	 = true,
 			canopy_arg           = 38, 
 			pilot_body_arg		 = 50,
 			ejection_order 		 =  2,
 			canopy_pos			 = { 1.61, 1.18, 0.00},
-			--canopy_ejection_dir	 = {-1.00, 0.20, 0.00},
-ejection_added_speed = {-1, 3, -3},--{-5, 15, 0},
+			canopy_ejection_dir	 = {0.00, 2.00, 2.00},
+ejection_added_speed = {-1, 3, -3},
 			role 				 = "instructor",
 			role_display_name    = _("Instructor Pilot"),		
 		},
@@ -224,19 +229,19 @@ ejection_added_speed = {-1, 3, -3},--{-5, 15, 0},
 			ejection_seat_name	 = 0,                     --"pilot_l39_seat",
 			pilot_name		     = "CE2_Pilot_02",
 			drop_parachute_name =  "CE2_Pilot_02_Parachute",
-			--pos					 = {-0.56, -0.28, 0.00}, --Ilona"s {-0.56, -0.28, 0.20},   --{-0.27, -0.1, 0.00}, -- korig. vrednost za bolju stabilnost dvoseda --{-0.287, -0.1, 0.00}, fabricki podatak
-			pos					 = {-0.27, -0.1, 0.00}, -- korig. vrednost za bolju stabilnost dvoseda --{-0.287, -0.1, 0.00}, fabricki podatak
+			pos					 = {-0.27 - 0.10, -0.1, 0.00}, -- {-0.287, -0.1, 0.00}, fabricki podatak
 			can_be_playable 	 = true,
 			canopy_arg           = 38,
 			pilot_body_arg		 = 472,
 			ejection_order 		 =  1,
 			canopy_pos			 = { 1.61, 1.18, 0.00},
-			canopy_ejection_dir	 = {-1.00, 0.20, 0.00},
-ejection_added_speed = {-1, 3, -3},--{-5,15,0},
+			canopy_ejection_dir	 = {0.00, 2.00, 2.00},
+ejection_added_speed = {-1, 3, -3},
 			role 				 = "pilot",
 			role_display_name    = _("Pilot"),		
 		},
 	},
+	
 	
 	fires_pos = -- depreciate with X-Ray
 	{

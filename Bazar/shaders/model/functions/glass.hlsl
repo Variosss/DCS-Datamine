@@ -79,6 +79,7 @@ float getRefractedRayLength(float cosAlpha, float N1, float N2){
 
 float4 forwardGlassPSPass2(VS_OUTPUT input, MaterialParams mp, uniform int Flags, out float3 transmittance)
 {
+ #if BLEND_MODE != BM_SHADOWED_TRANSPARENT
 	float shadow = 1.0;
 	float2 cloudShadowAO = 1.0;
 	cloudShadowAO = SampleShadowClouds(mp.pos);
@@ -86,7 +87,10 @@ float4 forwardGlassPSPass2(VS_OUTPUT input, MaterialParams mp, uniform int Flags
 	
 	if(!(Flags & F_DISABLE_SHADOWMAP))
 		shadow = min(shadow, applyShadow(float4(mp.pos, input.projPos.z/input.projPos.w), mp.normal, true, true, Flags & F_IN_COCKPIT));
-
+#else
+	float shadow = 0.0;
+	float2 cloudShadowAO = 1.0;
+#endif
 	mp.diffuse.rgb = modifyAlbedo(mp.diffuse.rgb, albedoLevel, albedoContrast, mp.aorms.x);
 
 	AtmosphereSample atm = SamplePrecomputedAtmosphere(0);

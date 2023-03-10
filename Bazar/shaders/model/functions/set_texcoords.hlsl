@@ -22,3 +22,6 @@
 	o.tc5=input.tc5;
 #endif
 
+#ifdef COLOR0_SIZE
+	o.color = input.color0;
+#endif

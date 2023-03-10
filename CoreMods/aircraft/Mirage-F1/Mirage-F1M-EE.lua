@@ -1,4 +1,10 @@
+
 local weight_fuel_max_F1M_EE = 3246
+
+local Pylons_M_EE = {}
+copyTable(Pylons_CE_BE_EE, Pylons_M_EE)
+
+add_ECM_pod(Pylons_M_EE, id_BARAX, 2, 6)
 
 make_MirageF1({
 	Name						= 'Mirage-F1M-EE',
@@ -13,6 +19,6 @@ make_MirageF1({
 	M_fuel_max 					= weight_fuel_max_F1M_EE,
 	
 	passivCounterm 				= passivCounterm,
-	-- TODO:
-	--Pylons 					= Pylons_CE_BE_EE,
+	
+	Pylons 						= Pylons_M_EE,
 })

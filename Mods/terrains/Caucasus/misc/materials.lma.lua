@@ -1511,13 +1511,18 @@ materials_export =
 	requireServices = "references";
 	streams = 
 	{
-		{ name = "P";     type = "FLOAT3";},		-- Вершины
-		{ name = "AXISX"; type = "FLOAT2";},		-- AxisX
-		{ name = "SEED";  type = "FLOAT1";},		-- seed
+		{ name = "P";     type = "FLOAT3";										},		-- Вершины
+		{ name = "AXISX"; type = "FLOAT2"; ifShaderDefine = "!ARBITARY_ROTATE";	},		-- AxisX
+		{ name = "AXISX"; type = "FLOAT3"; ifShaderDefine = "ARBITARY_ROTATE";	},		-- AxisX
+		{ name = "AXISY"; type = "FLOAT3"; ifShaderDefine = "ARBITARY_ROTATE";	},		-- AxisY
+		{ name = "AXISZ"; type = "FLOAT3"; ifShaderDefine = "ARBITARY_ROTATE";	},		-- AxisZ
+		{ name = "SEED";  type = "FLOAT1";										},		-- seed
 		
 	},
 	paramsources = 
 	{
+		{ type = "PROPERTY"; name = "shaderDefine"; defaultvalue = "NODEFINITIONS";},
+	
 		{ type = "PROPERTY"; name = "levels"; defaultvalue = "012345";},
 		{ type = "PROPERTY"; name = "reference"; defaultvalue = "";},
 		{ type = "PROPERTY"; name = "maxlevel"; defaultvalue = "0";},
@@ -1827,7 +1832,8 @@ materials_export =
 		'OCCELATOR',
 		'HEELING',
 		'AFB_LIGHT_MODEL',
-		'USE_HEATMAP'
+		'USE_HEATMAP',
+		'FLIR_NO_INSTANCE_RANDOMNESS',	-- For tiling geometry, such as fences
 	};
 	structuredStream = true;
 	preexport = "VaryHouse4.1";
@@ -1895,7 +1901,8 @@ materials_export =
 		'USE_NORMALMAP',
 		'HEELING',
 		'AFB_LIGHT_MODEL',
-		'USE_HEATMAP'
+		'USE_HEATMAP',
+		'FLIR_NO_INSTANCE_RANDOMNESS',	-- For tiling geometry, such as fences
 	};
 
 	structuredStream = true;
@@ -2079,8 +2086,11 @@ materials_export =
 		'USE_NORMALMAP',
 		'AFB_LIGHT_MODEL',			-- todo: выпилить
 		'USE_PALETTE',
+		'USE_PALETTE_ROOM_LIGHT',
+		'USE_COLOR',
 		'USE_HEATMAP',
-		'USE_CUBEMAP_OPACITY'
+		'USE_CUBEMAP_OPACITY',
+		'FLIR_NO_INSTANCE_RANDOMNESS',	-- For tiling geometry, such as fences
 	};
 	structuredStream = true;
 	preexport = "windowsRooms;VaryHouse5.1"; -- преэкспорт windowsRooms выполняется для мешек на которых установлен дефайн USE_CUBEMAP_OPACITY. windowsRooms выполняет триангуляцию меша, разбиение меша на изолированные меши и дублирование исходного меша, но без флага USE_CUBEMAP_OPACITY
@@ -2091,19 +2101,23 @@ materials_export =
 		{ name = "P";			type = "FLOAT3";},		-- Вершины
 		{ name = "N";			type = "FLOAT3";},		-- Нормали
 		
+		{ name = "UV0";			type = "FLOAT2";		invertV=true; defaultValue="0.5"; ifShaderDefine = "USE_COLOR"; },				-- uv-координаты для surfaceColorTexture
 		{ name = "UV1";			type = "FLOAT2";		invertV=true; defaultValue="0.5"; ifShaderDefine = "!USE_CUBEMAP_OPACITY"; },		-- uv-координаты для fabricTexture
 		{ name = "UV1";			type = "INT1"; spaceType = "worldspacepoint"; assignedTotexture="color0"; defaultValue="0.5"; setMaterialManifold = 0; ifShaderDefine = "USE_CUBEMAP_OPACITY"; },
 		{ name = "UV1tangent";  type = "FLOAT3";		invertV=true; tangentFor="UV1"; ifShaderDefine = "!USE_CUBEMAP_OPACITY"; },			-- tangent для UV1
 		{ name = "UV1binormal"; type = "FLOAT3";		invertV=true; binormalFor="UV1"; ifShaderDefine = "!USE_CUBEMAP_OPACITY"; },			-- binormal для UV1
-		{ name = "UV2";			type = "FLOAT2";		invertV=true; defaultValue="0.5"; },		-- uv-координаты для decalTexture
+		{ name = "UV2";			type = "FLOAT2";		invertV=true; defaultValue="0.5"; ifShaderDefine = "!USE_CUBEMAP_OPACITY"; },		-- uv-координаты для decalTexture
+		{ name = "UV2";			type = "INT1"; spaceType = "worldspacepoint"; assignedTotexture="color1"; defaultValue="0.5"; setMaterialManifold = 1; ifShaderDefine = "USE_CUBEMAP_OPACITY"; },
 		{ name = "UV3";			type = "FLOAT2";		invertV=true; defaultValue="0.5"; },		-- uv-координаты для occlusionTexture
 		{ name = "UV4";			type = "FLOAT2";		invertV=true; defaultValue="0.5"; },		-- uv-координаты для selfillumTexture
-		{ name = "normalMapTexCoord"; type = "FLOAT2";	invertV=true; assignedTotexture="bump0"; 			defaultValue="0.5"; },	-- uv-координаты для normalmapTexture
+		{ name = "normalMapTexCoord"; type = "FLOAT2";	invertV=true; assignedTotexture="bump0"; 			defaultValue="0.5"; ifShaderDefine = "!USE_CUBEMAP_OPACITY"; },	-- uv-координаты для normalmapTexture
+		{ name = "normalMapTexCoord"; type = "INT1"; spaceType = "worldspacepoint"; assignTotexture="bump0"; defaultValue="0.5"; setMaterialManifold = 2; ifShaderDefine = "USE_CUBEMAP_OPACITY"; },
 		{ name = "heatmapTexCoord";   type = "FLOAT2"; 	invertV=true; assignedTotexture="filtercolor"; 		defaultValue="0.5"; ifShaderDefine = "USE_HEATMAP"; },	-- uv-координаты для heatmapTexture
-		{ name = "windowTexCoord";	  type = "INT1"; spaceType = "worldspacepoint"; assignedTotexture="opacity";			defaultValue="0.5";	ifShaderDefine = "USE_CUBEMAP_OPACITY"; setMaterialManifold = 1; preexport="windowTexCoord";},	-- uv-координаты для маппинга окна на грань кубической комнаты с длиной ребра равной единице; преэкспорт windowTexCoord делает рандомный сдвиг всех текстурных координат windowTexCoord на целое число единиц вдоль каждой из осей u и v
+		{ name = "windowTexCoord";	  type = "INT1"; spaceType = "worldspacepoint"; assignedTotexture="opacity";			defaultValue="0.5";	ifShaderDefine = "USE_CUBEMAP_OPACITY"; setMaterialManifold = 3; preexport="windowTexCoord";},	-- uv-координаты для маппинга окна на грань кубической комнаты с длиной ребра равной единице; преэкспорт windowTexCoord делает рандомный сдвиг всех текстурных координат windowTexCoord на целое число единиц вдоль каждой из осей u и v
 	},
 	paramsources = 
 	{
+		{ type = "TEXNAME"; name = "surfaceColorTexture";	submat = "color4";				defaultvalue = "white.png";					requiredUvset="UV0"; 		behavior="unique"; ifShaderDefine = "USE_COLOR";},
 		{ type = "TEXNAME"; name = "occlusionTexture";		submat = "color2";				defaultvalue = "defaultVaryhouseAO.png";	requiredUvset="UV3";		behavior="unique";},
 		{ type = "TEXNAME"; name = "selfillumTexture";		submat = "selfillumination0";	defaultvalue = "black.png";					requiredUvset="UV4";		behavior="unique";},
 		{ type = "TEXNAME"; name = "normalmapTexture";		submat = "bump0";				defaultvalue = "normalZ.png";              								behavior="unique";},
@@ -2129,7 +2143,8 @@ materials_export =
 		{ type = "PROPERTY"; name = "paletteV";	    setMaterialInt = 1;	   defaultvalue = "0";	 preexport="paletteV2";},		-- V coordinate in palette
 		{ type = "PROPERTY"; name = "colorIndex";   setMaterialInt = 2;    defaultvalue = "2";},
 		{ type = "PROPERTY"; name = "flirType"; 	setMaterialInt = 3;  						 preexport="buildFlirTypeBuilding";},
-		
+		{ type = "PROPERTY"; name = "roomLightPaletteV";	setMaterialInt = 4;	   defaultvalue = "0";	 preexport="roomLightPaletteV";},		-- V coordinate in palette
+
 		{ type = "PROPERTY"; name = "occelatorPivot"; setMaterialFloat = 0; defaultvalue = "0";  preexport="occelatorPivot2";},	-- occelatorPivot
 		{ type = "PROPERTY"; name = "flirLuminosity"; setMaterialFloat = 1; defaultvalue = "0";  preexport="flirLuminosity2";},
 		{ type = "PROPERTY"; name = "occelatorPeriod"; setMaterialFloat = 2; defaultvalue = "0";}, -- in seconds
@@ -2155,7 +2170,9 @@ materials_export =
 		'USE_NORMALMAP',
 		'AFB_LIGHT_MODEL',			-- todo: ��������
 		'USE_PALETTE',
-		'USE_HEATMAP'
+		'USE_COLOR',
+		'USE_HEATMAP',
+		'FLIR_NO_INSTANCE_RANDOMNESS',	-- For tiling geometry, such as fences
 	};
 
 	structuredStream = true;
@@ -2175,8 +2192,8 @@ materials_export =
 		{ name = "UV0binormal"; 		type = "FLOAT3"; invertV = true; binormalFor="normalmapTexCoord";},		-- binormal ��� normalmapTexCoord
 		
 		-- ���������
-		{ name = "paletteV";			type = "INT1";	defaultValue="-1"; preexport="paletteV3"; },
-		{ name = "baseColorPacked";		type = "INT1";	defaultValue="0";  preexport="baseColorPacked"; },
+		{ name = "paletteV";			type = "INT1";	defaultValue="-1"; preexport="paletteV3"; 		ifShaderDefine = "!USE_COLOR"; },
+		{ name = "baseColorPacked";		type = "INT1";	defaultValue="0";  preexport="baseColorPacked";	ifShaderDefine = "!USE_COLOR"; },
 	},
 	paramsources = 
 	{
@@ -2191,7 +2208,8 @@ materials_export =
 		-- ���������
 		{ type = "PROPERTY"; name = "OPTIONS";      setMaterialInt = 0;    defaultvalue = "512";},		
 		{ type = "PROPERTY"; name = "colorIndex";   setMaterialInt = 1;    defaultvalue = "2";},
-		{ type = "PROPERTY"; name = "flirType"; 	setMaterialInt = 2;  						 preexport="buildFlirTypeBuilding";},
+		{ type = "PROPERTY"; name = "flirType"; 	setMaterialInt = 2;   						preexport="buildFlirTypeBuilding";},
+		{ type = "PROPERTY"; name = "paletteV"; 	setMaterialInt = 3;    defaultvalue = "-1";	ifShaderDefine = "USE_COLOR";},
 		{ type = "PROPERTY"; name = "occelatorPivot"; setMaterialFloat = 0; defaultvalue = "0";  preexport="occelatorPivot2";},	-- occelatorPivot
 		{ type = "PROPERTY"; name = "occelatorPeriod"; setMaterialFloat = 1; defaultvalue = "0";}, -- in seconds
 		{ type = "PROPERTY"; name = "shaderDefine"; defaultvalue = "NODEFINITIONS";},
@@ -2300,6 +2318,30 @@ materials_export =
 		{ name = "SEED";  type = "FLOAT1";},		-- seed
 		{ name = "OPTIONS";  type = "INT1";},		-- опции (1-renderFinal, 2-renderShadows, 4-renderReflections)
 	},
+	paramsources = 
+	{
+		{ type = "PROPERTY"; name = "shaderDefine"; defaultvalue = "NODEFINITIONS";},
+	},
+},
+
+
+-- Improvement over hwInstancer5.0
+-- Allows for arbitary rotations (pitch and roll were not included before)
+-- Utilized bitpacking. Example: There are 25M instances on Persian Gulf. 
+-- Every extra uint or float in the following structure makes terrain size larger by 100 megabytes
+-- Packing data into bitfields allows to shove more information into same size
+-- Impact on perfomance is minimal
+{
+	name = "HwInstancer5.2";
+	preexport = "PointInstancer";
+	requireServices = "references";
+	streams = 
+	{
+		{ name = "P";  			   type = "FLOAT3"; },	-- Position 
+		{ name = "TYPE_OPTIONS";   type = "INT";    },	-- 16 bit type, 16 bit options 
+		{ name = "SEED_SCALE";     type = "INT";    },	-- 16 bit seed, uniform distribution [0; 1], 16 bit half precision float scale 
+		{ name = "AXIS";  	 	   type = "INT3";   },	-- 16 bit per axis projection, uniform distribution [-1; 1]. 48 bits per axis. Axis are XZ 
+	},	
 	paramsources = 
 	{
 		{ type = "PROPERTY"; name = "shaderDefine"; defaultvalue = "NODEFINITIONS";},

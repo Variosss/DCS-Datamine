@@ -74,7 +74,7 @@ void lk_shadow_transparent_ps(const VS_OUTPUT_SHADOWS input)
 #if defined(GLASS_MATERIAL) || !defined(SHADOW_WITH_ALPHA_TEST)
 	discard;
 #else
-	#if defined(DIFFUSE_UV) && (BLEND_MODE == BM_ALPHA_TEST || BLEND_MODE == BM_TRANSPARENT)
+	#if defined(DIFFUSE_UV) && (BLEND_MODE == BM_ALPHA_TEST || BLEND_MODE == BM_TRANSPARENT || (BLEND_MODE == BM_SHADOWED_TRANSPARENT))
 		float4 diff = Diffuse.Sample(gAnisotropicWrapSampler, input.DIFFUSE_UV.xy + diffuseShift);
 		if(diff.a < 0.25)
 			discard;

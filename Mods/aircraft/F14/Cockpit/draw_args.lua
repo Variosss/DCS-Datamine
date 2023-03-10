@@ -104,6 +104,8 @@ cockpit_args =
     RADAR_DDD_range_100 = 44,
     RADAR_DDD_range_200 = 45,
 
+    RIO_Adjust_Mirror = 46,
+
     TID_bright = 48,
     TID_contrast = 49,
 
@@ -347,6 +349,10 @@ cockpit_args =
     AIRSPD_Bug_Airspeed_RIO = 253,
     AIRSPD_KnobPush_RIO = 254,
     AIRSPD_Knob_RIO = 255,
+
+    Pilot_Adjust_Mirror_L = 256,
+    Pilot_Adjust_Mirror_R = 257,
+    Pilot_Adjust_Mirror_T = 258,
 
     PILOT_TACAN_Indicator_PLT = 290,
     PILOT_TACAN_Indicator_NFO = 291,
@@ -1296,6 +1302,8 @@ external_args =
 
 	RIO_Right_Left_Dummy = 626,
 	RIO_Up_Down_Dummy = 627,
+
+	WEAP_Tank_Pylon_Clean = 700,
 
     CONTROL_LeftMainFlaps = 1001,
     CONTROL_RightAuxFlaps = 1002,

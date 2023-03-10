@@ -12,20 +12,23 @@ local	gun_boresight					= CreateElement "ceSimple"
 AddHUDElement(gun_boresight)
 
 -- SYMBOLOGY
+local ret_pos_x = 6.55 * MilToDI(HUD_SCALE)
+local ret_pos_y = 6.55 * MilToDI(HUD_SCALE)
+
 local	GUN_Symbol					= CreateElement "ceSMultiLine"
 		GUN_Symbol.name				= "AG_Gun_Reticle"
 		GUN_Symbol.material			= stroke_material
-		GUN_Symbol.init_pos			= {-6.55 * MilToDI(HUD_SCALE), 6.55 * MilToDI(HUD_SCALE), 0}
+		GUN_Symbol.init_pos			= {-ret_pos_x, ret_pos_y, 0}
 		GUN_Symbol.points_set		= {"HUD_stroke_symbols", "AG_Gun_Reticle"}
 		GUN_Symbol.parent_element	= HUD_center.name
-		GUN_Symbol.controllers		= {{"AG_gunsight", HUD_SCALE}}
+		GUN_Symbol.controllers		= {{"AG_gunsight_depression", HUD_SCALE}, {"AG_gunsight", HUD_SCALE}}
 		GUN_Symbol.scale			= HUD_SCALE
 AddHUDStrokeSymbol(GUN_Symbol)
 
 local	GUN_Symbol					= CreateElement "ceSMultiLine"
 		GUN_Symbol.name				= "gun_ret_rng_max"
 		GUN_Symbol.material			= stroke_material
-		GUN_Symbol.init_pos			= {6.55 * MilToDI(HUD_SCALE), -6.55 * MilToDI(HUD_SCALE), 0}
+		GUN_Symbol.init_pos			= {ret_pos_x, -ret_pos_y, 0}
 		GUN_Symbol.points_set		= {"HUD_stroke_symbols", "AG_Gun_Limits_ind"}
 		GUN_Symbol.parent_element	= "AG_Gun_Reticle"
 		GUN_Symbol.scale			= HUD_SCALE
@@ -35,7 +38,7 @@ AddHUDStrokeSymbol(GUN_Symbol)
 local	GUN_Symbol					= CreateElement "ceSMultiLine"
 		GUN_Symbol.name				= "gun_ret_rng_min"
 		GUN_Symbol.material			= stroke_material
-		GUN_Symbol.init_pos			= {6.55 * MilToDI(HUD_SCALE), -6.55 * MilToDI(HUD_SCALE), 0}
+		GUN_Symbol.init_pos			= {ret_pos_x, -ret_pos_y, 0}
 		GUN_Symbol.points_set		= {"HUD_stroke_symbols", "AG_Gun_Limits_ind"}
 		GUN_Symbol.parent_element	= "AG_Gun_Reticle"
 		GUN_Symbol.scale			= HUD_SCALE
@@ -46,7 +49,7 @@ local	gun_slant_range					= CreateElement "ceSimpleLineObject"
 		gun_slant_range.name			= "gun_slant_range"
 		gun_slant_range.material		= hud_line_indicators
 		gun_slant_range.width			= 2.0 * MilToDI(HUD_SCALE)
-		gun_slant_range.init_pos		= {6.55 * MilToDI(HUD_SCALE), -6.55 * MilToDI(HUD_SCALE), 0}
+		gun_slant_range.init_pos		= {ret_pos_x, -ret_pos_y, 0}
 		gun_slant_range.parent_element	= "AG_Gun_Reticle"
 		gun_slant_range.controllers		= {{"gun_slant_range", GS_SlantRange_Scale}}
 AddHUDElement(gun_slant_range)

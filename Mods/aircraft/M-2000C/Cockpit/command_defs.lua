@@ -1134,5 +1134,8 @@ cmds =
 	ExcdElasLimit = cmd_counter();
 	SELH_KNOB = cmd_counter();
 	SELH_INC = cmd_counter();
+	AUX_SIGHT_KNOB = cmd_counter();
+	AUX_SIGHT_INC = cmd_counter();
+	HUD_BRT_AXIS = cmd_counter();
 }
 

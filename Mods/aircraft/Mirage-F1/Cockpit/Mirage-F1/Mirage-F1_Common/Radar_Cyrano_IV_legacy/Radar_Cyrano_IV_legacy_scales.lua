@@ -1,5 +1,9 @@
 
 bake_scale 							= 0.81 --0.78
+
+-- not used now
+--bake_general_scale				= 0.944
+
 AG_scan_center_shift_y 				= -0.1
 
 -- centimeters

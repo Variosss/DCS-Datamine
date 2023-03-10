@@ -10,8 +10,6 @@
 #include "common/samplers11.hlsl"
 #include "common/enums.hlsl"
 #include "common/context.hlsl"
-
-#define USE_VELOCITY_MAP 1
 #include "deferred/GBuffer.hlsl"
 
 #include "functions/vt_utils.hlsl"
@@ -23,6 +21,8 @@
 #include "common/debug_uniforms.hlsl"
 #endif
 
+#include "common/lightingFLIR.hlsl"
+
 static const float4 NORMAL_MAP_COLOR_PLUG = float4(1.0, 0.5, 0.5, 0);
 
 Texture2D BaseColorTiledMap;
@@ -33,6 +33,8 @@ Texture2D BaseColorMap;
 Texture2D RoughnessMetallicMap;
 
 Texture2D RainMask;
+
+Texture2D FLIRMap;
 
 #define diffuseShift float2(0, 0)
 #include "functions/damage.hlsl"
@@ -87,7 +89,7 @@ GBuffer deck_deferred_ps(VS_OUTPUT input,
 	float distanceToCam = length(toCamera) * gNearFarFovZoom.w;
 	addDamageNew(input, distanceToCam, baseColor, normal, aormsOut);
 
-	float2 velMap = calcVelocityMap(input.projPos, input.prevFrameProjPos);
+	float2 motion = calcMotionVector(input.projPos, input.prevFrameProjPos);
 
 	float3 emissive = 0;
 
@@ -101,7 +103,7 @@ GBuffer deck_deferred_ps(VS_OUTPUT input,
 #if USE_SV_SAMPLEINDEX
 						sv_sampleIndex,
 #endif
-						baseColor, normal, aormsOut.xyzw, emissive, velMap);
+						baseColor, normal, aormsOut.xyzw, emissive, motion);
 }
 
 PS_OUTPUT deck_forward_ps(VS_OUTPUT input, uniform int Flags) {
@@ -149,9 +151,13 @@ PS_OUTPUT deck_forward_ps(VS_OUTPUT input, uniform int Flags) {
 PS_OUTPUT deck_ps_ir(VS_OUTPUT input)
 {
 	clipModelBySeaLevel(input.Pos.xyz / input.Pos.w);
+	float4 flir = FLIRMap.Sample(gAnisotropicWrapSampler, input.tc1.xy);
+	float v = flir[0] * flirCoeff[0] + flir[1] * flirCoeff[1] + flir[2] * flirCoeff[2] + flir[3] * flirCoeff[3];
+	float4 c = float4(v, v, v, 1);
+	c.xyz += CalculateDynamicLightingFLIR(input.Position.xy, input.Pos.xyz / input.Pos.w, LL_SOLID).xxx;
 
 	PS_OUTPUT o;
-	o.RGBColor = float4(1, 0, 0, 1);
+	o.RGBColor = c;
 	return o;
 }
 

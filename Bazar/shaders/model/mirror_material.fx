@@ -9,8 +9,6 @@
 #include "common/shader_macroses.hlsl"
 #include "common/states.hlsl"
 #include "common/states11.hlsl"
-
-#define USE_VELOCITY_MAP 1
 #include "deferred/GBuffer.hlsl"
 
 #ifdef ENABLE_DEBUG_UNIFORMS
@@ -18,7 +16,7 @@
 #endif
 
 float4 mirrorPS_Zpass(VS_OUTPUT input): SV_TARGET0 {
-	float2 velMap = calcVelocityMap(input.projPos, input.prevFrameProjPos);
+	float2 velMap = calcMotionVector(input.projPos, input.prevFrameProjPos);
 	return float4(velMap, 0, 1);
 }
 

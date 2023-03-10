@@ -1200,4 +1200,10 @@ device_commands =
     Jester_wpn_aa_launch = counter(),
     Jester_radar_azimuth = counter(),
     Jester_radar_elevation = counter(),
+
+    Adjust_RIO_Mirror = counter(),
+
+    Adjust_Pilot_Mirror_T = counter(),
+    Adjust_Pilot_Mirror_L = counter(),
+    Adjust_Pilot_Mirror_R = counter(),
 }

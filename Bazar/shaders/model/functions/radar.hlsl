@@ -14,6 +14,10 @@ struct VS_OUTPUT_RADAR
 	float4 Pos			: COLOR0;
 	float3 Normal		: NORMAL0;
 
+#ifdef COLOR0_SIZE
+	vector<float, COLOR0_SIZE> color : COLOR1;
+#endif
+
 #ifdef TEXCOORD0_SIZE
 	vector<float, TEXCOORD0_SIZE> tc0 : TEXCOORD0;
 #endif

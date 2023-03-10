@@ -56,7 +56,7 @@ GT.visual.fire_time = 500; --burning time (seconds)
 
 --IR.coefs[1..4] ={heat collect coef, heat loose coef}
 --IR.coefs[5] = {0.3 - initial value for FLIR param C0 for dead model, 0.3/1800 - param C0 decrease speed (0.3 in 1800 secs)}
-GT.visual.IR = { coeffs = {GT_t.IR_COEFFS_ENGINE_APC, GT_t.IR_COEFFS_WHEELS_Truck, GT_t.IR_COEFFS_ATGM, IR_COEFFS_BODY, {0.2, 0.2/1300}}}
+GT.visual.IR = { coeffs = {GT_t.IR_COEFFS_ENGINE_APC, GT_t.IR_COEFFS_WHEELS_Truck, GT_t.IR_COEFFS_ATGM, GT_t.IR_COEFFS_BODY, {0.2, 0.2/1300}}}
 
 GT.driverViewConnectorName = {"POINT_DRIVER", offset = {0.05, 0.0, 0.0}}
 GT.driverCockpit = "DriverCockpit/DriverCockpit"

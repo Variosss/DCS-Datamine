@@ -47,7 +47,7 @@ GT.visual.agony_explosion_size = 5;
 
 --IR.coefs[1..4] ={heat collect coef, heat loose coef}
 --IR.coefs[5] = {0.3 - initial value for FLIR param C0 for dead model, 0.3/1800 - param C0 decrease speed (0.3 in 1800 secs)}
-GT.visual.IR = { coeffs = {GT_t.IR_COEFFS_ENGINE_Tank, GT_t.IR_COEFFS_ROLLERS_Tank, GT_t.IR_COEFFS_50mm, IR_COEFFS_BODY, {0.27, 0.27/1550}}}
+GT.visual.IR = { coeffs = {GT_t.IR_COEFFS_ENGINE_Tank, GT_t.IR_COEFFS_ROLLERS_Tank, GT_t.IR_COEFFS_50mm, GT_t.IR_COEFFS_BODY, {0.27, 0.27/1550}}}
 
 GT.driverViewConnectorName = {"DRIVER_POINT_01", offset = {0.02, 0.0, 0.0}}
 GT.driverCockpit = "DriverCockpit/DriverCockpit"

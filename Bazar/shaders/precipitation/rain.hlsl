@@ -13,7 +13,7 @@ static const float rainHaloFactor = 1;
 static const float rainHaloAlphaFactor = 0.5333333*0.0;
 static const float rainLightsAlphaFactor = 0.1;
 
-static const float rainDiffusePower = 120 * raindropBrightness;
+static const float rainDiffusePower = 12 * raindropBrightness;
 
 // GEOMETRY SHADER ---------------------------------
 //ориентируем партикл вдоль вектора скорости в МСК и поворачиваем вокруг него на камеру

@@ -41,8 +41,9 @@ LNS_VIG_OUTER_PYLONS (Pilon04.psd)
 
 custom_args = 
 {
-    [850] = 0.1, -- turn on/off vertical tail dynamic numbers (< 0.5 is on)
+    [850] = 1.0, -- turn on/off vertical tail dynamic numbers (< 0.5 is on)
 }
+
 
 
 name = "#2 Bare Metal F7 Skaraborgs Flygflottilj"

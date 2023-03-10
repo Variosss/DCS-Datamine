@@ -99,11 +99,6 @@ livery = {
 	{"miragef1_common_04_USA_second_digit_1",ROUGHNESS_METALLIC,"miragef1EQ-common_4_RoughMet",true};		
 	{"miragef1_common_04_USA_second_digit_1", DECAL ,"empty",true};
 
-    ---------------------------------------------------------------------------------------------------Engine Nuzzle
-    {"miragef1_common_01_A"   , 0 ,"../../Mirage-F1EQ/IRIAF 3-6202 _ 2013 Gray/miragef1-common_1_IRIAF_1", false};
-  --{"miragef1_common_01_A",1,"miragef1-common_1_NM",false};		
-    {"miragef1_common_01_A",ROUGHNESS_METALLIC,"../../Mirage-F1EQ/IRIAF 3-6202 _ 2013 Gray/miragef1-common_1_IRIAF_1_RoughMet",false};
-	
 	------------------------------miragef1_common_03----------------------------------------------Rudder/Tail/Elevator
 	{"miragef1_common_03_1", 0 ,"miragef1-common_3_IRIAF_11",false};
 	{"miragef1_common_03_1",1,"miragef1-common_3_EQ_NM",true};		

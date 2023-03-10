@@ -1,4 +1,9 @@
 #include "common/stencil.hlsl"
+
+#ifndef USE_BLUR_FLAT_SHADOWS
+	#define USE_BLUR_FLAT_SHADOWS 0
+#endif
+
 #include "deferred/compose.hlsl"
 
 #ifndef USE_SSAO
@@ -6,7 +11,7 @@
 #endif
 
 #ifndef USE_SSLR
-	#define USE_SSLR 1
+	#define USE_SSLR 0
 #endif
 
 #ifndef USE_SHADOWS
@@ -41,7 +46,7 @@ float4 PS_DUMMY(const VS_COMPOSE_OUTPUT i): SV_TARGET0 {
 }
 
 float4 ComposeSampleMain(const VS_COMPOSE_OUTPUT i, uint sidx,
-	uniform bool useShadows, uniform bool useSSAO, uniform bool useSSLR, uniform bool useCockpitGI, uniform bool discardTerrainInsideFog, uniform int mode, uniform bool bSampleFrequency)
+	uniform bool useShadows, uniform bool useBlurFlatShadows, uniform bool useSSAO, uniform bool useSSLR, uniform bool useCockpitGI, uniform bool discardTerrainInsideFog, uniform int mode, uniform bool bSampleFrequency)
 {
 	ComposerInput input = ReadComposerData(i.pos.xy, i.projPos, sidx);
 
@@ -53,7 +58,7 @@ float4 ComposeSampleMain(const VS_COMPOSE_OUTPUT i, uint sidx,
 	uint materialId = input.stencil & STENCIL_COMPOSITION_MASK;
 
 	if (materialId == STENCIL_COMPOSITION_UNDERWATER)
-		return float4(ComposeUnderWaterSample(input, sidx, useShadows, bSampleFrequency, mode), 1);
+		return float4(ComposeUnderWaterSample(input, sidx, useShadows, useBlurFlatShadows, bSampleFrequency, mode), 1);
 
 	if(input.depth==0 || input.depth==1)
 	{
@@ -81,12 +86,12 @@ float4 ComposeSampleMain(const VS_COMPOSE_OUTPUT i, uint sidx,
 	[branch]
 	switch(materialId)
 	{
-	case STENCIL_COMPOSITION_SURFACE:	finalColor = float4(ComposeTerrainSample(input, sidx, useShadows, useSSAO, discardTerrainInsideFog, bSampleFrequency, mode), 1); break;
-	case STENCIL_COMPOSITION_MODEL:		finalColor = float4(ComposeSample(input, sidx, useShadows, useSSAO, bSampleFrequency, mode, input.stencil & 1, useSSLR), mode>0? 0 : 1); break;	// input.stencil & 1 ? FAR_ENV_MAP : LERP_ENV_MAP
-	case STENCIL_COMPOSITION_COCKPIT:	finalColor = float4(ComposeCockpitSample(input, sidx, useShadows, useSSAO, useCockpitGI, bSampleFrequency, mode, useSSLR), mode>0? 0 : 1); break;
-	case STENCIL_COMPOSITION_GRASS:		finalColor = float4(ComposeGrassSample(input, sidx, useShadows, bSampleFrequency, mode), 1); break;
-	case STENCIL_COMPOSITION_FOLIAGE:	finalColor = float4(ComposeFoliageSample(input, sidx, useShadows, useSSAO, bSampleFrequency, mode), 1); break;
-	case STENCIL_COMPOSITION_WATER:		finalColor = float4(ComposeWaterSample(input, sidx, useShadows, discardTerrainInsideFog, bSampleFrequency, mode), 1); break;
+	case STENCIL_COMPOSITION_SURFACE:	finalColor = float4(ComposeTerrainSample(input, sidx, useShadows, useBlurFlatShadows, useSSAO, discardTerrainInsideFog, bSampleFrequency, mode), 1); break;
+	case STENCIL_COMPOSITION_MODEL:		finalColor = float4(ComposeSample(input, sidx, useShadows, useBlurFlatShadows, useSSAO, bSampleFrequency, mode, input.stencil & 1, useSSLR), mode>0? 0 : 1); break;	// input.stencil & 1 ? FAR_ENV_MAP : LERP_ENV_MAP
+	case STENCIL_COMPOSITION_COCKPIT:	finalColor = float4(ComposeCockpitSample(input, sidx, useShadows, useBlurFlatShadows, useSSAO, useCockpitGI, bSampleFrequency, mode, useSSLR), mode>0? 0 : 1); break;
+	case STENCIL_COMPOSITION_GRASS:		finalColor = float4(ComposeGrassSample(input, sidx, useShadows, useBlurFlatShadows, bSampleFrequency, mode), 1); break;
+	case STENCIL_COMPOSITION_FOLIAGE:	finalColor = float4(ComposeFoliageSample(input, sidx, useShadows, useBlurFlatShadows, useSSAO, bSampleFrequency, mode), 1); break;
+	case STENCIL_COMPOSITION_WATER:		finalColor = float4(ComposeWaterSample(input, sidx, useShadows, useBlurFlatShadows, discardTerrainInsideFog, bSampleFrequency, mode), 1); break;
 	}
 
 	if(materialId != STENCIL_COMPOSITION_COCKPIT && (mode==0 || renderMode==22))
@@ -95,9 +100,9 @@ float4 ComposeSampleMain(const VS_COMPOSE_OUTPUT i, uint sidx,
 	return finalColor;
 }
 
-float4 PS_SINGLE_PASS(const VS_COMPOSE_OUTPUT i, uniform bool useShadows, uniform bool useSSAO, uniform bool useSSLR, uniform bool useCockpitGI, uniform int mode = 0): SV_TARGET0
+float4 PS_SINGLE_PASS(const VS_COMPOSE_OUTPUT i, uniform bool useShadows, uniform bool useBlurFlatShadows, uniform bool useSSAO, uniform bool useSSLR, uniform bool useCockpitGI, uniform int mode = 0) : SV_TARGET0
 {
-	return ComposeSampleMain(i, 0, useShadows, useSSAO, useSSLR, useCockpitGI, false, mode, false);
+	return ComposeSampleMain(i, 0, useShadows, useBlurFlatShadows, useSSAO, useSSLR, useCockpitGI, false, mode, false);
 }
 
 bool IsMSAAResolvingPossible(float2 projPos)
@@ -139,7 +144,7 @@ bool IsEdgeWithSky(float2 pos)
 	return mn < mx && (mn == 0);
 }
 
-float4 PS_NON_MSAA_SAMPLE(const VS_COMPOSE_OUTPUT i, uniform bool useShadows, uniform bool useSSAO, uniform bool useSSLR, uniform bool useCockpitGI, uniform int mode = 0): SV_TARGET0
+float4 PS_NON_MSAA_SAMPLE(const VS_COMPOSE_OUTPUT i, uniform bool useShadows, uniform bool useBlurFlatShadows, uniform bool useSSAO, uniform bool useSSLR, uniform bool useCockpitGI, uniform int mode = 0): SV_TARGET0
 {
 	ComposerInput input = ReadComposerData(i.pos.xy, i.projPos, 0);
 
@@ -152,22 +157,22 @@ float4 PS_NON_MSAA_SAMPLE(const VS_COMPOSE_OUTPUT i, uniform bool useShadows, un
 			discard;
 	}
 
-	return ComposeSampleMain(i, 0, useShadows, useSSAO, useSSLR, useCockpitGI, false, mode, false);
+	return ComposeSampleMain(i, 0, useShadows, useBlurFlatShadows, useSSAO, useSSLR, useCockpitGI, false, mode, false);
 }
 
-float4 PS_MSAA_SAMPLE(const VS_COMPOSE_OUTPUT i, uint sidx: SV_SampleIndex, uniform bool useShadows, uniform bool useSSAO, uniform bool useSSLR, uniform bool useCockpitGI, uniform int mode = 0): SV_TARGET0
+float4 PS_MSAA_SAMPLE(const VS_COMPOSE_OUTPUT i, uint sidx: SV_SampleIndex, uniform bool useShadows, uniform bool useBlurFlatShadows, uniform bool useSSAO, uniform bool useSSLR, uniform bool useCockpitGI, uniform int mode = 0): SV_TARGET0
 {
-	return ComposeSampleMain(i, sidx, useShadows, useSSAO, useSSLR, useCockpitGI, false, mode, true);
+	return ComposeSampleMain(i, sidx, useShadows, useBlurFlatShadows, useSSAO, useSSLR, useCockpitGI, false, mode, true);
 }
 
-float4 PS_CUSTOM(VS_COMPOSE_OUTPUT i, uint sidx: SV_SampleIndex, uniform bool useShadows, uniform bool useSSAO, uniform bool useSSLR) : SV_TARGET0 {
+float4 PS_CUSTOM(VS_COMPOSE_OUTPUT i, uint sidx: SV_SampleIndex, uniform bool useShadows, uniform bool useBlurFlatShadows, uniform bool useSSAO, uniform bool useSSLR) : SV_TARGET0 {
 	i.pos.xy += GBufferSampleOffset;
 	const int mode = 2;
 	uint materialId = SampleMap(StencilMap, i.pos.xy, sidx).g & STENCIL_COMPOSITION_MASK;
 	float4 sample = 0;
 	[loop]
 	for(uint ii=0; ii<SAMPLE_COUNT; ++ii){
-		sample += ComposeSampleMain(i, ii, useShadows, useSSAO, useSSLR, false, false, mode, false);
+		sample += ComposeSampleMain(i, ii, useShadows, useBlurFlatShadows, useSSAO, useSSLR, false, false, mode, false);
 	}
 	sample /= SAMPLE_COUNT;
 	sample.w = materialId / 255.0;
@@ -243,10 +248,14 @@ GBuffer PS_CLEAR_GBUFFER(const VS_COMPOSE_OUTPUT i) {
 #if USE_SEPARATE_AO
 	o.target4 = float4(1, 0, 0, 1);
 #endif
-#if USE_VELOCITY_MAP
-	o.target5 = float4(calcVelocityMapStatic(i.projPos), 0, 1);
+#if USE_MOTION_VECTORS
+	o.target5 = float4(calcMotionVectorStatic(i.projPos), 0, 1);
 #endif
 	return o;
+}
+
+float4 PS_CLEAR_MOTION_VECTORS(const VS_COMPOSE_OUTPUT i): SV_TARGET0 {
+	return float4(calcMotionVectorStatic(i.projPos), 0, 1);
 }
 
 DepthStencilState BuildEdgeMaskStencilState {
@@ -281,8 +290,8 @@ DepthStencilState TestEdgeMaskStencilState {
 
 
 VertexShader vsComp				= CompileShader(vs_5_0, VS());
-PixelShader psSinglePassComp	= CompileShader(ps_5_0, PS_SINGLE_PASS(USE_SHADOWS, USE_SSAO, USE_SSLR, false));
-PixelShader psSinglePassGIComp	= CompileShader(ps_5_0, PS_SINGLE_PASS(USE_SHADOWS, USE_SSAO, USE_SSLR, true));
+PixelShader psSinglePassComp	= CompileShader(ps_5_0, PS_SINGLE_PASS(USE_SHADOWS, USE_BLUR_FLAT_SHADOWS, USE_SSAO, USE_SSLR, false));
+PixelShader psSinglePassGIComp	= CompileShader(ps_5_0, PS_SINGLE_PASS(USE_SHADOWS, USE_BLUR_FLAT_SHADOWS, USE_SSAO, USE_SSLR, true));
 PixelShader psDummyComp			= CompileShader(ps_4_0, PS_DUMMY());
 
 #define PASS_BODY_SAMPLE_C(psComp, depthStencil, ref, sampleMask) { SetVertexShader(vsComp); SetGeometryShader(NULL); SetPixelShader(psComp); \
@@ -301,8 +310,8 @@ technique10 Compose
 	pass SinglePass_GI			PASS_BODY_C(psSinglePassGIComp, disableDepthBuffer, 0)
 	//for debug
 #if USE_RENDER_COMPOSITION_DEBUG
-	pass DebugRender 			PASS_BODY(PS_SINGLE_PASS(USE_SHADOWS, USE_SSAO, USE_SSLR, false, 1), disableDepthBuffer, 0)
-	pass DebugRender_GI 		PASS_BODY(PS_SINGLE_PASS(USE_SHADOWS, USE_SSAO, USE_SSLR, true, 1), disableDepthBuffer, 0)
+	pass DebugRender 			PASS_BODY(PS_SINGLE_PASS(USE_SHADOWS, USE_BLUR_FLAT_SHADOWS, USE_SSAO, USE_SSLR, false, 1), disableDepthBuffer, 0)
+	pass DebugRender_GI 		PASS_BODY(PS_SINGLE_PASS(USE_SHADOWS, USE_BLUR_FLAT_SHADOWS, USE_SSAO, USE_SSLR, true, 1), disableDepthBuffer, 0)
 #else
 	pass DebugRender			PASS_BODY_C(psDummyComp, disableDepthBuffer, 0)
 	pass DebugRender_GI			PASS_BODY_C(psDummyComp, disableDepthBuffer, 0)
@@ -315,10 +324,10 @@ technique10 Compose
 
 technique10 ComposeMSAA
 {
-	pass nonMSAASampleWriteStencil		PASS_BODY_SAMPLE(PS_NON_MSAA_SAMPLE(USE_SHADOWS, USE_SSAO, USE_SSLR, false), BuildEdgeMaskStencilState, 1, 0xFFFFFFFF)
-	pass nonMSAASampleWriteStencil_GI	PASS_BODY_SAMPLE(PS_NON_MSAA_SAMPLE(USE_SHADOWS, USE_SSAO, USE_SSLR, true), BuildEdgeMaskStencilState, 1, 0xFFFFFFFF)
-	pass MSAASampleTestStencil			PASS_BODY(PS_MSAA_SAMPLE(USE_SHADOWS, USE_SSAO, USE_SSLR, false), TestEdgeMaskStencilState, 0)
-	pass MSAASampleTestStencil_GI		PASS_BODY(PS_MSAA_SAMPLE(USE_SHADOWS, USE_SSAO, USE_SSLR, true), TestEdgeMaskStencilState, 0)
+	pass nonMSAASampleWriteStencil		PASS_BODY_SAMPLE(PS_NON_MSAA_SAMPLE(USE_SHADOWS, USE_BLUR_FLAT_SHADOWS, USE_SSAO, USE_SSLR, false), BuildEdgeMaskStencilState, 1, 0xFFFFFFFF)
+	pass nonMSAASampleWriteStencil_GI	PASS_BODY_SAMPLE(PS_NON_MSAA_SAMPLE(USE_SHADOWS, USE_BLUR_FLAT_SHADOWS, USE_SSAO, USE_SSLR, true), BuildEdgeMaskStencilState, 1, 0xFFFFFFFF)
+	pass MSAASampleTestStencil			PASS_BODY(PS_MSAA_SAMPLE(USE_SHADOWS, USE_BLUR_FLAT_SHADOWS, USE_SSAO, USE_SSLR, false), TestEdgeMaskStencilState, 0)
+	pass MSAASampleTestStencil_GI		PASS_BODY(PS_MSAA_SAMPLE(USE_SHADOWS, USE_BLUR_FLAT_SHADOWS, USE_SSAO, USE_SSLR, true), TestEdgeMaskStencilState, 0)
 }
 
 technique10 ComposeCustom
@@ -326,22 +335,28 @@ technique10 ComposeCustom
 	pass P0	{
 		SetVertexShader(CompileShader(vs_5_0, VS_CUSTOM()));
 		SetGeometryShader(NULL);
-		SetPixelShader(CompileShader(ps_5_0, PS_CUSTOM(USE_SHADOWS, USE_SSAO, USE_SSLR)));
+		SetPixelShader(CompileShader(ps_5_0, PS_CUSTOM(USE_SHADOWS, USE_BLUR_FLAT_SHADOWS, USE_SSAO, USE_SSLR)));
 		SetDepthStencilState(disableDepthBuffer, 0);
 		SetBlendState(disableAlphaBlend, float4(0.0f, 0.0f, 0.0f, 0.0f), 0xFFFFFFFF);
 		SetRasterizerState(cullNone);
 	}
 }
 
+technique10 ClearGBuffer {
+	pass P0	PASS_BODY(PS_CLEAR_GBUFFER(), disableDepthBuffer, 0)
+	pass P1	PASS_BODY(PS_CLEAR_MOTION_VECTORS(), disableDepthBuffer, 0)
+}
+
+
+#if USE_SHADOWS
+
+#if USE_SEPARATE_SHADOW_PASS
+
 #undef PASS_BODY
 #define PASS_BODY(ps, depthStencil, ref) { SetVertexShader(vsComp); SetGeometryShader(NULL); SetPixelShader(CompileShader(ps_5_0, ps)); \
 	SetDepthStencilState(depthStencil, ref); \
 	SetBlendState(shadowAlphaBlend, float4(0.0f, 0.0f, 0.0f, 0.0f), 0xFFFFFFFF); \
 	SetRasterizerState(cullNone);}
-
-#if USE_SHADOWS
-
-#if USE_SEPARATE_SHADOW_PASS
 
 technique10 Shadows
 {
@@ -352,8 +367,4 @@ technique10 Shadows
 #endif // USE_SEPARATE_SHADOW_PASS
 
 #endif
-
-technique10 ClearGBuffer {
-	pass P0	PASS_BODY(PS_CLEAR_GBUFFER(), disableDepthBuffer, 0)
-}
 

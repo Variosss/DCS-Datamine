@@ -1,0 +1,284 @@
+TerrainModelDeclaration =
+{
+	default =
+	{
+		load =
+		{
+			false;
+			false;
+		};
+		drawonmap = true;
+		vis = 1;
+		visShadows = 1;
+		life = 500;
+		fire =
+		{
+		  0;
+		  1;
+		};
+		classname = "lStandartStructure";
+		positioning = "ONLYHEIGTH"; 
+		DestructAnimatttion = "NO"; 
+	};
+	{
+		file = "!proxyHousedetail";
+		desrt = "";
+	};
+
+	{
+		file = "Antenna_01";
+		life = 5;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "";
+	};
+
+	{
+		file = "Antenna_02";
+		life = 5;
+		desrt = "";
+	};
+
+	{
+		file = "Balkon_01";
+		life = 5;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "";
+	};
+
+	{
+		file = "Balkon_04";
+		life = 5;
+		desrt = "";
+	};
+
+	{
+		file = "Brick_tube";
+		life = 5;
+		desrt = "";
+	};
+
+	{
+		file = "BricksPlanksTrash";
+		desrt = "";
+	};
+
+	{
+		file = "BrokenPalette";
+		desrt = "";
+	};
+
+	{
+		file = "BrokenPlanks";
+		desrt = "";
+	};
+
+	{
+		file = "chimney_01";
+		life = 5;
+		desrt = "";
+	};
+
+	{
+		file = "chimney_02";
+		life = 5;
+		desrt = "";
+	};
+
+	{
+		file = "Conditioner";
+		life = 5;
+		desrt = "";
+	};
+
+	{
+		file = "Conditioner_02";
+		life = 5;
+		desrt = "";
+	};
+
+	{
+		file = "Conditioner_03";
+		life = 5;
+		desrt = "";
+	};
+
+	{
+		file = "Conditioner_04";
+		life = 5;
+		desrt = "";
+	};
+
+	{
+		file = "front_lift";
+		life = 5;
+		desrt = "";
+	};
+
+	{
+		file = "House_lamp";
+		life = 5;
+		desrt = "";
+	};
+
+	{
+		file = "House_lamp_02";
+		life = 5;
+		desrt = "";
+	};
+
+	{
+		file = "House_lamp_03";
+		life = 5;
+		desrt = "";
+	};
+
+	{
+		file = "ladder_house";
+		life = 5;
+		desrt = "";
+	};
+
+	{
+		file = "light_support";
+		life = 2;
+		desrt = "";
+	};
+
+	{
+		file = "log";
+		life = 5;
+		desrt = "";
+	};
+
+	{
+		file = "OldVentilation";
+		desrt = "";
+	};
+
+	{
+		file = "RustyBarrels";
+		desrt = "";
+	};
+
+	{
+		file = "RustyWire";
+		desrt = "";
+	};
+
+	{
+		file = "scaffold";
+		life = 5;
+		desrt = "";
+	};
+
+	{
+		file = "shutters_01";
+		life = 5;
+		desrt = "";
+	};
+
+	{
+		file = "tarelka";
+		life = 5;
+		desrt = "";
+	};
+
+	{
+		file = "Tent_01";
+		life = 5;
+		desrt = "";
+	};
+
+	{
+		file = "vent_G_pipe";
+		life = 5;
+		desrt = "";
+	};
+
+	{
+		file = "vent_I_pipe";
+		life = 5;
+		desrt = "";
+	};
+
+	{
+		file = "Ventilation_01";
+		life = 5;
+		desrt = "";
+	};
+
+	{
+		file = "Ventilation_02";
+		life = 5;
+		desrt = "";
+	};
+
+	{
+		file = "Ventilation_03";
+		life = 5;
+		desrt = "";
+	};
+
+	{
+		file = "Ventilation_04";
+		life = 5;
+		desrt = "";
+	};
+
+	{
+		file = "Ventilation_05";
+		life = 5;
+		desrt = "";
+	};
+
+	{
+		file = "Ventilation_06";
+		life = 5;
+		desrt = "";
+	};
+
+	{
+		file = "Ventilation_07";
+		life = 5;
+		desrt = "";
+	};
+
+	{
+		file = "Ventilation_big";
+		life = 5;
+		desrt = "";
+	};
+
+	{
+		file = "vortac_antenne";
+		life = 5;
+		desrt = "";
+	};
+
+	{
+		file = "water_barrel";
+		life = 5;
+		desrt = "";
+	};
+
+	{
+		file = "windowsDecor_01";
+		life = 5;
+		desrt = "";
+	};
+
+	{
+		file = "windowsDecor_02";
+		life = 5;
+		desrt = "";
+	};
+
+};

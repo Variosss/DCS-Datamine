@@ -1,0 +1,71 @@
+TerrainModelDeclaration =
+{
+	default =
+	{
+		load =
+		{
+			false;
+			false;
+		};
+		drawonmap = true;
+		vis = 1;
+		visShadows = 1;
+		life = 500;
+		fire =
+		{
+		  0;
+		  1;
+		};
+		classname = "lStandartStructure";
+		positioning = "ONLYHEIGTH"; 
+		DestructAnimatttion = "NO"; 
+	};
+	{
+		file = "Nevad_Vegas_Food_02";
+		life = 1000;
+		fire =
+		{
+			120;
+			2;
+		};
+		maxSlope = 5;
+		desrt = "Motel_02_crash";
+	};
+
+	{
+		file = "Nevad_Vegas_Gas_02";
+		life = 1000;
+		fire =
+		{
+			120;
+			3;
+		};
+		maxSlope = 10;
+		desrt = "Nevada_cottage_07_crash";
+	};
+
+	{
+		file = "shop_02";
+		life = 1000;
+		fire =
+		{
+			120;
+			2;
+		};
+		maxSlope = 5;
+		desrt = "Commercial_crash_02";
+	};
+
+	{
+		file = "tire_shop";
+		life = 500;
+		fire =
+		{
+			120;
+			2;
+		};
+		maxSlope = 10;
+		desrt = "tire_shop_crash";
+	};
+
+};

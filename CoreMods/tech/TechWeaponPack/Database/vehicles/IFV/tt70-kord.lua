@@ -31,7 +31,7 @@ GT.visual.min_time_agony = 10;
 GT.visual.max_time_agony = 120;
 GT.visual.agony_explosion_size = 2;
 
-GT.visual.IR = { coeffs = {GT_t.IR_COEFFS_ENGINE_APC, GT_t.IR_COEFFS_WHEELS_Car, GT_t.IR_COEFFS_HMG, IR_COEFFS_BODY, {0.21, 0.21/1050}}}
+GT.visual.IR = { coeffs = {GT_t.IR_COEFFS_ENGINE_APC, GT_t.IR_COEFFS_WHEELS_Car, GT_t.IR_COEFFS_HMG, GT_t.IR_COEFFS_BODY, {0.21, 0.21/1050}}}
 
 GT.driverCockpit = "DriverCockpit/DriverCockpit"
 GT.driverViewConnectorName = "POINT_DRIVER"

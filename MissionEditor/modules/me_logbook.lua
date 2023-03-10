@@ -1125,11 +1125,11 @@ function updateUserStatistics(a_debriefing)
 					if event.initiatorMissionID ~= event.targetMissionID and event.targetMissionID ~= nil then  
 						local unitTarget  = MissionModule.unit_by_id[event.targetMissionID]
 						local coal = playerTable.coalition
-						local country_idTarget = unitTarget.boss.boss.id
-						local victim = unitTarget
-						local victimType = victim.boss.type
-						
 						if unitTarget then
+							local country_idTarget = unitTarget.boss.boss.id
+							local victim = unitTarget
+							local victimType = victim.boss.type
+												
 							if isInsideCoalition(coal, country_idTarget) then --попали по своим
 								if (victimType == "helicopter") or (victimType == "plane") then 
 									faa = faa + 1
@@ -1152,8 +1152,8 @@ function updateUserStatistics(a_debriefing)
 								elseif victimType == "static" then 
 									curStat.static = (curStat.static or 0) + 1
 								end
-								curStat.totalScore = curStat.totalScore + dbUnit.Rate								
-								missionScore = missionScore  + dbUnit.Rate
+								curStat.totalScore = curStat.totalScore + (dbUnit.Rate or 0)								
+								missionScore = missionScore  + (dbUnit.Rate or 0)	
 								killedUnitsCounter = killedUnitsCounter + 1
 							end    					
 						end

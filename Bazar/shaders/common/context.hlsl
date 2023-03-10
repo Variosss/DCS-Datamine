@@ -98,10 +98,10 @@ cbuffer cPerView: register(b7)
 
 	float2	 gNVDpos;		float gNVDaspect;	float gInsideCockpit;
 
-	float	 gCloudsLow, gCloudsHigh; float2 gDummy;
-	float	 gRadarPos;				  float	gRadarPixelSize;
+	float3	gRadarPos;		float	gRadarPixelSize;
+	uint2	gTargetDims;	float	 gCloudsLow, gCloudsHigh;
 
-	float3	gCloudVolumeScale;	float gDummy04;
+	float3	gCloudVolumeScale;	float gMipLevelBias;
 	float3	gCloudVolumeOffset;	float gFlatShadowAlpha;
 
 	float4	 ShadowDistance;

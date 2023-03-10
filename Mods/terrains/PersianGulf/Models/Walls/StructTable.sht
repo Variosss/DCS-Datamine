@@ -1,0 +1,206 @@
+TerrainModelDeclaration =
+{
+	default =
+	{
+		load =
+		{
+			false;
+			false;
+		};
+		drawonmap = true;
+		vis = 1;
+		visShadows = 1;
+		life = 500;
+		fire =
+		{
+		  0;
+		  1;
+		};
+		classname = "lStandartStructure";
+		positioning = "ONLYHEIGTH"; 
+		DestructAnimatttion = "NO"; 
+	};
+	{
+		file = "!proxyWalls";
+		desrt = "";
+	};
+
+	{
+		file = "afghan_village_wall_01";
+		life = 0;
+		desrt = "afghan_village_wall_01_crash";
+	};
+
+	{
+		file = "afghan_village_wall_01_crash";
+		life = 0;
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "afghan_village_wall_02";
+		life = 0;
+		desrt = "afghan_village_wall_02_crash";
+	};
+
+	{
+		file = "afghan_village_wall_02_crash";
+		life = 0;
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "afghan_village_wall_03";
+		life = 0;
+		desrt = "concrete_wall_02_crash";
+	};
+
+	{
+		file = "arabian_wall10m";
+		life = 0;
+		desrt = "arabian_wall10m_crash";
+	};
+
+	{
+		file = "arabian_wall10m_crash";
+		life = 0;
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "arabian_wall20m";
+		life = 0;
+		desrt = "arabian_wall20m_crash";
+	};
+
+	{
+		file = "arabian_wall20m_crash";
+		life = 0;
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "bam_wall";
+		life = 10000000;
+		desrt = "";
+	};
+
+	{
+		file = "bam_wall_big";
+		life = 10000000;
+		desrt = "";
+	};
+
+	{
+		file = "barbed_fence_01";
+		life = 0;
+		desrt = "fence_wall_crash";
+	};
+
+	{
+		file = "barbed_fence_02";
+		life = 0;
+		desrt = "fence_wall_crash";
+	};
+
+	{
+		file = "block_wall";
+		life = 0;
+		desrt = "concrete_wall_01_crash";
+	};
+
+	{
+		file = "brick_wall";
+		life = 0;
+		desrt = "concrete_wall_01_crash";
+	};
+
+	{
+		file = "concrete_wall";
+		life = 0;
+		desrt = "concrete_wall_01_crash";
+	};
+
+	{
+		file = "gate_01";
+		life = 0;
+		desrt = "concrete_wall_01_crash";
+	};
+
+	{
+		file = "gate_02";
+		life = 0;
+		desrt = "concrete_wall_01_crash";
+	};
+
+	{
+		file = "Persepolis_Wall";
+		life = 10000000;
+		desrt = "";
+	};
+
+	{
+		file = "Persepolis_wall_11h";
+		life = 10000000;
+		desrt = "";
+	};
+
+	{
+		file = "Persepolis_wall_3h";
+		life = 10000000;
+		desrt = "";
+	};
+
+	{
+		file = "Persepolis_wall_6h";
+		life = 10000000;
+		desrt = "";
+	};
+
+	{
+		file = "Persepolis_wall_9h";
+		life = 10000000;
+		desrt = "";
+	};
+
+	{
+		file = "Persepolis_Wall_Big";
+		life = 10000000;
+		desrt = "";
+	};
+
+	{
+		file = "railing";
+		life = 0;
+		desrt = "fence_wall_crash";
+	};
+
+	{
+		file = "rayen_citadel_wall";
+		life = 10000000;
+		desrt = "";
+	};
+
+	{
+		file = "rayen_citadel_wall_big";
+		life = 10000000;
+		desrt = "";
+	};
+
+	{
+		file = "wall_big_brick_decor_01";
+		life = 0;
+		desrt = "concrete_wall_01_crash";
+	};
+
+	{
+		file = "wall_concr_gray";
+		life = 0;
+		desrt = "concrete_wall_02_crash";
+	};
+
+};

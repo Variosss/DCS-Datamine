@@ -80,4 +80,3 @@ devices["ACCELEROMETER"]          	= counter()--72 	-- accelerometer
 devices["DVADR"]          			= counter()--73 	-- DVADR
 devices["TACAN_CTRL_PANEL"]			= counter()--74		-- TACAN AN/ARN-118 Control Panel
 devices["SCORPION_HMCS"]			= counter()--75		-- Scorpion Helmet Mounted Cueing System
-devices["ARC_210"]					= counter()--76

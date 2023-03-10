@@ -1,0 +1,458 @@
+TerrainModelDeclaration =
+{
+	default =
+	{
+		load =
+		{
+			false;
+			false;
+		};
+		drawonmap = true;
+		vis = 1;
+		visShadows = 1;
+		life = 500;
+		fire =
+		{
+		  0;
+		  1;
+		};
+		classname = "lStandartStructure";
+		positioning = "ONLYHEIGTH"; 
+		DestructAnimatttion = "NO"; 
+	};
+	{
+		file = "!proxyAirfieldsLights";
+		desrt = "";
+	};
+
+	{
+		file = "A_block";
+		desrt = "";
+	};
+
+	{
+		file = "A_frwd";
+		desrt = "";
+	};
+
+	{
+		file = "A_left";
+		desrt = "";
+	};
+
+	{
+		file = "A_right";
+		desrt = "";
+	};
+
+	{
+		file = "afb_spot_green";
+		desrt = "";
+	};
+
+	{
+		file = "afb_spot_red";
+		desrt = "";
+	};
+
+	{
+		file = "afb_spot_red_green";
+		desrt = "";
+	};
+
+	{
+		file = "app_flash_white";
+		desrt = "";
+	};
+
+	{
+		file = "app_glissade_white";
+		desrt = "";
+	};
+
+	{
+		file = "app_group_white";
+		desrt = "";
+	};
+
+	{
+		file = "app_spot_red";
+		desrt = "";
+	};
+
+	{
+		file = "app_spot_white";
+		desrt = "";
+	};
+
+	{
+		file = "B_block";
+		desrt = "";
+	};
+
+	{
+		file = "B_frwd";
+		desrt = "";
+	};
+
+	{
+		file = "B_left";
+		desrt = "";
+	};
+
+	{
+		file = "B_right";
+		desrt = "";
+	};
+
+	{
+		file = "C_block";
+		desrt = "";
+	};
+
+	{
+		file = "C_left";
+		desrt = "";
+	};
+
+	{
+		file = "C_right";
+		desrt = "";
+	};
+
+	{
+		file = "course_01_19";
+		desrt = "";
+	};
+
+	{
+		file = "course_08_26";
+		desrt = "";
+	};
+
+	{
+		file = "course_09_27";
+		desrt = "";
+	};
+
+	{
+		file = "course_09L_27R";
+		desrt = "";
+	};
+
+	{
+		file = "course_09R_27L";
+		desrt = "";
+	};
+
+	{
+		file = "course_11_29";
+		desrt = "";
+	};
+
+	{
+		file = "course_12_30";
+		desrt = "";
+	};
+
+	{
+		file = "course_12L_30R";
+		desrt = "";
+	};
+
+	{
+		file = "course_12R_30L";
+		desrt = "";
+	};
+
+	{
+		file = "course_13_31";
+		desrt = "";
+	};
+
+	{
+		file = "course_13L_31R";
+		desrt = "";
+	};
+
+	{
+		file = "course_13R_31L";
+		desrt = "";
+	};
+
+	{
+		file = "course_16-34";
+		desrt = "";
+	};
+
+	{
+		file = "course_19_01";
+		desrt = "";
+	};
+
+	{
+		file = "course_21_03";
+		desrt = "";
+	};
+
+	{
+		file = "course_21L_03R";
+		desrt = "";
+	};
+
+	{
+		file = "course_21R_03L";
+		desrt = "";
+	};
+
+	{
+		file = "course_23_05";
+		desrt = "";
+	};
+
+	{
+		file = "course_24_06";
+		desrt = "";
+	};
+
+	{
+		file = "course_26_08";
+		desrt = "";
+	};
+
+	{
+		file = "course_27L_09R";
+		desrt = "";
+	};
+
+	{
+		file = "course_27R_09L";
+		desrt = "";
+	};
+
+	{
+		file = "course_29_11";
+		desrt = "";
+	};
+
+	{
+		file = "course_29L_11R";
+		desrt = "";
+	};
+
+	{
+		file = "course_29R_11L";
+		desrt = "";
+	};
+
+	{
+		file = "course_31-13";
+		desrt = "";
+	};
+
+	{
+		file = "course_31L_13R";
+		desrt = "";
+	};
+
+	{
+		file = "course_31R_13L";
+		desrt = "";
+	};
+
+	{
+		file = "course_34-16";
+		desrt = "";
+	};
+
+	{
+		file = "D_block";
+		desrt = "";
+	};
+
+	{
+		file = "D_frwd";
+		desrt = "";
+	};
+
+	{
+		file = "D_left";
+		desrt = "";
+	};
+
+	{
+		file = "D_right";
+		desrt = "";
+	};
+
+	{
+		file = "E_block";
+		desrt = "";
+	};
+
+	{
+		file = "E_frwd";
+		desrt = "";
+	};
+
+	{
+		file = "E_left";
+		desrt = "";
+	};
+
+	{
+		file = "E_right";
+		desrt = "";
+	};
+
+	{
+		file = "electric_box";
+		desrt = "";
+	};
+
+	{
+		file = "emb_app_spot_green";
+		desrt = "";
+	};
+
+	{
+		file = "emb_app_spot_red";
+		desrt = "";
+	};
+
+	{
+		file = "emb_app_spot_white";
+		desrt = "";
+	};
+
+	{
+		file = "emb_spot_red_yellow";
+		desrt = "";
+	};
+
+	{
+		file = "emb_spot_white_red";
+		desrt = "";
+	};
+
+	{
+		file = "emb_spot_white_white";
+		desrt = "";
+	};
+
+	{
+		file = "emb_spot_white_yellow";
+		desrt = "";
+	};
+
+	{
+		file = "F_block";
+		desrt = "";
+	};
+
+	{
+		file = "F_frwd";
+		desrt = "";
+	};
+
+	{
+		file = "F_left";
+		desrt = "";
+	};
+
+	{
+		file = "F_right";
+		desrt = "";
+	};
+
+	{
+		file = "G_block";
+		desrt = "";
+	};
+
+	{
+		file = "G_left";
+		desrt = "";
+	};
+
+	{
+		file = "G_right";
+		desrt = "";
+	};
+
+	{
+		file = "H_block";
+		desrt = "";
+	};
+
+	{
+		file = "H_frwd";
+		desrt = "";
+	};
+
+	{
+		file = "H_left";
+		desrt = "";
+	};
+
+	{
+		file = "H_right";
+		desrt = "";
+	};
+
+	{
+		file = "Papi_set_L";
+		desrt = "";
+	};
+
+	{
+		file = "Papi_set_R";
+		desrt = "";
+	};
+
+	{
+		file = "PAPIsystem_1";
+		desrt = "";
+	};
+
+	{
+		file = "PAPIsystem_2";
+		desrt = "";
+	};
+
+	{
+		file = "PAPIsystem_3";
+		desrt = "";
+	};
+
+	{
+		file = "PAPIsystem_4";
+		desrt = "";
+	};
+
+	{
+		file = "STOP_DONT_ENTER";
+		desrt = "";
+	};
+
+	{
+		file = "stop_spot_red";
+		desrt = "";
+	};
+
+	{
+		file = "stop_spot_yellow";
+		desrt = "";
+	};
+
+	{
+		file = "taxi_omni_blue";
+		desrt = "";
+	};
+
+	{
+		file = "taxi_spot_green";
+		desrt = "";
+	};
+
+};

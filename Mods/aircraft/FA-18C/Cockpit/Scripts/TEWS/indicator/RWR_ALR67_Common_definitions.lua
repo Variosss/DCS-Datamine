@@ -69,7 +69,7 @@ function AddSpecialSymbols(name, file, number, stt_y, aaa_y, sam_y, ewarn_x)
 	addStrokeSymbol(name.."_SpecialSymbolsSam"..number, 	{file, "rwr-sam"},  "CenterCenter",
 					{0,sam_y}, name.."_ThreatFlasher"..number, {{name.."_SpecialSymbols", number, SpecialSymbol.SAM}})
 					
-	addStrokeSymbol(name.."_SpecialSymbolsSam"..number, 	{file, "rwr-aquisition"},  "CenterCenter",
+	addStrokeSymbol(name.."_SpecialSymbolsAquisition"..number, 	{file, "rwr-aquisition"},  "CenterCenter",
 					{0,sam_y + 10}, name.."_ThreatFlasher"..number, {{name.."_SpecialSymbols", number, SpecialSymbol.AQUISITION}})
 					
 	addStrokeSymbol(name.."_SpecialSymbolsHostile"..number, 	{file, "rwr-hostile"},  "CenterCenter",
@@ -84,10 +84,10 @@ function AddSpecialSymbols(name, file, number, stt_y, aaa_y, sam_y, ewarn_x)
 	addStrokeSymbol(name.."_SpecialSymbolsWarning"..number, 	{file, "rwr-warning"},  "CenterCenter",
 					{ewarn_x,0}, name.."_ThreatFlasher"..number, {{name.."_SpecialSymbols", number, SpecialSymbol.E_WARNING}})
 					
-	addStrokeSymbol(name.."_SpecialSymbolsAaa"..number, 	{file, "rwr-flir"},  "CenterCenter",
+	addStrokeSymbol(name.."_SpecialSymbolsFlir"..number, 	{file, "rwr-flir"},  "CenterCenter",
 					{0, 0}, name.."_ThreatFlasher"..number, {{name.."_SpecialSymbols", number, SpecialSymbol.FLIR}})
 					
-	addStrokeSymbol(name.."_SpecialSymbolsAaa"..number, 	{file, "rwr-harm"},  "CenterCenter",
+	addStrokeSymbol(name.."_SpecialSymbolsHarm"..number, 	{file, "rwr-harm"},  "CenterCenter",
 					{0, -20}, name.."_ThreatFlasher"..number, {{name.."_SpecialSymbols", number, SpecialSymbol.HARM}})
 					
 end

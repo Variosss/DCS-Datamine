@@ -338,8 +338,10 @@ ShadowBuffer initShadowBuffer()
 #define SF_SUPPRESS_DOUBLE_SHADOW	(1 << 4)
 #define SF_FIRST_MIP_ONLY			(1 << 5)
 #define SF_SOFTEN_TERRAIN_SHADOW	(1 << 6)
+#define SF_BLUR_FLAT_SHADOW			(1 << 7)
+#define SF_IS_TERRAIN_SURFACE		(1 << 8)
 
-ShadowBuffer SampleShadowBuffer(float2 uv, uint sampleIdx, float3 wPos, float depth, float3 normal,
+ShadowBuffer SampleShadowBuffer(uint2 pixPos, float2 uv, uint sampleIdx, float3 wPos, float depth, float3 normal,
 	uniform bool bSampleFrequency,
 	uniform bool usePCF,
 	uniform SHADOW_FLAGS flags = SF_NORMAL_BIAS)
@@ -356,7 +358,12 @@ ShadowBuffer SampleShadowBuffer(float2 uv, uint sampleIdx, float3 wPos, float de
 
 	ShadowBuffer o;
 	o.cascade = shadow;
-	o.terrain = getShadowComposed(uv, depth);
+
+	if(flags & SF_BLUR_FLAT_SHADOW)
+		o.terrain = getShadowComposed(pixPos, flags & SF_IS_TERRAIN_SURFACE);
+	else
+		o.terrain = SampleShadowComposed(pixPos, sampleIdx);
+
 	o.clouds = SampleShadowClouds(wPos);
 	if(flags & SF_SOFTEN_TERRAIN_SHADOW)
 		o.finalShadow =  min(SoftenTerrainShadow(min(o.cascade, o.terrain), wPos), o.clouds.x);
@@ -366,7 +373,7 @@ ShadowBuffer SampleShadowBuffer(float2 uv, uint sampleIdx, float3 wPos, float de
 	return o;
 }
 
-float3 ComposeCockpitSample(ComposerInput i, uint idx, uniform bool useShadows, uniform bool useSSAO, uniform bool useCockpitGI, uniform bool bSampleFrequency, uniform int mode = 0, uniform bool useSSLR = false)
+float3 ComposeCockpitSample(ComposerInput i, uint idx, uniform bool useShadows, uniform bool useBlurFlatShadows, uniform bool useSSAO, uniform bool useCockpitGI, uniform bool bSampleFrequency, uniform int mode = 0, uniform bool useSSLR = false)
 {
 #ifndef DISABLE_COCKPIT_SHADING
 	uint2 uv = i.uv;
@@ -381,7 +388,7 @@ float3 ComposeCockpitSample(ComposerInput i, uint idx, uniform bool useShadows, 
 	float2 texCoord = float2(i.projPos.x, -i.projPos.y)*0.5 + 0.5;
 	if(useShadows)
 	{
-		shadow = SampleShadowBuffer(texCoord, idx, wPos, i.depth, normal, bSampleFrequency, true, SF_NORMAL_BIAS | SF_FIRST_MIP_ONLY);
+		shadow = SampleShadowBuffer(uv, texCoord, idx, wPos, i.depth, normal, bSampleFrequency, true, SF_NORMAL_BIAS | SF_FIRST_MIP_ONLY | (useBlurFlatShadows ? SF_BLUR_FLAT_SHADOW : 0));
 		terranAndCloudsShadow = min(shadow.terrain, shadow.clouds.x);
 		cascadeShadow = shadow.cascade;
 	}
@@ -406,7 +413,7 @@ float3 ComposeCockpitSample(ComposerInput i, uint idx, uniform bool useShadows, 
 	return 0;
 }
 
-float3 ComposeSample(ComposerInput i, uint idx, uniform bool useShadows, uniform bool useSSAO, uniform bool bSampleFrequency, uniform int mode = 0, uniform uint selectEnvCube = LERP_ENV_MAP, uniform bool useSSLR = false)
+float3 ComposeSample(ComposerInput i, uint idx, uniform bool useShadows, uniform bool useBlurFlatShadows, uniform bool useSSAO, uniform bool bSampleFrequency, uniform int mode = 0, uniform uint selectEnvCube = LERP_ENV_MAP, uniform bool useSSLR = false)
 {
 #ifndef DISABLE_MODEL_SHADING
 	uint2 uv = i.uv;
@@ -418,7 +425,7 @@ float3 ComposeSample(ComposerInput i, uint idx, uniform bool useShadows, uniform
 	float2 texCoord = float2(i.projPos.x, -i.projPos.y)*0.5 + 0.5;
 	ShadowBuffer shadow = initShadowBuffer();
 	if (useShadows)
-		shadow = SampleShadowBuffer(texCoord, idx, wPos, i.depth, normal, bSampleFrequency, true, SF_FADE_CASCADE);
+		shadow = SampleShadowBuffer(uv, texCoord, idx, wPos, i.depth, normal, bSampleFrequency, true, SF_FADE_CASCADE | (useBlurFlatShadows ? SF_BLUR_FLAT_SHADOW : 0));
 
 	float AO = aorms.x;
 	if (useSSAO) {
@@ -486,7 +493,7 @@ float3 ShadeVegetation(EnvironmentIrradianceSample eis, float3 sunColor, float3 
 	return finalColor;
 }
 
-float3 ComposeTerrainSample(ComposerInput i, uint idx, uniform bool useShadows, uniform bool useSSAO, uniform bool discardInsideFog = false, uniform bool bSampleFrequency=false, uniform int mode = 0)
+float3 ComposeTerrainSample(ComposerInput i, uint idx, uniform bool useShadows, uniform bool useBlurFlatShadows, uniform bool useSSAO, uniform bool discardInsideFog = false, uniform bool bSampleFrequency=false, uniform int mode = 0)
 {
 #if !defined(DISABLE_TERRAIN_SHADING) && 1
 	uint2 uv = i.uv;
@@ -505,7 +512,7 @@ float3 ComposeTerrainSample(ComposerInput i, uint idx, uniform bool useShadows, 
 	float2 texCoord = float2(i.projPos.x, -i.projPos.y)*0.5 + 0.5;
 	ShadowBuffer shadow = initShadowBuffer();
 	if (useShadows)
-		shadow = SampleShadowBuffer(texCoord, idx, wPos, i.depth, normal, bSampleFrequency, true, SF_NORMAL_BIAS | SF_SUPPRESS_DOUBLE_SHADOW | SF_SOFTEN_TERRAIN_SHADOW);
+		shadow = SampleShadowBuffer(uv, texCoord, idx, wPos, i.depth, normal, bSampleFrequency, true, SF_NORMAL_BIAS | SF_SOFTEN_TERRAIN_SHADOW | SF_IS_TERRAIN_SURFACE | (useBlurFlatShadows ? SF_BLUR_FLAT_SHADOW : 0));
 
 	float AO = aorms.x;
 	if (useSSAO) {
@@ -561,7 +568,7 @@ float3 ComposeTerrainSample(ComposerInput i, uint idx, uniform bool useShadows, 
 #endif
 }
 
-float3 ComposeWaterSample(ComposerInput i, uint idx, uniform bool useShadows, uniform bool discardInsideFog = false, uniform bool bSampleFrequency=false, uniform int mode = 0)
+float3 ComposeWaterSample(ComposerInput i, uint idx, uniform bool useShadows, uniform bool useBlurFlatShadows, uniform bool discardInsideFog = false, uniform bool bSampleFrequency=false, uniform int mode = 0)
 {
 #if !defined(DISABLE_WATER_SHADING) && 1
 	uint2 uv = i.uv;
@@ -581,7 +588,7 @@ float3 ComposeWaterSample(ComposerInput i, uint idx, uniform bool useShadows, un
 	float2 texCoord = float2(i.projPos.x, -i.projPos.y)*0.5 + 0.5;
 	ShadowBuffer shadow = initShadowBuffer();
 	if (useShadows)
-		shadow = SampleShadowBuffer(texCoord, idx, wPos, i.depth, normal, bSampleFrequency, true, SF_SUPPRESS_DOUBLE_SHADOW);
+		shadow = SampleShadowBuffer(uv, texCoord, idx, wPos, i.depth, normal, bSampleFrequency, true, SF_SUPPRESS_DOUBLE_SHADOW | (useBlurFlatShadows ? SF_BLUR_FLAT_SHADOW : 0));
 
 	DEBUG_OUTPUT(float3(0,0,1), normal, float2(0,0), shadow.finalShadow, float3(0,0,0), 1, 1, wPos, uv);
 
@@ -592,7 +599,7 @@ float3 ComposeWaterSample(ComposerInput i, uint idx, uniform bool useShadows, un
 	return 0;
 }
 
-float3 ComposeUnderWaterSample(ComposerInput i, uint idx, uniform bool useShadows, uniform bool bSampleFrequency = false, uniform int mode = 0)
+float3 ComposeUnderWaterSample(ComposerInput i, uint idx, uniform bool useShadows, uniform bool useBlurFlatShadows, uniform bool bSampleFrequency = false, uniform int mode = 0)
 {
 #if !defined(DISABLE_WATER_SHADING)
 	float3 diffuse, normal;
@@ -614,7 +621,7 @@ float3 ComposeUnderWaterSample(ComposerInput i, uint idx, uniform bool useShadow
 
 	ShadowBuffer shadow = initShadowBuffer();
 	if (useShadows)
-		shadow = SampleShadowBuffer(texCoord, idx, i.wPos, i.depth, normal, bSampleFrequency, true, SF_SUPPRESS_DOUBLE_SHADOW);
+		shadow = SampleShadowBuffer(i.uv, texCoord, idx, i.wPos, i.depth, normal, bSampleFrequency, true, SF_SUPPRESS_DOUBLE_SHADOW | (useBlurFlatShadows ? SF_BLUR_FLAT_SHADOW : 0));
 
 	DEBUG_OUTPUT(diffuse, normal, float2(0, 0), shadow.finalShadow, float4(0, 0, 0, 0), 1, 1, i.wPos, i.uv);
 
@@ -634,7 +641,7 @@ float MipLevel(float dist)
 }
 
 
-float3 ComposeGrassSample(ComposerInput i, uint idx, uniform bool useShadows, uniform bool bSampleFrequency, uniform int mode = 0)
+float3 ComposeGrassSample(ComposerInput i, uint idx, uniform bool useShadows, uniform bool useBlurFlatShadows, uniform bool bSampleFrequency, uniform int mode = 0)
 {
 #if !defined(DISABLE_TERRAIN_SHADING) && 1
 	uint2 uv = i.uv;
@@ -673,7 +680,7 @@ float3 ComposeGrassSample(ComposerInput i, uint idx, uniform bool useShadows, un
 	float2 texCoord = float2(i.projPos.x, -i.projPos.y)*0.5 + 0.5;
 	ShadowBuffer shadow = initShadowBuffer();
 	if(useShadows)
-		shadow = SampleShadowBuffer(texCoord, idx, wPos, i.depth, float3(0,1,0), bSampleFrequency, false, SF_SOFTEN_TERRAIN_SHADOW);
+		shadow = SampleShadowBuffer(uv, texCoord, idx, wPos, i.depth, float3(0,1,0), bSampleFrequency, false, SF_SOFTEN_TERRAIN_SHADOW | (useBlurFlatShadows ? SF_BLUR_FLAT_SHADOW : 0));
 
 	AO *= AO;
 	shadow.finalShadow = min(shadow.finalShadow, lerp(1, AO, grassAOInfluenceToDirectLight));
@@ -694,7 +701,7 @@ float3 ComposeGrassSample(ComposerInput i, uint idx, uniform bool useShadows, un
 }
 
 
-float3 ComposeFoliageSample(ComposerInput i, uint idx, uniform bool useShadows, uniform bool useSSAO, uniform bool bSampleFrequency, uniform int mode = 0)
+float3 ComposeFoliageSample(ComposerInput i, uint idx, uniform bool useShadows, uniform bool useBlurFlatShadows, uniform bool useSSAO, uniform bool bSampleFrequency, uniform int mode = 0)
 {
 #if !defined(DISABLE_TERRAIN_SHADING) && 1
 	uint2 uv = i.uv;
@@ -710,7 +717,7 @@ float3 ComposeFoliageSample(ComposerInput i, uint idx, uniform bool useShadows, 
 	float2 texCoord = float2(i.projPos.x, -i.projPos.y)*0.5 + 0.5;
 	ShadowBuffer shadow = initShadowBuffer();
 	if (useShadows)
-		shadow = SampleShadowBuffer(texCoord, idx, wPos, i.depth, gSunDir.xyz, bSampleFrequency, false, SF_FADE_CASCADE | SF_TREE_SHADOW);
+		shadow = SampleShadowBuffer(uv, texCoord, idx, wPos, i.depth, gSunDir.xyz, bSampleFrequency, false, SF_FADE_CASCADE | SF_TREE_SHADOW | (useBlurFlatShadows ? SF_BLUR_FLAT_SHADOW : 0));
 
 	float AO = aorms.x;
 	if (useSSAO) {

@@ -110,7 +110,7 @@ GBuffer PS_DECAL( PS_INPUT _i)
 	mp.toCamera = gCameraPos - mp.pos;
 	mp.camDistance = length(mp.toCamera);
 
-	return BuildGBuffer(_i.pos.xy, mp.diffuse, mp.normal, mp.aorm, mp.emissive);
+	return BuildGBuffer(_i.pos.xy, mp.diffuse, mp.normal, mp.aorm, mp.emissive, float2(0, 0));	// TODO: correct motion vector
 }
 
 

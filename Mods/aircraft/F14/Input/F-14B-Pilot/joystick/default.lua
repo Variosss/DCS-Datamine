@@ -168,7 +168,7 @@ join_override(res.axisCommands,{
 {action = iCommandWheelBrake, name = _('Wheel Brake both')},
 
 {action = device_commands.FLAPS_Lever_Axis, cockpit_device_id=devices.FLAPS, name = _('Flap Lever')},
-{action = device_commands.STICK_DLC_ManDec_Thumbwheel, cockpit_device_id=devices.HOTAS, name = _('DLC / Maneuver Flaps Retract')},
+{action = device_commands.STICK_DLC_ManDec_Thumbwheel, cockpit_device_id=devices.HOTAS, name = _('DLC / Maneuver Flaps')},
 
 {action = iCommandViewHorizontalAbs			, name = _('Absolute Camera Horizontal View')},
 {action = iCommandViewVerticalAbs			, name = _('Absolute Camera Vertical View')},

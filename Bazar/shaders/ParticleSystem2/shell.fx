@@ -1,6 +1,5 @@
 #include "common/context.hlsl"
 #include "common/random.hlsl"
-#define USE_VELOCITY_MAP 1
 #define USE_PREV_POS 1
 #include "deferred/GBuffer.hlsl"
 #include "ParticleSystem2/common/modelShading.hlsl"

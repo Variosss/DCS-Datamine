@@ -11,7 +11,7 @@
 
 float3 SunDisc(float3 viewDir, float3 sunDir)
 {
-	return 1/(1+exp( (cos(SUN_ANGULAR_DIAMETER*0.5) - dot(viewDir, sunDir))*1000000 )) * gSunIntensity;
+	return (100.0f * gSunIntensity) / ( 1+exp( (cos(SUN_ANGULAR_DIAMETER*0.5) - dot(viewDir, sunDir))*1000000 ));
 }
 
 // direct sun light for ray x+tv, when sun in direction s (=L0)

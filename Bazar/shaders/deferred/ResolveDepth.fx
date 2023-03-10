@@ -1,4 +1,5 @@
 #include "common/states11.hlsl"
+#include "common/samplers11.hlsl"
 
 #ifdef MSAA
 	#define TEXTURE_2D(type, name) Texture2DMS<type, MSAA> name
@@ -10,6 +11,8 @@
 
 TEXTURE_2D(float, Depth);
 TEXTURE_2D(uint2, Stencil);
+
+float4 viewport;
 
 static const float2 quad[4] = {
 	{-1, -1}, {1, -1},
@@ -71,6 +74,26 @@ float PS_PER_SAMPLE(float4 pos: SV_POSITION0, uint idx: SV_SampleIndex, uniform 
 	}
 }
 
+struct VS_OUTPUT {
+	float4 svPosition	:SV_POSITION0;
+	float4 NDC_Position	:TEXCOORD0;
+};
+
+VS_OUTPUT VS_UPSCALE(uint vid: SV_VertexID) {
+	VS_OUTPUT o;
+	o.svPosition = o.NDC_Position = float4(quad[vid], 0, 1);
+	return o;
+}
+
+float PS_UPSCALE(VS_OUTPUT i) : SV_DEPTH{
+#ifdef MSAA		// unsuppotred
+	return 0;	
+#else
+	return Depth.SampleLevel(gPointClampSampler, viewport.xy + (float2(i.NDC_Position.x, -i.NDC_Position.y) / i.NDC_Position.w * 0.5 + 0.5) * viewport.zw, 0).x;
+#endif
+
+}
+
 DepthStencilState resolveDepthBuffer {
 	DepthEnable = TRUE;
 	DepthWriteMask = ALL;
@@ -89,25 +112,31 @@ DepthStencilState resolveDepthBuffer {
 	BackFaceStencilFail = KEEP;
 };
 
+#define COMMON_PART		SetGeometryShader(NULL);	\
+						SetBlendState(disableAlphaBlend, float4(0.0f, 0.0f, 0.0f, 0.0f), 0xFFFFFFFF); \
+						SetRasterizerState(cullNone);
+
+
 technique10 ResolveDepth {
 	pass output_without_MSAA {		// as min depth
 		SetVertexShader(CompileShader(vs_5_0, VS()));
-		SetGeometryShader(NULL);
 		SetPixelShader(CompileShader(ps_5_0, PS()));
-	
 		SetDepthStencilState(resolveDepthBuffer, 0);
-		SetBlendState(disableAlphaBlend, float4(0.0f, 0.0f, 0.0f, 0.0f), 0xFFFFFFFF);
-		SetRasterizerState(cullNone);
+		COMMON_PART
 	}
+	pass upscale_DLSS {
+		SetVertexShader(CompileShader(vs_5_0, VS_UPSCALE()));
+		SetPixelShader(CompileShader(ps_5_0, PS_UPSCALE()));
+		SetDepthStencilState(alwaysDepthBuffer, 0);
+		COMMON_PART
+	}
+
 #ifdef MSAA		// unused
 	pass output_as_MSAA_2X {
 		SetVertexShader(CompileShader(vs_4_0, VS()));
-		SetGeometryShader(NULL);
 		SetPixelShader(CompileShader(ps_4_1, PS_PER_SAMPLE( MSAA / 2 )));
-	
 		SetDepthStencilState(alwaysDepthBuffer, 0);
-		SetBlendState(disableAlphaBlend, float4(0.0f, 0.0f, 0.0f, 0.0f), 0xFFFFFFFF);
-		SetRasterizerState(cullNone);
+		COMMON_PART
 	}
 #endif
 }
@@ -115,28 +144,22 @@ technique10 ResolveDepth {
 technique10 ResolveDepthStencil {
 	pass P0 {
 		SetVertexShader(CompileShader(vs_5_0, VS()));
-		SetGeometryShader(NULL);
 		SetPixelShader(CompileShader(ps_5_0, PS_STENCIL()));
-//		SetPixelShader(CompileShader(ps_5_0, PS()));
-
 		SetDepthStencilState(resolveDepthBuffer, 0);
-		SetBlendState(disableAlphaBlend, float4(0.0f, 0.0f, 0.0f, 0.0f), 0xFFFFFFFF);
-		SetRasterizerState(cullNone);
+		COMMON_PART
 	}
 }
 
 technique10 CopyDepth {
 	pass P0 {
 		SetVertexShader(CompileShader(vs_5_0, VS()));
-		SetGeometryShader(NULL);
 #ifdef MSAA
 		SetPixelShader(CompileShader(ps_4_1, PS_PER_SAMPLE(1)));
 #else
 		SetPixelShader(CompileShader(ps_5_0, PS()));
 #endif
 		SetDepthStencilState(alwaysDepthBuffer, 0);
-		SetBlendState(disableAlphaBlend, float4(0.0f, 0.0f, 0.0f, 0.0f), 0xFFFFFFFF);
-		SetRasterizerState(cullNone);
+		COMMON_PART
 	}
 }
 

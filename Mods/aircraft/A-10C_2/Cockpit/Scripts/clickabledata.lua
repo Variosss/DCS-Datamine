@@ -715,10 +715,10 @@ elements["PNT-BTN-UFC-DEPR-UP"]		= default_button(_("Adjust Depressible Pipper")
 elements["PNT-BTN-UFC-DEPR-DN"]		= default_button(_("Adjust Depressible Pipper"), 				devices.UFC, device_commands.Button_27, 408, -1, {-1.0, 0.0} )
 elements["PNT-BTN-UFC-INTEN-RGT"]	= default_button(_("Adjust HUD Brightness (Hold rocker)"), 		devices.UFC, device_commands.Button_28, 409 )
 elements["PNT-BTN-UFC-INTEN-LFT"]	= default_button(_("Adjust HUD Brightness (Hold rocker)"), 		devices.UFC, device_commands.Button_29, 409, -1, {-1.0, 0.0} )
-elements["PNT-BTN-UFC-FWD"]			= default_button(_("No Function"), 								devices.UFC, device_commands.Button_30, 531, nil, nil, false )
-elements["PNT-BTN-UFC-MID"]			= default_button(_("No Function "), 							devices.UFC, device_commands.Button_31, 532, nil, nil, false )
+elements["PNT-BTN-UFC-FWD"]			= default_button(_("Control VHF AM Radio"), 					devices.UFC, device_commands.Button_30, 531, -1, {-1.0, 0.0} )
+elements["PNT-BTN-UFC-MID"]			= default_button(_("No function"), 				devices.UFC, device_commands.Button_31, 532, -1, {-1.0, 0.0} )
 elements["PNT-BTN-UFC-AFT"]			= default_button(_("No Function"), 								devices.UFC, device_commands.Button_32, 533, nil, nil, false )
-elements["PNT-BTN-UFC-ADD-4"]		= default_button(_("No Function"), 								devices.UFC, device_commands.Button_33, 534, nil, nil, false )
+elements["PNT-BTN-UFC-ADD-4"]		= default_button(_("Toggle ARC-210 RT2 Status (long press)"), 								devices.UFC, device_commands.Button_33, 534, -1, {-1.0, 0.0})
 elements["PNT-BTN-UFC-ADD-5"]		= default_button(_("No Function"), 								devices.UFC, device_commands.Button_34, 535, nil, nil, false )
 elements["PNT-BTN-UFC-ADD-6"]		= default_button(_("No Function"), 								devices.UFC, device_commands.Button_35, 536, nil, nil, false )
 
@@ -1313,6 +1313,41 @@ end
 
 ------------------------------------------
 -- VHF AM Radio
+
+if ARC_210_ENABLED then
+--------------------------------------------------------------------					 
+ --ARC-210
+elements["VHFUHF1P"] = multiposition_switch_limited(_("ARC-210, master switch") , devices.VHF_AM_RADIO, device_commands.Button_43, 551, 7, 0.1, nil, anim_speed_multipos_thumb, {135, -45}, {20, -55})
+elements["VHFUHF2P"] = default_axis(_("ARC-210, channel select knob") , devices.VHF_AM_RADIO, device_commands.Button_27, 552, 1.0, 0.1, false, true)
+elements["VHFUHF3P"] = multiposition_switch_limited(_("ARC-210, secondary switch") , devices.VHF_AM_RADIO, device_commands.Button_44, 553, 7, 0.1, nil, anim_speed_multipos_thumb, {135, -45}, {20, -55})
+
+elements["VHFUHF4P"] 	= multiposition_switch_tumb(_("ARC-210, 100 MHz Selector") , devices.VHF_AM_RADIO, device_commands.Button_25, 554, 4, 0.1)
+elements["VHFUHF5P"] 	= multiposition_switch_tumb(_("ARC-210, 10 MHz Selector"), devices.VHF_AM_RADIO, device_commands.Button_23, 555, 10, 0.1)
+elements["VHFUHF6P"] 	= multiposition_switch_tumb(_("ARC-210, 1 MHz Selector"), devices.VHF_AM_RADIO, device_commands.Button_21, 556, 10, 0.1)
+elements["VHFUHF7P"] 	= multiposition_switch_tumb(_("ARC-210, 100 KHz Selector"), devices.VHF_AM_RADIO, device_commands.Button_19, 557, 10, 0.1)
+elements["VHFUHF8P"] 	= multiposition_switch_tumb(_("ARC-210, 25  KHz Selector"), devices.VHF_AM_RADIO, device_commands.Button_17, 558, 4, 0.1)
+
+elements["VHFUHF9P"]  = default_button(_("ARC-210, Enter, No function") , devices.VHF_AM_RADIO, device_commands.Button_14, 573)
+elements["VHFUHF10P"] = default_button(_("ARC-210, Offset frequency") , devices.VHF_AM_RADIO, device_commands.Button_13, 572)
+elements["VHFUHF11P"] = default_button(_("ARC-210, Transmit / receive function toggle") , devices.VHF_AM_RADIO, device_commands.Button_12, 571)
+elements["VHFUHF12P"] = default_button(_("ARC-210, Amplitude modulation / frequency modulation select") , devices.VHF_AM_RADIO, device_commands.Button_11, 570)
+elements["VHFUHF13P"] = default_button(_("ARC-210, Menu pages") , devices.VHF_AM_RADIO, device_commands.Button_10, 569)
+
+elements["VHFUHF14P"] = push_button_tumb(_("ARC-210, Squelch on/off") , devices.VHF_AM_RADIO, device_commands.Button_15, 568)
+
+elements["VHFUHF15P"] = default_button(_("ARC-210, Select receiver - transmitter, No function") , devices.VHF_AM_RADIO, device_commands.Button_4, 567)
+elements["VHFUHF16P"] = default_button(_("ARC-210, Global positioning system, No function") , devices.VHF_AM_RADIO, device_commands.Button_3, 566)
+elements["VHFUHF17P"] = default_button(_("ARC-210, Time of day receive, No function") , devices.VHF_AM_RADIO, device_commands.Button_2, 565)
+elements["VHFUHF18P"] = default_button(_("ARC-210, Time of day send, No function") , devices.VHF_AM_RADIO, device_commands.Button_1, 564)
+elements["VHFUHF19P"] = default_button(_("ARC-210, upper FSK") , devices.VHF_AM_RADIO, device_commands.Button_5, 563)
+elements["VHFUHF20P"] = default_button(_("ARC-210, middle FSK") , devices.VHF_AM_RADIO, device_commands.Button_6, 562)
+elements["VHFUHF21P"] = default_button(_("ARC-210, lower FSK") , devices.VHF_AM_RADIO, device_commands.Button_7, 561)
+
+elements["VHFUHF22P"] = default_button(_("ARC-210, brightness increase") , devices.VHF_AM_RADIO, device_commands.Button_8, 560)
+elements["VHFUHF23P"] = default_button(_("ARC-210, brightness decrease") , devices.VHF_AM_RADIO, device_commands.Button_9, 559)
+
+else
+-- ARC-186
 elements["PTR-ANARC186-VHFAM-PRESET"] = multiposition_switch_1_side(_("Preset Channel Selector"), devices.VHF_AM_RADIO, device_commands.Button_1, 137, 20, -0.01000001, nil, 0.1, {-135, 45}, {160, 0} )
 elements["PTR-ANARC186-VHFAM-PRESET"].arg_value = {-0.01, 0.01}
 elements["PTR-ANARC186-VHFAM-PRESET"].arg_lim = {{0, 0.2}, {0, 0.2}}
@@ -1332,7 +1367,7 @@ elements["PTR-ANARC186-VHFAM-FREQ-1"] = radio_wheel(_("Frequency Selector the 1n
 elements["PTR-ANARC186-VHFAM-FREQ-2"] = radio_wheel(_("Frequency Selector the 2nd"), devices.VHF_AM_RADIO, device_commands.Button_11, device_commands.Button_12, 140,{-0.1, 0.1}, {144,{0.0,1.0},1.0})
 elements["PTR-ANARC186-VHFAM-FREQ-3"] = radio_wheel(_("Frequency Selector the 3rd"), devices.VHF_AM_RADIO, device_commands.Button_13, device_commands.Button_14, 141,{-0.1, 0.1}, {145,{0.0,1.0},1.0})
 elements["PTR-ANARC186-VHFAM-FREQ-4"] = radio_wheel(_("Frequency Selector the 4th"), devices.VHF_AM_RADIO, device_commands.Button_15, device_commands.Button_16, 142,{-0.25, 0.25}, {146,{0.0,1.0},1.0})
-
+end
 
 ------------------------------------------
 -- VHF FM Radio
@@ -1497,71 +1532,6 @@ elements["PTR-ANTSP-EGI-HQ-TOD"] = default_2_position_tumb( _("EGI HQ TOD") 		, 
 ----------------------------------------
 -- RWR
 elements["PNT-LVR-RWR"]	= default_axis_limited(_("Adjust Display Brightness"), devices.AN_ALR69V, device_commands.Button_1, 16, 0.1, false, false, {0.15, 0.85}, nil, {135, -45}, {45,-45})
-
---------------------------------------------------------------------					 
- --ARC-210
-elements["VHFUHF1P"] = multiposition_switch_limited(_("ARC-210 left mode dial") , devices.ARC_210, device_commands.Button_43, 551, 7, 0.1, nil, anim_speed_multipos_thumb, {135, -45}, {20, -55})
---elements["VHFUHF1P"] =  {	
-	    --class 		= {class_type.TUMB},
-		--hint  		= _("ARC-210 left mode dial"),
-		--device 		= devices.ARC_210,
-		--action 		= {device_commands.Button_21},
-		--arg 	  	= {551},
-		--arg_value 	= {0.1}, 
-		--arg_lim   	= {{0, 0.6}},
-		--updatable 	= true, 
-		--use_OBB 	= true,
-		--cycle 		= true,
-		--class_vr	= {class_type.MULTY_TUMB},
-		--side		= {{BOX_SIDE_X_top, BOX_SIDE_X_bottom, BOX_SIDE_Z_top, BOX_SIDE_Z_bottom}}
-	--}
-
-elements["VHFUHF2P"] = default_axis_limited(_("UHF-2") , devices.ARC_210, device_commands.Button_21, 552)
-
-elements["VHFUHF3P"] =  {	
-		class 		= {class_type.TUMB},
-		hint  		= _("ARC-210 right mode dial"),
-		device 		= devices.ARC_210,
-		action 		= {device_commands.Button_21},
-		arg 	  	= {553},
-		arg_value 	= {0.1}, 
-		arg_lim   	= {{0, 0.6}},
-		updatable 	= true, 
-		use_OBB 	= true,
-		cycle 		= true,
-		class_vr	= {class_type.MULTY_TUMB},
-		side		= {{BOX_SIDE_X_top, BOX_SIDE_X_bottom, BOX_SIDE_Z_top, BOX_SIDE_Z_bottom}}
-	}
-
---elements["VHFUHF4P"] = default_axis_limited(_("UHF-4") , devices.ARC_210, device_commands.Button_20, 554,nil,nil,nil,nil,nil,{-90,-135},{-90,-80})
---elements["VHFUHF5P"] = default_axis_limited(_("UHF-5") , devices.ARC_210, device_commands.Button_16, 555,nil,nil,nil,nil,nil,{-90,-135},{-90,-80})
---elements["VHFUHF6P"] = default_axis_limited(_("UHF-6") , devices.ARC_210, device_commands.Button_17, 556,nil,nil,nil,nil,nil,{-90,-135},{-90,-80})
---elements["VHFUHF7P"] = default_axis_limited(_("UHF-7") , devices.ARC_210, device_commands.Button_18, 557,nil,nil,nil,nil,nil,{-90,-135},{-90,-80})
---elements["VHFUHF8P"] = default_axis_limited(_("UHF-8") , devices.ARC_210, device_commands.Button_19, 558,nil,nil,nil,nil,nil,{-90,-135},{-90,-80})
-
-elements["VHFUHF4P"] = radio_wheel(_("Frequency Selector the 1st"), devices.ARC_210, device_commands.Button_17, device_commands.Button_18, 554,{-0.1, 0.1}, {})
-elements["VHFUHF5P"] = radio_wheel(_("Frequency Selector the 2nd"), devices.ARC_210, device_commands.Button_19, device_commands.Button_20, 555,{-0.1, 0.1}, {})
-elements["VHFUHF6P"] = radio_wheel(_("Frequency Selector the 3rd"), devices.ARC_210, device_commands.Button_21, device_commands.Button_22, 556,{-0.1, 0.1}, {})
-elements["VHFUHF7P"] = radio_wheel(_("Frequency Selector the 4th"), devices.ARC_210, device_commands.Button_23, device_commands.Button_24, 557,{-0.1, 0.1}, {})
-elements["VHFUHF8P"] = radio_wheel(_("Frequency Selector the 5th"), devices.ARC_210, device_commands.Button_25, device_commands.Button_26, 558,{-0.1, 0.1}, {})
-
-elements["VHFUHF9P"]  = default_button(_("UHF-9") , devices.ARC_210, device_commands.Button_20, 573)
-elements["VHFUHF10P"] = default_button(_("UHF-10") , devices.ARC_210, device_commands.Button_21, 572)
-elements["VHFUHF11P"] = default_button(_("UHF-11") , devices.ARC_210, device_commands.Button_22, 571)
-elements["VHFUHF12P"] = default_button(_("UHF-12") , devices.ARC_210, device_commands.Button_23, 570)
-elements["VHFUHF13P"] = default_button(_("UHF-13") , devices.ARC_210, device_commands.Button_24, 569)
-
-elements["VHFUHF14P"] = push_button_tumb(_("UHF-14") , devices.ARC_210, device_commands.Button_10, 568)
-
-elements["VHFUHF15P"] = default_button(_("UHF-15") , devices.ARC_210, device_commands.Button_9, 567)
-elements["VHFUHF16P"] = default_button(_("UHF-16") , devices.ARC_210, device_commands.Button_8, 566)
-elements["VHFUHF17P"] = default_button(_("UHF-17") , devices.ARC_210, device_commands.Button_7, 565)
-elements["VHFUHF18P"] = default_button(_("UHF-18") , devices.ARC_210, device_commands.Button_6, 564)
-elements["VHFUHF19P"] = default_button(_("UHF-19") , devices.ARC_210, device_commands.Button_5, 563)
-elements["VHFUHF20P"] = default_button(_("UHF-20") , devices.ARC_210, device_commands.Button_4, 562)
-elements["VHFUHF21P"] = default_button(_("UHF-21") , devices.ARC_210, device_commands.Button_3, 561)
-elements["VHFUHF22P"] = default_button(_("UHF-22") , devices.ARC_210, device_commands.Button_2, 560)
-elements["VHFUHF23P"] = default_button(_("UHF-23") , devices.ARC_210, device_commands.Button_1, 559)
 
 
 --Mirrors

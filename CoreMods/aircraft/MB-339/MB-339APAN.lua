@@ -199,6 +199,7 @@ MB_339APAN =  {
 									337,     --	Pilot Back L/R                      	-- 17
 									399,     --	Pilot Back Up/Down                      -- 18
 									480,	--  Rotazione LDG LT semiala sx				-- 19 
+									524,	--	Nav Light e visibilità Tip              -- 
 									},                                                                                                     
 --------------------------------------------------------------------------------------------------------------------                                    
 	
@@ -334,11 +335,10 @@ MB_339APAN =  {
 				use_full_connector_position=true,
 				connector 		= "TIP_SX",
 				DisplayName 	= "TT", 
-				arg				= 525,
+				arg				= 524,
 				arg_value		= 0,
             },
             {
-				{ CLSID = "<CLEAN>", arg_value = 0},  --NO TIP TANK
 				{ CLSID	= "{FUEL-TIP-TANK-500-L}", required ={{station =10, loadout={"{FUEL-TIP-TANK-500-R}"}}},	arg_value = 0.6},
 				{ CLSID	= "{FUEL-TIP-ELLITTIC-L}", required ={{station =10, loadout={"{FUEL-TIP-ELLITTIC-R}"}}},	arg_value = 0.3},			   
             }                                                                          
@@ -469,7 +469,6 @@ MB_339APAN =  {
 				arg_value		= 0,
             },
             {
-				{ CLSID = "<CLEAN>", arg_value = 0},  --NO TIP TANK
 				{ CLSID	= "{FUEL-TIP-TANK-500-R}",	required ={{station =1, loadout={"{FUEL-TIP-TANK-500-L}"}}},	arg_value = 0.6},
 				{ CLSID	= "{FUEL-TIP-ELLITTIC-R}",	required ={{station =1, loadout={"{FUEL-TIP-ELLITTIC-L}"}}},	arg_value = 0.3},			   
             }

@@ -291,3 +291,10 @@ end
 function onChange_ePasswordRed()
 	settingsServer.advanced.redPasswordHash = net.hash_password(ePasswordRed:getText())
 end
+
+function isVisible()
+	if window then
+		return window:getVisible()
+	end
+	return false
+end

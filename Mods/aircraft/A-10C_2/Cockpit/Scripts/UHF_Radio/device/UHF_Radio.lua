@@ -32,7 +32,7 @@ agr = {
 
 GUI = {
 	range = {min = 225E6, max = 399.975E6, step = 25E3}, --Hz
-	displayName = _('UHF'),
+	displayName = _('UHF AM (ARC-164)'),
 	AM = true,
 	FM = false
 }

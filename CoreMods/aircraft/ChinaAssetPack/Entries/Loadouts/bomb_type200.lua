@@ -1,8 +1,9 @@
 
 -- Type 200 反跑道炸弹
-local type200_name = 'TYPE-200A'
-local type200_mass = 200.0
-local pylon_mass = 0.0
+local type200_name  = 'TYPE-200A'
+local type200_model = 'type-200a'
+local type200_mass  = 200.0
+local pylon_mass    = 0.0
 
 local type200_warhead =
 {
@@ -23,14 +24,17 @@ Type200 = {
     user_name      = _(type200_name),
     wsTypeOfWeapon = {4, 5, 37, WSTYPE_PLACEHOLDER},
 
-    model          = "type-200a",
+    model          = type200_model,
     scheme         = "bomb-concrete",
     --class_name     = 'wAmmunition',
+
+    warhead        = type200_warhead,
+    sounderName    = 'Weapons/BetAB_500ShP',
 
     shape_table_data = {
         {
             name     = type200_name,
-            file     = 'type-200a',
+            file     = type200_model,
             life     = 1,
             fire     = { 0, 1},
             username = type200_name,
@@ -47,8 +51,6 @@ Type200 = {
     VyHold      = -75.0,
     Ag          = -20.0,
     Reflection  = 0.01,
-    warhead     = type200_warhead,
-    sounderName = 'Weapons/BetAB_500ShP',
 
     -- scheme data
     fm = {
@@ -150,7 +152,7 @@ declare_loadout({
     Weight           = type200_mass + pylon_mass,
     Elements         = {
         {
-            ShapeName = 'type-200a',
+            ShapeName = type200_model,
             DrawArgs  = { [1] = {1, 1.0}, }
         }
     }, -- TODO
@@ -175,12 +177,12 @@ declare_loadout({
             IsAdapter = true
         },
         {
-            ShapeName = "type-200a",
+            ShapeName = type200_model,
             connector_name = "Pylon_GDJ-II19L_R",
             DrawArgs  = { [1] = {1, 1.0}, }
         },
         {
-            ShapeName = "type-200a",
+            ShapeName = type200_model,
             connector_name = "Pylon_GDJ-II19L_L",
             DrawArgs  = { [1] = {1, 1.0}, }
         },
@@ -208,12 +210,12 @@ declare_loadout({
             IsAdapter = true
         },
         {
-            ShapeName = "type-200a",
+            ShapeName = type200_model,
             connector_name = "Pylon_GDJ-II19R_L",
             DrawArgs  = { [1] = {1, 1.0}, }
         },
         {
-            ShapeName = "type-200a",
+            ShapeName = type200_model,
             connector_name = "Pylon_GDJ-II19R_R",
             DrawArgs  = { [1] = {1, 1.0}, }
         },

@@ -137,8 +137,8 @@ GBuffer MODEL_PS_SHADER_NAME( MODEL_PS_INPUT i,
 #endif
 				mp.diffuse, mp.normal, mp.aorm, mp.emissive 
 		#if USE_PREV_POS
-				,calcVelocityMap(i.projPos, i.prevProjPos)
-		#elif USE_VELOCITY_MAP
+				,calcMotionVector(i.projPos, i.prevProjPos)
+		#elif USE_MOTION_VECTORS
 				,float2(0.0, 0.0)
 		#endif
 );

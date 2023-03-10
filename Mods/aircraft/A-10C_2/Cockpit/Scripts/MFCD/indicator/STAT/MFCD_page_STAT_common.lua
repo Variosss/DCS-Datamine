@@ -248,6 +248,10 @@ for i = LRU_TGP, LRU_HMCS do
 	addLRU_Name(Current_LRU_namesStatic, i, LRU_names2[i], {{"STAT_Current_LRU", i}})
 end
 
+for i = LRU_DVADR, LRU_ARC210_2 do
+	addLRU_Name(Current_LRU_namesStatic, i, LRU_names2[i], {{"STAT_Current_LRU", i}})
+end
+
 
 Cursor						= CreateElement "ceStringPoly"
 Cursor.name					= "SELECTED_ARROW"
@@ -339,3 +343,4 @@ MFL_NotAvail.init_pos			= {0, -MFL_StringOffset, 0}
 MFL_NotAvail.controllers		= {{"STAT_StandardMFL", LRU_CDU, 1}}
 Add(MFL_NotAvail)
 use_mipfilter(MFL_NotAvail)
+

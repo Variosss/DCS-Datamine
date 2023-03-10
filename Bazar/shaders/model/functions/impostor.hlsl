@@ -38,14 +38,14 @@ PS_IMPOSTOR_OUTPUT impostor_ps(VS_OUTPUT input)
 	o.normal = float4(0.5f * normal + 0.5f, 1.0);
 
 	// specular values
-	float4 s;
+	float4 s = 0;
 	// sp, sf, reflValue, reflBlur
 	calculateSpecular(input, s);
 
 	o.diffuse = extractDiffuse(GET_DIFFUSE_UV(input));
-	float decalMask = addDecal(o.diffuse, input, s.z);
+	float decalMask = addDecal(input, o.diffuse, normal, s);
 	float4 aorms = 0;
-	addDamage(input,camDist, o.diffuse, normal,aorms);
+	addDamage(input,camDist, o.diffuse, normal, aorms);
 
 	// hack for buildings
 #if defined(BUILDING_MATERIAL)

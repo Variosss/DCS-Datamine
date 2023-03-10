@@ -61,7 +61,7 @@ local Ka50_3 =  {
 			supply_position = {0.305, -0.6, 0.0},
 			muzzle_pos_connector = "Gun_point",
 			ejector_pos_connector = "Gun_point001",
-            ejector_dir = {0.5, -0.5, 0.0},
+            ejector_dir = {3.0, 0.0, 0.0}, -- dir + initial velocity
 			effects = 
 			{
 				{ name = "TurretRecoil", recoil_arg = 350, spring_coeff = 0.3, recoil_coeff = 0.95  },

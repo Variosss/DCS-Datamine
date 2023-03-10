@@ -36,6 +36,10 @@ struct VS_INPUT
 	vector<float, TEXCOORD5_SIZE> tc5 : TEXCOORD5;
 #endif
 
+#ifdef COLOR0_SIZE
+	vector<float, COLOR0_SIZE> color0 : COLOR0;
+#endif
+
 #ifdef ENABLE_SKELETAL_ANIMATION
 	vector<float, BONES_WEIGHTS_SIZE> bonesWeights : COLOR1;
 #endif
@@ -73,6 +77,10 @@ struct VS_INPUT_SHADOWS
 	#endif
 #endif
 
+#ifdef COLOR0_SIZE
+	vector<float, COLOR0_SIZE> color0 : COLOR0;
+#endif
+
 #ifdef ENABLE_SKELETAL_ANIMATION
 	vector<float, BONES_WEIGHTS_SIZE> bonesWeights : COLOR1;
 #endif
@@ -94,6 +102,10 @@ struct VS_OUTPUT
 	float4 DamageTangent	: COLOR6;		// damage tangent, unnormalized yet!
 #endif
 	float4 Pos			: COLOR3;		// vertex position in world space, w component holds height in world coordinates
+
+#ifdef COLOR0_SIZE
+	vector<float, COLOR0_SIZE> color : COLOR2;
+#endif
 
 #ifdef TEXCOORD0_SIZE
 	vector<float, TEXCOORD0_SIZE> tc0 : TEXCOORD0;

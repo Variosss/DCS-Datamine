@@ -5,6 +5,8 @@
 #include "enlight/materialParams.hlsl"
 
 #define USE_ROTATE_PCF 1
+#define BASE_SHADOWMAP_SIZE 4096
+#define BASE_SHADOWMAP_BIAS 0.0004
 
 #if USE_ROTATE_PCF
 float rnd(float2 xy) {
@@ -14,7 +16,7 @@ float rnd(float2 xy) {
 
 float SampleShadowMap(float3 wPos, float NoL, uniform uint idx, uniform bool usePCF, uniform uint samplesMax, uniform bool useTreeShadow, uniform float r = 3.0)
 {
-	float bias = 0.00025;
+	float bias = BASE_SHADOWMAP_BIAS * BASE_SHADOWMAP_SIZE / ShadowMapSize;
 
 	float4 shadowPos = mul(float4(wPos, 1.0), ShadowMatrix[idx]);
 	float3 shadowCoord = shadowPos.xyz / shadowPos.w;
@@ -47,7 +49,7 @@ float SampleShadowMap(float3 wPos, float NoL, uniform uint idx, uniform bool use
 			float s, c;
 			sincos(angle, s, c);
 			float2 delta = float2(c, s) * (offset * radius);
-			acc += cascadeShadowMap.SampleCmpLevelZero(gCascadeShadowSampler, float3(shadowCoord.xy + delta, 3 - idx), saturate(shadowCoord.z) + bias);
+			acc += cascadeShadowMap.SampleCmpLevelZero(gCascadeShadowSampler, float3(shadowCoord.xy + delta, 3 - idx), saturate(shadowCoord.z) + bias * (1 + r * offset));
 		}
 		acc /= count;
 	} 

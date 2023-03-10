@@ -360,7 +360,7 @@ BlendState BlendStateBound {
 							SetDomainShader(NULL);			\
 							SetGeometryShader(NULL);		\
 							SetComputeShader(NULL);			\
-							SetRasterizerState(cullFront);	
+							SetRasterizerState(cullBack);	
 
 #define MESH_PART			SetDepthStencilState(disableDepthBuffer, 0);									\
 							SetBlendState(BlendStatePrepass, float4(0.0f, 0.0f, 0.0f, 0.0f), 0xFFFFFFFF);	\

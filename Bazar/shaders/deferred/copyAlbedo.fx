@@ -39,7 +39,7 @@ GBuffer PS(VS_out vout)
 #if USE_SV_SAMPLEINDEX
 		0, 
 #endif
-		float4(color.rgb, 1.0), float3(0, 1, 0), float4(1, 0.98, 0.0, 1), float3(0, 0, 0));
+		float4(color.rgb, 1.0), float3(0, 1, 0), float4(1, 0.98, 0.0, 1), float3(0, 0, 0), float2(0, 0));
 }
 
 BlendState WriteMaskBlendState

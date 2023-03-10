@@ -27,7 +27,7 @@ GT.visual.max_time_agony = 120;
 GT.visual.agony_explosion_size = 5;
 
 -- see description in GT_t.lua
-GT.visual.IR = { coeffs = {GT_t.IR_COEFFS_ENGINE_APC, GT_t.IR_COEFFS_WHEELS_Truck, GT_t.IR_COEFFS_HMG, IR_COEFFS_BODY, {0.3, 0.3/1400}}}
+GT.visual.IR = { coeffs = {GT_t.IR_COEFFS_ENGINE_APC, GT_t.IR_COEFFS_WHEELS_Truck, GT_t.IR_COEFFS_HMG, GT_t.IR_COEFFS_BODY, {0.3, 0.3/1400}}}
 
 GT.driverViewConnectorName = {"POINT_DRIVER", offset = {0.05, 0.0, 0.0}}
 GT.driverCockpit = "DriverCockpit/DriverCockpitWithIR"

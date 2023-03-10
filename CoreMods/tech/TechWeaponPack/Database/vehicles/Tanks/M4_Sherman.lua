@@ -99,7 +99,7 @@ GT.visual.agony_explosion_size = 5;
 GT.visual.dust_pos = {2.7, 0.1, -GT.chassis.Z_gear_1}
 GT.visual.dirt_pos = {-2.5, 0.4, -GT.chassis.Z_gear_2}
 
-GT.visual.IR = { coeffs = {GT_t.IR_COEFFS_ENGINE_Tank, GT_t.IR_COEFFS_ROLLERS_IFV, GT_t.IR_COEFFS_100mm, IR_COEFFS_BODY, {0.3, 0.3/1250}}}
+GT.visual.IR = { coeffs = {GT_t.IR_COEFFS_ENGINE_Tank, GT_t.IR_COEFFS_ROLLERS_IFV, GT_t.IR_COEFFS_100mm, GT_t.IR_COEFFS_BODY, {0.3, 0.3/1250}}}
 
 GT.driverViewConnectorName = {"DRIVER_POINT", offset = {0.02, 0.0, 0.0}}
 GT.driverCockpit = "DriverCockpit/DriverCockpit"

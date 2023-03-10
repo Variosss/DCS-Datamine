@@ -44,6 +44,7 @@ void gsSnow(point VS_OUTPUT input[1], inout TriangleStream<PS_INPUT_RAIN> output
 	float3 side = float3(-dir.y, dir.x, 0) * scale;
 	
 	PS_INPUT_RAIN o;
+	//o.randomSeed = input[0].vertId;
 	o.sunDirM = 0;
 	o.wPos.xyz = input[0].pos.xyz - gCameraPos.xyz;
 	o.wPos.w = getHaloFactor(gSunDir, o.wPos.xyz, 16);

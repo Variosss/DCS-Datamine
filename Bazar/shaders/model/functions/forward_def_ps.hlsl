@@ -32,6 +32,7 @@ float4 forwardDefaultPS(VS_OUTPUT input, uniform int Flags, uniform int shadingM
 
 	MaterialParams mp = calcMaterialParams(input, MP_ALL);
 
+#if BLEND_MODE != BM_SHADOWED_TRANSPARENT
 	float shadow = 1.0;
 	float2 cloudShadowAO = 1.0;
 	cloudShadowAO = SampleShadowClouds(mp.pos);
@@ -39,7 +40,10 @@ float4 forwardDefaultPS(VS_OUTPUT input, uniform int Flags, uniform int shadingM
 	
 	if(!(Flags & F_DISABLE_SHADOWMAP))
 		shadow = min(shadow, applyShadow(float4(mp.pos, input.projPos.z/input.projPos.w), mp.normal));
-
+#else
+	float shadow = 0.0;
+	float2 cloudShadowAO = 1.0;
+#endif
 	mp.diffuse.rgb = modifyAlbedo(mp.diffuse.rgb, albedoLevel, albedoContrast, mp.aorms.x);
 
 	AtmosphereSample atm;
@@ -68,7 +72,7 @@ float4 forwardDefaultPS(VS_OUTPUT input, uniform int Flags, uniform int shadingM
 		if(Flags & F_IN_COCKPIT){
 			finalColor = float4(ShadeCockpit(input.Position.xy, (Flags & F_COCKPIT_GI), atm.sunColor, mp.diffuse.rgb, mp.normal, mp.aorms.y, mp.aorms.z, mp.emissive, shadow, AO, cloudShadowAO, mp.toCamera, mp.pos, float2(1,mp.aorms.w), true, mp.diffuse.a), mp.diffuse.a);
 		}else{
-		#if BLEND_MODE == BM_TRANSPARENT
+		#if BLEND_MODE == BM_TRANSPARENT || (BLEND_MODE == BM_SHADOWED_TRANSPARENT)
 			finalColor = float4(ShadeHDR(input.Position.xy, atm.sunColor, mp.diffuse.rgb, mp.normal, mp.aorms.y, mp.aorms.z, mp.emissive, shadow, AO, cloudShadowAO, mp.toCamera, mp.pos, float2(1, mp.aorms.w), LERP_ENV_MAP, false, float2(0, 0), LL_TRANSPARENT, false, true), mp.diffuse.a);
 		#else
 			finalColor = float4(ShadeHDR(input.Position.xy, atm.sunColor, mp.diffuse.rgb, mp.normal, mp.aorms.y, mp.aorms.z, mp.emissive, shadow, AO, cloudShadowAO, mp.toCamera, mp.pos, float2(1, mp.aorms.w), LERP_ENV_MAP, false, float2(0, 0), BLEND_MODE == BM_ADDITIVE ? LL_TRANSPARENT : LL_SOLID, false, true), mp.diffuse.a);

@@ -6,6 +6,19 @@ _ = gettext.translate
 RWR_type = RWR_type or "ALR_300"
 
 ----------------------------------------------------------------
+-- Warning lights
+
+-- Left master failure warning light
+elements["PNT-920"] = default_button(_("Left master failure warning light"), 0, devices.MAIN, devCmds.Cmd265, 920)
+-- Right master failure warning light
+elements["PNT-922"] = default_button(_("Right master failure warning light"), 0, devices.MAIN, devCmds.Cmd678, 922)
+-- Fire warning light AB + Horn
+elements["PNT-940"] = default_button(_("Fire warning light AB + Horn"), 0, devices.MAIN, devCmds.Cmd277, 940)
+-- Fire warning light ENG + Horn
+elements["PNT-936"] = default_button(_("Fire warning light ENG + Horn"), 0, devices.MAIN, devCmds.Cmd679, 936)
+
+
+----------------------------------------------------------------
 -- Navigation indicator
 
 -- Gyromagnetic-True IDN heading selector
@@ -29,6 +42,18 @@ elements["PNT-401"] = default_2_position_tumb(_("Transfer/filling switch"), 0, d
 elements["PNT-407"] = default_axis_limited(_("Aerial refuelling light adjustment potentiometer"), 0, devices.MAIN, devCmds.Cmd667, 407)
 
 
+----------------------------------------------------------------
+-- BARAX
+
+-- BARAX light test
+elements["PNT-1260"] = default_button(_("BARAX light test"), 0, devices.MAIN, devCmds.Cmd707, 1260, nil, nil, nil, sounds.sound_EFF_sw)
+elements["PNT-1260"].updatable = true
+-- BARAX state selector (OFF/ON/TEST)
+elements["PNT-1262"] = multiposition_switch(_("BARAX state selector (OFF/ON/TEST)"), 0, devices.MAIN, devCmds.Cmd705, 1262, 3, 0.5, nil, nil, nil, sounds.sound_warning_horn_sw)
+-- BARAX emission ready korry
+elements["PNT-1264"] = default_2_position_tumb(_("BARAX emission ready korry"), 0, devices.MAIN, devCmds.Cmd706, 1264, nil, nil, nil, nil, sounds.sound_feeder_tank_fus_sw)
+
+
 -- ALR-300 control panel
 if RWR_type == "ALR_300" then
 	-- REG
@@ -48,5 +73,7 @@ if RWR_type == "ALR_300" then
 	elements["PNT-1018"] = default_button(_("ALR-300 test"), 0, devices.MAIN, devCmds.Cmd677, 1018)
 end
 
+
 -- Jammer detection / AAR Feeder tanks overflow light
 elements["PNT-194"] = default_button_axis(_("Jammer detection / Feeder tanks overflow light"), 0, devices.MAIN, devCmds.Cmd291, devCmds.Cmd292, 194, 195)
+

@@ -31,6 +31,7 @@ materials["HUD_IND_DBG"]     				= {255, 50, 0, 255}
 materials["UHF_RADIO"] 						= {220, 220, 222, 255}
 materials["UHF_RADIO_CHANNEL_MAP"] 			= {25, 25, 25, 255}
 materials["UHF_REPEATER"]  					= {227, 226, 221, 255}
+materials["ARC210_GREEN"]  					= {85, 248, 129, 255}
 
 materials["MFCD_CICU_BLACK"]  				= {1, 1, 1, 255}
 materials["MFCD_CICU_GREY"]    				= {117, 117, 117, 255}
@@ -173,6 +174,9 @@ fonts["font_AGM_65E"]               = {fontdescription["font_AGM_65E"], 1, mater
 fonts["font_UHF_RADIO"]				= {fontdescription["font_UHF_RADIO"], 10, materials["UHF_RADIO"]}
 fonts["font_UHF_RADIO_CH_MAP"]		= {fontdescription["font_UHF_RADIO"], 10, materials["UHF_RADIO_CHANNEL_MAP"]}
 fonts["font_UHF_Repeater"]			= {fontdescription["font_UHF_Repeater"], 10, materials["UHF_REPEATER"]}
+fonts["font_ARC210_small"]			= {fontdescription["font_ARC210_small"], 10, materials["ARC210_GREEN"]}
+fonts["font_ARC210_big"]			= {fontdescription["font_ARC210_big"], 10, materials["ARC210_GREEN"]}
+
 
 make_left_right(fonts,"font_MFCD")
 make_left_right(fonts,"font_MFCD_BLACK")

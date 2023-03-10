@@ -255,6 +255,9 @@ graphics('shadows')						:setValue(2)		:combo({Name(_('OFF'))		:Value(0),
 																	Name(_('MEDIUM'))	:Value(3),
 																	Name(_('HIGH'))		:Value(4)
 																}):low(1):medium(1):high(4):VR(3)
+graphics('BlurFlatShadows')				:setValue(0)		:combo({Name(_('OFF'))		:Value(0),
+																	Name(_('ON'))		:Value(1),
+																}):low(0):medium(1):high(1)
 graphics('secondaryShadows')			:setValue(0)		:combo({Name(_('OFF'))		:Value(0),
 																	Name(_('ON'))		:Value(1),
 																})									
@@ -288,8 +291,11 @@ graphics('SSAO')						:setValue(0)		:combo({Name(_('OFF'))		:Value(0),
 																}):low(0):medium(0):high(0):VR(0)
 
 graphics('motionBlur')					:setValue(0)		:combo({Name(_('OFF'))		:Value(0),
-																	Name(_('ON'))		:Value(1),
+																	Name(_('LOW'))		:Value(1),
+																	Name(_('HIGH'))		:Value(2),
 																}):low(0):medium(0):high(0):VR(0)
+
+graphics('motionBlurAmount')			:setValue(1)		:slider(Range(1.0, 3.0))																
 
 graphics('SSAA')						:setValue(0)		:combo({Name(_('OFF'))		:Value(0),
 																	Name(_('x1.5'))		:Value(1),

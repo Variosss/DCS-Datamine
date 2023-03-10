@@ -3,6 +3,10 @@ dofile(LockOn_Options.script_path.."../../Mirage-F1/Mirage-F1_Common/device_init
 createMainPanel("F1EE::F1MainPanel_EE", LockOn_Options.script_path.."mainpanel_init_EE.lua")
 createDeviceMain("F1EE::F1Main_EE")
 
+if dbgDisableAllIndicators == true then
+	return
+end
+
 local RWR_type  = get_aircraft_property_or_nil("RWR_type") or "ALR_300"
 
 if RWR_type == "ALR_300" then

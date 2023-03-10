@@ -20,9 +20,9 @@ function add_rdr_area(radius, num_of_segments, ellipse_k)
 	return area
 end
 
-function addDisplayMask()
-	local radar_display_area_mask				= add_rdr_area(display_area_radius, 32)
-	radar_display_area_mask.name 			  	= "radar_display_area_mask"
+function addDisplayMask(name)
+	local radar_display_area_mask				= add_rdr_area(display_area_radius, 64)
+	radar_display_area_mask.name 			  	= name
 	radar_display_area_mask.material		  	= "MASK_MATERIAL"
 	radar_display_area_mask.h_clip_relation 	= h_clip_relations.REWRITE_LEVEL
 	radar_display_area_mask.level			  	= INDICATOR_DEFAULT_LEVEL

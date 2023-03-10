@@ -43,4 +43,5 @@ return {
 																	DbOption.Item(_('English')):Value(2),
 																	DbOption.Item(_('Russian')):Value(3),
 																	}),
+	Mi24AIHideBoxes				= DbOption.new():setValue(false):checkbox(),
 }

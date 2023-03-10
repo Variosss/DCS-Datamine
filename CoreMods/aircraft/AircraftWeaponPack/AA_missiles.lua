@@ -40,7 +40,7 @@ MISTRAL_MBDA =
 	Y_back			= 0,
 	Z_back			= 0,
 	Reflection		= 0.0182,
-	KillDistance	= 5.0,
+	KillDistance	= 2.0,
 	SeekerSensivityDistance = 10000, 
 	ccm_k0					= 0.5,
 	SeekerCooled			= true,	
@@ -127,24 +127,24 @@ MISTRAL_MBDA =
 		sensitivity		= 9500,
 		cooled			= true,
 		delay			= 0.0,
-		GimbLim			= math.rad(30),
+		GimbLim			= math.rad(38),
 		FOV				= math.rad(4);
 		opTime			= 20.0,
 		target_H_min	= 0.0,
-		flag_dist		= 150.0,
+		flag_dist		= 50.0,
 	},
 	
 	simple_gyrostab_seeker = {
-		omega_max = math.rad(40)
+		omega_max = math.rad(20)
 	},
 	
 	fuze_proximity = {
 		ignore_inp_armed	= 1,
-		radius				= 5,
+		radius				= 2,
 	},
 	
 	autopilot = {
-		K				= 2.0,
+		K				= 5.0,
 		Kg				= 0.1,
 		Ki				= 0.0,
 		finsLimit		= 0.2,

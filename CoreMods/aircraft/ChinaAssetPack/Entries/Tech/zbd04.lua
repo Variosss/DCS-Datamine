@@ -54,7 +54,7 @@ GT.visual.fire_pos[3] = 0.762 -- center of burn at transverse axis shift(meters)
 GT.visual.fire_time   = 600 --burning time (seconds)
 
 -- see description in GT_t.lua
-GT.visual.IR = { coeffs = {GT_t.IR_COEFFS_ENGINE_APC, GT_t.IR_COEFFS_ROLLERS_IFV, GT_t.IR_COEFFS_30mm, IR_COEFFS_BODY, {0.3, 0.3/1800}}}
+GT.visual.IR = { coeffs = {GT_t.IR_COEFFS_ENGINE_APC, GT_t.IR_COEFFS_ROLLERS_IFV, GT_t.IR_COEFFS_30mm, GT_t.IR_COEFFS_BODY, {0.3, 0.3/1800}}}
 
 GT.visual.min_time_agony       = 3
 GT.visual.max_time_agony       = 100

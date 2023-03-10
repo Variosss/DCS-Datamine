@@ -1,0 +1,104 @@
+TerrainModelDeclaration =
+{
+	default =
+	{
+		load =
+		{
+			false;
+			false;
+		};
+		drawonmap = true;
+		vis = 1;
+		visShadows = 1;
+		life = 500;
+		fire =
+		{
+		  0;
+		  1;
+		};
+		classname = "lStandartStructure";
+		positioning = "ONLYHEIGTH"; 
+		DestructAnimatttion = "NO"; 
+	};
+	{
+		file = "bridge_motorway_link50";
+		life = 150;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "bridge_motorway_link50_crash";
+	};
+
+	{
+		file = "bridge_motorway_link50_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "bridge_primary50";
+		life = 150;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "bridge_primary50_crash";
+	};
+
+	{
+		file = "bridge_primary50_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "bridge_rail_two_50";
+		life = 300;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "bridge_rail_two_50_crash";
+	};
+
+	{
+		file = "bridge_rail_two_50_crash";
+		desrt = "";
+		iscrashmodel = true;
+	};
+
+	{
+		file = "bridge_support";
+		life = -1;
+		desrt = "bridge_support";
+	};
+
+	{
+		file = "monorail1_column";
+		life = -1;
+		desrt = "monorail1_column";
+	};
+
+	{
+		file = "monorail2_column";
+		life = -1;
+		desrt = "monorail2_column";
+	};
+
+	{
+		file = "Viaduct_column_small";
+		life = -1;
+		desrt = "Viaduct_column_small";
+	};
+
+	{
+		file = "Viaduct_rail_column";
+		life = -1;
+		desrt = "Viaduct_rail_column";
+	};
+
+};

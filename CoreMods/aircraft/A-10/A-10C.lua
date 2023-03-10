@@ -30,13 +30,101 @@ local A_10C =  {
 		
 	Waypoint_Panel = true,
 
-	HumanRadio = {
-		frequency = 251.0,
-		editable = true,
-		minFrequency = 225.000,
-		maxFrequency = 399.975,
-		modulation = MODULATION_AM
-	},
+	HumanRadio 		= 	
+		{
+			frequency	= 251.0,
+			editable	= true,
+			minFrequency	= 30.000,
+			maxFrequency	= 399.975,
+			rangeFrequency = {
+				{min =  30.0, max =  87.975, modulation	= MODULATION_FM},			
+				{min = 108.0, max = 151.975, modulation	= MODULATION_AM},
+				{min = 225.0, max = 399.975, modulation	= MODULATION_AM}
+			},
+			modulation = MODULATION_AM,
+		},
+
+	panelRadio = {
+			[1] = {  
+			    name = _("VHF AM: ARC-186"),
+				range = { min = 118.0, max = 155.995},
+				channels = {
+					[1] = { name = _("Channel 0"),		default = 127.5, modulation = _("AM")}, -- default
+					[2] = { name = _("Channel 1"),		default = 135.0, modulation = _("AM")},	-- min. water
+					[3] = { name = _("Channel 2"),		default = 136.0, modulation = _("AM")},	-- nalchik
+					[4] = { name = _("Channel 3"),		default = 127.0, modulation = _("AM")},	-- sochi
+					[5] = { name = _("Channel 4"),		default = 125.0, modulation = _("AM")},	-- maykop
+					[6] = { name = _("Channel 5"),		default = 121.0, modulation = _("AM")},	-- anapa
+					[7] = { name = _("Channel 6"),		default = 141.0, modulation = _("AM")},	-- beslan
+					[8] = { name = _("Channel 7"),		default = 128.0, modulation = _("AM")},	-- krasnodar-pashk.
+					[9] = { name = _("Channel 8"),		default = 126.0, modulation = _("AM")},	-- gelenjik
+					[10] = { name = _("Channel 9"),		default = 133.0, modulation = _("AM")},	-- kabuleti
+					[11] = { name = _("Channel 10"),	default = 130.0, modulation = _("AM")},	-- gudauta
+					[12] = { name = _("Channel 11"),	default = 129.0, modulation = _("AM")},	-- Sukhumi - Babushara
+					[13] = { name = _("Channel 12"),	default = 123.0, modulation = _("AM")},	-- Novorossiysk
+					[14] = { name = _("Channel 13"),	default = 131.0, modulation = _("AM")},	-- batumi
+					[15] = { name = _("Channel 14"),	default = 134.0, modulation = _("AM")},	-- kutaisi
+					[16] = { name = _("Channel 15"),	default = 132.0, modulation = _("AM")},	-- senaki
+					[17] = { name = _("Channel 16"),	default = 138.0, modulation = _("AM")},	-- Tbilisi - Lochini
+					[18] = { name = _("Channel 17"),	default = 122.0, modulation = _("AM")},	-- krasnodar-center
+					[19] = { name = _("Channel 18"),	default = 124.0, modulation = _("AM")},	-- krymsk
+					[20] = { name = _("Channel 19"),	default = 137.0, modulation = _("AM")}, -- mozdok
+				}
+			},
+			[2] = {  
+			    name = _("UHF AM: ARC-164"),
+				range = {min = 225.0, max = 399.975},
+			    channels = {
+			        [1] = { name = _("Channel 1"),		default = 305.0, modulation = _("AM"), connect = true}, -- default
+			        [2] = { name = _("Channel 2"),		default = 264.0, modulation = _("AM")},	-- min. water : 135.0, 264.0
+			        [3] = { name = _("Channel 3"),		default = 265.0, modulation = _("AM")},	-- nalchik : 136.0, 265.0
+			        [4] = { name = _("Channel 4"),		default = 256.0, modulation = _("AM")},	-- sochi : 127.0, 256.0
+			        [5] = { name = _("Channel 5"),		default = 254.0, modulation = _("AM")},	-- maykop : 125.0, 254.0
+			        [6] = { name = _("Channel 6"),		default = 250.0, modulation = _("AM")},	-- anapa : 121.0, 250.0
+			        [7] = { name = _("Channel 7"),		default = 270.0, modulation = _("AM")},	-- beslan : 141.0, 270.0
+			        [8] = { name = _("Channel 8"),		default = 257.0, modulation = _("AM")},	-- krasnodar-pashk. : 128.0, 257.0
+			        [9] = { name = _("Channel 9"),		default = 255.0, modulation = _("AM")},	-- gelenjik : 126.0, 255.0
+			        [10] = { name = _("Channel 10"),	default = 262.0, modulation = _("AM")},	-- kabuleti : 133.0, 262.0
+			        [11] = { name = _("Channel 11"),	default = 259.0, modulation = _("AM")},	-- gudauta : 130.0, 259.0
+			        [12] = { name = _("Channel 12"),	default = 268.0, modulation = _("AM")},	-- soginlug : 139.0, 268.0
+			        [13] = { name = _("Channel 13"),	default = 269.0, modulation = _("AM")},	-- vaziani : 140.0, 269.0
+			        [14] = { name = _("Channel 14"),	default = 260.0, modulation = _("AM")},	-- batumi : 131.0, 260.0
+			        [15] = { name = _("Channel 15"),	default = 263.0, modulation = _("AM")},	-- kutaisi : 134.0, 263.0
+			        [16] = { name = _("Channel 16"),	default = 261.0, modulation = _("AM")},	-- senaki : 132.0, 261.0
+			        [17] = { name = _("Channel 17"),	default = 267.0, modulation = _("AM")},	-- lochini : 138.0, 267.0
+			        [18] = { name = _("Channel 18"),	default = 251.0, modulation = _("AM")},	-- krasnodar-center : 122.0, 251.0
+			        [19] = { name = _("Channel 19"),	default = 253.0, modulation = _("AM")},	-- krymsk : 124.0, 253.0
+			        [20] = { name = _("Channel 20"),	default = 266.0, modulation = _("AM")},	-- mozdok : 137.0, 266.0
+			    }
+			},
+			[3] = {  
+			    name = _("VHF FM: ARC-186"),
+				range = {min =  30.0, max =  87.995},
+				channels = {
+					[1] = { name = _("Channel 1"),		default = 31.5, modulation = _("FM")}, -- default
+					[2] = { name = _("Channel 2"),		default = 45.7, modulation = _("FM")},
+					[3] = { name = _("Channel 3"),		default = 57.0, modulation = _("FM")},
+					[4] = { name = _("Channel 4"),		default = 38.0, modulation = _("FM")},
+					[5] = { name = _("Channel 5"),		default = 30.0, modulation = _("FM")},
+					[6] = { name = _("Channel 6"),		default = 32.0, modulation = _("FM")},
+					[7] = { name = _("Channel 7"),		default = 40.0, modulation = _("FM")},
+					[8] = { name = _("Channel 8"),		default = 50.0, modulation = _("FM")},
+					[9] = { name = _("Channel 9"),		default = 55.5, modulation = _("FM")},
+					[10] = { name = _("Channel 10"),		default = 39.9, modulation = _("FM")},
+					[11] = { name = _("Channel 11"),		default = 41.5, modulation = _("FM")},
+					[12] = { name = _("Channel 12"),		default = 75.7, modulation = _("FM")},
+					[13] = { name = _("Channel 13"),		default = 33.0, modulation = _("FM")},
+					[14] = { name = _("Channel 14"),		default = 38.0, modulation = _("FM")},
+					[15] = { name = _("Channel 15"),		default = 42.0, modulation = _("FM")},
+					[16] = { name = _("Channel 16"),		default = 51.5, modulation = _("FM")},
+					[17] = { name = _("Channel 17"),		default = 50.0, modulation = _("FM")},
+					[18] = { name = _("Channel 18"),		default = 79.0, modulation = _("FM")},
+					[19] = { name = _("Channel 19"),		default = 51.5, modulation = _("FM")},
+					[20] = { name = _("Channel 20"),		default = 34.9, modulation = _("FM")},
+				}
+			},
+		},
+		
 	
 	EPLRS = true,
 	

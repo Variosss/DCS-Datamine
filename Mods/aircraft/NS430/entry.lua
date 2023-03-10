@@ -1,3 +1,7 @@
+if ED_MULTI_THREAD and ED_PUBLIC_AVAILABLE then 
+	return
+end
+
 --do return end
 local ns430_disp  = _("NS430")
 declare_plugin("NS430",

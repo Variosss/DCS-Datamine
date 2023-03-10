@@ -1,0 +1,175 @@
+TerrainModelDeclaration =
+{
+	default =
+	{
+		load =
+		{
+			false;
+			false;
+		};
+		drawonmap = true;
+		vis = 1;
+		visShadows = 1;
+		life = 500;
+		fire =
+		{
+		  0;
+		  1;
+		};
+		classname = "lStandartStructure";
+		positioning = "ONLYHEIGTH"; 
+		DestructAnimatttion = "NO"; 
+	};
+	{
+		file = "!proxyCommunication";
+		desrt = "";
+	};
+
+	{
+		file = "airbase_antenna_01";
+		life = 100;
+		fire =
+		{
+			0;
+			0;
+		};
+		maxSlope = 30;
+		desrt = "pole_crash";
+	};
+
+	{
+		file = "bagram_control_tower";
+		life = 400;
+		fire =
+		{
+			60;
+			2;
+		};
+		maxSlope = 20;
+		desrt = "road_ramp_crash";
+	};
+
+	{
+		file = "gsm_antenna";
+		life = 30;
+		fire =
+		{
+			0;
+			0;
+		};
+		maxSlope = 30;
+		desrt = "board_crash";
+	};
+
+	{
+		file = "Radio_Tower";
+		life = 150;
+		fire =
+		{
+			0;
+			0;
+		};
+		maxSlope = 20;
+		desrt = "container_crash";
+	};
+
+	{
+		file = "Radio_Tower_02";
+		life = 80;
+		fire =
+		{
+			0;
+			0;
+		};
+		maxSlope = 20;
+		desrt = "board_crash";
+	};
+
+	{
+		file = "tacan_A";
+		life = 80;
+		fire =
+		{
+			0;
+			0;
+		};
+		classname = "lSiteElementBuilding";
+		maxSlope = 20;
+		desrt = "board_crash";
+	};
+
+	{
+		file = "UHF_descent_beacon_01";
+		life = 60;
+		fire =
+		{
+			0;
+			0;
+		};
+		maxSlope = 20;
+		desrt = "container_crash";
+	};
+
+	{
+		file = "us_afb_building_16";
+		life = 5;
+		fire =
+		{
+			0;
+			0;
+		};
+		maxSlope = 30;
+		desrt = "pole_crash";
+	};
+
+	{
+		file = "us_afb_building_17";
+		life = 5;
+		fire =
+		{
+			0;
+			0;
+		};
+		maxSlope = 30;
+		desrt = "pole_crash";
+	};
+
+	{
+		file = "VHF_localizer_01";
+		life = 30;
+		fire =
+		{
+			0;
+			0;
+		};
+		maxSlope = 10;
+		desrt = "diesel_generator_crash";
+	};
+
+	{
+		file = "Vor_DME";
+		life = 80;
+		fire =
+		{
+			0;
+			0;
+		};
+		classname = "lSiteElementBuilding";
+		maxSlope = 15;
+		desrt = "container_crash";
+	};
+
+	{
+		file = "vortac";
+		life = 100;
+		fire =
+		{
+			5;
+			1;
+		};
+		classname = "lSiteElementBuilding";
+		maxSlope = 15;
+		desrt = "container_crash";
+	};
+
+};

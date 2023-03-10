@@ -6,6 +6,10 @@ creators[devices.INTERCOM] 				= {"F1cmn::F1CE_BE_EE::F1Intercom_CE_BE_EE"}
 creators[devices.TRAP137B] 				= {"F1cmn::F1CE_BE_EE::F1_UHF_TRAP137B", 
 	LockOn_Options.script_path.."../../Mirage-F1/Mirage-F1_Common/Comm/TRAP137B.lua"}
 
+if dbgDisableAllIndicators == true then
+	return
+end
+
 indicators[#indicators + 1] = {"F1cmn::F1CE_BE_EE::F1SightSystemIndicator",
 	LockOn_Options.script_path.."../../Mirage-F1/Mirage-F1_Common/SightSystem/Indicator/SightSystem_init.lua",
 	devices.MAIN,
@@ -45,5 +49,14 @@ end
 indicators[#indicators + 1] = {"F1cmn::F1CE_BE_EE::F1RadarLegacyIndicator",
 	LockOn_Options.script_path.."../../Mirage-F1/Mirage-F1_Common/Radar_Cyrano_IV_legacy/Indicator/Main/CyranoLegacy_init.lua",
 	cyrano_device,
-	{cyrano_geom_ptrs, {sw = cyrano_width_correction}}
+	--{cyrano_geom_ptrs, {sw = cyrano_width_correction}}
+	{cyrano_geom_ptrs, cyrano_bake_geom_corrections}
 	}
+
+indicators[#indicators + 1] = {"ABase::aIndicator",
+	LockOn_Options.script_path.."../../Mirage-F1/Mirage-F1_Common/Radar_Cyrano_IV_legacy/Indicator/BakedGeneral/CyranoLegacy_bake_general_init.lua",
+	cyrano_device,
+	--{cyrano_geom_ptrs, {sw = cyrano_width_correction}}
+	{cyrano_geom_ptrs, cyrano_bake_geom_corrections}
+	}
+

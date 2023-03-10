@@ -36,7 +36,7 @@ local function InitChassis(gt)
     gt.visual.max_time_agony       = 120
     gt.visual.agony_explosion_size = 5
 
-    gt.visual.IR = { coeffs = {GT_t.IR_COEFFS_ENGINE_APC, GT_t.IR_COEFFS_WHEELS_Car, GT_t.IR_COEFFS_Cold_SAM, IR_COEFFS_BODY, {0.2, 0.2/1200}}}
+    gt.visual.IR = { coeffs = {GT_t.IR_COEFFS_ENGINE_APC, GT_t.IR_COEFFS_WHEELS_Car, GT_t.IR_COEFFS_Cold_SAM, GT_t.IR_COEFFS_BODY, {0.2, 0.2/1200}}}
 
     --[[gt.DM = {
         { area_name = "TURRET_FRONT",       armour = {width=0.3}},

@@ -3,8 +3,6 @@
 #include "common/context.hlsl"
 #include "common/ShadowStates.hlsl"
 #include "common/stencil.hlsl"
-
-#define USE_VELOCITY_MAP 1
 #include "deferred/GBuffer.hlsl"
 #include "deferred/atmosphere.hlsl"
 #include "deferred/shading.hlsl"
@@ -215,9 +213,7 @@ GBuffer ps_main(
 {
     Ps_Params pp = make_params(i);
     
-    //float2 velMap = calcVelocityMapStatic(i.ProjPos);
-    float2 velMap = calcVelocityMap(i.ProjPos, i.prevProjPos);
-
+    float2 motion = calcMotionVector(i.ProjPos, i.prevProjPos);
 
     float b = 0.01;
     float3 base_stripes_color = float3(b, b, b);
@@ -232,7 +228,7 @@ GBuffer ps_main(
         pp.normal.xyz, 
         float4(pp.ao, pp.rm_color.gb, 1),         
         stripes_color, 
-        velMap
+        motion
 	);
 }
 

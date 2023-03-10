@@ -1,0 +1,301 @@
+TerrainModelDeclaration =
+{
+	default =
+	{
+		load =
+		{
+			false;
+			false;
+		};
+		drawonmap = true;
+		vis = 1;
+		visShadows = 1;
+		life = 500;
+		fire =
+		{
+		  0;
+		  1;
+		};
+		classname = "lStandartStructure";
+		positioning = "ONLYHEIGTH"; 
+		DestructAnimatttion = "NO"; 
+	};
+	{
+		file = "!proxyRoadsideObjects";
+		desrt = "";
+	};
+
+	{
+		file = "big_board";
+		life = 50;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "board_crash";
+	};
+
+	{
+		file = "board_01";
+		life = 2;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "board_crash";
+	};
+
+	{
+		file = "board_02";
+		life = 25;
+		fire =
+		{
+			0;
+			0;
+		};
+		maxSlope = 20;
+		desrt = "board_crash";
+	};
+
+	{
+		file = "board_03";
+		life = 2;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "board_crash";
+	};
+
+	{
+		file = "Board_04";
+		life = 3;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "board_crash";
+	};
+
+	{
+		file = "Board_05";
+		life = 3;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "board_crash";
+	};
+
+	{
+		file = "Board_06";
+		life = 2;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "board_crash";
+	};
+
+	{
+		file = "car_shader";
+		life = 8;
+		fire =
+		{
+			0;
+			0;
+		};
+		maxSlope = 15;
+		desrt = "container_crash";
+	};
+
+	{
+		file = "entrance_asphalt_2L_tunnel";
+		desrt = "";
+	};
+
+	{
+		file = "entrance_tunnel_asphalt_6L";
+		desrt = "";
+	};
+
+	{
+		file = "entrance_tunnel_rail_2L";
+		desrt = "";
+	};
+
+	{
+		file = "iran_traffic_signal";
+		life = 3;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "pole_crash";
+	};
+
+	{
+		file = "Light_Pole_Rails";
+		life = 3;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "pole_crash";
+	};
+
+	{
+		file = "nevada_trafficlight_big";
+		life = 3;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "road_sign_crash";
+	};
+
+	{
+		file = "nevada_trafficlight_medium";
+		life = 3;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "road_sign_crash";
+	};
+
+	{
+		file = "nevada_trafficlight_rail";
+		life = 3;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "pole_crash";
+	};
+
+	{
+		file = "nevada_trafficlight_small";
+		life = 3;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "";
+	};
+
+	{
+		file = "overhead_crossing";
+		life = 200;
+		fire =
+		{
+			0;
+			0;
+		};
+		maxSlope = 15;
+		desrt = "overhead_crossing_crash";
+	};
+
+	{
+		file = "power_trans_line_01";
+		life = 3;
+		fire =
+		{
+			25;
+			1;
+		};
+		desrt = "pole_crash";
+	};
+
+	{
+		file = "Rail_Fance";
+		desrt = "";
+	};
+
+	{
+		file = "Rail_Fance_support";
+		desrt = "";
+	};
+
+	{
+		file = "road_border_metal";
+		life = 200;
+		fire =
+		{
+			60;
+			1;
+		};
+		username = "";
+		desrt = "road_border_crash";
+	};
+
+	{
+		file = "road_signs_ramp_iran";
+		life = 50;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "road_ramp_crash";
+	};
+
+	{
+		file = "shed";
+		life = 3;
+		fire =
+		{
+			60;
+			1;
+		};
+		maxSlope = 15;
+		desrt = "board_crash";
+	};
+
+	{
+		file = "triangle_board";
+		life = 150;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "road_sign_crash";
+	};
+
+	{
+		file = "uae_traffic_signal";
+		life = 3;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "pole_crash";
+	};
+
+	{
+		file = "Umbrella_chair";
+		life = 2;
+		fire =
+		{
+			0;
+			0;
+		};
+		maxSlope = 15;
+		desrt = "diesel_generator_crash";
+	};
+
+};

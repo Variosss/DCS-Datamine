@@ -838,11 +838,11 @@ args_initial_state = {
     [5] = 1,
 	[800] = 0,
 	[797] = -0.5,--lower HUD gun camera position
-	[998] = 0,
+	[998] = 1,
 }
 else
 	args_initial_state = {
-	[998] = 0,
+	[998] = 1,
 	}
 end
 

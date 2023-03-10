@@ -1,0 +1,145 @@
+TerrainModelDeclaration =
+{
+	default =
+	{
+		load =
+		{
+			false;
+			false;
+		};
+		drawonmap = true;
+		vis = 1;
+		visShadows = 1;
+		life = 500;
+		fire =
+		{
+		  0;
+		  1;
+		};
+		classname = "lStandartStructure";
+		positioning = "ONLYHEIGTH"; 
+		DestructAnimatttion = "NO"; 
+	};
+	{
+		file = "!proxyIllumination";
+		desrt = "";
+	};
+
+	{
+		file = "2020";
+		desrt = "";
+	};
+
+	{
+		file = "2020_palm";
+		desrt = "";
+	};
+
+	{
+		file = "airfield_flood_light_on";
+		life = 5;
+		fire =
+		{
+			0;
+			0;
+		};
+		username = "";
+		desrt = "pole_crash";
+	};
+
+	{
+		file = "airfield_floodlight_big";
+		life = 5;
+		fire =
+		{
+			0;
+			0;
+		};
+		username = "";
+		maxSlope = 30;
+		desrt = "pole_crash";
+	};
+
+	{
+		file = "Azerbaijan_light_pole_01";
+		life = 3;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "pole_crash";
+	};
+
+	{
+		file = "Azerbaijan_light_pole_02";
+		life = 3;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "pole_crash";
+	};
+
+	{
+		file = "batumi_fonar";
+		life = 5;
+		fire =
+		{
+			0;
+			0;
+		};
+		username = "";
+		desrt = "pole_crash";
+	};
+
+	{
+		file = "calvi_light_pole";
+		life = 3;
+		fire =
+		{
+			0;
+			0;
+		};
+		username = "";
+		desrt = "pole_crash";
+	};
+
+	{
+		file = "helipad_flod_light_01";
+		life = 3;
+		fire =
+		{
+			0;
+			0;
+		};
+		username = "";
+		desrt = "small_crash";
+	};
+
+	{
+		file = "light_pole_double";
+		life = 3;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "pole_crash";
+	};
+
+	{
+		file = "light_tower";
+		life = 10;
+		fire =
+		{
+			0;
+			0;
+		};
+		username = "";
+		maxSlope = 20;
+		desrt = "road_sign_crash";
+	};
+
+};

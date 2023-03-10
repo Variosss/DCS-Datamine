@@ -1,5 +1,4 @@
 
-#define USE_VELOCITY_MAP 1
 #include "common/states11.hlsl"
 #include "common/samplers11.hlsl"
 #include "common/context.hlsl"
@@ -7,14 +6,13 @@
 #include "deferred/DecoderCommon.hlsl"
 
 TEXTURE_2D(float4, ComposedTex);
-TEXTURE_2D(float2, VelocityMap);
+TEXTURE_2D(float2, MotionVectors);
 
-Texture2D<float3> VelocityAvg;
+Texture2D<float2> VelocityAvg;
 uint2	sourceSize;
 float	value, dithering;
 
 #define AVG_MIP_COUNT 6
-#define ZERO_OFFSET (127.0 / 255.0)
 #define VEL_SCALE 20.0
 
 static const float2 quad[4] = {
@@ -34,20 +32,8 @@ VS_OUTPUT VS(uint vid: SV_VertexID) {
 	return o;
 }
 
-float3 sampleVelocity(uint2 uv) {
-	float2 v = SampleMap(VelocityMap, uv, 0).xy;
-	float w = 1;
-	if (!any(v)) {
-		float depth = SampleMap(DepthMap, uv, 0).x;
-		float2 pp = (float2(uv + 0.5) * 2.0) / sourceSize - 1.0;
-		v = saturate( calcVelocityMapStatic(float4(pp.x, -pp.y, depth, 1)) );
-		w = 0.1;
-	}
-	return float3(v - ZERO_OFFSET, w);
-}
-
-float2 scaleVelocity(float2 v) {
-	return float2(v.x, -v.y)  * ((VEL_SCALE * 1.5) * value);
+float2 sampleVelocity(uint2 uv) {
+	return SampleMap(MotionVectors, uv, 0).xy / gTargetDims / gPrevFrameTimeDelta;
 }
 
 float depthToDistane(float depth) {
@@ -55,14 +41,16 @@ float depthToDistane(float depth) {
 	return pos.z / pos.w;
 }
 
-float4 sampleVelocityDepth(uint2 uv, uint sidx) {
-	float2 v = SampleMap(VelocityMap, uv, sidx).xy;
+float2 saturateLength(float2 v) {
+	float l = length(v) + 1e-9;
+	return v * (saturate(l) / l);
+}
+
+float4 sampleVelocityScaledDepth(uint2 uv, uint sidx) {
+	float2 v = sampleVelocity(uv);
+	v = saturateLength(v * VELOCITY_MAP_SCALE);
+	v *= VEL_SCALE * value * 1.5;
 	float depth = SampleMap(DepthMap, uv, sidx).x;
-	if (!any(v)) {
-		float2 pp = (float2(uv + 0.5) * 2.0) / sourceSize - 1.0;
-		v = saturate(calcVelocityMapStatic(float4(pp.x, -pp.y, depth, 1)));
-	}
-	v = scaleVelocity(v - ZERO_OFFSET);
 	return float4(v, depthToDistane(depth), length(v) + 1e-9);
 }
 
@@ -75,7 +63,7 @@ float2 calcVelAvg(float2 uv, float2 dims, uint mip) {
 	float2 avgVelocity = 0;
 	[unroll]
 	for (uint j = 0; j < 4; ++j)
-		avgVelocity += VelocityAvg.SampleLevel(gTrilinearClampSampler, uv + (offset[j] - 0.5) * (1.0 / dims), mip).xy - ZERO_OFFSET;
+		avgVelocity += VelocityAvg.SampleLevel(gTrilinearClampSampler, uv + (offset[j] - 0.5) * (1.0 / dims), mip).xy;
 	return avgVelocity * 0.25;
 }
 
@@ -86,7 +74,7 @@ float2 calcVelocityAvg(float2 uv) {
 	[unroll]
 	for (uint mip = 1; mip < AVG_MIP_COUNT; ++mip) {
 		dims /= 2;
-		avgVelocity += VelocityAvg.SampleLevel(gTrilinearClampSampler, uv, mip).xy - ZERO_OFFSET;
+		avgVelocity += VelocityAvg.SampleLevel(gTrilinearClampSampler, uv, mip).xy;
 	}
 	avgVelocity += calcVelAvg(uv, dims, AVG_MIP_COUNT - 1);
 
@@ -113,15 +101,8 @@ float2 projPosToUV(float2 projPos) {
 static float kernel[] = { 0.095478, 0.095002, 0.093587, 0.091276, 0.088137, 0.084259 };
 
 float4 PS_MOTION_BLUR_0(const VS_OUTPUT i, uint sidx: SV_SampleIndex) : SV_TARGET0 {
-	float2 vv = SampleMap(VelocityMap, i.pos.xy, 0).xy;
-	if (!any(vv)) {
-		float depth = SampleMap(DepthMap, i.pos.xy, 0).x;
-		vv = calcVelocityMapStatic(float4(i.projPos.xy, depth, 1));
-		vv = saturate(vv);  // saturate velocity map
-	}
 
-	float2 v = vv-127.0/255.0;	// restore velocity
-	v.y = -v.y;
+	float2 v = sampleVelocity(i.pos.xy);
 	v *= 8 * value;			// as in rev 140727
 
 	float2 uv = i.pos.xy;
@@ -134,16 +115,15 @@ float4 PS_MOTION_BLUR_0(const VS_OUTPUT i, uint sidx: SV_SampleIndex) : SV_TARGE
 
 // fast technique with some artifats
 float3 MotionBlurPS(const VS_OUTPUT i, uint sidx, uniform int SAMPLE_COUNT) {
-	float2 vm = scaleVelocity(VelocityAvg.SampleLevel(gTrilinearClampSampler, projPosToUV(i.projPos), 0).xy - ZERO_OFFSET);
 
-	float magVM = length(vm) + 1e-9;
-	vm /= magVM;
+	float2 vm = VelocityAvg.SampleLevel(gTrilinearClampSampler, projPosToUV(i.projPos), 0).xy;
+	vm /= length(vm) + 1e-9;
 
 	float2 p0 = i.pos.xy;
-	float4 vd0 = sampleVelocityDepth(p0, sidx);
+	float4 vd0 = sampleVelocityScaledDepth(p0, sidx);
 
 	float4 acc = 0;
-	float scale = VEL_SCALE / SAMPLE_COUNT * value;
+	float scale = VEL_SCALE * value / SAMPLE_COUNT;
 	[unroll]
 	for (int j = -SAMPLE_COUNT; j <= SAMPLE_COUNT; ++j) {
 		float rnd = hash(float3(p0, j));
@@ -152,7 +132,7 @@ float3 MotionBlurPS(const VS_OUTPUT i, uint sidx, uniform int SAMPLE_COUNT) {
 		float2 dp = p1 - p0;
 		float ldp = length(dp) + 1e-9;
 
-		float4 vd1 = sampleVelocityDepth(p1, sidx);
+		float4 vd1 = sampleVelocityScaledDepth(p1, sidx);
 
 		float dwl = saturate(1.5 + vd0.w - vd1.w);
 		float zw = smoothstep(vd0.z * 1.01, vd0.z*0.99, vd1.z);
@@ -195,7 +175,7 @@ float4 PS_MOTION_BLUR_MSAA(const VS_OUTPUT i, uint sidx: SV_SampleIndex, uniform
 // naive very slow technique
 float4 PS_MOTION_BLUR_2(const VS_OUTPUT i, uint sidx: SV_SampleIndex) : SV_TARGET0 {
 	float2 p0 = i.pos.xy;
-	float4 vd0 = sampleVelocityDepth(p0, sidx);
+	float4 vd0 = sampleVelocityScaledDepth(p0, sidx);
 
 	float4 acc = 0;
 	[loop]
@@ -206,7 +186,7 @@ float4 PS_MOTION_BLUR_2(const VS_OUTPUT i, uint sidx: SV_SampleIndex) : SV_TARGE
 			float2 dp = p1 - p0;
 			float ldp = length(dp);
 
-			float4 vd1 = sampleVelocityDepth(p1, 0);
+			float4 vd1 = sampleVelocityScaledDepth(p1, 0);
 			float dvw = gaussian(vd0.w - vd1.w, 1);
 			float zw = smoothstep(vd0.z * 1.01, vd0.z*0.99, vd1.z) + dvw;
 
@@ -227,55 +207,52 @@ float4 PS_MOTION_BLUR_2(const VS_OUTPUT i, uint sidx: SV_SampleIndex) : SV_TARGE
 }
 #endif
 
-float4 PS_VELOCITY_MAX_0(const VS_OUTPUT i) : SV_TARGET0{
+float4 PS_VELOCITY_MAX_0(const VS_OUTPUT i) : SV_TARGET0 {
 	float2 uv = i.pos.xy * 2;
-	float3 maxVelocity = sampleVelocity(uv);
-	float maxMag = dot(maxVelocity.xy, maxVelocity.xy);
+	float2 maxVelocity = sampleVelocity(uv);
+	float maxMag = dot(maxVelocity, maxVelocity);
 	[unroll]
 	for (uint j = 1; j < 4; ++j) {
-		float3 v = sampleVelocity(clamp(uv + offset[j], 0, sourceSize - 1));
-		float mag = dot(v.xy, v.xy);
+		float2 v = sampleVelocity(clamp(uv + offset[j], 0, sourceSize - 1));
+		float mag = dot(v, v);
 		if (mag > maxMag) {
 			maxVelocity = v;
 			maxMag = mag;
 		}
 	}
-	return float4(maxVelocity.xy + ZERO_OFFSET, maxVelocity.z, 1);
+	return float4(maxVelocity, 0, 1);
 }
 
-float4 PS_VELOCITY_MAX_1(const VS_OUTPUT i) : SV_TARGET0{
+float4 PS_VELOCITY_MAX_1(const VS_OUTPUT i) : SV_TARGET0 {
 	float2 uv = i.pos.xy * 2;
-	float3 vw = VelocityAvg.Load(uint3(uv, 0)).xyz;
-	float3 maxVelocity = float3(vw.xy - ZERO_OFFSET, vw.z);
-	float maxMag = dot(maxVelocity.xy, maxVelocity.xy);
+	float2 maxVelocity = VelocityAvg.Load(uint3(uv, 0)).xy;
+	float maxMag = dot(maxVelocity, maxVelocity);
 
 	[unroll]
 	for (uint j = 1; j < 4; ++j) {
-		float3 vw = VelocityAvg.Load(uint3(clamp(uv + offset[j], 0, sourceSize - 1), 0)).xyz;
-		float3 v = float3(vw.xy - ZERO_OFFSET, vw.z);
-		float mag = dot(v.xy, v.xy);
+		float2 v = VelocityAvg.Load(uint3(clamp(uv + offset[j], 0, sourceSize - 1), 0)).xy;
+		float mag = dot(v, v);
 		if (mag > maxMag) {
 			maxVelocity = v;
 			maxMag = mag;
 		}
 	}
-	return float4(maxVelocity.xy + ZERO_OFFSET, maxVelocity.z, 1);
+	return float4(maxVelocity, 0, 1);
 }
 
-float4 PS_VELOCITY_AVG_1(const VS_OUTPUT i) : SV_TARGET0{
+float4 PS_VELOCITY_AVG_1(const VS_OUTPUT i) : SV_TARGET0 {
 	float2 uv = projPosToUV(i.projPos);
-	float3 avgVelocity = 0;
+	float2 avgVelocity = 0;
 	[unroll]
-	for (uint j = 0; j < 4; ++j) {
-		float3 vw = VelocityAvg.SampleLevel(gTrilinearClampSampler, uv + (offset[j] - 0.5) * (1.0 / sourceSize), 0).xyz;
-		avgVelocity += float3((vw.xy - ZERO_OFFSET) * vw.z, vw.z);
-	}
-	return float4(avgVelocity.xy / avgVelocity.z + ZERO_OFFSET, avgVelocity.z * 0.25, 1);
+	for (uint j = 0; j < 4; ++j) 
+		avgVelocity += VelocityAvg.SampleLevel(gTrilinearClampSampler, uv + (offset[j] - 0.5) * (1.0 / sourceSize), 0).xy;
+	
+	return float4(avgVelocity * 0.25, 0, 1);
 }
 
-float4 PS_VELOCITY_AVG_2(const VS_OUTPUT i) : SV_TARGET0{
+float4 PS_VELOCITY_AVG_2(const VS_OUTPUT i) : SV_TARGET0 {
 	float2 va = normalize( calcVelocityAvg(projPosToUV(i.projPos)) );
-	return float4(va * ZERO_OFFSET + ZERO_OFFSET, 0, 1);
+	return float4(va, 0, 1);
 }
 
 float4 PS_COPY(const VS_OUTPUT i, uint sidx: SV_SampleIndex): SV_TARGET0 {
@@ -322,9 +299,9 @@ technique10 MotionBlur {
 	pass MotionBlurMediumMSAA		PASS_BODY_STENCIL(PS_MOTION_BLUR(20), 1)
 	pass MotionBlurMediumMSAAEdges	PASS_BODY_STENCIL(PS_MOTION_BLUR_MSAA(20), 0)
 
-	pass MotionBlurHigh				PASS_BODY(PS_MOTION_BLUR(40))
-	pass MotionBlurHighMSAA			PASS_BODY_STENCIL(PS_MOTION_BLUR(40), 1)
-	pass MotionBlurHighMSAAEdges	PASS_BODY_STENCIL(PS_MOTION_BLUR_MSAA(40), 0)
+	pass MotionBlurHigh				PASS_BODY(PS_MOTION_BLUR(50))
+	pass MotionBlurHighMSAA			PASS_BODY_STENCIL(PS_MOTION_BLUR(50), 1)
+	pass MotionBlurHighMSAAEdges	PASS_BODY_STENCIL(PS_MOTION_BLUR_MSAA(50), 0)
 
 	pass VelocityMax0				PASS_BODY(PS_VELOCITY_MAX_0())
 	pass VelocityMax1				PASS_BODY(PS_VELOCITY_MAX_1())

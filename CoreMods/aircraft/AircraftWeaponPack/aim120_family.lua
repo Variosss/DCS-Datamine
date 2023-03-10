@@ -215,7 +215,8 @@ local AIM_120B =
 	},
 
 	autopilot = {
-		delay				= 1.0,
+		delay				= 0.2,
+		cmd_delay 			= 0.8,
 		op_time				= 80,
 		Tf					= 0.1,
 		Knav				= 4.0,
@@ -378,9 +379,9 @@ local AIM_120C =
 					0.5,
 				},
 	
-		controller = {
+	controller = {
 		boost_start = 0,
-		march_start = 0.5,
+		march_start = 0.4,
 	},
 
 	boost = {
@@ -478,7 +479,8 @@ local AIM_120C =
 	},
 
 	autopilot = {
-		delay				= 1.0,
+		delay				= 0.2,
+		cmd_delay			= 0.8,
 		op_time				= 100,
 		Tf					= 0.1,
 		Knav				= 4.0,

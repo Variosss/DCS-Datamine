@@ -13,11 +13,6 @@ lessons =
         ["description"] = _("In this lesson, we will briefly overview the A-10C II."),
     },
 	{
-        ["file"] = "A-10C II-Training-HOTAS-Fundamentals.miz",
-        ["name"] = _("HOTAS Fundamentals"),
-        ["description"] = _("In this lesson, we will overview essential cockpit control concepts."),
-    },
-	{
         ["file"] = "A-10C II-Training-Start-Up.miz",
         ["name"] = _("Aircraft Start-up"),
         ["description"] = _("In this lesson, we will practice starting the A-10C II from the ramp."),
@@ -27,6 +22,11 @@ lessons =
         ["name"] = _("Takeoff and Basic Handling"),
         ["description"] = _("In this lesson, we will practice taking off in the A-10C II and some basic maneuvers at medium altitude."),
     },
+	{
+        ["file"] = "A-10C II-Training-HOTAS-Fundamentals.miz",
+        ["name"] = _("HOTAS Fundamentals"),
+        ["description"] = _("In this lesson, we will overview essential cockpit control concepts."),
+    },  
 	{
         ["file"] = "A-10C II-Training-Navigation.miz",
         ["name"] = _("Navigation"),
@@ -74,7 +74,7 @@ lessons =
     },
 	{
         ["file"] = "A-10C II-Training-APKWS.miz",
-        ["name"] = _("APKWS"),
+        ["name"] = _("APKWS Munitions"),
         ["description"] = _("In this lesson you will become familiar with how to employ the APKWS as well as gain an understanding of its strengths and weaknesses."),
     },
 	{

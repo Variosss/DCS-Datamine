@@ -1,0 +1,68 @@
+TerrainModelDeclaration =
+{
+	default =
+	{
+		load =
+		{
+			false;
+			false;
+		};
+		drawonmap = true;
+		vis = 1;
+		visShadows = 1;
+		life = 500;
+		fire =
+		{
+		  0;
+		  1;
+		};
+		classname = "lStandartStructure";
+		positioning = "ONLYHEIGTH"; 
+		DestructAnimatttion = "NO"; 
+	};
+	{
+		file = "!proxySeasideObjects";
+		desrt = "";
+	};
+
+	{
+		file = "beach_lounger";
+		life = 10;
+		fire =
+		{
+			10;
+			1;
+		};
+		username = "";
+		maxSlope = 10;
+		desrt = "small_crash";
+	};
+
+	{
+		file = "beach_lounger_set";
+		desrt = "";
+	};
+
+	{
+		file = "pier_01";
+		life = -1;
+		fire =
+		{
+			20;
+			1;
+		};
+		desrt = "pier_01";
+	};
+
+	{
+		file = "pier_02";
+		life = -1;
+		fire =
+		{
+			20;
+			1;
+		};
+		desrt = "pier_02";
+	};
+
+};

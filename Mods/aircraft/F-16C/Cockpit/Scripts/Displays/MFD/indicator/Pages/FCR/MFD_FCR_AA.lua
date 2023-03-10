@@ -100,6 +100,12 @@ addStrokeLine("trackedTgt_jammingLine2", 15, {0,  5}, -120, trackedTgtJammingPH.
 addStrokeLine("trackedTgt_jammingLine3", 15, {0, -5},  120, trackedTgtJammingPH.name, {{"MFD_SetColor_Yellow"}})
 addStrokeLine("trackedTgt_jammingLine4", 15, {0, -5}, -120, trackedTgtJammingPH.name, {{"MFD_SetColor_Yellow"}})
 
+-- tracked Target donor mark
+local trackedTgt_DonorMark_PH = addPlaceholder("trackedTgt_DonorMark_PH", nil, trackedTgtPlaceholder.name, {{"MFD_FCR_AA_TrackedTarget_DonorMark"}})
+for i = 0.0, 0.3, 0.15 do
+	addStrokeSymbol("trackedTgt_DonorMarkCircle_"..i, {"stroke_symbols_MFD", "air-track-circle-big"}, "FromSet", {0, 0}, trackedTgt_DonorMark_PH.name, {{"MFD_SetColor_Black"}}, i)
+end
+
 -- secondary tracked target
 local trackSearchTargetSize = 10
 local trackTankTargetSize = 12
@@ -128,6 +134,12 @@ addStrokeLine("SecondTrack_jammingLine1", 15, {0,  5},  120, FCR_SecondTrackJamm
 addStrokeLine("SecondTrack_jammingLine2", 15, {0,  5}, -120, FCR_SecondTrackJammingPH.name, {{"MFD_SetColor_Yellow"}})
 addStrokeLine("SecondTrack_jammingLine3", 15, {0, -5},  120, FCR_SecondTrackJammingPH.name, {{"MFD_SetColor_Yellow"}})
 addStrokeLine("SecondTrack_jammingLine4", 15, {0, -5}, -120, FCR_SecondTrackJammingPH.name, {{"MFD_SetColor_Yellow"}})
+
+-- Second Target donor mark
+local FCR_SecondTrack_DonorMark_PH = addPlaceholder("FCR_SecondTrack_DonorMark_PH", nil, trackedTgtPlaceholder.name, {{"MFD_FCR_SecondTrack_DonorMark"}})
+for i = 0.0, 0.3, 0.15 do
+	addStrokeSymbol("FCR_SecondTrack_DonorMarkCircle_"..i, {"stroke_symbols_MFD", "air-track-circle-big"}, "FromSet", {0, 0}, FCR_SecondTrack_DonorMark_PH.name, {{"MFD_SetColor_Black"}}, i)
+end
 
 -- TDC cursor
 local CursorRoot = addPlaceholder("Cursor_Root", {0, 0}, noParent, {{"FCR_TDC_position"}, {"MFD_SetColor_Group_2"}})

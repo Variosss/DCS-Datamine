@@ -100,8 +100,8 @@ elements["PTN_422"] = lever_2pos(_("FBW G-Limiter Switch"),										devices.ENG
 elements["PTN_423"] = push_button(_("FBW Reset Button"),										devices.CDVE,	cmds.Button_423, 423)
 
 -- HSI
-elements["PTN_340"] = lever_mon_off_mon("HSI VAD Selector",										devices.NAVINST,	cmds.Button_340, 340)
-elements["PTN_341"] = knob_limited(_("HSI Mode Selector Switch"),								devices.NAVINST,	cmds.Button_341, 341, 7, {speed=5})
+elements["PTN_340"] = lever_mon_off_mon("HSI VAD Selector",										devices.IDN,	cmds.Button_340, 340)
+elements["PTN_341"] = knob_limited(_("HSI Mode Selector Switch"),								devices.IDN,	cmds.Button_341, 341, 7, {speed=5})
 
 
 -- PELLES, SOURIES AND BECS
@@ -287,7 +287,22 @@ elements["PTN_656"] = canopy_lever(_("Canopy Lock/Neutral/Lower Lever"),								
 elements["PTN_655"] = canopy_lever(_("Canopy ajar stick L (un)fold / R auto"),							devices.CANOPY,		cmds.Button_655, 655)
 elements["PTN_907"] = canopy_handle(_("Canopy Handle (L drag(manual) / R click(auto)"),					devices.CANOPY,		cmds.Button_907, 907, 4.0, cmds.CanopyMoveAuto)
 elements["PTN_908"] = canopy_handle(_("Canopy Handle L drag(manual) / R click(auto)"),					devices.CANOPY,		cmds.Button_908, 908, 4.0, cmds.CanopyMoveAuto)
-elements["PTN_909"] = default_2_position_tumb(_("Mirror Rendering Toggle"),								devices.CANOPY,		cmds.Button_909, 909)
+
+
+elements["PTN_909"] = {
+		class 				= {class_type.BTN, class_type.LEV },
+		hint				= "Mirror toggle/orient", 
+		device				= devices.CANOPY,
+		action				= { cmds.Button_909, cmds.Button_9 },
+		stop_action			= {nil, nil }, 
+		arg 				= {909, 9 },
+		arg_value 			= {1,0,0},
+		arg_lim 			= {{0, 1}, {0, 1}},
+		gain 				= {0,-0.4},
+		use_OBB 			= true,
+	}
+	
+	
 
 -- Miscelaneous Right Panel
 elements["PTN_657"]	= multiposition_switch_spring(_("Emergency Hydraulic Pump Switch"),					devices.ENGINE,		cmds.Button_657, cmds.Button_657, 657)
@@ -321,12 +336,14 @@ elements["PTN_706"] = potentiometer(_("UHF Radio Volume Knob"),											device
 elements["PTN_707"] = potentiometer(_("V/UHF Radio Volume Knob"),										devices.SYSLIGHTS,	cmds.Button_707, 707, 0.8, 0.5, true, false, {0.0, 1.0})
 
 -- Flight Instruments
-elements["PTN_348"] = push_button("G-Meter Reset",														devices.FLIGHTINST,	cmds.Button_348, 348)
-elements["PTN_309"] = default_axis_cycle(_("Barometric Pressure Calibration"),							devices.FLIGHTINST,	cmds.Button_309, 309, 0.5, 0.05, true)
-elements["PTN_665"] = lever_3pos(_("Backup ADI Switch"),												devices.FLIGHTINST,	cmds.Button_665, 665)
-elements["PTN_314"]	= lever_2pos(_("ADI Cage Lever"),													devices.FLIGHTINST,	cmds.Button_314, 314)
-elements["PTN_315"] = lever_2pos(_("ADI Backlight Switch"),												devices.FLIGHTINST,	cmds.Button_315, 315)
-elements["PTN_325"] = auxadi_knob(_("Backup ADI Cage/Pitch Adjust Knob - Pull and turn to uncage"),		devices.FLIGHTINST, cmds.Button_325, cmds.Button_328, 325, 328)
+elements["PTN_348"] = push_button("G-Meter Reset",														devices.FLI,	cmds.Button_348, 348)
+elements["PTN_309"] = default_axis_cycle(_("Barometric Pressure Calibration"),							devices.FLI,	cmds.Button_309, 309, 0.5, 0.05, true)
+
+elements["PTN_315"] = lever_2pos(_("ADI Backlight Switch"),												devices.ADI,	cmds.Button_315, 315)
+
+elements["PTN_665"] = lever_3pos(_("Backup ADI Switch"),												devices.AUXADI,	cmds.Button_665, 665)
+elements["PTN_314"]	= lever_2pos(_("ADI Cage Lever"),													devices.AUXADI,	cmds.Button_314, 314)
+elements["PTN_325"] = auxadi_knob(_("Backup ADI Cage/Pitch Adjust Knob - Pull and turn to uncage"),		devices.AUXADI, cmds.Button_325, cmds.Button_328, 325, 328)
 	
     
 -- ECS Panel

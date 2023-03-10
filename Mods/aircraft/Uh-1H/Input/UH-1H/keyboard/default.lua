@@ -575,10 +575,6 @@ keyCommands = {
 {combos = {{key = '2'}}, down = iCommandViewCockpitChangeSeat, value_down = 2, name = _('Set Operator Seat'), category = _('View Cockpit')},
 {combos = {{key = '3'}}, down = iCommandViewCockpitChangeSeat, value_down = 3, name = _('Set Left Gunner Seat'), category = _('View Cockpit')},
 {combos = {{key = '4'}}, down = iCommandViewCockpitChangeSeat, value_down = 4, name = _('Set Right Gunner Seat'), category = _('View Cockpit')},
---{combos = {{key = '1'}}, down = device_commands.Button_1, cockpit_device_id = devices.HEAD_WRAPPER, value_down = 0.0, name = _('Set Pilot Seat'), category = _('View Cockpit')},
---{combos = {{key = '2'}}, down = device_commands.Button_2, cockpit_device_id = devices.HEAD_WRAPPER, value_down = 0.0, name = _('Set Operator Seat'), category = _('View Cockpit')},
---{combos = {{key = '4'}}, down = device_commands.Button_3, cockpit_device_id = devices.HEAD_WRAPPER, value_down = 0.0, name = _('Set Right Gunner Seat'), category = _('View Cockpit')},
---{combos = {{key = '3'}}, down = device_commands.Button_4, cockpit_device_id = devices.HEAD_WRAPPER, value_down = 0.0, name = _('Set Left Gunner Seat'), category = _('View Cockpit')},
 {combos = {{key = 'T', reformers = {'RShift'}}},	down = device_commands.Button_5, cockpit_device_id = devices.HEAD_WRAPPER, value_down = 0.0,	name = _('Uncoupled Aiming On/Off'),		category = _('View Cockpit')},
 {combos = {{key = 'Y', reformers = {'RShift'}}},	down = device_commands.Button_45, cockpit_device_id = devices.WEAPON_SYS, value_down = 0.0,	name = _('Absolute/Relative Axis Aiming'),		category = _('View Cockpit')},
 

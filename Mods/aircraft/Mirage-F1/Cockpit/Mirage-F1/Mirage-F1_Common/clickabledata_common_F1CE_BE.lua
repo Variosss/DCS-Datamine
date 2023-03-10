@@ -3,6 +3,13 @@
 local gettext = require("i_18n")
 _ = gettext.translate
 
+----------------------------------------------------------------
+-- Warning lights
+
+-- Master failure warning light
+elements["PNT-920"] = default_button(_("Master failure warning light"), 0, devices.MAIN, devCmds.Cmd265, 920)
+-- Fire warning light (ENG/AB) + Horn
+elements["PNT-940"] = default_button(_("Fire warning light (ENG/AB) + Horn"), 0, devices.MAIN, devCmds.Cmd277, 940)
 
 ----------------------------------------------------------------
 -- Navigation indicator

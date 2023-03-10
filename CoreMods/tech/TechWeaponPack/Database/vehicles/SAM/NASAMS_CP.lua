@@ -26,7 +26,7 @@ GT.visual.agony_explosion_size = 0.2;
 
 --IR.coefs[1..4] ={heat collect coef, heat loose coef}
 --IR.coefs[5] = {0.3 - initial value for FLIR param C0 for dead model, 0.3/1800 - param C0 decrease speed (0.3 in 1800 secs)}
-GT.visual.IR = { coeffs = {GT_t.IR_COEFFS_ENGINE_APC, GT_t.IR_COEFFS_WHEELS_Car, {0.0, 0.000}, IR_COEFFS_BODY, {0.15, 0.15/550}}}
+GT.visual.IR = { coeffs = {GT_t.IR_COEFFS_ENGINE_APC, GT_t.IR_COEFFS_WHEELS_Car, {0.0, 0.000}, GT_t.IR_COEFFS_BODY, {0.15, 0.15/550}}}
 
 GT.sensor = {};
 GT.sensor.max_range_finding_target = 50000;

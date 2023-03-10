@@ -105,3 +105,10 @@ function show(b)
 
     window:setVisible(b)    
 end
+
+function isVisible()
+	if window then
+		return window:getVisible()
+	end
+	return false
+end

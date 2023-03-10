@@ -27,6 +27,21 @@ use_mipfilter(Label_OSB1)
 addOSB_Box(1, {Label_OSB1_symbol, Label_OSB1})
 add_osb_static_hint(1, _("Return to STAT Page 1"))
 
+Label_OSB2							= CreateElement "ceStringPoly"
+Label_OSB2.name						= "LABEL_OSB2"
+Label_OSB2.material					= font_MFCD
+Label_OSB2.UseBackground			= false
+Label_OSB2.BackgroundMaterial		= MFCD_SOLID_BLACK
+Label_OSB2.alignment				= "CenterTop"
+Label_OSB2.value					= "NEXT"
+Label_OSB2.stringdefs				= txt_labels_font
+shift_button_pos(Label_OSB2, 2, 0)
+Add(Label_OSB2)
+use_mipfilter(Label_OSB2)
+
+addOSB_Box(2, {Label_OSB2_symbol, Label_OSB2})
+add_osb_static_hint(2, _("Go to STAT Page 3"))
+
 local PAGE2_LRU_NUM_OFFSET = LRU_1760_9
 
 local function getTblIdx(In)

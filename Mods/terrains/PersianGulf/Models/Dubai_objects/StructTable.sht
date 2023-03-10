@@ -1,0 +1,365 @@
+TerrainModelDeclaration =
+{
+	default =
+	{
+		load =
+		{
+			false;
+			false;
+		};
+		drawonmap = true;
+		vis = 1;
+		visShadows = 1;
+		life = 500;
+		fire =
+		{
+		  0;
+		  1;
+		};
+		classname = "lStandartStructure";
+		positioning = "ONLYHEIGTH"; 
+		DestructAnimatttion = "NO"; 
+	};
+	{
+		file = "!proxyDubai_objects";
+		desrt = "";
+	};
+
+	{
+		file = "23_Marina";
+		life = 5000;
+		fire =
+		{
+			60;
+			2;
+		};
+		maxSlope = 15;
+		desrt = "Nevad_Vegas_industrial_06_crash";
+	};
+
+	{
+		file = "Al_Kazim_towers";
+		life = 6000;
+		fire =
+		{
+			40;
+			1;
+		};
+		maxSlope = 5;
+		desrt = "Al_Kazim_towers_crash";
+	};
+
+	{
+		file = "Almas_tower";
+		life = 5000;
+		fire =
+		{
+			40;
+			1;
+		};
+		maxSlope = 5;
+		desrt = "Dubai_round_crash";
+	};
+
+	{
+		file = "Ascott_Park_Place";
+		life = 5000;
+		fire =
+		{
+			30;
+			1;
+		};
+		maxSlope = 5;
+		desrt = "marriot_crash";
+	};
+
+	{
+		file = "Burj_Al_Arab";
+		life = 5000;
+		fire =
+		{
+			40;
+			1;
+		};
+		maxSlope = 10;
+		desrt = "Burj_Al_Arab_crash";
+	};
+
+	{
+		file = "Burj_Khalifa";
+		life = 7000;
+		fire =
+		{
+			60;
+			2;
+		};
+		maxSlope = 10;
+		desrt = "Dubai_round_crash";
+	};
+
+	{
+		file = "churchill_executive";
+		life = 4000;
+		fire =
+		{
+			40;
+			5;
+		};
+		maxSlope = 10;
+		desrt = "Nevad_Vegas_industrial_06_crash";
+	};
+
+	{
+		file = "churchill_residency";
+		life = 5000;
+		fire =
+		{
+			50;
+			2;
+		};
+		maxSlope = 10;
+		desrt = "Nevada_cottage_07_crash";
+	};
+
+	{
+		file = "Dubai_Internat_Airport_KDP";
+		life = 2000;
+		fire =
+		{
+			30;
+			1;
+		};
+		username = "";
+		maxSlope = 5;
+		desrt = "Dubai_Internat_Airport_KDP_crash";
+	};
+
+	{
+		file = "Dubai_Internat_Airport_Term";
+		life = 6000;
+		fire =
+		{
+			50;
+			2;
+		};
+		username = "";
+		maxSlope = 5;
+		desrt = "Dubai_Inter_Term_crash";
+	};
+
+	{
+		file = "Dubai_Internat_Airport_Term_02";
+		life = 6000;
+		fire =
+		{
+			40;
+			2;
+		};
+		username = "";
+		maxSlope = 5;
+		desrt = "Dubai_Inter_Term_02_crash";
+	};
+
+	{
+		file = "Dubai_metro_station";
+		life = -1;
+		fire =
+		{
+			40;
+			1;
+		};
+		desrt = "Dubai_metro_station";
+	};
+
+	{
+		file = "DWC_airport_terminal";
+		life = 5000;
+		fire =
+		{
+			50;
+			1;
+		};
+		maxSlope = 5;
+		desrt = "DWC_airport_terminal_crash";
+	};
+
+	{
+		file = "DWC_kdp";
+		life = 700;
+		fire =
+		{
+			50;
+			1;
+		};
+		maxSlope = 10;
+		desrt = "hungar_037_crash";
+	};
+
+	{
+		file = "Emirates_towers";
+		life = 4000;
+		fire =
+		{
+			60;
+			2;
+		};
+		maxSlope = 5;
+		desrt = "Emirates_towers_crash";
+	};
+
+	{
+		file = "Etisalat_tower_2";
+		life = 4000;
+		fire =
+		{
+			60;
+			2;
+		};
+		maxSlope = 10;
+		desrt = "hungar_037_crash";
+	};
+
+	{
+		file = "Fujairah_Airport_KDP";
+		life = 500;
+		fire =
+		{
+			60;
+			1;
+		};
+		maxSlope = 15;
+		desrt = "Nevada_Vegas_House_11_crash";
+	};
+
+	{
+		file = "Fujairah_Airport_Terminal";
+		life = 2000;
+		fire =
+		{
+			60;
+			1;
+		};
+		maxSlope = 5;
+		desrt = "Azad_university_crash";
+	};
+
+	{
+		file = "HHHR_Tower";
+		life = 5000;
+		fire =
+		{
+			60;
+			3;
+		};
+		maxSlope = 10;
+		desrt = "Nevad_Vegas_industrial_06_crash";
+	};
+
+	{
+		file = "Khasab_Airport_Term";
+		life = 1000;
+		fire =
+		{
+			120;
+			2;
+		};
+		maxSlope = 5;
+		desrt = "hungar_023_crash";
+	};
+
+	{
+		file = "Marriot_marquis";
+		life = 6000;
+		fire =
+		{
+			60;
+			3;
+		};
+		maxSlope = 10;
+		desrt = "marriot_crash";
+	};
+
+	{
+		file = "Monarch_Hotel_Dubai";
+		life = 4000;
+		fire =
+		{
+			60;
+			2;
+		};
+		maxSlope = 10;
+		desrt = "Monarch_Hotel_Dubai_crash";
+	};
+
+	{
+		file = "princess_tower";
+		life = 5000;
+		fire =
+		{
+			40;
+			2;
+		};
+		maxSlope = 10;
+		desrt = "Nevad_Vegas_industrial_06_crash";
+	};
+
+	{
+		file = "Rose_Rotana_Hotel";
+		life = 5000;
+		fire =
+		{
+			50;
+			2;
+		};
+		desrt = "Nevad_Vegas_industrial_06_crash";
+	};
+
+	{
+		file = "Sharjah_Internat_Airport_Term";
+		life = 5000;
+		fire =
+		{
+			50;
+			2;
+		};
+		maxSlope = 5;
+		desrt = "Sharjah_crash";
+	};
+
+	{
+		file = "The_Index";
+		life = 4000;
+		fire =
+		{
+			40;
+			2;
+		};
+		maxSlope = 10;
+		desrt = "hungar_037_crash";
+	};
+
+	{
+		file = "Tiffany_tower";
+		life = 3000;
+		fire =
+		{
+			50;
+			2;
+		};
+		maxSlope = 10;
+		desrt = "Nevad_Vegas_industrial_06_crash";
+	};
+
+	{
+		file = "UBora_towers";
+		life = 4000;
+		fire =
+		{
+			50;
+			2;
+		};
+		maxSlope = 5;
+		desrt = "Ubora_towers_crash";
+	};
+
+};

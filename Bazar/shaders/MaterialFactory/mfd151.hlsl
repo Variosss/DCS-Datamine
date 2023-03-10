@@ -59,14 +59,14 @@ VertexOutput vsSimpleMFD(const VertexInput i){
 
 float4 source(const VertexOutput i)
 {
-	float4 pixelColor = MFDMap1.Sample(WrapLinearSampler, i.vTexCoord0);
+	float4 pixelColor = MFDMap1.SampleBias(WrapLinearSampler, i.vTexCoord0, gMipLevelBias);
 	pixelColor.rgb    = pow(pixelColor.rgb, gamma);
 	return pixelColor;
 }
 
 float4 applyMask(const VertexOutput i, float4 value)
 {
-	float4 maskColor = MFDMap2.Sample(WrapPointSampler, i.vTexCoord0);
+	float4 maskColor = MFDMap2.SampleBias(WrapPointSampler, i.vTexCoord0, gMipLevelBias);
 	float3 val = value.rgb * maskColor.rgb * brightnessMax;
 	return float4(val,value.a * maskColor.a);
 }
@@ -93,7 +93,8 @@ float4 ps_COLORED_b_1(const VertexOutput i) : SV_TARGET0 {
 
 float4 ps_BW_b(const VertexOutput i): SV_TARGET0 {
 	float4 pixelColor = source(i);
-	return BC(i, dot(pixelColor.rgb, pc0) + pc1);
+//	return BC(i, dot(pixelColor.rgb, pc0) + pc1);
+	return BC(i, float4(dot(pixelColor.rgb, pc0).xxx + pc1.xyz, pixelColor.w) );
 }
 
 float4 ps_BW_b_1(const VertexOutput i) : SV_TARGET0 {

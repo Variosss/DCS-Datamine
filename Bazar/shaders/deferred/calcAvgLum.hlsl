@@ -18,6 +18,8 @@
 Texture2D<float2>			InputTexture;
 RWTexture2D<float2>			OutputTexture;
 
+RWTexture2D<float>	feedbackExposure;
+
 static const float expOffset = 1.0;
 
 uint	viewportIdx;
@@ -139,12 +141,20 @@ void CS_Lum(uint3 GroupID: SV_GroupID, uint3 GroupThreadID: SV_GroupThreadID, ui
 	}
 }
 
+
+#define AF_AVERAGE_LUMINACE			1
+#define AF_INSTANT_ADAPTATION		2
+#define AF_USE_AMBIENT_CUBE			4
+#define AF_USE_FEEDBACK_EXPOSURE	8
+
+#define MID_GRAY 0.18
+
 // Slowly adjusts the scene luminance based on the previous scene luminance
 [numthreads(1, 1, 1)]
-void CS_Adaptation(uint3 GroupID : SV_GroupID, uint3 GroupThreadID : SV_GroupThreadID, uniform bool bAverageLuminance, uniform bool bInstantAdaptation, uniform bool useAmbientCube) {
+void CS_Adaptation(uint3 GroupID : SV_GroupID, uint3 GroupThreadID : SV_GroupThreadID, uniform uint Flags) {
 
 	float2 m = 0;
-	if(bAverageLuminance)
+	if(Flags & AF_AVERAGE_LUMINACE)
 	{
 		uint count = 0;
 		[loop]
@@ -167,22 +177,23 @@ void CS_Adaptation(uint3 GroupID : SV_GroupID, uint3 GroupThreadID : SV_GroupThr
 
 	float currentLum = m.x + m.y*dcSigmaKey;
 
-	if (useAmbientCube) {
+	if (Flags & AF_USE_AMBIENT_CUBE) {
 		float3 lum = AmbientAverageHorizon * 0.7 + 0.3 * AmbientTop;
 		float averageCubeLum = max(lum.r, max(lum.g, lum.b));
 		currentLum = currentLum * (1 - cubeAverageLumAmount) + cubeAverageLumAmount * averageCubeLum;
 	}
 
-	if(bInstantAdaptation)
-	{
-		luminanceResult[LUMINANCE_AVERAGE].x = currentLum;
-	}
-	else
-	{
+	if(!(Flags & AF_INSTANT_ADAPTATION))	{
 		// Adapt the luminance using Pattanaik's technique
 		float lastLum = max(0, luminanceResult[LUMINANCE_AVERAGE].x);
-		luminanceResult[LUMINANCE_AVERAGE].x = lastLum + (currentLum - lastLum) * (1 - exp(-timeDelta * dcTau));
+		currentLum = lastLum + (currentLum - lastLum) * (1 - exp(-timeDelta * dcTau));
 	}
+
+	if (Flags & AF_USE_FEEDBACK_EXPOSURE) {
+		feedbackExposure[uint2(0, 0)] = MID_GRAY / (currentLum * (1.0 - MID_GRAY));
+	}
+
+	luminanceResult[LUMINANCE_AVERAGE].x = currentLum;
 }
 
 #endif

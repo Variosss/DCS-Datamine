@@ -1,5 +1,5 @@
-dofile("Mods\\aircraft\\A-10C_2\\Cockpit\\Scripts\\ARC_210\\elements_defs.lua")
-dofile("Mods\\aircraft\\A-10C_2\\Cockpit\\Scripts\\ARC_210\\hex_and_bits.lua")
+dofile(LockOn_Options.common_script_path.."elements_defs.lua")
+dofile(LockOn_Options.common_script_path.."hex_and_bits.lua")
 
 --dofile(LockOn_Options.script_path.."MFCD\\indicator\\MFCD_hints.lua")
 
@@ -9,6 +9,7 @@ SetScale(FOV)
 
 max_pixels_count_x = 128
 max_pixels_count_y = 80
+channel_offset = 20
 
 --x_size    = GetScale() * 0.95 -- half_width
 x_size    = GetScale() -- half_width
@@ -16,6 +17,7 @@ new_scale = 2 * x_size / max_pixels_count_x
 
 fov_scale = 1 --GetScale()
 SetCustomScale(new_scale)
+
 
 local font_scale = new_scale * 1.8
 local font_horiz_spacing = 0.0
@@ -55,17 +57,17 @@ function use_mipfilter(object)
 	end
 end
 
-function AddLowerLeftCornerOrigin()
+function AddLowerLeftCornerOriginArc210()
 	   lower_left_corner		  = CreateElement  "ceSimple"
-	   lower_left_corner.name     = "lower_left_corner"
+	   lower_left_corner.name     = "lower_left_corner_arc210"
 	   lower_left_corner.init_pos = {-max_pixels_count_x/2, -max_pixels_count_y/2}
 	   Add(lower_left_corner)
 end 
 
-AddLowerLeftCornerOrigin()
+AddLowerLeftCornerOriginArc210()
 
 function SetLowerLeftCornerOrigin(object)
-	object.parent_element =  "lower_left_corner"
+	object.parent_element =  "lower_left_corner_arc210"
 end
 
 function AddBackground(material)
@@ -110,6 +112,51 @@ function AddTextLabel(text, align, x, y, font, material, controllers)
 	
 	return txt_label
 end
+
+
+function AddTempSettingLabel(formats)
+	local txt_label					= CreateElement "ceStringPoly"
+	txt_label.name					= create_guid_string()
+	txt_label.material				= "font_ARC210_small"
+	txt_label.alignment				= "LeftCenter"
+	txt_label.formats				= formats
+	txt_label.init_pos				= {0, max_pixels_count_y/2}
+	txt_label.stringdefs			= predefined_fonts[1]
+	txt_label.controllers			= {{"temp_setting_label"}}
+	SetLowerLeftCornerOrigin(txt_label)
+	Add(txt_label)
+	use_mipfilter(txt_label)
+	
+	return txt_label
+end
+
+hint_name = {}
+for osb = 1, 3 do
+	local osb_description = string.format("%d",osb)
+	hint_name["LINE_"..osb_description] = "BTN-ARC210-LINE"..osb_description
+end
+
+function add_static_hint(line, hint_text)
+local  hint			   =  CreateElement  "ceHint"
+	   hint.value	   =  hint_text
+	   hint.hint_name  =  hint_name[string.format("LINE_%d", line)]	
+	   Add(hint)
+return hint
+end
+
+function add_osb_hint_controllers(line, hint_text, controllers)
+    local hint = add_static_hint(line, hint_text)
+	hint.controllers = controllers
+	return hint
+end
+
+function add_osb_hint_format_controllers(line, formats, controllers)
+    local hint = add_static_hint(line, nil)
+	hint.formats	= formats
+	hint.controllers = controllers
+	return hint
+end
+
 
 --[[
 dofile(LockOn_Options.script_path.."MFCD\\indicator\\MFCD_fonts.lua")

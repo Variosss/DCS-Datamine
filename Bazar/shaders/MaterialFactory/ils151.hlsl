@@ -38,7 +38,7 @@ vsOutput_ils vsSimpleILS(in const vsIn i, uniform bool bTexArray)
 
 float4 psTex(in vsOutput_ils i, uniform bool bTexArray, uniform bool sRGB): SV_TARGET0
 {
-	float4 tex = bTexArray? TextureArray.Sample(WrapLinearSampler, i.vTexCoord0.xyz) : TextureMap.Sample(WrapLinearSampler, i.vTexCoord0.xy);
+	float4 tex = bTexArray? TextureArray.SampleBias(WrapLinearSampler, i.vTexCoord0.xyz, gMipLevelBias) : TextureMap.SampleBias(WrapLinearSampler, i.vTexCoord0.xy, gMipLevelBias);
 	//clip(tex.a-0.02);
 
 	if (sRGB)
@@ -54,7 +54,7 @@ float4 psTex(in vsOutput_ils i, uniform bool bTexArray, uniform bool sRGB): SV_T
 //always array
 float4 psUITTF(in vsOutput_ils i): SV_TARGET0
 {
-	float4 tex 		= TextureArray.Sample(WrapLinearSampler, i.vTexCoord0.xyz).rrrg;
+	float4 tex 		= TextureArray.SampleBias(WrapLinearSampler, i.vTexCoord0.xyz, gMipLevelBias).rrrg;
 	// alpha separate
 	float3 color 	= (pow(abs(tex.rgb), Power) * BlendColor.rgb) / pow(0.99, Power);
 	float alpha 	=  tex.a * BlendColor.a;
@@ -64,7 +64,7 @@ float4 psUITTF(in vsOutput_ils i): SV_TARGET0
 
 float4 psTexA8(in vsOutput_ils i, uniform bool bTexArray): SV_TARGET0
 {
-	float tex = bTexArray? TextureArray.Sample(WrapLinearSampler, i.vTexCoord0.xyz).a : TextureMap.Sample(WrapLinearSampler, i.vTexCoord0.xy).a;
+	float tex = bTexArray? TextureArray.SampleBias(WrapLinearSampler, i.vTexCoord0.xyz, gMipLevelBias).a : TextureMap.SampleBias(WrapLinearSampler, i.vTexCoord0.xy, gMipLevelBias).a;
 	clip(tex-0.02);
 
 	// alpha separate
@@ -174,7 +174,7 @@ float4 psLine(vsOutput_line i, uniform bool bSpecular): SV_TARGET0
 #ifdef ANALYTIC_ALPHA
 	float alpha = max(0, 1.0 - distance(i.vTexCoord0.xy, 0.5) * 2.0);
 #else
-	float alpha = TextureMap.Sample(ClampLinearSampler, i.vTexCoord0.xy).a;
+	float alpha = TextureMap.SampleBias(ClampLinearSampler, i.vTexCoord0.xy, gMipLevelBias).a;
 #endif
 	return float4(BlendColor.rgb*BlendColor.rgb + screenSpecular, alpha * BlendColor.a * opacity);
 }

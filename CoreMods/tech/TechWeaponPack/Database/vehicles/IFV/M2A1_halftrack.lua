@@ -22,7 +22,7 @@ GT.visual.agony_explosion_size = 5;
 GT.visual.dust_pos = {1.5, 0.1, -GT.chassis.Z_gear_1}
 GT.visual.dirt_pos = {-1.5, 0.1, -GT.chassis.Z_gear_2}
 
-GT.visual.IR = { coeffs = {GT_t.IR_COEFFS_ENGINE_APC, GT_t.IR_COEFFS_ROLLERS_IFV, GT_t.IR_COEFFS_HMG, IR_COEFFS_BODY, {0.3, 0.3/1500}}}
+GT.visual.IR = { coeffs = {GT_t.IR_COEFFS_ENGINE_APC, GT_t.IR_COEFFS_ROLLERS_IFV, GT_t.IR_COEFFS_HMG, GT_t.IR_COEFFS_BODY, {0.3, 0.3/1500}}}
 
 GT.toggle_alarm_state_interval = 1.3;
 

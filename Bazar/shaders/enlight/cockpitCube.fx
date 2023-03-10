@@ -77,7 +77,8 @@ float3 SimplestShadeCockpit(float3 sunColor, float3 diffuseColor, float3 normal,
 
 float3 ShadeCockpitCube(float3 baseColor, float3 normal, float3 pos, uniform bool recursiveIBL) {
 #if USE_CASCADE_SHADOW
-	float cascadeShadow = SampleShadowMap(pos, normal, ShadowFirstMap, false, false, 1, false);
+	float NoL = max(0, dot(normal, gSunDir));
+	float cascadeShadow = SampleShadowMap(pos, NoL, ShadowFirstMap, false, 1, false);
 #else
 	float cascadeShadow = 1;
 #endif

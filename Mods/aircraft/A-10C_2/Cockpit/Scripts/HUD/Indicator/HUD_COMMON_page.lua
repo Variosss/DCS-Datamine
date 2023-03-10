@@ -1388,3 +1388,18 @@ IFF_alert_mode4_sym = AddHUDTextElement_Pos_Val("IFF_alert_mode4_sym",
 				  "RightCenter",
 				  "MODE 4",1)				  
 				  
+AddHUDTextElement_Pos_Formats("ARC_210_Radio_1_Status",
+				  {{"ARC_210_Radio_1_Status"}}, 
+				  {-122, 66.5, 0.0},
+				  nil,
+				  HUD_DEFAULT_LEVEL,
+				  "LeftCenter",
+				  {"*", "%c%d/", "%d", "%s", "%dE", "C", "CO", "CD", "COD", "SCAN", "TEST", "NC", "%dM"})
+
+AddHUDTextElement_Pos_Val("ARC_210_Radio_2_Status",
+				  {{"ARC_210_Radio_2_Status"}}, 
+				  {-122, 54, 0.0},
+				  nil,
+				  HUD_DEFAULT_LEVEL,
+				  "LeftCenter",
+				  " V2/NC")

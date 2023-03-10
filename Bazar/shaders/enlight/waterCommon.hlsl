@@ -213,7 +213,7 @@ float3 waterShading(float3 pos, float4 viewDir, float3 normal, float3 color, flo
 	float3 R = normal * NoV * 2 - viewDir.xyz;
 	float3 centerToRay = dot(L, R) * R - L;
 	float3 closestPoint = L + centerToRay * saturate(sunAngularRadius / length(centerToRay));
-	L = normalize(closestPoint);
+	L /= length(closestPoint) + 1e-9;
 
 	float3 H = normalize(L + viewDir.xyz);
 	float NoH = saturate(dot(normal, H));

@@ -6,6 +6,7 @@
 
 #include "common/AmbientCube.hlsl"
 #include "common/samplers11.hlsl"
+#include "common/stencil.hlsl"
 #if (PRECIPITATION_TILED_LIGHTING)
 #include "common/lighting.hlsl"
 #endif
@@ -18,8 +19,8 @@
 #endif
 
 
-Texture2D particleTex;//карта нормалей + прозрачность
-Texture2D mistTex;//карта нормалей + прозрачность
+Texture2D particleTex;
+Texture2D mistTex;
 
 StructuredBuffer<Vert>	 particles;
 StructuredBuffer<float3> cellInstance;
@@ -46,12 +47,12 @@ struct VS_OUTPUT
 	float4 pos: POSITION0;
 	uint   vertId: TEXCOORD0;
 };
-//дымка
+
 struct PS_INPUT
 {
 	float4	pos:	SV_POSITION0;
-	float4  params: TEXCOORD0; //UV, рассто€ние от цента сферы до партикла
-	float4	wPos:	TEXCOORD2; //мирова€ позици€ вершины с учетом ориджина
+	float4  params: TEXCOORD0;
+	float4	wPos:	TEXCOORD2;
 #ifdef SOFT_MIST
 	float4	projPos:TEXCOORD3;
 #endif
@@ -60,16 +61,17 @@ struct PS_INPUT
 	float3x3 billboardToWorld : TEXCOORD5;
 #endif
 };
-//осадки
+
 struct PS_INPUT_RAIN
 {
 	float4	pos: SV_POSITION0;
-	float4  params: TEXCOORD0; //UV, рассто€ние от цента сферы до партикла
-	nointerpolation float4 wPos: TEXCOORD1; //мирова€ позици€ вершины с учетом ориджина
+	float4  params: TEXCOORD0; //UV
+	nointerpolation float4 wPos: TEXCOORD1;
 	nointerpolation float3 sunDirM: NORMAL0;
 #if (PRECIPITATION_TILED_LIGHTING)
 	float3x3 billboardToWorld : TEXCOORD2;
 #endif
+	//nointerpolation float randomSeed : TEXCOORD5;
 };
 
 float SampleCloudsDensity(float3 pos, bool bSnow = false)
@@ -150,8 +152,8 @@ VertexShader	vsComp     = CompileShader(vs_5_0, vsCell());
 VertexShader	vsMistComp = CompileShader(vs_5_0, vsCellMist());
 // GeometryShader	gsMistComp = CompileShader(gs_5_0, gsMist());
 
-#define PASS_BODY(vs, gs, ps) { SetComputeShader(NULL); SetVertexShader(vs); SetGeometryShader(gs); SetPixelShader(CompileShader(ps_4_0, ps)); \
-	SetDepthStencilState(enableDepthBufferNoWrite, 0); \
+#define PASS_BODY(vs, gs, ps) { SetComputeShader(NULL); SetVertexShader(vs); SetGeometryShader(gs); SetPixelShader(CompileShader(ps_5_0, ps)); \
+	ENABLE_DEPTH_BUFFER_NO_WRITE_CLIP_COCKPIT; \
 	SetBlendState(enableAlphaBlend, float4(0.0f, 0.0f, 0.0f, 0.0f), 0xFFFFFFFF); \
 	SetRasterizerState(cullNone);}
 

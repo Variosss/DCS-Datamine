@@ -1,0 +1,796 @@
+TerrainModelDeclaration =
+{
+	default =
+	{
+		load =
+		{
+			false;
+			false;
+		};
+		drawonmap = true;
+		vis = 1;
+		visShadows = 1;
+		life = 500;
+		fire =
+		{
+		  0;
+		  1;
+		};
+		classname = "lStandartStructure";
+		positioning = "ONLYHEIGTH"; 
+		DestructAnimatttion = "NO"; 
+	};
+	{
+		file = "afg_city_house_01";
+		life = 150;
+		fire =
+		{
+			60;
+			2;
+		};
+		maxSlope = 15;
+		desrt = "tire_shop_crash";
+	};
+
+	{
+		file = "afg_city_house_02";
+		life = 150;
+		fire =
+		{
+			60;
+			2;
+		};
+		maxSlope = 15;
+		desrt = "tire_shop_crash";
+	};
+
+	{
+		file = "afg_city_house_03";
+		life = 100;
+		fire =
+		{
+			40;
+			2;
+		};
+		maxSlope = 15;
+		desrt = "afg_city_house_crash";
+	};
+
+	{
+		file = "afg_city_house_04";
+		life = 100;
+		fire =
+		{
+			40;
+			2;
+		};
+		maxSlope = 15;
+		desrt = "afg_city_house_crash";
+	};
+
+	{
+		file = "afg_city_house_05";
+		life = 100;
+		fire =
+		{
+			40;
+			2;
+		};
+		maxSlope = 15;
+		desrt = "afg_city_house_crash";
+	};
+
+	{
+		file = "afghan_house_01";
+		life = 120;
+		fire =
+		{
+			60;
+			2;
+		};
+		maxSlope = 15;
+		desrt = "afghan_house_01_crash";
+	};
+
+	{
+		file = "afghan_house_02";
+		life = 100;
+		fire =
+		{
+			40;
+			2;
+		};
+		maxSlope = 15;
+		desrt = "afghan_house_02_crash";
+	};
+
+	{
+		file = "afghan_house_03";
+		life = 100;
+		fire =
+		{
+			40;
+			2;
+		};
+		maxSlope = 17;
+		desrt = "afghan_house_03_crash";
+	};
+
+	{
+		file = "afghan_house_04";
+		life = 150;
+		fire =
+		{
+			60;
+			2;
+		};
+		maxSlope = 10;
+		desrt = "afghan_house_04_crash";
+	};
+
+	{
+		file = "afghan_house_05";
+		life = 120;
+		fire =
+		{
+			50;
+			2;
+		};
+		maxSlope = 15;
+		desrt = "afghan_house_05_crash";
+	};
+
+	{
+		file = "afghan_house_06";
+		life = 80;
+		fire =
+		{
+			50;
+			2;
+		};
+		maxSlope = 20;
+		desrt = "road_sign_crash";
+	};
+
+	{
+		file = "afghan_house_07";
+		life = 120;
+		fire =
+		{
+			60;
+			2;
+		};
+		maxSlope = 15;
+		desrt = "container_crash";
+	};
+
+	{
+		file = "afghan_house_08";
+		life = 150;
+		fire =
+		{
+			60;
+			2;
+		};
+		maxSlope = 15;
+		desrt = "afghan_house_08_crash";
+	};
+
+	{
+		file = "afghan_house_09";
+		life = 150;
+		fire =
+		{
+			60;
+			2;
+		};
+		maxSlope = 10;
+		desrt = "Nevada_Vegas_House_07_crash";
+	};
+
+	{
+		file = "afghan_house_10";
+		life = 150;
+		fire =
+		{
+			60;
+			2;
+		};
+		maxSlope = 15;
+		desrt = "container_crash";
+	};
+
+	{
+		file = "afghan_house_11";
+		life = 100;
+		fire =
+		{
+			40;
+			2;
+		};
+		maxSlope = 20;
+		desrt = "road_sign_crash";
+	};
+
+	{
+		file = "afghan_house_12";
+		life = 80;
+		fire =
+		{
+			60;
+			2;
+		};
+		maxSlope = 20;
+		desrt = "road_sign_crash";
+	};
+
+	{
+		file = "afghan_house_13";
+		life = 80;
+		fire =
+		{
+			50;
+			2;
+		};
+		maxSlope = 20;
+		desrt = "road_sign_crash";
+	};
+
+	{
+		file = "afghan_house_14";
+		life = 60;
+		fire =
+		{
+			40;
+			2;
+		};
+		maxSlope = 20;
+		desrt = "board_crash";
+	};
+
+	{
+		file = "afghan_house_15";
+		life = 80;
+		fire =
+		{
+			60;
+			2;
+		};
+		maxSlope = 15;
+		desrt = "container_crash";
+	};
+
+	{
+		file = "Arabian_block_building_01";
+		life = 400;
+		fire =
+		{
+			60;
+			2;
+		};
+		maxSlope = 15;
+		desrt = "Cottage_01_crash";
+	};
+
+	{
+		file = "Arabian_block_building_02";
+		life = 900;
+		fire =
+		{
+			100;
+			2;
+		};
+		maxSlope = 10;
+		desrt = "hungar_022_crash";
+	};
+
+	{
+		file = "Arabian_block_building_03";
+		life = 150;
+		fire =
+		{
+			60;
+			2;
+		};
+		maxSlope = 15;
+		desrt = "container_crash";
+	};
+
+	{
+		file = "Arabian_block_building_04";
+		life = 150;
+		fire =
+		{
+			60;
+			2;
+		};
+		maxSlope = 15;
+		desrt = "container_crash";
+	};
+
+	{
+		file = "Arabian_block_building_05";
+		life = 150;
+		fire =
+		{
+			60;
+			2;
+		};
+		maxSlope = 15;
+		desrt = "road_ramp_crash";
+	};
+
+	{
+		file = "Arabian_block_building_06";
+		life = 150;
+		fire =
+		{
+			60;
+			1;
+		};
+		maxSlope = 15;
+		desrt = "road_sign_crash";
+	};
+
+	{
+		file = "Arabian_block_building_07";
+		life = 100;
+		fire =
+		{
+			60;
+			2;
+		};
+		maxSlope = 15;
+		desrt = "Arabian_block_building_07_crash";
+	};
+
+	{
+		file = "Arabian_block_building_08";
+		life = 150;
+		fire =
+		{
+			40;
+			2;
+		};
+		maxSlope = 15;
+		desrt = "container_crash";
+	};
+
+	{
+		file = "Arabian_block_building_09";
+		life = 300;
+		fire =
+		{
+			60;
+			1;
+		};
+		maxSlope = 15;
+		desrt = "crash_model_03";
+	};
+
+	{
+		file = "Arabian_block_building_10";
+		life = 150;
+		fire =
+		{
+			60;
+			2;
+		};
+		maxSlope = 15;
+		desrt = "Cottage_01_crash";
+	};
+
+	{
+		file = "Arabian_block_building_11";
+		life = 250;
+		fire =
+		{
+			100;
+			2;
+		};
+		maxSlope = 15;
+		desrt = "arabian_block_building_crash";
+	};
+
+	{
+		file = "Arabian_block_building_12";
+		life = 250;
+		fire =
+		{
+			100;
+			1;
+		};
+		maxSlope = 15;
+		desrt = "arabian_block_building_crash";
+	};
+
+	{
+		file = "Arabian_block_building_13";
+		life = 300;
+		fire =
+		{
+			100;
+			2;
+		};
+		maxSlope = 10;
+		desrt = "Arabian_block_building_13_crash";
+	};
+
+	{
+		file = "Arabian_block_building_14";
+		life = 800;
+		fire =
+		{
+			100;
+			2;
+		};
+		maxSlope = 10;
+		desrt = "house_01_crash";
+	};
+
+	{
+		file = "Arabian_block_building_15";
+		life = 800;
+		fire =
+		{
+			100;
+			1;
+		};
+		maxSlope = 10;
+		desrt = "Arabian_block_building_15_crash";
+	};
+
+	{
+		file = "Arabian_block_building_16";
+		life = 400;
+		fire =
+		{
+			100;
+			2;
+		};
+		maxSlope = 10;
+		desrt = "Arabian_block_building_13_crash";
+	};
+
+	{
+		file = "Arabian_block_building_17";
+		life = 250;
+		fire =
+		{
+			100;
+			2;
+		};
+		maxSlope = 15;
+		desrt = "Cottage_01_crash";
+	};
+
+	{
+		file = "Arabian_block_building_18";
+		life = 800;
+		fire =
+		{
+			120;
+			2;
+		};
+		maxSlope = 15;
+		desrt = "arabian_block_building_crash";
+	};
+
+	{
+		file = "Arabian_block_building_19";
+		life = 300;
+		fire =
+		{
+			100;
+			2;
+		};
+		maxSlope = 15;
+		desrt = "airbase_checkpoint_01_crash";
+	};
+
+	{
+		file = "Arabian_block_building_20";
+		life = 600;
+		fire =
+		{
+			120;
+			2;
+		};
+		maxSlope = 10;
+		desrt = "Arabian_block_building_20_crash";
+	};
+
+	{
+		file = "Arabian_block_building_21";
+		life = 500;
+		fire =
+		{
+			100;
+			2;
+		};
+		maxSlope = 10;
+		desrt = "Arabian_block_building_21_crash";
+	};
+
+	{
+		file = "baku_bb_af_center";
+		life = 3000;
+		fire =
+		{
+			120;
+			2;
+		};
+		maxSlope = 10;
+		desrt = "Constr_build_02_crash";
+	};
+
+	{
+		file = "baku_bb_isiq_residential_complex";
+		life = 3000;
+		fire =
+		{
+			120;
+			2;
+		};
+		maxSlope = 10;
+		desrt = "baku_bb_isiq_residential_complex_crash";
+	};
+
+	{
+		file = "baku_bb_residential_building";
+		life = 4000;
+		fire =
+		{
+			120;
+			2;
+		};
+		maxSlope = 5;
+		desrt = "baku_bb_residential_building_crash";
+	};
+
+	{
+		file = "baku_chirag_plaza";
+		life = 3000;
+		fire =
+		{
+			120;
+			2;
+		};
+		maxSlope = 10;
+		desrt = "baku_chirag_plaza_crash";
+	};
+
+	{
+		file = "baku_kempinsky";
+		life = 3000;
+		fire =
+		{
+			120;
+			2;
+		};
+		maxSlope = 5;
+		desrt = "hungar_037_R_crash";
+	};
+
+	{
+		file = "baku_kempinsky_2";
+		life = 3000;
+		fire =
+		{
+			120;
+			2;
+		};
+		maxSlope = 5;
+		desrt = "baku_kempinsky_2_crash";
+	};
+
+	{
+		file = "baku_landmark_tower";
+		life = 4000;
+		fire =
+		{
+			120;
+			2;
+		};
+		maxSlope = 5;
+		desrt = "Nevad_Vegas_industrial_06_crash";
+	};
+
+	{
+		file = "baku_near_bridge_gagarinsokogo";
+		life = 3000;
+		fire =
+		{
+			120;
+			2;
+		};
+		maxSlope = 5;
+		desrt = "Nevad_Vegas_industrial_06_crash";
+	};
+
+	{
+		file = "Cottage_01";
+		life = 150;
+		fire =
+		{
+			60;
+			2;
+		};
+		maxSlope = 10;
+		desrt = "Cottage_01_crash";
+	};
+
+	{
+		file = "Cottage_02";
+		life = 150;
+		fire =
+		{
+			60;
+			2;
+		};
+		maxSlope = 10;
+		desrt = "Cottage_01_crash";
+	};
+
+	{
+		file = "cottage_03";
+		life = 150;
+		fire =
+		{
+			60;
+			2;
+		};
+		maxSlope = 10;
+		desrt = "Cottage_01_crash";
+	};
+
+	{
+		file = "cottage_04";
+		life = 150;
+		fire =
+		{
+			60;
+			2;
+		};
+		maxSlope = 10;
+		desrt = "Cottage_01_crash";
+	};
+
+	{
+		file = "dubai_block_house_01";
+		life = 4000;
+		fire =
+		{
+			120;
+			2;
+		};
+		maxSlope = 10;
+		desrt = "baku_chirag_plaza_crash";
+	};
+
+	{
+		file = "dubai_block_house_02";
+		life = 3500;
+		fire =
+		{
+			120;
+			2;
+		};
+		username = "";
+		maxSlope = 15;
+		desrt = "Nevada_cottage_07_crash";
+	};
+
+	{
+		file = "dubai_block_house_03";
+		life = 4000;
+		fire =
+		{
+			120;
+			2;
+		};
+		username = "";
+		maxSlope = 15;
+		desrt = "Nevada_cottage_07_crash";
+	};
+
+	{
+		file = "dubai_block_house_04";
+		life = 4000;
+		fire =
+		{
+			120;
+			2;
+		};
+		username = "";
+		maxSlope = 15;
+		desrt = "Nevada_cottage_07_crash";
+	};
+
+	{
+		file = "dubai_block_house_05";
+		life = 4000;
+		fire =
+		{
+			120;
+			2;
+		};
+		username = "";
+		maxSlope = 10;
+		desrt = "Nevad_Vegas_industrial_06_crash";
+	};
+
+	{
+		file = "Nevada_Vegas_House_02";
+		life = 120;
+		fire =
+		{
+			60;
+			2;
+		};
+		maxSlope = 15;
+		desrt = "Cottage_01_crash";
+	};
+
+	{
+		file = "Nevada_Vegas_House_04";
+		life = 180;
+		fire =
+		{
+			60;
+			2;
+		};
+		maxSlope = 15;
+		desrt = "Cottage_01_crash";
+	};
+
+	{
+		file = "Nevada_Vegas_House_06";
+		life = 200;
+		fire =
+		{
+			60;
+			2;
+		};
+		maxSlope = 10;
+		desrt = "Cottage_01_crash";
+	};
+
+	{
+		file = "Nevada_Vegas_House_07";
+		life = 180;
+		fire =
+		{
+			60;
+			2;
+		};
+		maxSlope = 10;
+		desrt = "Nevada_Vegas_House_07_crash";
+	};
+
+	{
+		file = "suburban_cottage_01";
+		life = 300;
+		fire =
+		{
+			60;
+			2;
+		};
+		username = "";
+		maxSlope = 10;
+		desrt = "Cottage_01_r_crash";
+	};
+
+	{
+		file = "Town_House_01";
+		life = 200;
+		fire =
+		{
+			60;
+			2;
+		};
+		maxSlope = 10;
+		desrt = "Cottage_01_crash";
+	};
+
+};

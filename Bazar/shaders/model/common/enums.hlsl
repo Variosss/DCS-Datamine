@@ -21,5 +21,6 @@ static const int F_GLASS_FOGGING		= 1 << 4;
 #define	BM_ADDITIVE				3
 #define	BM_DECAL				4
 #define	BM_DECAL_DEFERRED		5
+#define	BM_SHADOWED_TRANSPARENT	6
 
 #endif

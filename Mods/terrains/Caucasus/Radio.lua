@@ -13,28 +13,28 @@ radio = {
 		role = {"ground", "tower", "approach"};
 		callsign = {{["common"] = {_("Anapa"), "Anapa"}}};
 		frequency = {[HF] = {MODULATIONTYPE_AM, 3750000.000000}, [UHF] = {MODULATIONTYPE_AM, 250000000.000000}, [VHF_HI] = {MODULATIONTYPE_AM, 121000000.000000}, [VHF_LOW] = {MODULATIONTYPE_AM, 38400000.000000}};
-		sceneObjects = {'t:136022192'};
+		sceneObjects = {'t:135989394'};
 	};
 	{
 		radioId = 'airfield22_0';
 		role = {"ground", "tower", "approach"};
 		callsign = {{["nato"] = {_("Batumi"), "Batumi"}}, {["ussr"] = {_("Druzhinnik"), "Druzhinnik"}}};
 		frequency = {[HF] = {MODULATIONTYPE_AM, 4250000.000000}, [UHF] = {MODULATIONTYPE_AM, 260000000.000000}, [VHF_HI] = {MODULATIONTYPE_AM, 131000000.000000}, [VHF_LOW] = {MODULATIONTYPE_AM, 40400000.000000}};
-		sceneObjects = {'t:54694615'};
+		sceneObjects = {'t:54694612'};
 	};
 	{
 		radioId = 'airfield32_0';
 		role = {"ground", "tower", "approach"};
 		callsign = {{["nato"] = {_("Beslan"), "Beslan"}}, {["ussr"] = {_("Stavok"), "Stavok"}}};
 		frequency = {[HF] = {MODULATIONTYPE_AM, 4750000.000000}, [UHF] = {MODULATIONTYPE_AM, 270000000.000000}, [VHF_HI] = {MODULATIONTYPE_AM, 141000000.000000}, [VHF_LOW] = {MODULATIONTYPE_AM, 42400000.000000}};
-		sceneObjects = {'t:95522046'};
+		sceneObjects = {'t:95522062'};
 	};
 	{
 		radioId = 'airfield17_0';
 		role = {"ground", "tower", "approach"};
 		callsign = {{["nato"] = {_("Gelendzhik"), "Gelendzhik"}}, {["ussr"] = {_("Maslenka"), "Maslenka"}}};
 		frequency = {[HF] = {MODULATIONTYPE_AM, 4000000.000000}, [UHF] = {MODULATIONTYPE_AM, 255000000.000000}, [VHF_HI] = {MODULATIONTYPE_AM, 126000000.000000}, [VHF_LOW] = {MODULATIONTYPE_AM, 39400000.000000}};
-		sceneObjects = {'t:118525997'};
+		sceneObjects = {'t:118493230'};
 	};
 	{
 		radioId = 'airfield21_0';
@@ -48,111 +48,111 @@ radio = {
 		role = {"ground", "tower", "approach"};
 		callsign = {{["common"] = {_("Kobuleti"), "Kobuleti"}}};
 		frequency = {[HF] = {MODULATIONTYPE_AM, 4350000.000000}, [UHF] = {MODULATIONTYPE_AM, 262000000.000000}, [VHF_HI] = {MODULATIONTYPE_AM, 133000000.000000}, [VHF_LOW] = {MODULATIONTYPE_AM, 40800000.000000}};
-		sceneObjects = {'t:59082457'};
+		sceneObjects = {'t:59082454'};
 	};
 	{
 		radioId = 'airfield13_0';
 		role = {"ground", "tower", "approach"};
 		callsign = {{["nato"] = {_("Krasnodar"), "Krasnodar"}}, {["ussr"] = {_("Volokno"), "Volokno"}}};
 		frequency = {[HF] = {MODULATIONTYPE_AM, 3800000.000000}, [UHF] = {MODULATIONTYPE_AM, 251000000.000000}, [VHF_HI] = {MODULATIONTYPE_AM, 122000000.000000}, [VHF_LOW] = {MODULATIONTYPE_AM, 38600000.000000}};
-		sceneObjects = {'t:141067227'};
+		sceneObjects = {'t:141034464'};
 	};
 	{
 		radioId = 'airfield19_0';
 		role = {"ground", "tower", "approach"};
 		callsign = {{["nato"] = {_("Pashkovsky"), "Pashkovsky"}}, {["ussr"] = {_("Krasnodar"), "Krasnodar"}}};
 		frequency = {[HF] = {MODULATIONTYPE_AM, 4100000.000000}, [UHF] = {MODULATIONTYPE_AM, 257000000.000000}, [VHF_HI] = {MODULATIONTYPE_AM, 128000000.000000}, [VHF_LOW] = {MODULATIONTYPE_AM, 39800000.000000}};
-		sceneObjects = {'t:137592844'};
+		sceneObjects = {'t:137560076'};
 	};
 	{
 		radioId = 'airfield15_0';
 		role = {"ground", "tower", "approach"};
 		callsign = {{["nato"] = {_("Krymsk"), "Krymsk"}}, {["ussr"] = {_("Taymyr"), "Taymyr"}}};
 		frequency = {[HF] = {MODULATIONTYPE_AM, 3900000.000000}, [UHF] = {MODULATIONTYPE_AM, 253000000.000000}, [VHF_HI] = {MODULATIONTYPE_AM, 124000000.000000}, [VHF_LOW] = {MODULATIONTYPE_AM, 39000000.000000}};
-		sceneObjects = {'t:136814292'};
+		sceneObjects = {'t:136781472'};
 	};
 	{
 		radioId = 'airfield25_0';
 		role = {"ground", "tower", "approach"};
 		callsign = {{["common"] = {_("Kutaisi"), "Kutaisi"}}};
 		frequency = {[HF] = {MODULATIONTYPE_AM, 4400000.000000}, [UHF] = {MODULATIONTYPE_AM, 263000000.000000}, [VHF_HI] = {MODULATIONTYPE_AM, 134000000.000000}, [VHF_LOW] = {MODULATIONTYPE_AM, 41000000.000000}};
-		sceneObjects = {'t:68355409'};
+		sceneObjects = {'t:68355424'};
 	};
 	{
 		radioId = 'airfield29_0';
 		role = {"ground", "tower", "approach"};
 		callsign = {{["common"] = {_("Lochini"), "Lochini"}}};
 		frequency = {[HF] = {MODULATIONTYPE_AM, 4600000.000000}, [UHF] = {MODULATIONTYPE_AM, 267000000.000000}, [VHF_HI] = {MODULATIONTYPE_AM, 138000000.000000}, [VHF_LOW] = {MODULATIONTYPE_AM, 41800000.000000}};
-		sceneObjects = {'t:14615718'};
+		sceneObjects = {'t:14615720'};
 	};
 	{
 		radioId = 'airfield16_0';
 		role = {"ground", "tower", "approach"};
 		callsign = {{["nato"] = {_("Khanskaya"), "Khanskaya"}}, {["ussr"] = {_("Sokrat"), "Sokrat"}}};
 		frequency = {[HF] = {MODULATIONTYPE_AM, 3950000.000000}, [UHF] = {MODULATIONTYPE_AM, 254000000.000000}, [VHF_HI] = {MODULATIONTYPE_AM, 125000000.000000}, [VHF_LOW] = {MODULATIONTYPE_AM, 39200000.000000}};
-		sceneObjects = {'t:127571804'};
+		sceneObjects = {'t:127539028'};
 	};
 	{
 		radioId = 'airfield26_0';
 		role = {"ground", "tower", "approach"};
 		callsign = {{["common"] = {_("Minvody"), "Minvody"}}};
 		frequency = {[HF] = {MODULATIONTYPE_AM, 4450000.000000}, [UHF] = {MODULATIONTYPE_AM, 264000000.000000}, [VHF_HI] = {MODULATIONTYPE_AM, 135000000.000000}, [VHF_LOW] = {MODULATIONTYPE_AM, 41200000.000000}};
-		sceneObjects = {'t:119998387'};
+		sceneObjects = {'t:119965619'};
 	};
 	{
 		radioId = 'airfield28_0';
 		role = {"ground", "tower", "approach"};
 		callsign = {{["nato"] = {_("Mozdok"), "Mozdok"}}, {["ussr"] = {_("Assistent"), "Assistent"}}};
 		frequency = {[HF] = {MODULATIONTYPE_AM, 4550000.000000}, [UHF] = {MODULATIONTYPE_AM, 266000000.000000}, [VHF_HI] = {MODULATIONTYPE_AM, 137000000.000000}, [VHF_LOW] = {MODULATIONTYPE_AM, 41600000.000000}};
-		sceneObjects = {'t:110430036'};
+		sceneObjects = {'t:110397269'};
 	};
 	{
 		radioId = 'airfield27_0';
 		role = {"ground", "tower", "approach"};
 		callsign = {{["common"] = {_("Nalchik"), "Nalchik"}}};
 		frequency = {[HF] = {MODULATIONTYPE_AM, 4500000.000000}, [UHF] = {MODULATIONTYPE_AM, 265000000.000000}, [VHF_HI] = {MODULATIONTYPE_AM, 136000000.000000}, [VHF_LOW] = {MODULATIONTYPE_AM, 41400000.000000}};
-		sceneObjects = {'t:100045189'};
+		sceneObjects = {'t:100012425'};
 	};
 	{
 		radioId = 'airfield14_0';
 		role = {"ground", "tower", "approach"};
 		callsign = {{["nato"] = {_("Novorossiysk"), "Novorossiysk"}}, {["ussr"] = {_("Myskhako"), "Myskhako"}}};
 		frequency = {[HF] = {MODULATIONTYPE_AM, 3850000.000000}, [UHF] = {MODULATIONTYPE_AM, 252000000.000000}, [VHF_HI] = {MODULATIONTYPE_AM, 123000000.000000}, [VHF_LOW] = {MODULATIONTYPE_AM, 38800000.000000}};
-		sceneObjects = {'t:123869211'};
+		sceneObjects = {'t:123836438'};
 	};
 	{
 		radioId = 'airfield23_0';
 		role = {"ground", "tower", "approach"};
 		callsign = {{["nato"] = {_("Kolkhi"), "Kolkhi"}}, {["ussr"] = {_("Tzokot"), "Tzokot"}}};
 		frequency = {[HF] = {MODULATIONTYPE_AM, 4300000.000000}, [UHF] = {MODULATIONTYPE_AM, 261000000.000000}, [VHF_HI] = {MODULATIONTYPE_AM, 132000000.000000}, [VHF_LOW] = {MODULATIONTYPE_AM, 40600000.000000}};
-		sceneObjects = {'t:67406890'};
+		sceneObjects = {'t:67406892'};
 	};
 	{
 		radioId = 'airfield18_0';
 		role = {"ground", "tower", "approach"};
 		callsign = {{["common"] = {_("Sochi"), "Sochi"}}};
 		frequency = {[HF] = {MODULATIONTYPE_AM, 4050000.000000}, [UHF] = {MODULATIONTYPE_AM, 256000000.000000}, [VHF_HI] = {MODULATIONTYPE_AM, 127000000.000000}, [VHF_LOW] = {MODULATIONTYPE_AM, 39600000.000000}};
-		sceneObjects = {'t:91554927'};
+		sceneObjects = {'t:91554921'};
 	};
 	{
 		radioId = 'airfield20_0';
 		role = {"ground", "tower", "approach"};
 		callsign = {{["nato"] = {_("Sukhumi"), "Sukhumi"}}, {["ussr"] = {_("Uklad"), "Uklad"}}};
 		frequency = {[HF] = {MODULATIONTYPE_AM, 4150000.000000}, [UHF] = {MODULATIONTYPE_AM, 258000000.000000}, [VHF_HI] = {MODULATIONTYPE_AM, 129000000.000000}, [VHF_LOW] = {MODULATIONTYPE_AM, 40000000.000000}};
-		sceneObjects = {'t:23201191'};
+		sceneObjects = {'t:23201198'};
 	};
 	{
 		radioId = 'airfield30_0';
 		role = {"ground", "tower", "approach"};
 		callsign = {{["common"] = {_("Soganlug"), "Soganlug"}}};
 		frequency = {[HF] = {MODULATIONTYPE_AM, 4650000.000000}, [UHF] = {MODULATIONTYPE_AM, 268000000.000000}, [VHF_HI] = {MODULATIONTYPE_AM, 139000000.000000}, [VHF_LOW] = {MODULATIONTYPE_AM, 42000000.000000}};
-		sceneObjects = {'t:60361261'};
+		sceneObjects = {'t:60361260'};
 	};
 	{
 		radioId = 'airfield31_0';
 		role = {"ground", "tower", "approach"};
 		callsign = {{["common"] = {_("Vaziani"), "Vaziani"}}};
 		frequency = {[HF] = {MODULATIONTYPE_AM, 4700000.000000}, [UHF] = {MODULATIONTYPE_AM, 269000000.000000}, [VHF_HI] = {MODULATIONTYPE_AM, 140000000.000000}, [VHF_LOW] = {MODULATIONTYPE_AM, 42200000.000000}};
-		sceneObjects = {'t:58884600'};
+		sceneObjects = {'t:58884605'};
 	};
 }

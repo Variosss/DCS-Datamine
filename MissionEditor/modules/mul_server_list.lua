@@ -1248,6 +1248,10 @@ function show(b)
 		local w,h = sDCSMulti:calcSize()	
 		sVersion:setText(base.START_PARAMS.version)
 		sVersion:setPosition(w+50, 8)
+	else
+		if PasswordPanel.isVisible() then
+			PasswordPanel.show(false) 
+		end	
     end   
 
     window:setVisible(b)  

@@ -10,6 +10,8 @@ GT.visual = {}
 GT.visual.shape      = "093"
 GT.visual.shape_dstr = ""
 
+GT.IR_emission_coeff = 0.2
+
 GT.life              = 1500
 GT.mass              = 5.30e+006
 GT.max_velocity      = 14.9
@@ -25,6 +27,7 @@ GT.DeckLevel         = 3.0
 GT.X_nose            = 22
 GT.X_tail            = -45
 GT.Tail_Width        = 7.3
+GT.draft             = 8
 GT.Gamma_max         = 0.00
 GT.Om                = 0.02
 GT.speedup           = 0.4
@@ -32,20 +35,27 @@ GT.R_min             = 345.6
 GT.distFindObstacles = 568.4
 GT.RCS               = 4000
 
-GT.airWeaponDist     = 30000
-GT.airFindDist       = 10000
+GT.sensor = {
+    max_range_finding_target = 25000,
+    min_range_finding_target = 0,
+    max_alt_finding_target   = 5000,
+    min_alt_finding_target   = 0,
+    pos                      = {10.2, 17.0, 0.0}
+}
 
 GT.minPeriscopeDepth = 10.0
 GT.maxPeriscopeDepth = 15.0
+GT.periscopeHeight   = 16.0
 
 GT.animation_arguments = {
-    nav_lights       = 69, -- навигационные огни
+    alarm_state      = 18,
     radar1_rotation  = -1,
     radar2_rotation  = -1,
     radar3_rotation  = -1,
     flag_animation   = -1,
-    water_propeller  = 65,
     periscope        = 15,
+    water_propeller  = 65,
+    nav_lights       = 69, -- навигационные огни
 }
 
 --GT.propeller_omega_max = 120.0
@@ -61,9 +71,9 @@ local totalDuration_ = stop_rising_
 --GT.toggle_alarm_state_interval = totalDuration_
 --GT.toggle_alarm_state_interval = 5.0
 
-GT.animation_arguments.alarm_state_sequence =
-{
-    totalDuration = 5.0, --totalDuration_,
+--GT.animation_arguments.alarm_state_sequence =
+--{
+--    totalDuration = 5.0, --totalDuration_,
     --[[{ 3, {{startTime=0.0, endTime = start_diving_, startVal = 0.0, endVal = 0.0},
           {startTime=start_diving_, endTime = stop_diving_, startVal = 0.0, endVal = 1.0},
           {startTime=start_rising_, endTime = totalDuration_, startVal = 1.0, endVal = 1.0}}
@@ -85,11 +95,12 @@ GT.animation_arguments.alarm_state_sequence =
           {startTime=start_diving_, endTime = stop_diving_/3.0, startVal = 1.0, endVal = 0.0},
           {startTime=stop_diving_/3.0, endTime = totalDuration_, startVal = 0.0, endVal = 0.0}}
     },]]
-    {18, {{startTime=0.0, endTime = 1.0, startVal = 0.0, endVal = 0.0},
-          {startTime=1.0, endTime = 4.0, startVal = 0.0, endVal = 1.0},
-          {startTime=4.0, endTime = 5.0, startVal = 1.0, endVal = 1.0}}
-    },
-}
+--    {18, {{startTime=0.0, endTime = 1.0, startVal = 0.0, endVal = 0.0},
+--          {startTime=1.0, endTime = 4.0, startVal = 0.0, endVal = 1.0},
+--          {startTime=4.0, endTime = 5.0, startVal = 1.0, endVal = 1.0}}
+--    },
+--}
+
 -- {depth, fx_dx, fx_len, fx_width)
 --fx_dx - distance from stern to stern fx position
 --fx_len - distance from bow to stern fx
@@ -257,6 +268,9 @@ GT.Sensors =
         "052B SAM TR",
     }
 }
+
+GT.airWeaponDist  = 0
+GT.airFindDist    = 0
 
 GT.DetectionRange = GT.WS.maxTargetDetectionRange
 GT.ThreatRange    = GT.WS.maxTargetDetectionRange

@@ -110,7 +110,7 @@ GT.visual.agony_explosion_size = 15;
 
 --IR.coefs[1..4] ={heat collect coef, heat loose coef}
 --IR.coefs[5] = {0.3 - initial value for FLIR param C0 for dead model, 0.3/1800 - param C0 decrease speed (0.3 in 1800 secs)}
-GT.visual.IR = { coeffs = {GT_t.IR_COEFFS_ENGINE_APC, GT_t.IR_COEFFS_WHEELS_Truck, GT_t.IR_COEFFS_ATGM, IR_COEFFS_BODY, {0.3, 0.3/1500}}}
+GT.visual.IR = { coeffs = {GT_t.IR_COEFFS_ENGINE_APC, GT_t.IR_COEFFS_WHEELS_Truck, GT_t.IR_COEFFS_ATGM, GT_t.IR_COEFFS_BODY, {0.3, 0.3/1500}}}
 
 -- weapon systems
 GT.WS = {};

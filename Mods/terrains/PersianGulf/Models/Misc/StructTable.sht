@@ -1,0 +1,144 @@
+TerrainModelDeclaration =
+{
+	default =
+	{
+		load =
+		{
+			false;
+			false;
+		};
+		drawonmap = true;
+		vis = 1;
+		visShadows = 1;
+		life = 500;
+		fire =
+		{
+		  0;
+		  1;
+		};
+		classname = "lStandartStructure";
+		positioning = "ONLYHEIGTH"; 
+		DestructAnimatttion = "NO"; 
+	};
+	{
+		file = "big_stone";
+		desrt = "";
+	};
+
+	{
+		file = "brown_stone";
+		desrt = "";
+	};
+
+	{
+		file = "car_light";
+		desrt = "";
+	};
+
+	{
+		file = "gannet";
+		desrt = "";
+	};
+
+	{
+		file = "gray_stone";
+		desrt = "";
+	};
+
+	{
+		file = "halo_omni_blue_flash";
+		desrt = "";
+	};
+
+	{
+		file = "halo_omni_blue_flash_02";
+		desrt = "";
+	};
+
+	{
+		file = "halo_omni_red_flash";
+		desrt = "";
+	};
+
+	{
+		file = "halo_omni_red_flash_02";
+		desrt = "";
+	};
+
+	{
+		file = "Light_Point";
+		desrt = "";
+	};
+
+	{
+		file = "light_source";
+		desrt = "";
+	};
+
+	{
+		file = "light_source_spot";
+		desrt = "";
+	};
+
+	{
+		file = "light_source_spot_small_red";
+		desrt = "";
+	};
+
+	{
+		file = "mark_light_red";
+		desrt = "";
+	};
+
+	{
+		file = "mark_omni_white_flash_glow";
+		desrt = "";
+	};
+
+	{
+		file = "middle_stone";
+		desrt = "";
+	};
+
+	{
+		file = "small_stone";
+		desrt = "";
+	};
+
+	{
+		file = "table_red_gr";
+		desrt = "";
+	};
+
+	{
+		file = "table_yellow_gr";
+		desrt = "";
+	};
+
+	{
+		file = "traffic_light_spot_green";
+		desrt = "";
+	};
+
+	{
+		file = "traffic_light_spot_red";
+		desrt = "";
+	};
+
+	{
+		file = "traffic_light_spot_yellow";
+		desrt = "";
+	};
+
+	{
+		file = "wire";
+		life = 1;
+		fire =
+		{
+			0;
+			0;
+		};
+		desrt = "";
+	};
+
+};

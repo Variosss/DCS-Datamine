@@ -59,6 +59,9 @@ end
 local strobes_placeholder 			= addPlaceholder("strobes_placeholder", nil, {{"radar_AA_StrobePos", AA_azimuth_zone_half, AA_range_vel_zone_half}})
 
 local function addStrobe(strobe_kind)
+	--drawDbgGeometry = true
+	--drawDbgMarkers = true
+	
 	local name
 	local texParams
 	local line_shift
@@ -96,6 +99,8 @@ local function addStrobe(strobe_kind)
 		local strobe_subelem		= RdrAddLine("strobe_"..name.."_subelem_"..cnt, line_shift, strobeLength, texParams, nil, pos, {rot})
 		strobe_subelem.parent_element = strobe_placeholder.name
 	end
+	
+	--drawDbgGeometry = false
 end
 
 -- Search

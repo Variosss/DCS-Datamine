@@ -61,6 +61,7 @@ join_override(res.axisCommands,{
 {action = iCommandRightWheelBrake, name = _('Wheel Brake Right')},
 {action = iCommandWheelBrake, name = _('Wheel Brake both')},
 
+{action = device_commands.FLAPS_Lever_Axis, cockpit_device_id=devices.FLAPS, name = _('Flap Lever')},
 {action = device_commands.STICK_DLC_ManDec_Thumbwheel, cockpit_device_id=devices.HOTAS, name = _('DLC / Maneuver Flaps Retract')},
 
 {action = iCommandViewHorizontalAbs			, name = _('Absolute Camera Horizontal View')},
@@ -70,6 +71,21 @@ join_override(res.axisCommands,{
 {action = iCommandViewHorTransAbs 			, name = _('Absolute Horizontal Shift Camera View')},
 {action = iCommandViewVertTransAbs 			, name = _('Absolute Vertical Shift Camera View')},
 {action = iCommandViewLongitudeTransAbs 	, name = _('Absolute Longitude Shift Camera View')},
+
+{action = device_commands.HSD_Knob_Brightness_axis, cockpit_device_id=devices.HSD, name = _('HSD Brightness')},
+{action = device_commands.HSD_Knob_Heading_axis, cockpit_device_id=devices.HSD, name = _('HSD Selected Heading')},
+{action = device_commands.HSD_Knob_Course_axis, cockpit_device_id=devices.HSD, name = _('HSD Selected Course')},
+{action = device_commands.RADIO_ICS_Vol_Pilot_axis, cockpit_device_id=devices.ICS, name = _('ICS Volume Pilot')},
+{action = device_commands.RADIO_ICS_Vol_Sidewinder_axis, cockpit_device_id=devices.ICS, name = _('Sidewinder Volume')},
+{action = device_commands.RADIO_ICS_Vol_ALR67_Pilot_axis, cockpit_device_id=devices.ICS, name = _('ALR-67 Volume')},
+{action = device_commands.RADIO_VHF_VOL_PILOT_axis, cockpit_device_id=devices.ARC182, name = _('VHF/UHF ARC-182 Volume Pilot')},
+{action = device_commands.VDIG_HUD_bright_axis, cockpit_device_id=devices.HUD, name = _('HUD Brightness')},
+{action = device_commands.VDIG_HUD_trim_axis, cockpit_device_id=devices.HUD, name = _('HUD Trim')},
+{action = device_commands.VDIG_VSDI_bright_axis, cockpit_device_id=devices.VDI, name = _('VDI Screen Brightness')},
+{action = device_commands.VDIG_VDI_contrast_axis, cockpit_device_id=devices.VDI, name = _('VDI Screen Contrast')},
+{action = device_commands.VDIG_VSDI_trim_axis, cockpit_device_id=devices.VDI, name = _('VDI Trim')},
+{action = device_commands.TACAN_Knob_Vol_Pilot_axis, cockpit_device_id=devices.TACAN, name = _('TACAN Volume')},
+{action = device_commands.Emergency_Wingsweep_axis, cockpit_device_id=devices.WINGSWEEP, name = _('Emergency Wingsweep')},
 
 })
 

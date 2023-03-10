@@ -418,7 +418,7 @@ function refreshCampaigns()
             listModuls:setItemVisible(data.item)
             local campaignDir
             if data.dir then
-                campaignDir = i18n.getLocalizedDirName(data.dir)
+                campaignDir = data.dir
             end
             campaigns = {}
             campaignsByPath = {}
@@ -592,7 +592,7 @@ function fillModulesCombo()
 
 	local listItem = ListBoxItem.new(cdata.Mycampaigns)            
     listItem.dir = base.string.gsub(dirQuser, '\\', '/')
-    listItem.dirMulty = path.."/MultiLang"
+    listItem.dirMulty = path.."MultiLang"
     listItem.CLSID = "UserCLSID"
     listItem:setSkin(listBoxModulItemSkin)
     local SkinItem = listItem:getSkin()

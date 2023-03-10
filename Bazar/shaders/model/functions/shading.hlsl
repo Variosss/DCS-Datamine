@@ -1,7 +1,6 @@
 #ifndef MODEL_SHADING_HLSL
 #define MODEL_SHADING_HLSL
 
-#define USE_VELOCITY_MAP 1
 #include "deferred/GBuffer.hlsl"
 #include "deferred/shading.hlsl"
 #include "deferred/atmosphere.hlsl"

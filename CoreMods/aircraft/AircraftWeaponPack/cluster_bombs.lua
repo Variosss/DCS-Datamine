@@ -398,6 +398,7 @@ BLG_66 =
 	name			= "BLG66",
 	model			= "M2000C_BLG66",
 	user_name		= "BLG-66 Belouga AC",
+	display_name_short =_("BLG-66"),
 
 	scheme			= "bomb-cassette",
 	class_name		= "wAmmunition",
@@ -615,6 +616,7 @@ RBK_500U_BETAB_M =
 	user_name		= _("RBK-500U - 10 x BETAB-M, 500kg Bunker Buster CBU HE/Frag"),
 	scheme			= "bomb-cassette",
 	class_name		= "wAmmunition",
+	display_name_short = _("RBK-500U"),
 
 	fm =
 	{
@@ -799,6 +801,7 @@ RBK_250_275_AO_1SCH =
 	user_name		= _("RBK-250-275 - 150 x AO-1SCh, 250kg CBU HE/Frag"),
 	scheme			= "bomb-cassette",
 	class_name		= "wAmmunition",
+	display_name_short = _("RBK-250"),
 
 	fm =
 	{
@@ -980,6 +983,7 @@ RBK_500U_OAB_2_5RT =
 	user_name		= _("RBK-500U - 126 x OAB-2.5RT, 500kg CBU HE/Frag"),
 	scheme			= "bomb-cassette",
 	class_name		= "wAmmunition",
+	display_name_short = _("RBK-500U"),
 
 	fm =
 	{
@@ -1106,6 +1110,7 @@ CBU_99 =
 	user_name		= _("CBU-99 - 490lbs, 247 x HEAT Bomblets"),
 	scheme			= "bomb-cassette-2",
 	class_name		= "wAmmunition",
+	display_name_short =_("RBK-500U"),
 
 	warhead = predefined_warhead("ROCKEYE"),
 

@@ -64,6 +64,7 @@ float4 getSelfIllumination(const VS_OUTPUT input, in float diffuseAlpha)
 MaterialParams calcMaterialParams(VS_OUTPUT input, uint materialParamFlags)
 {
 	MaterialParams o;
+	o.aorms = 0;
 	o.pos = input.Pos.xyz / input.Pos.w;
 	o.toCamera = gCameraPos.xyz - o.pos;
 	float len = length(o.toCamera);
@@ -84,7 +85,7 @@ MaterialParams calcMaterialParams(VS_OUTPUT input, uint materialParamFlags)
 
 	if(materialParamFlags & MP_DIFFUSE){
 		o.diffuse = extractDiffuse(GET_DIFFUSE_UV(input));
-		o.decalMask = addDecal(o.diffuse, input, o.aorms.z);
+		o.decalMask = addDecal(input, o.diffuse, o.normal, o.aorms);
 		addDamage(input,o.camDistance,o.diffuse,o.normal, o.aorms);
 	}else{
 		o.decalMask = 1.0;
@@ -101,7 +102,7 @@ MaterialParams calcMaterialParams(VS_OUTPUT input, uint materialParamFlags)
 
 	if(materialParamFlags & MP_DIFFUSE){
 		o.diffuse = extractDiffuse(GET_DIFFUSE_UV(input));
-		o.decalMask = addDecal(o.diffuse, input, o.aorms.z);
+		o.decalMask = addDecal(input, o.diffuse, o.normal, o.aorms);
 		addDamage(input,o.camDistance,o.diffuse,o.normal, o.aorms);
 	}else{
 		o.decalMask = 1.0;

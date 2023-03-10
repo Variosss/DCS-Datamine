@@ -77,7 +77,7 @@ BlendState enableDecalBlend
 	#define BLEND_STATE		SetBlendState(enableAlphaToCoverage, float4(0.0f, 0.0f, 0.0f, 0.0f), 0xFFFFFFFF)
 	#define DEPTH_STATE		ENABLE_DEPTH_BUFFER
 	#define DEPTH_STATE_COCKPIT	ENABLE_DEPTH_BUFFER_COCKPIT
-#elif BLEND_MODE == BM_TRANSPARENT
+#elif BLEND_MODE == BM_TRANSPARENT || BLEND_MODE == BM_SHADOWED_TRANSPARENT
 	#define BLEND_STATE		ENABLE_ALPHA_BLEND
 	#define DEPTH_STATE		ENABLE_RO_DEPTH_BUFFER
 	#define DEPTH_STATE_COCKPIT	ENABLE_RO_DEPTH_BUFFER_COCKPIT
@@ -111,6 +111,8 @@ BlendState enableDecalBlend
 
 #ifdef DIFFUSE_UV
 #define GET_DIFFUSE_UV(input) (input.DIFFUSE_UV.xy)
+#elif defined(COLOR0_SIZE)
+#define GET_DIFFUSE_UV(input) (input.color)
 #else
 #define GET_DIFFUSE_UV(input) float2(0, 0)
 #endif

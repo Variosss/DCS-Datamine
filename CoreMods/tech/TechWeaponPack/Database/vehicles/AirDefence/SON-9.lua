@@ -9,7 +9,8 @@ GT.chassis.life = 2
 GT.visual.shape = "son-9.EDM"
 GT.visual.shape_dstr = "son-9_p_1.EDM"
 GT.animation_arguments.alarm_state = -1;										
-GT.animation_arguments.locator_rotation = 0;	
+GT.animation_arguments.locator_rotation = 0;
+GT.animation_arguments.locator_elevation = 1;
 GT.radar_rotation_period = 2.5;									
 
 GT.IR_emission_coeff = 0.05

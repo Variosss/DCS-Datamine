@@ -38,7 +38,7 @@ join_override(res.keyCommands,{
 {combos={{key='N', reformers={'LCtrl'}}},		down=device_commands.WALKMAN_FBWD, cockpit_device_id=devices.WALKMAN, value_down=1.0, name=_('Fast Backward'),category=_('Tape Player')},
 {												down=device_commands.WALKMAN_VOLUP, cockpit_device_id=devices.WALKMAN, value_down=1.0, name=_('Volume Up'),category=_('Tape Player')},
 {												down=device_commands.WALKMAN_VOLDOWN, cockpit_device_id=devices.WALKMAN, value_down=1.0, name=_('Volume Down'),category=_('Tape Player')},
-{												down=device_commands.WALKMAN_Side, cockpit_device_id=devices.WALKMAN, value_down=1.0, name=_('Switch  Side'),category=_('Tape Player')},
+{												down=device_commands.WALKMAN_Side, cockpit_device_id=devices.WALKMAN, value_down=1.0, name=_('Switch Side'),category=_('Tape Player')},
 
 
 
@@ -46,8 +46,8 @@ join_override(res.keyCommands,{
 
 {combos={{key='E',reformers={'LCtrl'}}},down=iCommandPlaneEject,name=_('Eject (3 times)'),category=_('General')},
 
-{combos={{key='Tab'}},down=iCommandChat,name=_('Multiplayer chat - mode All'),category=_('General')},
-{combos={{key='Tab',reformers={'LCtrl'}}},down=iCommandFriendlyChat,name=_('Multiplayer chat - mode Allies'),category=_('General')},
+--{combos={{key='Tab'}},down=iCommandChat,name=_('Multiplayer chat - mode All'),category=_('General')}, --commented out by Dom- is already in the UI layer, causes errors
+--{combos={{key='Tab',reformers={'LCtrl'}}},down=iCommandFriendlyChat,name=_('Multiplayer chat - mode Allies'),category=_('General')}, --commented out by Dom- is already in the UI layer, causes errors
 {combos={{key='Scroll',reformers={'RShift','RCtrl'}}},down=iCommandRecordCursorOnOff,name=_('Record of mouse cursor in track On/Off'),category=_('General')},
 {combos={{key='Scroll',reformers={'RShift'}}},down=iCommandRecordSubtitleOn,name=_('Subtitle recording begin'),category=_('General')},
 {combos={{key='Scroll',reformers={'RCtrl'}}},down=iCommandRecordSubtitleOff,name=_('Subtitle recording end'),category=_('General')},

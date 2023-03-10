@@ -1,6 +1,6 @@
 
 local c802ak_name  = 'C-802AK'
-local c802ak_disp  = 'C802AK'
+local c802ak_disp  = 'C802AK (DIS)'
 local c802ak_model = 'c802ak'
 local c802ak_mass  = 715
 local pylon_mass   = 50.0
@@ -301,7 +301,6 @@ C_802AK_AS = {
 }
 
 declare_weapon(C_802AK_AS)
---C_802AK_AS.shape_table_data.index = C_802AK_AS.wsTypeOfWeapon[4]
 
 declare_loadout({
     category     = CAT_MISSILES,

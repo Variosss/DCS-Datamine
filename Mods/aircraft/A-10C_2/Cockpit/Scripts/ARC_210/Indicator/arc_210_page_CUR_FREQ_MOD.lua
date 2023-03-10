@@ -24,7 +24,32 @@ SetLowerLeftCornerOrigin(freq_label_mhz)
 Add(freq_label_mhz)
 use_mipfilter(freq_label_mhz)
 
-AddTextLabel(".", "RightBottom", max_pixels_count_x-42, 0, predefined_fonts[2], "font_ARC210_big")
+dot_mark						= CreateElement "ceStringPoly"
+dot_mark.name					= "dot_mark"
+dot_mark.material				= "font_ARC210_big"
+dot_mark.alignment				= "RightBottom"
+dot_mark.init_pos				= {max_pixels_count_x-105.5, -41.5}
+dot_mark.stringdefs				= predefined_fonts[2]
+dot_mark.value					= "."
+SetLowerLeftCornerOrigin(freq_label_mhz)
+Add(dot_mark)
+use_mipfilter(dot_mark)
+
+prev_manual_freq					= CreateElement "ceStringPoly"
+prev_manual_freq.name				= "prev_manual_freq"
+prev_manual_freq.material			= "font_ARC210_small"
+prev_manual_freq.alignment			= "CenterTop"
+prev_manual_freq.formats			= {"%d.", "%03d", "---.---"}
+prev_manual_freq.init_pos			= {max_pixels_count_x-72, max_pixels_count_y}
+prev_manual_freq.stringdefs			= predefined_fonts[1]
+prev_manual_freq.controllers		= {{"prev_manual_freq"}}
+SetLowerLeftCornerOrigin(prev_manual_freq)
+Add(prev_manual_freq)
+use_mipfilter(prev_manual_freq)
+
+
+
+-- TODO FIXME AddTextLabel(".", "RightBottom", max_pixels_count_x-42, 0, predefined_fonts[2], "font_ARC210_big")
 
 modulation_label				= CreateElement "ceStringPoly"
 modulation_label.name			= "modulation_label"

@@ -11,7 +11,7 @@
 TEXTURE_2D_ARRAY(float2, GBufferMap);
 TEXTURE_2D(float, DepthMap);
 TEXTURE_2D(uint2, StencilMap);
-float2 depthDims;
+uint2 depthDims;
 
 #define OLD_PACKING 1 // new packing is not working correctly! present aliasing artefacts
 

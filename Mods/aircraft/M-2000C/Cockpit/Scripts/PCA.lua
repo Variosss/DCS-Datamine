@@ -21,8 +21,12 @@ local id_SMK_O = "{A4BCC903-06C8-47bb-9937-A30FEDB4E746}"
 local id_RKTS  = "{Matra155RocketPod}"
 
 local id_RPL522   = "{M2KC_RPL_522}"
+local id_RPL522E  = "{M2KC_RPL_522_EMPTY}"
 local id_RPL541L  = "{M2KC_02_RPL541}"
+local id_RPL541LE = "{M2KC_02_RPL541_EMPTY}"
 local id_RPL541R  = "{M2KC_08_RPL541}"
+local id_RPL541RE = "{M2KC_08_RPL541_EMPTY}"
+local all_RPL = {id_RPL522, id_RPL522E, id_RPL541L, id_RPL541LE, id_RPL541R, id_RPL541RE }
 
 local id_AGF = "{M2KC_AGF}"
 local id_AAF = "{M2KC_AAF}"
@@ -33,7 +37,7 @@ pca_func = {
 	{ code="MAF",  prog="FOX2", model=id_MAGIC, loadouts={M2KC_AAF}, fake=true},
 	{ code="530",  prog="FOX1", model=id_S530D, loadouts={id_S530D}, jett_container=true, exclgroup=1 },
 	{ code="53F",  prog="FOX1", model=id_S530D, loadouts={M2KC_AAF}, fake=true, exclgroup=1},
-	{ code="RP" ,  prog="FUEL", loadouts={id_RPL522, id_RPL541L, id_RPL541R}, jett_container=true},
+	{ code="RP" ,  prog="FUEL", loadouts=all_RPL, jett_container=true},
 	{ code="BL1",  prog="CCRP", model=id_MK82, loadouts={id_MK82}, exclgroup=2},
 	{ code="BL2",  prog="CCRP", model=id_SMP250L, loadouts={id_SMP250L}, exclgroup=2},
 	{ code="EL1",  prog="CCRP", model=id_GBU12, loadouts={id_GBU12}, exclgroup=2},
@@ -44,7 +48,7 @@ pca_func = {
 	{ code="BF3",  prog="CCIP", model=id_SMP250H, loadouts={id_SMP250H}, exclgroup=2},
 	{ code="BF6",  prog="CCIP", model=id_BLG66, loadouts={id_BLG66}, exclgroup=2},
 	{ code="BF8",  prog="CCIP", model=id_BAP100, loadouts={id_BAP100}, jett_container = true, exclgroup=2 },
-	{ code="RK3",  prog="RCKT", model=id_RKTS, loadouts={id_RKTS}, exclgroup=2},
+	{ code="RK3",  prog="RCKT", model=id_RKTS, loadouts={id_RKTS}, jett_container=true, exclgroup=2},
 	{ code="RKF",  prog="RCKT", model=id_RKTS, loadouts={M2KC_AGF}, fake=true, exclgroup=2},
 	{ code="BFF",  prog="CCIP", model=id_MK82, loadouts={M2KC_AGF}, fake=true, exclgroup=2},
 	{ code="BLF",  prog="CCRP", model=id_MK82A, loadouts={M2KC_AGF}, fake=true, exclgroup=2},

@@ -2971,19 +2971,21 @@ end
 
 
 function picModel_setPosition(model, x, alt, y, group)
-	local alt = 200
-	if group.type == 'ship' 
-		or (group.type == 'static' and (DB.ship_by_type[group.units[1].type] ~= nil or DB.isFARP(group.units[1].type))) then
+	local alt = 6000 -- change it synchronously with the altitude hack in EditorSceneRenderer::parseMap()
+	if group.type == 'ship' then
 		alt = 0
+	elseif (group.type == 'static' and (DB.ship_by_type[group.units[1].type] ~= nil or DB.isFARP(group.units[1].type))) then
+		alt = alt - 10
 	end
 	model:setPosition(x, alt, y)
 end
 
 function addSceneObjectWithModel(name, x, alt, y, group)
-	local alt = 200
-	if group.type == 'ship' 
-		or (group.type == 'static' and (DB.ship_by_type[group.units[1].type] ~= nil or DB.isFARP(group.units[1].type))) then
+	local alt = 6000 -- change it synchronously with the altitude hack in EditorSceneRenderer::parseMap()
+	if group.type == 'ship' then
 		alt = 0
+	elseif (group.type == 'static' and (DB.ship_by_type[group.units[1].type] ~= nil or DB.isFARP(group.units[1].type))) then
+		alt = alt - 10
 	end
 	return newMapView_:addSceneObjectWithModel(name, x, alt, y)
 end

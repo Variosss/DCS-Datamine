@@ -75,6 +75,7 @@ MFCD_TEST_KEYS		 = 13
 MFCD_TEST_HOTAS 	 = 14
 
 MFCD_CICU_INITIALIZE = 15
+MFCD_COMM			 = 16
 
 --submodes TGP
 MFCD_TGP_STBY = 1
@@ -91,12 +92,19 @@ MFCD_TGP_AA_CONTROL = 1
 --submodes STAT
 MFCD_STAT_PAGE1 = 0
 MFCD_STAT_PAGE2 = 1
+MFCD_STAT_PAGE3 = 2
 
 -- submodes MSG
 MFCD_MSG_NO_PAGE   = 0
 MFCD_MSG_TEXT_PAGE = 1
 MFCD_MSG_CAS_PAGE  = 2
 MFCD_MSG_MA_PAGE   = 3
+
+--submodes COMM
+MFCD_COMM_PAGE1             = 1
+MFCD_COMM_PAGE2             = 2
+MFCD_COMM_PAGE3             = 3
+MFCD_COMM_PAGE4             = 4
 
 -- CDU pages
 -- mode enums
@@ -267,6 +275,7 @@ set_page_name({MFCD_TGP,MFCD_TGP_AG}							,"TGP_AG")
 set_page_name({MFCD_TGP,MFCD_TGP_AG,MFCD_TGP_AG_CONTROL}		,"TGP_AG_CONTROL")
 set_page_name({MFCD_STAT,MFCD_STAT_PAGE1}						,"STAT_PAGE1")
 set_page_name({MFCD_STAT,MFCD_STAT_PAGE2}						,"STAT_PAGE2")
+set_page_name({MFCD_STAT,MFCD_STAT_PAGE3}						,"STAT_PAGE3")
 
 set_page_name({MFCD_TEST_CICU}			,"MFCD_TEST_CICU")
 set_page_name({MFCD_TEST_DISP}			,"MFCD_TEST_DISP")
@@ -338,6 +347,12 @@ set_page_name({CDU_MASTER,CDU_NAV,CDU_ATTRIB}					,"CDU_ATTRIB")
 set_page_name({CDU_MASTER,CDU_NAV,CDU_OPTIONS}					,"CDU_OPTIONS")
 set_page_name({CDU_MASTER,CDU_NAV,CDU_DIVERT,CDU_FLDINFO}		,"CDU_FLDINFO")
 set_page_name({CDU_MASTER,CDU_WPMENU,CDU_FROM}					,"CDU_FROM")
+
+set_page_name({MFCD_COMM}			,"MFCD_COMM")
+set_page_name({MFCD_COMM_PAGE_1}	,"MFCD_COMM_PAGE_1")
+set_page_name({MFCD_COMM_PAGE_2}	,"MFCD_COMM_PAGE_2")
+set_page_name({MFCD_COMM_PAGE_3}	,"MFCD_COMM_PAGE_3")
+set_page_name({MFCD_COMM_PAGE_4}	,"MFCD_COMM_PAGE_4")
 
 -- SETTINGS_PATH is left for compatibility with old missions
 if MFCD_NAME == "Left MFCD" then

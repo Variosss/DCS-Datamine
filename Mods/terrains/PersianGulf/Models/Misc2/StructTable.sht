@@ -1,0 +1,53 @@
+TerrainModelDeclaration =
+{
+	default =
+	{
+		load =
+		{
+			false;
+			false;
+		};
+		drawonmap = true;
+		vis = 1;
+		visShadows = 1;
+		life = 500;
+		fire =
+		{
+		  0;
+		  1;
+		};
+		classname = "lStandartStructure";
+		positioning = "ONLYHEIGTH"; 
+		DestructAnimatttion = "NO"; 
+	};
+	{
+		file = "car_headlight";
+		desrt = "";
+	};
+
+	{
+		file = "car_stoplight";
+		desrt = "";
+	};
+
+	{
+		file = "heat_plane";
+		desrt = "";
+	};
+
+	{
+		file = "ship_marking_green";
+		desrt = "";
+	};
+
+	{
+		file = "ship_marking_red";
+		desrt = "";
+	};
+
+	{
+		file = "ship_marking_white";
+		desrt = "";
+	};
+
+};

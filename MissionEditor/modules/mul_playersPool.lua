@@ -255,6 +255,21 @@ function selectRow(row)
     verifyKick()    
 end
 
+function selectUnit()
+	if curUnitId then
+		for rIndex = 0, gridPool:getRowCount() - 1 do 
+			local widget = gridPool:getCell(0, rIndex)
+			if widget and widget.data then
+				if curUnitId == widget.data.unit.id then
+					gridPool:selectRow(rIndex)
+					gridPool:setRowVisible(rIndex)
+					return
+				end	
+			end
+		end	
+	end
+end
+
 function verifyKick()
 	btnBanned:setVisible(false)
 	btnUnbanned:setVisible(false)
@@ -409,9 +424,7 @@ function updateGrid()
             rowIndex = rowIndex +1
         end
        
-        if selRow then
-     --       selectRow(selRow)
-        end
+		selectUnit()
     end
 end
 

@@ -11,6 +11,7 @@
 #define USE_SV_SAMPLEINDEX	0
 #define USE_MASK_IC			1
 #define USE_SEPARATE_AO		1
+#define USE_MOTION_VECTORS	1
 
 #define VELOCITY_MAP_SCALE 0.1
 
@@ -28,7 +29,7 @@ struct GBuffer {
 #if USE_SEPARATE_AO
 	float4 target4 : SV_TARGET4;
 #endif
-#if USE_VELOCITY_MAP
+#if USE_MOTION_VECTORS
 	float4 target5 : SV_TARGET5;
 #endif
 };
@@ -56,13 +57,14 @@ float2 packInterlaced(uint2 pidx, float2 v1, float2 v2) {
 	return idx ? v2 : v1;
 }
 
-#if USE_VELOCITY_MAP
-float2 calcVelocityMap(float4 projPos, float4 prevProjPos) {
-	return (projPos.xy / projPos.w - prevProjPos.xy / prevProjPos.w)*(VELOCITY_MAP_SCALE / gPrevFrameTimeDelta)*0.5 + 127.0 / 255.0;
+#if USE_MOTION_VECTORS
+float2 calcMotionVector(float4 projPos, float4 prevProjPos) {
+	float2 v = (prevProjPos.xy / prevProjPos.w - projPos.xy / projPos.w) * 0.5 * gTargetDims;
+	return float2(v.x, -v.y);
 }
 
-float2 calcVelocityMapStatic(float4 projPos) {
-	return calcVelocityMap(projPos, mul(projPos, gPrevFrameTransform));
+float2 calcMotionVectorStatic(float4 projPos) {
+	return calcMotionVector(projPos, mul(projPos, gPrevFrameTransform));
 }
 #endif
 
@@ -76,8 +78,8 @@ GBuffer BuildGBuffer(float2 sv_pos_xy,
 	uint sv_sampleIndex, 
 #endif
 	float4 color, float3 normal, float4 aorms, float3 emissive, 
-#if USE_VELOCITY_MAP
-	float2 velocityMap, 
+#if USE_MOTION_VECTORS
+	float2 motionVector,
 #endif	
 	float normalBlendTreshold = 0.5) {
 	GBuffer o;
@@ -113,8 +115,8 @@ GBuffer BuildGBuffer(float2 sv_pos_xy,
 #if USE_SEPARATE_AO
 	o.target4 = float4(aorms.xw, 0, color.a);
 #endif
-#if USE_VELOCITY_MAP
-	o.target5 = float4(velocityMap, 0, color.a);
+#if USE_MOTION_VECTORS
+	o.target5 = float4(motionVector, 0, color.a);
 #endif
 	return o;
 }
@@ -123,6 +125,7 @@ struct GBufferWater {
 	float4 target0 : SV_TARGET0;
 	float4 target1 : SV_TARGET1;
 	float4 target2 : SV_TARGET2;
+	float4 target3 : SV_TARGET3;
 };
 
 GBufferWater BuildGBufferWater(float3 normal, float wLevel, float foam, float deepFactor, float4 projPos, float riverLerp, float alpha) {
@@ -130,6 +133,7 @@ GBufferWater BuildGBufferWater(float3 normal, float wLevel, float foam, float de
 	o.target0 = float4(packNormal(float3(normal.xz, -abs(normal.y)))*0.5+0.5, 0, alpha);
 	o.target1 = float4(wLevel, foam, 0, alpha);
 	o.target2 = float4(deepFactor, riverLerp, 0, alpha);
+	o.target3 = float4(calcMotionVectorStatic(projPos), 0, alpha);
 	return o;
 }
 

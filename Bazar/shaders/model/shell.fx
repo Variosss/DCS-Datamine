@@ -72,7 +72,7 @@ GBuffer pixel_shader_shell(VS_OUTPUT input
 #if USE_SV_SAMPLEINDEX
 		si,
 #endif
-		float4(Color, 1.0), input.Normal, float4(1,0.9,0.5,1), 0);
+		float4(Color, 1.0), input.Normal, float4(1,0.9,0.5,1), 0, 0);
 }
 
 GBuffer pixel_shader_segment(VS_OUTPUT input
@@ -85,7 +85,7 @@ GBuffer pixel_shader_segment(VS_OUTPUT input
 #if USE_SV_SAMPLEINDEX
 		si,
 #endif
-		float4(Color, 1.0), input.Normal, float4(1,0.9,0.5,1), 0);
+		float4(Color, 1.0), input.Normal, float4(1,0.9,0.5,1), 0, 0);
 }
 
 [maxvertexcount(3)]
